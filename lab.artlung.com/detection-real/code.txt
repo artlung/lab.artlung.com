@@ -1,0 +1,38 @@
+<script language="JavaScript">
+	<!--
+	
+	var RealMode=0;
+	var RealPlayer5=0;
+	var RealPlayer4=0;
+
+	if (navigator.userAgent.indexOf("MSIE")<0 )
+	{
+	numPlugins = navigator.plugins.length;
+	for (i = 0; i < numPlugins; i++)
+	{
+		plugin = navigator.plugins[i];
+		if (plugin.name.substring(0,10)=="RealPlayer")
+		{
+			RealMode=1;
+		}
+	}
+	}
+
+	document.write('<SCRIPT LANGUAGE=VBScript\> \n');
+	document.write('on error resume next \n');
+	document.write('RealPlayer5 = (NOT IsNull(CreateObject("RealPlayer.RealPlayer(tm) ActiveX Control(32-bit)")))\n');
+	document.write('RealPlayer4 = (NOT IsNull(CreateObject("RealVideo.RealVideo(tm) ActiveX Control(32-bit)")))\n');
+	document.write('</script\> \n');
+
+	if (RealMode || RealPlayer5 || RealPlayer4) 
+	{
+		alert("You're a-okay.");
+	}
+	else 
+	{
+		alert("Houston, it's a no-go");
+	}
+	
+
+	//-->
+</script>

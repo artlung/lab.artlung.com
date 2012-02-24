@@ -1,0 +1,24 @@
+"notranslate"
+http://googlewebmastercentral.blogspot.com/2008/10/helping-you-break-language-barrier.html
+
+"robots-nocontent"
+http://help.yahoo.com/l/us/yahoo/search/webcrawler/slurp-14.html
+
+"maps_off"
+http://www.mapmypage.com/
+
+"vcard"
+http://microformats.org/wiki/hcard
+
+Microformats related Class Names, many!
+http://microformats.org/wiki/class-names
+
+class="sortable"
+class="nosort"
+class="reflect"
+class="unsortable"
+class="instant"
+
+...libraries
+
+rel tags! nofollow etc are another issue.

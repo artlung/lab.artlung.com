@@ -1,0 +1,273 @@
+<head>
+<style>
+body {
+	background-color: #ccc;
+	margin: 0;
+}
+#main {
+	background-color: #fff;
+	height: 100%;
+	width: 100%;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/mootools/1.4.0/mootools-yui-compressed.js"></script>
+<script>
+
+var ITEM = {};
+
+var APP = {
+
+	randomNumber: function(max) {
+		return Math.round(Math.random() * max);
+	},
+	createRandomButtons: function(){
+		var NUMBER_OF_BUTTONS = 20;
+		var elements = [];
+		var main = $('main')
+		for (var i=0;i<NUMBER_OF_BUTTONS;i++){
+			elements[i] = new Element('button', {
+				id: 'item_' + i,
+				html: 'default',
+				tabindex: 0,
+				'class': 'dpadSelectable',
+				styles: {
+					position: 'absolute',
+					top: (i < 5) ? APP.randomNumber(200) : 20*i,
+					left: (i < 5 ) ? APP.randomNumber(100) : (400),//APP.randomNumber(900),
+					width: 300
+				},
+				events: {
+					click: function(){
+
+						
+
+					}
+				}
+			});
+			elements[i].inject(main);
+		}
+	},
+	checkAllItems: function(txt){
+
+		var elem = document.activeElement;
+		if (elem && elem.nodeName && elem.nodeName.toLowerCase() === 'body'){
+			// nothing is focused
+			alert('nothing is focused');
+			$$('button').each(function(compareElem){
+				var currentLeft = 0;
+				var currentTop = 0;
+				var attributes = [];
+				if (compareElem.className != 'current') {
+					L = compareElem.getCoordinates().left;
+					T = compareElem.getCoordinates().top;
+
+					if (currentLeft > L) {
+						leftDistance = currentLeft - L;
+						if (leftDistance < bestLeftDistance) {
+							bestLeftDistance = leftDistance;
+							ITEM.left = compareElem.id;
+						}
+						attributes.push('left ' + (leftDistance))
+					}
+					if (currentLeft < L) {
+						rightDistance = L - currentLeft;
+						if (rightDistance < bestRightDistance) {
+							bestRightDistance = rightDistance;
+							ITEM.right = compareElem.id;
+						}
+						attributes.push('right ' + (rightDistance))
+					}
+					
+					if (currentTop > T) {
+						upDistance = currentTop - T;
+						if (upDistance < bestUpDistance) {
+							bestUpDistance = upDistance;
+							ITEM.up = compareElem.id;
+						}
+						attributes.push('up ' + (upDistance))
+					}
+					if (currentTop < T) {
+						downDistance = T - currentTop;
+						if (downDistance < bestDownDistance) {
+							bestDownDistance = downDistance;
+							ITEM.down = compareElem.id;
+						}
+						attributes.push('down ' + (downDistance))
+					}
+					
+					compareElem.innerHTML = attributes.join(' ');
+				}
+
+			});
+			document.getElementById(ITEM.down).focus();
+			APP.checkAllItems('down');
+
+		} else {
+
+			
+			$$('.current').toggleClass('current');
+			
+			ITEM = {
+				left: false,
+				right: false,
+				up: false,
+				down: false
+			}
+			
+			var bestLeftDistance = 9999;
+			var bestRightDistance = 9999;
+			var bestUpDistance = 9999;
+			var bestDownDistance = 9999;
+			
+			var upDistance = false,
+				downDistance = false,
+				leftDistance = false,
+				rightDistance = false;
+			
+			$$('button').each(function(compareElem){
+				var elem = document.activeElement;
+				elem.className = 'current';
+				elem.innerHTML = 'current';
+				var currentLeft = elem.offsetLeft;
+				var currentTop = elem.offsetTop;
+				var attributes = [];
+				if (compareElem.className != 'current') {
+					L = compareElem.getCoordinates().left;
+					T = compareElem.getCoordinates().top;
+
+					if (currentLeft > L) {
+						leftDistance = currentLeft - L;
+						if (leftDistance < bestLeftDistance) {
+							bestLeftDistance = leftDistance;
+							ITEM.left = compareElem.id;
+						}
+						attributes.push('left ' + (leftDistance))
+					}
+					if (currentLeft < L) {
+						rightDistance = L - currentLeft;
+						if (rightDistance < bestRightDistance) {
+							bestRightDistance = rightDistance;
+							ITEM.right = compareElem.id;
+						}
+						attributes.push('right ' + (rightDistance))
+					}
+					
+					if (currentTop > T) {
+						upDistance = currentTop - T;
+						if (upDistance < bestUpDistance) {
+							bestUpDistance = upDistance;
+							ITEM.up = compareElem.id;
+						}
+						attributes.push('up ' + (upDistance))
+					}
+					if (currentTop < T) {
+						downDistance = T - currentTop;
+						if (downDistance < bestDownDistance) {
+							bestDownDistance = downDistance;
+							ITEM.down = compareElem.id;
+						}
+						attributes.push('down ' + (downDistance))
+					}
+					
+					x = upDistance || downDistance;
+					y = rightDistance || leftDistance;
+					attributes.push("atan2 " + Math.atan2(x,y))
+					
+					
+					
+					compareElem.innerHTML = attributes.join(' ');
+				}
+
+			});
+
+			switch(txt){
+				case 'left': 
+					if (ITEM.left) {
+						document.getElementById(ITEM.left).focus();
+						APP.checkAllItems();
+					}
+					break;
+				case 'right': 
+					if (ITEM.right) {
+						document.getElementById(ITEM.right).focus();
+						APP.checkAllItems();
+					}
+					break;
+				case 'up': 
+					if (ITEM.up) {
+						document.getElementById(ITEM.up).focus();
+						APP.checkAllItems();
+					}
+					break;
+				case  'down': 
+					if (ITEM.down) {
+						document.getElementById(ITEM.down).focus();
+						APP.checkAllItems();
+					}
+					break;
+				
+			}
+			
+			//alert(txt);
+			
+			
+		}
+		
+		
+	}
+	
+	
+}
+
+window.addEvent('domready', function() {
+
+	APP.createRandomButtons();
+	APP.checkAllItems();
+
+	
+});
+
+window.onload = function() {
+
+  document.onkeydown=function(e){
+
+    if (!e) e=window.event;
+
+    switch(e.keyCode) {
+
+      case 37:
+        APP.checkAllItems("left");
+        break;
+
+      case 38:
+        APP.checkAllItems("up");
+        break;
+
+      case 39:
+        APP.checkAllItems("right");
+        break;
+
+      case 40:
+        APP.checkAllItems("down");
+        break;
+
+      case 13:
+        APP.checkAllItems("enter");
+        break;
+    }
+  }
+}
+
+
+</script>
+</head>
+<body>
+	
+	<div id="main">
+	
+	</div>
+	
+	
+	
+	
+</body>

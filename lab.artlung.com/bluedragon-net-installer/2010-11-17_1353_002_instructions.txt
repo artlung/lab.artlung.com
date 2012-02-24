@@ -1,0 +1,17 @@
+The next panel prompts you to select the BlueDragon installation type. The choices are:
+"All Web Sites", "Selected Web Site(s)", "Manual Configuration", and
+"Single Virtual Directory".
+
+If you select "Single Virtual Directory", a new Microsoft IIS virtual directory is created
+and BlueDragon is installed only in that virtual directory: the BlueDragon assemblies are
+placed in the "bin" sub-directory, the web.config file contains the necessary BlueDragon
+directives, and script mappings for ".cfm", ".cfml", ".cfc", and ".cfchart" are configured
+only for that virtual directory.
+
+If you select any option other than "Single Virtual Directory", BlueDragon is installed
+globally: the BlueDragon assemblies are installed into the Global Assembly Cache (GAC)
+and the global web.config file is updated to contain the necessary BlueDragon
+directives. Script mappings for ".cfm", ".cfml", ".cfc", and ".cfchart" are configured
+for All Web Sites or Selected Web Sites based on your choice; if you select
+"Manual Configuration", script mappings are not configured for any Web Sites and must
+be configured manually.

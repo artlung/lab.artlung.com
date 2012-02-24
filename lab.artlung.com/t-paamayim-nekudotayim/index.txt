@@ -1,0 +1,5 @@
+Parse error: syntax error, unexpected T_PAAMAYIM_NEKUDOTAYIM in /var/www/vhosts/intranet.cstsensors.com/httpdocs/track/users.php on line 7
+
+      $unit = $BUM::HOURS;
+should be
+       $unit = $BUM::$HOURS;

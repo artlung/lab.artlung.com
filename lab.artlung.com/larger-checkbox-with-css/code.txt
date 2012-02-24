@@ -1,0 +1,9 @@
+<style type="text/css">
+<!--
+input.largerCheckbox
+{
+	width: 30px;
+	height: 30px;
+}
+//-->
+</style>

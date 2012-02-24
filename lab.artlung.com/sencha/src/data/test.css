@@ -1,0 +1,187 @@
+body {
+    background-image: url(wallpaper.jpg);
+    background-repeat: repeat;
+}
+
+.navigation {
+    width: 250px;
+    border-right: 1px solid #444;
+}
+
+.navigation .x-panel-body {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.35);
+    background: #eee;
+}
+
+.navigation .x-panel-body .x-button,
+.navigation .x-button.x-docked {
+    height: 48px;
+    line-height: 45px;
+    color: #444;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    -webkit-border-radius: 0px;
+    padding: 0 8px;
+    background: #eee;
+}
+
+.navigation.x-floating .x-panel-body {
+    border-bottom: 0px;
+}
+
+.navigation .x-panel-body .x-button img,
+.navigation .x-button.x-docked img {
+    width: 28px;
+    margin-right: 8px;
+    height: 40px;
+}
+
+.timeline .x-scroller {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #fff;
+}
+
+.timeline .tweet {
+    margin: 10px 20px 20px;
+    position: relative;
+    height: 100px;
+    overflow: hidden;
+    padding-left: 70px;
+}
+
+.timeline .tweet > img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 2px;
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+}
+
+.timeline .tweet-bubble {
+    background-color: #111;
+    position: relative;
+    height: 100px;
+    overflow: hidden;
+    padding: 15px;
+    -webkit-border-radius: 6px;
+}
+
+.tweet-bubble > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height:100px;
+    width: 100%;
+    -webkit-border-radius: 4px;
+}
+
+
+.timeline .x-anchor {
+    width: 14px;
+    height: 14px;
+    background-color: #eee   ;
+    top: 10px;
+    left: 66px;
+    z-index: -1;
+    position: absolute;
+    -webkit-transform: rotate(45deg);
+}
+
+.timeline .tweet-content {
+    padding: 15px;
+    z-index: 1;
+    background: #eee;
+    color: #444;
+}
+
+.timeline .x-toolbar-actions {
+    background-color: #111;
+    z-index: 0;
+    border: 1px solid #444;
+}
+
+.timeline .x-toolbar-actions .x-button {
+    height: 100px;
+    width: 100px;
+    border-right: 1px solid #fff;
+}
+
+.timeline .x-toolbar-actions .x-button img {
+    width: 100px;
+    height: 100px;
+}
+
+.x-example {
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.x-example-list {
+    background-image: url(favorites/list.png);
+}
+
+.x-example-buttons1 {
+    background-image: url(favorites/buttons1.png);
+}
+
+.x-example-form {
+    background-image: url(favorites/form.png);
+}
+
+.x-example-datepicker {
+    background-image: url(favorites/datepicker.png);
+}
+
+.x-example-buttons2 {
+    background-image: url(favorites/buttons2.png);
+}
+
+.x-example-tabs {
+    background-image: url(favorites/tabs.png);
+}
+
+.icon-refresh {
+    background-image: url(icons/refresh.png);
+}
+.icon-user {
+    background-image: url(icons/user.png);
+}
+.icon-compose {
+    background-image: url(icons/compose.png);
+}
+.icon-alltweets {
+    background-image: url(icons/alltweets.png);
+}
+.icon-mentions {
+    background-image: url(icons/mentions.png);
+}
+.icon-messages {
+    background-image: url(icons/messages.png);
+}
+.icon-favorites {
+    background-image: url(icons/favorite.png);
+}
+.icon-nearby {
+    background-image: url(icons/nearby.png);
+}
+.icon-saved {
+    background-image: url(icons/saved.png);
+}
+.icon-reply {
+    background-image: url(icons/reply.png);
+}
+.icon-profile {
+    background-image: url(icons/profile.png);
+}
+.icon-attachment {
+    background-image: url(icons/attachment.png);
+}
+.icon-forward {
+    background-image: url(icons/forward.png);
+}
+.icon-markasfavorite {
+    background-image: url(icons/markasfavorite.png);
+}

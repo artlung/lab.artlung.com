@@ -1,0 +1,158 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background-color: #eee;
+}
+
+div#everything { }
+
+div#header
+{
+	border-color: black;
+	border-width: 0 0 3px 0;
+	border-style: double;
+	padding: 10px;
+}
+
+div#header a
+{
+	font-weight: bold;
+	text-decoration: none;
+}
+
+div#header a:hover { color: #00c; }
+
+div#content
+{
+	background-color: #fff;
+	min-height: 300px;
+	padding: 30px;
+}
+
+div#content h1 { color: #666; }
+div#content h2 { color: #999; }
+div#content p { color: #333; }
+div#content a:hover { color: #00c; }
+
+div#content pre
+, pre.src
+{
+	padding: 10px;
+	color: #333;
+	background-color: #9FC;
+	overflow: auto;
+	width: 92%;
+	border: 2px solid #6c9;
+}
+
+div#content pre
+, pre.src b
+{
+	color: #000;
+	background-color: #CFC;
+}
+
+blockquote.src
+{
+	background-color: #ccc;
+	padding: 10px;
+}
+
+div.googleAd
+{
+	border-top: 1px dotted #393;
+	border-bottom: 1px dotted #393;
+	background-color: #CF9;
+	text-align: center;
+}
+
+div#footer
+{
+	background-color: #EEE;
+	border-color: black;
+	border-width: 3px 0 0 0;
+	border-style: double;
+	padding: 10px;
+	text-align: center;
+}
+
+div#header a
+, div#footer a
+{
+	padding: 4px;
+	background-color: #cf9;
+	text-decoration: none;
+	border: 2px groove #cf9;
+}
+
+div#header a:hover
+, div#footer a:hover
+{
+	padding: 4px;
+	background-color: #fff;
+	text-decoration: none;
+	border: 2px groove #cf9;
+}
+
+div#footer a.noborder
+{
+	border: none;
+	background-color: transparent;
+}
+
+div#siteSearch
+{
+	background-color: #fff;
+	text-align: center;
+}
+
+.html
+{
+	color: #333;
+	background-color: #CFC;
+}
+
+.php
+{
+	color: #000;
+	background-color: #6F6;
+	font-weight: bold;
+}
+
+.comment
+{
+	color: #000;
+	background-color: #FF0;
+}
+
+.fourHundredWide { width: 400px; }
+div.fixed ol li, div.fixed ol { font-family: courier, "courier new", fixed-width; }
+dt { font-weight: bold; }
+
+.spotlight
+{
+	border-top: 1px dotted #C03;
+	border-bottom: 1px dotted #C03;
+	background-color: #FCC;
+	font-size: large;
+}
+
+pre
+{
+	padding: 10px;
+	color: #333;
+	background-color: #9FC;
+}
+
+pre b
+{
+	color: #000;
+	background-color: #CFC;
+}
+
+#commentsArea {
+	
+margin: 20px;	
+}

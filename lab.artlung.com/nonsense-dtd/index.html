@@ -1,0 +1,25 @@
+<!DOCTYPE htmln PUBLIC "nonsense" "http://example.org/nonsense">
+<htmln>
+<head>
+<script type="text/javascript">
+window.onload = function(){
+//alert(1)
+var out = [];
+//alert(document.doctype);
+out.push("document.doctype.toString()" + "=" + document.doctype.toString());
+
+for (i in document.doctype){
+out.push(i + "=" +document.doctype[i]);
+}
+//alert(out.join('\n'));
+document.getElementsByTagName('pre')[0].innerHTML  = out.join('\n');
+}
+</script>
+<title>Nonsense DTD</title>
+</head>
+<body>
+  <h1>What's the document.doctype of a document with a nonsense DTD?</h1>
+  
+  <pre></pre>
+</body>
+</htmln>

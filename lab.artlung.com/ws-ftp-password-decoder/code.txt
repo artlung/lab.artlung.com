@@ -1,0 +1,18 @@
+<script type="text/javascript">
+function wsFTP_decoder(in_string) {
+	if (in_string.indexOf('PWD=', 0) === -1 || in_string.length - 37 < 0) {
+		alert("ENTRY NOT VALID: be sure to enter the whole line, including 'PWD='");
+	} else {
+		my_password = in_string.substring(37, in_string.length);
+		var x = "";
+		for (var i = 0; i < my_password.length / 2; i++) {
+			document.forms[0].decoded_entry.value = "";
+			var my_character = my_password.substring(i * 2, i * 2 + 2);
+			var my_parsed = in_string.substring(5 + i, 6 + i);
+			var my_clear_txt = parseInt("0x" + my_character) - i - 1 - ((47 + parseInt("0x" + my_parsed)) % 57);
+			x = x + String.fromCharCode(my_clear_txt);
+			document.forms[0].decoded_entry.value = x;
+		}
+	}
+}
+</script> 

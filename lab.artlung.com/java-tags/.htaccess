@@ -1,0 +1,4 @@
+#this turns urls with question
+#marks into se friendly urls
+RewriteEngine On
+RewriteRule  ^-(.+) index.php?f=$1

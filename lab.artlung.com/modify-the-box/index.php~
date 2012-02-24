@@ -1,0 +1,98 @@
+<?php include_once("../inc.functions.php"); ?>
+<?php include_once("../inc.header1of2.php"); ?>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+	"http://www.w3.org/TR/1999/REC-html401-19991224/strict.dtd">
+
+
+<style type="text/css"><!--
+/* made by joe crawford in a fit of madness on january 18 2001 */
+/* http://artlung.com */
+body {
+background-color: #FFF;
+}
+#ourBox {
+	background-color: #CCC;
+	color: #CCC;
+	position: absolute;
+	height: 10px;
+	width: 10px;
+	left: 300px;
+	top: 300px;
+	line-height: 1px;
+	font-size: 1px;
+}
+a {	color: blue; text-decoration: none; outline: none; background-color: transparent; }
+a:link { color: blue; background-color: #FFF; }
+a:visited { color: blue; background-color: #FFF; }
+#ourControl { 
+	position: absolute;
+	top:0;
+	left:0
+}
+#warn {
+	visibility: hidden;
+	position: absolute;
+}
+//--></style>
+<script type="text/javascript" language="JavaScript">
+<!--
+/* made by joe crawford in a fit of madness on january 18 2001 */
+/* http://artlung.com */
+var holdX = 300;
+var holdY = 300;
+var holdDim = 10;
+function ourMove(x,y,obj) {
+	if (document.getElementById) {
+		prot = document.getElementById(obj);
+		holdX = holdX+(x*10);
+		holdY = holdY+(y*10);
+		prot.style.left = holdX+'px';	
+		prot.style.top = holdY+'px';	
+	}
+}
+function ourSize(ourFactor,obj) {
+	if (document.getElementById) {
+		prot = document.getElementById(obj);
+		holdDim = holdDim*ourFactor;
+		prot.style.height = holdDim+'px';	
+		prot.style.width = holdDim+'px';	
+	}
+}
+function changeColor(c,obj) {
+	if (document.getElementById) {
+		prot = document.getElementById(obj);
+		prot.style.backgroundColor = c;	
+		prot.style.color = c;	
+	}
+}
+function populateColors() {
+	ourColors = new Array ('red','orange','yellow','green','blue','indigo','violet');
+	for(i=0;i<ourColors.length;i++) {
+		var addCol=new Option(ourColors[i],ourColors[i]);
+		document.forms[0].elements[0].options[i+1]=addCol;
+	}
+}
+function stupidNS4() { if(document.layers)document.layers['warn'].visibility = 'visible'; }
+//--></script>
+modify the box! a dhtml experiment made by artlung
+
+<body onload="stupidNS4();populateColors();">
+<form action="./" method="get" onsubmit="return false;">
+<pre class="ourControl">
+modify the box! a dhtml experiment made by <a href="http://artlung.com/">artlung</a> | <a href="/">lab</a> | <a href="/css/">css</a> |<a href="http://artlung.com/feedback/">feedback</a>
+&nbsp;
+<a href="javascript:ourMove(-1,-1,'ourBox')">\</a> <a href="javascript:ourMove(0,-1,'ourBox')">^</a> <a href="javascript:ourMove(1,-1,'ourBox')">/</a>
+<a href="javascript:ourMove(-1,0,'ourBox')">&laquo;</a>   <a href="javascript:ourMove(1,0,'ourBox')">&raquo;</a>
+<a href="javascript:ourMove(-1,1,'ourBox')">/</a> <a href="javascript:ourMove(0,1,'ourBox')">v</a> <a href="javascript:ourMove(1,1,'ourBox')">\</a>
+&nbsp;
+<a href="javascript:ourSize(0.25,'ourBox')">.</a> <a href="javascript:ourSize(1.5,'ourBox')">o</a> <a href="javascript:ourSize(2,'ourBox')">O</a>
+&nbsp;
+<select onchange="changeColor(this.options[this.selectedIndex].value,'ourBox')"><option value="#CCC">color</option></select>
+</pre></form>
+<div id="ourBox"></div>
+<div id="warn">this won't work in netscape 4. i'm sorry.</div>
+
+
+
+<?php include_once("../inc.footer.php"); ?>

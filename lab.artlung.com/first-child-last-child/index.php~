@@ -1,0 +1,10 @@
+<?php
+
+$code = 'code.html';
+include($code);
+
+?>
+<pre><?php
+echo highlight_string(file_get_contents($code));
+?></pre>
+

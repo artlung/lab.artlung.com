@@ -1,0 +1,212 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <title>Data refactoring</title>
+
+    <!-- GC -->
+    <!-- LIBS -->
+    <script type="text/javascript" src="../../adapter/ext/ext-base-debug.js"></script>
+    <!-- ENDLIBS -->
+
+    <script type="text/javascript" src="../../ext-all-debug.js"></script>
+
+    <script type="text/javascript" src="../../src/util/MixedCollection.js"></script>
+    <script type="text/javascript" src="../../src/data/Store.js"></script>
+    <script type="text/javascript" src="../../src/widgets/TabContainer.js"></script>
+    <script type="text/javascript" src="../../src/widgets/TabStrip.js"></script>
+    <script type="text/javascript" src="../../src/widgets/Tab.js"></script>
+
+    <script type="text/javascript" charset="utf-8">
+        Ext.onReady(function() {
+            Ext.data.TwitterProxy = Ext.extend(Ext.data.ScriptTagProxy, {
+                url: 'http://search.twitter.com/search.json',
+                reader: 'twitter',
+
+                constructor: function(config) {
+                    config = config || {};
+
+                    Ext.applyIf(config, {
+                        extraParams: {
+                            q: 'extjs',
+                            rpp: 50,
+                            suppress_response_codes: true
+                        }
+                    });
+
+                    Ext.data.TwitterProxy.superclass.constructor.call(this, config);
+                }
+            });
+
+            Ext.data.ProxyMgr.registerType('twitter', Ext.data.TwitterProxy);
+
+            Ext.data.TwitterReader = Ext.extend(Ext.data.JsonReader, {
+                root: 'results'
+            });
+
+            Ext.data.ReaderMgr.registerType('twitter', Ext.data.TwitterReader);
+
+            Ext.regModel('User', {
+                fields: [
+                    {name: 'id',                type: 'int'},
+                    {name: 'profile_image_url', type: 'string'},
+                    {name: 'from_user',         type: 'string'},
+                    {name: 'text',              type: 'string'}
+                ]
+            });
+
+            var store = new Ext.data.Store({
+                autoLoad: true,
+                // proxy: new Ext.data.LocalStorageProxy({id: 'tweets'}),
+                proxy: new Ext.data.TwitterProxy(),
+                // proxy: new Ext.data.AjaxProxy({
+                //     url: 'test.json',
+                //     reader: 'twitter',
+                //     writer: {
+                //         type: 'json',
+                //         root: 'tweets'
+                //     }
+                // }),
+                model: 'User',
+
+                batchUpdateMode: 'complete',
+                groupField: 'from_user',
+
+                getGroupString: function(instance) {
+                    return instance.get('text').split(" ")[0];
+                }
+            });
+
+            var grid = new Ext.grid.GridPanel({
+                height: 400,
+                width : 500,
+
+                store: store,
+
+                columns: [
+                    {sortable: true, header: 'Name',  dataIndex: 'from_user'},
+                    {sortable: true, header: 'Image', dataIndex: 'profile_image_url'},
+                    {sortable: true, header: 'Text',  dataIndex: 'text'}
+                ]
+
+                // renderTo: Ext.getBody()
+            });
+
+            grid.render(Ext.getBody());
+
+            var buttons = [
+                {
+                    text: 'Add Abe',
+                    handler: function() {
+                        store.add({
+                            from_user: 'Ape',
+                            profile_image_url: 'http://a1.twimg.com/profile_images/375282038/twitterProfilePhoto_normal.jpg',
+                            text: "I am the eggplant. I am the evil ape."
+                        });
+                    }
+                },
+                {
+                    text: 'Update first',
+                    handler: function() {
+                        var record = store.data.items[0];
+
+                        record.set('from_user', 'Akura');
+                    }
+                },
+                {
+                    text: 'Remove first',
+                    handler: function() {
+                        store.remove(store.data.items[0]);
+                    }
+                },
+                {
+                    text: 'Save',
+                    handler: function() {
+                        store.sync();
+                    }
+                },
+                {
+                    text: 'Filter',
+                    handler: function() {
+                        store.filter([
+                            {
+                                property: 'from_user',
+                                value   : 'cutterbl'
+                            }
+                        ]);
+                    }
+                },
+                {
+                    text: 'Group',
+                    handler: function() {
+                        var groups = store.getGroups();
+
+                        console.log(groups.length);
+                        console.log(groups);
+                    }
+                },
+                {
+                    text: 'Sort by from_user',
+                    handler: function() {
+                        store.sort('from_user');
+                    }
+                }
+            ];
+
+            Ext.each(buttons, function(button) {
+                new Ext.Button(Ext.apply(button, {
+                    renderTo: Ext.getBody()
+                }));
+            }, this);
+
+            var dataview = new Ext.DataView({
+                xtype:        'dataview',
+                emptyText:    'No items to display',
+                singleSelect: true,
+                autoScroll:   true,
+                overClass:    'x-view-over',
+                itemSelector: 'div.tweet',
+                store:        store,
+                cls:          'timeline',
+                tpl:          new Ext.XTemplate(
+                    '<tpl for=".">',
+                        '<div class="tweet">',
+                     		'<img src="{profile_image_url}" />',
+                     		'<div class="x-anchor"></div>',
+                     		'<div class="tweet-bubble">',
+                    			'<div class="tweet-content">',
+                    				'<h2>{from_user}</h2>',
+                    				'<p>{text}</p><strong></strong>',
+                    			'</div>',
+                    		'</div>',
+                        '</div>',
+                    '</tpl>'
+                ),
+
+                renderTo: Ext.getBody(),
+                height: 400,
+                width : 500,
+                x: 600,
+                y: 0,
+
+                style: 'position: absolute'
+            });
+        });
+    </script>
+
+    <!-- Common Styles for the examples -->
+    <link rel="stylesheet" type="text/css" href="../../resources/css/ext-all.css"/>
+    <link rel="stylesheet" type="text/css" href="../shared/examples.css"/>
+    <link rel="stylesheet" type="text/css" href="test.css"/>
+
+    <style type="text/css" media="screen">
+        .tab-icon {
+            background-image: url("../desktop/images/tabs.gif") !important;
+        }
+    </style>
+</head>
+<body id="docbody">
+<script type="text/javascript" src="../shared/examples.js"></script>
+<!-- EXAMPLES -->
+<h1>Data refactoring</h1>
+</body>
+</html>

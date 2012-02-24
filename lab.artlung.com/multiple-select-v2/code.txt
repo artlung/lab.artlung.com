@@ -1,0 +1,147 @@
+<script type="text/javascript" language="JavaScript">
+<!--
+
+// we need two arrays
+var levelOneAndTwo = new Array();
+var levelTwoAndThree = new Array();
+
+// data for the first level is formatted like this:
+// each row in the levelOneAndTwo array has two pieces
+// the first part is the first level, and all its children
+// are in the second element, separated by pipes
+levelOneAndTwo[0] = new Array("color","red|blue|orange|yellow")
+levelOneAndTwo[1] = new Array("country","usa|argentina|uk|australia")
+levelOneAndTwo[2] = new Array("places","house|hospital|treehouse")
+levelOneAndTwo[3] = new Array("shortlist","one option")
+
+levelTwoAndThree[0] = new Array("red","head|bull")
+levelTwoAndThree[1] = new Array("blue","moon")
+levelTwoAndThree[2] = new Array("orange","julius|men")
+levelTwoAndThree[3] = new Array("yellow","amarillo|rose of texas|mellow")
+levelTwoAndThree[4] = new Array("usa","north america|iraq war|pledge of allegiance")
+levelTwoAndThree[5] = new Array("argentina","falklands|nazis")
+levelTwoAndThree[6] = new Array("uk","empire")
+levelTwoAndThree[7] = new Array("australia","aussies|prisoners|southern hemisphere")
+levelTwoAndThree[8] = new Array("house","safe as|proud|home")
+levelTwoAndThree[9] = new Array("hospital","antiseptic|quiet please")
+levelTwoAndThree[10] = new Array("treehouse","kids|the larch")
+levelTwoAndThree[10] = new Array("one option","last option")
+
+// enter the name of your form here
+
+var	formName = "artlungForm"
+var	firstLevelSelectName = "foo"
+var	secondLevelSelectName = "bar"
+var	thirdLevelSelectName = "splorch"
+
+function initializeSelects()
+{
+	selectValues = new Array();
+
+	for(i=0;i<levelOneAndTwo.length;i++)
+		selectValues[i] = levelOneAndTwo[i][0]		
+	fillUpSelectBox(formName,firstLevelSelectName,selectValues)
+}
+
+function changeSecondSelect(formName,firstSelect,secondSelect) {
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//make the first value in the second select selected
+//	document [formName] [secondSelect].selectedIndex=0;
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// delete all the options in the second select BUT the first one
+	while(document[formName][secondSelect].options[1])
+		document [formName] [secondSelect].options[1] = null;
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// create the arrays which will hold the information
+// to populate the second select
+	var plopValues = new Array (0);
+	var plopWords  = new Array (0);
+	plopValues.length = 0;
+	plopWords.length = 0;
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// the syntax for the value selected in the first select is ugly, so we
+// put it in a temp variable
+	var firstSelectValue = document [formName] [firstSelect].options[document [formName][firstSelect].selectedIndex].value;
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+	if (secondSelect == secondLevelSelectName)
+	{
+		for(i=0;i<levelOneAndTwo.length;i++)
+			if(firstSelectValue== levelOneAndTwo[i][0])
+			{
+				plopValues = levelOneAndTwo[i][1].split('|')
+				plopWords = levelOneAndTwo[i][1].split('|')
+			}
+		// clear out the third select
+		// because re-choosing the first select
+		// makes any choice there invalid
+		clearSelect(formName,thirdLevelSelectName);
+	} else if (secondSelect == thirdLevelSelectName) {
+		for(i=0;i<levelTwoAndThree.length;i++)
+			if(firstSelectValue== levelTwoAndThree[i][0])
+			{
+				plopValues = levelTwoAndThree[i][1].split('|')
+				plopWords = levelTwoAndThree[i][1].split('|')
+			}
+	}
+
+	// if we didn't get a real value, then we show an error message
+	// in the second select
+	if (firstSelectValue == "")
+	{
+		var plopValues = new Array (' * Please','   make a','   choice.');
+		var plopWords  = plopValues
+	};
+
+	// now the array that was set cascades into the second select
+	fillUpSelectBox(formName,secondSelect,plopValues)
+	
+	autoSelector()
+		
+};
+
+// takes an array as its parameter, as well as the name of a select
+function fillUpSelectBox(formName,selectName,selectValues)
+{
+for (var i=0;i<selectValues.length;i++)
+	{
+		plopText = selectValues[i];
+		plopValue = selectValues[i];
+		document[formName][selectName].options[i+1]=new Option(plopText,plopValue);
+	}
+
+}
+
+function autoSelector()
+{
+	// automatically choose a choice if there is only one
+	if(document[formName][firstLevelSelectName].options.length==2)
+	{
+		document[formName][firstLevelSelectName].selectedIndex = 1;
+//		changeSecondSelect(formName,firstLevelSelectName,secondLevelSelectName);
+
+	}
+	if(document[formName][secondLevelSelectName].options.length==2)
+	{
+		document[formName][secondLevelSelectName].selectedIndex = 1;
+//		changeSecondSelect(formName,secondLevelSelectName,thirdLevelSelectName);
+	}
+
+	if(document[formName][thirdLevelSelectName].options.length==2)
+		document[formName][thirdLevelSelectName].selectedIndex = 1;
+}
+
+function clearSelect(formName,whichOnes) {
+	var plopValues = new Array ('','','');
+	var plopWords  = new Array ('','','');
+	for (var i=0;i<plopWords.length;i++)
+		{
+			var optionAtor=new Option(plopWords[i],plopValues[i])
+			document[formName][whichOnes].options[i+1]=optionAtor;
+		}
+};
+
+window.onload = initializeSelects
+//-->
+</script>

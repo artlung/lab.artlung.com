@@ -1,0 +1,20 @@
+<script type="text/javascript" language="JavaScript">
+<!--
+//--------------------------------/
+// CODE BY JOE CRAWFORD
+// http://artlung.com/
+//
+// This code is a means of using
+// image as a replacement
+// for a submit button, which
+// allows for validation to
+// take place
+//---------------------------------/
+function validate_and_submit_Form() {
+if (document.forms[0].bar.value != 'cat')
+	{ alert ('You didn\'t change dog to cat!'); }
+else
+	{ document.forms[0].submit() }
+}
+//-->
+</script>

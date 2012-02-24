@@ -1,0 +1,140 @@
+<script type="text/javascript" language="JavaScript">
+<!--
+function changeSecondSelect(formName,firstSelect,secondSelect) {
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//make the first value in the second select selected
+//	document [formName] [secondSelect].selectedIndex=0;
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// delete all the options in the second select BUT the first one
+	while(document[formName][secondSelect].options[1])
+		document [formName] [secondSelect].options[1] = null;
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// create the arrays which will hold the information
+// to populate the second select
+	var plopValues = new Array (0);
+	var plopWords  = new Array (0);
+	plopValues.length = 0;
+	plopWords.length = 0;
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// the syntax for the value selected in the first select is ugly, so we
+// put it in a temp variable
+	var firstSelectValue = document [formName] [firstSelect].options[document [formName][firstSelect].selectedIndex].value;
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// each linked select pair will need a set of if/thens.
+// if ((firstSelectValue =="#value of the first select#") && (secondSelect == '#variable name of the Second Select#')) {
+// # this array is the values keyed to the value of the first select#
+//	var plopValues = new Array ('1','2','3');
+// # this array is the human readable value of the possibilites#
+//	var plopWords  = new Array ('Blood','Wine','Pasta Sauce');
+// };
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+
+
+if ((firstSelectValue =="1") && (secondSelect == 'bar')) {
+	var plopValues = new Array ('1','2','3');
+	var plopWords  = new Array ('kickball','rose','heart');
+};
+
+if ((firstSelectValue =="2") && (secondSelect == 'bar')) {
+	var plopValues = new Array ('4','5','6');
+	var plopWords  = new Array ('grass','leaves','mold');
+};
+
+if ((firstSelectValue =="3") && (secondSelect == 'bar')) {
+	var plopValues = new Array ('7','8','9');
+	var plopWords  = new Array ('the sky','the ocean','smurfs');
+};
+
+
+
+
+
+
+
+
+
+if ((firstSelectValue =="1") && (secondSelect == 'splorch')) {
+	var plopValues = new Array ('1','2','3');
+	var plopWords  = new Array ('kicking','throwing','bouncing');
+};
+
+if ((firstSelectValue =="2") && (secondSelect == 'splorch')) {
+	var plopValues = new Array ('1','2','3');
+	var plopWords  = new Array ('smelling','appreciating','trimming');
+};
+
+if ((firstSelectValue =="3") && (secondSelect == 'splorch')) {
+	var plopValues = new Array ('1','2');
+	var plopWords  = new Array ('beating','pumping');
+};
+
+if ((firstSelectValue =="4") && (secondSelect == 'splorch')) {
+	var plopValues = new Array ('1','2','3');
+	var plopWords  = new Array ('smelling','mowing','weedwhacking');
+};
+
+if ((firstSelectValue =="5") && (secondSelect == 'splorch')) {
+	var plopValues = new Array ('1','2');
+	var plopWords  = new Array ('raking','tracing');
+};
+
+if ((firstSelectValue =="6") && (secondSelect == 'splorch')) {
+	var plopValues = new Array ('1');
+	var plopWords  = new Array ('disinfecting');
+};
+if ((firstSelectValue =="7") && (secondSelect == 'splorch')) {
+	var plopValues = new Array ('1','2');
+	var plopWords  = new Array ('falling','crying');
+};
+
+if ((firstSelectValue =="8") && (secondSelect == 'splorch')) {
+	var plopValues = new Array ('1','2','3');
+	var plopWords  = new Array ('rising','blue','salty');
+};
+
+if ((firstSelectValue =="9") && (secondSelect == 'splorch')) {
+	var plopValues = new Array ('1','2','3');
+	var plopWords  = new Array ('blue','papa','lady');
+};
+
+
+
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// if we didn't get a real value, then we show an error message
+// in the second select
+if (firstSelectValue == "")
+	{	var plopValues = new Array ('','','');
+		var plopWords  = new Array (' * Please','   make a','   choice.'); };
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// now the array that was set cascades into the second select
+for (var i=0;i<plopWords.length;i++)
+	{	var optionAtor=new Option(plopWords[i],plopValues[i])
+		document[formName][secondSelect].options[i+1]=optionAtor;
+	}
+};
+
+function clearSelect(formName,whichOnes) {
+	var plopValues = new Array ('','','');
+	var plopWords  = new Array ('','','');
+	for (var i=0;i<plopWords.length;i++)
+		{
+			var optionAtor=new Option(plopWords[i],plopValues[i])
+			document[formName][whichOnes].options[i+1]=optionAtor;
+		}
+};
+//-->
+</script>

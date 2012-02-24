@@ -1,0 +1,7 @@
+<script language="JavaScript" type="text/javascript">
+<!--
+function updateVote(the_vote_chosen) {
+	document.theFormName.Vote.value = the_vote_chosen;
+}
+//-->
+</script>

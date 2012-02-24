@@ -1,0 +1,16 @@
+<style type="text/css">
+<!--
+#idtest1   { background-image: url(./windows_os_small.gif); }
+.bgclass1  { background-image: url(./amiga_os_small.gif); }
+.bgclass1  { background-image: url(./amiga_os_small.gif); }
+.bgclass2  { background-image: url(./apple_logo_small.gif); }
+.bgclass3  { background-image: url(./be_os_small.gif); }
+.bgclass4  { background-image: url(./dos_small.gif); }
+.bgclass5  { background-image: url(./freebsd_os_small.gif); }
+.bgclass6  { background-image: url(./linux_os_small.gif); }
+.bgclass7  { background-image: url(./mac_os_small.gif); }
+.bgclass8  { background-image: url(./next_os_small.gif); }
+.bgclass9  { background-image: url(./sun_os_small.gif); }
+.bgclass10 { background-image: url(./windows_os_small.gif); }
+//-->
+</style>

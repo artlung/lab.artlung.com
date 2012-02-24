@@ -1,0 +1,10 @@
+<script language="JavaScript" type="text/javascript">
+<!--
+function selSELECT(which) {
+/*
+   Script by Joe Crawford http://www.artlung.com/
+*/
+document.forms[0].mySelectBox.selectedIndex = which;
+}
+//-->
+</script>

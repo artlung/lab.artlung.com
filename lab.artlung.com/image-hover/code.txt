@@ -1,0 +1,7 @@
+<style type="text/css">
+<!--
+a:hover img{
+ left: 1px; position: relative; text-decoration: none; top: 1px
+}
+//-->
+</style>

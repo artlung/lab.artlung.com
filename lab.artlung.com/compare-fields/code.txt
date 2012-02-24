@@ -1,0 +1,17 @@
+<script type="text/javascript" language="JavaScript">
+<!--
+//--------------------------------
+// This code compares two fields in a form and submit it
+// if they're the same, or not if they're different.
+//--------------------------------
+function checkEmail(theForm) {
+	if (theForm.EMAIL_1.value != theForm.EMAIL_2.value)
+	{
+		alert('Those emails don\'t match!');
+		return false;
+	} else {
+		return true;
+	}
+}
+//-->
+</script> 

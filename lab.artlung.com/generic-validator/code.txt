@@ -1,0 +1,18 @@
+<script language="JavaScript" type="text/javascript">
+<!--
+/* generic validator */
+function genericValidator() {
+  var err = "";
+  for(i=0;i<arguments.length;i++) {
+	if(arguments[i]=="")
+	{
+	   err = "Please be sure to fill out all the fields of"
+	   err += " the form.\n\nThank you.";
+	}
+  }
+
+  if (err != "")
+  {  alert(err); return false; } else { return true; }
+}
+//-->
+</script>

@@ -1,0 +1,28 @@
+#wrapper
+#header
+h1
+form
+input
+#buttonA
+#buttonB
+#buttonC
+#buttonD
+#buttonE
+#header form
+#pagebody
+#pagebody h2
+a[href^='http://']
+a[href$='.pdf']
+h2
+img
+#pagebody img
+#pagebody p
+#pagebody p img
+p
+span
+span.date
+#footer
+#footer p
+#footer a
+.link
+.pdf

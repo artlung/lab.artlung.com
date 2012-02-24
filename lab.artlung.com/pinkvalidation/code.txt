@@ -1,0 +1,15 @@
+<script language="JavaScript" type="text/javascript">
+<!--
+function checkPink(obj) {
+	if (obj.value=='') {
+		if ((document.all)||(document.getElementById)) {
+			obj.style.backgroundColor = '#FF99CC';
+		}
+	} else {
+		if ((document.all)||(document.getElementById)) {
+			obj.style.backgroundColor = '#FFFFFF';
+		}
+	}
+}
+//-->
+</script>
