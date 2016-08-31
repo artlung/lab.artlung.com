@@ -1,7 +1,0 @@
-SELECT count( * ) AS MyDomainCount
-       , substring( user_email, LOCATE( '@', user_email ) ) AS MyDomain
-FROM   `tp_users`
-GROUP BY substring( user_email, LOCATE( '@', user_email ) );
-
-Excel formula:
-=MID(A1,(FIND("@",A1)+1),200)

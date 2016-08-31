@@ -1,5 +1,5 @@
-<!-- hi! I'm joe. welcome to the source code of this silly thing -->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- hi! I'm joe. welcome to the source code of this silly thing -->
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
@@ -86,14 +86,14 @@ $(document).ready(function(){
 		$(this).text(opposite);
 		return false;
 	}).toggle(function(){
-				$(this).parent('div').css({opacity: 0.7});
+		$(this).parent('div').css({opacity: 0.7});
 	}, function(){
 		$(this).parent('div').css({opacity: 1.0});
 	});
 	$('div#save a.tweet').bind('click', function(){
-		var tweet = $.trim($('td').text()) + '. http://sn.im/r.cell';
+		var tweet = $.trim($('td').text());
 		tweet = tweet.substr(0,1).toUpperCase() + tweet.substr(1);
-		var tweetUrl = 'http://twitter.com/home/?status=' + encodeURIComponent(tweet);
+		var tweetUrl = 'https://twitter.com/share?text=' + encodeURIComponent(tweet) + '.' + '&url=' + 'http://lab.artlung.com/random-cells/';
 		window.open(tweetUrl);
 		return false;
 	});
@@ -105,7 +105,10 @@ $(document).ready(function(){
 </script>
 <style type="text/css">
 body { margin: 0; font-size: x-small; font-family: sans-serif;}
-td { text-align: center;}
+td { text-align: center;
+-webkit-touch-callout:none;
+-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;
+}
 #save {
 	background-color: #ccc;
 	position: absolute;

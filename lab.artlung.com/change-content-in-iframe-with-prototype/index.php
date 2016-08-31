@@ -40,6 +40,31 @@ Event.observe(window, 'load', function(){
 
 <p>This is the JavaScript code that is loaded on this page:</p>
 
-<pre id="code"></pre>
+<div>
+<pre class="code">// This is a shortcut handler for elements inside an
+// iframe with the id "iframeID":
+var $IFRAME = function (id){
+    return $('iframeID').contentWindow.document.getElementById(id);
+}
+// Prototype onload handler:
+Event.observe(window, 'load', function(){
+	// style the paragraph
+	Element.setStyle($IFRAME('p1'), {
+		border:'1px solid #c00',
+		backgroundColor:'#ccc'
+	});
+
+	// add some content
+	Element.insert($IFRAME('p1'), {after:'And this is text added with Prototype from the enclosing page.' });
+
+	// (this is what loads the javascript on this page for display)
+	var sourceCode = $$('script')[1];
+	$('code').innerHTML = sourceCode.innerHTML;
+});
+</pre>
+</div>
+
+
+
 
 <?php include_once("../inc.footer.php"); ?></body>

@@ -7,7 +7,7 @@
 
 <h1>50 U.S. States Dropdown Box HTML Code Snippets</h1>
 
-It's just what it says, a code snippet for an html <select> box. It includes the 50 States and Washington D.C. too.
+It's just what it says, a code snippet for an html <code>&lt;select&gt;</code> box. It includes the 50 States and Washington D.C. too.
 
 <form action="./" method="GET">
 

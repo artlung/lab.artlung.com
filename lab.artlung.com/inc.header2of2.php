@@ -6,40 +6,30 @@
 	}
 ?>
 </head>
-<body>
+<body id="<?php print md5($_SERVER['SCRIPT_NAME'])?>">
+<?php
 
 
+?>
 <div id="everything">
-
 <div id="header">
-<a href="/">lab.artlung.com</a>
-
-<a href="http://artlung.com/feedback/">report a bug</a>
-
-<a href="/tip/">Support via PayPal</a>
-<a href="http://s1.amazon.com/exec/varzea/pay/T679KZN5326F">Support by Amazon</a>
-
-
-
+<a href="/">ARTLUNG LAB</a>
+<span>Experimenting since 1996</span>
+<a href="https://twitter.com/artlung" class="twitter"></a>
 </div>
 
-<div class="googleAd">
-
-<script type="text/javascript"><!--
-google_ad_client = "pub-1670413378763429";
-google_ad_width = 728;
-google_ad_height = 15;
-google_ad_format = "728x15_0ads_al_s";
-google_ad_channel ="";
-google_color_border = "EEEEEE";
-google_color_bg = "FFFFFF";
-google_color_link = "0000FF";
-google_color_url = "0000FF";
-google_color_text = "666666";
-//--></script>
-<script type="text/javascript"
-  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+<?php /*
+<div class="advertisement">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- labartlungcom-20160830 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1670413378763429"
+     data-ad-slot="9590001571"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-</div>
-
+</div><!--.advertisement-->
+*/ ?>
 <div id="content">

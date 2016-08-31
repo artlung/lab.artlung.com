@@ -3,10 +3,8 @@
 Stupid Growing CSS Tricks
 <?php include_once("../inc.header2of2.php") ?>
 
-<style type="text/css">
-<!--
-span { font-size: 120%; }
-//-->
+<style>
+#content span { font-size: 120%; }
 </style> 
 
 <p style="text-align: right">created march 2001</p>

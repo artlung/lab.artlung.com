@@ -1,23 +1,16 @@
 <?php include_once("../inc.functions.php"); ?>
 <?php include_once("../inc.header1of2.php"); ?>
-
-
-
-	
-
-<script language="JavaScript" type="text/javascript">
-<!--
-function outboundLink() {
-	return confirm("You are now leaving this web site!\nDo you want to continue?");
-}
-//-->
-</script>
-		Outbound Link Confirmation
-	
-
+Outbound Link Confirmation
 <?php include_once("../inc.header2of2.php"); ?>
 
-<p align=right>Created 1 January 2002</p>
+<script type="text/javascript">
+function outboundLink() {
+  return confirm("You are now leaving this web site!\nDo you want to continue?");
+}
+</script>
+
+
+<p align=right>Created 1 January 2002, Updated 22 April 2013</p>
 <h1>Outbound Link Confirmation</h1>
 
 <p>I happen to think that limiting users travels on a website is pretty rude, but there are times

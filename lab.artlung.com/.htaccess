@@ -1,4 +1,4 @@
-php_value allow_url_fopen 1
+#php_value allow_url_fopen 1
 
 Redirect /feedback/ http://artlung.com/feedback/
 Redirect /lab/ http://lab.artlung.com/
@@ -35,3 +35,8 @@ Redirect permanent /validate_checkbox                  http://lab.artlung.com/va
 Redirect permanent /validate_image                     http://lab.artlung.com/validate-image
 Redirect permanent /windows_export_file_list           http://lab.artlung.com/windows-export-file-list
 Redirect permanent /ws_ftp_password_decoder            http://lab.artlung.com/ws-ftp-password-decoder
+
+RedirectMatch ^/rosetta-first/$ http://lab.artlung.com/rosetta/
+RedirectMatch ^/rosetta-git/$ http://lab.artlung.com/rosetta/
+RedirectMatch ^/rosetta-ajax/$ http://lab.artlung.com/rosetta/
+

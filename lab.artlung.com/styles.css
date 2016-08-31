@@ -1,158 +1,49 @@
-body
-{
-	margin: 0;
-	padding: 0;
-	font-family: sans-serif;
-	background-color: #eee;
-}
+div#content pre.src { padding: 10px; color: #333; background-color: #9fc; overflow: auto; border: 2px solid #6c9; }
 
-div#everything { }
+div#header a, div#footer a, div#header span, div#footer span { background-color: #666; text-decoration: none; padding: 20px; text-transform: uppercase; font-weight: bold; text-decoration: none; display: inline-block; border-bottom: none; height: 3.5em; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; line-height: 1; transition: all 0.1s ease; }
 
-div#header
-{
-	border-color: black;
-	border-width: 0 0 3px 0;
-	border-style: double;
-	padding: 10px;
-}
+div#content pre { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; padding: 10px; color: #000; background-color: #cfc; box-shadow: 1em 1em 10em #9f9 inset; border: 1px solid darkgreen; overflow: auto; line-height: 1.1; }
+div#content pre.src b { color: black; background-color: #cfc; }
+div#content pre b { color: black; background-color: #cfc; }
 
-div#header a
-{
-	font-weight: bold;
-	text-decoration: none;
-}
+div#header a:link, div#footer a:link { color: #ccc; }
+div#header a:active, div#footer a:active { color: #f00; }
+div#header a:visited, div#footer a:visited { color: #ccc; }
+div#header a:hover, div#footer a:hover { color: #fff; border-bottom: 0.5em solid black; }
 
-div#header a:hover { color: #00c; }
+html { height: 100%; }
 
-div#content
-{
-	background-color: #fff;
-	min-height: 300px;
-	padding: 30px;
-}
+body { margin: 0; padding: 0; height: 100%; font-family: roboto, helvetica, "helvetica neue", sans-serif; background-color: #eee; }
+body#e251273eb74a8ee3f661a7af00915af1 #content { line-height: 1.5; }
+body#e251273eb74a8ee3f661a7af00915af1 #content ul { list-style-type: none; }
 
+div#everything { height: 102%; }
+div#header { background-color: #666; color: #fff; }
+div#header a.twitter { background-image: url(http://www.gravatar.com/avatar/5d3c808b7f3776de188ecaf412aebf4b?s=96&d=identicon&r=PG); height: 3.5em; width: 3.5em; display: block; float: right; background-size: cover; }
+div#content { background-color: #fff; min-height: 60%; padding: 0.5em 2em; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 div#content h1 { color: #666; }
 div#content h2 { color: #999; }
 div#content p { color: #333; }
 div#content a:hover { color: #00c; }
+div.advertisement { background-color: #666; height: 90px; }
+div#footer { background-color: #666; color: #fff; }
+div#footer a.noborder { border: none; background-color: transparent; }
+div#siteSearch { background-color: #666; border: 0.5em solid #666; }
+div.fixed ol { font-family: courier, "courier new", fixed-width; }
+div.fixed ol li { font-family: courier, "courier new", fixed-width; }
 
-div#content pre
-, pre.src
-{
-	padding: 10px;
-	color: #333;
-	background-color: #9FC;
-	overflow: auto;
-	width: 92%;
-	border: 2px solid #6c9;
-}
+.html { color: #333; background-color: #cfc; }
 
-div#content pre
-, pre.src b
-{
-	color: #000;
-	background-color: #CFC;
-}
+.php { color: black; background-color: #6f6; font-weight: bold; }
 
-blockquote.src
-{
-	background-color: #ccc;
-	padding: 10px;
-}
-
-div.googleAd
-{
-	border-top: 1px dotted #393;
-	border-bottom: 1px dotted #393;
-	background-color: #CF9;
-	text-align: center;
-}
-
-div#footer
-{
-	background-color: #EEE;
-	border-color: black;
-	border-width: 3px 0 0 0;
-	border-style: double;
-	padding: 10px;
-	text-align: center;
-}
-
-div#header a
-, div#footer a
-{
-	padding: 4px;
-	background-color: #cf9;
-	text-decoration: none;
-	border: 2px groove #cf9;
-}
-
-div#header a:hover
-, div#footer a:hover
-{
-	padding: 4px;
-	background-color: #fff;
-	text-decoration: none;
-	border: 2px groove #cf9;
-}
-
-div#footer a.noborder
-{
-	border: none;
-	background-color: transparent;
-}
-
-div#siteSearch
-{
-	background-color: #fff;
-	text-align: center;
-}
-
-.html
-{
-	color: #333;
-	background-color: #CFC;
-}
-
-.php
-{
-	color: #000;
-	background-color: #6F6;
-	font-weight: bold;
-}
-
-.comment
-{
-	color: #000;
-	background-color: #FF0;
-}
+.comment { color: black; background-color: #ff0; }
 
 .fourHundredWide { width: 400px; }
-div.fixed ol li, div.fixed ol { font-family: courier, "courier new", fixed-width; }
+
 dt { font-weight: bold; }
 
-.spotlight
-{
-	border-top: 1px dotted #C03;
-	border-bottom: 1px dotted #C03;
-	background-color: #FCC;
-	font-size: large;
-}
+.spotlight { border-top: 1px dotted #c03; border-bottom: 1px dotted #c03; background-color: #fcc; font-size: large; }
 
-pre
-{
-	padding: 10px;
-	color: #333;
-	background-color: #9FC;
-}
+#commentsArea { margin: 0; background: #666; padding: 2.5em; }
 
-pre b
-{
-	color: #000;
-	background-color: #CFC;
-}
-
-#commentsArea {
-	
-margin: 20px;	
-}
+blockquote.src { background-color: #ccc; padding: 10px; }

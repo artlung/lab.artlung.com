@@ -1,7 +1,7 @@
-<?php include_once("inc.functions.php"); ?>
-<?php include_once("inc.header1of2.php"); ?>
+<?php include_once("../inc.functions.php"); ?>
+<?php include_once("../inc.header1of2.php"); ?>
 Several Approaaches to Do Image Borders of Different Colors: 1999
-<?php include_once("inc.header2of2.php"); ?>
+<?php include_once("../inc.header2of2.php"); ?>
 <body bgcolor="darkgray" text="#000000" link="#FF0000" vlink="#800000" alink="#FF00FF">
 <?php include_once("../inc.header2of2.php"); ?>
 <p align="right">Created: August 12, 1999</p>

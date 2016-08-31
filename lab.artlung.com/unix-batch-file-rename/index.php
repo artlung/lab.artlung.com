@@ -145,6 +145,75 @@ Hope you find this helpful.
 <p>Thanks Kurt! Here's a link for <a href="http://www.gnu.org/software/coreutils/manual/html_chapter/coreutils_18.html#SEC110">basename</a> from <a href="http://www.gnu.org/">gnu.org</a>.</p>
 
 
+<hr />
+
+From "Anonymouse" on June 3, 2005:
+
+<blockquote>
+
+<pre>
+[itoph:Coda] toph% more t.sh
+for i in * ; do
+echo mv \"$i\" \"$i.mp3\" | sh
+done
+</pre>
+
+
+<p>
+It looks a bit weird.  Why wouldn't I just do this:
+</p>
+
+<pre>
+[itoph:Coda] toph% more t.sh
+for i in * ; do
+mv \"$i\" \"$i.mp3\"
+done
+</pre>
+
+<p>
+It's to do with how the shell does its processing before it passes the args to the command.  In the first example, the shell is parses the occurances of <code>\"</code> before giving them to <code>echo</code>, which gives this (which is actually the easy way to do this):
+</p>
+
+<pre>
+mv "$i" "$i.mp3"
+</pre>
+
+which then gets parsed again by the shell for the | sh to finally pass the command these args (where <code>&lt;filename&gt;</code> is the expansion of <code>$i</code>):
+
+
+<pre>
+&lt;filename&gt; &lt;filename&gt;.mp3
+</pre>
+
+
+
+In the second case, the command gets parsed just once by the shell, which passes these args to the command:
+
+
+<pre>
+"&lt;filename&gt;" "&lt;filename&gt;.mp3"
+</pre>
+
+
+<p>
+The command does not discard the quotes - it treats them as part of the filename, and therefore fails.
+<br />
+<br />
+It's easily overlooked, but once you understand how the shell is parsing things before they get to the command (ie, it parses <code>*</code> into a list of files in the current directory), a lot of things will fall into place.
+</p>
+</blockquote>
+
+<hr />
+
+<a href="http://www.tomkelshaw.com">Tom Kelshaw</a> wrote in April 6, 2009:
+
+<blockquote>
+I came across it via Google search for batch renaming files. My requirement was actually to remove garbage/octal chars that had appeared via bad Input file text. Your command suggestions were excellent, but didn't answer my question, whereas after about 4 more hours, this did: <a href="http://lists.xiph.org/pipermail/vorbis/2007-August/026974.html">http://lists.xiph.org/pipermail/vorbis/2007-August/026974.html</a> Potentially you could add a P.S linking to this listserv post about how to remove garbage chars from filenames? Thanks for all your help and a great site,
+</blockquote>
+
+
+
+
 <?php include_once("../inc.footer.php"); ?>
 
 

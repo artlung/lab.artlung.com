@@ -3,6 +3,8 @@
 Make a Unique ID in PHP
 <?php include_once("../inc.header2of2.php"); ?>
 
+<p><small>From December 2005</small></p>
+
 <h1>Make a Unique ID in PHP</h1>
 
 <p>This may be useless. It's a snippet of code.</p>

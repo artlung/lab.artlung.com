@@ -21,5 +21,32 @@ newMsg.Send
 set newMsg=Nothing
 </b></pre>
 
+<p>I got a comment, before I had comments, in April 2005, from a visitor named Rich:</p>
+
+<blockquote><i>
+
+You say that you don't remember why you keep that script
+
+around.  It looks to be an Access Function using the
+
+intrinsic DLookup (Domain Lookup).  I don't think that you
+
+can use this "as-is" on a site.  But rather within an
+
+Access File, or at the minimum a reference to the Access
+
+Library.
+
+
+<br /><br />
+Looks that way to me anyways.
+
+<br /><br />
+
+
+Again, Great site!
+
+</i></blockquote>
+
 
 <?php include_once("../inc.footer.php"); ?>

@@ -37,7 +37,10 @@ function handleTxt($filename) {
 $out = array();
 foreach ($items as $filename) {
 
-	$extension = strtolower(array_pop(explode('.', $filename)));
+
+	$extension = explode('.', $filename);
+	$extension = strtolower(array_pop($extension));
+	$extension = strtolower($extension);
 	switch ($extension):
 		case 'png':
 			$out[] = handlePng($filename);
