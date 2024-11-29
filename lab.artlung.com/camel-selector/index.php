@@ -1,6 +1,9 @@
+<?php include_once("../inc.header1of2.php"); ?>
+<title>camelCase &lt;-&gt; selector-case in JavaScript w/o Regex :: ArtLung.com</title>
+<?php include_once("../inc.header2of2.php"); ?>
 
 
-	
+
 <style type="text/css">
 <!--
 pre { color: #333; background-color: #9FC}
@@ -15,7 +18,7 @@ pre b { color: #000; background-color: #CFC;}
  an alternative way to convert style properties
  between selector case and camel case.
  because joe crawford is a bit nuts.
- http://artlung.com/
+ https://artlung.com/
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 */
 function noRegexToCamel(str) { // converts to camelCase
@@ -36,9 +39,6 @@ return outstr;
 }
 //-->
 </script>
-		camelCase &lt;-&gt; selector-case in JavaScript w/o Regex :: ArtLung.com
-	
-<body bgcolor="#FFFFFF">
 <p align="right">Created 03/2002</p>
 <h1>camelCase &lt;-&gt; selector-case in JavaScript w/o Regex</h1>
 

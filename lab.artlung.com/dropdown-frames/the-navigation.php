@@ -1,5 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
-			"http://www.w3.org/TR/REC-html40/loose.dtd">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html>
 <head>
 	<title> This is a blank navigation Document. </title> 
@@ -15,7 +14,7 @@
 	<option value="http://www.google.com/">GOOGLE</option>
 	<option value="http://www.altavista.com/">ALTAVISTA</option>
 	<option value="http://www.amazon.com/">AMAZON</option>
-	<option value="http://artlung.com/">ARTLUNG</option>
+	<option value="https://artlung.com/">ARTLUNG</option>
 </select>
 </form>
 	</td></tr>

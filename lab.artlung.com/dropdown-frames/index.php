@@ -1,5 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Frameset//EN"
-			"http://www.w3.org/TR/REC-html40/frameset.dtd">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Frameset//EN">
 <head>
 	<title>JavaScript Anti-Cache Dropdown Navigtion</title> 
 </head>

@@ -1,0 +1,4 @@
+# Allow All
+User-agent: *
+Disallow:
+# End

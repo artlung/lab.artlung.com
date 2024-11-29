@@ -87,7 +87,7 @@ Any ideas?
 <p>Reader Michael Dinsmore adds:</p>
 
 <blockquote>
-I found your page "http://artlung.com/lab/other/unix-batch-file-rename/" when I searched on "batch rename";  found it useful.
+I found your page "https://artlung.com/lab/other/unix-batch-file-rename/" when I searched on "batch rename";  found it useful.
 <br><br>
 Just as I was getting the hang of it, and looking to make it a tidy
 AppleScript, I discovered that Apple already provided many of those

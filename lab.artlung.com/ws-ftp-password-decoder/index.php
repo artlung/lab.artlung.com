@@ -33,4 +33,25 @@ PWD=V1DF32C1C88985F24FE8A3D03783C07E2A1667BA9AD77A96E
 
 </form>
 
+<hr />
+
+<h2>Update 2015 from Tomasz:</h2>
+
+<blockquote>
+Hey, there!
+<br />
+<br />
+
+I found your WS_FTP old hash decoder, and some people were complaining that it doesn't decode the new WS_FTP hashes, so I thought I'd give you a hint in case you don't know the solution already, and feel like updating it some time in the future.
+<br />
+<br />
+Check out this code - I implemented everything that's needed to decode WS_FTP version &gt;=12 hashes here.<br />
+<a href="https://github.com/Ciastex/UniDec/blob/master/UniDec.WSFTP12.Codec/Codec.cs">https://github.com/Ciastex/UniDec/blob/master/UniDec.WSFTP12.Codec/Codec.cs</a>
+<br />
+<br />
+I hope it'll help you a bit.
+</blockquote>
+
+
+
 <?php include_once("../inc.footer.php"); ?>

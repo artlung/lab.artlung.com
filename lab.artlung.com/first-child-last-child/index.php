@@ -1,3 +1,9 @@
+<?php include_once("../inc.header1of2.php") ?>
+CSS how to use :first-child and :last-child
+<?php include_once("../inc.header2of2.php") ?>
+
+
+<h1>CSS how to use :first-child and :last-child</h1>
 <?php
 
 $code = 'code.html';
@@ -17,4 +23,6 @@ $language = 'html4';
 <pre><?php
 echo highlight_string(file_get_contents($code));
 ?></pre>
+
+<?php include_once("../inc.footer.php") ?>
 

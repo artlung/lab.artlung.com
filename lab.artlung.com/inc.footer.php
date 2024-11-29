@@ -9,62 +9,46 @@
 ?>
 </div>
 
-<div class="advertisement">
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- labartlungcom-20160830 -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1670413378763429"
-     data-ad-slot="9590001571"
-     data-ad-format="auto"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-</div>
+<?php
+$protocol = !empty($_SERVER['HTTPS']) ? 'https' : 'http';
 
+// simply render canonical base on the current http host ( multiple host ) + requests
+$canonical = $protocol . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+
+$is_main_page = $canonical === 'https://lab.artlung.com/';
+
+if (!$is_main_page):
+?>
 <div id="commentsArea">
-	<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/lab-artlung-com/embed.js"></script><noscript><a href="http://disqus.com/forums/lab-artlung-com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
-</div>
-<div id="footer">
-	<span>So then...</span>
-	<a href="/tip/">Leave me a PayPal Tip</a> 
-	<a href="http://s1.amazon.com/exec/varzea/pay/T679KZN5326F">or Amazon Tip</a>
-	<span>&copy; 1996-<?php print(date('Y')); ?></span>
-	<a href="http://artlung.com/">Joe Crawford</a>
-</div><!--#footer-->
-
-
-<div id="siteSearch">
+<div id="disqus_thread"></div>
 <script>
-  (function() {
-    var cx = '003140236047215464488:eew2rcyqaug';
-    var gcse = document.createElement('script');
-    gcse.type = 'text/javascript';
-    gcse.async = true;
-    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(gcse, s);
-  })();
-</script>
-<gcse:search></gcse:search>
-</div><!--#siteSearch-->
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var PAGE_URL = json_encode($canonical);
+var PAGE_IDENTIFIER = PAGE_URL;
+var disqus_config = function () {
 
-
-</div>
-
-<script type="text/javascript">
-//<![CDATA[
-(function() {
-	var links = document.getElementsByTagName('a');
-	var query = '?';
-	for(var i = 0; i < links.length; i++) {
-	if(links[i].href.indexOf('#disqus_thread') >= 0) {
-		query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
-	}
-	}
-	document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/lab-artlung-com/get_num_replies.js' + query + '"></' + 'script>');
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://lab-artlung-com.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
 })();
-//]]>
 </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+<?php endif; ?>
+<div id="footer">
+	<span>&copy; 1996-<?php print(date('Y')); ?></span>
+	<a href="https://artlung.com/links/">Joe Crawford</a>
+</div>
+</div>
+<script id="dsq-count-scr" src="//lab-artlung-com.disqus.com/count.js" async></script>
 </body>
 </html>

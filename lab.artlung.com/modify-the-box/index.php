@@ -5,7 +5,7 @@ Modify the Box - a DHTML Experiment
 
 <form action="./" method="get" onsubmit="return false;">
 <pre class="ourControl">
-modify the box! a dhtml experiment made by <a href="http://artlung.com/">artlung</a>
+modify the box! a dhtml experiment made by <a href="https://artlung.com/">artlung</a>
 
 &nbsp;
 <a href="javascript:ourMove(-1,-1,'ourBox')">\</a> <a href="javascript:ourMove(0,-1,'ourBox')">^</a> <a href="javascript:ourMove(1,-1,'ourBox')">/</a>

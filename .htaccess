@@ -1,0 +1,46 @@
+#php_value allow_url_fopen 1
+
+Redirect /feedback/ https://artlung.com/feedback/
+Redirect /lab/ https://lab.artlung.com/
+Redirect /scripting/ https://lab.artlung.com/
+Redirect /html/ https://lab.artlung.com/
+Redirect /css/ https://lab.artlung.com/
+Redirect /php/ https://lab.artlung.com/
+Redirect /other/ https://lab.artlung.com/
+Redirect /board https://lab.artlung.com/ArtLung-Notes/v2
+Redirect /markov https://lab.artlung.com/bloggingbot
+Redirect /BloggingBot https://lab.artlung.com/bloggingbot
+Redirect /BLOGGINGBOT https://lab.artlung.com/bloggingbot
+Redirect /bloggingBot https://lab.artlung.com/bloggingbot
+
+Redirect /tip/ https://secure.paypal.com/cgi-bin/webscr?cmd=_xclick&business=joe@artlung.com&return=&item_name=Support%20ArtLung.com%27s%20The%20Lab%20with%20a%20tip%20donation%21
+
+#Renamed direcrories:
+Redirect permanent /bug_mac_netscape_forms_update      https://lab.artlung.com/bug-mac-netscape-forms-update
+Redirect permanent /change_all_links                   https://lab.artlung.com/change-all-links
+Redirect permanent /compare_fields                     https://lab.artlung.com/compare-fields
+Redirect permanent /detection_real                     https://lab.artlung.com/detection-real
+Redirect permanent /dropdown_focus                     https://lab.artlung.com/dropdown-focus
+Redirect permanent /dropdown_frames                    https://lab.artlung.com/dropdown-frames
+Redirect permanent /dropdown_submit_form               https://lab.artlung.com/dropdown-submit-form
+Redirect permanent /echo_http_host                     https://lab.artlung.com/echo-http-host
+Redirect permanent /format_time                        https://lab.artlung.com/format-time
+Redirect permanent /frames_mouseover                   https://lab.artlung.com/frames-mouseover
+Redirect permanent /image_border                       https://lab.artlung.com/image-border
+Redirect permanent /interesting_date_layout            https://lab.artlung.com/interesting-date-layout
+Redirect permanent /mouseover_vote                     https://lab.artlung.com/mouseover-vote
+Redirect permanent /mouseover_vote100                  https://lab.artlung.com/mouseover-vote100
+Redirect permanent /multiple_select                    http://lab.artlung.com/multiple-select
+Redirect permanent /multiple_select_v2                 http://lab.artlung.com/multiple-select-v2
+Redirect permanent /reverse_string_nums                http://lab.artlung.com/reverse-string-nums
+Redirect permanent /self_refresh                       http://lab.artlung.com/self-refresh
+Redirect permanent /slideshow_img                      http://lab.artlung.com/slideshow-img
+Redirect permanent /validate_checkbox                  http://lab.artlung.com/validate-checkbox
+Redirect permanent /validate_image                     http://lab.artlung.com/validate-image
+Redirect permanent /windows_export_file_list           http://lab.artlung.com/windows-export-file-list
+Redirect permanent /ws_ftp_password_decoder            http://lab.artlung.com/ws-ftp-password-decoder
+
+RedirectMatch ^/rosetta-first/$ http://lab.artlung.com/rosetta/
+RedirectMatch ^/rosetta-git/$ http://lab.artlung.com/rosetta/
+RedirectMatch ^/rosetta-ajax/$ http://lab.artlung.com/rosetta/
+

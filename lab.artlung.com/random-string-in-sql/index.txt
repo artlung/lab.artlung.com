@@ -1,1 +1,0 @@
-UPDATE `table` SET col = MD5(RAND()) WHERE condition=TRUE;

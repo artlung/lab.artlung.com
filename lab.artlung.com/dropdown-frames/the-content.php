@@ -58,7 +58,7 @@ target="_top">JavaScript Navigation</a> Solutions.
     &lt;option value="http://www.google.com/"&gt;GOOGLE&lt;/option&gt;
     &lt;option value="http://www.altavista.com/"&gt;ALTAVISTA&lt;/option&gt;
     &lt;option value="http://www.amazon.com/"&gt;AMAZON&lt;/option&gt;
-    &lt;option value="http://artlung.com/"&gt;ARTLUNG&lt;/option&gt;
+    &lt;option value="https://artlung.com/"&gt;ARTLUNG&lt;/option&gt;
 &lt;/select&gt;
     &lt;/td&gt;&lt;/tr&gt;
 &lt;/table&gt;

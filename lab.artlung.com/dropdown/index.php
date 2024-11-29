@@ -12,11 +12,11 @@ Dropdown / Select Box Navigation with JavaScript
 <form action="../">
 <select onchange="window.open(this.options[this.selectedIndex].value,'_top')">
 	<option value="">Choose a destination...</option>
-	<option value="http://www.yahoo.com/">YAHOO</option>
+	<option value="https://www.yahoo.com/">YAHOO</option>
 	<option value="http://www.google.com/">GOOGLE</option>
 	<option value="http://www.altavista.com/">ALTAVISTA</option>
 	<option value="http://www.amazon.com/">AMAZON</option>
-	<option value="http://artlung.com/">ARTLUNG</option>
+	<option value="https://artlung.com/">ARTLUNG</option>
 </select>
 </form>
 
@@ -28,7 +28,7 @@ Dropdown / Select Box Navigation with JavaScript
     &lt;option value="http://www.google.com/"&gt;GOOGLE&lt;/option&gt;
     &lt;option value="http://www.altavista.com/"&gt;ALTAVISTA&lt;/option&gt;
     &lt;option value="http://www.amazon.com/"&gt;AMAZON&lt;/option&gt;
-    &lt;option value="http://artlung.com/"&gt;ARTLUNG&lt;/option&gt;
+    &lt;option value="https://artlung.com/"&gt;ARTLUNG&lt;/option&gt;
 &lt;/select&gt;
 &lt;/form&gt;
 </pre>
@@ -51,7 +51,7 @@ Dropdown / Select Box Navigation with JavaScript
 		<label for="navRadio03">ALTAVISTA</label><br>
 	<input type="RADIO" value="http://www.amazon.com/"    name="userChoice" id="navRadio04">
 		<label for="navRadio04">AMAZON</label><br>
-	<input type="RADIO" value="http://artlung.com/"       name="userChoice" id="navRadio05">
+	<input type="RADIO" value="https://artlung.com/"       name="userChoice" id="navRadio05">
 		<label for="navRadio05">ARTLUNG</label><br>
 <input type="BUTTON"
 	value="Go there!"
@@ -68,7 +68,7 @@ Dropdown / Select Box Navigation with JavaScript
         &lt;label for="navRadio03"&gt;ALTAVISTA&lt;/label&gt;&lt;br&gt;
     &lt;input type="RADIO" value="http://www.amazon.com/"    <b>name="userChoice"</b> id="navRadio04"&gt;
         &lt;label for="navRadio04"&gt;AMAZON&lt;/label&gt;&lt;br&gt;
-    &lt;input type="RADIO" value="http://artlung.com/"       <b>name="userChoice"</b> id="navRadio05"&gt;
+    &lt;input type="RADIO" value="https://artlung.com/"       <b>name="userChoice"</b> id="navRadio05"&gt;
         &lt;label for="navRadio05"&gt;ARTLUNG&lt;/label&gt;&lt;br&gt;
 &lt;--the onclick value below must all be on one line--&gt;
 &lt;input type="BUTTON"
@@ -100,7 +100,7 @@ trying?</blockquote>
 	<option value="http://www.google.com/">GOOGLE</option>
 	<option value="http://www.altavista.com/">ALTAVISTA</option>
 	<option value="http://www.amazon.com/">AMAZON</option>
-	<option value="http://artlung.com/">ARTLUNG</option>
+	<option value="https://artlung.com/">ARTLUNG</option>
 </select>
 <input type="button"
 	value="Open in New Window!"
@@ -114,7 +114,7 @@ trying?</blockquote>
     &lt;option value="http://www.google.com/"&gt;GOOGLE&lt;/option&gt;
     &lt;option value="http://www.altavista.com/"&gt;ALTAVISTA&lt;/option&gt;
     &lt;option value="http://www.amazon.com/"&gt;AMAZON&lt;/option&gt;
-    &lt;option value="http://artlung.com/"&gt;ARTLUNG&lt;/option&gt;
+    &lt;option value="https://artlung.com/"&gt;ARTLUNG&lt;/option&gt;
 &lt;/select&gt;
 &lt;input type="button"
     value="Open in New Window!"
@@ -218,7 +218,7 @@ head, and reading Danny Goodman.  We got nuthin'.  Any help is greatly appreciat
 	<option value="http://www.google.com/">GOOGLE</option>
 	<option value="http://www.altavista.com/">ALTAVISTA</option>
 	<option value="http://www.amazon.com/">AMAZON</option>
-	<option value="http://artlung.com/">ARTLUNG</option>
+	<option value="https://artlung.com/">ARTLUNG</option>
 </select>
 <!-- HIDDEN VARIABLE SO WE PROVIDE UNIQUE NAMES FOR THESE NEW WINDOWS -->
 <!-- THUS AVOIDING THE "WHERE'S THAT WINDOW" PHENOMENON -->
@@ -239,7 +239,7 @@ head, and reading Danny Goodman.  We got nuthin'.  Any help is greatly appreciat
     &lt;option value="http://www.google.com/"&gt;GOOGLE&lt;/option&gt;
     &lt;option value="http://www.altavista.com/"&gt;ALTAVISTA&lt;/option&gt;
     &lt;option value="http://www.amazon.com/"&gt;AMAZON&lt;/option&gt;
-    &lt;option value="http://artlung.com/"&gt;ARTLUNG&lt;/option&gt;
+    &lt;option value="https://artlung.com/"&gt;ARTLUNG&lt;/option&gt;
 &lt;/select&gt;
 &lt;!-- HIDDEN VARIABLE SO WE PROVIDE UNIQUE NAMES FOR THESE NEW WINDOWS --&gt;
 &lt;!-- THUS AVOIDING THE "WHERE'S THAT WINDOW" PHENOMENON --&gt;
@@ -278,11 +278,11 @@ See <a href="http://www.w3.org/TR/REC-html40/present/frames.html#h-16.5">http://
 	<option value="http://www.google.com/">GOOGLE</option>
 	<option value="http://www.altavista.com/">ALTAVISTA</option>
 	<option value="http://www.amazon.com/">AMAZON</option>
-	<option value="http://artlung.com/">ARTLUNG</option>
+	<option value="https://artlung.com/">ARTLUNG</option>
 </select>
 </form>
 
-<iframe src="http://joecrawford.com/" name="myIFrame" width="400" height="200">You can't see this because your browser does not support iframes.</iframe>
+<iframe src="https://joecrawford.com/" name="myIFrame" width="400" height="200">You can't see this because your browser does not support iframes.</iframe>
 
 <pre>
 &lt;select name="dest" <b>onchange="window.open(this.options[this.selectedIndex].value,'myIFrame')"</b>&gt;
@@ -291,11 +291,11 @@ See <a href="http://www.w3.org/TR/REC-html40/present/frames.html#h-16.5">http://
     &lt;option value="http://www.google.com/"&gt;GOOGLE&lt;/option&gt;
     &lt;option value="http://www.altavista.com/"&gt;ALTAVISTA&lt;/option&gt;
     &lt;option value="http://www.amazon.com/"&gt;AMAZON&lt;/option&gt;
-    &lt;option value="http://artlung.com/"&gt;ARTLUNG&lt;/option&gt;
+    &lt;option value="https://artlung.com/"&gt;ARTLUNG&lt;/option&gt;
 &lt;/select&gt;
 &lt;/form&gt;
 
-&lt;iframe src="http://joecrawford.com/" <b>name="myIFrame"</b> width="400" height="200"&gt;
+&lt;iframe src="https://joecrawford.com/" <b>name="myIFrame"</b> width="400" height="200"&gt;
     You can't see this because your browser does not support iframes.
 &lt;/iframe&gt;
 </pre>
@@ -340,7 +340,7 @@ Sure, here it is! <a href="/lab/scripting/dropdown-only-some-new-window/">Dropdo
     <option value="http://www.google.com/">GOOGLE</option>
     <option value="http://www.altavista.com/">ALTAVISTA</option>
     <option value="http://www.amazon.com/">AMAZON</option>
-    <option value="http://artlung.com/">ARTLUNG</option>
+    <option value="https://artlung.com/">ARTLUNG</option>
 </select>
 <input type="button" onclick="window.open(this.form.mySelectbox.options[this.form.mySelectbox.selectedIndex].value,'_top')" value="Go">
 </form>
@@ -353,7 +353,7 @@ Sure, here it is! <a href="/lab/scripting/dropdown-only-some-new-window/">Dropdo
     &lt;option value=&quot;http://www.google.com/&quot;&gt;GOOGLE&lt;/option&gt;
     &lt;option value=&quot;http://www.altavista.com/&quot;&gt;ALTAVISTA&lt;/option&gt;
     &lt;option value=&quot;http://www.amazon.com/&quot;&gt;AMAZON&lt;/option&gt;
-    &lt;option value=&quot;http://artlung.com/&quot;&gt;ARTLUNG&lt;/option&gt;
+    &lt;option value=&quot;https://artlung.com/&quot;&gt;ARTLUNG&lt;/option&gt;
 &lt;/select&gt;
 &lt;input type=&quot;button&quot; onclick=&quot;window.open(this.form.mySelectbox.options[this.form.mySelectbox.selectedIndex].value,&#x27;_top&#x27;)&quot; value=&quot;Go&quot;&gt;
 &lt;/form&gt;
@@ -375,9 +375,9 @@ Sure, here it is! <a href="/lab/scripting/dropdown-only-some-new-window/">Dropdo
     <option value="http://www.google.com/">GOOGLE</option>
     <option value="http://www.altavista.com/">ALTAVISTA</option>
     <option value="http://www.amazon.com/">AMAZON</option>
-    <option value="http://artlung.com/">ARTLUNG</option>
+    <option value="https://artlung.com/">ARTLUNG</option>
 </select>
-<a href="#Go" onclick="document.location.href=document.goForm.mySelectbox.options[document.goForm.mySelectbox.selectedIndex].value;"><img src="http://artlung.com/images/go.gif" value="Go" border="0" /></a>
+<a href="#Go" onclick="document.location.href=document.goForm.mySelectbox.options[document.goForm.mySelectbox.selectedIndex].value;"><img src="https://artlung.com/images/go.gif" value="Go" border="0" /></a>
 </form>
 
 <pre>
@@ -388,9 +388,9 @@ Sure, here it is! <a href="/lab/scripting/dropdown-only-some-new-window/">Dropdo
     &lt;option value=&quot;http://www.google.com/&quot;&gt;GOOGLE&lt;/option&gt;
     &lt;option value=&quot;http://www.altavista.com/&quot;&gt;ALTAVISTA&lt;/option&gt;
     &lt;option value=&quot;http://www.amazon.com/&quot;&gt;AMAZON&lt;/option&gt;
-    &lt;option value=&quot;http://artlung.com/&quot;&gt;ARTLUNG&lt;/option&gt;
+    &lt;option value=&quot;https://artlung.com/&quot;&gt;ARTLUNG&lt;/option&gt;
 &lt;/select&gt;
-&lt;a href=&quot;#Go&quot; onclick=&quot;document.location.href=document.goForm.mySelectbox.options[document.goForm.mySelectbox.selectedIndex].value;&quot;&gt;&lt;img src=&quot;http://artlung.com/images/go.gif&quot; value=&quot;Go&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;#Go&quot; onclick=&quot;document.location.href=document.goForm.mySelectbox.options[document.goForm.mySelectbox.selectedIndex].value;&quot;&gt;&lt;img src=&quot;https://artlung.com/images/go.gif&quot; value=&quot;Go&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;
 &lt;/form&gt;
 </pre>
 

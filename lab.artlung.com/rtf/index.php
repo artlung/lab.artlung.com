@@ -19,7 +19,7 @@ Enter your zip:      <input type="text" name="zip" size="20">
 <p align="right">
 	<b>NOTE:</b> I didn't do an magic here, I just modified the ideas at <a href="http://www.irt.org/">irt.org</a> on <a href="http://tech.irt.org/articles/js154/">producing RTF files with Cold Fusion</a>
 	<br>
-	<a href="http://artlung.com/feedback/">- joe</a>
+	<a href="https://artlung.com/feedback/">- joe</a>
 </p>
 <p>
 	<a href="php2rtf.tar">download the kit, in a unix .tar file</a>

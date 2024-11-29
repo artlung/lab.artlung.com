@@ -1,5 +1,8 @@
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
-<script src="jquery.masonry.min.js"></script>
+<script
+        src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 <script>
 $(function(){
 	$('#screens').masonry({
@@ -24,17 +27,21 @@ h2 {
 	padding: 4px;
 }
 ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 4px;
+    list-style-type: none;
+    margin: 0;
+    padding: 2px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1px;
+    justify-content: space-between;
 }
 li {
 	margin: 0;
-	padding: 0 0 1px 0;
+	padding: 0;
+    white-space: nowrap;
 }
-.screen ul {
-/*	display: none;*/
-}
+
 </style>
 
 <div id="screens">

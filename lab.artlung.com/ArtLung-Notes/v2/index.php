@@ -9,12 +9,10 @@
 <body>
 <div id="everything">
 <script type="text/javascript">
-	document.write(STATE.getSavedNotes());
+	//document.write(STATE.getSavedNotes());
 </script>
 <?php
-/*
 include('load.php');
-*/
 ?>
 </div>
 </body>

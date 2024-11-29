@@ -1,0 +1,11 @@
+base https://lab.artlung.com
+rect /server-side-image-map/?n=Search                0,0   83,50  "Search"
+rect /server-side-image-map/?n=About+ARCO            0,50  83,103 "About ARCO"
+rect /server-side-image-map/?n=News                  0,103 83,153 "News"
+rect /server-side-image-map/?n=Products+%26+Services 0,153 83,222 "Products & Services"
+rect /server-side-image-map/?n=Financials            0,222 83,271 "Financials"
+rect /server-side-image-map/?n=Careers               0,271 83,323 "Careers"
+rect /server-side-image-map/?n=Reports               0,323 83,377 "Reports"
+rect /server-side-image-map/?n=Operations            0,377 83,425 "Operations"
+rect /server-side-image-map/?n=Help/Email            0,425 83,473 "Help/Email"
+

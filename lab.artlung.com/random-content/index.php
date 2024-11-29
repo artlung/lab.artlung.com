@@ -17,7 +17,7 @@ $blah[] = 'David Letterman says...';
 $blah[] = 'Richard Feynman says...';
 
 // seed php random number generator
-// http://www.php.net/srand
+// https://www.php.net/srand
 srand ((float) microtime() * 10000000);
 
 // print a random $blah

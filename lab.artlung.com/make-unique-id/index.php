@@ -14,10 +14,10 @@ Make a Unique ID in PHP
 <pre><?php
 
 // Just a small sample of making a unique id in PHP
-// http://www.php.net/manual/en/function.chr.php
-// http://www.php.net/manual/en/function.rand.php
-// http://www.php.net/manual/en/function.time.php
-// http://www.php.net/manual/en/function.uniqid.php
+// https://www.php.net/manual/en/function.chr.php
+// https://www.php.net/manual/en/function.rand.php
+// https://www.php.net/manual/en/function.time.php
+// https://www.php.net/manual/en/function.uniqid.php
 
 	$prefix = 'W'; // a universal prefix prefix 
 	$my_random_id = $prefix;
@@ -32,9 +32,9 @@ Make a Unique ID in PHP
 <pre>
 &lt;?php
 // Just a small sample of making a unique id in PHP
-// <a href="http://www.php.net/manual/en/function.chr.php">http://www.php.net/manual/en/function.chr.php</a>
-// <a href="http://www.php.net/manual/en/function.rand.php">http://www.php.net/manual/en/function.rand.php</a>
-// <a href="http://www.php.net/manual/en/function.time.php">http://www.php.net/manual/en/function.time.php</a>
+// <a href="https://www.php.net/manual/en/function.chr.php">https://www.php.net/manual/en/function.chr.php</a>
+// <a href="https://www.php.net/manual/en/function.rand.php">https://www.php.net/manual/en/function.rand.php</a>
+// <a href="https://www.php.net/manual/en/function.time.php">http://www.php.net/manual/en/function.time.php</a>
 // <a href="http://www.php.net/manual/en/function.uniqid.php">http://www.php.net/manual/en/function.uniqid.php</a>
 
 <b>	$prefix = 'W'; // a universal prefix prefix 

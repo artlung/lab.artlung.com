@@ -9,31 +9,31 @@
 	<table width="110" border="0" cellpadding="0" cellspacing="0">
 		<tr>
 			<td width="110" height="20">
-				<a href="/"><img src="http://www.artlung.com/archive/2/menumouse/hometubu.GIF" width="110" height="20" border="0" name="toc6" alt="Home"></a></td>
+				<a href="/"><img src="https://www.artlung.com/archive/2/menumouse/hometubu.GIF" width="110" height="20" border="0" name="toc6" alt="Home"></a></td>
 		</tr>
 		<tr>
 			<td width="110" height="20">
-				<a href="/"><img src="http://www.artlung.com/archive/2/menumouse/newctubu.GIF" width="110" height="20" border="0" name="toc1" alt="Newcomer"></a></td>
+				<a href="/"><img src="https://www.artlung.com/archive/2/menumouse/newctubu.GIF" width="110" height="20" border="0" name="toc1" alt="Newcomer"></a></td>
 		</tr>
 		<tr>
 			<td width="110" height="20">
-				<a href="/"><img src="http://www.artlung.com/archive/2/menumouse/biogtubu.GIF" width="110" height="20" border="0" name="toc2" alt="Biography"></a></td>
+				<a href="/"><img src="https://www.artlung.com/archive/2/menumouse/biogtubu.GIF" width="110" height="20" border="0" name="toc2" alt="Biography"></a></td>
 		</tr>
 		<tr>
 			<td width="110" height="20">
-				<a href="/"><img src="http://www.artlung.com/archive/2/menumouse/favetubu.GIF" width="110" height="20" border="0" name="toc3" alt="Favorites"></a></td>
+				<a href="/"><img src="https://www.artlung.com/archive/2/menumouse/favetubu.GIF" width="110" height="20" border="0" name="toc3" alt="Favorites"></a></td>
 		</tr>
 		<tr>
 			<td width="110" height="20">
-				<a href="/"><img src="http://www.artlung.com/archive/2/menumouse/resutubu.GIF" width="110" height="20" border="0" name="toc4" alt="Resume"></a></td>
+				<a href="/"><img src="https://www.artlung.com/archive/2/menumouse/resutubu.GIF" width="110" height="20" border="0" name="toc4" alt="Resume"></a></td>
 		</tr>
 		<tr>
 			<td width="110" height="20">
-				<a href="/"><img src="http://www.artlung.com/archive/2/menumouse/porttubu.GIF" width="110" height="20" border="0" name="toc5" alt="Portfolio"></a></td>
+				<a href="/"><img src="https://www.artlung.com/archive/2/menumouse/porttubu.GIF" width="110" height="20" border="0" name="toc5" alt="Portfolio"></a></td>
 		</tr>
 		<tr>
 			<td width="110" height="20">
-				<a href="/"><img src="http://www.artlung.com/archive/2/menumouse/emaitubu.GIF" width="110" height="20" border="0" name="toc7" alt="E-mail ArtLung"></a></td>
+				<a href="/"><img src="https://www.artlung.com/archive/2/menumouse/emaitubu.GIF" width="110" height="20" border="0" name="toc7" alt="E-mail ArtLung"></a></td>
 		</tr>
 	</table>
 </div>

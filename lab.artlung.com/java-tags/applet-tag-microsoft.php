@@ -1,4 +1,4 @@
-<a href="http://www.microsoft.com/workshop/author/dhtml/reference/objects/APPLET.htm#APPLET">http://www.microsoft.com/workshop/author/dhtml/reference/objects/APPLET.htm#APPLET</a>
+<a href="https://www.microsoft.com/workshop/author/dhtml/reference/objects/APPLET.htm#APPLET">https://www.microsoft.com/workshop/author/dhtml/reference/objects/APPLET.htm#APPLET</a>
 
 APPLET Element | APPLET Object
 

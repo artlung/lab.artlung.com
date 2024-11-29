@@ -31,7 +31,7 @@ sites. With great power comes great responsibility, Kal-El.</p>
 <p><b>Source Code:</b></p>
 <pre>
 &lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
-        "http://www.w3.org/TR/1999/REC-html401-19991224/strict.dtd"&gt;
+        "https://www.w3.org/TR/1999/REC-html401-19991224/strict.dtd"&gt;
 &lt;html&gt;
 &lt;head&gt;
 	&lt;title&gt;window.open and onunload used together are evil&lt;/title&gt;

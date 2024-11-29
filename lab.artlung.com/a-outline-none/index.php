@@ -18,7 +18,7 @@ outline: none CSS property
 <p>The email link above has a style set to "outline: none" - the
 first link does not. IE5 for the Mac appears to respect the style as
 set. It prevents the -to some people- annoying "focus" outline which IE5 adds.
-On IE5/WinNT this property does not do anything. <i><a href="/scripting/the-problem-with-blur/">This is a separate issue</a></i>. Francis U. sent me a note that Mozilla 0.92 does not respect the outline:none property, sadly. If you have additional feedback about this property in your browser of choice just <a href="http://artlung.com/feedback/">let me know</a>.
+On IE5/WinNT this property does not do anything. <i><a href="/scripting/the-problem-with-blur/">This is a separate issue</a></i>. Francis U. sent me a note that Mozilla 0.92 does not respect the outline:none property, sadly. If you have additional feedback about this property in your browser of choice just <a href="https://artlung.com/feedback/">let me know</a>.
 </p>
 
 <dl>

@@ -16,9 +16,9 @@ background-color: #FFF;
 	line-height: 1px;
 	font-size: 1px;
 }
-a {	color: blue; text-decoration: none; outline: none; background-color: transparent; }
-a:link { color: blue; background-color: #FFF; }
-a:visited { color: blue; background-color: #FFF; }
+.ourControl a {	color: blue; text-decoration: none; outline: none; background-color: transparent; }
+.ourControl a:link { color: blue; background-color: #FFF; }
+.ourControl a:visited { color: blue; background-color: #FFF; }
 #ourControl { 
 	position: absolute;
 	top:0;

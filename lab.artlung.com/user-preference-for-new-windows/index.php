@@ -39,9 +39,9 @@ Rather than deciding one way or another, because for me, and for some of my user
 </blockquote>
 
 
-<p>I hope this has been helpful. <a href="http://artlung.com/feedback/">Send a comment or a suggestion</a>.</p>
+<p>I hope this has been helpful. <a href="https://artlung.com/feedback/">Send a comment or a suggestion</a>.</p>
 
-<p> - <a href="http://artlung.com/">Joe Crawford</a></p>
+<p> - <a href="https://artlung.com/">Joe Crawford</a></p>
 
 
 <?php include_once("../inc.footer.php"); ?>

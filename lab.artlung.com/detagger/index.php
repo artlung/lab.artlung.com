@@ -22,11 +22,11 @@ HTML.
 <b>&lt;?php</b>
 
 // a fun detagger script
-// lives at: <a href="http://artlung.com/lab/php/detagger/">http://artlung.com/lab/php/detagger/</a>
+// lives at: <a href="https://artlung.com/lab/php/detagger/">https://artlung.com/lab/php/detagger/</a>
 // created by Joe Crawford
 // feel free to use and modify
 // December 18 2002
-// <a href="http://artlung.com/">http://artlung.com/</a>
+// <a href="https://artlung.com/">https://artlung.com/</a>
 
 // main functions used:
 // <a href="http://www.php.net/manual/en/function.strip-tags.php">http://www.php.net/manual/en/function.strip-tags.php</a>

@@ -12,4 +12,3 @@ rsort($all);
 foreach($all as $color) {
 	echo "<div style=\"background-color: {$color}\">{$color}</div>";
 }
-?>

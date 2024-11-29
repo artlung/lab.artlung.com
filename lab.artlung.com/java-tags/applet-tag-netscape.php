@@ -1,4 +1,4 @@
-<a href="http://developer.netscape.com/docs/manuals/htmlguid/tags14.htm#1237108">http://developer.netscape.com/docs/manuals/htmlguid/tags14.htm#1237108</a>
+<a href="https://developer.netscape.com/docs/manuals/htmlguid/tags14.htm#1237108">https://developer.netscape.com/docs/manuals/htmlguid/tags14.htm#1237108</a>
 
 APPLET
 
@@ -14,7 +14,7 @@ document to discuss how to write Java applets. However, an
 excellent place to start learning about writing Java is the
 Java Tutorial at:
 
-<a href="http://java.sun.com/docs/books/tutorial/">http://java.sun.com/docs/books/tutorial/</a>
+<a href="https://java.sun.com/docs/books/tutorial/">https://java.sun.com/docs/books/tutorial/</a>
 
 After writing and compiling a Java applet, you can display
 it in a web page by using the APPLET tag. The CODE attribute

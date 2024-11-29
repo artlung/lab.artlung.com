@@ -1,4 +1,4 @@
-<a href="http://www.w3.org/TR/REC-html40/struct/objects.html#h-13.4">http://www.w3.org/TR/REC-html40/struct/objects.html#h-13.4</a>
+<a href="https://www.w3.org/TR/REC-html40/struct/objects.html#h-13.4">https://www.w3.org/TR/REC-html40/struct/objects.html#h-13.4</a>
 
 13.4 Including an applet: the APPLET element
 

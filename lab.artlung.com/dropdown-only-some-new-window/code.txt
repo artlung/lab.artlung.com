@@ -2,7 +2,7 @@
 <!--
 function parseNavigation(ob) {
 // created by joe crawford october 2002
-// http://artlung.com/lab/scripting/dropdown-only-some-new-window/
+// https://artlung.com/lab/scripting/dropdown-only-some-new-window/
 toBeBrokenDown = ob.options[ob.selectedIndex].value.split("|");
 
 targetWindow = toBeBrokenDown[0];

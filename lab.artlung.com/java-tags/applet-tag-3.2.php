@@ -1,4 +1,4 @@
-<a href="http://www.w3.org/TR/REC-html32.html#applet">http://www.w3.org/TR/REC-html32.html#applet</a>
+<a href="https://www.w3.org/TR/REC-html32.html#applet">https://www.w3.org/TR/REC-html32.html#applet</a>
 
 APPLET (Java Applets)
 

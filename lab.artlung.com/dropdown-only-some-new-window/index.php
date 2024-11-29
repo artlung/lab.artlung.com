@@ -43,7 +43,7 @@ See <a href="/lab/scripting/dropdown/">more dropdown navigation solutions</a>.
 	<option value="WSDWin|http://websandiego.org/">WEBSANDIEGO</option>
 	<option value="|http://www.altavista.com/">ALTAVISTA</option>
 	<option value="|http://www.amazon.com/">AMAZON</option>
-	<option value="ArtLungWin|http://artlung.com/">ARTLUNG</option>
+	<option value="ArtLungWin|https://artlung.com/">ARTLUNG</option>
 </select>
 </form>
 
@@ -62,7 +62,7 @@ See <a href="/lab/scripting/dropdown/">more dropdown navigation solutions</a>.
     &lt;option <b>value="WSDWin|http://websandiego.org/"</b>&gt;WEBSANDIEGO&lt;/option&gt;
     &lt;option value="<b>|</b>http://www.altavista.com/"&gt;ALTAVISTA&lt;/option&gt;
     &lt;option value="<b>|</b>http://www.amazon.com/"&gt;AMAZON&lt;/option&gt;
-    &lt;option <b>value="ArtLungWin|http://artlung.com/"</b>&gt;ARTLUNG&lt;/option&gt;
+    &lt;option <b>value="ArtLungWin|https://artlung.com/"</b>&gt;ARTLUNG&lt;/option&gt;
 &lt;/select&gt;
 &lt;/form&gt;
 </pre>

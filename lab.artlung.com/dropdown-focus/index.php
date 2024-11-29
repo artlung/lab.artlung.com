@@ -74,7 +74,7 @@ work as well).
 <form action="./" name="myForm">
 <select name="mySelectBox" size="8">
 	<option value="http://artlung.com">artlung.com</option>
-	<option value="http://artlung.com/blog/">artlung.com/blog</option>
+	<option value="https://artlung.com/blog/">artlung.com/blog</option>
 	<option value="http://lab.artlung.com">lab.artlung.com</option>
 	<option value="http://leahpeah.com/">leahpeah.com</option>
 	<option value="http://sandiegoblog.com">sandiegoblog.com</option>

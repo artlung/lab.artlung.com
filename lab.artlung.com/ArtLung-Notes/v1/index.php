@@ -1,12 +1,18 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
 <title>ArtLung Notes v1</title>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js" type="text/javascript"></script>
-<link rel="stylesheet" href="style.css" type="text/css" media="screen">
-<script type="text/javascript" src="javascript.js"></script>
-<script type="text/javascript" src="jquery.touch.js"></script>
-<script type="text/javascript">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js" type="text/javascript"></script>
+    <?php
+    $stylesheet_path = 'style.css';
+    $cachebust = filemtime($stylesheet_path);
+    $stylesheet_url = 'style.css?cachebust=' . $cachebust;
+    print '<link rel="stylesheet" href="' . $stylesheet_url . '" type="text/css" />';
+    ?>
+<script src="javascript.js"></script>
+<script src="jquery.touch.js"></script>
+<script>
 $(document).ready(function() {
 
 	$('#everything').bind('click', function(e){
@@ -31,7 +37,7 @@ $(document).ready(function() {
 	$('textarea').live('mouseleave', function(){
 		var val = jQuery.trim($(this).val());
 		STATE.content = val;
-		if (val == '') {
+		if (val === '') {
 			$(this).parent().remove();
 		} else {
 			var div  = $(this).parent();
@@ -74,10 +80,8 @@ $(document).ready(function() {
 	});
 	
 	$('.instance a').live('click', function(){
-		// alert(1);
-		// why doesn't this work?
 		var val = jQuery.trim($(this).siblings('textarea').val());
-		if (val == '') {
+		if (val === '') {
 			alert('empty');
 			$(this).parent().remove();
 		} else {
@@ -102,24 +106,22 @@ $(document).ready(function() {
 </script>
 </head>
 <body>
-	<div id="everything"></div>
+	<div id="everything">
 <?php
-if ($handle = opendir('notes/')) {
 
-    /* This is the correct way to loop over the directory. */
-    while (false !== ($file = readdir($handle))) {
-        $item = json_decode(file_get_contents('notes/' . $file), true);
-		if ($item) {
-			print "<div class=\"instance savedNote\" id=\"{$item['guid']}\" style=\"top:{$item['top']}px;left:{$item['left']}px;height:{$item['height']}px;\">";
-			print htmlentities($item['content']);
-			print "</div>\n";
-		}
+$items = scandir('notes/');
+
+foreach($items as $file) {
+    $item = json_decode(file_get_contents('notes/' . $file), true);
+    if ($item) {
+        print "<div class=\"instance savedNote\" id=\"{$item['guid']}\" style=\"top:{$item['top']}px;left:{$item['left']}px;height:{$item['height']}px;\">";
+        print htmlentities($item['content']);
+        print "</div>\n";
     }
-
-
-    closedir($handle);
 }
+
 ?>
 
+    </div>
 </body>
 </html>

@@ -1,1 +1,1 @@
-// javascript.js
+console.log('You are on lab.artlung.com');

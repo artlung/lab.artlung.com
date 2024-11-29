@@ -1,54 +1,30 @@
+<?php include_once("../inc.header1of2.php"); ?>
+20 Random Alphanumeric Passwords
+<?php include_once("../inc.header2of2.php"); ?>
+
+<h1>20 Random Alphanumeric Passwords</h1>
+
+<h2>The passwords:</h2>
+<pre>
+
 <?php
 
-//random password
-
-
-class PasswordGenerator {
-
-	public static $letters = "2346789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghjkmnopqrstuvwxyz";
-	public static $length = "8";
-	public $letters_array;
-
-	function __construct() {
-		$this->letters_array = array();
-		
-		for($a=0;$a<strlen(self::$letters);$a++) {
-			$this->letters_array[] = self::$letters[$a];			
-		}
-	}
-
-
-	function make()
-	{
-		$password = '';
-		for($i=0;$i<self::$length ;$i++)
-		{
-			srand ((float) microtime() * 10000000);
-			$password .= $this->letters_array[array_rand($this->letters_array)];			
-		}
-		return $password;
-		
-	}
-	
-	function printOne()
-	{
-		print $this->make();
-	}
-	
-	function printMany($num){
-		for($i=0;$i<$num;$i++) {
-			$this->printOne();
-			print "\n";			
-		}
-	}
-	
-
-
-}
-
-
+require 'PasswordGenerator.php';
 $PG = new PasswordGenerator();
-$PG->printMany(100);
-
-
+$PG->printMany(20);
 ?>
+</pre>
+
+<h2>The code for the class</h2>
+<pre>
+<?php
+$codeString = file_get_contents('PasswordGenerator.php');
+print htmlentities($codeString);
+?></pre>
+<h2>How to invoke the class</h2>
+<pre>
+$PG = new PasswordGenerator();
+$PG->printMany(20);
+</pre>
+
+<?php include_once("../inc.footer.php"); ?>

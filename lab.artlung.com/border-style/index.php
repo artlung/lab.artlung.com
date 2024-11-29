@@ -6,8 +6,8 @@ border-style css property experiment
 
 <?php
 
-$bs = $_GET['bs'];
-$px = $_GET['px'];
+$bs = $_GET['bs'] ?? "solid";
+$px = $_GET['px'] ?? 10;
 $borderTypes = array(
 	"none"
 	,"hidden"
@@ -20,7 +20,7 @@ $borderTypes = array(
 	,"inset"
 	,"outset"
 );
-if(!in_array($bs,$borderTypes))
+if(!in_array(strtolower($bs),$borderTypes))
 	$bs = $borderTypes[4];
 if (!is_numeric($px))
 	$px = 10;	

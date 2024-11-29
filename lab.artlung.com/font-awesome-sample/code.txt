@@ -1,0 +1,5 @@
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://use.fontawesome.com/89face2689.js"></script>
+<link rel="stylesheet" href="font-awesome-sample.css" />
+<script src="font-awesome-sample.js"></script>
+

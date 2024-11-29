@@ -188,7 +188,7 @@ function howManyChecked(whichForm,whichCheckBoxArray,myMax,myMin,whichQuestion)
 
 <pre>
 &lt;form
-	action="http://www.artlung.com/"
+	action="https://www.artlung.com/"
 	name="myform"
 	onsubmit="<b>return howManyChecked('myform','cb_industry',6,1,'Industry');</b>"&gt;
 </pre>

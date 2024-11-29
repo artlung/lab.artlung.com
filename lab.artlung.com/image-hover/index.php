@@ -8,11 +8,11 @@ Subtle Image Hover
 <h1>Subtle Image Hover</h1>
 
 <h2>Demonstration</h2>
-<a href="http://artlung.com/blog/"><img src="http://artlung.com/images/brushed_girl.jpg" width="144" height="144" alt="" border="0"></a>
+<a href="https://artlung.com/blog/"><img src="https://artlung.com/images/brushed_girl.jpg" width="144" height="144" alt="" border="0"></a>
 
-<a href="http://artlung.com/blog/"><img src="http://artlung.com/images/brushed_girl.jpg" width="144" height="144" alt="" border="0"></a>
+<a href="https://artlung.com/blog/"><img src="https://artlung.com/images/brushed_girl.jpg" width="144" height="144" alt="" border="0"></a>
 
-<a href="http://artlung.com/blog/"><img src="http://artlung.com/images/brushed_girl.jpg" width="144" height="144" alt="" border="0"></a>
+<a href="https://artlung.com/blog/"><img src="https://artlung.com/images/brushed_girl.jpg" width="144" height="144" alt="" border="0"></a>
 
 
 

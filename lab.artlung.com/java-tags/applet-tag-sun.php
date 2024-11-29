@@ -1,4 +1,4 @@
-<a href="http://java.sun.com/products/jdk/1.1/docs/guide/misc/applet.html">http://java.sun.com/products/jdk/1.1/docs/guide/misc/applet.html</a> 
+<a href="https://java.sun.com/products/jdk/1.1/docs/guide/misc/applet.html">https://java.sun.com/products/jdk/1.1/docs/guide/misc/applet.html</a>
 
 JDK Contents
 --------------------------------------------------------------------------------
@@ -18,7 +18,7 @@ the applet to 100 pixels wide and 140 pixels high.
 Here's a more complex example of an APPLET tag: 
 
 
-  &lt;applet codebase="http://java.sun.com/applets/NervousText/1.1"
+  &lt;applet codebase="https://java.sun.com/applets/NervousText/1.1"
 	code="NervousText.class" width=400 height=75&gt;
   &lt;param name="text" value="Welcome to HotJava!"&gt;
   &lt;hr&gt;
@@ -30,7 +30,7 @@ Here's a more complex example of an APPLET tag:
 
 This tells the viewer or browser to load the applet whose
 compiled code is at the URL
-http://java.sun.com/applets/NervousText/1.1/NervousText.
+https://java.sun.com/applets/NervousText/1.1/NervousText.
 class, to set the initial size of the applet to 400x75
 pixels. The viewer/browser must also set the applet's "text"
 attribute (which customizes the text this applet displays)

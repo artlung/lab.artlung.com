@@ -3,7 +3,7 @@
 Miscellaneous Web Files
 <?php include_once("../inc.header2of2.php"); ?>
 
-<p align="right">Created 19 December 2002</p>
+<p align="right">Created 19 December 2002, Updated August 31, 2016</p>
 
 <h1>Miscellaneous Web Files</h1>
 
@@ -24,8 +24,15 @@ you may have heard of, but perhaps you never quite knew what they were.</p>
 	<dt>global.asa</dt>
 		<dd>	on sites serving active server pages (ASP) this is the "default included" file. that is, in a directory containing an global.asa file, all ASP processed files will include and process this file by default. <a href="http://www.google.com/search?q=global.asa">Find more articles with  Google</a></dd>
 	<dt>cgi-bin</dt>
-		<dd>in some web hosting environments, server-side processing is limited to a certain directory, and that directory is often named "cgi-bin." CGI stands for "common gateway interface" - a reference to the earliest way that pages were made dynamic. "bin," however, is a unix term meaning "binaries" - programs that can be run. So a program in the cgi-bin directory is likely to be a small program that can be run on the web. Server processed languages such as ASP and ColdFusion and PHP are evolutionary steps up from cgi programs. <a href="http://www.google.com/search?q=cgi-bin+directory">Find more articles with  Google</a>
+		<dd>in some web hosting environments, server-side processing is limited to a certain directory, and that directory is often named "cgi-bin." CGI stands for "common gateway interface" - a reference to the earliest way that pages were made dynamic. "bin," however, is a unix term meaning "binaries" - programs that can be run. So a program in the cgi-bin directory is likely to be a small program that can be run on the web. Server processed languages such as ASP and ColdFusion and PHP are evolutionary steps up from cgi programs. <a href="http://www.google.com/search?q=cgi-bin+directory">Find more articles with  Google</a></dd>
+<dt>crossdomain.xml</dt>
+<dd>A cross-domain policy file is an XML document that grants a web client, such as Adobe Flash Player or Adobe Acrobat (though not necessarily limited to these), permission to handle data across domains. See: <a href="http://www.adobe.com/devnet/adobe-media-server/articles/cross-domain-xml-for-streaming.html">Setting a crossdomain.xml file for HTTP streaming</a></dd>
+<dt>googleXXXXXXXXXXXX.html</dt>
+<dd>Seeing a file named google (with a bunch of letters and numbers, then ".html" in it indicates that someone has verified the site using <a href="https://www.google.com/webmasters/">Google Webmaster Tools</a>. Google uses that file to verify your ownership of the site.</dd>
+
 </dl>
+
+What should I add next? <a href="http://www.htaccesstools.com/articles/htpasswd/">.htpasswd</a> maybe? 
     
                                                                                      
 <?php include_once("../inc.footer.php"); ?>                                                                                     

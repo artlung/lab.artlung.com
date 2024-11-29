@@ -5,6 +5,8 @@ My First ASP Class
 
 <p align="right">July 21, 2006. Posted August 27, 2016</p>
 
+<h1>My first VBScript Test Class</h1>
+
 <p><code class="pre">
 <?php
 print nl2br(htmlentities(file_get_contents("TestClass.asp")));

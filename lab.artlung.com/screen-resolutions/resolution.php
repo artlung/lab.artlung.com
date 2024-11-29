@@ -1,6 +1,6 @@
 <?php
 
-// http://en.wikipedia.org/wiki/Display_resolution
+// https://en.wikipedia.org/wiki/Display_resolution
 
 $display_resolutions = <<<ENDREZ
 Code	Name	Aspect ratio	Width	Height	 % of Steam users

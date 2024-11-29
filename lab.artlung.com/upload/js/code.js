@@ -1,4 +1,4 @@
-//Based on http://www.sitepoint.com/html5-ajax-file-upload/ (but heavily modified)
+//Based on https://www.sitepoint.com/html5-ajax-file-upload/ (but heavily modified)
 
 var MAX_FILE_SIZE = 33554432; //32MB
 

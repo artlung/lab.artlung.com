@@ -2,7 +2,7 @@
 <!--
 //--------------------------------/
 // CODE BY JOE CRAWFORD
-// http://artlung.com/
+// https://artlung.com/
 //
 // This code is a means of using
 // image as a replacement

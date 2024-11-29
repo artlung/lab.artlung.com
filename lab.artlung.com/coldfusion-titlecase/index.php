@@ -23,7 +23,7 @@ ColdFusion TitleCase Function
  * also, it adjusts for names like McKenna.
  * it was designed for the college database which was provided
  * in ALLCAPS.
- * questions? <a href="http://artlung.com/feedback/" target="_blank">http://artlung.com/feedback/</a>
+ * questions? <a href="https://artlung.com/feedback/" target="_blank">https://artlung.com/feedback/</a>
  * 2003/04/22
 */
 

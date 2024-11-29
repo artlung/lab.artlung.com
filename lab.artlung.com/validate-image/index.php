@@ -21,8 +21,7 @@ How do I validate a form when the form has an image as submit.
 	unfortunately. So you have to do something which will <strong>require</strong>
 	your users to have JavaScript - that is, use an image with a link with the JAVASCRIPT:
 	protocol, or a link with an ONCLICK in it.
-</font>
-</h2>
+</p>
 <table bgcolor="#CCCCCC" border="0" cellspacing="0" cellpadding="20">
 	<tr>
 		<td align="CENTER">
@@ -31,7 +30,7 @@ How do I validate a form when the form has an image as submit.
 		This form will only submit if you change <strong>dog</strong> to
 		<strong>cat</strong>
 	</p>
-	<input type="text" value="dog" name="bar">
+	<input type="text" value="dog" name="bar" />
 	<br>
 	<a href="javascript:validate_and_submit_Form();"><img
 		src="go.gif" alt="Go" width="100" height="49" border="0"></a>
