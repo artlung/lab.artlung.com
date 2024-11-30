@@ -1,0 +1,33 @@
+.goal50 {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: clamp(200px, 100%, 600px);
+}
+.goal50 > * {
+  width: 100%;
+}
+.goal50 #counter {
+  font-weight: bold;
+  text-align: center;
+  font-size: 4rem;
+  color: #666;
+  text-shadow: 0.2rem 0.2rem #eee;
+  height: 500px;
+  background: linear-gradient(to top, green calc(2% * var(--count, 0)), #ccc 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.goal50 footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.goal50 footer button {
+  font-size: large;
+  padding: 1rem;
+  width: 100%;
+}
+
+/*# sourceMappingURL=goal50.css.map */

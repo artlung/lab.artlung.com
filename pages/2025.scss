@@ -1,0 +1,345 @@
+$color_1: #333;
+$color_2: #000;
+$color_3: black;
+$color_4: #ccc;
+$color_5: #f00;
+$color_6: #fff;
+$color_7: #666;
+$color_8: #999;
+$color_9: #00c;
+$joe_icon: url(https://www.gravatar.com/avatar/5d3c808b7f3776de188ecaf412aebf4b?s=200&d=identicon&r=PG);
+$background-color_1: #9fc;
+$background-color_2: #666;
+$background-color_3: #cfc;
+$background-color_4: #eee;
+$background-color_5: #fff;
+$background-color_6: transparent;
+$background-color_7: #6f6;
+$background-color_8: #ff0;
+$background-color_9: #fcc;
+$background-color_10: #ccc;
+
+:root {
+  --sans-serif: roboto, helvetica, "helvetica neue", sans-serif;
+  --monospace: courier, "courier new", fixed-width;
+}
+
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+}
+
+header {
+
+  label {
+    height: 3.5em;
+    width: 3.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    input {
+        display: none;
+    }
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.2);
+    &:has(input[type="checkbox"]:checked) {
+      background-color: #fff;
+    }
+  }
+
+
+  background: brown;
+  color: #fff;
+  display: flex;
+  gap: 1ch;
+  a {
+    text-decoration: none;
+    padding: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline-block;
+    border-bottom: none;
+    height: 3.5em;
+    line-height: 1;
+    transition: all 0.1s ease;
+    color: #fff;
+
+    * {
+      color: #fff;
+    }
+    &:last-child {
+      margin-left: auto;
+    }
+
+    &:link, &:active, &:visited {
+      color: #fff;
+    }
+    &:hover {
+      color: #fff;
+      border-bottom: 0.5em solid blue;
+    }
+  }
+  span {
+    background-color: transparent;
+    text-decoration: none;
+    padding: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline-block;
+    border-bottom: none;
+    height: 3.5em;
+    line-height: 1;
+    transition: all 0.1s ease;
+  }
+}
+nav {
+  height: 0;
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  transition: 1s all;
+  border-bottom: 1rem solid #ccc;
+}
+
+header:has(label input[type="checkbox"]:checked) + nav {
+  height: auto;
+  overflow: auto;
+}
+
+
+article#content {
+  pre.src {
+    padding: 10px;
+    color: $color_1;
+    background-color: $background-color_1;
+    overflow: auto;
+    border: 2px solid #6c9;
+    b {
+      color: $color_3;
+      background-color: $background-color_3;
+    }
+  }
+  pre {
+    padding: 10px;
+    color: $color_2;
+    background-color: $background-color_3;
+    box-shadow: 1em 1em 10em #9f9 inset;
+    border: 1px solid darkgreen;
+    overflow: auto;
+    line-height: 1.1;
+    b {
+      color: $color_3;
+      background-color: $background-color_3;
+    }
+  }
+  background-color: $background-color_5;
+  min-height: 60%;
+  padding: 0.5em 2em;
+  h1 {
+    color: $color_7;
+  }
+  h2 {
+    color: $color_8;
+  }
+  p {
+    color: $color_1;
+  }
+  a {
+    &:hover {
+      color: $color_9;
+    }
+  }
+}
+
+footer {
+  a {
+    background-color: $background-color_2;
+    text-decoration: none;
+    padding: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline-block;
+    border-bottom: none;
+    height: 3.5em;
+    line-height: 1;
+    transition: all 0.1s ease;
+    &:link {
+      color: $color_4;
+    }
+    &:active {
+      color: $color_5;
+    }
+    &:visited {
+      color: $color_4;
+    }
+    &:hover {
+      color: $color_6;
+      border-bottom: 0.5em solid black;
+    }
+    &.joe {
+      background-image: $joe_icon;
+      height: 3.5em;
+      aspect-ratio: 1;
+      display: block;
+      float: right;
+      background-size: cover;
+      white-space: nowrap;
+      text-indent: 400vw;
+      overflow: hidden;
+      &:hover {
+        border: none;
+      }
+    }
+
+  }
+  span {
+    background-color: $background-color_2;
+    text-decoration: none;
+    padding: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline-block;
+    border-bottom: none;
+    height: 3.5em;
+    box-sizing: border-box;
+    line-height: 1;
+    transition: all 0.1s ease;
+  }
+  background-color: $background-color_2;
+  color: $color_6;
+  a.noborder {
+    border: none;
+    background-color: $background-color_6;
+  }
+}
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: var(--sans-serif);
+  background-color: $background-color_4;
+}
+body#e251273eb74a8ee3f661a7af00915af1 {
+  #content {
+    line-height: 1.5;
+    ul {
+      list-style-type: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 2em;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0;
+      margin: 0;
+    }
+  }
+}
+div.fixed {
+  ol {
+    font-family: var(--monospace);
+    li {
+
+    }
+  }
+}
+.html {
+  color: $color_1;
+  background-color: $background-color_3;
+}
+.php {
+  color: $color_3;
+  background-color: $background-color_7;
+  font-weight: bold;
+}
+.comment {
+  color: $color_3;
+  background-color: $background-color_8;
+}
+.fourHundredWide {
+  width: 400px;
+}
+dt {
+  font-weight: bold;
+}
+.spotlight {
+  border-top: 1px dotted #c03;
+  border-bottom: 1px dotted #c03;
+  background-color: $background-color_9;
+  font-size: large;
+}
+#commentsArea {
+  margin: 0;
+  background: #666;
+  padding: 2.5em;
+  clear: both;
+}
+blockquote.src {
+  background-color: $background-color_10;
+  padding: 1rem;
+}
+
+.date-attribution {
+  font-style: italic;
+  color: #666;
+  text-align: end;
+  margin: 0;
+}
+
+
+/* Inline #1 | https://lab.artlung.com/dropdown-submit-form/?state=CA */
+nav {
+  background: #fff;
+margin: 0;
+  padding: 0;
+}
+nav div input#search-filter {
+  box-sizing: border-box;
+  display: block;
+  padding: 1rem;
+  width: 100%;
+}
+
+nav ol {
+  margin: 0;
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+  li {
+    box-sizing: border-box;
+    width: clamp(120px,50%,300px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      flex-grow: 1;
+      text-decoration: none;
+      padding: 0 1rem;
+      min-height: 3rem;
+      transition: 0.2s all;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      &:hover {
+        background: rgba(255,0,0,0.2);
+      }
+    }
+  }
+}
+
+
+
+
+

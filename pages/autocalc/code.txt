@@ -1,0 +1,32 @@
+<script type="text/javascript" language="Javascript">
+<!--//
+
+function validateLegalNumberCharacters(inString){
+
+var myLen=inString.length-1;
+var validChar='0123456789.';
+
+for ( var i=0;i<myLen;i++ )
+	{
+	if (validChar.indexOf(inString.substring(i,i+1)) == -1)
+		{
+			alert('Please enter only numbers.');
+			break;
+	} else {
+		doTheMath();
+	}
+	}
+}
+
+function doTheMath() {
+	mathForm = document.fm;
+
+	a = mathForm.num_one.value;
+	p = mathForm.wc.options[mathForm.wc.selectedIndex].value;
+	b = mathForm.num_two.value;
+	c = eval(a+p+b+'');
+
+	mathForm.num_answer.value=c;
+}
+//-->
+</script>

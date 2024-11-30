@@ -1,0 +1,5 @@
+<script>
+function outboundLink() {
+  return confirm("You are now leaving this web site!\nDo you want to continue?");
+}
+</script>

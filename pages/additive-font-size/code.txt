@@ -1,0 +1,3 @@
+<style>
+#content span { font-size: 120%; }
+</style>

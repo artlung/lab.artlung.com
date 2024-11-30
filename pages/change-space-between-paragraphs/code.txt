@@ -1,0 +1,19 @@
+<style type="text/css">
+p {
+	/* color used to differentiate the different paragraphs */
+	color: black;
+	background-color: transparent;
+}
+
+p.differentSpacing {
+	/* color used to differentiate the different paragraphs */
+	color: green !important;
+	background-color: transparent;
+	margin-top: 0px;
+	margin-bottom: 4px;
+}
+
+div#narrowerDiv {
+	max-width: 70ch;
+}
+</style>
