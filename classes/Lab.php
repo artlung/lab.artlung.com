@@ -100,7 +100,7 @@ public function printHeader(string $string, $options = [])
 <link rel="webmention" href="https://webmention.io/artlung.com/webmention">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="/{$jsFileName}?{$cacheBustJs}"></script>
-<title>{$title}</title>
+<title>{$title} / ArtLung Lab</title>
 {$code_from_code_txt}
 </head>
 {$bodyTag}
