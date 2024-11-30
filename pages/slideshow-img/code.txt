@@ -1,0 +1,67 @@
+<SCRIPT LANGUAGE=JAVASCRIPT TYPE="text/javascript">
+        <!--
+        //- ******************************************************** -/
+        //- THE ARRAY OF IMAGES, THIS SHOULD BE A COMMA DELIMITED ----/
+
+        var myImageArray = new Array(
+            'https://artlung.com/archive/portfolio/1999/special/screenshot_la_dmz.gif',
+            'https://artlung.com/archive/portfolio/1999/special/screenshot_artlung_swf_nav.gif' ,
+            'https://artlung.com/archive/portfolio/1999/special/screenshot_artlung_swf_anim.gif' ,
+            'https://artlung.com/archive/portfolio/1999/special/screenshot_artlung_swf_card.gif' ,
+            'https://artlung.com/archive/portfolio/1999/special/screenshot_gtm_hip_hop.gif' ,
+            'https://artlung.com/archive/portfolio/1999/special/screenshot_arco.gif' ,
+            'https://artlung.com/archive/portfolio/1999/special/screenshot_ender.gif' ,
+            'https://artlung.com/archive/portfolio/1999/special/screenshot_greazel.gif' ,
+            'https://artlung.com/archive/portfolio/1999/special/screenshot_geocities.gif' ,
+            'https://artlung.com/archive/portfolio/1999/special/screenshot_urmcargo.gif' ,
+            'https://artlung.com/archive/portfolio/1999/special/screenshot_psx_rugrats.gif' ,
+            'https://artlung.com/archive/portfolio/1999/special/screenshot_psx_medievil.gif' ,
+            'https://artlung.com/archive/portfolio/1999/special/screenshot_psx_tomba.gif' ,
+            'https://artlung.com/archive/portfolio/1999/special/screenshot_psx_gt.gif' ,
+            'https://artlung.com/archive/portfolio/1999/special/screenshot_fireteam.gif' ,
+            'https://artlung.com/archive/portfolio/1999/special/screenshot_tod.gif' ,
+            'https://artlung.com/archive/portfolio/1999/special/screenshot_ehrgeiz.gif' ,
+            'https://artlung.com/archive/portfolio/1999/special/screenshot_midway_rater.gif' ,
+            'https://artlung.com/archive/portfolio/1999/special/screenshot_midway.gif' ,
+            'https://artlung.com/archive/portfolio/1999/special/screenshot_disneyland.gif' ,
+            'https://artlung.com/archive/portfolio/1999/special/screenshot_aias_realaudio.gif' ,
+            'https://artlung.com/archive/portfolio/1999/special/screenshot_psx_medievil_hm.gif' ,
+            'https://artlung.com/archive/portfolio/1999/special/screenshot_energizer.gif' ,
+            'https://artlung.com/archive/portfolio/1999/special/screenshot_lamg.gif' ,
+            'https://artlung.com/archive/portfolio/1999/special/screenshot_psx_jampack.gif' );
+
+        var rollOverArray = new Array;
+
+        for (i=0; i<=myImageArray.length-1; i++)
+        {
+            rollOverArray[i] = new Image ();
+            rollOverArray[i].src = myImageArray[i];
+        }
+
+        var goNum = 0
+
+        function SlideShowGo(inNum) {
+
+            goNum = goNum + inNum;
+            if (goNum > (myImageArray.length-1))
+                goNum = 0;
+            if (goNum < 0)
+                goNum = myImageArray.length-1;
+
+            Rollover('imageToSlide', rollOverArray[goNum]);
+        }
+
+        function Rollover(x,y) {
+            if (document.images)
+            {
+                document.images [x].src = y.src;
+            }
+        }
+
+
+
+
+        //- ******************************************************** -/
+        // -->
+
+    </SCRIPT>

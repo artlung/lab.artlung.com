@@ -1,0 +1,27 @@
+section.quote-to-dl {
+  display: grid;
+  grid-template-rows: 40px 45vh 30px 45vh;
+  margin: -0.5em -2em;
+  height: 100%;
+  gap: 0;
+  textarea {
+    padding: 1vw;
+    background: #eee;
+    font-size: 1rem;
+  }
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    gap: 3em;
+    background: #efefef;
+    padding: 0.75em;
+    label {
+      display: flex;
+      justify-content: center;
+        align-items: center;
+      gap: 1ch;
+    }
+  }
+}

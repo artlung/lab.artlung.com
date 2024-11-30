@@ -1,0 +1,12 @@
+<form action="./" method="get" onsubmit="return false;">
+<pre class="ourControl">
+<a href="javascript:ourMove(-1,-1,'ourBox')">\</a> <a href="javascript:ourMove(0,-1,'ourBox')">^</a> <a href="javascript:ourMove(1,-1,'ourBox')">/</a>
+<a href="javascript:ourMove(-1,0,'ourBox')">&laquo;</a>   <a href="javascript:ourMove(1,0,'ourBox')">&raquo;</a>
+<a href="javascript:ourMove(-1,1,'ourBox')">/</a> <a href="javascript:ourMove(0,1,'ourBox')">v</a> <a href="javascript:ourMove(1,1,'ourBox')">\</a>
+
+<a href="javascript:ourSize(0.25,'ourBox')">.</a> <a href="javascript:ourSize(1.5,'ourBox')">o</a> <a href="javascript:ourSize(2,'ourBox')">O</a>
+
+<select onchange="changeColor(this.options[this.selectedIndex].value,'ourBox')"><option value="#CCC">color</option></select>
+</pre></form>
+<div id="ourBox"></div>
+<div id="warn">this won't work in netscape 4. i'm sorry.</div>
