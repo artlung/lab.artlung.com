@@ -45,6 +45,7 @@ class Lab
      */
     public function __construct()
     {
+
         $this->code_from_code_txt = '';
         $this->currentPageServerDirectoryPath = dirname(__FILE__) . '/../';
 
