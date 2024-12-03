@@ -1,4 +1,18 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+<?php
+
+/**
+ * Inline Block. TODO redo.
+ * php version 7.4
+ *
+ * @category Silly
+ * @package  Silly
+ * @author   Joe Crawford <joe@artlung.com>
+ * @license  GPL 2.0+ - http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+ * @version  GIT: $Id$
+ * @link     https://artlung.com/
+ * @since    2024-12-03
+ */
+?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
@@ -158,9 +172,9 @@
     <p><b>CSS</b>:</p>
 
     <pre>.extern {
-	background: url(images/iconout.gif) no-repeat 100% 50%;
-	padding: 0 13px 0 0;
-	}</pre>
+    background: url(images/iconout.gif) no-repeat 100% 50%;
+    padding: 0 13px 0 0;
+    }</pre>
 
     <p id="wrong">Lorem ipsum dolor sit amet, consectetur adipisicing <a
                 href="/web/20070318000027/http://home.tiscali.nl/developerscorner/index.html">this
@@ -224,31 +238,31 @@
         <b>CSS</b>:</p>
 
     <pre>a {
-	background: inherit; /* FF correction for double underline (sometimes) */
-	}
+    background: inherit; /* FF correction for double underline (sometimes) */
+    }
 a u {
-	background: url(images/iconout.gif) no-repeat 100% 50%;
-	padding: 0 13px 0 0;	/* width of the img */
-	display: inline-block;	/* IE correction to show the icon */
-	cursor: pointer;	/* IE correction to show hand instead of arrow */
-	vertical-align: bottom;	/* Opera correction to get the last word vertical aligned */
-	}
+    background: url(images/iconout.gif) no-repeat 100% 50%;
+    padding: 0 13px 0 0;    /* width of the img */
+    display: inline-block;    /* IE correction to show the icon */
+    cursor: pointer;    /* IE correction to show hand instead of arrow */
+    vertical-align: bottom;    /* Opera correction to get the last word vertical aligned */
+    }
 a:visited u {
-	background-image: url(images/iconout-visited.gif);
-	}
+    background-image: url(images/iconout-visited.gif);
+    }
 a:hover u {
-	background-image: url(images/iconout-hover.gif);
-	text-decoration: none; /* avoiding the &quot;u&quot; working for the last word! :-) */
-	}</pre>
+    background-image: url(images/iconout-hover.gif);
+    text-decoration: none; /* avoiding the &quot;u&quot; working for the last word! :-) */
+    }</pre>
 
     <p><b>HEAD</b>:</p>
 
     <pre>&lt;!--[if lte IE 7]&gt;
 &lt;style type=&quot;text/css&quot;&gt;
-	a u { /* antidote for IE: contra Opera correction */
-		vertical-align: inherit;
-		margin-top: -1px;
-		}
+    a u { /* antidote for IE: contra Opera correction */
+        vertical-align: inherit;
+        margin-top: -1px;
+        }
 &lt;/style&gt;
 &lt;![endif]--&gt;</pre>
 

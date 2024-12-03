@@ -1,3 +1,18 @@
+<?php
+
+/**
+ * Buttony Button. TODO redo.
+ * php version 7.4
+ *
+ * @category Silly
+ * @package  Silly
+ * @author   Joe Crawford <joe@artlung.com>
+ * @license  GPL 2.0+ - http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+ * @version  GIT: $Id$
+ * @link     https://artlung.com/
+ * @since    2024-12-03
+ */
+?>
 <html>
 <head>
     <title>Buttony Button.</title>

@@ -9,5 +9,11 @@
             "email": "joe@artlung.com"
         }
     ],
-    "require": {}
+    "require": {},
+
+    "scripts": {
+        "test": "phpunit --bootstrap vendor/autoload.php",
+        "sniff": "phpcs --standard=phpcs.xml",
+        "snifferfix" : "phpcbf --standard=phpcs.xml"
+    }
 }

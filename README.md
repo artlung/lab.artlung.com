@@ -4,3 +4,6 @@
 * 2010 Comments were added using [Disqus](https://disqus.com).
 * 2016 I created a private repository for the site.
 * 2024 I made the repository public as part of [IndieWeb Black Friday Create Day](https://indieweb.org/events/2024-black-friday-create-day).
+
+
+![example workflow](https://github.com/artlung/lab.artlung.com/actions/workflows/ci.yml/badge.svg)
