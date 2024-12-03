@@ -1,4 +1,17 @@
 <?php
+/**
+ * If they want new windows, give it to them!
+ * php version 7.2
+ *
+ * @category PHP
+ * @package  Java_Tags
+ * @author   Joe Crawford <joe@artlung.com>
+ * @license  GPL 2.0+ - http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+ * @version  GIT: $Id$
+ * @link     https://artlung.com/
+ * @since    2024-12-03
+ */
+?><?php
 
 $valid_pages_and_titles = [
     'applet-tag-3.2.php' => 'W3C - HTML 3.2',

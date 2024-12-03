@@ -1,6 +1,9 @@
 <?php
 /**
- * @param  $color
+ * Get a contrasting color, black or white, based on a background color
+ *
+ * @param $color
+ *
  * @return string
  */
 function contrastingBlackOrWhite($color)

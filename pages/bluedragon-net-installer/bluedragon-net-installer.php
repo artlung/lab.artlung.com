@@ -1,5 +1,4 @@
 <?php
-
 require_once '../../loader.php';
 $lab = new Lab();
 $lab->printHeader('Screenshots of an installation of BlueDragon 7.1 for the Microsoft .NET Framework');
@@ -38,7 +37,10 @@ $items = [
 
 
 /**
- * @param  $filename
+ * Emit an H2 tag with the contents of a file
+ *
+ * @param $filename
+ *
  * @return string
  */
 function handleH2($filename)
@@ -47,7 +49,10 @@ function handleH2($filename)
 }
 
 /**
- * @param  $filename
+ * Emit an image tag with the contents of a file
+ *
+ * @param $filename
+ *
  * @return string
  */
 function handlePng($filename)
@@ -56,7 +61,10 @@ function handlePng($filename)
 }
 
 /**
- * @param  $filename
+ * Emit a div with the contents of a file
+ *
+ * @param $filename
+ *
  * @return string
  */
 function handleTxt($filename)

@@ -15,7 +15,7 @@ $lab->printHeader(
 
 
 
-    <form action="./rtf.rtf" method="post" id="rtf-form">
+    <form action="./rtf.rtf" method="post" class="example">
         <h2>Create RTF Document:</h2>
         <label><span>Enter your name:      </span><input type="text" name="name" required></label>
         <label><span>Enter your last name: </span><input type="text" name="lastname" required></label>
@@ -83,18 +83,6 @@ $lab->printHeader(
     <h2>.htaccess</h2>
 
 <pre><code><?php echo htmlentities(file_get_contents('.htaccess')); ?></code></pre>
-
-
-
-
-
-<h2>SCSS Styling</h2>
-
-<pre><code><?php echo htmlentities(file_get_contents('rtf.scss')); ?></code></pre>
-
-<link rel="stylesheet" href="rtf.css<?php
-    echo '?' . filectime('rtf.css');
-?>" type="text/css" />
 
 <?php
 $lab->printFooter(

@@ -1,4 +1,17 @@
-<a href="https://www.w3.org/TR/REC-html40/struct/objects.html#h-13.4">https://www.w3.org/TR/REC-html40/struct/objects.html#h-13.4</a>
+<?php
+/**
+ * If they want new windows, give it to them!
+ * php version 7.2
+ *
+ * @category PHP
+ * @package  Java_Tags
+ * @author   Joe Crawford <joe@artlung.com>
+ * @license  GPL 2.0+ - http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+ * @version  GIT: $Id$
+ * @link     https://artlung.com/
+ * @since    2024-12-03
+ */
+?><a href="https://www.w3.org/TR/REC-html40/struct/objects.html#h-13.4">https://www.w3.org/TR/REC-html40/struct/objects.html#h-13.4</a>
 
 13.4 Including an applet: the APPLET element
 

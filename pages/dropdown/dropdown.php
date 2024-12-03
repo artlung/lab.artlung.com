@@ -8,7 +8,7 @@ Dropdown / Select Box Navigation with JavaScript
 );
 
 ?>
-
+<p class="date-attribution">From 2000 to about 2004</p>
     <h1>Dropdown / Select Box Navigation with JavaScript</h1>
 
     <h2>Simple Navigation</h2>

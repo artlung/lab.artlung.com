@@ -36,7 +36,11 @@ body {
 * {
   box-sizing: border-box;
 }
-
+form {
+  input, button, textarea, select, option {
+    font-size: 1rem;
+  }
+}
 header {
 
   label {
@@ -94,6 +98,8 @@ header {
     }
   }
 
+
+
   span {
     background-color: transparent;
     text-decoration: none;
@@ -108,7 +114,7 @@ header {
   }
 }
 
-nav {
+body > nav {
   height: 0;
   overflow: hidden;
   position: sticky;
@@ -356,6 +362,7 @@ nav div input#search-filter {
 }
 
 nav ol {
+  --year: 0;
   margin: 0;
   list-style-type: none;
   padding: 0;
@@ -365,12 +372,22 @@ nav ol {
   align-items: center;
 
   li {
+    --yearDiff: calc(var(--currentYear) - var(--year));
+    --opacity: calc(1 - calc(var(--yearDiff)) * 0.04);
+    --bgStripeColor: rgba(165, 42, 42, var(--opacity, 0));
+
     box-sizing: border-box;
     width: clamp(120px, 50%, 300px);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-grow: 1;
+    background:
+      linear-gradient(
+        to left,
+        var(--bgStripeColor) 0.5rem,
+        transparent 0.5rem
+      ) 0 50% / 100% 90% no-repeat;
 
     a {
       flex-grow: 1;
@@ -383,7 +400,11 @@ nav ol {
       align-items: center;
 
       &:hover {
-        background: rgba(255, 0, 0, 0.2);
+        background: linear-gradient(
+                        to left,
+                        var(--bgStripeColor) 0.5rem,
+                        rgba(165, 42, 42, 0.15) 0.5rem,
+        ) 0 50% / 100% 90% no-repeat;
       }
     }
   }
@@ -400,6 +421,45 @@ nav ol {
     filter: none;
   }
 }
+
+form.example {
+  display: grid;
+  gap: 0.5rem;
+  background: lightcyan;
+  border: 3px solid darkcyan;
+  border-radius: 1rem;
+  padding: 1rem;
+  max-width: 80ch;
+  margin: 0 auto;
+
+  h2 {
+    margin: 0;
+  }
+  > label {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1em;
+    margin: 1em 0;
+    align-items: center;
+    justify-content: start;
+    *:not(input) {
+      display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+  }
+  input, button {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+}
+@media (max-width: 500px) {
+  form.example > label {
+    grid-template-columns: 1fr;
+  }
+}
+
+
 
 
 

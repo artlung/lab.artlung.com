@@ -1,6 +1,9 @@
-<html>
-<head>
-    <title>window.webkitNotifications</title>
+<?php
+require '../../loader.php';
+$lab = new Lab();
+$lab->printHeader('Webkit Notifications');
+?>
+
     <style>
         body {
             font-family: 'helvetica neue', helvetica, roboto, arial, sans-serif;
@@ -20,8 +23,6 @@
             background: pink;
         }
     </style>
-</head>
-<body>
 
 <h1>window.webkitNotifications</h1>
 
@@ -41,5 +42,9 @@
 
 <p><a href="https://www.html5rocks.com/en/tutorials/notifications/quick/">Using the Notifications API</a></p>
 
-</body>
-</html>
+<?php
+$lab->printFooter(
+    [
+        'comments' => true
+    ]
+);

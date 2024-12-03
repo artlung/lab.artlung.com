@@ -18,6 +18,6 @@ $lab->printHeader(
 <?php
 $lab->printFooter(
     [
-        'comments' => false
+        'comments' => true
     ]
 );

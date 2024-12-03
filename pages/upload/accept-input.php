@@ -12,8 +12,9 @@ $okToUpload = false;
 /**
  * We will respond with json with a key of input_id if successful
  *
- * @param  $input_id
- * @param  $message
+ * @param $input_id
+ * @param $message
+ *
  * @return void
  */
 function respondAndExit($input_id, $message)

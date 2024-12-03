@@ -4,6 +4,7 @@ $lab = new Lab();
 $lab->printHeader('BarCamp LA 6: Source Code for jQuery Introduction');
 ?>
 
+<p class="date-attribution">26 October 2008</p>
     <h1><a href="./">BarCamp LA 6: for jQuery Introduction</a>: Source Code</h1>
 
     <h2>HTML</h2>

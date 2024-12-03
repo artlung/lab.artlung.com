@@ -2,6 +2,14 @@
 
 /**
  * Class PasswordGenerator
+ *
+ * @category PHP
+ * @package  Classes
+ * @author   Joe Crawford <joe@artlung.com>
+ * @license  GPL 2.0+ - http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+ * @version  Release: 1.0
+ * @link     https://artlung.com/
+ * @since    2024-12-03
  */
 class PasswordGenerator
 {
@@ -52,7 +60,8 @@ class PasswordGenerator
     /**
      * Print many passwords
      *
-     * @param  $num
+     * @param $num
+     *
      * @return void
      */
     function printMany($num)

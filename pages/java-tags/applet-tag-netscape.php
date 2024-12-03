@@ -1,4 +1,17 @@
-<a href="https://developer.netscape.com/docs/manuals/htmlguid/tags14.htm#1237108">https://developer.netscape.com/docs/manuals/htmlguid/tags14.htm#1237108</a>
+<?php
+/**
+ * If they want new windows, give it to them!
+ * php version 7.2
+ *
+ * @category PHP
+ * @package  Java_Tags
+ * @author   Joe Crawford <joe@artlung.com>
+ * @license  GPL 2.0+ - http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+ * @version  GIT: $Id$
+ * @link     https://artlung.com/
+ * @since    2024-12-03
+ */
+?><a href="https://developer.netscape.com/docs/manuals/htmlguid/tags14.htm#1237108">https://developer.netscape.com/docs/manuals/htmlguid/tags14.htm#1237108</a>
 
 APPLET
 

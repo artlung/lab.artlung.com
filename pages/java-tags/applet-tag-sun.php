@@ -1,4 +1,17 @@
-<a href="https://java.sun.com/products/jdk/1.1/docs/guide/misc/applet.html">https://java.sun.com/products/jdk/1.1/docs/guide/misc/applet.html</a>
+<?php
+/**
+ * If they want new windows, give it to them!
+ * php version 7.2
+ *
+ * @category PHP
+ * @package  Java_Tags
+ * @author   Joe Crawford <joe@artlung.com>
+ * @license  GPL 2.0+ - http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+ * @version  GIT: $Id$
+ * @link     https://artlung.com/
+ * @since    2024-12-03
+ */
+?><a href="https://java.sun.com/products/jdk/1.1/docs/guide/misc/applet.html">https://java.sun.com/products/jdk/1.1/docs/guide/misc/applet.html</a>
 
 JDK Contents
 --------------------------------------------------------------------------------

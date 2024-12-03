@@ -1,22 +1,29 @@
 <?php
 
-// This is a one off script to
-// make a Tufte inspired date - 
-// feel free to use it or play
-// with it or whatever. I think
-// it's kind of interesting.
-// If you find a use for it,
-// send me an email at joe@artlung.com
-// I'd love to see it!
-// 
-// The PHP is kind of stupid - but 
-// it was new to me when I wrote it
-// originally. Like October of 1999
-//
-//
-// 
-//     - Joe
-
+/**
+ * This is a one off script to
+ * make a Tufte inspired date -
+ * feel free to use it or play
+ * with it or whatever. I think
+ * it's kind of interesting.
+ * If you find a use for it,
+ * send me an email.
+ * I'd love to see it!
+ *
+ * The PHP is kind of stupid - but
+ * it was new to me when I wrote it
+ * originally. Like October of 1999
+ *
+ * php version 7.2
+ *
+ * @category PHP
+ * @package  Interesting_Date_Layout
+ * @author   Joe Crawford <joe@artlung.com>
+ * @license  GPL 2.0+ - http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+ * @version  GIT: $Id$
+ * @link     https://artlung.com/
+ * @since    2024-12-03
+ */
 
 $calendarbackground = "#FFFFFF";
 $weekendcolor = "#CCFF00";

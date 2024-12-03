@@ -1,9 +1,22 @@
 <?php
 
+/**
+ * Class Nav
+ *
+ * @category PHP
+ * @package  Classes
+ * @author   Joe Crawford <joe@artlung.com>
+ * @license  GPL 2.0+ - http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+ * @version  Release: 1.0
+ * @link     https://artlung.com/
+ * @since    2024-12-03
+ */
 class Nav
 {
 
     /**
+     * Slugs and titles
+     *
      * @return array
      */
     public static function getMetadata(): array
@@ -127,7 +140,7 @@ class Nav
             'the-problem-with-blur' => ['title' => 'Why not to use blur() to make dotted lines go away in MSIE for Windows'],
             'three-char-combos' => ['title' => 'Permutations of a set of characters'],
             'tips-2001' => ['title' => 'Random HTML Tips'],
-            'tr-onmouseover-style' => ['title' => 'Onmouseover in a TR tag'],
+            'tr-onmouseover-style' => ['title' => 'onMouseover in a TR tag'],
             'undocumented-linklint' => ['title' => 'Undocumented Linklint JavaScript Feature'],
             'unix-batch-file-rename' => ['title' => 'Batch File Rename By File Extension in Unix'],
             'urlencode' => ['title' => 'How to Encode URLs / An ASCII to URLEncoded JavaScript'],
@@ -168,6 +181,11 @@ class Nav
 
     }
 
+    /**
+     * When reading the directories, ignore these items
+     *
+     * @return string[]
+     */
     public static function ignoredItems()
     {
         return [
@@ -176,6 +194,7 @@ class Nav
             '.DS_Store',
             '.htaccess',
             '.well-known',
+            'js',
         ];
     }
 

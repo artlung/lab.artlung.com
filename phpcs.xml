@@ -10,5 +10,8 @@
         <exclude name="PEAR.Commenting.FileComment.MissingAuthor"/>
         <exclude name="PEAR.Commenting.FileComment.MissingLicense"/>
         <exclude name="PEAR.Commenting.FileComment.MissingLink"/>
+        <exclude-pattern>vendor/*</exclude-pattern>
+
+        <exclude name="PEAR.Commenting.FunctionComment.MissingParamComment"/>
     </rule>
 </ruleset>
