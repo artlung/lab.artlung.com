@@ -163,6 +163,7 @@ class Years
             'sql-server-collations' => 2011,
             'tips-2001' => 2001,
             'upload' => 2015,
+            'rosetta' => 2010,
 
         );
     }
