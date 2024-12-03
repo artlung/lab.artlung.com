@@ -5,10 +5,12 @@ $lab->printHeader('Interesting Date Layout');
 
 ?>
 
-<p class="date-attribution">Created near October, 1999</p>
-<table cellspacing="0" cellpadding="5" border="0" bgcolor="#000000"><tr><td>
+<p class="date-attribution">Created about October 1999</p>
+
+<h1>Interesting Calendar Layout</h1>
+<div style="background: black;width:min-content;padding: 10px;overflow: hidden;max-width: 100%;">
 <?php include("source.php"); ?>
-</td></tr></table>
+</div>
 
 
 

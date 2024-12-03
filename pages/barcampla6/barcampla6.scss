@@ -1,0 +1,99 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background:
+          linear-gradient(90deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4))
+          50% 50% / 800px 100% repeat-y #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+form {
+  margin: 0;
+  padding: 0;
+
+  * {
+    font-size: 1rem;
+  }
+}
+
+#wrapper {
+  max-width: 800px;
+  padding: 0;
+  background-color: #fff;
+  margin: 0 auto;
+  box-shadow: 0 0 1rem;
+}
+
+#header {
+  background-color: #cf3;
+  margin: 0;
+  padding: 1rem 1rem 1rem 4rem;
+  border-bottom: 3px double #666;
+  min-height: 5rem;
+  line-height: 2rem;
+  a {
+    font-family: 'Times New Roman', serif;
+    font-style: italic;
+    text-decoration: none;
+    color: #666;
+    margin-left: 3rem;
+  }
+
+  h1 {
+    font-family: georgia, serif;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+#pagebody {
+  padding: 1rem 2rem 1rem 4rem;
+
+  img {
+    width: 150px;
+    height: 208px;
+    float: right;
+    margin: 0 0 1rem 1rem;
+  }
+}
+
+#footer {
+  clear: both;
+  margin: 0;
+  padding: 1rem 1rem 1rem 4rem;
+  border-top: 3px double #666;
+  color: #ccc;
+  background-color: #000;
+  min-height: 5rem;
+
+  a {
+    color: #fff;
+    font-weight: bold;
+  }
+
+  img {
+    float: left;
+    margin: 0 1rem 0 0;
+    height: 50px;
+    width: 50px;
+  }
+}
+
+.external,
+.link {
+  background-image: url(images/external.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  padding-right: 2rem;
+}
+
+.pdf {
+  background-image: url(images/icon-pdf.gif);
+  background-repeat: no-repeat;
+  background-position: right;
+  padding-right: 2rem;
+}

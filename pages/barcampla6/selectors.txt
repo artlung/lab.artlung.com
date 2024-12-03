@@ -1,3 +1,6 @@
+SAMPLE SELECTORS THAT ONE COULD
+USE TO TARGET ELEMENTS ON THE PAGE
+==================================
 #wrapper
 #header
 h1

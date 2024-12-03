@@ -1,0 +1,27 @@
+#content {
+  form {
+
+    border: 2px solid #ccc;
+    padding: 1rem;
+    display: grid;
+    gap: 0.25rem;
+    textarea,
+    input {
+      display: block;
+      width: 100%;
+      margin: 0.5em 0;
+      padding: 0.5em;
+      border: 1px solid #000;
+      font-size: 1rem;
+    }
+  }
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    .card {
+
+    }
+  }
+}

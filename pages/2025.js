@@ -29,4 +29,12 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+
+    if (window.top !== window.self) {
+        var base = document.createElement('base');
+        base.target = '_top';
+        document.head.appendChild(base);
+    }
+
+
 });

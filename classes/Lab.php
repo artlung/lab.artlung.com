@@ -73,7 +73,7 @@ public function printHeader(string $string, $options = [])
         $nav = '<ol>';
         foreach ($navItems as $slug => $navItem) {
             $url = '/' . $slug . '/';
-            $nav .= sprintf('<li><a href="%s">%s</a></li>', $url, $navItem['title']);
+            $nav .= sprintf('<li><a href="%s">%s</a></li>', $url, htmlentities($navItem['title']));
         }
         $nav .= '</ol>';
 
@@ -82,7 +82,8 @@ public function printHeader(string $string, $options = [])
         $shareOpenlyTitle = 'Share Openly';
         $pathOnly = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
         $url = 'https://lab.artlung.com' . $pathOnly;
-        $text = $title . " #ArtLungLab";
+        $text = '“' . $title . '” #ArtLungLab';
+
         // https://shareopenly.org/share/?url={URL}&text={TEXT}
         $shareOpenlyLink = 'https://shareopenly.org/share/' .
             '?url=' . urlencode($url) .
@@ -140,7 +141,6 @@ HTML;
         }
             $protocol = !empty($_SERVER['HTTPS']) ? 'https' : 'http';
             $canonical = $protocol . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
-            $is_main_page = $canonical === 'https://lab.artlung.com/';
 
 if ($options['comments'] ?? true) {
     $comments_code = $this->getCommentsCode();
@@ -153,6 +153,7 @@ return <<<HTML
 {$comments_code}
 <footer>
 	<span>&copy; 1996-{$copyrightYear}</span>
+	<a href="https://github.com/artlung/lab.artlung.com" target="_blank">Source Code</a>
     <a href="https://artlung.com/s" class="joe" target="_blank">Joe Crawford</a>
 </footer>
 </body>
@@ -195,4 +196,52 @@ s.setAttribute('data-timestamp', +new Date());
 HTML;
 
     }
+
+    public function printSource(string $html, $php = false)
+    {
+        if ($php) {
+            $html = highlight_string($html, true);
+            return;
+        }
+        print "<pre>";
+        print htmlentities($html);
+        print "</pre>";
+    }
+
+    public function printSourceFile(string $string)
+    {
+        $path = $this->currentPageServerDirectoryPath . 'pages/' . $this->directoryName . '/' . $string;
+        if (is_file($path)) {
+            $html = file_get_contents($path);
+            $this->printSource($html);
+        } else {
+            print "<p>File not found: $path</p>";
+        }
+    }
+
+    public function printCodeBlock(string $ob_get_clean)
+    {
+        print "<pre>";
+        print htmlentities($ob_get_clean);
+        print "</pre>";
+    }
+
+    public function displayCode($code)
+    {
+        $this->printCodeBlock($code);
+    }
+
+    public function getWebmentionForm()
+    {
+        $canonical = 'https://lab.artlung.com' . parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+        return <<<HTML
+<h2>Webmention</h2>
+<form action="https://webmention.io/artlung.com/webmention" method="post">
+    <input type="text" name="source" placeholder="source" required>
+    <input type="hidden" value="{$canonical}">
+    <input type="submit" value="Send Webmention">
+<blockquote
+HTML;
+    }
+
 }

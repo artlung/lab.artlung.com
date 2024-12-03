@@ -48,7 +48,7 @@ class Nav
             'css3-smiley' => ['title' => 'CSS3 Smiley in Color'],
             'detagger' => ['title' => 'Fun Detagger Script'],
             'domain-name-sql-excel' => ['title' => 'Extract Domain Names from a list of email addresses'],
-            'url-compare' => ['title' => 'Compare 2 urls'],
+            'url-compare' => ['title' => 'Compare Two URLs'],
             'dropdown' => ['title' => 'Dropdown Navigation'],
             'dropdown-focus' => ['title' => 'Setting Dropdown Focus'],
             'dropdown-frames' => ['title' => 'Dropdown Navigation in Frames'],
@@ -73,14 +73,11 @@ class Nav
             'input-direction' => ['title' => 'Change Form Input Direction'],
             'interesting-date-layout' => ['title' => 'interesting-date-layout'],
             'invisible-unspiderable-link' => ['title' => 'Invisible Unspiderable Link'],
-            'ipad' => ['title' => 'ipad'],
             'is-email' => ['title' => 'isEmail() aka is_email() in PHP'],
             'java-tags' => ['title' => 'Java Tags 1999'],
-            'keycode' => ['title' => 'keycode'],
             'larger-checkbox-with-css' => ['title' => 'Larger Checkbox with CSS'],
             'make-unique-id' => ['title' => 'Make a Unique ID in PHP'],
             'meaningful-html-class-names' => ['title' => 'What CSS class names are semantically meaningful?'],
-            'media' => ['title' => 'media'],
             'misc-files' => ['title' => 'Miscellaneous Web Files'],
             'mm_validateform' => ['title' => 'MM_validateForm() and MM_findObj() functions'],
             'modify-the-box' => ['title' => 'Modify The Box (dhtml experiment, 2001)'],
@@ -102,8 +99,7 @@ class Nav
             'open-graph-protocol-tools' => ['title' => 'Open Graph Protocol Tools WordPress plugin'],
             'outbound-link-confirmation' => ['title' => 'Outbound Link Confirmation'],
             'password-maker' => ['title' => '20 Random Alphanumeric Passwords'],
-            'php-all-websafe' => ['title' => 'php-all-websafe'],
-            'php-find-duplicates-in-text-file' => ['title' => 'php-find-duplicates-in-text-file'],
+            'php-all-websafe' => ['title' => 'Generate All Websafe Colors with PHP'],
             'php-php3-mod-rewrite' => ['title' => 'How to make .php files masquerade as .php3'],
             'pinkvalidation' => ['title' => 'Changing the color of a form element when it\'s blank'],
             'plus-plus-a-string-php' => ['title' => 'plusplus (++) a string in php'],
@@ -131,7 +127,6 @@ class Nav
             'tr-onmouseover-style' => ['title' => 'Onmouseover in a TR tag'],
             'undocumented-linklint' => ['title' => 'Undocumented Linklint JavaScript Feature'],
             'unix-batch-file-rename' => ['title' => 'Batch File Rename By File Extension in Unix'],
-            'upload' => ['title' => 'upload'],
             'urlencode' => ['title' => 'How to Encode URLs / An ASCII to URLEncoded JavaScript'],
             'user-preference-for-new-windows' => ['title' => 'Giving Users A Preference Widget for Opening New Windows'],
             'vaguely-interesting-layout' => ['title' => 'Vaguely Interesting Layout'],
@@ -150,6 +145,9 @@ class Nav
             'canvas-html-render-download' => ['title' => 'Canvas HTML Render Download not working'],
             'slideshow-img' => ['title' => 'Slideshows Roughly How We did them in 1999'],
             'robots-nocontent' => ['title' => 'Robots-Nocontent (2008)'],
+            'media' => ['title' => 'What to do with a directory of images that are letters?'],
+            'upload' => ['title' => 'Sample Uploader Code'],
+            'keycode' => ['title' => 'Listen for Key Presses on a Web Page'],
         ];
 
 
@@ -163,9 +161,6 @@ class Nav
             '.DS_Store',
             '.htaccess',
             '.well-known',
-            'media',
-            'js',
-            'music',
         ];
     }
 

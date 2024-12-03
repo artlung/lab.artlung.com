@@ -26,7 +26,7 @@ foreach($directories_only as $slug)
     $title = $slug;
     if (array_key_exists($slug, $navItems)) {
         $title = $navItems[$slug]['title'];
-        print "Title for $slug is $title\n";
+//        print "Title for $slug is $title\n";
     } else {
         // print a warning that it is not there
         print "No title for $slug\n";
@@ -35,6 +35,10 @@ foreach($directories_only as $slug)
     // does the directory actually exist?
     if (!is_dir("pages/$slug")) {
         print "Directory $slug does not exist\n";
+    }
+
+    if (is_dir("pages/$slug") && !is_file("pages/$slug/$slug.php")) {
+        print "No $slug.php in $slug\n";
     }
 
 

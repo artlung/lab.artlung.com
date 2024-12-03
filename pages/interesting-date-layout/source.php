@@ -71,7 +71,7 @@ for ($i=$daysago; $i<=$daysforward; $i++)
 	{
 	if ($i==0)
 		{
-			print "\t<TD ALIGN=CENTER>";
+			print "\t<TD STYLE='text-align: center'>";
 			print '<IMG SRC="images/cal_arrowdown.gif" ALT="X" WIDTH="23" HEIGHT="13" BORDER="0">';
 			print "</TD>\n";
 		};
@@ -88,7 +88,7 @@ for ($i=$daysago; $i<=$daysforward; $i++)
 #===========================================================================
 	print "<TR>\n";
 #---------------------------------------------------------------------------
-	print "\t<TD BGCOLOR=BLACK COLSPAN=";
+	print "\t<TD STYLE='background-color: #000' COLSPAN=";
 	print $totaldays;
 	print "><img src='images/blank.gif' HEIGHT=1 WIDTH=1 ALT=''></TD>\n";
 #---------------------------------------------------------------------------
@@ -102,13 +102,13 @@ for ($i=$daysago; $i<=$daysforward; $i++)
 	print "\t<TD ALIGN=CENTER ";
 	if ($threeletterday=="Sun"||$threeletterday=="Sat")
 		{
-		print "BGCOLOR='";
+		print "style='background-color: ";
 		print $weekendcolor;
 		print "'";
 		}
 		else
 		{
-		print "BGCOLOR='";
+			print "style='background-color: ";
 		print $weekdaycolor;
 		print "'";
 		};
@@ -125,7 +125,7 @@ for ($i=$daysago; $i<=$daysforward; $i++)
 #===========================================================================
 	print "<TR>\n";
 #---------------------------------------------------------------------------
-	print "\t<TD BGCOLOR=BLACK COLSPAN=";
+	print "\t<TD style='background-color: black' COLSPAN=";
 	print $totaldays;
 	print "><img src='images/blank.gif' HEIGHT=1 WIDTH=1 ALT=''></TD>\n";
 #---------------------------------------------------------------------------
@@ -139,7 +139,7 @@ for ($i=$daysago; $i<=$daysforward; $i++)
 	print "\t<TD ";
 	if ($threeletterday=="Sun"||$threeletterday=="Sat")
 		{
-		print " BGCOLOR='#CCCCCC' ";
+		print " style='background-color: #CCCCCC' ";
 		}
 	print "ALIGN=RIGHT>";
 	print $fontopen;

@@ -3,12 +3,24 @@ require_once('../../loader.php');
 $lab = new Lab();
 $lab->printHeader('MathML Test Page');
 ?>
-<h1>MathML Test Page</h1>
+<p class="date-attribution">July 2024</p>
+    <h1>MathML Test Page</h1>
+
+
+<p>
+    I first got curious to experiment with MathML during an <a href="https://indieweb.org/events/2024-07-03-hwc-europe">HWC Europe</a> meeting.</p.
+</p>
+
+<p>
+    This test is based on <em><a href="https://artlung.com/blog/2020/08/10/the-problem/" target="_blank">The Problem</a></em>, an interview question we used at a former employer.
+</p>
 
 <h2>This is an image:</h2>
 
 <div style="border: 3px double #ccc;padding:3ch;">
-    <img src="https://cdn.artlung.com/blog/wp-content/uploads/2020/08/The_Problem-500x180-1.png" >
+    <img src="https://cdn.artlung.com/blog/wp-content/uploads/2020/08/The_Problem-500x180-1.png" alt=""
+        style="max-width:100%;height:auto;" />
+
 </div>
 
 <hr />
@@ -54,10 +66,6 @@ ob_start();
 <?php echo htmlentities($mathml); ?>
 </pre>
 
-
-<hr />
-
-From <em><a href="https://artlung.com/blog/2020/08/10/the-problem/" target="_blank">The Problem</a></em>
 
 <hr />
 
