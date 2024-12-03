@@ -1,1 +1,2 @@
-AddType application/x-httpd-php3 .rtf
+# Process .rtf as PHP files
+AddHandler application/x-httpd-php .rtf

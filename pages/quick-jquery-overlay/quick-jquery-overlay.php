@@ -2,9 +2,7 @@
 require_once '../../loader.php';
 $lab = new Lab();
 $lab->printHeader(
-    '
-Quick jQuery Overlay
-'
+    'Quick jQuery Overlay'
 );
 
 ?>

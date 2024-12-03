@@ -3,9 +3,12 @@
 class Nav
 {
 
-    public static function getMetadata()
+    /**
+     * @return array
+     */
+    public static function getMetadata(): array
     {
-        return [
+        $slugs_and_titles = [
             'clock-concept' => ['title' => 'Clock Concept (1998-2024)'],
             'detection-real' => ['title' => 'RealMedia Plugin Detection'],
             '50states' => ['title' => '50 U.S. States Dropdown Box HTML Code Snippets'],
@@ -149,6 +152,18 @@ class Nav
             'upload' => ['title' => 'Sample Uploader Code'],
             'keycode' => ['title' => 'Listen for Key Presses on a Web Page'],
         ];
+
+        $slugs_and_years = Years::slugsAndYears();
+
+        foreach ($slugs_and_titles as $slug => $metadata) {
+            if (array_key_exists($slug, $slugs_and_years)) {
+                $slugs_and_titles[$slug]['year'] = $slugs_and_years[$slug];
+            } else {
+                $slugs_and_titles[$slug]['year'] = Years::DEFAULT_YEAR;
+            }
+        }
+        return $slugs_and_titles;
+
 
 
     }

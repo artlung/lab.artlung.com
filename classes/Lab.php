@@ -69,12 +69,23 @@ class Lab
 
         $navItems = Nav::getMetadata();
         // sort by the slug
-        ksort($navItems);
+//        ksort($navItems);
+
+        // sort by the value of $navItems[$slug]['year'] DESC
+        uasort($navItems, function ($a, $b) {
+            return $b['year'] <=> $a['year'];
+        });
+
         // turn that into an ordered list
         $nav = '<ol>';
         foreach ($navItems as $slug => $navItem) {
             $url = '/' . $slug . '/';
-            $nav .= sprintf('<li><a href="%s">%s</a></li>', $url, htmlentities($navItem['title']));
+            if ($navItem['year']) {
+                $styleString = "--year: {$navItem['year']};";
+            } else {
+                $styleString = '';
+            }
+            $nav .= sprintf('<li><a href="%s" style="%s">%s</a></li>', $url, $styleString, htmlentities($navItem['title']));
         }
         $nav .= '</ol>';
 

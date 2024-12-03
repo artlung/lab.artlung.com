@@ -5,10 +5,7 @@ $lab->printHeader('Single Pixel Gif as a base 64 encoded string');
 
 ?>
 
-    <p class="date-attribution">
-
-        Created around October 2011
-    </p>
+    <p class="date-attribution">Created around October 2011</p>
     <h1>Single Pixel Gif as a base 64 encoded string</h1>
 
     <p>Single pixel GIF files were a technique to create blocks on a web page which were assured to take up space. In

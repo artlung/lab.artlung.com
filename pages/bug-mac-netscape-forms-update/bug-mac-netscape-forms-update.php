@@ -4,7 +4,7 @@ $lab = new Lab();
 $lab->printHeader('Netscape/Macintosh Changing Form Button or Submit Input Value Fails');
 
 ?>
-    <p class="date-attribution">Status: Archaic</p>
+    <p class="date-attribution">1998</p>
     <h1>Netscape/Macintosh Changing Form Button or Submit Input Value Fails</h1>
 
     <form action="../">

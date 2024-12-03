@@ -7,7 +7,7 @@ $lab->printHeader('ASP: CDONTS snippet');
 
 
     <p class="date-attribution">
-        Status: Archaic
+        Status: Archaic. Updated 2005.
     </p>
     <h1>ASP: CDONTS snippet</h1>
 
