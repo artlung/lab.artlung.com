@@ -17,6 +17,12 @@ use PHPUnit\Framework\TestCase;
 class LabTest extends TestCase
 {
 
+    public function __construct(?string $name = null, array $data = [], $dataName = '')
+    {
+        parent::__construct($name, $data, $dataName);
+        $_SERVER['REQUEST_URI'] = 'https://lab.artlung.com/';
+    }
+
     /**
      * Test the getLab method
      *
