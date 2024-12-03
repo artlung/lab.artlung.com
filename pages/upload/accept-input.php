@@ -1,4 +1,5 @@
 <?php
+
 $fn = ($_SERVER['HTTP_X_FILENAME'] ?? false);
 
 $types = array('image/png', 'image/jpeg', 'image/gif');
@@ -8,27 +9,36 @@ $maxsize = 1024 * 1024; // 1MB
 
 $okToUpload = false;
 
-// we will respond with json with a key of input_id if successful
-
-function respondAndExit($input_id, $message) {
-    echo json_encode(array(
-        'input_id' => $input_id,
-        'message' => $message
-    ));
+/**
+ * We will respond with json with a key of input_id if successful
+ *
+ * @param  $input_id
+ * @param  $message
+ * @return void
+ */
+function respondAndExit($input_id, $message)
+{
+    echo json_encode(
+        array(
+            'input_id' => $input_id,
+            'message' => $message
+        )
+    );
     exit();
 }
 
-if ($fn):
+if ($fn) :
 
-    if (in_array($_SERVER['CONTENT_TYPE'], $types) &&
-        in_array(pathinfo($fn, PATHINFO_EXTENSION), $extensions) &&
-        $_SERVER['CONTENT_LENGTH'] <= $maxsize) {
+    if (in_array($_SERVER['CONTENT_TYPE'], $types)
+        && in_array(pathinfo($fn, PATHINFO_EXTENSION), $extensions)
+        && $_SERVER['CONTENT_LENGTH'] <= $maxsize
+    ) {
 
         file_put_contents(
             'uploads/' . $fn,
             file_get_contents('php://input')
         );
-//        echo "$fn uploaded";
+        //        echo "$fn uploaded";
         respondAndExit('fileselect', "$fn uploaded");
 
     } else {

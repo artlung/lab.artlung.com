@@ -16,7 +16,7 @@ if (isset($_GET['bloggingbot'])) {
 <html
 <head>
     <title><?php print $line; ?></title>
-    <?php printf("<script>var itemId = %s;console.log(%s);</script>\n", $rand, $rand); ?>
+    <?php printf("<script>var itemId = %s;console.log(%s)</script>\n", $rand, $rand); ?>
     <script>
         // pushstate the url /bloggingbot/ + itemId
         // so that the url is bookmarkable
@@ -29,6 +29,7 @@ if (isset($_GET['bloggingbot'])) {
             var url = '/bloggingbot/' + itemId;
             history.pushState({itemId: itemId}, '', url);
         }
+
         // run it onload
         window.addEventListener('load', function () {
             pushState(itemId);
@@ -38,6 +39,7 @@ if (isset($_GET['bloggingbot'])) {
         html {
             height: 100%;
         }
+
         body {
             color: #666;
             background-color: #000;
@@ -51,9 +53,11 @@ if (isset($_GET['bloggingbot'])) {
             grid-template-rows: 75% 1fr min-content;
 
         }
+
         div {
             padding: 1vw;
         }
+
         a {
             font-size: 0.7em;
             display: block;
@@ -64,6 +68,7 @@ if (isset($_GET['bloggingbot'])) {
             padding: 0 1vw;
             text-align: right;
         }
+
         a.button {
             display: block;
             text-decoration: none;
@@ -72,9 +77,11 @@ if (isset($_GET['bloggingbot'])) {
             padding: 1vw;
             text-align: end;
         }
+
         a.button:first-child {
             text-align: start;
         }
+
         section {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -126,7 +133,7 @@ if (isset($_GET['bloggingbot'])) {
 <div><?php echo $line; ?></div>
 <a href="https://artlung.com/blog/2018/02/23/markov-chains-are-hilarious/"
    style="color: rgb(255, 255, 255);"
-    target="_blank"
+   target="_blank"
    title="Markov Chains are Hilarious!"
 >about</a>
 

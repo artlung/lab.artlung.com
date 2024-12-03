@@ -1,5 +1,5 @@
 <?php
-require_once('../../loader.php');
+require_once '../../loader.php';
 $lab = new Lab();
 $lab->printHeader('ASP "50 U.S. States Dropdown Box HTML Code Snippets"');
 ?>
@@ -8,7 +8,8 @@ $lab->printHeader('ASP "50 U.S. States Dropdown Box HTML Code Snippets"');
 
     <h1>50 U.S. States Dropdown Box HTML Code Snippets</h1>
 
-    It's just what it says, a code snippet for an html <code>&lt;select&gt;</code> box. It includes the 50 States and Washington D.C. too.
+    It's just what it says, a code snippet for an html
+    <code>&lt;select&gt;</code> box. It includes the 50 States and Washington D.C. too.
 
     <form action="./" method="GET">
 
@@ -126,111 +127,111 @@ $lab->printHeader('ASP "50 U.S. States Dropdown Box HTML Code Snippets"');
 &lt;form action="./" method="GET"&gt;
 
 &lt;select name="state"&gt;
-	&lt;option value="AL"&gt;Alabama&lt;/option&gt;
-	&lt;option value="AK"&gt;Alaska&lt;/option&gt;
-	&lt;option value="AZ"&gt;Arizona&lt;/option&gt;
-	&lt;option value="AR"&gt;Arkansas&lt;/option&gt;
-	&lt;option value="CA"&gt;California&lt;/option&gt;
-	&lt;option value="CO"&gt;Colorado&lt;/option&gt;
-	&lt;option value="CT"&gt;Connecticut&lt;/option&gt;
-	&lt;option value="DE"&gt;Delaware&lt;/option&gt;
-	&lt;option value="DC"&gt;District of Columbia&lt;/option&gt;
-	&lt;option value="FL"&gt;Florida&lt;/option&gt;
-	&lt;option value="GA"&gt;Georgia&lt;/option&gt;
-	&lt;option value="HI"&gt;Hawaii&lt;/option&gt;
-	&lt;option value="ID"&gt;Idaho&lt;/option&gt;
-	&lt;option value="IL"&gt;Illinois&lt;/option&gt;
-	&lt;option value="IN"&gt;Indiana&lt;/option&gt;
-	&lt;option value="IA"&gt;Iowa&lt;/option&gt;
-	&lt;option value="KS"&gt;Kansas&lt;/option&gt;
-	&lt;option value="KY"&gt;Kentucky&lt;/option&gt;
-	&lt;option value="LA"&gt;Louisiana&lt;/option&gt;
-	&lt;option value="ME"&gt;Maine&lt;/option&gt;
-	&lt;option value="MD"&gt;Maryland&lt;/option&gt;
-	&lt;option value="MA"&gt;Massachusetts&lt;/option&gt;
-	&lt;option value="MI"&gt;Michigan&lt;/option&gt;
-	&lt;option value="MN"&gt;Minnesota&lt;/option&gt;
-	&lt;option value="MS"&gt;Mississippi&lt;/option&gt;
-	&lt;option value="MO"&gt;Missouri&lt;/option&gt;
-	&lt;option value="MT"&gt;Montana&lt;/option&gt;
-	&lt;option value="NE"&gt;Nebraska&lt;/option&gt;
-	&lt;option value="NV"&gt;Nevada&lt;/option&gt;
-	&lt;option value="NH"&gt;New Hampshire&lt;/option&gt;
-	&lt;option value="NJ"&gt;New Jersey&lt;/option&gt;
-	&lt;option value="NM"&gt;New Mexico&lt;/option&gt;
-	&lt;option value="NY"&gt;New York&lt;/option&gt;
-	&lt;option value="NC"&gt;North Carolina&lt;/option&gt;
-	&lt;option value="ND"&gt;North Dakota&lt;/option&gt;
-	&lt;option value="OH"&gt;Ohio&lt;/option&gt;
-	&lt;option value="OK"&gt;Oklahoma&lt;/option&gt;
-	&lt;option value="OR"&gt;Oregon&lt;/option&gt;
-	&lt;option value="PA"&gt;Pennsylvania&lt;/option&gt;
-	&lt;option value="RI"&gt;Rhode Island&lt;/option&gt;
-	&lt;option value="SC"&gt;South Carolina&lt;/option&gt;
-	&lt;option value="SD"&gt;South Dakota&lt;/option&gt;
-	&lt;option value="TN"&gt;Tennessee&lt;/option&gt;
-	&lt;option value="TX"&gt;Texas&lt;/option&gt;
-	&lt;option value="UT"&gt;Utah&lt;/option&gt;
-	&lt;option value="VT"&gt;Vermont&lt;/option&gt;
-	&lt;option value="VA"&gt;Virginia&lt;/option&gt;
-	&lt;option value="WA"&gt;Washington&lt;/option&gt;
-	&lt;option value="WV"&gt;West Virginia&lt;/option&gt;
-	&lt;option value="WI"&gt;Wisconsin&lt;/option&gt;
-	&lt;option value="WY"&gt;Wyoming&lt;/option&gt;
+    &lt;option value="AL"&gt;Alabama&lt;/option&gt;
+    &lt;option value="AK"&gt;Alaska&lt;/option&gt;
+    &lt;option value="AZ"&gt;Arizona&lt;/option&gt;
+    &lt;option value="AR"&gt;Arkansas&lt;/option&gt;
+    &lt;option value="CA"&gt;California&lt;/option&gt;
+    &lt;option value="CO"&gt;Colorado&lt;/option&gt;
+    &lt;option value="CT"&gt;Connecticut&lt;/option&gt;
+    &lt;option value="DE"&gt;Delaware&lt;/option&gt;
+    &lt;option value="DC"&gt;District of Columbia&lt;/option&gt;
+    &lt;option value="FL"&gt;Florida&lt;/option&gt;
+    &lt;option value="GA"&gt;Georgia&lt;/option&gt;
+    &lt;option value="HI"&gt;Hawaii&lt;/option&gt;
+    &lt;option value="ID"&gt;Idaho&lt;/option&gt;
+    &lt;option value="IL"&gt;Illinois&lt;/option&gt;
+    &lt;option value="IN"&gt;Indiana&lt;/option&gt;
+    &lt;option value="IA"&gt;Iowa&lt;/option&gt;
+    &lt;option value="KS"&gt;Kansas&lt;/option&gt;
+    &lt;option value="KY"&gt;Kentucky&lt;/option&gt;
+    &lt;option value="LA"&gt;Louisiana&lt;/option&gt;
+    &lt;option value="ME"&gt;Maine&lt;/option&gt;
+    &lt;option value="MD"&gt;Maryland&lt;/option&gt;
+    &lt;option value="MA"&gt;Massachusetts&lt;/option&gt;
+    &lt;option value="MI"&gt;Michigan&lt;/option&gt;
+    &lt;option value="MN"&gt;Minnesota&lt;/option&gt;
+    &lt;option value="MS"&gt;Mississippi&lt;/option&gt;
+    &lt;option value="MO"&gt;Missouri&lt;/option&gt;
+    &lt;option value="MT"&gt;Montana&lt;/option&gt;
+    &lt;option value="NE"&gt;Nebraska&lt;/option&gt;
+    &lt;option value="NV"&gt;Nevada&lt;/option&gt;
+    &lt;option value="NH"&gt;New Hampshire&lt;/option&gt;
+    &lt;option value="NJ"&gt;New Jersey&lt;/option&gt;
+    &lt;option value="NM"&gt;New Mexico&lt;/option&gt;
+    &lt;option value="NY"&gt;New York&lt;/option&gt;
+    &lt;option value="NC"&gt;North Carolina&lt;/option&gt;
+    &lt;option value="ND"&gt;North Dakota&lt;/option&gt;
+    &lt;option value="OH"&gt;Ohio&lt;/option&gt;
+    &lt;option value="OK"&gt;Oklahoma&lt;/option&gt;
+    &lt;option value="OR"&gt;Oregon&lt;/option&gt;
+    &lt;option value="PA"&gt;Pennsylvania&lt;/option&gt;
+    &lt;option value="RI"&gt;Rhode Island&lt;/option&gt;
+    &lt;option value="SC"&gt;South Carolina&lt;/option&gt;
+    &lt;option value="SD"&gt;South Dakota&lt;/option&gt;
+    &lt;option value="TN"&gt;Tennessee&lt;/option&gt;
+    &lt;option value="TX"&gt;Texas&lt;/option&gt;
+    &lt;option value="UT"&gt;Utah&lt;/option&gt;
+    &lt;option value="VT"&gt;Vermont&lt;/option&gt;
+    &lt;option value="VA"&gt;Virginia&lt;/option&gt;
+    &lt;option value="WA"&gt;Washington&lt;/option&gt;
+    &lt;option value="WV"&gt;West Virginia&lt;/option&gt;
+    &lt;option value="WI"&gt;Wisconsin&lt;/option&gt;
+    &lt;option value="WY"&gt;Wyoming&lt;/option&gt;
 &lt;/select&gt;
 
 &lt;select name="state"&gt;
-	&lt;option value="AL"&gt;AL&lt;/option&gt;
-	&lt;option value="AK"&gt;AK&lt;/option&gt;
-	&lt;option value="AZ"&gt;AZ&lt;/option&gt;
-	&lt;option value="AR"&gt;AR&lt;/option&gt;
-	&lt;option value="CA"&gt;CA&lt;/option&gt;
-	&lt;option value="CO"&gt;CO&lt;/option&gt;
-	&lt;option value="CT"&gt;CT&lt;/option&gt;
-	&lt;option value="DE"&gt;DE&lt;/option&gt;
-	&lt;option value="DC"&gt;DC&lt;/option&gt;
-	&lt;option value="FL"&gt;FL&lt;/option&gt;
-	&lt;option value="GA"&gt;GA&lt;/option&gt;
-	&lt;option value="HI"&gt;HI&lt;/option&gt;
-	&lt;option value="ID"&gt;ID&lt;/option&gt;
-	&lt;option value="IL"&gt;IL&lt;/option&gt;
-	&lt;option value="IN"&gt;IN&lt;/option&gt;
-	&lt;option value="IA"&gt;IA&lt;/option&gt;
-	&lt;option value="KS"&gt;KS&lt;/option&gt;
-	&lt;option value="KY"&gt;KY&lt;/option&gt;
-	&lt;option value="LA"&gt;LA&lt;/option&gt;
-	&lt;option value="ME"&gt;ME&lt;/option&gt;
-	&lt;option value="MD"&gt;MD&lt;/option&gt;
-	&lt;option value="MA"&gt;MA&lt;/option&gt;
-	&lt;option value="MI"&gt;MI&lt;/option&gt;
-	&lt;option value="MN"&gt;MN&lt;/option&gt;
-	&lt;option value="MS"&gt;MS&lt;/option&gt;
-	&lt;option value="MO"&gt;MO&lt;/option&gt;
-	&lt;option value="MT"&gt;MT&lt;/option&gt;
-	&lt;option value="NE"&gt;NE&lt;/option&gt;
-	&lt;option value="NV"&gt;NV&lt;/option&gt;
-	&lt;option value="NH"&gt;NH&lt;/option&gt;
-	&lt;option value="NJ"&gt;NJ&lt;/option&gt;
-	&lt;option value="NM"&gt;NM&lt;/option&gt;
-	&lt;option value="NY"&gt;NY&lt;/option&gt;
-	&lt;option value="NC"&gt;NC&lt;/option&gt;
-	&lt;option value="ND"&gt;ND&lt;/option&gt;
-	&lt;option value="OH"&gt;OH&lt;/option&gt;
-	&lt;option value="OK"&gt;OK&lt;/option&gt;
-	&lt;option value="OR"&gt;OR&lt;/option&gt;
-	&lt;option value="PA"&gt;PA&lt;/option&gt;
-	&lt;option value="RI"&gt;RI&lt;/option&gt;
-	&lt;option value="SC"&gt;SC&lt;/option&gt;
-	&lt;option value="SD"&gt;SD&lt;/option&gt;
-	&lt;option value="TN"&gt;TN&lt;/option&gt;
-	&lt;option value="TX"&gt;TX&lt;/option&gt;
-	&lt;option value="UT"&gt;UT&lt;/option&gt;
-	&lt;option value="VT"&gt;VT&lt;/option&gt;
-	&lt;option value="VA"&gt;VA&lt;/option&gt;
-	&lt;option value="WA"&gt;WA&lt;/option&gt;
-	&lt;option value="WV"&gt;WV&lt;/option&gt;
-	&lt;option value="WI"&gt;WI&lt;/option&gt;
-	&lt;option value="WY"&gt;WY&lt;/option&gt;
+    &lt;option value="AL"&gt;AL&lt;/option&gt;
+    &lt;option value="AK"&gt;AK&lt;/option&gt;
+    &lt;option value="AZ"&gt;AZ&lt;/option&gt;
+    &lt;option value="AR"&gt;AR&lt;/option&gt;
+    &lt;option value="CA"&gt;CA&lt;/option&gt;
+    &lt;option value="CO"&gt;CO&lt;/option&gt;
+    &lt;option value="CT"&gt;CT&lt;/option&gt;
+    &lt;option value="DE"&gt;DE&lt;/option&gt;
+    &lt;option value="DC"&gt;DC&lt;/option&gt;
+    &lt;option value="FL"&gt;FL&lt;/option&gt;
+    &lt;option value="GA"&gt;GA&lt;/option&gt;
+    &lt;option value="HI"&gt;HI&lt;/option&gt;
+    &lt;option value="ID"&gt;ID&lt;/option&gt;
+    &lt;option value="IL"&gt;IL&lt;/option&gt;
+    &lt;option value="IN"&gt;IN&lt;/option&gt;
+    &lt;option value="IA"&gt;IA&lt;/option&gt;
+    &lt;option value="KS"&gt;KS&lt;/option&gt;
+    &lt;option value="KY"&gt;KY&lt;/option&gt;
+    &lt;option value="LA"&gt;LA&lt;/option&gt;
+    &lt;option value="ME"&gt;ME&lt;/option&gt;
+    &lt;option value="MD"&gt;MD&lt;/option&gt;
+    &lt;option value="MA"&gt;MA&lt;/option&gt;
+    &lt;option value="MI"&gt;MI&lt;/option&gt;
+    &lt;option value="MN"&gt;MN&lt;/option&gt;
+    &lt;option value="MS"&gt;MS&lt;/option&gt;
+    &lt;option value="MO"&gt;MO&lt;/option&gt;
+    &lt;option value="MT"&gt;MT&lt;/option&gt;
+    &lt;option value="NE"&gt;NE&lt;/option&gt;
+    &lt;option value="NV"&gt;NV&lt;/option&gt;
+    &lt;option value="NH"&gt;NH&lt;/option&gt;
+    &lt;option value="NJ"&gt;NJ&lt;/option&gt;
+    &lt;option value="NM"&gt;NM&lt;/option&gt;
+    &lt;option value="NY"&gt;NY&lt;/option&gt;
+    &lt;option value="NC"&gt;NC&lt;/option&gt;
+    &lt;option value="ND"&gt;ND&lt;/option&gt;
+    &lt;option value="OH"&gt;OH&lt;/option&gt;
+    &lt;option value="OK"&gt;OK&lt;/option&gt;
+    &lt;option value="OR"&gt;OR&lt;/option&gt;
+    &lt;option value="PA"&gt;PA&lt;/option&gt;
+    &lt;option value="RI"&gt;RI&lt;/option&gt;
+    &lt;option value="SC"&gt;SC&lt;/option&gt;
+    &lt;option value="SD"&gt;SD&lt;/option&gt;
+    &lt;option value="TN"&gt;TN&lt;/option&gt;
+    &lt;option value="TX"&gt;TX&lt;/option&gt;
+    &lt;option value="UT"&gt;UT&lt;/option&gt;
+    &lt;option value="VT"&gt;VT&lt;/option&gt;
+    &lt;option value="VA"&gt;VA&lt;/option&gt;
+    &lt;option value="WA"&gt;WA&lt;/option&gt;
+    &lt;option value="WV"&gt;WV&lt;/option&gt;
+    &lt;option value="WI"&gt;WI&lt;/option&gt;
+    &lt;option value="WY"&gt;WY&lt;/option&gt;
 &lt;/select&gt;
 
 &lt;/form&gt;
@@ -239,6 +240,8 @@ $lab->printHeader('ASP "50 U.S. States Dropdown Box HTML Code Snippets"');
 
 <?php
 
-$lab->printFooter([
-    'comments' => true,
-]);
+$lab->printFooter(
+    [
+        'comments' => true,
+    ]
+);

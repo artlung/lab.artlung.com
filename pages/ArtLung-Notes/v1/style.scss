@@ -2,12 +2,14 @@ body {
   margin: 0;
   font-family: helvetica, arial, sans-serif;
 }
+
 #everything {
   height: 100%;
   background-color: #000;
   width: 100%;
   color: #fff;
 }
+
 .instance {
   background-color: #ccc;
   position: absolute;
@@ -18,26 +20,31 @@ body {
   border: 2px solid #ccc;
   overflow: auto;
 }
+
 .instance textarea {
   height: 90px;
   width: 190px;
 }
+
 .instance a {
   display: block;
   background-color: lightgreen;
   color: green;
   border: 1px solid green;
 }
+
 .savedNote {
   text-align: left !important;
   padding: 10px !important;
   color: #fff !important;
   background-color: green !important;
 }
+
 .over {
   /*	background-color: #ccf;*/
   border: 2px solid #ffc;
 }
+
 .instance form {
   padding: 10px;
 }

@@ -3,38 +3,38 @@
 APPLET Element | APPLET Object
 
 
- Places executable content on the page. 
- HTML Syntax
+Places executable content on the page.
+HTML Syntax
 
-        &lt;APPLET
-            ALIGN=ABSBOTTOM | ABSMIDDLE | BASELINE | BOTTOM
-                | LEFT | MIDDLE | RIGHT | TEXTTOP | TOP
-            ALT=text
-            CLASS=classname
-            CODE=filename
-            CODEBASE=url
-            DATAFLD=colname
-            DATASRC=#ID
-            HEIGHT=n
-            HSPACE=n
-            ID=value
-            NAME=name
-            SRC=url
-            STYLE=css1-properties
-            TITLE=text
-            VSPACE=n
-            WIDTH=n
-            event = script
-        &gt;
+&lt;APPLET
+ALIGN=ABSBOTTOM | ABSMIDDLE | BASELINE | BOTTOM
+| LEFT | MIDDLE | RIGHT | TEXTTOP | TOP
+ALT=text
+CLASS=classname
+CODE=filename
+CODEBASE=url
+DATAFLD=colname
+DATASRC=#ID
+HEIGHT=n
+HSPACE=n
+ID=value
+NAME=name
+SRC=url
+STYLE=css1-properties
+TITLE=text
+VSPACE=n
+WIDTH=n
+event = script
+&gt;
 
- Remarks
+Remarks
 
-        This element is a block element. 
+This element is a block element.
 
- Members
+Members
 
-        APPLET Members 
+APPLET Members
 
- Styles
+Styles
 
-        APPLET Styles 
+APPLET Styles

@@ -1,1 +1,7 @@
-{"guid":"_f5f36aa5-8801-042a-8121-f878b20f73e7","top":"213","left":"95","height":"186","content":"You can drag them around! They work using localStorage. So far it works ok in Safari, Chrome, and iPad. I've not tested it much beyond that. It uses the Sencha Touch framework under the hood."}
+{
+  "guid": "_f5f36aa5-8801-042a-8121-f878b20f73e7",
+  "top": "213",
+  "left": "95",
+  "height": "186",
+  "content": "You can drag them around! They work using localStorage. So far it works ok in Safari, Chrome, and iPad. I've not tested it much beyond that. It uses the Sencha Touch framework under the hood."
+}

@@ -3,11 +3,13 @@ body {
   color: #fff;
   font-family: sans-serif;
 }
-html,body {
+
+html, body {
   height: 100%;
   overflow: hidden;
 }
-body,section {
+
+body, section {
   display: grid;
   justify-content: center;
   align-items: center;

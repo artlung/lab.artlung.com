@@ -1,0 +1,48 @@
+.vaguely {
+  margin: 3em;
+  font-family: helvetica, sans-serif;
+  width: 800px;
+  background-color: #fff;
+
+  .aboveelshape {
+    height: 4px;
+    background-color: #c00;
+    margin: 4px 0 4px 0;
+  }
+
+  .bottomshape {
+    height: 4px;
+    background-color: #00c;
+    margin: 4px 0 4px 0;
+  }
+
+  .elshape {
+    border-style: solid;
+    border-width: 0 0 4px 3em;
+    height: 2em;
+    border-color: #000;
+    font-size: xx-large;
+    padding-left: 1em;
+    padding-top: 1em;
+    margin: 0 0 4px 0;
+  }
+
+  .belowelshape {
+    border-style: solid;
+    border-width: 4px 0 0 3em;
+    border-color: #ccc;
+    font-size: xx-large;
+    padding-left: 1em;
+    padding-top: 0.5em;
+    border-bottom: 4px solid #fff;
+  }
+
+  .belowelshape p {
+    font-size: large;
+    color: #666;
+    line-height: 1.4em;
+    text-align: justify;
+    margin-top: 0.5em;
+  }
+
+}

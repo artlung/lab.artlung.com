@@ -10,6 +10,9 @@ class PasswordGenerator
     public static $length = "20";
     public $letters_array;
 
+    /**
+     * PasswordGenerator constructor.
+     */
     function __construct()
     {
         $this->letters_array = array();
@@ -20,6 +23,11 @@ class PasswordGenerator
     }
 
 
+    /**
+     * Make password
+     *
+     * @return string
+     */
     function make(): string
     {
         $password = '';
@@ -31,11 +39,22 @@ class PasswordGenerator
 
     }
 
+    /**
+     * Print one password
+     *
+     * @return void
+     */
     function printOne()
     {
         print $this->make();
     }
 
+    /**
+     * Print many passwords
+     *
+     * @param  $num
+     * @return void
+     */
     function printMany($num)
     {
         for ($i = 0; $i < $num; $i++) {

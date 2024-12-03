@@ -4718,71 +4718,89 @@ $cell_resolutions = <<<ENDTABLE
 ENDTABLE;
 
 
-require_once('../../loader.php');
+require_once '../../loader.php';
 $lab = new Lab();
 $lab->printHeader('Screen Resolutions of Old Phones');
 
 ?>
 
 
-<div id="screens">
+    <div id="screens">
 
-    <?php
-    $str = $display_resolutions;
+        <?php
+        $str = $display_resolutions;
 
-    function li($s){
-        return "<li>" . $s . "</li>";
-    }
-    function proper_key($width, $height) {
-        $format= "%1$06d_%2$06d";
-        return sprintf($format, $width, $height);
-    }
-    function correctPadding($paddedNum) {
-        $return = "";
-        $flag = false;
-        for($i=0;$i<strlen($paddedNum);$i++){
-            if ($paddedNum[$i] != "0" && !$flag){
-                $flag = true;
-            }
-            if ($flag) {
-                $return .= $paddedNum[$i];
-            }
+        /**
+         * @param  $s
+         * @return string
+         */
+        function li($s)
+        {
+            return "<li>" . $s . "</li>";
         }
-        return $return;
-    }
 
-    //print_r();
+        /**
+         * @param  $width
+         * @param  $height
+         * @return string
+         */
+        function properKey($width, $height)
+        {
+            $format = "%1$06d_%2$06d";
+            return sprintf($format, $width, $height);
+        }
 
-    $width_height_and_data = array();
+        /**
+         * @param  $paddedNum
+         * @return string
+         */
+        function correctPadding($paddedNum)
+        {
+            $return = "";
+            $flag = false;
+            for ($i = 0; $i < strlen($paddedNum); $i++) {
+                if ($paddedNum[$i] != "0" && !$flag) {
+                    $flag = true;
+                }
+                if ($flag) {
+                    $return .= $paddedNum[$i];
+                }
+            }
+            return $return;
+        }
 
-    //Code	Name	Aspect ratio	Width	Height	 % of Steam users
-    $i = 0;
-    foreach (explode("\n", $str) as $line) {
-        if ($i!=0):
-            list($code, $name, $aspect_ratio, $width, $height, $percent_steam_users) = explode("\t", $line);
+        //print_r();
 
-            $width_height_and_data[proper_key($width, $height)][] = array(
-                'shortname' => $code,
-                'description' => $name,
-                'width' => $width,
-                'height' => $height,
-                'major' => true,
-            );
+        $width_height_and_data = array();
 
-        endif;
-        $i++;
-    }
+        //Code    Name    Aspect ratio    Width    Height     % of Steam users
+        $i = 0;
+        foreach (explode("\n", $str) as $line) {
+            if ($i != 0) :
+                list($code, $name, $aspect_ratio, $width, $height, $percent_steam_users) = explode("\t", $line);
 
-    $dom = new DomDocument();
-    if (!$dom->loadHTML($cell_resolutions)){
-        exit('Failed to load html');
-    }
-    $i = 0;
-    foreach($dom->getElementsByTagName('tr') as $tr):
-        if ($i!=0):
-            $tdIndex = 0;
-            foreach($tr->getElementsByTagName('td') as $td):
-                switch($tdIndex):
+                $width_height_and_data[properKey($width, $height)][] = array(
+                    'shortname' => $code,
+                    'description' => $name,
+                    'width' => $width,
+                    'height' => $height,
+                    'major' => true,
+                );
+
+            endif;
+            $i++;
+        }
+
+        $dom = new DomDocument();
+        if (!$dom->loadHTML($cell_resolutions)) {
+            exit('Failed to load html');
+        }
+        $i = 0;
+        foreach ($dom->getElementsByTagName('tr') as $tr):
+            if ($i != 0) :
+                $tdIndex = 0;
+                foreach ($tr->getElementsByTagName('td') as $td):
+                    switch ($tdIndex):
                     case 0:
                         if ($td->textContent != '') {
                             $brand = $td->textContent;
@@ -4794,83 +4812,81 @@ $lab->printHeader('Screen Resolutions of Old Phones');
                     case 2:
                         list($width, $height) = explode(' x ', $td->textContent);
                         break;
-                endswitch;
-                $shortname = $model ?? ''   ;
-                $description = "{$brand} {$shortname}";
-                $tdIndex++;
-            endforeach;
-            $width_height_and_data[proper_key($width, $height)][] = array(
-                'shortname' => $shortname,
-                'description' => $description,
-                'width' => $width,
-                'height' => $height,
-                'major' => false,
-            );
-        endif;
-        $i++;
-    endforeach;
-
-    // print "<pre>";
-    // print_r($width_height_and_data);
-
-
-
-
-    ksort($width_height_and_data);
-
-    foreach($width_height_and_data as $width_height => $data):
-        list($width, $height) = explode('_', $width_height);
-        $width = correctPadding($width);
-        $height = correctPadding($height);
-        $cssAttributes = array(
-            'width' => "{$width}px",
-            'height' => "{$height}px",
-        );
-        $count = count($data);
-
-        $classes = 'screen';
-
-        if (($data['major'][0] ?? false )== true) {
-            $classes .= ' major';
-        } else if ($count == 1) {
-            $classes .= ' minor';
-        } else if (in_array($count, range(2, 10))) {
-            $classes .= ' minor';
-        } else if (in_array($count, range(11, 50))) {
-            $classes .= ' minor';
-        } else if (in_array($count, range(51, 100))) {
-            $classes .= ' more-than-50 ';
-        } else {
-            $classes .= ' more-than-100';
-        }
-        // print count($data);
-        // print "<br>";
-        $css = "";
-        foreach($cssAttributes as $key => $val) {
-            $css .= "{$key}:{$val};";
-        }
-
-    printf("<div style=\"%s\" title=\"width %s pixels by height %s pixels\" class=\"%s\">", $css, $width, $height, $classes);
-    printf("<h2>%s &times; %s</h2>", $width, $height);
-        $items = array();
-        foreach($data as $item):
-            $items[] = $item['description'];
+                    endswitch;
+                    $shortname = $model ?? '';
+                    $description = "{$brand} {$shortname}";
+                    $tdIndex++;
+                endforeach;
+                $width_height_and_data[properKey($width, $height)][] = array(
+                    'shortname' => $shortname,
+                    'description' => $description,
+                    'width' => $width,
+                    'height' => $height,
+                    'major' => false,
+                );
+            endif;
+            $i++;
         endforeach;
-        $items = array_map("li", $items);
-        print "<ul>".implode("\n", $items)."</ul>";
-        print "</div>\n\n";
-    endforeach;
+
+        // print "<pre>";
+        // print_r($width_height_and_data);
 
 
-    ?>
-</div>
+        ksort($width_height_and_data);
 
-<link rel="stylesheet" type="text/css" href="screen-resolutions.css<?php
-echo '?'.filemtime('screen-resolutions.css');
-?>" />
+        foreach ($width_height_and_data as $width_height => $data):
+            list($width, $height) = explode('_', $width_height);
+            $width = correctPadding($width);
+            $height = correctPadding($height);
+            $cssAttributes = array(
+                'width' => "{$width}px",
+                'height' => "{$height}px",
+            );
+            $count = count($data);
+
+            $classes = 'screen';
+
+            if (($data['major'][0] ?? false) == true) {
+                $classes .= ' major';
+            } else if ($count == 1) {
+                $classes .= ' minor';
+            } else if (in_array($count, range(2, 10))) {
+                $classes .= ' minor';
+            } else if (in_array($count, range(11, 50))) {
+                $classes .= ' minor';
+            } else if (in_array($count, range(51, 100))) {
+                $classes .= ' more-than-50 ';
+            } else {
+                $classes .= ' more-than-100';
+            }
+            // print count($data);
+            // print "<br>";
+            $css = "";
+            foreach ($cssAttributes as $key => $val) {
+                $css .= "{$key}:{$val};";
+            }
+
+            printf("<div style=\"%s\" title=\"width %s pixels by height %s pixels\" class=\"%s\">", $css, $width, $height, $classes);
+            printf("<h2>%s &times; %s</h2>", $width, $height);
+            $items = array();
+            foreach ($data as $item):
+                $items[] = $item['description'];
+            endforeach;
+            $items = array_map("li", $items);
+            print "<ul>" . implode("\n", $items) . "</ul>";
+            print "</div>\n\n";
+        endforeach;
+
+
+        ?>
+    </div>
+
+    <link rel="stylesheet" type="text/css" href="screen-resolutions.css<?php
+    echo '?' . filemtime('screen-resolutions.css');
+    ?>"/>
 
 <?php
 
 $lab->printFooter(
-        ['comments' => true]
+    ['comments' => true]
 );

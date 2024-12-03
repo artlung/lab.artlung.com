@@ -1,71 +1,112 @@
-body {
-  font-family: helvetica, sans-serif;
-}
-div#wrapper {
-  width: 100px;
+div#smiley-wrapper {
+  box-sizing: border-box;
+  width: 200px;
   padding: 50px;
+  margin: 0 auto;
 }
+
 .smiley {
   height: 100px;
   width: 100px;
   position: relative;
   border-radius: 50px;
-}
-.smiley .eye {
-  height: 12px;
-  width: 12px;
-  border-radius: 6px;
-  position: absolute;
-  overflow: hidden;
-}
-.left-eye {
-  top: 20px;
-  left: 30px;
-}
-.right-eye {
-  top: 20px;
-  right: 30px;
-}
-.mouth {
-  border-bottom-right-radius: 25px;
-  border-bottom-left-radius: 25px;
-  height: 25px;
-  position: absolute;
-  width: 50px;
-  left: 25px;
-  top: 60px;
+
+  .eye {
+    height: 12px;
+    width: 12px;
+    border-radius: 6px;
+    position: absolute;
+    overflow: hidden;
+  }
+
+  .left-eye {
+    top: 20px;
+    left: 30px;
+  }
+
+  .right-eye {
+    top: 20px;
+    right: 30px;
+  }
+
+  .mouth {
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    height: 25px;
+    position: absolute;
+    width: 50px;
+    left: 25px;
+    top: 60px;
+
+  }
+
+  .mouth-cover {
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    height: 25px;
+    position: absolute;
+    width: 40px;
+    left: 30px;
+    top: 50px;
+  }
 
 }
-.mouth-cover {
-  border-bottom-right-radius: 25px;
-  border-bottom-left-radius: 25px;
-  height: 25px;
-  position: absolute;
-  width: 40px;
-  left: 30px;
-  top: 50px;
-}
+
 /* controls */
 div#controls {
-  line-height: 250%;
   text-align: center;
-}
-div#controls div span {
-  background-color: #666;
-  color: #fff;
-  padding: 5px 10px;
-  cursor: pointer;
-}
-div#controls div span.selected {
-  background-color: #0f0;
-  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  > * {
+    padding: 1rem;
+
+    a {
+      display: inline-block;
+    }
+  }
+
+  h2 {
+    margin: 0;
+  }
+
+  .segment {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 20rem;
+
+    > * {
+      width: 100%;
+    }
+  }
+
+  label {
+    background-color: #666;
+    color: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+
+    input[type="radio"] {
+      display: none;
+    }
+
+    &:has(input[type="radio"]:checked) {
+      background-color: #0f0;
+      color: #fff;
+    }
+  }
 }
 
-/*you can programmatically set the colors or even background images of these here */
-div#wrapper, .smiley div.figure {
+.figure {
   background-color: #000;
 }
-.smiley, .smiley div.ground {
+
+.ground {
   background-color: #fff;
 
 }
@@ -75,19 +116,3 @@ div#wrapper, .smiley div.figure {
   margin: 0 auto;
 }
 
-#credits {
-  text-align: center;
-display: flex;
-  align-items: flex-end;
-  margin-top: 10vh;
-  gap: 1em;
-  justify-content: space-between;
-
-
-  a {
-    background: blue;
-    color: #fff;
-    text-decoration: none;
-    padding: 0.66em;
-  }
-}

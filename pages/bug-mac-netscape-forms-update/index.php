@@ -1,3 +1,2 @@
 <?php
-
-require 'bug-mag-netscape-forms-update.php';
+require 'bug-mac-netscape-forms-update.php';

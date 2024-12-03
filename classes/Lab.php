@@ -1,24 +1,25 @@
 <?php
+
 class Lab
 {
-public function __construct()
-{
-    $this->code_from_code_txt = '';
-    $this->currentPageServerDirectoryPath = dirname(__FILE__) .'/../';
+    public function __construct()
+    {
+        $this->code_from_code_txt = '';
+        $this->currentPageServerDirectoryPath = dirname(__FILE__) . '/../';
 
-    // let's parse the current requested url
-    $this->url = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
-    // /asp/index.php would be asp
-    // /asp/ would be asp
+        // let's parse the current requested url
+        $this->url = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+        // /asp/index.php would be asp
+        // /asp/ would be asp
 
-    $this->url = trim($this->url, '/');
-    $this->directoryName = /* only the part before any slash */
-        preg_replace('/\/.*/', '', $this->url);
+        $this->url = trim($this->url, '/');
+        $this->directoryName = /* only the part before any slash */
+            preg_replace('/\/.*/', '', $this->url);
 
-}
+    }
 
 
-public function printHeader(string $string, $options = [])
+    public function printHeader(string $string, $options = [])
     {
         print $this->getHeader($string, $options);
     }
@@ -51,7 +52,7 @@ public function printHeader(string $string, $options = [])
         $scriptNameMd5 = md5($_SERVER['SCRIPT_NAME']);
         $title = htmlspecialchars($title);
 
-        $codePath = $this->currentPageServerDirectoryPath  . 'pages/'. $this->directoryName . '/code.txt';
+        $codePath = $this->currentPageServerDirectoryPath . 'pages/' . $this->directoryName . '/code.txt';
 
         if (is_file($codePath)) {
             $code_from_code_txt = file_get_contents($codePath);
@@ -68,12 +69,23 @@ public function printHeader(string $string, $options = [])
 
         $navItems = Nav::getMetadata();
         // sort by the slug
-        ksort($navItems);
+//        ksort($navItems);
+
+        // sort by the value of $navItems[$slug]['year'] DESC
+        uasort($navItems, function ($a, $b) {
+            return $b['year'] <=> $a['year'];
+        });
+
         // turn that into an ordered list
         $nav = '<ol>';
         foreach ($navItems as $slug => $navItem) {
             $url = '/' . $slug . '/';
-            $nav .= sprintf('<li><a href="%s">%s</a></li>', $url, $navItem['title']);
+            if ($navItem['year']) {
+                $styleString = "--year: {$navItem['year']};";
+            } else {
+                $styleString = '';
+            }
+            $nav .= sprintf('<li><a href="%s" style="%s">%s</a></li>', $url, $styleString, htmlentities($navItem['title']));
         }
         $nav .= '</ol>';
 
@@ -82,7 +94,8 @@ public function printHeader(string $string, $options = [])
         $shareOpenlyTitle = 'Share Openly';
         $pathOnly = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
         $url = 'https://lab.artlung.com' . $pathOnly;
-        $text = $title . " #ArtLungLab";
+        $text = '“' . $title . '” #ArtLungLab';
+
         // https://shareopenly.org/share/?url={URL}&text={TEXT}
         $shareOpenlyLink = 'https://shareopenly.org/share/' .
             '?url=' . urlencode($url) .
@@ -138,21 +151,21 @@ HTML;
 </pre>
 HTML;
         }
-            $protocol = !empty($_SERVER['HTTPS']) ? 'https' : 'http';
-            $canonical = $protocol . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
-            $is_main_page = $canonical === 'https://lab.artlung.com/';
+        $protocol = !empty($_SERVER['HTTPS']) ? 'https' : 'http';
+        $canonical = $protocol . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 
-if ($options['comments'] ?? true) {
-    $comments_code = $this->getCommentsCode();
-} else {
-    $comments_code = '';
-}
-return <<<HTML
+        if ($options['comments'] ?? true) {
+            $comments_code = $this->getCommentsCode();
+        } else {
+            $comments_code = '';
+        }
+        return <<<HTML
 {$code_output}
 </article>
 {$comments_code}
 <footer>
 	<span>&copy; 1996-{$copyrightYear}</span>
+	<a href="https://github.com/artlung/lab.artlung.com" target="_blank">Source Code</a>
     <a href="https://artlung.com/s" class="joe" target="_blank">Joe Crawford</a>
 </footer>
 </body>
@@ -195,4 +208,52 @@ s.setAttribute('data-timestamp', +new Date());
 HTML;
 
     }
+
+    public function printSource(string $html, $php = false)
+    {
+        if ($php) {
+            $html = highlight_string($html, true);
+            return;
+        }
+        print "<pre>";
+        print htmlentities($html);
+        print "</pre>";
+    }
+
+    public function printSourceFile(string $string)
+    {
+        $path = $this->currentPageServerDirectoryPath . 'pages/' . $this->directoryName . '/' . $string;
+        if (is_file($path)) {
+            $html = file_get_contents($path);
+            $this->printSource($html);
+        } else {
+            print "<p>File not found: $path</p>";
+        }
+    }
+
+    public function printCodeBlock(string $ob_get_clean)
+    {
+        print "<pre>";
+        print htmlentities($ob_get_clean);
+        print "</pre>";
+    }
+
+    public function displayCode($code)
+    {
+        $this->printCodeBlock($code);
+    }
+
+    public function getWebmentionForm()
+    {
+        $canonical = 'https://lab.artlung.com' . parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+        return <<<HTML
+<h2>Webmention</h2>
+<form action="https://webmention.io/artlung.com/webmention" method="post">
+    <input type="text" name="source" placeholder="source" required>
+    <input type="hidden" value="{$canonical}">
+    <input type="submit" value="Send Webmention">
+<blockquote
+HTML;
+    }
+
 }

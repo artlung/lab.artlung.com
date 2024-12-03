@@ -1,4 +1,4 @@
-var setTime = function() {
+var setTime = function () {
     var seconds = new Date().getSeconds();
     var hours = new Date().getHours() % 12;
     var minutes = new Date().getMinutes();

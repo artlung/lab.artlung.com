@@ -1,18 +1,18 @@
-  <div>
+<div>
     <h2>METHOD: &nbsp;<code>Response.End</code></h2>
     <hr>
 
-    <p><span><strong>Response.</strong><span><strong>End</strong> <br />
-    <br />
-    The <strong>End</strong> method orders the web server to stop processing the script. The current results are returned and no further processing occurs. If <strong>Response.Buffer</strong> is set to <strong>True</strong>, <strong>Response.End</strong> will flush the buffer and then end.<br />
-    <br />
-    Note that in ASP version 2.0, the default for <strong>Response.Buffer</strong> is set to <strong>False</strong>, however in ASP version 3.0, the default for <strong>Response.Buffer</strong> is set to <strong>True</strong>.<br />
-    <br />
-    In the example, the second <strong>Response.Write</strong> will not be displayed in the output.<br />
+    <p><span><strong>Response.</strong><span><strong>End</strong> <br/>
+    <br/>
+    The <strong>End</strong> method orders the web server to stop processing the script. The current results are returned and no further processing occurs. If <strong>Response.Buffer</strong> is set to <strong>True</strong>, <strong>Response.End</strong> will flush the buffer and then end.<br/>
+    <br/>
+    Note that in ASP version 2.0, the default for <strong>Response.Buffer</strong> is set to <strong>False</strong>, however in ASP version 3.0, the default for <strong>Response.Buffer</strong> is set to <strong>True</strong>.<br/>
+    <br/>
+    In the example, the second <strong>Response.Write</strong> will not be displayed in the output.<br/>
     </p>
 
     <h2>Code:</h2>
-    
+
     <pre>&lt;% 
 Response.Write "Hello World" 
 Response.End 
@@ -22,6 +22,6 @@ Response.Write "Is this the End?"
     <h3>Output:</h3>
 
     <blockquote>
-    Hello World
+        Hello World
     </blockquote>
-  </div>
+</div>

@@ -1,10 +1,10 @@
 <?php
-require_once('../../loader.php');
+require_once '../../loader.php';
 $lab = new Lab();
 $lab->printHeader('Slideshows Roughly How We did them in 1999');
 ?>
 
-<h1>Slideshows Roughly How We did them in 1999</h1>
+    <h1>Slideshows Roughly How We did them in 1999</h1>
 
 <?php
 
@@ -33,17 +33,14 @@ HTML;
 print $HTML;
 
 ?>
-<h2>HTML</h2>
+    <h2>HTML</h2>
 
-<pre><code><?php echo htmlentities($HTML); ?></code></pre>
-
-
-
-
-
+    <pre><code><?php echo htmlentities($HTML); ?></code></pre>
 
 
 <?php
-$lab->printFooter([
-    'comments' => true
-]);
+$lab->printFooter(
+    [
+        'comments' => true
+    ]
+);

@@ -38,11 +38,11 @@ var GOAL = {
 document.addEventListener('DOMContentLoaded', function () {
     GOAL.init();
     document.getElementById('increment').addEventListener('click', function () {
-        GOAL.incrementCount();
-    }
+            GOAL.incrementCount();
+        }
     );
     document.getElementById('decrement').addEventListener('click', function () {
-        GOAL.decrementCount();
-    }
+            GOAL.decrementCount();
+        }
     );
 });

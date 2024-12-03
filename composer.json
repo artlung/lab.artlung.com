@@ -1,0 +1,13 @@
+{
+    "name": "artlung/lab.artlung.com",
+    "require-dev": {
+        "squizlabs/php_codesniffer": "3.*"
+    },
+    "authors": [
+        {
+            "name": "Joe Crawford",
+            "email": "joe@artlung.com"
+        }
+    ],
+    "require": {}
+}

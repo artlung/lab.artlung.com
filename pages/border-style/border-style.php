@@ -1,9 +1,11 @@
 <?php
-require_once('../../loader.php');
+require_once '../../loader.php';
 $lab = new Lab();
-$lab->printHeader('
+$lab->printHeader(
+    '
 border-style css property experiment
-');
+'
+);
 
 ?>
 
@@ -14,22 +16,25 @@ $bs = $_GET['bs'] ?? "solid";
 $px = $_GET['px'] ?? 10;
 $borderTypes = array(
     "none"
-,"hidden"
-,"dotted"
-,"dashed"
-,"solid"
-,"double"
-,"groove"
-,"ridge"
-,"inset"
-,"outset"
+, "hidden"
+, "dotted"
+, "dashed"
+, "solid"
+, "double"
+, "groove"
+, "ridge"
+, "inset"
+, "outset"
 );
-if(!in_array(strtolower($bs),$borderTypes))
+if (!in_array(strtolower($bs), $borderTypes)) {
     $bs = $borderTypes[4];
-if (!is_numeric($px))
+}
+if (!is_numeric($px)) {
     $px = 10;
-if($bs == "none")
+}
+if ($bs == "none") {
     $px = 0;
+}
 ?>
     <style>
         <!--
@@ -41,34 +46,38 @@ if($bs == "none")
             margin: 0px;
             padding: 20px;
         }
-        //-->
+
+        /
+        /
+        -->
     </style>
 
     <div id="theBox">
 
-        <p class="date-attribution"><small><em>Created February 2001. Updated 15 March 2002 and December 2005</em></small></p>
+        <p class="date-attribution"><small><em>Created February 2001. Updated 15 March 2002 and December
+                    2005</em></small></p>
 
         <form action="./">
 
             <p>border-style experiment :
                 <select name="bs" onchange="this.form.submit();">
                     <?php
-                    foreach($borderTypes as $style)
-                    {
+                    foreach ($borderTypes as $style) {
                         print "<option ";
-                        if($style == $bs)
+                        if ($style == $bs) {
                             print "selected";
+                        }
                         print ">$style</option>";
                     }
                     ?>
                 </select>
                 <select name="px" onchange="this.form.submit();">
                     <?php
-                    for($i=0;$i<100;$i++)
-                    {
+                    for ($i = 0; $i < 100; $i++) {
                         print "<option ";
-                        if($i == $px)
+                        if ($i == $px) {
                             print "selected";
+                        }
                         print ">$i</option>";
                     }
                     ?>
@@ -79,12 +88,12 @@ if($bs == "none")
 &lt;style&gt;
 &lt;!--
 div#theBox {
-	border-color: #F00;
-	border-width: <?php echo $px; ?>px;
-	border-style: <?php echo $bs; ?>;
+    border-color: #F00;
+    border-width: <?php echo $px; ?>px;
+    border-style: <?php echo $bs; ?>;
 /* <a href="http://www.w3.org/TR/REC-CSS2/box.html#border-style-properties">http://www.w3.org/TR/REC-CSS2/box.html#border-style-properties</a> */
-	margin: 0px;
-	padding: 20px;
+    margin: 0px;
+    padding: 20px;
 }
 //--&gt;
 &lt;/style&gt;
@@ -94,6 +103,8 @@ div#theBox {
 
 
 <?php
-$lab->printFooter([
-    'comments' => true
-]);
+$lab->printFooter(
+    [
+        'comments' => true
+    ]
+);
