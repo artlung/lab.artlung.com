@@ -21,6 +21,7 @@ class LabTest extends TestCase
     {
         parent::__construct($name, $data, $dataName);
         $_SERVER['REQUEST_URI'] = 'https://lab.artlung.com/';
+        $_SERVER['HTTP_HOST'] = 'lab.artlung.com';
     }
 
     /**
