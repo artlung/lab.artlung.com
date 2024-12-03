@@ -8,7 +8,7 @@ I originally created the site [lab.artlung.com](https://lab.artlung.com) in 2001
   * I created a private repository for the site.
 * 2024 
   * I made the repository public as part of [IndieWeb Black Friday Create Day](https://indieweb.org/events/2024-black-friday-create-day).
-  * [PHP_CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer) was adde
+  * [PHP_CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer) was added
   * Preliminary PHPUnit tests added
 
 
