@@ -100,6 +100,12 @@ class Years {
                 'change-space-between-paragraphs' => 2006,
                 'format-time' => 2002,
                 'rtf' => 2024,
+'history' => 1999,
+'html-2.0' => 2001,
+'recursive-iframe' => 2009,
+'reverse-string-nums' => 2001,
+'random-content' => 2001,
+'open-graph-protocol-tools' => 2010
 //
         );
     }
