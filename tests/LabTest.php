@@ -21,7 +21,7 @@ class LabTest extends TestCase
      * Constructor
      *
      * @param string|null $name
-     * @param array $data
+     * @param array       $data
      * @param $dataName
      */
     public function __construct(?string $name = null, array $data = [], $dataName = '')
