@@ -1,5 +1,5 @@
 <?php
-require_once('../../loader.php');
+require_once '../../loader.php';
 $lab = new Lab();
 $lab->printHeader('ColdFusion TitleCase Function');
 
@@ -14,8 +14,10 @@ $lab->printHeader('ColdFusion TitleCase Function');
  * function - titleCase()
  *    accepts and returns string data this function is similar
  *    to LCase or UCase,
- *       See: <a href="https://web.archive.org/web/20050305155053/http://livedocs.macromedia.com/coldfusion/6.1/htmldocs/functiob.htm">http://livedocs.macromedia.com/coldfusion/6.1/htmldocs/functiob.htm</a>
- *       See: <a href="https://web.archive.org/web/20050305155053/http://livedocs.macromedia.com/coldfusion/6.1/htmldocs/funca112.htm">http://livedocs.macromedia.com/coldfusion/6.1/htmldocs/funca112.htm</a>
+ *       See: <a
+                href="https://web.archive.org/web/20050305155053/http://livedocs.macromedia.com/coldfusion/6.1/htmldocs/functiob.htm">http://livedocs.macromedia.com/coldfusion/6.1/htmldocs/functiob.htm</a>
+ *       See: <a
+                href="https://web.archive.org/web/20050305155053/http://livedocs.macromedia.com/coldfusion/6.1/htmldocs/funca112.htm">http://livedocs.macromedia.com/coldfusion/6.1/htmldocs/funca112.htm</a>
  * Function formats a string according to predefined rules.
  * first it separates test so that it is formatted With All
  * Words With Initial Capital Letters And With The Rest Of
@@ -31,32 +33,32 @@ $lab->printHeader('ColdFusion TitleCase Function');
 */
 
 <b>function titleCase(string)  {
-	if (len(string) gt 1)
-	{
-		string = lcase(string);
+    if (len(string) gt 1)
+    {
+        string = lcase(string);
 
-		if (refind("^[a-z]", string))  {
-		string = ucase(left(string, 1)) &amp; right(string,
+        if (refind("^[a-z]", string))  {
+        string = ucase(left(string, 1)) &amp; right(string,
 (len(string) - 1 ));
-		}
+        }
 
-		next = refind("[[:space:][:punct:]][a-z]", string);
+        next = refind("[[:space:][:punct:]][a-z]", string);
 
-		while (next)  {
-			if (next lt (len(string) - 1)) {
-			string = left(string, (next)) &amp; ucase(mid(string,
+        while (next)  {
+            if (next lt (len(string) - 1)) {
+            string = left(string, (next)) &amp; ucase(mid(string,
 next+1, 1)) &amp;  right(string, (len(string) - (next + 1)));
-			} else {
-			string = left(string, (next)) &amp;
+            } else {
+            string = left(string, (next)) &amp;
 ucase(right(string, 1));
-			}
+            }
 
-		next = refind("[[:space:][:punct:]][a-z]", string, next);
-		}
-	} else {
-	string = ucase(string);
+        next = refind("[[:space:][:punct:]][a-z]", string, next);
+        }
+    } else {
+    string = ucase(string);
 
-	}
+    }
 /* post fixes */
 /* Recall that "Replace()" is case sensitive */
 string = Replace(string," Of "," of ","ALL");
@@ -188,6 +190,8 @@ return string;
 
 
 <?php
-$lab->printFooter([
-    'comments' => true
-]);
+$lab->printFooter(
+    [
+        'comments' => true
+    ]
+);

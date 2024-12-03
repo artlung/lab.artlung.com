@@ -1,16 +1,18 @@
 <?php
-require_once('../../loader.php');
+require_once '../../loader.php';
 $lab = new Lab();
-$lab->printHeader('
+$lab->printHeader(
+    '
 NOW() ~= GETDATE()
-');
+'
+);
 
 ?>
 
 
-<h1>NOW() ~= GETDATE()</h1>
+    <h1>NOW() ~= GETDATE()</h1>
 
-<pre>
+    <pre>
 --SQL SERVER <a href="https://msdn.microsoft.com/en-us/library/ms188383.aspx">https://msdn.microsoft.com/en-us/library/ms188383.aspx</a>
 SELECT GETDATE()
 2006-08-15 12:16:05.050
@@ -21,6 +23,8 @@ SELECT NOW()
 </pre>
 
 <?php
-$lab->printFooter([
-	'comments' => true
-]);
+$lab->printFooter(
+    [
+        'comments' => true
+    ]
+);

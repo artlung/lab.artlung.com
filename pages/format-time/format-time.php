@@ -1,13 +1,9 @@
 <?php
-require_once('../../loader.php');
+require_once '../../loader.php';
 $lab = new Lab();
 $lab->printHeader('Date Formatting')
 
 ?>
-
-
-
-
 
 
     <p class="date-attribution">
@@ -20,18 +16,21 @@ $lab->printHeader('Date Formatting')
     <script type="text/javascript">
         /* JavaScript originally by David Turley <dturley@pobox.com> */
         function makeArray() {
-            for (i = 0; i<makeArray.arguments.length; i++)
+            for (i = 0; i < makeArray.arguments.length; i++)
                 this[i] = makeArray.arguments[i];
         }
 
         function getFullYear(d) {
             var y = d.getYear();
-            if (y < 1000) {y += 1900};
+            if (y < 1000) {
+                y += 1900
+            }
+
             return y;
         }
 
-        var days = new makeArray("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
-        var months = new makeArray("January","February","March","April","May","June","July","August","September","October","November","December");
+        var days = new makeArray("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+        var months = new makeArray("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
 
         function format_time(t) {
             var Day = t.getDay();
@@ -52,8 +51,8 @@ $lab->printHeader('Date Formatting')
     <script type="text/javascript">
         m = new Date(document.lastModified);
         d = new Date();
-        document.write("<p>The normal <i>document.lastModified\</i> string: "+m+"<br>");
-        document.write("The modification date after formatting: "+format_time(m)+"</p>");
+        document.write("<p>The normal <i>document.lastModified\</i> string: " + m + "<br>");
+        document.write("The modification date after formatting: " + format_time(m) + "</p>");
     </script>
 
 <?php $html = ob_get_clean(); ?>
@@ -66,9 +65,9 @@ $lab->printCodeBlock($html);
 ?>
 
 
-
-
 <?php
-$lab->printFooter([
-    'comments' => true
-]);
+$lab->printFooter(
+    [
+        'comments' => true
+    ]
+);

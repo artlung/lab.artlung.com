@@ -1,25 +1,28 @@
 <?php
-require_once('../../loader.php');
+require_once '../../loader.php';
 $lab = new Lab();
-$lab->printHeader('
+$lab->printHeader(
+    '
 Call the native version of a VBScript object
-');
+'
+);
 
 ?>
 
-<p class="date-attribution">Created November 2006. Posted August 2016.</p>
+    <p class="date-attribution">Created November 2006. Posted August 2016.</p>
 
-<h1>
-Call the native version of a VBScript object
-</h1>
+    <h1>
+        Call the native version of a VBScript object
+    </h1>
 
-<p>
-Let's say you've redefined a VBScript item, for example a function like <code>Left</code>. How would you call the original version of that function if you needed to?
-</p>
+    <p>
+        Let's say you've redefined a VBScript item, for example a function like <code>Left</code>. How would you call
+        the original version of that function if you needed to?
+    </p>
 
-<p>To be honest, I wrote this so long ago I can't remember <i>why</i> I wrote it. But here it is.</p>
+    <p>To be honest, I wrote this so long ago I can't remember <i>why</i> I wrote it. But here it is.</p>
 
-<pre>
+    <pre>
 &lt;% 
 Option Explicit
 
@@ -49,6 +52,8 @@ Response.Write "&lt;hr&gt;"
 </pre>
 
 <?php
-$lab->printFooter([
-	'comments' => true
-]);
+$lab->printFooter(
+    [
+        'comments' => true
+    ]
+);

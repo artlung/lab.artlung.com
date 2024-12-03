@@ -1,55 +1,68 @@
 <?php
-require_once('../../loader.php');
+require_once '../../loader.php';
 $lab = new Lab();
-$lab->printHeader('
+$lab->printHeader(
+    '
 onmouseover in a TR tag
-');
+'
+);
 
 ?>
 
-<style type="text/css">
-<!--
-	.yellowThing
-	{
-		background: #FF9;
-	}
-	
-	.whiteThing
-	{
-		background: #FFF;
-	}
-	
-	.redThing
-	{
-		background: #F00;
-	}
+    <style type="text/css">
+        <!--
+        .yellowThing {
+            background: #FF9;
+        }
 
-//-->
-</style>
+        .whiteThing {
+            background: #FFF;
+        }
 
-<h1>Onmouseover in a TR tag</h1>
+        .redThing {
+            background: #F00;
+        }
 
-<table cellspacing="0" cellpadding="3" border="0">
-<tr onmouseover="this.className='yellowThing';"
-	onmouseout="this.className='whiteThing';"><td>hello</td><td>world</td></tr>
-<tr onmouseover="this.className='yellowThing';"
-	onmouseout="this.className='whiteThing';"><td>hola</td><td>mundo</td></tr>
-<tr onmouseover="this.className='yellowThing';"
-	onmouseout="this.className='whiteThing';"><td>hello</td><td>hello</td></tr>
-<tr onmouseover="this.style.background='#F00';"
-	onmouseout="this.style.background='#FFF';"><td>hola</td><td>mundo</td></tr>
-</table>
+        /
+        /
+        -->
+    </style>
 
-<table cellspacing="0" cellpadding="3" border="1">
-<tr onmouseover="alert('hello onmouseover'+this.style);"
-class="redThing">
-	<td>the tr for this row has</td>
-	<td>an onmouseover alert</td>
-</tr>
-</table>
+    <h1>Onmouseover in a TR tag</h1>
 
-<h2>Source Code:</h2>
-<pre>
+    <table cellspacing="0" cellpadding="3" border="0">
+        <tr onmouseover="this.className='yellowThing';"
+            onmouseout="this.className='whiteThing';">
+            <td>hello</td>
+            <td>world</td>
+        </tr>
+        <tr onmouseover="this.className='yellowThing';"
+            onmouseout="this.className='whiteThing';">
+            <td>hola</td>
+            <td>mundo</td>
+        </tr>
+        <tr onmouseover="this.className='yellowThing';"
+            onmouseout="this.className='whiteThing';">
+            <td>hello</td>
+            <td>hello</td>
+        </tr>
+        <tr onmouseover="this.style.background='#F00';"
+            onmouseout="this.style.background='#FFF';">
+            <td>hola</td>
+            <td>mundo</td>
+        </tr>
+    </table>
+
+    <table cellspacing="0" cellpadding="3" border="1">
+        <tr onmouseover="alert('hello onmouseover'+this.style);"
+            class="redThing">
+            <td>the tr for this row has</td>
+            <td>an onmouseover alert</td>
+        </tr>
+    </table>
+
+    <h2>Source Code:</h2>
+    <pre>
 &lt;style type="text/css"&gt;
 &lt;!--
 body { background: #FFF }
@@ -87,6 +100,8 @@ class="redThing"&gt;
 
 
 <?php
-$lab->printFooter([
-	'comments' => true
-]);
+$lab->printFooter(
+    [
+        'comments' => true
+    ]
+);

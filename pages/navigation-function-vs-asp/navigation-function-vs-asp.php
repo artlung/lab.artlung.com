@@ -1,18 +1,21 @@
 <?php
-require_once('../../loader.php');
+require_once '../../loader.php';
 $lab = new Lab();
-$lab->printHeader('
+$lab->printHeader(
+    '
 Navigation Function (in PHP and ASP)
-');
+'
+);
 
 ?>
 
-<h1>Navigation Function (in PHP and ASP)</h1>
+    <h1>Navigation Function (in PHP and ASP)</h1>
 
-<p>In the websites I build, I often use a function to do navigation that "toggles" based on where we are in the site. These are those functions, in two languages: PHP and ASP.</p>
+    <p>In the websites I build, I often use a function to do navigation that "toggles" based on where we are in the
+        site. These are those functions, in two languages: PHP and ASP.</p>
 
-<h2>ASP Source Code</h2>
-<pre>
+    <h2>ASP Source Code</h2>
+    <pre>
 <b>&lt;%</b>
 REM --------------------------------
 <b>function navToggleState(my_url, title, linktext, my_class)
@@ -42,8 +45,8 @@ REM --------------------------------
 <b>%&gt;</b>
 </pre>
 
-<h2>PHP Source Code</h2>
-<pre>
+    <h2>PHP Source Code</h2>
+    <pre>
 <b>&lt;?php</b>
 // --------------------------------
 <b>function navToggleState($my_url, $title, $linktext, $my_class) {
@@ -75,6 +78,8 @@ REM --------------------------------
 </pre>
 
 <?php
-$lab->printFooter([
-	'comments' => true
-]);
+$lab->printFooter(
+    [
+        'comments' => true
+    ]
+);

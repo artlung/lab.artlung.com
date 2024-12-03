@@ -1,11 +1,11 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const labels = document.querySelectorAll('#controls div.segment div label');
     for (var i = 0; i < labels.length; i++) {
         labels[i].addEventListener('click', updateColors);
-        labels[i].addEventListener('mouseover', function() {
+        labels[i].addEventListener('mouseover', function () {
             this.click();
         });
-        labels[i].addEventListener('touchstart', function() {
+        labels[i].addEventListener('touchstart', function () {
             this.click();
         });
     }
@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // listen for popstate event
-window.addEventListener('popstate', function(event) {
+window.addEventListener('popstate', function (event) {
     if (event.state && event.state.color) {
         updateInputsFromHash('#' + event.state.color);
         updateColors();
@@ -24,11 +24,7 @@ window.addEventListener('popstate', function(event) {
 });
 
 
-
-
-
-
-const updateColors = function() {
+const updateColors = function () {
     var figureColor = '#';
     var groundColor = '#';
     var inputs = document.querySelectorAll('#controls div.segment div input[type="radio"]:checked');
@@ -39,11 +35,11 @@ const updateColors = function() {
             groundColor += String(inputs[i].value);
         }
     }
-    document.querySelectorAll('.ground').forEach(function(element) {
+    document.querySelectorAll('.ground').forEach(function (element) {
         element.style.backgroundColor = groundColor;
         element.style.color = groundColor;
     });
-    document.querySelectorAll('.figure').forEach(function(element) {
+    document.querySelectorAll('.figure').forEach(function (element) {
         element.style.backgroundColor = figureColor;
         element.style.color = figureColor;
     });
@@ -58,7 +54,7 @@ const updateColors = function() {
 
 }
 
-const updateInputsFromHash = function(colorUrl) {
+const updateInputsFromHash = function (colorUrl) {
     if (!colorUrl) {
         colorUrl = document.location.href;
     }

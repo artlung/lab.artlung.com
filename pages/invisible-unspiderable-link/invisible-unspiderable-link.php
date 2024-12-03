@@ -1,5 +1,5 @@
 <?php
-require_once('../../loader.php');
+require_once '../../loader.php';
 $lab = new Lab();
 $lab->printHeader('Invisible, Unspiderable Link');
 
@@ -22,7 +22,8 @@ $lab->printHeader('Invisible, Unspiderable Link');
         facilisi.
         <br><br>
         Li Europan lingues es membres del sam familie. Lor separat
-        existentie es un myth. Por <span onclick="document.location.href='https://artlung.com/';">scientie</span>, musica, sport etc., li
+        existentie es un myth. Por <span onclick="document.location.href='https://artlung.com/';">scientie</span>,
+        musica, sport etc., li
         tot Europa usa li sam vocabularium. Li lingues differe solmen
         in li grammatica, li pronunciation e li plu commun vocabules.
         Omnicos directe al desirabilit&aacute; de un nov lingua franca: on
@@ -45,26 +46,29 @@ $lab->printHeader('Invisible, Unspiderable Link');
 
     <p>
         The technique here is to hide a link in a span tag, and then use JavaScript to navigate to the link.
-        It's not in a proper tag which refers to an external link, such as <code>&lt;a&gt;</code> or <code>&lt;link&gt;</code>.
+        It's not in a proper tag which refers to an external link, such as <code>&lt;a&gt;</code> or
+        <code>&lt;link&gt;</code>.
         Search engines ought not recognize this sort of link.
-        But it's a kind of privacy or security by obscurity. Any user may view the source of the page and see that there's additional code and a link.
-        Spammers will sometimes append links to a page when they gain access to write to server files. And they can cover their tracks by encoding that source as gibberish, such as by encoding it so it doesn't look like tags and words.
+        But it's a kind of privacy or security by obscurity. Any user may view the source of the page and see that
+        there's additional code and a link.
+        Spammers will sometimes append links to a page when they gain access to write to server files. And they can
+        cover their tracks by encoding that source as gibberish, such as by encoding it so it doesn't look like tags and
+        words.
     </p>
 
-<h2>Spoiler</h2>
+    <h2>Spoiler</h2>
 
-<p>
-    <label class="spoiler">
-        <input type="checkbox">
-        <code>&lt;span onclick="document.location.href='https://artlung.com/';"&gt;scientie&lt;/span&gt;</code>
-    </label>
-</p>
-
-
-
+    <p>
+        <label class="spoiler">
+            <input type="checkbox">
+            <code>&lt;span onclick="document.location.href='https://artlung.com/';"&gt;scientie&lt;/span&gt;</code>
+        </label>
+    </p>
 
 
 <?php
-$lab->printFooter([
-    'comments' => true
-]);
+$lab->printFooter(
+    [
+        'comments' => true
+    ]
+);

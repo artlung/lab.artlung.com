@@ -26,7 +26,7 @@ header("HTTP/1.0 404 Not Found");
 $lab->printHeader('404');
 ?>
 
-<h1>404 Not Found</h1>
+    <h1>404 Not Found</h1>
 
 
 <?php

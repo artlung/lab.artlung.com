@@ -1,19 +1,21 @@
 <?php
-require_once('../../loader.php');
+require_once '../../loader.php';
 $lab = new Lab();
-$lab->printHeader('
+$lab->printHeader(
+    '
 Copy to Clipboard JavaScript
-');
+'
+);
 
 ?>
 
-<p class="date-attribution">Created 12/02/2005</p>
+    <p class="date-attribution">Created 12/02/2005</p>
 
-<h1>
-Copy to Clipboard JavaScript
-</h1>
+    <h1>
+        Copy to Clipboard JavaScript
+    </h1>
 
-<pre>
+    <pre>
 // Microsoft Internet Explorer only
 // Manipulating the system clipboard in JavaScript
 //   Read more at:
@@ -31,6 +33,8 @@ Copy to Clipboard JavaScript
 </pre>
 
 <?php
-$lab->printFooter([
-	'comments' => true
-]);
+$lab->printFooter(
+    [
+        'comments' => true
+    ]
+);

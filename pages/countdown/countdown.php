@@ -1,5 +1,5 @@
 <?php
-require_once('../../loader.php');
+require_once '../../loader.php';
 $lab = new Lab();
 $lab->printHeader('Super Simple Countdown');
 
@@ -13,11 +13,13 @@ $lab->printHeader('Super Simple Countdown');
 
     <h2>Source Code:</h2>
 
-<pre><?php highlight_file('countdown-source.php'); ?></pre>
+    <pre><?php highlight_file('countdown-source.php'); ?></pre>
 
 <?php
-$lab->printFooter([
-    'comments' => true
-]);
+$lab->printFooter(
+    [
+        'comments' => true
+    ]
+);
 
 

@@ -1,13 +1,13 @@
 const renderThisHtml = `<div style="background:conic-gradient(#000 25%,#0000 25% 50%,#fff 50% 75%,#0000 0) 0 0 / 40px 40px,linear-gradient(red,yellow,blue);height:100%;width:100%;aspect-ratio:1"></div>`;
 
-renderHtmlToCanvas( document.getElementById( 'theCanvas' ), renderThisHtml );
+renderHtmlToCanvas(document.getElementById('theCanvas'), renderThisHtml);
 
-function renderHtmlToCanvas( canvas, html ) {
+function renderHtmlToCanvas(canvas, html) {
 
     if (!canvas) {
         return;
     }
-    const ctx = canvas.getContext( '2d' );
+    const ctx = canvas.getContext('2d');
     // https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-origin-clean
 
     const svg = `
@@ -17,17 +17,17 @@ function renderHtmlToCanvas( canvas, html ) {
 </foreignObject>
 </svg>`;
 
-    const svgBlob = new Blob( [svg], { type: 'image/svg+xml;charset=utf-8' } );
-    const svgObjectUrl = URL.createObjectURL( svgBlob );
+    const svgBlob = new Blob([svg], {type: 'image/svg+xml;charset=utf-8'});
+    const svgObjectUrl = URL.createObjectURL(svgBlob);
     const tempImg = new Image();
-    tempImg.addEventListener( 'load', function() {
-        ctx.drawImage( tempImg, 0, 0 );
+    tempImg.addEventListener('load', function () {
+        ctx.drawImage(tempImg, 0, 0);
     });
 
     tempImg.src = svgObjectUrl;
 }
 
-document.getElementById('downloadButton').addEventListener('click', function() {
+document.getElementById('downloadButton').addEventListener('click', function () {
     const errors = document.querySelectorAll('.error');
     errors.forEach(error => error.remove());
     downloadCanvas(this, 'theCanvas', 'canvas.png');

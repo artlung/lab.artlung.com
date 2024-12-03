@@ -1,15 +1,17 @@
 <?php
-require_once('../../loader.php');
+require_once '../../loader.php';
 $lab = new Lab();
-$lab->printHeader('
+$lab->printHeader(
+    '
 Page Self-Refresh
-');
+'
+);
 
 ?>
 
-<h1>Code to make a page that refresh to itself</h1>
+    <h1>Code to make a page that refresh to itself</h1>
 
-<pre>
+    <pre>
 &lt;script language="JavaScript" type="text/javascript"&gt;
 &lt;!--
 <b>var howManyMinutes = 2;</b> // set your interval here;
@@ -22,6 +24,8 @@ setTimeout("window.open(WhereNext,'_top');",refreshFreq);</b>
 </pre>
 
 <?php
-$lab->printFooter([
-	'comments' => true
-]);
+$lab->printFooter(
+    [
+        'comments' => true
+    ]
+);

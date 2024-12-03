@@ -5,8 +5,8 @@ function checkKeyCode(e) {
     return ' ';
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-    document.addEventListener('keydown', function(evt) {
+document.addEventListener('DOMContentLoaded', function () {
+    document.addEventListener('keydown', function (evt) {
         document.querySelector('h1 span#keycode').textContent = checkKeyCode(evt);
     });
 });

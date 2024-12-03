@@ -1,113 +1,110 @@
 <html>
 <head>
-<title>Slideshow Demo</title>
-<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
-<script language="Javascript" type="text/javascript">
-<!--
+    <title>Slideshow Demo</title>
+    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+    <script language="Javascript" type="text/javascript">
+        <!--
 
-/*
- *************************************************************
+        /*
+         *************************************************************
 
-	the array of webpages, this should be a pipe -- "|"
-	(no quote marks) delimited list of urls. just put
-	your urls in there, and it should work fine. they
-	can be relative or full or whatever urls.
-	
-	example, it could just be:
-	
-	everySlideshowUrlSeparatedByPipes = "slide1.html|slide2.html|slide3.html";
+            the array of webpages, this should be a pipe -- "|"
+            (no quote marks) delimited list of urls. just put
+            your urls in there, and it should work fine. they
+            can be relative or full or whatever urls.
 
-	or if you had numbered slides in a folder it might be:
-	
-	everySlideshowUrlSeparatedByPipes = "slides/1.html|slides/2.html|slides/3.html";
-	
-	the idea is to make it simple. also, remember that
-	variable with all the urls should be all on one line.
-	
- *************************************************************
-*/                            
+            example, it could just be:
 
-// every slide, separated by pipes:
-var everySlideshowUrlSeparatedByPipes = "https://www.teoma.com/|https://www.dogpile.com/|https://artlung.com/|https://artlung.com/contact/|https://www.urmcargo.com/|https://www.google.com/";
+            everySlideshowUrlSeparatedByPipes = "slide1.html|slide2.html|slide3.html";
 
-// turn that into an array we can use
-var pagesArray = everySlideshowUrlSeparatedByPipes.split('|');
+            or if you had numbered slides in a folder it might be:
 
-// count of the pages
-var howManyPages = howManyPages;
+            everySlideshowUrlSeparatedByPipes = "slides/1.html|slides/2.html|slides/3.html";
 
-// position of the first slide (always zero)
-var startPageNumber = 0;
+            the idea is to make it simple. also, remember that
+            variable with all the urls should be all on one line.
 
-// position of the last page (javascript starts counting
-//  at zero, so the number minus 1)
-var endPageNumber = howManyPages-1;
+         *************************************************************
+        */
 
-// placeholder so the script knows where to go next.
-var youAreHere = 0;
+        // every slide, separated by pipes:
+        var everySlideshowUrlSeparatedByPipes = "https://www.teoma.com/|https://www.dogpile.com/|https://artlung.com/|https://artlung.com/contact/|https://www.urmcargo.com/|https://www.google.com/";
 
+        // turn that into an array we can use
+        var pagesArray = everySlideshowUrlSeparatedByPipes.split('|');
 
+        // count of the pages
+        var howManyPages = howManyPages;
+
+        // position of the first slide (always zero)
+        var startPageNumber = 0;
+
+        // position of the last page (javascript starts counting
+        //  at zero, so the number minus 1)
+        var endPageNumber = howManyPages - 1;
+
+        // placeholder so the script knows where to go next.
+        var youAreHere = 0;
 
 
-/*
- *************************************************************
+        /*
+         *************************************************************
 
-   bonus feature! automatic forwarding!
-   do you want to have the slideshow automatically
-   go forward between pages?
-   
-   if so, set doAutomaticSlideShow to 1
-   and set timeIntervalInSeconds to the time between slides;
+           bonus feature! automatic forwarding!
+           do you want to have the slideshow automatically
+           go forward between pages?
 
- *************************************************************
-*/  
+           if so, set doAutomaticSlideShow to 1
+           and set timeIntervalInSeconds to the time between slides;
 
-var doAutomaticSlideShow  = 1;
-var timeIntervalInSeconds = 4;
+         *************************************************************
+        */
 
-
+        var doAutomaticSlideShow = 1;
+        var timeIntervalInSeconds = 4;
 
 
-/*
- *************************************************************
- 
-    here is the actual function. on child
-    pages this is referenced with
-    top.ArtLungSlideShow(1) or
-    top.ArtLungSlideShow(1)
+        /*
+         *************************************************************
 
- *************************************************************
-*/  
-function ArtLungSlideShow(inputNumber) {
-	alert(youAreHere);
-	// increment our location...
-	youAreHere = youAreHere + inputNumber;
-	
-	// if the numbers too large, leave it there.
-	if (youAreHere >= endPageNumber)   youAreHere = endPageNumber;
-	// if the number's too low, leave it there.
-	if (youAreHere < startPageNumber) youAreHere = startPageNumber;                                       
+            here is the actual function. on child
+            pages this is referenced with
+            top.ArtLungSlideShow(1) or
+            top.ArtLungSlideShow(1)
 
-	// actually get a url!
-	top.frames['CONTENT_FRAME'].location.href = pagesArray[youAreHere];
-	// this     ^^^^^^^^^^^^^ should be the name of the
-	// frame you want urls to load into. you can change
-	// the frameset to horizontal or vertical or whatever,
-	// but the names of the frames have to stay intact
+         *************************************************************
+        */
+        function ArtLungSlideShow(inputNumber) {
+            alert(youAreHere);
+            // increment our location...
+            youAreHere = youAreHere + inputNumber;
 
-	if (doAutomaticSlideShow==1)
-		moveSlideShowForward(timeIntervalInSeconds);
-}
+            // if the numbers too large, leave it there.
+            if (youAreHere >= endPageNumber) youAreHere = endPageNumber;
+            // if the number's too low, leave it there.
+            if (youAreHere < startPageNumber) youAreHere = startPageNumber;
 
-function moveSlideShowForward(secs)  {
-	window.setTimeout('ArtLungSlideShow(1)', secs*1000);
-}
-// -->
-</script> 
+            // actually get a url!
+            top.frames['CONTENT_FRAME'].location.href = pagesArray[youAreHere];
+            // this     ^^^^^^^^^^^^^ should be the name of the
+            // frame you want urls to load into. you can change
+            // the frameset to horizontal or vertical or whatever,
+            // but the names of the frames have to stay intact
+
+            if (doAutomaticSlideShow == 1)
+                moveSlideShowForward(timeIntervalInSeconds);
+        }
+
+        function moveSlideShowForward(secs) {
+            window.setTimeout('ArtLungSlideShow(1)', secs * 1000);
+        }
+
+        // -->
+    </script>
 </head>
 <!-- I set the border in the frameset tag to zero. This prevents it from validating. Sorry. -->
 <frameset rows="26,*" border="0" framespacing="0" frameborder="NO">
-	<frame scrolling="NO" name="NAVIGATIONAL_FRAME" marginwidth="0" marginheight="0" src="this_nav.html">
-	<frame scrolling="AUTO" name="CONTENT_FRAME" marginwidth="1" marginheight="1" src="loading.html">
+    <frame scrolling="NO" name="NAVIGATIONAL_FRAME" marginwidth="0" marginheight="0" src="this_nav.html">
+    <frame scrolling="AUTO" name="CONTENT_FRAME" marginwidth="1" marginheight="1" src="loading.html">
 </frameset>
 </html>

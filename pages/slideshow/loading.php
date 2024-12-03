@@ -5,6 +5,6 @@
     <title>Starting Slideshow...</title>
 </head>
 <body>
-    <H1>Starting Slideshow...</H1>
+<H1>Starting Slideshow...</H1>
 </body>
 </html>

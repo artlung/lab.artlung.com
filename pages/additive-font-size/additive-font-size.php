@@ -1,15 +1,15 @@
 <?php
-require_once('../../loader.php');
+require_once '../../loader.php';
 $lab = new Lab();
 $lab->printHeader('Stupid Growing CSS Tricks');
 ?>
 
-<p class="date-attribution">created March 2001</p>
+    <p class="date-attribution">created March 2001</p>
 
-<h1>Stupid Growing CSS Tricks</h1>
-<p>When you nest an element and have the font-size: set in percentages, some interesting things can happen</p>
+    <h1>Stupid Growing CSS Tricks</h1>
+    <p>When you nest an element and have the font-size: set in percentages, some interesting things can happen</p>
 
-<p>
+    <p>
 <span>Is
   <span>this 
     <span>a 
@@ -29,10 +29,10 @@ $lab->printHeader('Stupid Growing CSS Tricks');
     </span>
   </span>
 </span>
-</p>
+    </p>
 
 
-<pre>
+    <pre>
 &lt;span&gt;Is 
   &lt;span&gt;this 
     &lt;span&gt;a 
@@ -53,11 +53,6 @@ $lab->printHeader('Stupid Growing CSS Tricks');
   &lt;/span&gt;
 &lt;/span&gt;
 </pre>
-
-
-
-
-
 
 
 <?php

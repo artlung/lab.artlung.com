@@ -1,20 +1,21 @@
 **Artlung Rosetta**
 
-Compare how to do the same thing with the same HTML with different JavaScript libraries. Behaviors and display should be as alike as practical. Libraries include:
+Compare how to do the same thing with the same HTML with different JavaScript libraries. Behaviors and display should be
+as alike as practical. Libraries include:
 
-  * Dojo
-  * Glow
-  * ExtCore
-  * jQuery
-  * MooTools
-  * Prototype
+* Dojo
+* Glow
+* ExtCore
+* jQuery
+* MooTools
+* Prototype
 
 **tl;dr:**
 
-  * Same HTML code
-  * Same behaviors
-  * Different JavaScript library loaded
-  * Thus different implementation code
+* Same HTML code
+* Same behaviors
+* Different JavaScript library loaded
+* Thus different implementation code
 
 **For Example:**
 

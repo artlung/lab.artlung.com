@@ -1,1 +1,1 @@
-<?php require('quote-to-dl.php'); ?>
+<?php require 'quote-to-dl.php'; ?>

@@ -1,5 +1,5 @@
 <?php
-require_once('../../loader.php');
+require_once '../../loader.php';
 $lab = new Lab();
 $lab->printHeader('isEmail() function in PHP');
 
@@ -10,9 +10,10 @@ $lab->printHeader('isEmail() function in PHP');
 
     <h1>isEmail() function in PHP</h1>
 
-    <p>A basic regular expression using <a href="https://www.php.net/manual/en/function.preg-match.php"><code>preg_match()</code></a>to check for the validity of an email address.</p>
+    <p>A basic regular expression using <a href="https://www.php.net/manual/en/function.preg-match.php"><code>preg_match()</code></a>to
+        check for the validity of an email address.</p>
 
-        <h2>Source:</h2>
+    <h2>Source:</h2>
 
 <?php
 
@@ -23,12 +24,14 @@ function isEmail($email) {
 };
 EOD;
 ?>
-<pre>
+    <pre>
     <?php
-highlight_string($source_string);
+    highlight_string($source_string);
     ?></pre>
 
 <?php
-$lab->printFooter([
-    'comments' => true
-]);
+$lab->printFooter(
+    [
+        'comments' => true
+    ]
+);

@@ -18,7 +18,9 @@
     ?>
     <a href="the-content.php">See The Code</a>
     <?php
-    $lab->printFooter([
-        'comments' => true
-    ]);?>
+    $lab->printFooter(
+        [
+            'comments' => true
+        ]
+    ); ?>
 </noframes>

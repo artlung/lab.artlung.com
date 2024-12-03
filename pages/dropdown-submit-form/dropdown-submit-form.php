@@ -1,24 +1,26 @@
 <?php
-require_once('../../loader.php');
+require_once '../../loader.php';
 $lab = new Lab();
-$lab->printHeader('
+$lab->printHeader(
+    '
 Submit a form by selecting a dropdown item in JavaScript
-');
+'
+);
 
 ?>
 
-<h1>Submit a form by selecting a dropdown item in JavaScript</h1>
+    <h1>Submit a form by selecting a dropdown item in JavaScript</h1>
 
 
-<form action="./" method="GET">
- <div align="center">
-  <select name="state" onchange="this.form.submit();">
-    <option>Choose One To Submit This Form</option>
-    <option value="CA">CA</option>
-    <option value="VA">VA</option>
-  </select>
- </div>
-</form>
+    <form action="./" method="GET">
+        <div align="center">
+            <select name="state" onchange="this.form.submit();">
+                <option>Choose One To Submit This Form</option>
+                <option value="CA">CA</option>
+                <option value="VA">VA</option>
+            </select>
+        </div>
+    </form>
 
 <?php
 
@@ -29,9 +31,9 @@ if (isset($_GET['state'])) {
 ?>
 
 
-<h2>How's this done? Check the Source Code:</h2>
+    <h2>How's this done? Check the Source Code:</h2>
 
-<pre>
+    <pre>
 &lt;form action="./" method="GET"&gt;
  &lt;div align="center""&gt;
   &lt;select name="state" <b>onchange="this.form.submit();</b>"&gt;
@@ -45,6 +47,8 @@ if (isset($_GET['state'])) {
 
 
 <?php
-$lab->printFooter([
-	'comments' => true
-]);
+$lab->printFooter(
+    [
+        'comments' => true
+    ]
+);

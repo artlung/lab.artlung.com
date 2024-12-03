@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<ruleset name="LabRuleset">
+    <description>My custom coding standard.</description>
+    <rule ref="PEAR">
+        <exclude name="PEAR.Commenting.FileComment.Missing"/>
+        <!-- ignore long lines -->
+        <exclude name="Generic.Files.LineLength.TooLong"/>
+        <exclude name="PEAR.Commenting.FileComment.MissingCategory"/>
+        <exclude name="PEAR.Commenting.FileComment.MissingPackage"/>
+        <exclude name="PEAR.Commenting.FileComment.MissingAuthor"/>
+        <exclude name="PEAR.Commenting.FileComment.MissingLicense"/>
+        <exclude name="PEAR.Commenting.FileComment.MissingLink"/>
+    </rule>
+</ruleset>

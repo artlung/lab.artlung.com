@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
@@ -8,25 +8,87 @@
 
     <style type="text/css">
         /* general stuff */
-        html { height: 101%; }
-        body { margin: 0; padding: 10px; background: white; color: black; font-size: 100.1%; text-align: center; line-height: 110%; }
-        #wrapper { width: 760px; margin: 0 auto; border: 1px solid #ccc; padding:10px; text-align: left; }
-        h1, h2 { font-family: arial, verdana, sans-serif; }
-        h1 { font-size: 1.2em; margin: .35em 0; }
-        h2 { font-size: 1em;  margin: 1em 0 0 0; }
-        p, pre {margin: .35em 0 0 0; }
-        p { font-family: verdana, arial, sans-serif; font-size: .8em; }
-        pre { background: #FFFFCC; color: green; font-size: .9em; }
-        * html pre { font-size: .75em; }
-        #wrong, #illustr { border: 1px solid green; padding: 10px; background:#F7F7F7; color: inherit; }
-        #preloadLinkImgs { position: absolute; top: 0; left: 0; margin-left: -9999px; }
-        img { border: 0;  vertical-align: middle; }
+        html {
+            height: 101%;
+        }
+
+        body {
+            margin: 0;
+            padding: 10px;
+            background: white;
+            color: black;
+            font-size: 100.1%;
+            text-align: center;
+            line-height: 110%;
+        }
+
+        #wrapper {
+            width: 760px;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+        }
+
+        h1, h2 {
+            font-family: arial, verdana, sans-serif;
+        }
+
+        h1 {
+            font-size: 1.2em;
+            margin: .35em 0;
+        }
+
+        h2 {
+            font-size: 1em;
+            margin: 1em 0 0 0;
+        }
+
+        p, pre {
+            margin: .35em 0 0 0;
+        }
+
+        p {
+            font-family: verdana, arial, sans-serif;
+            font-size: .8em;
+        }
+
+        pre {
+            background: #FFFFCC;
+            color: green;
+            font-size: .9em;
+        }
+
+        * html pre {
+            font-size: .75em;
+        }
+
+        #wrong, #illustr {
+            border: 1px solid green;
+            padding: 10px;
+            background: #F7F7F7;
+            color: inherit;
+        }
+
+        #preloadLinkImgs {
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin-left: -9999px;
+        }
+
+        img {
+            border: 0;
+            vertical-align: middle;
+        }
+
         a {
             font-weight: bold;
             font-size: .95em;
             font-family: verdana, arial, sans-serif;
             text-decoration: underline; /* *** needed for my Opera 8.01 *** */
         }
+
         a:hover {
             text-decoration: none;
         }
@@ -47,10 +109,10 @@
 
         a u {
             background: url(https://web.archive.org/web/20070318000027im_/http://home.tiscali.nl/developerscorner/css-discuss/images/iconout.gif) no-repeat 100% 50%;
-            padding: 0 13px 0 0;	/* width of the img */
-            display: inline-block;	/* IE correction to show the icon */
-            cursor: pointer;		/* IE correction to show hand instead of arrow */
-            vertical-align: bottom;	/* Opera correction to get the last word vertical aligned */
+            padding: 0 13px 0 0; /* width of the img */
+            display: inline-block; /* IE correction to show the icon */
+            cursor: pointer; /* IE correction to show hand instead of arrow */
+            vertical-align: bottom; /* Opera correction to get the last word vertical aligned */
         }
 
         a:visited u {
@@ -100,44 +162,65 @@
 	padding: 0 13px 0 0;
 	}</pre>
 
-    <p id="wrong">Lorem ipsum dolor sit amet, consectetur adipisicing <a href="/web/20070318000027/http://home.tiscali.nl/developerscorner/index.html">this
-            is a normal internal link</a> elit, sed do eiusmod tempor incididunt ut  labore et
-        <a class="extern" href="/web/20070318000027/http://home.tiscali.nl/developerscorner/test-link01.htm">this is an external link</a> dolore magna aliqua. Ut enim ad minim
-        <a class="extern" href="/web/20070318000027/http://home.tiscali.nl/developerscorner/test-link02.htm">this is a good long external link</a> veniam, quis nostrud exercitation
-        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-        esse cillum dolore eu fugiat nulla <a class="extern" href="/web/20070318000027/http://home.tiscali.nl/developerscorner/test-link03.htm">this is again an external link</a> pariatur.
-        Excepteur sint occaecat cupidatat non <a class="extern" href="/web/20070318000027/http://home.tiscali.nl/developerscorner/test-link04.htm">this is certainly a very long external link but
-            that can happen sometimes isn't</a> proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p id="wrong">Lorem ipsum dolor sit amet, consectetur adipisicing <a
+                href="/web/20070318000027/http://home.tiscali.nl/developerscorner/index.html">this
+            is a normal internal link</a> elit, sed do eiusmod tempor incididunt ut labore et
+        <a class="extern" href="/web/20070318000027/http://home.tiscali.nl/developerscorner/test-link01.htm">this is an
+            external link</a> dolore magna aliqua. Ut enim ad minim
+        <a class="extern" href="/web/20070318000027/http://home.tiscali.nl/developerscorner/test-link02.htm">this is a
+            good long external link</a> veniam, quis nostrud exercitation
+        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit
+        esse cillum dolore eu fugiat nulla <a class="extern"
+                                              href="/web/20070318000027/http://home.tiscali.nl/developerscorner/test-link03.htm">this
+            is again an external link</a> pariatur.
+        Excepteur sint occaecat cupidatat non <a class="extern"
+                                                 href="/web/20070318000027/http://home.tiscali.nl/developerscorner/test-link04.htm">this
+            is certainly a very long external link but
+            that can happen sometimes isn't</a> proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
     <p>[ for instance the Wikipedia is showing this fenomenon:
-        <a href="/web/20070318000027/http://home.tiscali.nl/developerscorner/css-discuss/images/broken-wiki-ie-link-icons.gif"> screenshot</a> ]</p>
+        <a href="/web/20070318000027/http://home.tiscali.nl/developerscorner/css-discuss/images/broken-wiki-ie-link-icons.gif">
+            screenshot</a> ]</p>
 
     <h2>But now!</h2>
 
     <p>Attention: this is IE-proof, but a terrible trick; not beautiful and far away from semantics!
         - But: once the css is done, it's very easy to apply in the text writing.</p>
 
-    <p id="illustr">Lorem ipsum dolor sit amet, consectetur adipisicing <a href="/web/20070318000027/http://home.tiscali.nl/developerscorner/index.html">this
-            is a normal internal link</a> elit, sed do eiusmod tempor incididunt ut  labore et
-        <a href="/web/20070318000027/http://home.tiscali.nl/developerscorner/test-link01.htm">this is an external <u>link</u></a> dolore magna aliqua. Ut enim ad minim
-        <a href="/web/20070318000027/http://home.tiscali.nl/developerscorner/test-link02.htm">this is a good long external <u>link</u></a> veniam, quis nostrud exercitation
-        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-        esse cillum dolore eu fugiat nulla <a href="/web/20070318000027/http://home.tiscali.nl/developerscorner/test-link03.htm">this is again an external <u>link</u></a> pariatur.
-        Excepteur sint occaecat cupidatat non <a href="/web/20070318000027/http://home.tiscali.nl/developerscorner/test-link04.htm">this is certainly a very long external link but
-            that can happen sometimes <u>isn't</u></a> proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p id="illustr">Lorem ipsum dolor sit amet, consectetur adipisicing <a
+                href="/web/20070318000027/http://home.tiscali.nl/developerscorner/index.html">this
+            is a normal internal link</a> elit, sed do eiusmod tempor incididunt ut labore et
+        <a href="/web/20070318000027/http://home.tiscali.nl/developerscorner/test-link01.htm">this is an external <u>link</u></a>
+        dolore magna aliqua. Ut enim ad minim
+        <a href="/web/20070318000027/http://home.tiscali.nl/developerscorner/test-link02.htm">this is a good long
+            external <u>link</u></a> veniam, quis nostrud exercitation
+        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit
+        esse cillum dolore eu fugiat nulla <a
+                href="/web/20070318000027/http://home.tiscali.nl/developerscorner/test-link03.htm">this is again an
+            external <u>link</u></a> pariatur.
+        Excepteur sint occaecat cupidatat non <a
+                href="/web/20070318000027/http://home.tiscali.nl/developerscorner/test-link04.htm">this is certainly a
+            very long external link but
+            that can happen sometimes <u>isn't</u></a> proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum.</p>
 
     <p>[ click external link and come back to see the visited effect ]<br/>
         <br/>
         <b>IMG</b>:<br/>
         The images used here are 13x10px; 3px left side is instead of margin.<br/>
         Enlarged normal state icon (fuchsia is transparent in reality)
-        <img src="https://web.archive.org/web/20070318000027im_/http://home.tiscali.nl/developerscorner/css-discuss/images/external_link65x50-normal.gif" width="65" height="50" alt=""/>
+        <img src="https://web.archive.org/web/20070318000027im_/http://home.tiscali.nl/developerscorner/css-discuss/images/external_link65x50-normal.gif"
+             width="65" height="50" alt=""/>
         <br/>
         <b>HTML</b>:</p>
 
     <pre>&lt;a href=&quot;http://www.worldoutside.com/&quot;&gt;come to &lt;u&gt;universe&lt;/u&gt;&lt;/a&gt;</pre>
 
     <p>The &lt;u&gt; is the hook for the img. While it is set only on the last word of the link, nothing can break.
-        <img src="https://web.archive.org/web/20070318000027im_/http://home.tiscali.nl/developerscorner/images/smiley.gif" width="15" height="15" alt=""/><br/><br>
+        <img src="https://web.archive.org/web/20070318000027im_/http://home.tiscali.nl/developerscorner/images/smiley.gif"
+             width="15" height="15" alt=""/><br/><br>
         <b>CSS</b>:</p>
 
     <pre>a {
@@ -173,10 +256,13 @@ a:hover u {
     <ul>
         <li><p>Only tested in IE6, IE7, FF2 and Opera9 under WinXP.</p></li>
         <li><p>Of course the same can be achieved with a &lt;span&gt; instead of &lt;u&gt;, but I'm a lazy boy.
-                <img src="https://web.archive.org/web/20070318000027im_/http://home.tiscali.nl/developerscorner/images/smiley.gif" width="15" height="15" alt=""/></p></li>
+                <img src="https://web.archive.org/web/20070318000027im_/http://home.tiscali.nl/developerscorner/images/smiley.gif"
+                     width="15" height="15" alt=""/></p></li>
         <li><p>If desired, in the same way the icon can be positioned before the link instead of afterwards.</p></li>
         <li><p>This page is a short version of a (yet unfinished) Dutch article.<br/>
-                See <a href="https://web.archive.org/web/20070318000027/http://home.tiscali.nl/developerscorner/nederdev/test-link-icon6.htm">Met css een
+                See
+                <a href="https://web.archive.org/web/20070318000027/http://home.tiscali.nl/developerscorner/nederdev/test-link-icon6.htm">Met
+                    css een
                     externe link voorzien van een icoontje</a> (2 Jan. 2007).</p></li>
         <li><p>Impossible to adapt an existing site css wise.<br/>
                 Changing a class
@@ -193,13 +279,18 @@ a:hover u {
 
     <p>Links:</p>
     <ul>
-        <li><p>Article: <a href="https://web.archive.org/web/20070318000027/http://home.tiscali.nl/developerscorner/imaging/fun-links.html">Fun
+        <li><p>Article: <a
+                        href="https://web.archive.org/web/20070318000027/http://home.tiscali.nl/developerscorner/imaging/fun-links.html">Fun
                     links in css</a>. Similar IE problem with hand made img underlining.
                 Workaround, mmm yes: ugly with a factor{amount of words} ...</p></li>
-        <li><p>Ingo Chao's article <a href="https://web.archive.org/web/20070318000027/http://www.satzansatz.de/cssd/wrappinglinkbg.html">Background images lost
+        <li><p>Ingo Chao's article <a
+                        href="https://web.archive.org/web/20070318000027/http://www.satzansatz.de/cssd/wrappinglinkbg.html">Background
+                    images lost
                     on multi line inline <u>links</u></a>.</p></li>
         <li><p>Javascript solution, using class name for external link: Arc90
-                lab's <a href="https://web.archive.org/web/20070318000027/http://lab.arc90.com/2006/08/external_link.php">Tools: External <u>Link</u></a>.</p></li>
+                lab's <a
+                        href="https://web.archive.org/web/20070318000027/http://lab.arc90.com/2006/08/external_link.php">Tools:
+                    External <u>Link</u></a>.</p></li>
     </ul>
 
     <p><i><a href="/web/20070318000027/http://home.tiscali.nl/developerscorner/index.html">francky</a></i>,<br/>
@@ -208,9 +299,12 @@ a:hover u {
 </div>
 
 <div id="preloadLinkImgs">
-    <img src="https://web.archive.org/web/20070318000027im_/http://home.tiscali.nl/developerscorner/css-discuss/images/iconout.gif" alt="" width="13" height="10"/>
-    <img src="https://web.archive.org/web/20070318000027im_/http://home.tiscali.nl/developerscorner/css-discuss/images/iconout-hover.gif" alt="" width="13" height="10"/>
-    <img src="https://web.archive.org/web/20070318000027im_/http://home.tiscali.nl/developerscorner/css-discuss/images/iconout-visited.gif" alt="" width="13" height="10"/>
+    <img src="https://web.archive.org/web/20070318000027im_/http://home.tiscali.nl/developerscorner/css-discuss/images/iconout.gif"
+         alt="" width="13" height="10"/>
+    <img src="https://web.archive.org/web/20070318000027im_/http://home.tiscali.nl/developerscorner/css-discuss/images/iconout-hover.gif"
+         alt="" width="13" height="10"/>
+    <img src="https://web.archive.org/web/20070318000027im_/http://home.tiscali.nl/developerscorner/css-discuss/images/iconout-visited.gif"
+         alt="" width="13" height="10"/>
 </div>
 
 </body>

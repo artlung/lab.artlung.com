@@ -1,17 +1,17 @@
 <?php
-require_once('../../loader.php');
+require_once '../../loader.php';
 $lab = new Lab();
 $lab->printHeader('xml_encode() in PHP');
 
 ?>
 
-<p class="date-attribution"><i>Updated: June/2009</i></p>
+    <p class="date-attribution"><i>Updated: June/2009</i></p>
 
-<h1>xml_encode()<br>
+    <h1>xml_encode()<br>
 
-<h2>Source:</h2>
+        <h2>Source:</h2>
 
-<pre>
+        <pre>
 function xml_encode($mixed,$domElement=null,$DOMDocument=null){
     if(is_null($DOMDocument)){
         $DOMDocument=new DOMDocument;
@@ -52,8 +52,9 @@ function xml_encode($mixed,$domElement=null,$DOMDocument=null){
 </pre>
 
 
-
 <?php
-$lab->printFooter([
-    'comments' => true
-]);
+$lab->printFooter(
+    [
+        'comments' => true
+    ]
+);

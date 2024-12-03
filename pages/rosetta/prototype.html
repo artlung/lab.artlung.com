@@ -1,182 +1,198 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>PrototypeRosetta</title>
-<script src="js/lib/prototype.1.6.1.js" type="text/javascript"></script>
-<script src="js/rosetta.js" type="text/javascript"></script>
-<link rel="stylesheet" href="css/styles.css" type="text/css"charset="utf-8" />
-<script type="text/javascript">
-Event.observe(window, 'load', function(){
-	
-	var versionNumber = Prototype.Version;
-	var sampleText = 'Artlung Rosetta with version '+versionNumber+' of Prototype!';
-	$$("ul li:nth-child(4n-3)").each(function(item){
-		item.addClassName("start");
-	});
-	$$("ul li:nth-child(4n)").each(function(item){
-		item.addClassName("end");
-	});
-	$$('h1').each(function(item){
-		item.addClassName('active');
-	});
-	$$('p').each(function(item){
-		item.addClassName('bad');
-	});
-	$('testIdentifier').setStyle({
-		border:'1px solid #000',
-		backgroundColor:'#ccc'
-	}).update(sampleText);
-	
-	$$('#interactionExperiments input').each(function(item){
-		item.observe('click', function(evt){
-			item.hide();
-			Event.stop(evt);
-		});
-	});
-	$$('#interactionExperiments a').each(function(item){
-		item.observe('click', function(evt){
-			item.siblings('input').each(function(sub){
-				sub.show();
-			});
-			Event.stop(evt);
-		});
-	});
-	$$('#nav a').each(function(item){
-		item.observe('mouseover', function(evt){
-			if (item.down('img')) {
-				var src = item.down('img').readAttribute('src').replace('-off','-over');
-				item.down().writeAttribute('src', src);
-			}
-		});
-		item.observe('mouseout', function(evt){
-			if (item.down('img')) {
-				var src = item.down('img').readAttribute('src').replace('-over','-off');
-				item.down().writeAttribute('src', src);
-			}
-		});
-	});
-	$('addRandomString').observe('click', function(evt){
-		if (Rosetta.mayIncrement()) {
-			Element.insert(Event.element(evt), {after:' World' + Rosetta.getIndex() });
-			Rosetta.increment();
-		}
-		Event.stop(evt);
-	});
-	$$('#loginArea h2').each(function(item){
-		item.observe('click', function(evt){
-			$('loginForm').toggle();
-			var spanStr = (item.down('span').innerHTML === '+') ? '-' : '+';
-			item.down('span').update(spanStr);
-		});
-	});
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>PrototypeRosetta</title>
+    <script src="js/lib/prototype.1.6.1.js" type="text/javascript"></script>
+    <script src="js/rosetta.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/styles.css" type="text/css" charset="utf-8"/>
+    <script type="text/javascript">
+        Event.observe(window, 'load', function () {
 
-	// Load HTML with Ajax
-	$('ajaxloadHtml').observe('click', function(evt){
-		var url = 'ajax/chunk.html';
-		new Ajax.Request(url, {
-		  method: 'get',
-		  onSuccess: function(transport) {
-		  	$('ajaxOutput').update(transport.responseText);
-		  }
-		});
-		Event.stop(evt);
-	});
+            var versionNumber = Prototype.Version;
+            var sampleText = 'Artlung Rosetta with version ' + versionNumber + ' of Prototype!';
+            $$("ul li:nth-child(4n-3)").each(function (item) {
+                item.addClassName("start");
+            });
+            $$("ul li:nth-child(4n)").each(function (item) {
+                item.addClassName("end");
+            });
+            $$('h1').each(function (item) {
+                item.addClassName('active');
+            });
+            $$('p').each(function (item) {
+                item.addClassName('bad');
+            });
+            $('testIdentifier').setStyle({
+                border: '1px solid #000',
+                backgroundColor: '#ccc'
+            }).update(sampleText);
 
-	// Load text with Ajax
-	$('ajaxloadText').observe('click', function(evt){
-		var url = 'ajax/chunk.txt';
-		new Ajax.Request(url, {
-		  method: 'get',
-		  onSuccess: function(transport) {
-		  	$('ajaxOutput').update(transport.responseText);
-		  }
-		});
-		Event.stop(evt);
-	});
+            $$('#interactionExperiments input').each(function (item) {
+                item.observe('click', function (evt) {
+                    item.hide();
+                    Event.stop(evt);
+                });
+            });
+            $$('#interactionExperiments a').each(function (item) {
+                item.observe('click', function (evt) {
+                    item.siblings('input').each(function (sub) {
+                        sub.show();
+                    });
+                    Event.stop(evt);
+                });
+            });
+            $$('#nav a').each(function (item) {
+                item.observe('mouseover', function (evt) {
+                    if (item.down('img')) {
+                        var src = item.down('img').readAttribute('src').replace('-off', '-over');
+                        item.down().writeAttribute('src', src);
+                    }
+                });
+                item.observe('mouseout', function (evt) {
+                    if (item.down('img')) {
+                        var src = item.down('img').readAttribute('src').replace('-over', '-off');
+                        item.down().writeAttribute('src', src);
+                    }
+                });
+            });
+            $('addRandomString').observe('click', function (evt) {
+                if (Rosetta.mayIncrement()) {
+                    Element.insert(Event.element(evt), {after: ' World' + Rosetta.getIndex()});
+                    Rosetta.increment();
+                }
+                Event.stop(evt);
+            });
+            $$('#loginArea h2').each(function (item) {
+                item.observe('click', function (evt) {
+                    $('loginForm').toggle();
+                    var spanStr = (item.down('span').innerHTML === '+') ? '-' : '+';
+                    item.down('span').update(spanStr);
+                });
+            });
 
-	// Load JSON with Ajax
-	$('ajaxloadJson').observe('click', function(evt){
-		var url = 'ajax/chunk.json';
-		new Ajax.Request(url, {
-		  method: 'get',
-		  evalJSON: 'force',
-		  onSuccess: function(transport) {
-		  	$('ajaxOutput').update(transport.responseJSON.txt);
-		  }
-		});
-		Event.stop(evt);
-	});
+            // Load HTML with Ajax
+            $('ajaxloadHtml').observe('click', function (evt) {
+                var url = 'ajax/chunk.html';
+                new Ajax.Request(url, {
+                    method: 'get',
+                    onSuccess: function (transport) {
+                        $('ajaxOutput').update(transport.responseText);
+                    }
+                });
+                Event.stop(evt);
+            });
 
-	// Load XML with Ajax
-	$('ajaxloadXml').observe('click', function(evt){
-		var url = 'ajax/chunk.xml';
-		new Ajax.Request(url, {
-		  method: 'get',
-		  onSuccess: function(transport) {
-			var node = transport.responseXML.documentElement.getElementsByTagName('text')[0];
-		  	$('ajaxOutput').update(node.firstChild.data);
-		  }
-		});
-		Event.stop(evt);
-	});
+            // Load text with Ajax
+            $('ajaxloadText').observe('click', function (evt) {
+                var url = 'ajax/chunk.txt';
+                new Ajax.Request(url, {
+                    method: 'get',
+                    onSuccess: function (transport) {
+                        $('ajaxOutput').update(transport.responseText);
+                    }
+                });
+                Event.stop(evt);
+            });
 
-	var sourceCode = $$('script')[2];
-	$('code').innerHTML = sourceCode.innerHTML;
-	
-});
-</script>
+            // Load JSON with Ajax
+            $('ajaxloadJson').observe('click', function (evt) {
+                var url = 'ajax/chunk.json';
+                new Ajax.Request(url, {
+                    method: 'get',
+                    evalJSON: 'force',
+                    onSuccess: function (transport) {
+                        $('ajaxOutput').update(transport.responseJSON.txt);
+                    }
+                });
+                Event.stop(evt);
+            });
+
+            // Load XML with Ajax
+            $('ajaxloadXml').observe('click', function (evt) {
+                var url = 'ajax/chunk.xml';
+                new Ajax.Request(url, {
+                    method: 'get',
+                    onSuccess: function (transport) {
+                        var node = transport.responseXML.documentElement.getElementsByTagName('text')[0];
+                        $('ajaxOutput').update(node.firstChild.data);
+                    }
+                });
+                Event.stop(evt);
+            });
+
+            var sourceCode = $$('script')[2];
+            $('code').innerHTML = sourceCode.innerHTML;
+
+        });
+    </script>
 </head>
 <body>
 
 <div id="testIdentifier">
-	If you are reading this then the library did not load for some reason.
+    If you are reading this then the library did not load for some reason.
 </div>
 
 <div id="loginArea">
-	<h2>(<span>+</span>) Show Login</h2>
-	<div id="loginForm" style="display: none">
-	<form method="post" action=".">
-		Username: <input type="text" name="username" /><br />
-		Password: <input type="password" name="password" /><br />
-		<input type="submit" value="Login" />
-	</form>
-	</div><!-- #loginForm-->
+    <h2>(<span>+</span>) Show Login</h2>
+    <div id="loginForm" style="display: none">
+        <form method="post" action=".">
+            Username: <input type="text" name="username"/><br/>
+            Password: <input type="password" name="password"/><br/>
+            <input type="submit" value="Login"/>
+        </form>
+    </div><!-- #loginForm-->
 </div><!-- #loginArea -->
 
 <div id="interactionExperiments">
-	Click the buttons in here to make them go away.
-	<a href="#" class="reset">Reset Buttons</a>
-	<br />
-	<input value="click" type="button" />
-	<input value="to" type="button" />
-	<input value="remove" type="button" />
+    Click the buttons in here to make them go away.
+    <a href="#" class="reset">Reset Buttons</a>
+    <br/>
+    <input value="click" type="button"/>
+    <input value="to" type="button"/>
+    <input value="remove" type="button"/>
 </div>
 
 <div id="ajaxExamples" class="basicArea">
-	Load: 
-	<a href="#" id="ajaxloadHtml">html</a> &middot;
-	<a href="#" id="ajaxloadJson">json</a> &middot;
-	<a href="#" id="ajaxloadText">text</a> &middot;
-	<a href="#" id="ajaxloadXml">xml</a>: 
-	<div id="ajaxOutput">Load data into this by clicking the links above.</div>
+    Load:
+    <a href="#" id="ajaxloadHtml">html</a> &middot;
+    <a href="#" id="ajaxloadJson">json</a> &middot;
+    <a href="#" id="ajaxloadText">text</a> &middot;
+    <a href="#" id="ajaxloadXml">xml</a>:
+    <div id="ajaxOutput">Load data into this by clicking the links above.</div>
 </div>
 
 <div id="randomContent">
-	<a href="#" id="addRandomString">To whom do you say hello when programming?</a>
+    <a href="#" id="addRandomString">To whom do you say hello when programming?</a>
 </div>
 
 <div id="nav">
-<table cellspacing="0" cellpadding="0" border="0">
-	<tr><td><a href="index.html"><img src="images/home-off.gif" alt="Home" border="0" /></a></td></tr>
-	<tr><td><a href="index.html"><img src="images/newcomer-off.gif" alt="Newcomer?" border="0" /></a></td></tr>
-	<tr><td><a href="index.html"><img src="images/biography-off.gif" alt="Biography" border="0" /></a></td></tr>
-	<tr><td><a href="index.html"><img src="images/favorite-sites-off.gif" alt="Favorite Sites" border="0" /></a></td></tr>
-	<tr><td><a href="index.html"><img src="images/resume-off.gif" alt="Resume" border="0" /></a></td></tr>
-	<tr><td><a href="index.html"><img src="images/portfolio-off.gif" alt="Portfolio" border="0" /></a></td></tr>
-	<tr><td><a href="index.html"><img src="images/email-off.gif" alt="Email" border="0" /></a></td></tr>
-</table>
-<a href="#" title="This is another a link inserted into the nav. The mouseover code may not explode because of this.">This link is here to foolproof our mouseover code</a>
+    <table cellspacing="0" cellpadding="0" border="0">
+        <tr>
+            <td><a href="index.html"><img src="images/home-off.gif" alt="Home" border="0"/></a></td>
+        </tr>
+        <tr>
+            <td><a href="index.html"><img src="images/newcomer-off.gif" alt="Newcomer?" border="0"/></a></td>
+        </tr>
+        <tr>
+            <td><a href="index.html"><img src="images/biography-off.gif" alt="Biography" border="0"/></a></td>
+        </tr>
+        <tr>
+            <td><a href="index.html"><img src="images/favorite-sites-off.gif" alt="Favorite Sites" border="0"/></a></td>
+        </tr>
+        <tr>
+            <td><a href="index.html"><img src="images/resume-off.gif" alt="Resume" border="0"/></a></td>
+        </tr>
+        <tr>
+            <td><a href="index.html"><img src="images/portfolio-off.gif" alt="Portfolio" border="0"/></a></td>
+        </tr>
+        <tr>
+            <td><a href="index.html"><img src="images/email-off.gif" alt="Email" border="0"/></a></td>
+        </tr>
+    </table>
+    <a href="#"
+       title="This is another a link inserted into the nav. The mouseover code may not explode because of this.">This
+        link is here to foolproof our mouseover code</a>
 </div>
 
 
@@ -185,18 +201,18 @@ Event.observe(window, 'load', function(){
 <p>else</p>
 
 <ul>
-   <li><a href="#">line 1</a></li>
-   <li><a href="#">line 2</a></li>
-   <li><a href="#">line 3</a></li>
-   <li><a href="#">line 4</a></li>
-   <li><a href="#">line 5</a></li>
-   <li><a href="#">line 6</a></li>
-   <li><a href="#">line 7</a></li>
-   <li><a href="#">line 8</a></li>
-   <li><a href="#">line 9</a></li>
-   <li><a href="#">line 10</a></li>
-   <li><a href="#">line 11</a></li>
-   <li><a href="#">line 12</a></li>
+    <li><a href="#">line 1</a></li>
+    <li><a href="#">line 2</a></li>
+    <li><a href="#">line 3</a></li>
+    <li><a href="#">line 4</a></li>
+    <li><a href="#">line 5</a></li>
+    <li><a href="#">line 6</a></li>
+    <li><a href="#">line 7</a></li>
+    <li><a href="#">line 8</a></li>
+    <li><a href="#">line 9</a></li>
+    <li><a href="#">line 10</a></li>
+    <li><a href="#">line 11</a></li>
+    <li><a href="#">line 12</a></li>
 </ul>
 
 <pre>
@@ -204,7 +220,8 @@ Code for this implementation:
 <code id="code"></code>
 </pre>
 
-<p id="contribute">Contribute to this page and report bugs via <a href="http://github.com/">GitHub</a>: <a href="http://github.com/artlung/Artlung-Rosetta/">http://github.com/artlung/Artlung-Rosetta/</a></p>
+<p id="contribute">Contribute to this page and report bugs via <a href="http://github.com/">GitHub</a>: <a
+        href="http://github.com/artlung/Artlung-Rosetta/">http://github.com/artlung/Artlung-Rosetta/</a></p>
 
 </body>
 </html>

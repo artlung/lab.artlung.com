@@ -1,5 +1,5 @@
 <?php
-require_once('../../loader.php');
+require_once '../../loader.php';
 $lab = new Lab();
 $lab->printHeader('iTunes Error: "The iTunes Music Library file cannot be read because it does not appear to be a valid library file"');
 
@@ -14,9 +14,6 @@ $lab->printHeader('iTunes Error: "The iTunes Music Library file cannot be read b
         <img src="itunes-troubleshoot.gif"
              style="width: 100%;height: auto"
              alt="The iTunes Music Library file cannot be read because it does not appear to be a valid library file">
-
-
-
 
 
         <h3>The Problem</h3>
@@ -67,7 +64,8 @@ $lab->printHeader('iTunes Error: "The iTunes Music Library file cannot be read b
             ...to the new Backup folder
         </p>
         <p>
-            <b>(( NOTE: SEVERAL RESPONSES I HAVE GOTTEN INDICATE REINSTALLING ITUNES IS *NOT* NECESSARY. Consider this step optional. If your recovery fails, reconsider adding it back))</b>
+            <b>(( NOTE: SEVERAL RESPONSES I HAVE GOTTEN INDICATE REINSTALLING ITUNES IS *NOT* NECESSARY. Consider this
+                step optional. If your recovery fails, reconsider adding it back))</b>
             <br>
             Reinstall iTunes afresh &lt;<a href="http://www.apple.com/itunes/">http://www.apple.com/itunes/</a>&gt;
         </p>
@@ -88,7 +86,8 @@ $lab->printHeader('iTunes Error: "The iTunes Music Library file cannot be read b
         <hr>
 
         <blockquote style="color: #666; background-color: #FFF;">
-            <a href="http://calyxa.pandromeda.com/">Calyxa</a> suggested I show the path to the files, and I did. Thanks Calyxa!
+            <a href="http://calyxa.pandromeda.com/">Calyxa</a> suggested I show the path to the files, and I did. Thanks
+            Calyxa!
         </blockquote>
 
 
@@ -113,8 +112,9 @@ $lab->printHeader('iTunes Error: "The iTunes Music Library file cannot be read b
     </div>
 
 
-
 <?php
-$lab->printFooter([
-    'comments' => true
-]);
+$lab->printFooter(
+    [
+        'comments' => true
+    ]
+);

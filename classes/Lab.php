@@ -1,24 +1,25 @@
 <?php
+
 class Lab
 {
-public function __construct()
-{
-    $this->code_from_code_txt = '';
-    $this->currentPageServerDirectoryPath = dirname(__FILE__) .'/../';
+    public function __construct()
+    {
+        $this->code_from_code_txt = '';
+        $this->currentPageServerDirectoryPath = dirname(__FILE__) . '/../';
 
-    // let's parse the current requested url
-    $this->url = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
-    // /asp/index.php would be asp
-    // /asp/ would be asp
+        // let's parse the current requested url
+        $this->url = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+        // /asp/index.php would be asp
+        // /asp/ would be asp
 
-    $this->url = trim($this->url, '/');
-    $this->directoryName = /* only the part before any slash */
-        preg_replace('/\/.*/', '', $this->url);
+        $this->url = trim($this->url, '/');
+        $this->directoryName = /* only the part before any slash */
+            preg_replace('/\/.*/', '', $this->url);
 
-}
+    }
 
 
-public function printHeader(string $string, $options = [])
+    public function printHeader(string $string, $options = [])
     {
         print $this->getHeader($string, $options);
     }
@@ -51,7 +52,7 @@ public function printHeader(string $string, $options = [])
         $scriptNameMd5 = md5($_SERVER['SCRIPT_NAME']);
         $title = htmlspecialchars($title);
 
-        $codePath = $this->currentPageServerDirectoryPath  . 'pages/'. $this->directoryName . '/code.txt';
+        $codePath = $this->currentPageServerDirectoryPath . 'pages/' . $this->directoryName . '/code.txt';
 
         if (is_file($codePath)) {
             $code_from_code_txt = file_get_contents($codePath);
@@ -139,15 +140,15 @@ HTML;
 </pre>
 HTML;
         }
-            $protocol = !empty($_SERVER['HTTPS']) ? 'https' : 'http';
-            $canonical = $protocol . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+        $protocol = !empty($_SERVER['HTTPS']) ? 'https' : 'http';
+        $canonical = $protocol . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 
-if ($options['comments'] ?? true) {
-    $comments_code = $this->getCommentsCode();
-} else {
-    $comments_code = '';
-}
-return <<<HTML
+        if ($options['comments'] ?? true) {
+            $comments_code = $this->getCommentsCode();
+        } else {
+            $comments_code = '';
+        }
+        return <<<HTML
 {$code_output}
 </article>
 {$comments_code}

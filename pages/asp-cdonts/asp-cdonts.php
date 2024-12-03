@@ -1,19 +1,20 @@
 <?php
-require_once('../../loader.php');
+require_once '../../loader.php';
 $lab = new Lab();
 $lab->printHeader('ASP: CDONTS snippet');
 
 ?>
 
 
-<p class="date-attribution">
-    Status: Archaic
-</p>
-<h1>ASP: CDONTS snippet</h1> 
+    <p class="date-attribution">
+        Status: Archaic
+    </p>
+    <h1>ASP: CDONTS snippet</h1>
 
-<p>I forget why I kept this, but I run into this problem every now and again -- that of having to send mail with a site that runs ASP. I'm sure this code helped me in the past, if only I could remember how.</p>
+    <p>I forget why I kept this, but I run into this problem every now and again -- that of having to send mail with a
+        site that runs ASP. I'm sure this code helped me in the past, if only I could remember how.</p>
 
-<pre><b>
+    <pre><b>
 Set newMsg = CreateObject("CDO.Message")
 newMsg.From = Dlookup("settings","notify_new_from","settings_id=1")
 newMsg.To = Dlookup("users","email","user_id=" & fldassigned_to)
@@ -27,32 +28,32 @@ newMsg.Send
 set newMsg=Nothing
 </b></pre>
 
-<p>I got a comment, before I had comments, in April 2005, from a visitor named Rich:</p>
+    <p>I got a comment, before I had comments, in April 2005, from a visitor named Rich:</p>
 
-<blockquote><i>
+    <blockquote><i>
 
-You say that you don't remember why you keep that script
+            You say that you don't remember why you keep that script
 
-around.  It looks to be an Access Function using the
+            around. It looks to be an Access Function using the
 
-intrinsic DLookup (Domain Lookup).  I don't think that you
+            intrinsic DLookup (Domain Lookup). I don't think that you
 
-can use this "as-is" on a site.  But rather within an
+            can use this "as-is" on a site. But rather within an
 
-Access File, or at the minimum a reference to the Access
+            Access File, or at the minimum a reference to the Access
 
-Library.
-
-
-<br /><br />
-Looks that way to me anyways.
-
-<br /><br />
+            Library.
 
 
-Again, Great site!
+            <br/><br/>
+            Looks that way to me anyways.
 
-</i></blockquote>
+            <br/><br/>
+
+
+            Again, Great site!
+
+        </i></blockquote>
 
 
 <?php

@@ -1,10 +1,9 @@
 <?php
-require_once('../../loader.php');
+require_once '../../loader.php';
 $lab = new Lab();
 $lab->printHeader('selectBox function in Traditional ASP');
 
 ?>
-
 
 
     <p class="date-attribution">Created July 10, 2006, Posted August 27, 2016</p>
@@ -18,7 +17,7 @@ $lab->printHeader('selectBox function in Traditional ASP');
 
         print htmlentities($contents);
 
-        ?></pre>
+    ?></pre>
 
 
 <?php

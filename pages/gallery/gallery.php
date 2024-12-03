@@ -1,26 +1,30 @@
 <?php
-require_once('../../loader.php');
+require_once '../../loader.php';
 $lab = new Lab();
-$lab->printHeader('
+$lab->printHeader(
+    '
 PHP AutoMagic Gallery Thing
-');
+'
+);
 
 ?>
-<p class="date-attribution">Created April 14  2001</p>
-<h1>PHP AutoMagic Gallery Listing</h1>
+    <p class="date-attribution">Created April 14 2001</p>
+    <h1>PHP AutoMagic Gallery Listing</h1>
 
-<h2>Why?</h2>
+    <h2>Why?</h2>
 
-<p>This is a small project driven by my desire to have a simple page I could drop into a folder full of images and get a clean, simple listing of the images, plus links to the images in a way that was somewhat attractive.</p>
+    <p>This is a small project driven by my desire to have a simple page I could drop into a folder full of images and
+        get a clean, simple listing of the images, plus links to the images in a way that was somewhat attractive.</p>
 
 
-<p>See it in action at <a href="https://artlung.com/images/">https://artlung.com/images/</a></p>
+    <p>See it in action at <a href="https://artlung.com/images/">https://artlung.com/images/</a></p>
 
-<p><strong>Feel free to use it --</strong> just copy and paste the source below. use a filename that's the default file format that processes php. Usually index.php or index.php3. The script doesn't care either way.</p>
+    <p><strong>Feel free to use it --</strong> just copy and paste the source below. use a filename that's the default
+        file format that processes php. Usually index.php or index.php3. The script doesn't care either way.</p>
 
-<p><a href="https://artlung.com/feedback/">What do you think?</a></p>
+    <p><a href="https://artlung.com/feedback/">What do you think?</a></p>
 
-<pre class="html">
+    <pre class="html">
 &lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
                 "https://www.w3.org/TR/REC-html40/loose.dtd"&gt;
 &lt;html&gt;
@@ -89,8 +93,10 @@ if (!isset($i)) { <span class="comment">// this first bit determines if the page
 
 
 <?php
-$lab->printFooter([
-	'comments' => true
-]);
+$lab->printFooter(
+    [
+        'comments' => true
+    ]
+);
 
 

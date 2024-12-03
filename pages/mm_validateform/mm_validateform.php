@@ -1,21 +1,24 @@
 <?php
-require_once('../../loader.php');
+require_once '../../loader.php';
 $lab = new Lab();
-$lab->printHeader('
+$lab->printHeader(
+    '
 MM_validateForm() and MM_findObj() functions
-');
+'
+);
 
 ?>
 
-<p class="date-attribution">Created: 2009-06-08</p>
+    <p class="date-attribution">Created: 2009-06-08</p>
 
-<h1>MM_validateForm() and MM_findObj() functions</h1>
+    <h1>MM_validateForm() and MM_findObj() functions</h1>
 
-<p>
-	There does not seem to be a canonical source for these Macromedia Dreamweaver functions, this page is a source for that source.
-</p>
+    <p>
+        There does not seem to be a canonical source for these Macromedia Dreamweaver functions, this page is a source
+        for that source.
+    </p>
 
-<pre>
+    <pre>
 &lt;script type="text/javascript"&gt;
 // Version 4.01
 function MM_findObj(n, d) { //v4.01
@@ -27,7 +30,7 @@ function MM_findObj(n, d) { //v4.01
 }
 &lt;/script&gt;
 </pre>
-<pre>
+    <pre>
 &lt;script type="text/javascript"&gt;
 // Version 3.0
 function MM_validateForm() { //v3.0
@@ -47,7 +50,7 @@ function MM_validateForm() { //v3.0
 }
 &lt;/script&gt;
 </pre>
-<pre>
+    <pre>
 &lt;script type="text/javascript"&gt;
 // Version 4.0
 function MM_validateForm() { //v4.0
@@ -69,6 +72,8 @@ function MM_validateForm() { //v4.0
 </pre>
 
 <?php
-$lab->printFooter([
-	'comments' => true
-]);
+$lab->printFooter(
+    [
+        'comments' => true
+    ]
+);

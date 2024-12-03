@@ -1,5 +1,5 @@
 <?php
-require_once('../../loader.php');
+require_once '../../loader.php';
 $lab = new Lab();
 $lab->printHeader('Only submit if a checkbox is checked');
 
@@ -27,10 +27,12 @@ $lab->printHeader('Only submit if a checkbox is checked');
 <?php $source = ob_get_clean(); ?>
 <?php print $source; ?>
     <h2>HTML Source Code</h2>
-    <pre><?= htmlentities($source) ?></pre>
-</pre>
+    <pre><?php echo htmlentities($source) ?></pre>
+    </pre>
 
 <?php
-$lab->printFooter([
-    'comments' => true
-]);
+$lab->printFooter(
+    [
+        'comments' => true
+    ]
+);

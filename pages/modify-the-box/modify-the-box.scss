@@ -18,18 +18,22 @@ pre.ourControl {
   border: 3px solid #ccc;
   padding: 1rem;
   font-size: 1.5rem;
+
   * {
     font-size: 1.5rem;
   }
+
   a {
     color: blue;
     text-decoration: none;
     outline: none;
     background-color: transparent;
+
     &:link {
       color: blue;
       background-color: #FFF;
     }
+
     &:visited {
       color: blue;
       background-color: #FFF;

@@ -1,37 +1,40 @@
 <?php
-require_once('../../loader.php');
+require_once '../../loader.php';
 $lab = new Lab();
 $lab->printHeader('AutoCalculator');
 
 ?>
 
 
-<p class="date-attribution">Created September 29 1999; Modified October 2002</p>
+    <p class="date-attribution">Created September 29 1999; Modified October 2002</p>
 
-<h1>Auto-Calculator</h1>
+    <h1>Auto-Calculator</h1>
 
-<form name="fm" action="./" onsubmit="return false;">
-<table width="100%" cellpadding="15" cellspacing="0" border="0">
-<tr><td align="center">
-<input name="num_one" value="2"
-	onchange="validateLegalNumberCharacters(this.value);" class="Big" size="6">
-<select name="wc" onchange="doTheMath();" class="Big">
-	<option value="+" checked>&nbsp;&nbsp;+&nbsp;&nbsp;</option>
-	<option value="-">&nbsp;&nbsp;-&nbsp;&nbsp;</option>
-	<option value="/">&nbsp;&nbsp;/&nbsp;&nbsp;</option>
-	<option value="*">&nbsp;&nbsp;*&nbsp;&nbsp;</option>
-</select>
-<input name="num_two" value="3"
-	onchange="validateLegalNumberCharacters(this.value);" class="Big" size="6">
-<big class="Big">=</big>
-<input name="num_answer" value="5"
-	onfocus="document.fm.num_one.focus();" class="Big" size="6">
-</td></tr></table>
-</form>
+    <form name="fm" action="./" onsubmit="return false;">
+        <table width="100%" cellpadding="15" cellspacing="0" border="0">
+            <tr>
+                <td align="center">
+                    <input name="num_one" value="2"
+                           onchange="validateLegalNumberCharacters(this.value);" class="Big" size="6">
+                    <select name="wc" onchange="doTheMath();" class="Big">
+                        <option value="+" checked>&nbsp;&nbsp;+&nbsp;&nbsp;</option>
+                        <option value="-">&nbsp;&nbsp;-&nbsp;&nbsp;</option>
+                        <option value="/">&nbsp;&nbsp;/&nbsp;&nbsp;</option>
+                        <option value="*">&nbsp;&nbsp;*&nbsp;&nbsp;</option>
+                    </select>
+                    <input name="num_two" value="3"
+                           onchange="validateLegalNumberCharacters(this.value);" class="Big" size="6">
+                    <big class="Big">=</big>
+                    <input name="num_answer" value="5"
+                           onfocus="document.fm.num_one.focus();" class="Big" size="6">
+                </td>
+            </tr>
+        </table>
+    </form>
 
-<h2>Source Code: JavaScript</h2>
+    <h2>Source Code: JavaScript</h2>
 
-<pre>
+    <pre>
 &lt;script type="text/javascript" language="Javascript"&gt;
 &lt;!--//
 <b>function <b>validateLegalNumberCharacters(inString)</b>{ 
@@ -66,9 +69,9 @@ for ( var i=0;i&lt;myLen;i++ )
 </pre>
 
 
-<h2>Source Code: HTML</h2>
+    <h2>Source Code: HTML</h2>
 
-<pre>
+    <pre>
 &lt;form <b>name="fm"</b> action="./" <b>onsubmit="return false;"</b>&gt;
 &lt;table width="100%" cellpadding="15" cellspacing="0" border="0"&gt;
 &lt;tr&gt;&lt;td align="center"&gt;
@@ -91,6 +94,8 @@ for ( var i=0;i&lt;myLen;i++ )
 
 
 <?php
-$lab->printFooter([
-	'comments' => true
-]);
+$lab->printFooter(
+    [
+        'comments' => true
+    ]
+);

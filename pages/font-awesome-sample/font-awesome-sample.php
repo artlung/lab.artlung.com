@@ -1,62 +1,63 @@
 <?php
-require_once('../../loader.php');
+require_once '../../loader.php';
 $lab = new Lab();
-$lab->printHeader('
+$lab->printHeader(
+    '
 Font Awesome 4.6.3 Class Explorer
-');
+'
+);
 
 ?>
 
-<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-<script src="https://use.fontawesome.com/89face2689.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://use.fontawesome.com/89face2689.js"></script>
 
-<h1>Font Awesome 4.6.3 Class Explorer (version 4.6.3)</h1>
-<pre id="className" style="display: none"></pre>
+    <h1>Font Awesome 4.6.3 Class Explorer (version 4.6.3)</h1>
+    <pre id="className" style="display: none"></pre>
 
-<p>Click each icon to get the associated HTML code.</p>
+    <p>Click each icon to get the associated HTML code.</p>
 
-<div class="modifiers">
-<?php
+    <div class="modifiers">
+        <?php
 
-$modifiers = array('fa-2x',
-'fa-3x',
-'fa-4x',
-'fa-5x',
-'fa-border',
-'fa-flip-horizontal',
-'fa-flip-vertical',
-'fa-fw',
-'fa-inverse',
-'fa-lg',
-'fa-lg',
-'fa-pull-left',
-'fa-pull-right',
-'fa-pulse',
-'fa-rotate-90',
-'fa-rotate-270',
-'fa-rotate-180',
-'fa-spin',
-'fa-stack',
-'fa-stack-1x',
-'fa-stack-1x',
-'fa-stack-2x',
-'fa-stack-2x',);
+        $modifiers = array('fa-2x',
+            'fa-3x',
+            'fa-4x',
+            'fa-5x',
+            'fa-border',
+            'fa-flip-horizontal',
+            'fa-flip-vertical',
+            'fa-fw',
+            'fa-inverse',
+            'fa-lg',
+            'fa-lg',
+            'fa-pull-left',
+            'fa-pull-right',
+            'fa-pulse',
+            'fa-rotate-90',
+            'fa-rotate-270',
+            'fa-rotate-180',
+            'fa-spin',
+            'fa-stack',
+            'fa-stack-1x',
+            'fa-stack-1x',
+            'fa-stack-2x',
+            'fa-stack-2x',);
 
-foreach ($modifiers as $btn) {
+        foreach ($modifiers as $btn) {
 
-echo "<button>{$btn}</button> ";
+            echo "<button>{$btn}</button> ";
 
-}
+        }
 
-?>
-</div>
-<div class="examples">
+        ?>
+    </div>
+    <div class="examples">
 
-<?php
+        <?php
 
 
-
-$classes = <<<OUT
+        $classes = <<<OUT
 .fa-glass
 .fa-music
 .fa-search
@@ -788,39 +789,40 @@ $classes = <<<OUT
 .fa-fa
 .fa-font-awesome
 OUT;
-?>
+        ?>
 
-<table>
+        <table>
+
+
+            <?php
+            $arrall = explode(PHP_EOL, $classes);
+
+            $chunk = array_chunk($arrall, 5);
+            $count = 0;
+
+            foreach ($chunk as $arr):
+                echo "<tr>";
+                foreach ($arr as $class):
+
+
+                    $c = str_replace('.', '', $class);
+                    echo "<td>{$c} <i class=\"fa {$c}\"></i></td> ";
+
+
+                endforeach;
+                echo "</tr>\n";
+            endforeach;
+
+            ?>
+
+        </table>
+
+    </div>
 
 
 <?php
-$arrall = explode(PHP_EOL, $classes);
-
-$chunk = array_chunk($arrall, 5);
-$count = 0;
-
-foreach ($chunk as $arr):
-echo "<tr>";
-foreach ($arr as $class):
-
-
-$c = str_replace('.', '', $class);
-echo "<td>{$c} <i class=\"fa {$c}\"></i></td> ";
-
-
-
-endforeach;
-echo "</tr>\n";
-endforeach;
-
-?>
-
-</table>
-
-</div>
-
-
-<?php
-$lab->printFooter([
-	'comments' => true
-]);
+$lab->printFooter(
+    [
+        'comments' => true
+    ]
+);

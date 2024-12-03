@@ -1,28 +1,32 @@
 <?php
-require_once('../../loader.php');
+require_once '../../loader.php';
 $lab = new Lab();
-$lab->printHeader('
+$lab->printHeader(
+    '
 Navigator Language
-');
+'
+);
 
 ?>
 
-<h1>JavaScript: navigator.language</h1>
+    <h1>JavaScript: navigator.language</h1>
 
 
-<h2>Code</h2>
+    <h2>Code</h2>
 
-<pre>
+    <pre>
 document.write(navigator.language);
 </pre>
 
-<h2>Results</h2>
+    <h2>Results</h2>
 
-<script>
-document.write(navigator.language);
-</script>
+    <script>
+        document.write(navigator.language);
+    </script>
 
 <?php
-$lab->printFooter([
-	'comments' => true
-]);
+$lab->printFooter(
+    [
+        'comments' => true
+    ]
+);

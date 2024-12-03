@@ -1,27 +1,27 @@
 <?php
-require_once('../../loader.php');
+require_once '../../loader.php';
 $lab = new Lab();
 $lab->printHeader('Fun Detagger Script');
 
 ?>
 
-<h1>Fun Detagger Script in PHP</h1>
+    <h1>Fun Detagger Script in PHP</h1>
 
-<h2>Question:</h2>
+    <h2>Question:</h2>
 
-<blockquote>
-Anyone know of any free/shareware utility that will strip out
-*all* the tags from HTML *other* than the table structure ?
-<br><br> 
-I keep needing to cut stuff out of web pages
-(e.g. my overture results pages)
-and paste them into ms Excel or CSV or basic, basic
-HTML.
-</blockquote>
+    <blockquote>
+        Anyone know of any free/shareware utility that will strip out
+        *all* the tags from HTML *other* than the table structure ?
+        <br><br>
+        I keep needing to cut stuff out of web pages
+        (e.g. my overture results pages)
+        and paste them into ms Excel or CSV or basic, basic
+        HTML.
+    </blockquote>
 
 
-<h2>Answer: Sure! With PHP:</h2>
-<pre>
+    <h2>Answer: Sure! With PHP:</h2>
+    <pre>
 <b>&lt;?php</b>
 
 // a fun detagger script
@@ -76,6 +76,8 @@ HTML.
 </pre>
 
 <?php
-$lab->printFooter([
-    'comments' => true
-]);
+$lab->printFooter(
+    [
+        'comments' => true
+    ]
+);

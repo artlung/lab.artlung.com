@@ -2,9 +2,7 @@ body {
   font-family: sans-serif;
   margin: 0;
   padding: 0;
-  background:
-          linear-gradient(90deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4))
-          50% 50% / 800px 100% repeat-y #ccc;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)) 50% 50% / 800px 100% repeat-y #ccc;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,6 +33,7 @@ form {
   border-bottom: 3px double #666;
   min-height: 5rem;
   line-height: 2rem;
+
   a {
     font-family: 'Times New Roman', serif;
     font-style: italic;

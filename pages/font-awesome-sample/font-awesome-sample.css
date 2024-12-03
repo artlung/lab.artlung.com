@@ -3,36 +3,42 @@
     background-color: #eee;
     padding: 8px;
 }
+
 .modifiers button {
     color: #666;
     background-color: #eee;
     border: 1px dotted #666;
-padding: 8px;
-font-size: small;
-margin-right: 8px;
-margin-bottom: 8px;
+    padding: 8px;
+    font-size: small;
+    margin-right: 8px;
+    margin-bottom: 8px;
 }
+
 .modifiers button.on {
     color: green;
     border-color: green;
     border-style: solid;
 }
+
 .modifiers button.on:focus {
-outline: none;
+    outline: none;
 }
 
 td.td-fa-inverse {
     background-color: #000;
     color: #fff;
 }
+
 .examples td {
     padding: 4px;
     width: 20%;
     cursor: pointer;
 }
+
 .examples td:hover {
     outline: 1px solid #eee;
 }
+
 #className {
     position: absolute;
     top: 0;

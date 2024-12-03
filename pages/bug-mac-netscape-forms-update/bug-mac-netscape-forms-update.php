@@ -1,5 +1,5 @@
 <?php
-require_once('../../loader.php');
+require_once '../../loader.php';
 $lab = new Lab();
 $lab->printHeader('Netscape/Macintosh Changing Form Button or Submit Input Value Fails');
 
@@ -37,16 +37,16 @@ $lab->printHeader('Netscape/Macintosh Changing Form Button or Submit Input Value
     <pre>
 &lt;form action="../"&gt;
 &lt;input type="BUTTON" value="1"
-	<b>onclick="this.value=parseInt(this.value)+1"</b>&gt;
+    <b>onclick="this.value=parseInt(this.value)+1"</b>&gt;
 &lt;input type="BUTTON" value="&lt;--Get Value"
-	<b>onclick="alert(this.form.elements[0].value)"</b>&gt;
+    <b>onclick="alert(this.form.elements[0].value)"</b>&gt;
 &lt;/form&gt;
 </pre>
 
 
-
-
 <?php
-$lab->printFooter([
-    'comments' => true
-]);
+$lab->printFooter(
+    [
+        'comments' => true
+    ]
+);

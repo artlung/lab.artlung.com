@@ -1,22 +1,24 @@
 <?php
-require_once('../../loader.php');
+require_once '../../loader.php';
 $lab = new Lab();
-$lab->printHeader('
+$lab->printHeader(
+    '
 Random HTML Tips, 2001
-');
+'
+);
 
 ?>
-<h1>Some HTML Tips, No-No's, In Random Order</h1>
+    <h1>Some HTML Tips, No-No's, In Random Order</h1>
 
-<P>Note: These are some comments and tips I provided to some of the team at
-my employer, <a href="http://www.AVENCOM.com/">AVENCOM</a>.
-<BR>
-Joe Crawford
-<BR>
-February, 2001
-</P>
+    <P>Note: These are some comments and tips I provided to some of the team at
+        my employer, <a href="http://www.AVENCOM.com/">AVENCOM</a>.
+        <BR>
+        Joe Crawford
+        <BR>
+        February, 2001
+    </P>
 
-<pre>
+    <pre>
 ===========================================================
 -----------------------------------------------------------
 CORRECT USE OF ALT TAG:
@@ -223,6 +225,8 @@ Is easier as:
 </PRE>
 
 <?php
-$lab->printFooter([
-	'comments' => true
-]);
+$lab->printFooter(
+    [
+        'comments' => true
+    ]
+);

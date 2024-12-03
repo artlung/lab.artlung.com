@@ -1,18 +1,27 @@
 <?php
-require_once('../../loader.php');
+require_once '../../loader.php';
 $lab = new Lab();
 $lab->printHeader('HTML Tags for Java Applets, circa 1999');
 
 ?>
 
-<p class="date-attribution">1999</p>
-<h1>HTML Tags for Java Applets</h1>
+    <p class="date-attribution">1999</p>
+    <h1>HTML Tags for Java Applets</h1>
 
-<p>In 1999, I took a class in Java at Santa Monica College. I was interested at the time in the small variations among how The W3C, Sun, Netscape, and Microsoft specified the &lt;APPLET&gt; tag.</p>
+    <p>In 1999, I took a class in Java at Santa Monica College. I was interested at the time in the small variations
+        among how The W3C, Sun, Netscape, and Microsoft specified the &lt;APPLET&gt; tag.</p>
 
-<p>So here are how each specified the tag in 1999, minus the formatting of the original pages:</p>
+    <p>So here are how each specified the tag in 1999, minus the formatting of the original pages:</p>
 <?php
-function newnavToggle2($url, $title, $text, $class) {
+/**
+ * @param  $url
+ * @param  $title
+ * @param  $text
+ * @param  $class
+ * @return string
+ */
+function newnavToggle2($url, $title, $text, $class)
+{
     global $filename;
     $active = "";
     if ($filename == $url) {
@@ -48,23 +57,25 @@ if (!in_array($filename, array_keys($valid_pages_and_titles))) {
         <?php echo $valid_pages_and_titles[$filename] ?>
     </h2>
 
-    <?php if ($filename === 'applet-tag-all.php'): ?>
+<?php if ($filename === 'applet-tag-all.php') : ?>
     <?php
-        include __DIR__ . "/$filename";
+    include __DIR__ . "/$filename";
     ?>
-    <?php else: ?>
-        <pre><?php
-            $path = __DIR__ . "/$filename";
-            print file_get_contents($path);
-            ?>
+<?php else: ?>
+    <pre><?php
+        $path = __DIR__ . "/$filename";
+        print file_get_contents($path);
+    ?>
         </pre>
-    <?php endif; ?>
+<?php endif; ?>
 
-<link rel="stylesheet" href="java-tags.css<?php
-    echo '?'.filemtime('java-tags.css');
-?>" type="text/css" />
+    <link rel="stylesheet" href="java-tags.css<?php
+    echo '?' . filemtime('java-tags.css');
+    ?>" type="text/css"/>
 
 <?php
-$lab->printFooter([
-	'comments' => true
-]);
+$lab->printFooter(
+    [
+        'comments' => true
+    ]
+);

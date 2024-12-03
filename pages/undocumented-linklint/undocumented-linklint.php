@@ -1,19 +1,21 @@
 <?php
-require_once('../../loader.php');
+require_once '../../loader.php';
 $lab = new Lab();
 $lab->printHeader('Undocumented Linklint JavaScript Feature');
 
 ?>
 
-<p class="date-attribution">Created 19 December 2002</p>
+    <p class="date-attribution">Created 19 December 2002</p>
 
-<h1>Undocumented Linklint JavaScript Feature</h1>
+    <h1>Undocumented Linklint JavaScript Feature</h1>
 
-<p>I really like linklint, a perl based webtool that allows you to do linkchecks on a website. You can get and read about it at <a href="http://linklint.org/">linklint.org</a></p>
+    <p>I really like linklint, a perl based webtool that allows you to do linkchecks on a website. You can get and read
+        about it at <a href="http://linklint.org/">linklint.org</a></p>
 
-<p>Some time back I asked the main guy, James B. Bowlin about support for checking javascript urls, and his reply was this:</p>
+    <p>Some time back I asked the main guy, James B. Bowlin about support for checking javascript urls, and his reply
+        was this:</p>
 
-<pre>
+    <pre>
     --------------------------------------------------------------------
     Linklint + JavaScript
     Thank you for the praise.
@@ -34,12 +36,14 @@ $lab->printHeader('Undocumented Linklint JavaScript Feature');
     --------------------------------------------------------------------
 </pre>
 
-<p>So for those of you who may be curious about JS and linklint, hope this was helpful. And Jim, THANKS FOR THE REPLY!</p>
-
+    <p>So for those of you who may be curious about JS and linklint, hope this was helpful. And Jim, THANKS FOR THE
+        REPLY!</p>
 
 
 <?php
-$lab->printFooter([
-    'comments' => true
-]);
+$lab->printFooter(
+    [
+        'comments' => true
+    ]
+);
  

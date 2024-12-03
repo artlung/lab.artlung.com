@@ -1,6 +1,6 @@
 <aside class="delicious-burger"><?php
-$str = "🍔";
-for ($i=0; $i<5; $i++) {
+    $str = "🍔";
+for ($i = 0; $i < 5; $i++) {
     echo $str++;
     echo "\n";
 }
@@ -16,19 +16,18 @@ for ($i=0; $i<5; $i++) {
         justify-content: center;
         align-items: center;
         max-width: 20rem;
-        background:
-                radial-gradient(
-                        ellipse 50% 100% at 25% 90%,
-                        transparent 40%,
-                        orange 0 60%,
-                        transparent 0
-                ) bottom 2rem right 0 / 50% no-repeat,
-                radial-gradient(
-                        ellipse 50% 100% at 75% 90%,
-                        transparent 40%,
-                        orange 0 60%,
-                        transparent 0
-                ) bottom 2rem left 0 / 50% no-repeat red;
+        background: radial-gradient(
+                ellipse 50% 100% at 25% 90%,
+                transparent 40%,
+                orange 0 60%,
+                transparent 0
+        ) bottom 2rem right 0 / 50% no-repeat,
+        radial-gradient(
+                ellipse 50% 100% at 75% 90%,
+                transparent 40%,
+                orange 0 60%,
+                transparent 0
+        ) bottom 2rem left 0 / 50% no-repeat red;
         border-radius: 1rem;
         color: #fff;
     }

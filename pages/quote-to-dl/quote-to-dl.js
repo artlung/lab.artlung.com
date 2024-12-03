@@ -8,7 +8,7 @@ function update() {
         var dt = tmp.shift().trim();
         var dd = tmp.join(':').trim();
         var strongSpeaker = document.querySelector('#strongSpeaker').checked;
-        var emQuote =  document.querySelector('#emQuote').checked;
+        var emQuote = document.querySelector('#emQuote').checked;
         var speakerTag = strongSpeaker ? ['<dt><strong>', '</strong></dt>'] : ['<dt>', '</dt>'];
         var quoteTag = emQuote ? ['<dd><em>', '</em></dd>'] : ['<dd>', '</dd>'];
 
@@ -24,7 +24,7 @@ function update() {
     if (finalValue.length > 0) {
         bodies.push(finalValue);
     }
-    bodies.map(function(body) {
+    bodies.map(function (body) {
         document.querySelector('#output').value += '<dl>\n' + body + '</dl>\n\n';
     });
 
@@ -32,7 +32,7 @@ function update() {
 }
 
 var elems = document.querySelectorAll('.update');
-elems.forEach(function(item) {
+elems.forEach(function (item) {
     item.addEventListener('change', update);
     item.addEventListener('keyup', update);
     item.addEventListener('click', update);
