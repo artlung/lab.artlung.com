@@ -1,7 +1,5 @@
 <script language="JavaScript" type="text/javascript">
-<!--
 function updateVote(their_vote) {
 	document.voteForm.Vote.value = their_vote;
 }
-//-->
 </script>

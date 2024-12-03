@@ -6,11 +6,11 @@ Mouseover Vote Thing JavaScript
 ');
 
 ?>
+<p class="date-attribution">Created in 1999</p>
 <h1>Mouseover Vote Thing JavaScript</h1>
 
 <p>This is a nifty little thing to make it easy to let people vote on something with values 1 to 10.</p>
 
-<p><b>See also:</b> <a href="/scripting/mouseover_vote100/">Mouseover Vote Thing x 100</a></p>
 
 
 <table border="0" width="100%" cellspacing="0" cellpadding="0" height="200">
@@ -63,6 +63,9 @@ Mouseover Vote Thing JavaScript
     &lt;div align="center"&gt;&lt;input type="text" size="2" <b>name="Vote"</b>&gt;&lt;/div&gt;
 &lt;/form&gt;
 </pre>
+
+    <p><b>See also:</b> <a href="/mouseover-vote100/">Mouseover Vote Thing x 100</a></p>
+
 
 
 
