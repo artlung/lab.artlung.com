@@ -4,6 +4,7 @@ $lab = new Lab();
 $lab->printHeader('Slideshows Roughly How We did them in 1999');
 ?>
 
+<p class="date-attribution">1999</p>
     <h1>Slideshows Roughly How We did them in 1999</h1>
 
 <?php

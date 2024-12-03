@@ -24,7 +24,10 @@ Countdown in to the first of the month in PHP
 
 <?php
 /**
- * @param  $unixtime
+ * Format a unixtime into a time string
+ *
+ * @param $unixtime
+ *
  * @return false|string
  */
 function formatTime($unixtime)
@@ -33,7 +36,10 @@ function formatTime($unixtime)
 }
 
 /**
- * @param  $seconds
+ * Format seconds into a time string
+ *
+ * @param $seconds
+ *
  * @return string
  */
 function formatSeconds($seconds)

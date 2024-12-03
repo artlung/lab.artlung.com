@@ -1,4 +1,18 @@
-<html>
+<?php
+
+/**
+ * Circles Crawl. TODO redo.
+ * php version 7.4
+ *
+ * @category Silly
+ * @package  Silly
+ * @author   Joe Crawford <joe@artlung.com>
+ * @license  GPL 2.0+ - http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+ * @version  GIT: $Id$
+ * @link     https://artlung.com/
+ * @since    2024-12-03
+ */
+?><html>
 <style type="text/css">
     body {
         background-color: #000;
@@ -25,7 +39,7 @@
         position: absolute;
         left: 0px;
         top: 0px;
-        /*		-webkit-border-bottom-right-radius: 30px;*/
+        /*        -webkit-border-bottom-right-radius: 30px;*/
         background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#c2783b), to(#7a371a));
         opacity: 0.8;
         z-index: 1;
@@ -35,7 +49,7 @@
         background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.2)));
         z-index: 0;
         opacity: 1.0;
-        /*		background-color: #ccc;*/
+        /*        background-color: #ccc;*/
     }
 
     #debug {

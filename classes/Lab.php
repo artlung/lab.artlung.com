@@ -1,7 +1,23 @@
 <?php
 
+/**
+ * Class Lab
+ *
+ * @category PHP
+ * @package  Classes
+ * @author   Joe Crawford <joe@artlung.com>
+ * @license  GPL 2.0+ - http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+ * @version  Release: 1.0
+ * @link     https://artlung.com/
+ * @since    2024-12-03
+ */
 class Lab
 {
+    /**
+     * Set up the Lab object, which will put together relevant filesystem paths
+     *
+     * @var string
+     */
     public function __construct()
     {
         $this->code_from_code_txt = '';
@@ -19,16 +35,39 @@ class Lab
     }
 
 
-    public function printHeader(string $string, $options = [])
+    /**
+     * Print a header with a title and options
+     *
+     * @param string $string
+     * @param array  $options
+     *
+     * @return void
+     */
+    public function printHeader(string $string, array $options = [])
     {
         print $this->getHeader($string, $options);
     }
 
-    public function printFooter($options = [])
+    /**
+     * Print a footer with options
+     *
+     * @param array $options
+     *
+     * @return void
+     */
+    public function printFooter(array $options = [])
     {
-        print $this->getFooter($options);
+        print $this->_getFooter($options);
     }
 
+    /**
+     * Get the header with a title and options
+     *
+     * @param string $title
+     * @param $options
+     *
+     * @return string
+     */
     public function getHeader(string $title, $options = [])
     {
 
@@ -68,15 +107,12 @@ class Lab
         }
 
         $navItems = Nav::getMetadata();
-        // sort by the slug
-//        ksort($navItems);
+        uasort(
+            $navItems, function ($a, $b) {
+                return $b['year'] <=> $a['year'];
+            }
+        );
 
-        // sort by the value of $navItems[$slug]['year'] DESC
-        uasort($navItems, function ($a, $b) {
-            return $b['year'] <=> $a['year'];
-        });
-
-        // turn that into an ordered list
         $nav = '<ol>';
         foreach ($navItems as $slug => $navItem) {
             $url = '/' . $slug . '/';
@@ -85,7 +121,11 @@ class Lab
             } else {
                 $styleString = '';
             }
-            $nav .= sprintf('<li><a href="%s" style="%s">%s</a></li>', $url, $styleString, htmlentities($navItem['title']));
+            $span = sprintf('<span class="disqus-comment-count" data-disqus-url="https://lab.artlung.com%s"></span>', $url);
+            // TODO add no inspection here
+            $anchor = sprintf('<a href="%s"><span>%s</span> %s</a>', $url, $navItem['title'], $span);
+            $li = sprintf('<li style="%s" data-year="%s">%s</li>', $styleString, $navItem['year'], $anchor);
+            $nav .= $li;
         }
         $nav .= '</ol>';
 
@@ -102,6 +142,7 @@ class Lab
             '&text=' . urlencode($text);
 
         $open_nav_checked = $open_nav ? 'checked' : '';
+        $currentYear = date('Y');
 
 
         return <<<HTML
@@ -109,10 +150,12 @@ class Lab
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<style>:root {--currentYear: {$currentYear} }</style>
 <link rel="stylesheet" href="/{$cssFileName}?b={$cacheBustCss}" type="text/css">
 <link rel="webmention" href="https://webmention.io/artlung.com/webmention">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="/{$jsFileName}?{$cacheBustJs}"></script>
+<!-- <script id="dsq-count-scr" src="https://lab-artlung-com.disqus.com/count.js" async></script> -->
 <title>{$title} / ArtLung Lab</title>
 {$code_from_code_txt}
 </head>
@@ -136,7 +179,14 @@ HTML;
 
     }
 
-    private function getFooter($options)
+    /**
+     * Get the footer with options
+     *
+     * @param $options
+     *
+     * @return string
+     */
+    private function _getFooter($options): string
     {
 
         $copyrightYear = date('Y');
@@ -155,7 +205,7 @@ HTML;
         $canonical = $protocol . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 
         if ($options['comments'] ?? true) {
-            $comments_code = $this->getCommentsCode();
+            $comments_code = $this->_getCommentsCode();
         } else {
             $comments_code = '';
         }
@@ -174,7 +224,12 @@ HTML;
 
     }
 
-    private function getCommentsCode()
+    /**
+     * Loads the comments HTML code
+     *
+     * @return string
+     */
+    private function _getCommentsCode()
     {
 
         $protocol = !empty($_SERVER['HTTPS']) ? 'https' : 'http';
@@ -209,6 +264,14 @@ HTML;
 
     }
 
+    /**
+     * Highlight the source code
+     *
+     * @param string $html
+     * @param $php
+     *
+     * @return void
+     */
     public function printSource(string $html, $php = false)
     {
         if ($php) {
@@ -220,6 +283,13 @@ HTML;
         print "</pre>";
     }
 
+    /**
+     * Highlight the source code from a file
+     *
+     * @param string $string
+     *
+     * @return void
+     */
     public function printSourceFile(string $string)
     {
         $path = $this->currentPageServerDirectoryPath . 'pages/' . $this->directoryName . '/' . $string;
@@ -231,18 +301,38 @@ HTML;
         }
     }
 
-    public function printCodeBlock(string $ob_get_clean)
+
+    /**
+     * Print a code block
+     *
+     * @param string $code
+     *
+     * @return void
+     */
+    public function printCodeBlock(string $code)
     {
         print "<pre>";
-        print htmlentities($ob_get_clean);
+        print htmlentities($code);
         print "</pre>";
     }
 
+    /**
+     * Synonym for printCodeBlock
+     *
+     * @param $code
+     *
+     * @return void
+     */
     public function displayCode($code)
     {
         $this->printCodeBlock($code);
     }
 
+    /**
+     * Get the webmention form
+     *
+     * @return string
+     */
     public function getWebmentionForm()
     {
         $canonical = 'https://lab.artlung.com' . parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);

@@ -14,10 +14,13 @@ $lab->printHeader('HTML Tags for Java Applets, circa 1999');
     <p>So here are how each specified the tag in 1999, minus the formatting of the original pages:</p>
 <?php
 /**
- * @param  $url
- * @param  $title
- * @param  $text
- * @param  $class
+ * Navigation function
+ *
+ * @param $url
+ * @param $title
+ * @param $text
+ * @param $class
+
  * @return string
  */
 function newnavToggle2($url, $title, $text, $class)

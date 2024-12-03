@@ -12,7 +12,7 @@
         //document.write(STATE.getSavedNotes());
     </script>
     <?php
-    include('load.php');
+    require 'load.php';
     ?>
 </div>
 </body>

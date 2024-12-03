@@ -1,6 +1,19 @@
 <?php
 
-// https://en.wikipedia.org/wiki/Display_resolution
+
+/**
+ * Screen resolutions display page
+ * php version 7.2
+ *
+ * @category PHP
+ * @package  Screen_Resolutions
+ * @author   Joe Crawford <joe@artlung.com>
+ * @license  GPL 2.0+ - http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+ * @version  GIT: $Id$
+ * @link     https://artlung.com/
+ * @see      https://en.wikipedia.org/wiki/Display_resolution
+ * @since    2024-12-03
+ */
 
 $display_resolutions = <<<ENDREZ
 Code	Name	Aspect ratio	Width	Height	 % of Steam users
@@ -4731,7 +4744,10 @@ $lab->printHeader('Screen Resolutions of Old Phones');
         $str = $display_resolutions;
 
         /**
-         * @param  $s
+         * List item
+         *
+         * @param $s
+         *
          * @return string
          */
         function li($s)
@@ -4740,8 +4756,11 @@ $lab->printHeader('Screen Resolutions of Old Phones');
         }
 
         /**
-         * @param  $width
-         * @param  $height
+         * Proper key
+         *
+         * @param $width
+         * @param $height
+         *
          * @return string
          */
         function properKey($width, $height)
@@ -4751,7 +4770,10 @@ $lab->printHeader('Screen Resolutions of Old Phones');
         }
 
         /**
-         * @param  $paddedNum
+         * Correct Padding
+         *
+         * @param $paddedNum
+         *
          * @return string
          */
         function correctPadding($paddedNum)

@@ -9,6 +9,7 @@ Forward and Back in JavaScript on an Imagemap
 
 ?>
 
+<p class="date-attribution">1999</p>
     <h1>Forward and Back in JavaScript on an ImageMap</h1>
 
 

@@ -1,15 +1,24 @@
-<head>
-    <title>Recursive Iframe : lab.artlung.com</title>
-</head>
+<?php
+require_once '../../loader.php';
+$lab = new Lab();
+$lab->printHeader(
+    'Recursive Iframe'
+);
+?>
+
+<p class="date-attribution">2009-09-12</p>
+<h1>Recursive Iframe</h1>
 
 <p>This page calls an iframe which calls itself. The question, is what happens?</p>
-
 
 <!--iframe code here -->
 <?php require 'iframe.html'; ?>
 <!--/end iframe code-->
 
 
-<p>this page by <a href="http://joecrawford.com/">joe crawford</a> 2009-09-12 &middot; <a
-            href="https://artlung.com/contact/">contact me</a> &middot; part of <a href="http://lab.artlung.com/">lab.artlung.com</a>
-</p>
+<?php
+$lab->printFooter(
+    [
+        'comments' => true
+    ]
+);

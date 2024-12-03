@@ -1,13 +1,28 @@
 <?php
 
-class Years {
+/**
+ * Class Years
+ *
+ * @category PHP
+ * @package  Classes
+ * @author   Joe Crawford <joe@artlung.com>
+ * @license  GPL 2.0+ - http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+ * @version  Release: 1.0
+ * @link     https://artlung.com/
+ * @since    2024-12-03
+ */
+class Years
+{
     const DEFAULT_YEAR = false;
 
     /**
+     * Return the years updated of the pages
+     *
      * @return int[]
      */
-    public static function slugsAndYears() {
-        return array (
+    public static function slugsAndYears()
+    {
+        return array(
             '50states' => 2003,
             'a-outline-none' => 2001,
             'additive-font-size' => 2001,
@@ -94,13 +109,62 @@ class Years {
             'ws-ftp-password-decoder' => 2001,
             'xml-encode' => 2009,
             'single-pixel-gif' => 2011,
+            'asp-cdonts' => 2005,
+            'bug-mac-netscape-forms-update' => 1998,
+            'change-space-between-paragraphs' => 2006,
+            'format-time' => 2002,
+            'rtf' => 2024,
+            'history' => 1999,
+            'html-2.0' => 2001,
+            'recursive-iframe' => 2009,
+            'reverse-string-nums' => 2001,
+            'random-content' => 2001,
+            'open-graph-protocol-tools' => 2010,
+            'slideshow-img' => 1999,
+            'multiple-select' => 1999,
+            'tr-onmouseover-style' => 1999,
+            'barcampla6' => 2008,
+            'change-document-background-color' => 1999,
+            'three-char-combos' => 2006,
+            'dropdown' => 2004,
+            'ArtLung-Notes' => 2010,
+            'bloggingbot' => 2018,
+            'blur' => 2004,
+            'bookmarklets' => 2006,
+            'buttonybutton' => 2015,
+            'buttonybuttonsonbuttons' => 2015,
+            'canvas-html-render-download' => 2024,
+            'change-all-links' => 2000,
+            'change-content-in-iframe-with-prototype' => 2010,
+            'circles-crawl' => 2010,
+            'detagger' => 205,
+            'display-inline-block' => 2009,
+            'dropdown-frames' => 2008,
+            'dropdown-submit-form' => 2008,
+            'echo-http-host' => 2008,
+            'font-awesome-sample' => 2017,
+            'form-image-background' => 2005,
+            'frames-mouseover' => 2004,
+            'generic-validator' => 2004,
+            'multiple-select-v2' => 2008,
+            'navigation-function-vs-asp' => 2006,
+            'navigator-language' => 2012,
+            'navigator-object' => 2010,
+            'nonsense-dtd' => 2011,
+            'notifications' => 2010,
+            'now-getdate' => 2017,
+            'random-cells' => 2010,
+            'screen-resolutions' => 2012,
+            'self-refresh' => 2008,
+            'server-side-image-map' => 2024,
+            'six-finger-ai-hand' => 2024,
+            'slideshow' => 2003,
+            'speech-synthesis' => 2024,
+            'sql-server-collations' => 2011,
+            'tips-2001' => 2001,
+            'upload' => 2015,
+            'rosetta' => 2010,
 
-                'asp-cdonts' => 2005,
-                'bug-mac-netscape-forms-update' => 1998,
-                'change-space-between-paragraphs' => 2006,
-                'format-time' => 2002,
-                'rtf' => 2024,
-//
         );
     }
 }
