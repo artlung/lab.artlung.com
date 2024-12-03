@@ -1,5 +1,5 @@
 <?php
-require_once '../../loader.php';
+require_once __DIR__ . '/../../loader.php';
 $lab = new Lab();
 $lab->printHeader('How to Make a file with every file on a C:\ drive');
 ?>

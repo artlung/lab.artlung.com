@@ -1,5 +1,5 @@
 <?php
-require_once '../../loader.php';
+require_once __DIR__ . '/../../loader.php';
 $lab = new Lab();
 $lab->printHeader('Netscape/Macintosh Changing Form Button or Submit Input Value Fails');
 

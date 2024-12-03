@@ -1,7 +1,7 @@
 <?php
 $nonsense_doctype = '<!DOCTYPE html PUBLIC "nonsense" "http://example.org/nonsense">';
 print $nonsense_doctype;
-require_once '../../loader.php';
+require_once __DIR__ . '/../../loader.php';
 $lab = new Lab();
 $lab->printHeader('What\'s the document.doctype of a document with a nonsense DTD');
 ?>

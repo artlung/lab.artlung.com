@@ -1,5 +1,5 @@
 <?php
-require_once '../../loader.php';
+require_once __DIR__ . '/../../loader.php';
 $lab = new Lab();
 $lab->printHeader('CSS3 Smiley - in colors!');
 

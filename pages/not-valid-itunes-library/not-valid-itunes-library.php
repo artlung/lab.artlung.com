@@ -1,5 +1,5 @@
 <?php
-require_once '../../loader.php';
+require_once __DIR__ . '/../../loader.php';
 $lab = new Lab();
 $lab->printHeader('iTunes Error: "The iTunes Music Library file cannot be read because it does not appear to be a valid library file"');
 

@@ -1,5 +1,5 @@
 <?php
-require_once '../../loader.php';
+require_once __DIR__ . '/../../loader.php';
 $lab = new Lab();
 $lab->printHeader('Image Maps like we made them in 1997');
 

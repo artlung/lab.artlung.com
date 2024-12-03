@@ -137,7 +137,7 @@ class Years
             'change-all-links' => 2000,
             'change-content-in-iframe-with-prototype' => 2010,
             'circles-crawl' => 2010,
-            'detagger' => 205,
+            'detagger' => 2005,
             'display-inline-block' => 2009,
             'dropdown-frames' => 2008,
             'dropdown-submit-form' => 2008,
@@ -164,6 +164,7 @@ class Years
             'tips-2001' => 2001,
             'upload' => 2015,
             'rosetta' => 2010,
+            'slideshow-plus' => 2003,
 
         );
     }

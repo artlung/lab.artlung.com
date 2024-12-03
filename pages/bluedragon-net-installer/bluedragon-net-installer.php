@@ -1,5 +1,5 @@
 <?php
-require_once '../../loader.php';
+require_once __DIR__ . '/../../loader.php';
 $lab = new Lab();
 $lab->printHeader('Screenshots of an installation of BlueDragon 7.1 for the Microsoft .NET Framework');
 
@@ -11,6 +11,7 @@ $lab->printHeader('Screenshots of an installation of BlueDragon 7.1 for the Micr
 
 <?php
 
+require_once 'BlueDragon.php';
 $items = [
     'jsharp.h2',
     '2010-11-17_1348.png',
@@ -36,41 +37,11 @@ $items = [
 ];
 
 
-/**
- * Emit an H2 tag with the contents of a file
- *
- * @param $filename
- *
- * @return string
- */
-function handleH2($filename)
-{
-    return "<h2>" . htmlentities(file_get_contents($filename)) . "</h2>";
-}
 
-/**
- * Emit an image tag with the contents of a file
- *
- * @param $filename
- *
- * @return string
- */
-function handlePng($filename)
-{
-    return "<div class=\"screenshot\"><img src=\"{$filename}\" alt=\"\" /></div>";
-}
 
-/**
- * Emit a div with the contents of a file
- *
- * @param $filename
- *
- * @return string
- */
-function handleTxt($filename)
-{
-    return "<div class=\"text\">" . nl2br(htmlentities(file_get_contents($filename))) . "</div>";
-}
+
+
+
 
 $out = array();
 foreach ($items as $filename) {
@@ -81,13 +52,13 @@ foreach ($items as $filename) {
     $extension = strtolower($extension);
     switch ($extension):
     case 'png':
-        $out[] = handlePng($filename);
+        $out[] = BlueDragon::handlePng($filename);
         break;
     case 'txt':
-        $out[] = handleTxt($filename);
+        $out[] = BlueDragon::handleTxt($filename);
         break;
     case 'h2':
-        $out[] = handleH2($filename);
+        $out[] = BlueDragon::handleH2($filename);
         break;
     default:
         $out[] = "I don't know what to do with {$filename}";
@@ -99,7 +70,7 @@ $CONTENT = implode('<br />', $out);
 
 
 ?>
-    <div id="bluedrafon-net-installer">
+    <div id="bluedragon-net-installer">
         <?php echo $CONTENT; ?>
     </div>
 

@@ -1,4 +1,17 @@
-<!DOCTYPE html>
+<?php
+/**
+ * Rosetta. TODO redo.
+ * php version 7.4
+ *
+ * @category Silly
+ * @package  Silly
+ * @author   Joe Crawford <joe@artlung.com>
+ * @license  GPL 2.0+ - http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+ * @version  GIT: $Id$
+ * @link     https://artlung.com/
+ * @since    2024-12-03
+ */
+?><!DOCTYPE html>
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -65,9 +78,9 @@
 
 
 <p><small>
-    <b>Creator:</b> <a href="http://joecrawford.com/">Joe Crawford</a> <a
-        href="mailto:joe@artlung.com">joe@artlung.com</a> <a href="http://twitter.com/artlung">@artlung</a>
-</small></p>
+        <b>Creator:</b> <a href="http://joecrawford.com/">Joe Crawford</a> <a
+            href="mailto:joe@artlung.com">joe@artlung.com</a> <a href="http://twitter.com/artlung">@artlung</a>
+    </small></p>
 
 <p>Hosted on GitHub at <a
         href="http://github.com/artlung/Artlung-Rosetta/">http://github.com/artlung/Artlung-Rosetta/</a>

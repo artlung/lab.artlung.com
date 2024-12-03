@@ -1,7 +1,7 @@
 <?php
 header('Cache-Control: no-cache');
 header('Pragma: no-cache');
-require_once '../../loader.php';
+require_once __DIR__ . '/../../loader.php';
 $lab = new Lab();
 $lab->printHeader('Preventing Browser Cache');
 ?>
