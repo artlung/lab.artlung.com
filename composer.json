@@ -13,7 +13,7 @@
     "require": {},
 
     "scripts": {
-        "test": "phpunit --bootstrap vendor/autoload.php",
+        "test": "phpunit --bootstrap loader.php",
         "sniff": "phpcs --standard=phpcs.xml",
         "snifferfix" : "phpcbf --standard=phpcs.xml"
     }
