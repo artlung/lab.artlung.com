@@ -2,14 +2,14 @@
 <head>
     <title>jQuery Introduction @ BarCampLA6</title>
     <link rel="stylesheet" href="barcampla6.css<?php
-        echo "?".filectime('barcampla6.css');
+    echo "?".filectime('barcampla6.css');
     ?>" type="text/css" />
     <!--
     download the latest jQuery from http://docs.jquery.com/Downloading_jQuery#Download_jQuery
     -->
     <script type="text/javascript" src="jquery-1.2.6.min.js"></script>
     <script type="text/javascript" src="barcampla6.js<?php
-        echo "?".filectime('barcampla6.js');
+    echo "?".filectime('barcampla6.js');
     ?>"></script>
     <link rel="webmention" href="https://webmention.io/artlung.com/webmention" />
 </head>
@@ -54,7 +54,7 @@
             here to the unfinished work which they who fought here
             have thus far so nobly advanced. It is rather for us to
             be here dedicated to the great task remaining before us
-          &mdash;that from these honored dead we take increased
+            &mdash;that from these honored dead we take increased
             devotion to that cause for which they gave the last full
             measure of devotion&mdash;that we here highly resolve that
             these dead shall not have died in vain&mdash;that this

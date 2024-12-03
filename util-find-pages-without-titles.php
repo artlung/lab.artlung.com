@@ -39,6 +39,18 @@ foreach($directories_only as $slug)
 
     if (is_dir("pages/$slug") && !is_file("pages/$slug/$slug.php")) {
         print "No $slug.php in $slug\n";
+
+        if (is_file("pages/$slug/index.php")) {
+            print "But there is an index.php in $slug\n";
+            $contents_of_index = file_get_contents("pages/$slug/index.php");
+            file_put_contents("pages/$slug/$slug.php", $contents_of_index);
+
+            $new_index_contents = "<?php\nrequire '$slug.php';";
+            file_put_contents("pages/$slug/index.php", $new_index_contents);
+
+
+
+        }
     }
 
 

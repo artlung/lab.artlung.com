@@ -4,12 +4,12 @@ $lab = new Lab();
 $lab->printHeader('Netscape/Macintosh Changing Form Button or Submit Input Value Fails');
 
 ?>
-<p class="date-attribution">Status: Archaic</p>
+    <p class="date-attribution">Status: Archaic</p>
     <h1>Netscape/Macintosh Changing Form Button or Submit Input Value Fails</h1>
 
     <form action="../">
         <p>If you change the value of a <code>&lt;input type="button" value="INPUT
-            TYPE BUTTON OR SUBMIT" alt="INPUT TYPE BUTTON OR SUBMIT"&gt;</code> using
+                TYPE BUTTON OR SUBMIT" alt="INPUT TYPE BUTTON OR SUBMIT"&gt;</code> using
             JavaScript - in Mac Netscape 3.04 and 4.x, <strong>the actual
                 value will change</strong>, but <strong>the display will not
                 update</strong>. The code below is a demonstration of this

@@ -1,2 +1,2 @@
 <?php
-header('Location: /ArtLung-Notes/v2/');
+require 'ArtLung-Notes.php';

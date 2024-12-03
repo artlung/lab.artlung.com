@@ -1,2 +1,2 @@
 <?php
-require 'barcamp6.php';
+require 'barcampla6.php';
