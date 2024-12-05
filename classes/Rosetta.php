@@ -1,5 +1,16 @@
 <?php
 
+/**
+ * Class Rosetta
+ *
+ * @category PHP
+ * @package  Classes
+ * @author   Joe Crawford <joe@artlung.com>
+ * @license  GPL 2.0+ - http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+ * @version  Release: 1.0
+ * @link     https://artlung.com/
+ * @since    2024-12-03
+ */
 class Rosetta extends Lab
 {
 
@@ -14,23 +25,43 @@ class Rosetta extends Lab
     public $slug;
     public $library_path;
     /**
+     * PAth to the rosetta directory
+     *
      * @var string
      */
-    private $rosettaPath;
+    private $_rosettaPath;
 
+    /**
+     * Set up basics for Rosetta
+     *
+     * @param $slug
+     * @param $library_path
+     */
     public function __construct($slug, $library_path)
     {
         $this->slug = $slug;
         $this->library_path = $library_path;
-        $this->rosettaPath = __DIR__ . '/../pages/rosetta/';
+        $this->_rosettaPath = __DIR__ . '/../pages/rosetta/';
     }
 
-    private function filemtime($js_file)
+    /**
+     * Kind of a hack to get the filemtime of a file
+     *
+     * @param $js_file
+     *
+     * @return void
+     */
+    private function _filemtime($js_file)
     {
         // correct the relative path
-        $js_file = $this->rosettaPath . $js_file;
+        $js_file = $this->_rosettaPath . $js_file;
     }
 
+    /**
+     * The method to print the page
+     *
+     * @return void
+     */
     public function printPage()
     {
         $library_path = $this->library_path;
@@ -41,7 +72,7 @@ class Rosetta extends Lab
 
         ?>
         <link rel="stylesheet" href="rosetta.css<?php
-        echo '?' . $this->filemtime('rosetta.css');
+        echo '?' . $this->_filemtime('rosetta.css');
         ?>" type="text/css"/>
         <?php
             $js_files = [
@@ -50,9 +81,9 @@ class Rosetta extends Lab
             ];
             foreach ($js_files as $js_file) {
                 echo '<script src="' . $js_file .
-                    '?v=' . $this->filemtime($js_file) . '"></script>' . "\n";
+                    '?v=' . $this->_filemtime($js_file) . '"></script>' . "\n";
             }
-            ?><script><?php echo $this->file_get_contents("js/$slug.js"); ?></script>
+            ?><script><?php echo $this->_fileGetContents("js/$slug.js"); ?></script>
     <nav>
         <ul>
             <?php
@@ -67,7 +98,7 @@ class Rosetta extends Lab
         </ul>
     </nav>
         <?php
-        print $this->file_get_contents('shared.html');
+        print $this->_fileGetContents('shared.html');
         ?>
         <?php
         $this->printFooter(
@@ -77,9 +108,16 @@ class Rosetta extends Lab
         );
     }
 
-    private function file_get_contents(string $string)
+    /**
+     * Kind of a hack to get the file contents of a file
+     *
+     * @param string $string
+     *
+     * @return false|string
+     */
+    private function _fileGetContents(string $string)
     {
-        $path = $this->rosettaPath . $string;
+        $path = $this->_rosettaPath . $string;
         return file_get_contents($path);
     }
 

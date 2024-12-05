@@ -30,7 +30,7 @@ class Lab
      *
      * @var array|string|string[]|null
      */
-    protected $_directoryName;
+    protected $directoryName;
     /**
      * URL of the current page
      *
@@ -55,7 +55,7 @@ class Lab
         // /asp/ would be asp
 
         $this->_url = trim($this->_url, '/');
-        $this->_directoryName = /* only the part before any slash */
+        $this->directoryName = /* only the part before any slash */
             preg_replace('/\/.*/', '', $this->_url);
 
     }
@@ -127,7 +127,7 @@ class Lab
         $scriptNameMd5 = md5($_SERVER['SCRIPT_NAME']);
         $title = htmlspecialchars($title);
 
-        $codePath = $this->currentPageServerDirectoryPath . 'pages/' . $this->_directoryName . '/code.txt';
+        $codePath = $this->currentPageServerDirectoryPath . 'pages/' . $this->directoryName . '/code.txt';
 
         if (is_file($codePath)) {
             $code_from_code_txt = file_get_contents($codePath);
@@ -269,7 +269,7 @@ HTML;
     {
 
         $protocol = !empty($_SERVER['HTTPS']) ? 'https' : 'http';
-        $canonical = $protocol . '://' . $_SERVER['HTTP_HOST'] . $this->_directoryName . '/';
+        $canonical = $protocol . '://' . $_SERVER['HTTP_HOST'] . $this->directoryName . '/';
 
         return <<<HTML
 <div id="commentsArea">
@@ -328,7 +328,7 @@ HTML;
      */
     public function printSourceFile(string $string)
     {
-        $path = $this->currentPageServerDirectoryPath . 'pages/' . $this->_directoryName . '/' . $string;
+        $path = $this->currentPageServerDirectoryPath . 'pages/' . $this->directoryName . '/' . $string;
         if (is_file($path)) {
             $html = file_get_contents($path);
             $this->printSource($html);
