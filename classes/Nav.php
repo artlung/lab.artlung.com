@@ -167,6 +167,7 @@ class Nav
         ];
 
         $slugs_and_years = Years::slugsAndYears();
+        $ignored_slugs = self::ignoredDirectoryNames();
 
         foreach ($slugs_and_titles as $slug => $metadata) {
             if (array_key_exists($slug, $slugs_and_years)) {
@@ -174,6 +175,10 @@ class Nav
             } else {
                 $slugs_and_titles[$slug]['year'] = Years::DEFAULT_YEAR;
             }
+            if (in_array($slug, $ignored_slugs)) {
+                unset($slugs_and_titles[$slug]);
+            }
+
         }
         return $slugs_and_titles;
 
@@ -186,7 +191,7 @@ class Nav
      *
      * @return string[]
      */
-    public static function ignoredItems()
+    public static function ignoredDirectoryNames()
     {
         return [
             '.',

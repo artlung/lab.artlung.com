@@ -1,5 +1,5 @@
 <?php
-require '../../loader.php';
+require __DIR__ . '/../../loader.php';
 $lab = new Lab();
 $lab->printHeader('Webkit Notifications');
 ?>

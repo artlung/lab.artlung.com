@@ -1,5 +1,18 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN"
-        "https://www.w3.org/TR/1999/REC-html401-19991224/frameset.dtd">
+<?php
+/**
+ * Slideshow Plus. TODO redo.
+ * php version 7.4
+ *
+ * @category Silly
+ * @package  Silly
+ * @author   Joe Crawford <joe@artlung.com>
+ * @license  GPL 2.0+ - http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+ * @version  GIT: $Id$
+ * @link     https://artlung.com/
+ * @since    2024-12-03
+ */
+?><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN"
+    "https://www.w3.org/TR/1999/REC-html401-19991224/frameset.dtd">
 <html>
 <head>
     <title>Slideshow Plus. Lab. ArtLung</title>
@@ -142,9 +155,9 @@
 <frameset rows="26,*" border="0" framespacing="0" frameborder="NO">
     <!-- I set the border in the frameset tag to zero. This prevents it from validating. Sorry. -->
     <frame
-            scrolling="NO" name="NAVIGATIONAL_FRAME"
-            marginwidth="0" marginheight="0"
-            src="the_navigation.html">
+        scrolling="NO" name="NAVIGATIONAL_FRAME"
+        marginwidth="0" marginheight="0"
+        src="the_navigation.html">
     <frame scrolling="AUTO" name="CONTENT_FRAME"
            marginwidth="1" marginheight="1"
            src="loading.html">

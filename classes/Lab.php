@@ -14,23 +14,49 @@
 class Lab
 {
     /**
+     * To hold code extracted from code.txt
+     *
+     * @var string
+     */
+    public $code_from_code_txt;
+    /**
+     * Current Page Server Directory Path
+     *
+     * @var string
+     */
+    public $currentPageServerDirectoryPath;
+    /**
+     * Holds the directory name
+     *
+     * @var array|string|string[]|null
+     */
+    protected $directoryName;
+    /**
+     * URL of the current page
+     *
+     * @var string
+     */
+    private $_url;
+
+    /**
      * Set up the Lab object, which will put together relevant filesystem paths
      *
      * @var string
      */
     public function __construct()
     {
+
         $this->code_from_code_txt = '';
         $this->currentPageServerDirectoryPath = dirname(__FILE__) . '/../';
 
         // let's parse the current requested url
-        $this->url = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+        $this->_url = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
         // /asp/index.php would be asp
         // /asp/ would be asp
 
-        $this->url = trim($this->url, '/');
+        $this->_url = trim($this->_url, '/');
         $this->directoryName = /* only the part before any slash */
-            preg_replace('/\/.*/', '', $this->url);
+            preg_replace('/\/.*/', '', $this->_url);
 
     }
 
@@ -46,6 +72,16 @@ class Lab
     public function printHeader(string $string, array $options = [])
     {
         print $this->getHeader($string, $options);
+    }
+
+    /**
+     * Get the slugs for the lab pages
+     *
+     * @return string[]
+     */
+    public function getLabPageSlugs()
+    {
+        return array_keys(Nav::getMetadata());
     }
 
     /**
@@ -79,13 +115,13 @@ class Lab
         $cssFileName = '2025.css';
         $cssPagesPath = 'pages/' . $cssFileName;
         $cssActualPath = $this->currentPageServerDirectoryPath . $cssPagesPath;
-        $cacheBustCss = filectime($cssActualPath);
+        $cacheBustCss = @filectime($cssActualPath) ? : 0;
 
 
         $jsFileName = '2025.js';
         $jsPagesPath = 'pages/' . $jsFileName;
         $jsActualPath = $this->currentPageServerDirectoryPath . $jsPagesPath;
-        $cacheBustJs = filectime($jsActualPath);
+        $cacheBustJs = @filectime($jsActualPath) ? : 0;
 
 
         $scriptNameMd5 = md5($_SERVER['SCRIPT_NAME']);
@@ -127,6 +163,17 @@ class Lab
             $li = sprintf('<li style="%s" data-year="%s">%s</li>', $styleString, $navItem['year'], $anchor);
             $nav .= $li;
         }
+
+        // 2 input types for color in a form in an li withonchange to set styles on :root for --theme-color and --theme-color-modifier
+        $nav .= '<li>';
+        $nav .= '<form id="theme-color-form">';
+        $nav .= '<label for="theme-color">Theme Color</label>';
+        $nav .= '<input type="color" id="theme-color" name="theme-color">';
+        $nav .= '<label for="theme-color-modifier">Theme Color Modifier</label>';
+        $nav .= '<input type="color" id="theme-color-modifier" name="theme-color-modifier">';
+        // #reset-theme
+        $nav .= '<button id="reset-theme">Reset Theme</button>';
+        $nav .= '</form>';
         $nav .= '</ol>';
 
         $hamburger_emoji = '🍔';
@@ -170,7 +217,7 @@ class Lab
 </header>
 <nav>
 <div>
-<input type="text" placeholder="Search" id="search-filter">
+<input type="text" placeholder="Filter" id="search-filter">
 </div>
 {$nav}
 </nav>

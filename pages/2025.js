@@ -37,5 +37,48 @@ document.addEventListener('DOMContentLoaded', function () {
         document.head.appendChild(base);
     }
 
+    // onchange to set styles on :root for --theme-color and --theme-color-modifier
+    // for id theme-color and theme-color-modifier
+
+    // set from local storage if available
+    var themeColor = localStorage.getItem('theme-color');
+    var themeColorModifier = localStorage.getItem('theme-color-modifier');
+    if (themeColor) {
+        document.documentElement.style.setProperty('--theme-color', themeColor);
+    }
+    if (themeColorModifier) {
+        document.documentElement.style.setProperty('--theme-color-modifier', themeColorModifier);
+    }
+    // if not, read from the computed style
+    var computedStyle = getComputedStyle(document.documentElement);
+    var computedThemeColor = computedStyle.getPropertyValue('--theme-color');
+    var computedThemeColorModifier = computedStyle.getPropertyValue('--theme-color-modifier');
+
+    // bind events to the inputs
+    var themeColorInput = document.getElementById('theme-color');
+    var themeColorModifierInput = document.getElementById('theme-color-modifier');
+    themeColorInput.value = computedThemeColor;
+    themeColorModifierInput.value = computedThemeColorModifier;
+    themeColorInput.addEventListener('input', function () {
+        document.documentElement.style.setProperty('--theme-color', themeColorInput.value);
+        localStorage.setItem('theme-color', themeColorInput.value);
+    });
+    themeColorModifierInput.addEventListener('input', function () {
+        document.documentElement.style.setProperty('--theme-color-modifier', themeColorModifierInput.value);
+        localStorage.setItem('theme-color-modifier', themeColorModifierInput.value);
+    });
+
+    // bind to the reset button
+    var resetButton = document.getElementById('reset-theme');
+    resetButton.addEventListener('click', function () {
+        localStorage.removeItem('theme-color');
+        localStorage.removeItem('theme-color-modifier');
+        themeColorInput.value = '';
+        themeColorModifierInput.value = '';
+        document.documentElement.style.removeProperty('--theme-color');
+        document.documentElement.style.removeProperty('--theme-color-modifier');
+    });
+
+
 
 });

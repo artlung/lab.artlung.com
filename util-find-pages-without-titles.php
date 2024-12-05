@@ -11,7 +11,7 @@ $directories_only = array_filter(
     }
 );
 
-$ignored_items = Nav::ignoredItems();
+$ignored_items = Nav::ignoredDirectoryNames();
 // remove from directories_only the ignored items
 $directories_only = array_diff($directories_only, $ignored_items);
 $navItems = Nav::getMetadata();
