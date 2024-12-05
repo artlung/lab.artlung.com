@@ -67,7 +67,7 @@ if (!in_array($filename, array_keys($valid_pages_and_titles))) {
 <?php else: ?>
     <pre><?php
         $path = __DIR__ . "/$filename";
-        print file_get_contents($path);
+        include $path;
     ?>
         </pre>
 <?php endif; ?>

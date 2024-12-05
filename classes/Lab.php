@@ -30,7 +30,7 @@ class Lab
      *
      * @var array|string|string[]|null
      */
-    private $_directoryName;
+    protected $_directoryName;
     /**
      * URL of the current page
      *
@@ -115,13 +115,13 @@ class Lab
         $cssFileName = '2025.css';
         $cssPagesPath = 'pages/' . $cssFileName;
         $cssActualPath = $this->currentPageServerDirectoryPath . $cssPagesPath;
-        $cacheBustCss = filectime($cssActualPath);
+        $cacheBustCss = @filectime($cssActualPath) ? : 0;
 
 
         $jsFileName = '2025.js';
         $jsPagesPath = 'pages/' . $jsFileName;
         $jsActualPath = $this->currentPageServerDirectoryPath . $jsPagesPath;
-        $cacheBustJs = filectime($jsActualPath);
+        $cacheBustJs = @filectime($jsActualPath) ? : 0;
 
 
         $scriptNameMd5 = md5($_SERVER['SCRIPT_NAME']);
