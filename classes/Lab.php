@@ -163,6 +163,17 @@ class Lab
             $li = sprintf('<li style="%s" data-year="%s">%s</li>', $styleString, $navItem['year'], $anchor);
             $nav .= $li;
         }
+
+        // 2 input types for color in a form in an li withonchange to set styles on :root for --theme-color and --theme-color-modifier
+        $nav .= '<li>';
+        $nav .= '<form id="theme-color-form">';
+        $nav .= '<label for="theme-color">Theme Color</label>';
+        $nav .= '<input type="color" id="theme-color" name="theme-color">';
+        $nav .= '<label for="theme-color-modifier">Theme Color Modifier</label>';
+        $nav .= '<input type="color" id="theme-color-modifier" name="theme-color-modifier">';
+        // #reset-theme
+        $nav .= '<button id="reset-theme">Reset Theme</button>';
+        $nav .= '</form>';
         $nav .= '</ol>';
 
         $hamburger_emoji = '🍔';
@@ -206,7 +217,7 @@ class Lab
 </header>
 <nav>
 <div>
-<input type="text" placeholder="Search" id="search-filter">
+<input type="text" placeholder="Filter" id="search-filter">
 </div>
 {$nav}
 </nav>
