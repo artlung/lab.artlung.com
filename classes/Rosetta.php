@@ -84,7 +84,7 @@ class Rosetta extends Lab
                     '?v=' . $this->_filemtime($js_file) . '"></script>' . "\n";
             }
             ?><script><?php echo $this->_fileGetContents("js/$slug.js"); ?></script>
-    <nav>
+    <nav class="rosetta-nav">
         <ul>
             <?php
             echo "<li><a href='./'>Rosetta</a></li>";

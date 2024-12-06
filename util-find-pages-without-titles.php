@@ -16,9 +16,29 @@ $ignored_items = Nav::ignoredDirectoryNames();
 $directories_only = array_diff($directories_only, $ignored_items);
 $navItems = Nav::getMetadata();
 
-// Utility file for spelunking the pages directory
-// used to get years for pages
-// used to change how pages are loaded and move content arount
-// used to find pages without titles
-// used to find pages without metadata
+
+// run this command for every slug
+// shot-scraper https://lab.artlung.com/rosetta/  --width 1200 --height 630;
+// aka
+// shot-scraper https://lab.artlung.com/$slug/  --width 1200 --height 630;
+
+$commands = [];
+$commands[] = 'shot-scraper https://lab.artlung.com/ --width 1200 --height 630;';
+
+foreach ($navItems as $slug => $metadata) {
+    $command[] = "shot-scraper https://lab.artlung.com/$slug/  --width 1200 --height 630;";
+}
+
+$commands[] = 'mv *.png ./pages/og-images/';
+
+foreach ($commands as $command) {
+    shell_exec($command);
+}
+
+
+
+
+
+
+
 

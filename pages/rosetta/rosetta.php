@@ -164,33 +164,33 @@ $lab->printHeader('Artlung Rosetta');
         as idiomatically as I could, and I look forward to your contributions,
         via email or GitHub.</p>
     <p><strong>jQuery:</strong></p>
-    <pre><code>$(<span class="hljs-string">'#interactionExperiments input'</span>).click(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    <pre><code>$(<span class="hljs-string">'#interactionExperiments button'</span>).click(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
    $(<span class="hljs-keyword">this</span>).hide();
    <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
 });
 </code></pre><p><strong>Dojo:</strong></p>
-    <pre><code>dojo.query(<span class="hljs-string">'#interactionExperiments input'</span>).<span class="hljs-keyword">forEach</span>(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(item)</span></span>{
+    <pre><code>dojo.query(<span class="hljs-string">'#interactionExperiments button'</span>).<span class="hljs-keyword">forEach</span>(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(item)</span></span>{
    dojo.connect(item, <span class="hljs-string">'onclick'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(e)</span></span>{
       item.style.display = <span class="hljs-string">'none'</span>;
       dojo.stopEvent(e);
    });
 });
 </code></pre><p><strong>ExtCore:</strong></p>
-    <pre><code>Ext.select(<span class="hljs-string">'#interactionExperiments input'</span>).on(<span class="hljs-string">'click'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(e, target)</span></span>{
+    <pre><code>Ext.select(<span class="hljs-string">'#interactionExperiments button'</span>).on(<span class="hljs-string">'click'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(e, target)</span></span>{
    Ext.get(target).hide();
 }, <span class="hljs-literal">null</span>, {preventDefault:<span class="hljs-literal">true</span>});
 </code></pre><p><strong>Glow:</strong></p>
-    <pre><code>glow.events.addListener(<span class="hljs-string">'#interactionExperiments input'</span>, <span class="hljs-string">'click'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(e)</span></span>{
+    <pre><code>glow.events.addListener(<span class="hljs-string">'#interactionExperiments button'</span>, <span class="hljs-string">'click'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(e)</span></span>{
    glow.dom.get(<span class="hljs-keyword">this</span>).hide();
    <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
 });
 </code></pre><p><strong>MooTools:</strong></p>
-    <pre><code>$$(<span class="hljs-string">'#interactionExperiments input'</span>).addEvent(<span class="hljs-string">'click'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e</span>)</span>{
+    <pre><code>$$(<span class="hljs-string">'#interactionExperiments button'</span>).addEvent(<span class="hljs-string">'click'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e</span>)</span>{
    <span class="hljs-keyword">this</span>.setStyle(<span class="hljs-string">'display'</span>,<span class="hljs-string">'none'</span>);
    e.stop();
 });
 </code></pre><p><strong>Prototype:</strong></p>
-    <pre><code>$$(<span class="hljs-string">'#interactionExperiments input'</span>).each(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">item</span>)</span>{
+    <pre><code>$$(<span class="hljs-string">'#interactionExperiments button'</span>).each(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">item</span>)</span>{
    item.observe(<span class="hljs-string">'click'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">evt</span>)</span>{
       item.hide();
       Event.stop(evt);

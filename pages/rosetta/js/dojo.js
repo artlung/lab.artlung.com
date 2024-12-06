@@ -1,5 +1,5 @@
 dojo.addOnLoad(function () {
-    var sampleText = 'Artlung Rosetta with Dojo!';
+    var sampleText = 'Artlung Rosetta with version ' + dojo.version.toString() + ' of Dojo!';
     dojo.query("section ul li:nth-child(4n-3)").addClass("start");
     dojo.query("section ul li:nth-child(4n)").addClass("end");
     dojo.query('h1').addClass('active');
@@ -10,7 +10,7 @@ dojo.addOnLoad(function () {
         backgroundColor: '#ccc'
     });
     testIdentifier.innerHTML = sampleText;
-    dojo.query('#interactionExperiments input').forEach(function (item) {
+    dojo.query('#interactionExperiments button').forEach(function (item) {
         dojo.connect(item, 'onclick', function (e) {
             item.style.display = 'none';
             dojo.stopEvent(e);
@@ -18,7 +18,7 @@ dojo.addOnLoad(function () {
     });
     dojo.query('#interactionExperiments a').forEach(function (item) {
         dojo.connect(item, 'onclick', function (e) {
-            dojo.query('input', item.parentNode).forEach(function (bar) {
+            dojo.query('button', item.parentNode).forEach(function (bar) {
                 bar.style.display = 'inline';
             });
             dojo.stopEvent(e);
@@ -104,5 +104,6 @@ dojo.addOnLoad(function () {
         dojo.stopEvent(e);
     });
 
-    dojo.byId('code').innerHTML = dojo.query('script')[3].innerHTML;
+    dojo.byId('code').innerHTML = dojo.query('script')[4].innerHTML;
+
 });

@@ -3,7 +3,7 @@ body {
 * {
     box-sizing: border-box;
 }
-nav {
+nav.rosetta-nav {
     background-color: #000;
     color: #fff;
     ul {
@@ -72,7 +72,7 @@ nav {
 
 .bad {
     color: #fff;
-    background-color: #f00;
+    background-color: pink;
 }
 
 #loginArea {

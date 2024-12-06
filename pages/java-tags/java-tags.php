@@ -9,7 +9,7 @@ $lab->printHeader('HTML Tags for Java Applets, circa 1999');
     <h1>HTML Tags for Java Applets</h1>
 
     <p>In 1999, I took a class in Java at Santa Monica College. I was interested at the time in the small variations
-        among how The W3C, Sun, Netscape, and Microsoft specified the &lt;APPLET&gt; tag.</p>
+        among how The W3C, Sun, Netscape, and Microsoft specified the <code>&lt;APPLET&gt;</code> tag.</p>
 
     <p>So here are how each specified the tag in 1999, minus the formatting of the original pages:</p>
 <?php
