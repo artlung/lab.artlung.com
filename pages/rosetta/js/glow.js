@@ -1,6 +1,6 @@
 glow.ready(function () {
 
-    var sampleText = 'Artlung Rosetta with Glow!';
+    var sampleText = 'Artlung Rosetta with version ' + glow.VERSION + ' of Glow!';
     var nodeCount = 0;
     glow.dom.get("section ul li").each(function () {
         if (nodeCount % 4 === 0) {
@@ -17,12 +17,12 @@ glow.ready(function () {
         border: '1px solid #000',
         backgroundColor: '#ccc'
     }).text(sampleText);
-    glow.events.addListener('#interactionExperiments input', 'click', function (e) {
+    glow.events.addListener('#interactionExperiments button', 'click', function (e) {
         glow.dom.get(this).hide();
         return false;
     });
     glow.events.addListener('#interactionExperiments a', 'click', function (e) {
-        glow.dom.get(this).parent().children('input').show();
+        glow.dom.get(this).parent().children('button').show();
         return false;
     });
     glow.events.addListener('#nav a', 'mouseover', function (e) {
@@ -108,6 +108,6 @@ glow.ready(function () {
     });
 
 
-    var sourceCode = glow.dom.get('script').item(3).innerHTML;
+    var sourceCode = glow.dom.get('script').item(4).innerHTML;
     glow.dom.get('#code').html(sourceCode);
 });

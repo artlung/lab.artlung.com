@@ -1,6 +1,5 @@
 jQuery(document).ready(function () {
-
-    var sampleText = 'Artlung Rosetta with jQuery!';
+    var sampleText = 'Artlung Rosetta with version ' + jQuery().jquery + ' jQuery!';
     $("section ul li:nth-child(4n-3)").addClass("start");
     $("section ul li:nth-child(4n)").addClass("end");
     $('h1').addClass('active');
@@ -9,12 +8,12 @@ jQuery(document).ready(function () {
         border: '1px solid #000',
         backgroundColor: '#ccc'
     }).text(sampleText);
-    $('#interactionExperiments input').click(function () {
+    $('#interactionExperiments button').click(function () {
         $(this).hide();
         return false;
     });
     $('#interactionExperiments a').click(function () {
-        $(this).siblings('input').show();
+        $(this).siblings('button').show();
         return false;
     });
     $('#nav a:has(img)').mouseover(function () {
@@ -59,7 +58,7 @@ jQuery(document).ready(function () {
     // Load JSON with Ajax
     $('#ajaxloadJson').bind('click', function () {
         $.getJSON('ajax/chunk.json', null, function (json) {
-            var textVal = JSON.stringify(json) + ' ' + json.txt;
+            var textVal = JSON.stringify(json) + '<br />' + json.txt;
             $('#ajaxOutput').text(textVal);
         });
         return false;

@@ -153,9 +153,10 @@ body > nav {
     font-size: 1rem;
     background: color-mix(in srgb,var(--theme-color-modifier), white 80%);
     border: 1rem solid var(--theme-color-modifier);
+    color: #555;
     &:focus-within {
       background: color-mix(in srgb,var(--theme-color-modifier), white 50%);
-      color: var(--theme-color);
+      color: #000;
     }
 
   }
@@ -179,9 +180,9 @@ body > nav {
       --opacity-percent-flopped : calc(100% - var(--opacity-percent));
       --bgStripeColor: color-mix(in srgb, var(--theme-color), transparent var(--opacity-percent-flopped));
       box-sizing: border-box;
-      width: clamp(120px, 50%, 300px);
+      width: clamp(120px,60%,360px);
       &:has(form) {
-        width: clamp(240px, 100%, 600px);
+        width: clamp(240px, 100%, 720px);
         align-self: center;
       }
       display: flex;
@@ -202,6 +203,7 @@ body > nav {
         min-height: 3rem;
         transition: 0.2s all;
         display: flex;
+        flex-wrap: wrap;
         justify-content: start;
         align-items: center;
 
@@ -252,6 +254,10 @@ article#content {
     border: 1px solid darkgreen;
     overflow: auto;
     line-height: 1.1;
+    max-width: calc(100vw - 5rem);
+    &:has(code) {
+      scrollbar-color:  #167516 #9f9 ;
+    }
 
     b {
       color: $color_3;
@@ -350,6 +356,7 @@ footer {
 
 html {
   height: 100%;
+  scrollbar-color: var(--theme-color) var(--theme-color-modifier);
 }
 
 body {
@@ -358,7 +365,9 @@ body {
   height: 101%; // induce scrollbar
   font-family: var(--sans-serif);
   background-color: $background-color_4;
-  scrollbar-color: var(--theme-color) var(--theme-color-modifier);
+  pre, textarea {
+    scrollbar-color: unset;
+  }
 }
 
 body#e251273eb74a8ee3f661a7af00915af1 {
@@ -411,7 +420,7 @@ dt {
   font-size: large;
 }
 
-#commentsArea {
+#container-comments {
   margin: 0;
   background: #666;
   padding: 2.5em;
@@ -431,12 +440,12 @@ blockquote.src {
 }
 
 
-/* Inline #1 | https://lab.artlung.com/dropdown-submit-form/?state=CA */
-nav {
-  background: #fff;
-  margin: 0;
-  padding: 0;
-}
+///* Inline #1 | https://lab.artlung.com/dropdown-submit-form/?state=CA */
+//nav {
+//  background: #fff;
+//  margin: 0;
+//  padding: 0;
+//}
 
 
 .spoiler:has(input[type="checkbox"]) {
@@ -499,6 +508,7 @@ form#theme-color-form {
   padding: 0.7rem 1rem;
   width: fit-content;
   margin-inline-start: auto;
+  color: #000;
   label {
     padding: 0.5rem;
     text-align: end;
@@ -508,7 +518,16 @@ form#theme-color-form {
   }
 }
 
-
+[data-disqus-url] {
+  display: none;
+}
+body.comment-count-visible [data-disqus-url] {
+  display: block;
+  width: 100%;
+  text-align: end;
+  opacity: 0.6;
+  font-size: smaller;
+}
 
 
 

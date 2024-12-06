@@ -1,6 +1,6 @@
 Ext.onReady(function () {
 
-    var sampleText = 'Artlung Rosetta with ExtCore!';
+    var sampleText = 'Artlung Rosetta with version ' + Ext.version + ' of Ext Core!';
     var nodeCount = 0;
     Ext.select("section ul li").each(function () {
         if (nodeCount % 4 === 0) {
@@ -16,11 +16,11 @@ Ext.onReady(function () {
         backgroundColor: '#ccc'
     });
     Ext.get('testIdentifier').dom.innerHTML = sampleText;
-    Ext.select('#interactionExperiments input').on('click', function (e, target) {
+    Ext.select('#interactionExperiments button').on('click', function (e, target) {
         Ext.get(target).hide();
     }, null, {preventDefault: true});
     Ext.select('#interactionExperiments a').on('click', function (e, target) {
-        Ext.get(target).parent('div').select('input').show();
+        Ext.get(target).parent('div').select('button').show();
     }, null, {preventDefault: true});
     Ext.select('#nav a:has(img)').on('mouseover', function (e, target) {
         var src = Ext.get(target).getAttribute('src').replace('-off', '-over');

@@ -19,7 +19,7 @@ Event.observe(window, 'load', function () {
         backgroundColor: '#ccc'
     }).update(sampleText);
 
-    $$('#interactionExperiments input').each(function (item) {
+    $$('#interactionExperiments button').each(function (item) {
         item.observe('click', function (evt) {
             item.hide();
             Event.stop(evt);
@@ -27,7 +27,7 @@ Event.observe(window, 'load', function () {
     });
     $$('#interactionExperiments a').each(function (item) {
         item.observe('click', function (evt) {
-            item.siblings('input').each(function (sub) {
+            item.siblings('button').each(function (sub) {
                 sub.show();
             });
             Event.stop(evt);
@@ -112,7 +112,7 @@ Event.observe(window, 'load', function () {
         Event.stop(evt);
     });
 
-    var sourceCode = $$('script')[3];
+    var sourceCode = $$('script')[4];
     $('code').innerHTML = sourceCode.innerHTML;
 
 });
