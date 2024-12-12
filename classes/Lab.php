@@ -286,14 +286,17 @@ HTML;
         $canonical = $protocol . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 
         if ($options['comments'] ?? true) {
-            $comments_code = $this->_getCommentsCode();
+            $comments_code = '';
+            $comments_code .= $this->getWebmentionForm();
+            $comments_code .= $this->_getCommentsCode();
+
         } else {
             $comments_code = '';
         }
         return <<<HTML
 {$code_output}
 </article>
-{$comments_code}
+<aside>{$comments_code}</aside>
 <footer>
 	<span>&copy; 1996-{$copyrightYear}</span>
 	<a href="https://github.com/artlung/lab.artlung.com" target="_blank">Source Code</a>
@@ -411,16 +414,21 @@ HTML;
      *
      * @return string
      */
-    public function getWebmentionForm()
+    public function getWebmentionForm(): string
     {
         $canonical = 'https://lab.artlung.com' . parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
         return <<<HTML
-<h2>Webmention</h2>
+<div class="webmention-area">
+<h2>Comment on this with a <a href="https://indieweb.org/Webmention">webmention</a></h2>
 <form action="https://webmention.io/artlung.com/webmention" method="post">
-    <input type="text" name="source" placeholder="source" required>
+    <label>
+    If you want to respond to this using <em>your own</em> website, you can do so by entering the URL below.
+    </label>
+    <input type="url" name="source" placeholder="source" required>
     <input type="hidden" value="{$canonical}">
     <input type="submit" value="Send Webmention">
-<blockquote
+</form>
+</div>
 HTML;
     }
 

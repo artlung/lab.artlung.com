@@ -164,6 +164,7 @@ class Nav
             'media' => ['title' => 'What to do with a directory of images that are letters?'],
             'upload' => ['title' => 'Sample Uploader Code'],
             'keycode' => ['title' => 'Listen for Key Presses on a Web Page'],
+            'spoiler' => ['title' => 'Spoiler Widget'],
         ];
 
         $slugs_and_years = Years::slugsAndYears();
