@@ -5,7 +5,7 @@ $lab->printHeader('Rounded corners were once experimental!');
 
 ?>
 
-    <p class="date-attribution">Early 2002, Updated 2024</p>
+    <p class="date-attribution">Early 2002</p>
 
     <h2> Rounded Corners were once an experimental Mozilla Extension.</h2>
 

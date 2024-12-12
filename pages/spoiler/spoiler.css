@@ -1,0 +1,1 @@
+label.spoiler{transition:all .5s;filter:blur(0.5ch);background-color:#ccc !important;color:#ccc !important;cursor:pointer}label.spoiler input[type=checkbox]{display:none}label.spoiler:has(input[type=checkbox]:checked){filter:blur(0);background-color:initial;color:initial}

@@ -148,6 +148,17 @@ class Lab
                 return $b['year'] <=> $a['year'];
             }
         );
+        $commentCountVisible = isset($_GET['comment-count']) ?? false;
+
+
+
+        // comment-count-visible on the body if $_GET['comment-count] is set
+        if ($commentCountVisible) {
+            $bodyTag = str_replace('>', ' class="comment-count-visible">', $bodyTag);
+            $disqusScript = '<script id="dsq-count-scr" src="https://lab-artlung-com.disqus.com/count.js" async></script>';
+        } else {
+            $disqusScript = '<script>console.log("comment-count not visible")</script>';
+        }
 
         $nav = '<ol>';
         foreach ($navItems as $slug => $navItem) {
@@ -163,6 +174,18 @@ class Lab
             $li = sprintf('<li style="%s" data-year="%s">%s</li>', $styleString, $navItem['year'], $anchor);
             $nav .= $li;
         }
+
+        // comment count control
+        if ($commentCountVisible) {
+            $nav .= '<li>';
+            $nav .= '<a href="./">Hide Comment Count</a>';
+            $nav .= '</li>';
+        } else {
+            $nav .= '<li>';
+            $nav .= '<a href="?comment-count">Show Comment Count</a>';
+            $nav .= '</li>';
+        }
+
 
         // 2 input types for color in a form in an li withonchange to set styles on :root for --theme-color and --theme-color-modifier
         $nav .= '<li>';
@@ -188,8 +211,18 @@ class Lab
             '?url=' . urlencode($url) .
             '&text=' . urlencode($text);
 
-        $open_nav_checked = $open_nav ? 'checked' : '';
+        // if we explicitly set open-nav, or if we have comment-count-visible, set the checkbox to checked
+        $open_nav_checked = $open_nav || $commentCountVisible ? 'checked' : '';
         $currentYear = date('Y');
+
+
+
+        $ogImageName = '/og-images/lab-artlung-com-' . $this->directoryName . '.png';
+        // only home has $open_nav true
+        if ($open_nav) {
+            $ogImageName = '/og-images/lab-artlung-com.png';
+        }
+        $ogImageLink = sprintf('<meta property="og:image" content="https://lab.artlung.com%s">', $ogImageName);
 
 
         return <<<HTML
@@ -202,8 +235,9 @@ class Lab
 <link rel="webmention" href="https://webmention.io/artlung.com/webmention">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="/{$jsFileName}?{$cacheBustJs}"></script>
-<!-- <script id="dsq-count-scr" src="https://lab-artlung-com.disqus.com/count.js" async></script> -->
+{$disqusScript}
 <title>{$title} / ArtLung Lab</title>
+{$ogImageLink}
 {$code_from_code_txt}
 </head>
 {$bodyTag}
@@ -252,14 +286,17 @@ HTML;
         $canonical = $protocol . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 
         if ($options['comments'] ?? true) {
-            $comments_code = $this->_getCommentsCode();
+            $comments_code = '';
+            $comments_code .= $this->getWebmentionForm();
+            $comments_code .= $this->_getCommentsCode();
+
         } else {
             $comments_code = '';
         }
         return <<<HTML
 {$code_output}
 </article>
-{$comments_code}
+<aside>{$comments_code}</aside>
 <footer>
 	<span>&copy; 1996-{$copyrightYear}</span>
 	<a href="https://github.com/artlung/lab.artlung.com" target="_blank">Source Code</a>
@@ -280,33 +317,30 @@ HTML;
     {
 
         $protocol = !empty($_SERVER['HTTPS']) ? 'https' : 'http';
-        $canonical = $protocol . '://' . $_SERVER['HTTP_HOST'] . $this->directoryName . '/';
-
+        $canonical = json_encode($protocol . '://' . $_SERVER['HTTP_HOST'] . '/'. $this->directoryName . '/');
+        /**
+         *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+         *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+         */
         return <<<HTML
-<div id="commentsArea">
-<div id="disqus_thread"></div>
-<script>
-/**
-*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-/*
-var PAGE_URL = json_encode($canonical);
-var PAGE_IDENTIFIER = PAGE_URL;
-var disqus_config = function () {
-
-this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
-*/
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = 'https://lab-artlung-com.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</div>
+    <div id="container-comments">
+    <div id="disqus_thread"></div>
+    <script>
+    var PAGE_URL = {$canonical}
+    var PAGE_IDENTIFIER = PAGE_URL;
+        var disqus_config = function () {
+            this.page.url = PAGE_URL;
+            this.page.identifier = PAGE_IDENTIFIER;
+        };
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://lab-artlung-com.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+    </script>
+    <noscript>To view <a href="https://disqus.com/?ref_noscript">comments powered by Disqus,</a> you must enable JavaScript.</noscript>
+    </div>
 HTML;
 
     }
@@ -325,9 +359,9 @@ HTML;
             $html = highlight_string($html, true);
             return;
         }
-        print "<pre>";
+        print "<pre><code>";
         print htmlentities($html);
-        print "</pre>";
+        print "</code></pre>";
     }
 
     /**
@@ -358,9 +392,9 @@ HTML;
      */
     public function printCodeBlock(string $code)
     {
-        print "<pre>";
+        print "<pre><code>";
         print htmlentities($code);
-        print "</pre>";
+        print "</code></pre>";
     }
 
     /**
@@ -380,16 +414,21 @@ HTML;
      *
      * @return string
      */
-    public function getWebmentionForm()
+    public function getWebmentionForm(): string
     {
         $canonical = 'https://lab.artlung.com' . parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
         return <<<HTML
-<h2>Webmention</h2>
+<div class="webmention-area">
+<h2>Comment on this with a <a href="https://indieweb.org/Webmention">webmention</a></h2>
 <form action="https://webmention.io/artlung.com/webmention" method="post">
-    <input type="text" name="source" placeholder="source" required>
+    <label>
+    If you want to respond to this using <em>your own</em> website, you can do so by entering the URL below.
+    </label>
+    <input type="url" name="source" placeholder="source" required>
     <input type="hidden" value="{$canonical}">
     <input type="submit" value="Send Webmention">
-<blockquote
+</form>
+</div>
 HTML;
     }
 

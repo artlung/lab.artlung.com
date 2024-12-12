@@ -11,12 +11,12 @@ window.addEvent('domready', function () {
         backgroundColor: '#ccc'
     });
     $('testIdentifier').set('html', sampleText);
-    $$('#interactionExperiments input').addEvent('click', function (e) {
+    $$('#interactionExperiments button').addEvent('click', function (e) {
         this.setStyle('display', 'none');
         e.stop();
     });
     $$('#interactionExperiments a').addEvent('click', function (e) {
-        this.getParent().getChildren('input').setStyle('display', '');
+        this.getParent().getChildren('button').setStyle('display', '');
         e.stop();
     });
     $$('#nav a').addEvent('mouseover', function (e) {
@@ -69,7 +69,7 @@ window.addEvent('domready', function () {
             url: url,
             method: 'get',
             onSuccess: function (responseJSON, responseText) {
-                $('ajaxOutput').set('text', responseText + ' ' + responseJSON.txt);
+                $('ajaxOutput').set('text', responseText + '<br />' + responseJSON.txt);
             }
         }).send();
         e.stop();

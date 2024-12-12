@@ -30,4 +30,8 @@ $lab->printHeader('404');
 
 
 <?php
-$lab->printFooter();
+$lab->printFooter(
+    [
+        'comments' => false
+    ]
+);

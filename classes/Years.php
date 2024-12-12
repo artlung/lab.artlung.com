@@ -35,6 +35,7 @@ class Years
             'border-style' => 2002,
             'call-original-version-of-redefined-vbscript' => 2016,
             'camel-selector' => 2002,
+            'spoiler' => 2024,
             'checkbox-validate' => 2001,
             'clock-concept' => 2024,
             'coldfusion-break-db' => 2003,
