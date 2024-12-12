@@ -19,8 +19,8 @@ $background-color_9: #fcc;
 $background-color_10: #ccc;
 
 :root {
-  --theme-color: #A52A2A;
-  --theme-color-modifier: #fbc495;
+  --theme-color: #008cb4;
+  --theme-color-modifier: #00c7fc;
   --sans-serif: roboto, helvetica, "helvetica neue", sans-serif;
   --monospace: courier, "courier new", fixed-width;
   --joe-icon: url(https://www.gravatar.com/avatar/5d3c808b7f3776de188ecaf412aebf4b?s=200&d=identicon&r=PG);
@@ -36,7 +36,12 @@ body {
   margin: 0;
   display: grid;
   // works because markup is predictable
-  grid-template-rows: min-content min-content 1fr min-content min-content;
+  grid-template-rows:
+          min-content /* header */
+          min-content /* nav */
+          1fr /* article */
+          min-content /* aside */
+          min-content /* footer */
 }
 
 * {
@@ -440,14 +445,6 @@ blockquote.src {
 }
 
 
-///* Inline #1 | https://lab.artlung.com/dropdown-submit-form/?state=CA */
-//nav {
-//  background: #fff;
-//  margin: 0;
-//  padding: 0;
-//}
-
-
 .spoiler:has(input[type="checkbox"]) {
   filter: blur(0.2rem);
 
@@ -527,6 +524,40 @@ body.comment-count-visible [data-disqus-url] {
   text-align: end;
   opacity: 0.6;
   font-size: smaller;
+}
+
+.webmention-area {
+  background: color-mix(in srgb, var(--theme-color-modifier), white 50%);
+  color: var(--theme-color);
+  h2 {
+    padding: 1rem;
+    margin: 0;
+    background: var(--theme-color);
+    color: var(--theme-color-modifier);
+    a {
+      background: var(--theme-color);
+      color: var(--theme-color-modifier);
+      tet-decoration: underline;
+      // wavy
+        text-decoration-style: wavy;
+    }
+  }
+  form {
+    margin: 0;
+    padding: 1rem;
+    display: grid;
+    gap: 0.5rem;
+    input[type="url"], input[type="text"] {
+      background: color-mix(in srgb, var(--theme-color-modifier), white 50%);
+      color: var(--theme-color);
+      border: 1px solid var(--theme-color);
+      padding: 1rem;
+    }
+    input[type="submit"] {
+      padding: 1rem;
+      border-radius: 0.3rem;
+    }
+  }
 }
 
 
