@@ -1,14 +1,17 @@
 section.quote-to-dl {
   display: grid;
-  grid-template-rows: 40px 45vh 30px 45vh;
+  grid-template-rows: 40px 40vh 30px 40vh;
   margin: -0.5em -2em;
-  height: 100%;
   gap: 0;
 
   textarea {
     padding: 1vw;
     background: #eee;
     font-size: 1rem;
+    transition: 0.5s all;
+    &:focus {
+      background: #fff;
+    }
   }
 
   div {
