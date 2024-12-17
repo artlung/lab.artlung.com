@@ -1,3 +1,10 @@
 ---
 slug: vbscript-always-elseif-never-else-if
 og-image-date: 2024-12-17 01:21:10
+year: 2016
+canonical_url: >
+  https://lab.artlung.com/vbscript-always-elseif-never-else-if/
+title: |
+  In VBScript, It's always "Elseif" and never "Else If"
+tags:
+  - vbscript

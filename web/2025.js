@@ -28,7 +28,9 @@ document.addEventListener('DOMContentLoaded', function () {
             // get the card title
             var title = [card.querySelector('a').textContent,
                 card.getAttribute('href'),
-                card.getAttribute('data-year')].join(' ')
+                card.getAttribute('data-year'),
+                card.getAttribute('data-tags')
+                ].join(' ')
             ;
             // check if the title includes the search value
             if (title.toLowerCase().includes(searchValue.toLowerCase())) {

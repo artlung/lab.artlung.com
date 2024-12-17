@@ -169,10 +169,11 @@ class Lab
             } else {
                 $styleString = '';
             }
+            $tagString = implode(' ', $navItem['tags']);
             $span = sprintf('<span class="disqus-comment-count" data-disqus-url="https://lab.artlung.com%s"></span>', $url);
             // TODO add no inspection here
             $anchor = sprintf('<a href="%s"><span>%s</span> %s</a>', $url, $navItem['title'], $span);
-            $li = sprintf('<li style="%s" data-year="%s">%s</li>', $styleString, $navItem['year'], $anchor);
+            $li = sprintf('<li style="%s" data-year="%s" data-tags="%s">%s</li>', $styleString, $navItem['year'], $tagString, $anchor);
             $nav .= $li;
         }
 

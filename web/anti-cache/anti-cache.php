@@ -11,7 +11,7 @@ $lab->printHeader('Preventing Browser Cache');
 
     <h2>Multiple Platform Solutions</h2>
     <p>
-        Bill Volk wrote on the <a href="http://WebSanDiego.org/">websandiego.org</a> mailing list:<br>
+        Bill Volk wrote on the WebSanDiego mailing list:<br>
         &gt; On a similar subject ... what's the best way to force a Browser to do a<br>
         &gt; refresh on a page when the user uses the "Back Arrow" to get to it? I need<br>
         &gt; to referesh the session objects.

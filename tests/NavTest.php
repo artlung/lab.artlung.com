@@ -55,6 +55,18 @@ class NavTest extends TestCase
             $this->assertIsInt($metadataArray['year'], "Year is not an integer for $dir");
             $this->assertGreaterThan(1990, $metadataArray['year'], "Year is not greater than 1990 for $dir");
 
+            $this->assertArrayHasKey('tags', $metadataArray, "Tags missing for $dir");
+            $this->assertIsArray($metadataArray['tags'], "Tags is not an array for $dir");
+
+            $this->assertArrayHasKey('slug', $metadataArray, "Slug missing for $dir");
+            $this->assertEquals($dir, $metadataArray['slug'], "Slug does not match directory name for $dir");
+
+            $this->assertArrayHasKey('canonical_url', $metadataArray, "Canonical URL missing for $dir");
+            $this->assertStringContainsString('https://lab.artlung.com/', $metadataArray['canonical_url'], "Canonical URL does not contain https://lab.artlung.com/ for $dir");
+
+
+
+
         }
 
     }

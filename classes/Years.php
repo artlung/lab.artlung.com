@@ -18,6 +18,8 @@ class Years
     /**
      * Return the years updated of the pages
      *
+     * @deprecated
+     *
      * @return int[]
      */
     public static function slugsAndYears()
