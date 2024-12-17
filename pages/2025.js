@@ -4,6 +4,10 @@ document.addEventListener('DOMContentLoaded', function () {
     document.addEventListener('keydown', function(event) {
         console.log(event);
         if (event.altKey && event.keyCode === 82) {
+            // if we are in frames, go to the top
+            if (window.top !== window.self) {
+                window.top.location = '/random.php';
+            }
             window.location = '/random.php';
         }
     });

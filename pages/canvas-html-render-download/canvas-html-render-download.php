@@ -9,6 +9,9 @@ $cachebustJavaScript = '?v=' . filemtime('canvas-html-render-download.js');
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="stylesheet" type="text/css" href="canvas-html-render-download.css<?php echo $cachebustStyles; ?>">
+    <script src="../2025.js<?php
+    echo '?' . filemtime('../2025.js');
+    ?>"></script>
 </head>
 <body>
 

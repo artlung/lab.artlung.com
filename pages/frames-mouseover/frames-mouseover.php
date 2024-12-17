@@ -69,7 +69,7 @@
     </script>
 </head>
 <frameset rows="50%,50%">
-    <frame src="top-frame.php" name="mid_topone" marginwidth="0" marginheight="0" scrolling="no" noresize>
+    <frame src="top-frame.php" name="mid_topone" marginwidth="0" marginheight="0"  noresize>
     <frame src="bot-frame.php" name="mid_botone" marginwidth="0" marginheight="0" scrolling="no" noresize>
 </frameset>
 </html>

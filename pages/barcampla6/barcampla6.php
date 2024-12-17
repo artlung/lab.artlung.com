@@ -12,6 +12,9 @@
     echo "?" . filectime('barcampla6.js');
     ?>"></script>
     <link rel="webmention" href="https://webmention.io/artlung.com/webmention"/>
+    <script src="/2025.js<?php
+    echo '?' . filemtime('../2025.js');
+    ?>"></script>
 </head>
 <body>
 

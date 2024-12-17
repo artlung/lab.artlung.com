@@ -10,6 +10,9 @@
     <script src="random-cells.js<?php
     echo '?' . filemtime('random-cells.js');
     ?>"></script>
+    <script src="../2025.js<?php
+    echo '?' . filemtime('../2025.js');
+    ?>"></script>
     <link rel="webmention" href="https://webmention.io/artlung.com/webmention">
 </head>
 <body>

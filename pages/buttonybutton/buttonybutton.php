@@ -45,6 +45,9 @@
             document.getElementById("x").innerHTML = "Buttony.";
         }
     </script>
+    <script src="/2025.js<?php
+    echo '?' . filemtime('../2025.js');
+    ?>"></script>
 </head>
 <body title="for @areus">
 <button id="x" onclick="this.innerHTML='Clicky click.';clearTimeout(to);setTimeout('r()',2000);">Buttony.</button>

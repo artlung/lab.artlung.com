@@ -128,6 +128,9 @@ if (isset($_GET['bloggingbot'])) {
         });
 
     </script>
+    <script src="/2025.js<?php
+    echo '?' . filemtime('../../2025.js');
+    ?>"></script>
 </head>
 <body style="background-color: rgb(36, 100, 126); color: rgb(255, 255, 255);">
 <div><?php echo $line; ?></div>
