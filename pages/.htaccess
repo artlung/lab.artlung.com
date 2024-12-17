@@ -38,5 +38,8 @@ Redirect permanent /ws_ftp_password_decoder            https://lab.artlung.com/w
 # Set a 404 page
 ErrorDocument 404 /404.php
 
+RewriteRule ^sitemap.xml$ sitemap.xml.php [L]
+
+
 #Disallow directory browsing
 Options All -Indexes

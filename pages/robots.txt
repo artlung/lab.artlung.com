@@ -1,4 +1,5 @@
 # Allow All
 User-agent: *
 Disallow:
-# End
+
+Sitemap: https://lab.artlung.com/sitemap.xml

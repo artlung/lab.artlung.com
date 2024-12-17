@@ -1,6 +1,13 @@
 console.log('You are on lab.artlung.com. 2025 Edition.');
 document.addEventListener('DOMContentLoaded', function () {
 
+    document.addEventListener('keydown', function(event) {
+        console.log(event);
+        if (event.altKey && event.keyCode === 82) {
+            window.location = '/random.php';
+        }
+    });
+
     var searchFilter = document.getElementById('search-filter');
     if (!searchFilter) {
         return;
@@ -78,7 +85,6 @@ document.addEventListener('DOMContentLoaded', function () {
         document.documentElement.style.removeProperty('--theme-color');
         document.documentElement.style.removeProperty('--theme-color-modifier');
     });
-
 
 
 });
