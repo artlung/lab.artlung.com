@@ -1,5 +1,5 @@
 <?php
-
+namespace ArtlungLab;
 /**
  * Class Nav
  *

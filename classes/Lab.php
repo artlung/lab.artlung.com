@@ -1,10 +1,11 @@
 <?php
 
+namespace ArtlungLab;
 /**
  * Class Lab
  *
  * @category PHP
- * @package  Classes
+ * @package  ArtLung
  * @author   Joe Crawford <joe@artlung.com>
  * @license  GPL 2.0+ - http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  * @version  Release: 1.0
@@ -113,13 +114,13 @@ class Lab
         $title = trim($title);
 
         $cssFileName = '2025.css';
-        $cssPagesPath = 'pages/' . $cssFileName;
+        $cssPagesPath = 'web/' . $cssFileName;
         $cssActualPath = $this->currentPageServerDirectoryPath . $cssPagesPath;
         $cacheBustCss = @filectime($cssActualPath) ? : 0;
 
 
         $jsFileName = '2025.js';
-        $jsPagesPath = 'pages/' . $jsFileName;
+        $jsPagesPath = 'web/' . $jsFileName;
         $jsActualPath = $this->currentPageServerDirectoryPath . $jsPagesPath;
         $cacheBustJs = @filectime($jsActualPath) ? : 0;
 
@@ -127,7 +128,7 @@ class Lab
         $scriptNameMd5 = md5($_SERVER['SCRIPT_NAME']);
         $title = htmlspecialchars($title);
 
-        $codePath = $this->currentPageServerDirectoryPath . 'pages/' . $this->directoryName . '/code.txt';
+        $codePath = $this->currentPageServerDirectoryPath . 'web/' . $this->directoryName . '/code.txt';
 
         if (is_file($codePath)) {
             $code_from_code_txt = file_get_contents($codePath);
@@ -217,10 +218,10 @@ class Lab
 
 
 
-        $ogImageName = '/og-images/lab-artlung-com-' . $this->directoryName . '.png';
+        $ogImageName = '/' . $this->directoryName . '/og-' . $this->directoryName . '.jpg';
         // only home has $open_nav true
         if ($open_nav) {
-            $ogImageName = '/og-images/lab-artlung-com.png';
+            $ogImageName = '/og-home.jpg';
         }
         $ogImageLink = sprintf('<meta property="og:image" content="https://lab.artlung.com%s">', $ogImageName);
 
@@ -373,7 +374,7 @@ HTML;
      */
     public function printSourceFile(string $string)
     {
-        $path = $this->currentPageServerDirectoryPath . 'pages/' . $this->directoryName . '/' . $string;
+        $path = $this->currentPageServerDirectoryPath . 'web/' . $this->directoryName . '/' . $string;
         if (is_file($path)) {
             $html = file_get_contents($path);
             $this->printSource($html);

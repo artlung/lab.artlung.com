@@ -1,6 +1,7 @@
 <?php
 
 
+use ArtlungLab\Nav;
 use PHPUnit\Framework\TestCase;
 
 /**
@@ -34,8 +35,7 @@ class NavTest extends TestCase
      */
     public function testGetMetadata()
     {
-        //        $directories in ../pages/
-        $pagesDirectory = dirname(__FILE__) . '/../pages/';
+        $pagesDirectory = dirname(__FILE__) . '/../web/';
         $directories = array_diff(scandir($pagesDirectory), ['..', '.']);
         $valid_directories = [];
         foreach ($directories as $dir) {
