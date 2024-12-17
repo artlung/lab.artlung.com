@@ -166,6 +166,7 @@ class Years
             'upload' => 2015,
             'rosetta' => 2010,
             'slideshow-plus' => 2003,
+            'keystroke-to-go-to-random-page' => 2024,
 
         );
     }

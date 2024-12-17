@@ -165,6 +165,7 @@ class Nav
             'upload' => ['title' => 'Sample Uploader Code'],
             'keycode' => ['title' => 'Listen for Key Presses on a Web Page'],
             'spoiler' => ['title' => 'Spoiler Widget'],
+            'keystroke-to-go-to-random-page' => ['title' => 'Keystroke to Go to Random Web Page'],
         ];
 
         $slugs_and_years = Years::slugsAndYears();
