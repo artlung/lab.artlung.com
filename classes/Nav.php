@@ -27,7 +27,7 @@ class Nav
 
         // yaml is the source of truth, generate this with slugs_and_titles.php do not hand edit this:
 
-        /* START: handled by php generate-nav-value LAST UPDATE 2024-12-18 00:25:47 */
+        /* START: handled by php generate-nav-value LAST UPDATE 2024-12-18 00:34:27 */
         return $slugs_and_titles = array (
         '50states' => 
         array (
@@ -98,6 +98,10 @@ class Nav
         'title' => 'Preventing Browser Cache',
         'tags' => 
         array (
+        0 => 'asp',
+        1 => 'coldfusion',
+        2 => 'jsp',
+        3 => 'php',
         ),
         ),
         'asp' => 
@@ -207,6 +211,9 @@ class Nav
         'title' => 'Killer Bookmarklets I have Come Across',
         'tags' => 
         array (
+        0 => 'css',
+        1 => 'html',
+        2 => 'rss',
         ),
         ),
         'border-style' => 
@@ -278,6 +285,7 @@ class Nav
         'title' => 'camelCase <-> selector-case w/o Regex',
         'tags' => 
         array (
+        0 => 'javascript',
         ),
         ),
         'canvas-html-render-download' => 
@@ -437,6 +445,7 @@ class Nav
         'title' => 'Simple example connecting to a remote server',
         'tags' => 
         array (
+        0 => 'php',
         ),
         ),
         'copy-to-clipboard-javascript' => 
@@ -569,6 +578,8 @@ class Nav
         'title' => 'Dropdown Navigation',
         'tags' => 
         array (
+        0 => 'html',
+        1 => 'javascript',
         ),
         ),
         'dropdown-focus' => 
@@ -580,6 +591,7 @@ class Nav
         'title' => 'Setting Dropdown Focus',
         'tags' => 
         array (
+        0 => 'javascript',
         ),
         ),
         'dropdown-frames' => 
@@ -591,6 +603,7 @@ class Nav
         'title' => 'Dropdown Navigation in Frames',
         'tags' => 
         array (
+        0 => 'javascript',
         ),
         ),
         'dropdown-only-some-new-window' => 
@@ -602,6 +615,7 @@ class Nav
         'title' => 'Dropdown Navigation Where Only Some Links Open New Windows',
         'tags' => 
         array (
+        0 => 'javascript',
         ),
         ),
         'dropdown-submit-form' => 
@@ -613,6 +627,7 @@ class Nav
         'title' => 'dropdown-submit-form',
         'tags' => 
         array (
+        0 => 'javascript',
         ),
         ),
         'echo-http-host' => 
@@ -954,6 +969,8 @@ class Nav
         'title' => 'What to do with a directory of images that are letters?',
         'tags' => 
         array (
+        0 => 'css',
+        1 => 'javascript',
         ),
         ),
         'misc-files' => 
@@ -965,6 +982,12 @@ class Nav
         'title' => 'Miscellaneous Web Files',
         'tags' => 
         array (
+        0 => 'apache',
+        1 => 'asp',
+        2 => 'coldfusion',
+        3 => 'google',
+        4 => 'html',
+        5 => 'http',
         ),
         ),
         'mm_validateform' => 
@@ -1134,6 +1157,7 @@ class Nav
         'title' => 'window.webkitNotifications support',
         'tags' => 
         array (
+        0 => 'javascript',
         ),
         ),
         'now-getdate' => 
@@ -1145,6 +1169,7 @@ class Nav
         'title' => 'NOW() ~= GETDATE()',
         'tags' => 
         array (
+        0 => 'sql',
         ),
         ),
         'oncontextmenu' => 
@@ -1307,6 +1332,7 @@ class Nav
         'title' => 'Random Content',
         'tags' => 
         array (
+        0 => 'php',
         ),
         ),
         'random-string-in-sql' => 
@@ -1427,6 +1453,7 @@ class Nav
         'title' => 'Code to make a page that refresh to itself',
         'tags' => 
         array (
+        0 => 'javascript',
         ),
         ),
         'server-side-image-map' => 
@@ -1451,6 +1478,7 @@ class Nav
         'title' => 'Single Pixel Gif as a base 64 encoded string',
         'tags' => 
         array (
+        0 => 'html',
         ),
         ),
         'six-finger-ai-hand' => 
@@ -1474,6 +1502,7 @@ class Nav
         'title' => 'SlideShow Implementation',
         'tags' => 
         array (
+        0 => 'javascript',
         ),
         ),
         'slideshow-img' => 
@@ -1485,6 +1514,7 @@ class Nav
         'title' => 'Slideshows Roughly How We did them in 1999',
         'tags' => 
         array (
+        0 => 'javascript',
         ),
         ),
         'slideshow-plus' => 
@@ -1496,6 +1526,7 @@ class Nav
         'title' => 'slideshow plus! cleaner slideshow which can also move forward automatically',
         'tags' => 
         array (
+        0 => 'javascript',
         ),
         ),
         'speech-synthesis' => 
@@ -1667,6 +1698,9 @@ class Nav
         'title' => 'Giving Users A Preference Widget for Opening New Windows',
         'tags' => 
         array (
+        0 => 'html',
+        1 => 'php',
+        2 => 'ux',
         ),
         ),
         'vaguely-interesting-layout' => 

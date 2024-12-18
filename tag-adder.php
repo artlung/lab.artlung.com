@@ -45,7 +45,7 @@ foreach ($directories as $directory) {
         printf("Tags added for %s\n", $just_slug);
 
     } else {
-//        printf("Tags already exist for %s\n", $just_slug);
+        //        printf("Tags already exist for %s\n", $just_slug);
     }
 
 
