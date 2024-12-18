@@ -424,7 +424,7 @@ HTML;
 <h2>Comment on this with a <a href="https://indieweb.org/Webmention">webmention</a></h2>
 <form action="https://webmention.io/artlung.com/webmention" method="post">
     <label>
-    If you want to respond to this using <em>your own</em> website, you can do so by entering the URL below.
+    If you want to respond to this using <em>your own</em> website, you can do so by entering the URL below. Webmentions are not displayed at this time but may be in the future.
     </label>
     <input type="url" name="source" placeholder="source" required>
     <input type="hidden" value="{$canonical}">

@@ -27,7 +27,7 @@ class Nav
 
         // yaml is the source of truth, generate this with slugs_and_titles.php do not hand edit this:
 
-        /* START: handled by php generate-nav-value LAST UPDATE 2024-12-18 15:41:58 */
+        /* START: handled by php generate-nav-value LAST UPDATE 2024-12-18 17:50:59 */
         return $slugs_and_titles = array (
         '50states' => 
         array (
@@ -1773,11 +1773,9 @@ class Nav
         'year' => '2024',
         'tags' => 
         array (
-        0 => '',
-        1 => 'currl',
-        2 => 'indieweb',
+        0 => 'curl',
+        1 => 'indieweb',
         ),
-        'og-image-date' => '2024-12-18 15:40:35',
         ),
         'windows-export-file-list' => 
         array (
