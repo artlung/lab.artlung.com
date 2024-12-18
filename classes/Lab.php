@@ -427,7 +427,7 @@ HTML;
     If you want to respond to this using <em>your own</em> website, you can do so by entering the URL below. Webmentions are not displayed at this time but may be in the future.
     </label>
     <input type="url" name="source" placeholder="source" required>
-    <input type="hidden" value="{$canonical}">
+    <input type="hidden" name="target" value="{$canonical}">
     <input type="submit" value="Send Webmention">
 </form>
 </div>

@@ -27,7 +27,7 @@ class Nav
 
         // yaml is the source of truth, generate this with slugs_and_titles.php do not hand edit this:
 
-        /* START: handled by php generate-nav-value LAST UPDATE 2024-12-18 17:50:59 */
+        /* START: handled by php generate-nav-value LAST UPDATE 2024-12-18 23:07:41 */
         return $slugs_and_titles = array (
         '50states' => 
         array (
@@ -1770,12 +1770,13 @@ class Nav
         'title' => 'Webmentions',
         'slug' => 'webmentions',
         'canonical_url' => 'https://lab.artlung.com/webmentions/',
-        'year' => '2024',
+        'year' => 2024,
         'tags' => 
         array (
         0 => 'curl',
         1 => 'indieweb',
         ),
+        'og-image-date' => '2024-12-18 17:51:46',
         ),
         'windows-export-file-list' => 
         array (

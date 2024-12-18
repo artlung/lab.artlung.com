@@ -13,7 +13,6 @@ foreach ($directories as $directory) {
     $yaml_file = "$directory/$just_slug.yaml";
 
     if (!file_exists($yaml_file)) {
-        // touch it:
         touch($yaml_file);
     }
 
@@ -30,7 +29,7 @@ foreach ($directories as $directory) {
     }
 
     if (!isset($yaml['year'])) {
-        $yaml['year'] = date('Y');
+        $yaml['year'] = (int) date('Y');
     }
 
     // if title not set, set it to the first h1 in the file slug/slug.php
