@@ -1,0 +1,12 @@
+---
+slug: the-problem-with-blur
+og-image-date: 2024-12-17 01:21:10
+year: 2001
+canonical_url: >
+  https://lab.artlung.com/the-problem-with-blur/
+title: >
+  Why not to use blur() to make dotted
+  lines go away in MSIE for Windows
+tags:
+  - a11y
+  - css

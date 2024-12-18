@@ -1,6 +1,7 @@
 <?php
 
 
+use ArtlungLab\Nav;
 use PHPUnit\Framework\TestCase;
 
 /**
@@ -18,24 +19,13 @@ class NavTest extends TestCase
 {
 
     /**
-     * Test the ignoredItems method
-     *
-     * @return void
-     */
-    public function testIgnoredItems()
-    {
-        $this->assertNotEmpty(Nav::ignoredDirectoryNames());
-    }
-
-    /**
      * Test the getMetadata method
      *
      * @return void
      */
     public function testGetMetadata()
     {
-        //        $directories in ../pages/
-        $pagesDirectory = dirname(__FILE__) . '/../pages/';
+        $pagesDirectory = dirname(__FILE__) . '/../web/';
         $directories = array_diff(scandir($pagesDirectory), ['..', '.']);
         $valid_directories = [];
         foreach ($directories as $dir) {
@@ -54,6 +44,21 @@ class NavTest extends TestCase
             $this->assertArrayHasKey('year', $metadataArray, "Year missing for $dir");
             $this->assertIsInt($metadataArray['year'], "Year is not an integer for $dir");
             $this->assertGreaterThan(1990, $metadataArray['year'], "Year is not greater than 1990 for $dir");
+
+            $this->assertArrayHasKey('tags', $metadataArray, "Tags missing for $dir");
+            $this->assertIsArray($metadataArray['tags'], "Tags is not an array for $dir");
+
+            // must have at least one tag
+            $this->assertGreaterThan(0, count($metadataArray['tags']), "Tags is empty for $dir");
+
+            $this->assertArrayHasKey('slug', $metadataArray, "Slug missing for $dir");
+            $this->assertEquals($dir, $metadataArray['slug'], "Slug does not match directory name for $dir");
+
+            $this->assertArrayHasKey('canonical_url', $metadataArray, "Canonical URL missing for $dir");
+            $this->assertStringContainsString('https://lab.artlung.com/', $metadataArray['canonical_url'], "Canonical URL does not contain https://lab.artlung.com/ for $dir");
+
+
+
 
         }
 

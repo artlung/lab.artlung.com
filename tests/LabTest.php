@@ -1,6 +1,7 @@
 <?php
 
 
+use ArtlungLab\Lab;
 use PHPUnit\Framework\TestCase;
 
 /**
@@ -38,7 +39,7 @@ class LabTest extends TestCase
      */
     public function testGetLab()
     {
-        $lab = new Lab();
+        $lab = new ArtlungLab\Lab();
         $this->assertInstanceOf(Lab::class, $lab);
     }
     /**
@@ -48,7 +49,7 @@ class LabTest extends TestCase
      */
     public function testDisplayCode()
     {
-        $lab = new Lab();
+        $lab = new ArtlungLab\Lab();
         ob_start();
         $lab->displayCode('');
         $output = ob_get_clean();
@@ -63,7 +64,7 @@ class LabTest extends TestCase
      */
     public function testPrintSource()
     {
-        $lab = new Lab();
+        $lab = new ArtlungLab\Lab();
         ob_start();
         $lab->printSource('');
         $output = ob_get_clean();
@@ -79,7 +80,7 @@ class LabTest extends TestCase
      */
     public function testGetHeader()
     {
-        $lab = new Lab();
+        $lab = new ArtlungLab\Lab();
         $this->assertIsString($lab->getHeader('Test'));
 
     }
@@ -91,7 +92,7 @@ class LabTest extends TestCase
      */
     public function testPrintHeader()
     {
-        $lab = new Lab();
+        $lab = new ArtlungLab\Lab();
         ob_start();
         $lab->printHeader('Test');
         $output = ob_get_clean();
@@ -108,7 +109,7 @@ class LabTest extends TestCase
      */
     public function testPrintFooter()
     {
-        $lab = new Lab();
+        $lab = new ArtlungLab\Lab();
         ob_start();
         $lab->printFooter();
         $output = ob_get_clean();
@@ -124,7 +125,7 @@ class LabTest extends TestCase
      */
     public function testPrintCodeBlock()
     {
-        $lab = new Lab();
+        $lab = new ArtlungLab\Lab();
         ob_start();
         $lab->printCodeBlock('');
         $output = ob_get_clean();
@@ -138,7 +139,7 @@ class LabTest extends TestCase
      */
     public function testConstruct()
     {
-        $lab = new Lab();
+        $lab = new ArtlungLab\Lab();
         $this->assertInstanceOf(Lab::class, $lab);
 
     }
@@ -150,7 +151,7 @@ class LabTest extends TestCase
      */
     public function testGetWebmentionForm()
     {
-        $lab = new Lab();
+        $lab = new ArtlungLab\Lab();
         $this->assertIsString($lab->getWebmentionForm());
 
     }
@@ -162,7 +163,7 @@ class LabTest extends TestCase
      */
     public function testPrintSourceFile()
     {
-        $lab = new Lab();
+        $lab = new ArtlungLab\Lab();
         ob_start();
         $lab->printSourceFile('');
         $output = ob_get_clean();
@@ -170,27 +171,5 @@ class LabTest extends TestCase
 
     }
 
-    // TODO THE RIGHT WAY TO DO THIS IS TO RUN THE PAGES WITH A WEBSERVER AND CHECK THE OUTPUT
-    // WHICH I THINK MEANS SELENIUM OR SOMETHING LIKE THAT
-    //    /**
-    //     * Test Pages for existence
-    //     *
-    //     * @return void
-    //     */
-    //    public function testLabPages()
-    //    {
-    //        $lab = new Lab();
-    //        $pageSlugs = $lab->getLabPageSlugs();
-    //
-    //        foreach ($pageSlugs as $slug) {
-    //            ob_start();
-    //            include $lab->currentPageServerDirectoryPath . 'pages/' . $slug . '/' . $slug . '.php';
-    //            $page_as_string = ob_get_clean();
-    //            $this->assertIsString($page_as_string, 'Page ' . $slug . ' is not a string');
-    //        }
-    //
-    //
-    //
-    //    }
 
 }

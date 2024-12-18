@@ -1,0 +1,5 @@
+# Allow All
+User-agent: *
+Disallow:
+
+Sitemap: https://lab.artlung.com/sitemap.xml

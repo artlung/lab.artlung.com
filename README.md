@@ -10,6 +10,14 @@ I originally created the site [lab.artlung.com](https://lab.artlung.com) in 2001
   * I made the repository public as part of [IndieWeb Black Friday Create Day](https://indieweb.org/events/2024-black-friday-create-day).
   * [PHP_CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer) was added
   * Preliminary PHPUnit tests added
+  * OG:Image Support Added
+  * XML SiteMap Support
+  * Random Post Keystroke added (alt-r or option-r)
+  * All pages have a specific `yaml` file to help manage metadata
+  * `tag-adder.php` script makes it easy to add tags to existing content
+  * `yaml-management.php` script makes it easy to add metadata to existing content
+  * Unit tests now check for at least one tag on each page
+  * `og-images.php` script uses `shot-scraper` to generate images for `og:image` tags
 
 
 ![example workflow](https://github.com/artlung/lab.artlung.com/actions/workflows/ci.yml/badge.svg)

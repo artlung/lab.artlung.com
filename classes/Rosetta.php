@@ -1,5 +1,5 @@
 <?php
-
+namespace ArtlungLab;
 /**
  * Class Rosetta
  *
@@ -41,7 +41,7 @@ class Rosetta extends Lab
     {
         $this->slug = $slug;
         $this->library_path = $library_path;
-        $this->_rosettaPath = __DIR__ . '/../pages/rosetta/';
+        $this->_rosettaPath = __DIR__ . '/../web/rosetta/';
     }
 
     /**
