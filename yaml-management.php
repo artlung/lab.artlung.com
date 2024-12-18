@@ -12,109 +12,56 @@ foreach ($directories as $directory) {
 
     $yaml_file = "$directory/$just_slug.yaml";
 
-
     if (!file_exists($yaml_file)) {
-        // make it
-        $yaml = [];
+        // touch it:
+        touch($yaml_file);
+    }
+
+    $yaml = Spyc::YAMLLoad($yaml_file);
+
+    $original_yaml = $yaml;
+
+    if (!isset($yaml['slug']) || $yaml['slug'] != $just_slug) {
         $yaml['slug'] = $just_slug;
-        $yaml['year'] = date('Y');
-        $yaml['title'] = $slugs_and_titles[$just_slug]['title'];
+    }
+
+    if (!isset($yaml['canonical_url']) || $yaml['canonical_url'] != "https://lab.artlung.com/$just_slug/") {
         $yaml['canonical_url'] = "https://lab.artlung.com/$just_slug/";
+    }
+
+    if (!isset($yaml['year'])) {
+        $yaml['year'] = date('Y');
+    }
+
+    // if title not set, set it to the first h1 in the file slug/slug.php
+    if (!isset($yaml['title'])) {
+        $slug_file = "$directory/$just_slug.php";
+        $slug_content = file_get_contents($slug_file);
+        $matches = [];
+        preg_match('/<h1>(.*?)<\/h1>/', $slug_content, $matches);
+        if (isset($matches[1])) {
+            $yaml['title'] = $matches[1];
+        }
+    }
+
+    if (!isset($yaml['tags']) || !is_array($yaml['tags']) || count($yaml['tags']) == 0) {
         $yaml['tags'] = [];
-        $tags = [];
-        $tag_mapping = [
-            'css' => 'css',
-            'html' => 'html',
-            'coldfusion' => 'coldfusion',
-            'asp' => 'asp',
-            'javascript' => 'javascript',
-            'php' => 'php',
-            'sql' => 'sql',
-            'unix' => 'unix',
-            'border-radius' => 'css',
-            'strtotime' => 'php',
-            'onmouseover' => 'javascript',
-            'jquery' => 'javascript',
-            'vbscript' => 'vbscript',
-            'mysql' => 'sql',
-        ];
-        foreach ($tag_mapping as $keyword => $single_tag) {
-            if (strpos(strtolower($yaml['title']), strtolower($keyword)) !== false) {
-                $tags[] = $single_tag;
-            }
-            if (strpos(strtolower($yaml['canonical_url']), strtolower($keyword)) !== false) {
-                $tags[] = $single_tag;
-            }
-        }
-        $yaml['tags'] = array_unique($tags);
-        sort($yaml['tags']);
-        file_put_contents($yaml_file, Spyc::YAMLDump($yaml));
+        print "No tags for $just_slug, be sure to run php tag-adder.php\n";
+    }
+
+    if (!isset($yaml['og-image-date'])) {
+        print "No og-image-date for $just_slug, be sure to run php og-images.php\n";
     }
 
 
-    if (file_exists($yaml_file)) {
-        $yaml = file_get_contents($yaml_file);
-        $yaml = Spyc::YAMLLoad($yaml);
-        $yaml['slug'] = $just_slug;
-
-
-        if (!$slugs_and_titles[$just_slug] && !$slugs_and_titles[$just_slug]['title']) {
-            die("No title for $just_slug");
-        }
-
-        $canonical_url = "https://lab.artlung.com/$just_slug/";
-        $yaml['canonical_url'] = $canonical_url;
-
-        $yaml['title'] = $slugs_and_titles[$just_slug]['title'];
-
-        $tags = [];
-        $tag[] = 'web';
-
-        // if title or url contains css, add css tag
-        // if contains html, add html tag
-        // if contains coldfusion, add coldfusion tag
-        // if contains asp, add asp tag
-        // if contains javascript, add javascript tag
-        // if contains php, add php tag
-        // if contains sql, add sql tag
-        // if contains unix, add unix tag
-
-        $tag_mapping = [
-            'css' => 'css',
-            'html' => 'html',
-            'coldfusion' => 'coldfusion',
-            'asp' => 'asp',
-            'javascript' => 'javascript',
-            'php' => 'php',
-            'sql' => 'sql',
-            'unix' => 'unix',
-            'border-radius' => 'css',
-            'strtotime' => 'php',
-            'onmouseover' => 'javascript',
-            'jquery' => 'javascript',
-            'vbscript' => 'vbscript',
-            'mysql' => 'sql',
-        ];
-
-        foreach ($tag_mapping as $keyword => $single_tag) {
-            if (strpos(strtolower($yaml['title']), strtolower($keyword)) !== false) {
-                $tags[] = $single_tag;
-            }
-            if (strpos(strtolower($yaml['canonical_url']), strtolower($keyword)) !== false) {
-                $tags[] = $single_tag;
-            }
-        }
-
-        $yaml['tags'] = array_unique($tags);
-        sort($yaml['tags']);
-
-
-
-         file_put_contents($yaml_file, Spyc::YAMLDump($yaml));
-
-
+    // is the yaml different?
+    if ($yaml != $original_yaml) {
+        $yaml_string = Spyc::YAMLDump($yaml);
+        file_put_contents($yaml_file, $yaml_string);
+        print "Yaml file changed for $just_slug\n";
+        print "Run php tag-adder.php and php og-images.php\n";
+        print "Also run php generate-nav-value.php\n";
     }
-
 
 
 }

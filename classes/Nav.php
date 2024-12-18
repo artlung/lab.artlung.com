@@ -27,7 +27,7 @@ class Nav
 
         // yaml is the source of truth, generate this with slugs_and_titles.php do not hand edit this:
 
-        /* START: handled by php generate-nav-value LAST UPDATE 2024-12-18 00:34:27 */
+        /* START: handled by php generate-nav-value LAST UPDATE 2024-12-18 15:41:58 */
         return $slugs_and_titles = array (
         '50states' => 
         array (
@@ -909,6 +909,7 @@ class Nav
         0 => 'javascript',
         1 => 'php',
         ),
+        'og-image-date' => '2024-12-18 15:40:35',
         ),
         'larger-checkbox-with-css' => 
         array (
@@ -1763,6 +1764,20 @@ class Nav
         array (
         0 => 'css',
         ),
+        ),
+        'webmentions' => 
+        array (
+        'title' => 'Webmentions',
+        'slug' => 'webmentions',
+        'canonical_url' => 'https://lab.artlung.com/webmentions/',
+        'year' => '2024',
+        'tags' => 
+        array (
+        0 => '',
+        1 => 'currl',
+        2 => 'indieweb',
+        ),
+        'og-image-date' => '2024-12-18 15:40:35',
         ),
         'windows-export-file-list' => 
         array (
