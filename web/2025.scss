@@ -233,6 +233,12 @@ header:has(label input[type="checkbox"]:checked) + nav {
 
 
 article#content {
+  h1 {
+    font-size: 1.4rem;
+  }
+  h2 {
+    font-size: 1.15rem;
+  }
   pre.src {
     padding: 10px;
     color: $color_1;
