@@ -1,0 +1,63 @@
+article#content {
+  pre {
+    box-shadow: none;
+  }
+    --target-color: #d7e1ff;
+    --source-color: #e2ffd1;
+    --endpoint-color: #f2d1ff;
+
+  pre {
+    background: transparent;
+    font-weight: bold;
+  }
+
+  code, span, em {
+    background-color: var(--local-color, white);
+    color: #333;
+    &.target {
+      font-weight: bold;
+      --local-color: var(--target-color);
+    }
+    &.source {
+        font-weight: bold;
+        --local-color: var(--source-color);
+    }
+    &.endpoint {
+        font-weight: bold;
+        --local-color: var(--endpoint-color);
+    }
+
+  }
+  div.diagram {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    div.webmention {
+      border: 1.5rem solid var(--local-color, #ccc);
+      background: var(--local-color, #ccc);
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+        // multiply image rendering over the background color
+        mix-blend-mode: multiply;
+      }
+      &.target {
+        --local-color: var(--target-color);
+
+      }
+      &.source {
+        --local-color: var(--source-color);
+      }
+      &.endpoint {
+        --local-color: var(--endpoint-color);
+      }
+    }
+  }
+
+
+}
