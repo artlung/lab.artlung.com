@@ -7,4 +7,5 @@ canonical_url: >
 title: >
   Dropdown Navigation Where Only Some
   Links Open New Windows
-tags: [ ]
+tags:
+  - javascript

@@ -23,7 +23,8 @@ foreach ($directories as $directory) {
 
     if ($tag_count === 0) {
         printf("No tags for %s\n", $just_slug);
-        print "Enter tags, separated by commas, or just enter to skip, q to exit:";
+        print "Page is at " . $yaml['canonical_url'] . "\n";
+        print "Enter tags, separated by commas, or just enter to skip, q to exit: ";
         $handle = fopen("php://stdin", "r");
         $line = fgets($handle);
 
@@ -44,7 +45,7 @@ foreach ($directories as $directory) {
         printf("Tags added for %s\n", $just_slug);
 
     } else {
-        printf("Tags already exist for %s\n", $just_slug);
+//        printf("Tags already exist for %s\n", $just_slug);
     }
 
 

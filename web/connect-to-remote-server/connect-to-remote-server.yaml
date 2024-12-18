@@ -7,4 +7,5 @@ canonical_url: >
 title: >
   Simple example connecting to a remote
   server
-tags: [ ]
+tags:
+  - php

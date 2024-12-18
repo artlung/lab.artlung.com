@@ -6,4 +6,5 @@ canonical_url: https://lab.artlung.com/slideshow-plus/
 title: >
   slideshow plus! cleaner slideshow which
   can also move forward automatically
-tags: [ ]
+tags:
+  - javascript

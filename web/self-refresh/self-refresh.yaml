@@ -6,4 +6,5 @@ canonical_url: https://lab.artlung.com/self-refresh/
 title: >
   Code to make a page that refresh to
   itself
-tags: [ ]
+tags:
+  - javascript

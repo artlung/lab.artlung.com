@@ -7,4 +7,7 @@ canonical_url: >
 title: >
   Giving Users A Preference Widget for
   Opening New Windows
-tags: [ ]
+tags:
+  - html
+  - php
+  - ux

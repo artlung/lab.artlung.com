@@ -6,4 +6,6 @@ canonical_url: https://lab.artlung.com/media/
 title: >
   What to do with a directory of images
   that are letters?
-tags: [ ]
+tags:
+  - css
+  - javascript

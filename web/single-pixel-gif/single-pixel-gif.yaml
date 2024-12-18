@@ -7,4 +7,5 @@ canonical_url: >
 title: >
   Single Pixel Gif as a base 64 encoded
   string
-tags: [ ]
+tags:
+  - html
