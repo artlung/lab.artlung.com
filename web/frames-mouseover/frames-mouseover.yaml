@@ -5,4 +5,5 @@ year: 2004
 canonical_url: >
   https://lab.artlung.com/frames-mouseover/
 title: frames-mouseover
-tags: [ ]
+tags:
+  - javascript

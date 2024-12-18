@@ -19,16 +19,6 @@ class NavTest extends TestCase
 {
 
     /**
-     * Test the ignoredItems method
-     *
-     * @return void
-     */
-    public function testIgnoredItems()
-    {
-        $this->assertNotEmpty(Nav::ignoredDirectoryNames());
-    }
-
-    /**
      * Test the getMetadata method
      *
      * @return void
@@ -57,6 +47,9 @@ class NavTest extends TestCase
 
             $this->assertArrayHasKey('tags', $metadataArray, "Tags missing for $dir");
             $this->assertIsArray($metadataArray['tags'], "Tags is not an array for $dir");
+
+            // must have at least one tag
+            $this->assertGreaterThan(0, count($metadataArray['tags']), "Tags is empty for $dir");
 
             $this->assertArrayHasKey('slug', $metadataArray, "Slug missing for $dir");
             $this->assertEquals($dir, $metadataArray['slug'], "Slug does not match directory name for $dir");

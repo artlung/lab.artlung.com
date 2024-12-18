@@ -6,4 +6,6 @@ canonical_url: https://lab.artlung.com/mm_validateform/
 title: >
   MM_validateForm() and MM_findObj()
   functions
-tags: [ ]
+tags:
+  - javascript
+  - macromedia

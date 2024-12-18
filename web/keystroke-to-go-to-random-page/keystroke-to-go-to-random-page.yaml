@@ -4,4 +4,6 @@ year: 2024
 title: Keystroke to Go to Random Web Page
 canonical_url: >
   https://lab.artlung.com/keystroke-to-go-to-random-page/
-tags: [ ]
+tags:
+  - javascript
+  - php

@@ -7,4 +7,5 @@ canonical_url: >
 title: >
   How to Make a file with every file on a
   C:\ drive (Windows)
-tags: [ ]
+tags:
+  - windows

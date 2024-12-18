@@ -6,4 +6,6 @@ canonical_url: https://lab.artlung.com/bloggingbot/
 title: >
   Blogging Bot (Markov Chains are
   Hilarious)
-tags: [ ]
+tags:
+  - experimental
+  - markovchains

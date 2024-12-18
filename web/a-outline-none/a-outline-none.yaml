@@ -6,4 +6,5 @@ canonical_url: https://lab.artlung.com/a-outline-none/
 title: >
   outline:none to affect IE5/Mac focus
   outline
-tags: [ ]
+tags:
+  - css

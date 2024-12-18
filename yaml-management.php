@@ -17,7 +17,7 @@ foreach ($directories as $directory) {
         // make it
         $yaml = [];
         $yaml['slug'] = $just_slug;
-        $yaml['year'] = $years[$just_slug];
+        $yaml['year'] = date('Y');
         $yaml['title'] = $slugs_and_titles[$just_slug]['title'];
         $yaml['canonical_url'] = "https://lab.artlung.com/$just_slug/";
         $yaml['tags'] = [];
@@ -57,11 +57,6 @@ foreach ($directories as $directory) {
         $yaml = Spyc::YAMLLoad($yaml);
         $yaml['slug'] = $just_slug;
 
-
-        if (!$years[$just_slug]) {
-            die("No year for $just_slug");
-        }
-        $yaml['year'] = $years[$just_slug];
 
         if (!$slugs_and_titles[$just_slug] && !$slugs_and_titles[$just_slug]['title']) {
             die("No title for $just_slug");

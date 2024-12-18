@@ -5,4 +5,6 @@ year: 2006
 canonical_url: >
   https://lab.artlung.com/change-space-between-paragraphs/
 title: Changing the spacing between paragraphs
-tags: [ ]
+tags:
+  - css
+  - typography

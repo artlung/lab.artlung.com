@@ -5,4 +5,5 @@ year: 2004
 canonical_url: >
   https://lab.artlung.com/generic-validator/
 title: Generic Validator
-tags: [ ]
+tags:
+  - javascript

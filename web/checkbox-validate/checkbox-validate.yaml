@@ -5,4 +5,5 @@ year: 2001
 canonical_url: >
   https://lab.artlung.com/checkbox-validate/
 title: Checkbox Validator
-tags: [ ]
+tags:
+  - javascript

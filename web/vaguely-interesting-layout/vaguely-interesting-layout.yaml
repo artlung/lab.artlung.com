@@ -5,4 +5,6 @@ year: 2010
 canonical_url: >
   https://lab.artlung.com/vaguely-interesting-layout/
 title: Vaguely Interesting Layout
-tags: [ ]
+tags:
+  - css
+  - design

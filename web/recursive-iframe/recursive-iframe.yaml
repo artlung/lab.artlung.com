@@ -7,4 +7,5 @@ canonical_url: >
 title: >
   This page calls an iframe which calls
   itself. The question, is what happens?
-tags: [ ]
+tags:
+  - html

@@ -5,4 +5,5 @@ year: 2006
 canonical_url: >
   https://lab.artlung.com/three-char-combos/
 title: Permutations of a set of characters
-tags: [ ]
+tags:
+  - php

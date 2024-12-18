@@ -5,4 +5,6 @@ year: 2001
 canonical_url: >
   https://lab.artlung.com/onunload-window-open-evil/
 title: onunload + window.open = evil
-tags: [ ]
+tags:
+  - javascript
+  - ux

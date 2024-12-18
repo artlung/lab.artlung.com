@@ -5,4 +5,5 @@ year: 1999
 canonical_url: >
   https://lab.artlung.com/interesting-date-layout/
 title: interesting-date-layout
-tags: [ ]
+tags:
+  - experimental

@@ -7,4 +7,6 @@ canonical_url: >
 title: >
   Why not to use blur() to make dotted
   lines go away in MSIE for Windows
-tags: [ ]
+tags:
+  - a11y
+  - css

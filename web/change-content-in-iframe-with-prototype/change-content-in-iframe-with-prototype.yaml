@@ -5,4 +5,5 @@ year: 2010
 canonical_url: >
   https://lab.artlung.com/change-content-in-iframe-with-prototype/
 title: "What is the way to access IFrame's element using Prototype $ method?"
-tags: [ ]
+tags:
+  - javascript

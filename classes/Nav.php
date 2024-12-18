@@ -27,7 +27,7 @@ class Nav
 
         // yaml is the source of truth, generate this with slugs_and_titles.php do not hand edit this:
 
-        /* START: handled by php generate-nav-value LAST UPDATE 2024-12-18 00:01:24 */
+        /* START: handled by php generate-nav-value LAST UPDATE 2024-12-18 00:25:47 */
         return $slugs_and_titles = array (
         '50states' => 
         array (
@@ -50,6 +50,7 @@ class Nav
         'title' => 'ArtLung Notes (Experimental, 2010)',
         'tags' => 
         array (
+        0 => 'experimental',
         ),
         ),
         'a-outline-none' => 
@@ -61,6 +62,7 @@ class Nav
         'title' => 'outline:none to affect IE5/Mac focus outline',
         'tags' => 
         array (
+        0 => 'css',
         ),
         ),
         'additive-font-size' => 
@@ -72,6 +74,7 @@ class Nav
         'title' => 'How font-size accumulates',
         'tags' => 
         array (
+        0 => 'css',
         ),
         ),
         'ancient-tidy-tutorial' => 
@@ -142,6 +145,7 @@ class Nav
         'title' => 'Auto-Calculator',
         'tags' => 
         array (
+        0 => 'experimental',
         ),
         ),
         'barcampla6' => 
@@ -165,6 +169,8 @@ class Nav
         'title' => 'Blogging Bot (Markov Chains are Hilarious)',
         'tags' => 
         array (
+        0 => 'experimental',
+        1 => 'markovchains',
         ),
         ),
         'bluedragon-net-installer' => 
@@ -176,6 +182,8 @@ class Nav
         'title' => 'Screenshots of an installation of BlueDragon 7.1 for the Microsoft .NET Framework',
         'tags' => 
         array (
+        0 => 'coldfusion',
+        1 => 'dotnet',
         ),
         ),
         'blur' => 
@@ -210,6 +218,7 @@ class Nav
         'title' => 'border-style Experiment',
         'tags' => 
         array (
+        0 => 'css',
         ),
         ),
         'bug-mac-netscape-forms-update' => 
@@ -221,6 +230,7 @@ class Nav
         'title' => 'Netscape/Macintosh Changing Form Button or Submit Input Value Fails',
         'tags' => 
         array (
+        0 => 'html',
         ),
         ),
         'buttonybutton' => 
@@ -232,6 +242,7 @@ class Nav
         'title' => 'Buttony Button',
         'tags' => 
         array (
+        0 => 'css',
         ),
         ),
         'buttonybuttonsonbuttons' => 
@@ -243,6 +254,7 @@ class Nav
         'title' => 'Big Buttony Buttons on Buttons',
         'tags' => 
         array (
+        0 => 'css',
         ),
         ),
         'call-original-version-of-redefined-vbscript' => 
@@ -289,6 +301,7 @@ class Nav
         'title' => 'How can I change every link on a page to something new?',
         'tags' => 
         array (
+        0 => 'javascript',
         ),
         ),
         'change-content-in-iframe-with-prototype' => 
@@ -300,6 +313,7 @@ class Nav
         'title' => 'What is the way to access IFrame\'s element using Prototype $ method?',
         'tags' => 
         array (
+        0 => 'javascript',
         ),
         ),
         'change-document-background-color' => 
@@ -311,6 +325,8 @@ class Nav
         'title' => 'Change document background color',
         'tags' => 
         array (
+        0 => 'css',
+        1 => 'javascript',
         ),
         ),
         'change-space-between-paragraphs' => 
@@ -322,6 +338,8 @@ class Nav
         'title' => 'Changing the spacing between paragraphs',
         'tags' => 
         array (
+        0 => 'css',
+        1 => 'typography',
         ),
         ),
         'checkbox-validate' => 
@@ -333,6 +351,7 @@ class Nav
         'title' => 'Checkbox Validator',
         'tags' => 
         array (
+        0 => 'javascript',
         ),
         ),
         'circles-crawl' => 
@@ -356,6 +375,9 @@ class Nav
         'title' => 'Clock Concept (1998-2024)',
         'tags' => 
         array (
+        0 => 'css',
+        1 => 'experimental',
+        2 => 'javascript',
         ),
         ),
         'coldfusion-break-db' => 
@@ -403,6 +425,7 @@ class Nav
         'title' => 'Compare two fields, Submit only if they are the same:',
         'tags' => 
         array (
+        0 => 'javascript',
         ),
         ),
         'connect-to-remote-server' => 
@@ -473,6 +496,7 @@ class Nav
         'title' => 'crossdomain.xml',
         'tags' => 
         array (
+        0 => 'http',
         ),
         ),
         'css3-smiley' => 
@@ -496,6 +520,7 @@ class Nav
         'title' => 'Fun Detagger Script',
         'tags' => 
         array (
+        0 => 'php',
         ),
         ),
         'detection-real' => 
@@ -507,6 +532,8 @@ class Nav
         'title' => 'RealMedia Plugin Detection',
         'tags' => 
         array (
+        0 => 'javascript',
+        1 => 'realplayer',
         ),
         ),
         'display-inline-block' => 
@@ -609,6 +636,7 @@ class Nav
         'title' => 'Form action mailto: stinks',
         'tags' => 
         array (
+        0 => 'html',
         ),
         ),
         'first-child-last-child' => 
@@ -620,6 +648,7 @@ class Nav
         'title' => 'First Child Last Child Demonstration',
         'tags' => 
         array (
+        0 => 'css',
         ),
         ),
         'font-awesome-sample' => 
@@ -631,6 +660,7 @@ class Nav
         'title' => 'Font Awesome 4.6.3 Class Explorer (version 4.6.3)',
         'tags' => 
         array (
+        0 => 'typography',
         ),
         ),
         'form-image-background' => 
@@ -642,6 +672,8 @@ class Nav
         'title' => 'background images in form elements',
         'tags' => 
         array (
+        0 => 'css',
+        1 => 'html',
         ),
         ),
         'format-time' => 
@@ -665,6 +697,7 @@ class Nav
         'title' => 'frames-mouseover',
         'tags' => 
         array (
+        0 => 'javascript',
         ),
         ),
         'gallery' => 
@@ -676,6 +709,7 @@ class Nav
         'title' => 'AutoMagic Gallery Listing',
         'tags' => 
         array (
+        0 => 'php',
         ),
         ),
         'generic-validator' => 
@@ -687,6 +721,7 @@ class Nav
         'title' => 'Generic Validator',
         'tags' => 
         array (
+        0 => 'javascript',
         ),
         ),
         'gettysburg' => 
@@ -710,6 +745,8 @@ class Nav
         'title' => 'Goal of 50!',
         'tags' => 
         array (
+        0 => 'css',
+        1 => 'javascript',
         ),
         ),
         'group-concat-mysql' => 
@@ -733,6 +770,7 @@ class Nav
         'title' => 'How to implement a Forward and Back Buttons',
         'tags' => 
         array (
+        0 => 'javascript',
         ),
         ),
         'html-2.0' => 
@@ -756,6 +794,7 @@ class Nav
         'title' => 'Several Approaches to Do Image Borders of Different Colors: 1999',
         'tags' => 
         array (
+        0 => 'css',
         ),
         ),
         'image-hover' => 
@@ -767,6 +806,7 @@ class Nav
         'title' => 'Image Hover',
         'tags' => 
         array (
+        0 => 'css',
         ),
         ),
         'input-direction' => 
@@ -778,6 +818,7 @@ class Nav
         'title' => 'Change Form Input Direction',
         'tags' => 
         array (
+        0 => 'html',
         ),
         ),
         'interesting-date-layout' => 
@@ -789,6 +830,7 @@ class Nav
         'title' => 'interesting-date-layout',
         'tags' => 
         array (
+        0 => 'experimental',
         ),
         ),
         'invisible-unspiderable-link' => 
@@ -800,6 +842,9 @@ class Nav
         'title' => 'Invisible Unspiderable Link',
         'tags' => 
         array (
+        0 => 'a11y',
+        1 => 'css',
+        2 => 'javascript',
         ),
         ),
         'is-email' => 
@@ -823,6 +868,7 @@ class Nav
         'title' => 'Java Tags 1999',
         'tags' => 
         array (
+        0 => 'java',
         ),
         ),
         'keycode' => 
@@ -834,6 +880,7 @@ class Nav
         'title' => 'Listen for Key Presses on a Web Page',
         'tags' => 
         array (
+        0 => 'javascript',
         ),
         ),
         'keystroke-to-go-to-random-page' => 
@@ -844,6 +891,8 @@ class Nav
         'canonical_url' => 'https://lab.artlung.com/keystroke-to-go-to-random-page/',
         'tags' => 
         array (
+        0 => 'javascript',
+        1 => 'php',
         ),
         ),
         'larger-checkbox-with-css' => 
@@ -879,6 +928,8 @@ class Nav
         'title' => 'MathML Test Page',
         'tags' => 
         array (
+        0 => 'html',
+        1 => 'mathml',
         ),
         ),
         'meaningful-html-class-names' => 
@@ -925,6 +976,8 @@ class Nav
         'title' => 'MM_validateForm() and MM_findObj() functions',
         'tags' => 
         array (
+        0 => 'javascript',
+        1 => 'macromedia',
         ),
         ),
         'modify-the-box' => 
@@ -960,6 +1013,7 @@ class Nav
         'title' => 'Mouseover Vote Thing x 100',
         'tags' => 
         array (
+        0 => 'javascript',
         ),
         ),
         'multiple-select' => 
@@ -971,6 +1025,7 @@ class Nav
         'title' => 'Multiple, Hierarchical SelectBoxes',
         'tags' => 
         array (
+        0 => 'javascript',
         ),
         ),
         'multiple-select-v2' => 
@@ -982,6 +1037,7 @@ class Nav
         'title' => 'Multiple, Hierarchical SelectBoxes, version 2',
         'tags' => 
         array (
+        0 => 'javascript',
         ),
         ),
         'museum' => 
@@ -993,6 +1049,7 @@ class Nav
         'title' => 'Museum Notes (2010)',
         'tags' => 
         array (
+        0 => 'ux',
         ),
         ),
         'my-first-vbscript-class' => 
@@ -1041,6 +1098,7 @@ class Nav
         'title' => 'What\'s in the Navigator object?',
         'tags' => 
         array (
+        0 => 'javascript',
         ),
         ),
         'nonsense-dtd' => 
@@ -1052,6 +1110,7 @@ class Nav
         'title' => 'nonsense-dtd',
         'tags' => 
         array (
+        0 => 'html',
         ),
         ),
         'not-valid-itunes-library' => 
@@ -1063,6 +1122,7 @@ class Nav
         'title' => 'iTunes Error: The iTunes Music Library file cannot be read because it does not appear to be a valid library file',
         'tags' => 
         array (
+        0 => 'itunes',
         ),
         ),
         'notifications' => 
@@ -1096,6 +1156,7 @@ class Nav
         'title' => 'Demonstration of oncontextmenu',
         'tags' => 
         array (
+        0 => 'javascript',
         ),
         ),
         'onunload-window-open-evil' => 
@@ -1107,6 +1168,8 @@ class Nav
         'title' => 'onunload + window.open = evil',
         'tags' => 
         array (
+        0 => 'javascript',
+        1 => 'ux',
         ),
         ),
         'open-graph-protocol-tools' => 
@@ -1118,6 +1181,8 @@ class Nav
         'title' => 'Open Graph Protocol Tools WordPress plugin',
         'tags' => 
         array (
+        0 => 'facebook',
+        1 => 'opengraph',
         ),
         ),
         'outbound-link-confirmation' => 
@@ -1129,6 +1194,7 @@ class Nav
         'title' => 'Outbound Link Confirmation',
         'tags' => 
         array (
+        0 => 'javascript',
         ),
         ),
         'password-maker' => 
@@ -1140,6 +1206,7 @@ class Nav
         'title' => '20 Random Alphanumeric Passwords',
         'tags' => 
         array (
+        0 => 'php',
         ),
         ),
         'php-all-websafe' => 
@@ -1175,6 +1242,8 @@ class Nav
         'title' => 'Changing the color of a form element when it\'s blank',
         'tags' => 
         array (
+        0 => 'css',
+        1 => 'javascript',
         ),
         ),
         'plus-plus-a-string-php' => 
@@ -1210,6 +1279,9 @@ class Nav
         'title' => 'Quote to DL (Definition List)',
         'tags' => 
         array (
+        0 => 'html',
+        1 => 'javascript',
+        2 => 'tools',
         ),
         ),
         'random-cells' => 
@@ -1221,6 +1293,9 @@ class Nav
         'title' => 'Generate a Random String!',
         'tags' => 
         array (
+        0 => 'experimental',
+        1 => 'javascript',
+        2 => 'toys',
         ),
         ),
         'random-content' => 
@@ -1255,6 +1330,7 @@ class Nav
         'title' => 'This page calls an iframe which calls itself. The question, is what happens?',
         'tags' => 
         array (
+        0 => 'html',
         ),
         ),
         'response-end-is-like-exit-in-php' => 
@@ -1279,6 +1355,7 @@ class Nav
         'title' => 'Reverse a string, but only the digits',
         'tags' => 
         array (
+        0 => 'php',
         ),
         ),
         'robots-nocontent' => 
@@ -1290,6 +1367,7 @@ class Nav
         'title' => 'Robots-Nocontent (2008)',
         'tags' => 
         array (
+        0 => 'html',
         ),
         ),
         'rosetta' => 
@@ -1337,6 +1415,7 @@ class Nav
         'title' => 'Compared Mobile Screen Resolutions (old)',
         'tags' => 
         array (
+        0 => 'mobile',
         ),
         ),
         'self-refresh' => 
@@ -1359,6 +1438,8 @@ class Nav
         'title' => 'Server Side Image Map',
         'tags' => 
         array (
+        0 => 'apache',
+        1 => 'html',
         ),
         ),
         'single-pixel-gif' => 
@@ -1381,6 +1462,7 @@ class Nav
         'title' => 'Six Finger AI Hand (as Slack Emoji)',
         'tags' => 
         array (
+        0 => 'silly',
         ),
         ),
         'slideshow' => 
@@ -1425,6 +1507,7 @@ class Nav
         'title' => 'Speech Synthesis',
         'tags' => 
         array (
+        0 => 'javascript',
         ),
         ),
         'spoiler' => 
@@ -1436,6 +1519,8 @@ class Nav
         'title' => 'Spoiler Widget',
         'tags' => 
         array (
+        0 => 'css',
+        1 => 'html',
         ),
         ),
         'sql-server-collations' => 
@@ -1459,6 +1544,7 @@ class Nav
         'title' => 'syntax error, unexpected T_PAAMAYIM_NEKUDOTAYIM',
         'tags' => 
         array (
+        0 => 'php',
         ),
         ),
         'the-problem-with-blur' => 
@@ -1470,6 +1556,8 @@ class Nav
         'title' => 'Why not to use blur() to make dotted lines go away in MSIE for Windows',
         'tags' => 
         array (
+        0 => 'a11y',
+        1 => 'css',
         ),
         ),
         'three-char-combos' => 
@@ -1481,6 +1569,7 @@ class Nav
         'title' => 'Permutations of a set of characters',
         'tags' => 
         array (
+        0 => 'php',
         ),
         ),
         'tips-2001' => 
@@ -1540,6 +1629,8 @@ class Nav
         'title' => 'Sample Uploader Code',
         'tags' => 
         array (
+        0 => 'javascript',
+        1 => 'php',
         ),
         ),
         'url-compare' => 
@@ -1551,6 +1642,8 @@ class Nav
         'title' => 'Compare Two URLs',
         'tags' => 
         array (
+        0 => 'http',
+        1 => 'tools',
         ),
         ),
         'urlencode' => 
@@ -1585,6 +1678,8 @@ class Nav
         'title' => 'Vaguely Interesting Layout',
         'tags' => 
         array (
+        0 => 'css',
+        1 => 'design',
         ),
         ),
         'validate-checkbox' => 
@@ -1596,6 +1691,7 @@ class Nav
         'title' => 'Only submit if at least one checkbox is checked',
         'tags' => 
         array (
+        0 => 'javascript',
         ),
         ),
         'validate-image' => 
@@ -1607,6 +1703,7 @@ class Nav
         'title' => 'How do I validate a form when the form has an image as submit?',
         'tags' => 
         array (
+        0 => 'javascript',
         ),
         ),
         'vbscript-always-elseif-never-else-if' => 
@@ -1642,6 +1739,7 @@ class Nav
         'title' => 'How to Make a file with every file on a C:\\ drive (Windows)',
         'tags' => 
         array (
+        0 => 'windows',
         ),
         ),
         'ws-ftp-password-decoder' => 
@@ -1665,6 +1763,7 @@ class Nav
         'title' => 'xml_encode()',
         'tags' => 
         array (
+        0 => 'php',
         ),
         ),
         );

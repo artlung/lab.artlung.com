@@ -7,4 +7,5 @@ canonical_url: >
 title: >
   Only submit if at least one checkbox is
   checked
-tags: [ ]
+tags:
+  - javascript

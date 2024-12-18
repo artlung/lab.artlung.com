@@ -5,4 +5,5 @@ year: 2001
 canonical_url: >
   https://lab.artlung.com/additive-font-size/
 title: How font-size accumulates
-tags: [ ]
+tags:
+  - css

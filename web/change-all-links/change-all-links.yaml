@@ -7,4 +7,5 @@ canonical_url: >
 title: >
   How can I change every link on a page to
   something new?
-tags: [ ]
+tags:
+  - javascript

@@ -5,4 +5,5 @@ year: 2008
 canonical_url: >
   https://lab.artlung.com/robots-nocontent/
 title: Robots-Nocontent (2008)
-tags: [ ]
+tags:
+  - html

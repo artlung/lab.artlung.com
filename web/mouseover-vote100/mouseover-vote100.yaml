@@ -5,4 +5,5 @@ year: 1999
 canonical_url: >
   https://lab.artlung.com/mouseover-vote100/
 title: Mouseover Vote Thing x 100
-tags: [ ]
+tags:
+  - javascript

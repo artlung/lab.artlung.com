@@ -5,4 +5,5 @@ year: 2004
 canonical_url: >
   https://lab.artlung.com/not-valid-itunes-library/
 title: 'iTunes Error: The iTunes Music Library file cannot be read because it does not appear to be a valid library file'
-tags: [ ]
+tags:
+  - itunes

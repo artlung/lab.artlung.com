@@ -5,4 +5,5 @@ year: 2001
 canonical_url: >
   https://lab.artlung.com/reverse-string-nums/
 title: Reverse a string, but only the digits
-tags: [ ]
+tags:
+  - php

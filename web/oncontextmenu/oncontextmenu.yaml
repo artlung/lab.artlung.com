@@ -4,4 +4,5 @@ og-image-date: 2024-12-17 01:21:10
 year: 2005
 canonical_url: https://lab.artlung.com/oncontextmenu/
 title: Demonstration of oncontextmenu
-tags: [ ]
+tags:
+  - javascript

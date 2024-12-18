@@ -7,4 +7,5 @@ canonical_url: >
 title: >
   Netscape/Macintosh Changing Form Button
   or Submit Input Value Fails
-tags: [ ]
+tags:
+  - html

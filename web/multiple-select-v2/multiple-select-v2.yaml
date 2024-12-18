@@ -7,4 +7,5 @@ canonical_url: >
 title: >
   Multiple, Hierarchical SelectBoxes,
   version 2
-tags: [ ]
+tags:
+  - javascript

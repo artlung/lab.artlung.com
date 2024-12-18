@@ -5,4 +5,6 @@ year: 2024
 canonical_url: >
   https://lab.artlung.com/server-side-image-map/
 title: Server Side Image Map
-tags: [ ]
+tags:
+  - apache
+  - html

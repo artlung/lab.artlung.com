@@ -7,4 +7,6 @@ canonical_url: >
 title: >
   Open Graph Protocol Tools WordPress
   plugin
-tags: [ ]
+tags:
+  - facebook
+  - opengraph

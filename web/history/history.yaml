@@ -6,4 +6,5 @@ canonical_url: https://lab.artlung.com/history/
 title: >
   How to implement a Forward and Back
   Buttons
-tags: [ ]
+tags:
+  - javascript

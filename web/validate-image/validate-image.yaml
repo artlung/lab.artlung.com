@@ -6,4 +6,5 @@ canonical_url: https://lab.artlung.com/validate-image/
 title: >
   How do I validate a form when the form
   has an image as submit?
-tags: [ ]
+tags:
+  - javascript
