@@ -24,7 +24,7 @@ foreach ($directories as $directory) {
         echo "Continue? (c)ontinue or (q)uit: ";
         $handle = fopen("php://stdin", "r");
         $line = fgets($handle);
-        if(trim($line) != 'c') {
+        if (trim($line) != 'c') {
             echo "Aborted\n";
             exit;
         }
