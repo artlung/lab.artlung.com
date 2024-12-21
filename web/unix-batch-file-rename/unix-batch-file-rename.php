@@ -10,7 +10,7 @@ Batch change extension of files on the unix command line
 ?>
     <p class="date-attribution">Originally created 11/1999; Moved to Lab 12/2001; Updated 07/06/2004</p>
 
-    <h1>Batch File Rename By File Extension in Unix</h1>
+    <h1 class="p-name">Batch File Rename By File Extension in Unix</h1>
     <h2>These are one-liners which batch rename files meeting a certain criteria under unix</h2>
     <p>These are very powerful command line tools. They have been used on FreeBSD, Linux, and MacOSX with success. But
         as with any batch file changing, you are advised to use them with caution. <b>Backups are your friend!</b></p>

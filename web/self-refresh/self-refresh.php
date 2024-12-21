@@ -9,7 +9,7 @@ Page Self-Refresh
 
 ?>
 
-    <h1>Code to make a page that refresh to itself</h1>
+    <h1 class="p-name">Code to make a page that refresh to itself</h1>
 
     <pre>
 &lt;script language="JavaScript" type="text/javascript"&gt;

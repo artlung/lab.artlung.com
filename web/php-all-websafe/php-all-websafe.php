@@ -5,7 +5,7 @@ $lab->printHeader('Generate All Websafe Colors with PHP');
 
 ?>
     <p class="date-attribution">Created in May 2010</p>
-    <h1>Generate All Websafe Colors with PHP</h1>
+    <h1 class="p-name">Generate All Websafe Colors with PHP</h1>
     <div id="holder">
         <?php require 'code.php'; ?>
     </div>

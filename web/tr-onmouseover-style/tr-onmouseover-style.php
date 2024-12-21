@@ -12,7 +12,7 @@ onmouseover in a TR tag
 
 
 <p class="date-attribution">1999</p>
-    <h1>onMouseover in a TR tag</h1>
+    <h1 class="p-name">onMouseover in a TR tag</h1>
 
 <p>
     Don't use this technique.

@@ -8,7 +8,7 @@ $lab->printHeader('AutoCalculator');
 
     <p class="date-attribution">Created September 29 1999; Modified October 2002</p>
 
-    <h1>Auto-Calculator</h1>
+    <h1 class="p-name">Auto-Calculator</h1>
 
     <form name="fm" action="./" onsubmit="return false;">
         <table width="100%" cellpadding="15" cellspacing="0" border="0">

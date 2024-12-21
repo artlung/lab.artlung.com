@@ -11,7 +11,7 @@ Giving Users A Preference Widget for Opening New Windows
 
     <p class="date-attribution">Created February 4, 2004</p>
 
-    <h1>Giving Users A Preference Widget for Opening New Windows</h1>
+    <h1 class="p-name">Giving Users A Preference Widget for Opening New Windows</h1>
 
     <h2>What brought that on?</h2>
 

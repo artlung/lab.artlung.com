@@ -5,7 +5,7 @@ $lab->printHeader('Bookmarklets, Miscellaneous');
 
 ?>
 
-    <h1>Bookmarklets, Miscellaneous</h1>
+    <h1 class="p-name">Bookmarklets, Miscellaneous</h1>
 
     <p>To use these, just drag them to your bookmarks file. I can't take credit for these, but I can never find where I
         found them, so I put copies here. <a href="/feedback/">Send me a note</a> if you know from whence they came.

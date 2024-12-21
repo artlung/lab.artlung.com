@@ -11,7 +11,7 @@ crossdomain.xml
 
     <p class="date-attribution">Created: 2009-07-29</p>
 
-    <h1>crossdomain.xml</h1>
+    <h1 class="p-name">crossdomain.xml</h1>
 
     <p>
         Place a file named crossdomain.xml at the root of your site to allow other flash movies to access resources on a

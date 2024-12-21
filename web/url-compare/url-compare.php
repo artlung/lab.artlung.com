@@ -10,7 +10,7 @@ $lab->printHeader('Compare Two URLs');
     <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.1/knockout-latest.js"
             integrity="sha512-2AL/VEauKkZqQU9BHgnv48OhXcJPx9vdzxN1JrKDVc4FPU/MEE/BZ6d9l0mP7VmvLsjtYwqiYQpDskK9dG8KBA=="
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <h1>Compare Two URLs</h1>
+    <h1 class="p-name">Compare Two URLs</h1>
     <p>
         Useful for debugging RESTful interfaces. <em>Originally built when working on upgrade and account management
             flows with complicated parameter variations.</em>

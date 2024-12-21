@@ -6,7 +6,7 @@ $lab->printHeader('Open Graph Protocol Tools WordPress plugin');
 ?>
 
 <p class="date-attribution">Created 2010</p>
-    <h1>Open Graph Protocol Tools WordPress plugin</h1>
+    <h1 class="p-name">Open Graph Protocol Tools WordPress plugin</h1>
 
     <ul>
         <li>

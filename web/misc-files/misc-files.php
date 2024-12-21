@@ -11,7 +11,7 @@ Miscellaneous Web Files
 
     <p class="date-attribution">Created 19 December 2002, Updated August 31, 2016</p>
 
-    <h1>Miscellaneous Web Files</h1>
+    <h1 class="p-name">Miscellaneous Web Files</h1>
 
     <p>One of the things about web development is the number of pieces of arcana one picks up.
         These things are a bit like trivia, and a bit like core knowledge. Here are some common files

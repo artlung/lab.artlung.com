@@ -9,7 +9,7 @@ $lab->printHeader('ASP: CDONTS snippet');
     <p class="date-attribution">
         Status: Archaic. Updated 2005.
     </p>
-    <h1>ASP: CDONTS snippet</h1>
+    <h1 class="p-name">ASP: CDONTS snippet</h1>
 
     <p>I forget why I kept this, but I run into this problem every now and again -- that of having to send mail with a
         site that runs ASP. I'm sure this code helped me in the past, if only I could remember how.</p>

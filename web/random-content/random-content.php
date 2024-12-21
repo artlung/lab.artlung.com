@@ -11,7 +11,7 @@ Random content
 
 <p class="date-attribution">2001</p>
 
-    <h1>Random Content</h1>
+    <h1 class="p-name">Random Content</h1>
 
     <h2>Output (should be random)</h2>
 

@@ -7,7 +7,7 @@ $lab->printHeader('Only submit if a checkbox is checked');
 
     <p class="date-attribution">Originally Posted 2001</p>
 
-    <h1>Only submit if at least one checkbox is checked</h1>
+    <h1 class="p-name">Only submit if at least one checkbox is checked</h1>
     <p><b>A Question I got:</b></p>
 
     <blockquote>

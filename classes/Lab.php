@@ -206,6 +206,8 @@ class Lab
         $shareOpenlyTitle = 'Share Openly';
         $pathOnly = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
         $url = 'https://lab.artlung.com' . $pathOnly;
+
+        $canonical = 'https://lab.artlung.com' . $pathOnly;
         $text = '“' . $title . '” #ArtLungLab';
 
         // https://shareopenly.org/share/?url={URL}&text={TEXT}
@@ -235,6 +237,8 @@ class Lab
 <style>:root {--currentYear: {$currentYear} }</style>
 <link rel="stylesheet" href="/{$cssFileName}?b={$cacheBustCss}" type="text/css">
 <link rel="webmention" href="https://webmention.io/artlung.com/webmention">
+<link rel="alternate" type="application/rss+xml" title="Feed" href="/feed.xml">
+<link rel="canonical" href="{$canonical}">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="/{$jsFileName}?{$cacheBustJs}"></script>
 {$disqusScript}
@@ -257,7 +261,8 @@ class Lab
 </div>
 {$nav}
 </nav>
-<article id="content">
+<article id="content" class="h-entry">
+    <a style="display:none" href="{$canonical}" class="u-url"></a>
 HTML;
 
     }
@@ -285,7 +290,6 @@ HTML;
 HTML;
         }
         $protocol = !empty($_SERVER['HTTPS']) ? 'https' : 'http';
-        $canonical = $protocol . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 
         if ($options['comments'] ?? true) {
             $comments_code = '';
@@ -301,8 +305,9 @@ HTML;
 <aside>{$comments_code}</aside>
 <footer>
 	<span>&copy; 1996-{$copyrightYear}</span>
-	<a href="https://github.com/artlung/lab.artlung.com" target="_blank">Source Code</a>
-    <a href="https://artlung.com/s" class="joe" target="_blank">Joe Crawford</a>
+	<a href="https://github.com/artlung/lab.artlung.com" target="_blank">GitHub</a>
+	<a href="https://lab.artlung.com/feed.xml" style="color: orange">Atom</a>
+    <a href="https://artlung.com/" class="joe" target="_blank">Joe Crawford</a>
 </footer>
 </body>
 </html>
@@ -424,10 +429,10 @@ HTML;
 <h2>Comment on this with a <a href="https://indieweb.org/Webmention">webmention</a></h2>
 <form action="https://webmention.io/artlung.com/webmention" method="post">
     <label>
-    If you want to respond to this using <em>your own</em> website, you can do so by entering the URL below.
+    If you want to respond to this using <em>your own</em> website, you can do so by entering the URL below. Webmentions are not displayed at this time but may be in the future.
     </label>
     <input type="url" name="source" placeholder="source" required>
-    <input type="hidden" value="{$canonical}">
+    <input type="hidden" name="target" value="{$canonical}">
     <input type="submit" value="Send Webmention">
 </form>
 </div>

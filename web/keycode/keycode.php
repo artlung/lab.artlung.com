@@ -6,7 +6,7 @@ $lab->printHeader('Get KeyCode via Javascript');
 ?>
 
     <p class="date-attribution">November 2011</p>
-    <h1>Listen for Key Presses on a Web Page</h1>
+    <h1 class="p-name">Listen for Key Presses on a Web Page</h1>
 
     <p>This sample uses the <code>.which</code>, property, which is deprecated. See <a
                 href="https://developer.mozilla.org/en-US/docs/Web/API/UIEvent/which">https://developer.mozilla.org/en-US/docs/Web/API/UIEvent/which</a>

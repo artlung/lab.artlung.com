@@ -7,7 +7,7 @@ $lab->printHeader('Super Simple Countdown');
 
     <p class="date-attribution">Created 03/2001; Updated April 2002 and December 2005</p>
 
-    <h1> Super Simple Countdown in PHP.</h1>
+    <h1 class="p-name"> Super Simple Countdown in PHP.</h1>
 
 <?php require 'countdown-source.php'; ?>
 

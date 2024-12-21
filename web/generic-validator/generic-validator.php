@@ -9,7 +9,7 @@ Generic validator
 
 ?>
 
-    <h1>Generic validator</h1>
+    <h1 class="p-name">Generic validator</h1>
 
     <h2>Example</h2>
 

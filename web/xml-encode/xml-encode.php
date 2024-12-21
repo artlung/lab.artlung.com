@@ -7,7 +7,7 @@ $lab->printHeader('xml_encode() in PHP');
 
     <p class="date-attribution"><i>Updated: June/2009</i></p>
 
-    <h1>xml_encode()<br>
+    <h1 class="p-name">xml_encode()<br>
 
         <h2>Source:</h2>
 

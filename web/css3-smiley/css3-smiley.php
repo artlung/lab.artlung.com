@@ -8,7 +8,7 @@ $lab->printHeader('CSS3 Smiley - in colors!');
 
     <p class="date-attribution">Created September 2010. jQuery removed, replaced with vanilla JS 2024.</p>
 
-    <h1>CSS3 Smiley</h1>
+    <h1 class="p-name">CSS3 Smiley</h1>
 
 <?php ob_start(); ?>
     <div id="smiley-wrapper" class="figure">

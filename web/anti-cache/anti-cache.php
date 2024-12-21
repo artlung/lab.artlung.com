@@ -7,7 +7,7 @@ $lab->printHeader('Preventing Browser Cache');
 ?>
 
     <p class="date-attribution">Created 12/2001</p>
-    <h1>Preventing Browser Cache</h1>
+    <h1 class="p-name">Preventing Browser Cache</h1>
 
     <h2>Multiple Platform Solutions</h2>
     <p>

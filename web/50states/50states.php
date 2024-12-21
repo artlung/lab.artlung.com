@@ -6,7 +6,7 @@ $lab->printHeader('ASP "50 U.S. States Dropdown Box HTML Code Snippets"');
 
     <p class="date-attribution">Created 2/7/2003</p>
 
-    <h1>50 U.S. States Dropdown Box HTML Code Snippets</h1>
+    <h1 class="p-name">50 U.S. States Dropdown Box HTML Code Snippets</h1>
 
     It's just what it says, a code snippet for an html
     <code>&lt;select&gt;</code> box. It includes the 50 States and Washington D.C. too.

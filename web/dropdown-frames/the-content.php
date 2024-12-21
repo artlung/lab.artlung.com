@@ -8,7 +8,7 @@ $lab->printHeader('Dropdown Navigation in Frames');
 
     <p class="date-attribution">Status: Archaic</p>
 
-    <h1>Dropdown Navigation in Frames</h1>
+    <h1 class="p-name">Dropdown Navigation in Frames</h1>
 
     <h2>The question</h2>
 

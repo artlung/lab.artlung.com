@@ -12,7 +12,7 @@ Font Awesome 4.6.3 Class Explorer
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="https://use.fontawesome.com/89face2689.js"></script>
 
-    <h1>Font Awesome 4.6.3 Class Explorer (version 4.6.3)</h1>
+    <h1 class="p-name">Font Awesome 4.6.3 Class Explorer (version 4.6.3)</h1>
     <pre id="className" style="display: none"></pre>
 
     <p>Click each icon to get the associated HTML code.</p>

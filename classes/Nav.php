@@ -27,7 +27,7 @@ class Nav
 
         // yaml is the source of truth, generate this with slugs_and_titles.php do not hand edit this:
 
-        /* START: handled by php generate-nav-value LAST UPDATE 2024-12-18 00:34:27 */
+        /* START: handled by php generate-nav-value LAST UPDATE 2024-12-21 19:11:52 */
         return $slugs_and_titles = array (
         '50states' => 
         array (
@@ -909,6 +909,7 @@ class Nav
         0 => 'javascript',
         1 => 'php',
         ),
+        'og-image-date' => '2024-12-18 15:40:35',
         ),
         'larger-checkbox-with-css' => 
         array (
@@ -1396,6 +1397,20 @@ class Nav
         0 => 'html',
         ),
         ),
+        'root-color-properties-editor' => 
+        array (
+        'slug' => 'root-color-properties-editor',
+        'canonical_url' => 'https://lab.artlung.com/root-color-properties-editor/',
+        'year' => 2024,
+        'title' => ':root Color Properties Editor (Bookmarklet)',
+        'tags' => 
+        array (
+        0 => 'css',
+        1 => 'javascript',
+        ),
+        'og-image-date' => '2024-12-21 05:09:27',
+        'atom_feed_publish_date' => '2024-12-20 21:09:27',
+        ),
         'rosetta' => 
         array (
         'slug' => 'rosetta',
@@ -1763,6 +1778,20 @@ class Nav
         array (
         0 => 'css',
         ),
+        ),
+        'webmentions' => 
+        array (
+        'title' => 'Webmentions',
+        'slug' => 'webmentions',
+        'canonical_url' => 'https://lab.artlung.com/webmentions/',
+        'year' => 2024,
+        'tags' => 
+        array (
+        0 => 'curl',
+        1 => 'indieweb',
+        ),
+        'og-image-date' => '2024-12-18 17:51:46',
+        'atom_feed_publish_date' => '2024-12-18 17:51:46',
         ),
         'windows-export-file-list' => 
         array (

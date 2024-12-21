@@ -6,7 +6,7 @@ $lab->printHeader('ColdFusion TitleCase Function');
 ?>
 
     <p class="date-attribution">Created April 2003</p>
-    <h1>ColdFusion TitleCase Function</h1>
+    <h1 class="p-name">ColdFusion TitleCase Function</h1>
 
     <pre>
 <b>&lt;cfscript&gt;</b>

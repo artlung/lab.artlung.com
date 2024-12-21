@@ -56,7 +56,7 @@ $lab->printHeader('camelCase <-> selector-case in JavaScript without Regex');
         //-->
     </script>
     <p class="date-attribution">Created 03/2002</p>
-    <h1>camelCase &lt;-&gt; selector-case in JavaScript w/o Regex</h1>
+    <h1 class="p-name">camelCase &lt;-&gt; selector-case in JavaScript w/o Regex</h1>
 
     <div class="fourHundredWide">
         <p>Scott Andrew <a href="http://www.scottandrew.com/weblog/000175">pointed to</a>

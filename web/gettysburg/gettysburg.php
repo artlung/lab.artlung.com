@@ -5,7 +5,7 @@ $lab->printHeader('Gettysburg Address in HTML Buttons!');
 
 ?>
     <p class="date-attribution">Created in February 2006. For no good reason.</p>
-    <h1>Gettysburg Address in HTML Buttons!</h1>
+    <h1 class="p-name">Gettysburg Address in HTML Buttons!</h1>
 
 
     <form action="../" style="max-width: 500px">

@@ -10,7 +10,7 @@ change document background color .
 ?>
 
 <p class="date-attribution">1999</p>
-<h1>Change Document Background Color</h1>
+<h1 class="p-name">Change Document Background Color</h1>
 
 <?php
 ob_start();

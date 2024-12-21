@@ -6,7 +6,7 @@ $lab->printHeader('Outbound Link Confirmation');
 ?>
 
     <p class="date-attribution">Created 1 January 2002, Updated 22 April 2013</p>
-    <h1>Outbound Link Confirmation</h1>
+    <h1 class="p-name">Outbound Link Confirmation</h1>
 
     <p>I happen to think that limiting users travels on a website is pretty rude, but there are times
         when you want to let users know that by clicking a certain link, they will be leaving your site.</p>

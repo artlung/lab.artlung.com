@@ -11,7 +11,7 @@ plusplus (++) a string in php
 
     <p class="date-attribution">Posted August 2016. Updated December 2024.</p>
 
-    <h1>
+    <h1 class="p-name">
         plusplus (++) a string in php
     </h1>
 

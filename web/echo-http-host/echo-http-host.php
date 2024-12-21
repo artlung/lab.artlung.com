@@ -9,7 +9,7 @@ HTTP_HOST environment variable in PHP
 
 ?>
 
-    <h1>HTTP_HOST environment variable in PHP</h1>
+    <h1 class="p-name">HTTP_HOST environment variable in PHP</h1>
 
     <h2>Result:</h2>
 

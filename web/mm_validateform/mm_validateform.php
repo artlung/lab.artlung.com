@@ -11,7 +11,7 @@ MM_validateForm() and MM_findObj() functions
 
     <p class="date-attribution">Created: 2009-06-08</p>
 
-    <h1>MM_validateForm() and MM_findObj() functions</h1>
+    <h1 class="p-name">MM_validateForm() and MM_findObj() functions</h1>
 
     <p>
         There does not seem to be a canonical source for these Macromedia Dreamweaver functions, this page is a source

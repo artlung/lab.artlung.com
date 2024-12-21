@@ -11,7 +11,7 @@ Checkbox Validator
 
     <p class="date-attribution">Created: 12/16/2001</p>
 
-    <h1>Checkbox Validator</h1>
+    <h1 class="p-name">Checkbox Validator</h1>
 
     <p>Just a simple script to do validation for checkboxes. It validates user input to assure that there aren't too
         many checked, and not too few chosen.</p>

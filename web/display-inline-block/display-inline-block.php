@@ -153,10 +153,10 @@
 </head>
 <body>
 
-<h1>Archived from http://home.tiscali.nl/developerscorner/css-discuss/test-link-iconENupdate.htm</h1>
+<h1 class="p-name">Archived from http://home.tiscali.nl/developerscorner/css-discuss/test-link-iconENupdate.htm</h1>
 
 <div id="wrapper">
-    <h1>CSS workaround for external link with small icon</h1>
+    <h1 class="p-name">CSS workaround for external link with small icon</h1>
 
     <p style="font-size: .75em; padding-bottom: 5px; margin: 10px 0 20px 0; border-bottom: 1px solid #C0C0C9;">
         <i>update 28 feb. 2007</i><br/>

@@ -6,7 +6,7 @@ $lab->printHeader('Stupid Growing CSS Tricks');
 
     <p class="date-attribution">created March 2001</p>
 
-    <h1>Stupid Growing CSS Tricks</h1>
+    <h1 class="p-name">Stupid Growing CSS Tricks</h1>
     <p>When you nest an element and have the font-size: set in percentages, some interesting things can happen</p>
 
     <p>

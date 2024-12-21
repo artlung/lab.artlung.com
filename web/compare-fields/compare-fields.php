@@ -17,7 +17,7 @@ Compare 2 email fields, Submit if same :: ArtLung Lab
 ?>
     <p class="date-attribution">Created August 1999; Updated October 2002</p>
 
-    <h1>Compare two fields, Submit only if they are the same:</h1>
+    <h1 class="p-name">Compare two fields, Submit only if they are the same:</h1>
 
 
     <h2>Question:</h2>

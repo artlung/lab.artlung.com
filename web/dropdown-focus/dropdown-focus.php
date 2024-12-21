@@ -7,7 +7,7 @@ $lab->printHeader('Setting Select Box Focus');
 
     <p class="date-attribution">Created:10/1999; Updated:12/2001</p>
 
-    <h1>Setting Dropdown Focus</h1>
+    <h1 class="p-name">Setting Dropdown Focus</h1>
 
     <p><i><b>Question:</b></i></p>
 

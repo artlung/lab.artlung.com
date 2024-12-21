@@ -10,7 +10,7 @@ How to make .php files masquerade as .php3
 ?>
     <p class="date-attribution">Created September 4, 2001</p>
 
-    <h1>How to make .php files masquerade as .php3</h1>
+    <h1 class="p-name">How to make .php files masquerade as .php3</h1>
 
     <p>On <a href="http://evolt.org/">evolt.org</a>'s <a
                 href="http://lists.evolt.org/">thelist</a> it was asked by

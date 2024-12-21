@@ -11,7 +11,7 @@ Make a Unique ID in PHP
 
     <p class="date-attribution">From December 2005</p>
 
-    <h1>Make a Unique ID in PHP</h1>
+    <h1 class="p-name">Make a Unique ID in PHP</h1>
 
     <p>
         Use random numbers to create some random characters, and then use the time and a unique id to make a unique id.

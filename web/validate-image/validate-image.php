@@ -11,7 +11,7 @@ How do I validate a form when the form has an image as submit.
 
     <p class="date-attribution">Created: August, 1999; Updated October 2002</p>
 
-    <h1>How do I validate a form when the form has an image as submit?</h1>
+    <h1 class="p-name">How do I validate a form when the form has an image as submit?</h1>
 
     <blockquote>
         <b>Question:</b> I am trying to trigger a javascript form validation function when an image

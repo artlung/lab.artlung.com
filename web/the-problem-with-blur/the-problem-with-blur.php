@@ -10,7 +10,7 @@ Why not to use blur() to make dotted lines go away in MSIE for Windows
 ?>
 
     <p class="date-attribution">Created July 20, 2001</p>
-    <h1>
+    <h1 class="p-name">
         Why not to use blur() to
         make dotted lines go away in
         <abbr title="Microsoft Internet Explorer">MSIE</abbr> for Windows

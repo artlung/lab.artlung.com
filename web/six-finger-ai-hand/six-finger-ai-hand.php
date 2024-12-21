@@ -9,7 +9,7 @@ Six Finger AI hand (PNG)
 
 ?>
 
-    <h1>Six Finger AI hand (PNG)</h1>
+    <h1 class="p-name">Six Finger AI hand (PNG)</h1>
 
     <p>Suitable for usage as a <a href="https://slackmojis.com">slackmoji</a>. </p>
 

@@ -8,7 +8,7 @@ $lab->printHeader('selectBox function in Traditional ASP');
 
     <p class="date-attribution">Created July 10, 2006, Posted August 27, 2016</p>
 
-    <h1>
+    <h1 class="p-name">
         selectBox function in Traditional ASP
     </h1>
 

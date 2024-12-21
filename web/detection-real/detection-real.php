@@ -6,7 +6,7 @@ $lab->printHeader('RealAudio Detection: 1999');
 ?>
 
     <p class="date-attribution">August 1999</p>
-    <h1>RealAudio Detection</h1>
+    <h1 class="p-name">RealAudio Detection</h1>
 
     <p>(State of the Art in 1999)</p>
 

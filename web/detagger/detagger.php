@@ -5,7 +5,7 @@ $lab->printHeader('Fun Detagger Script');
 
 ?>
 
-    <h1>Fun Detagger Script in PHP</h1>
+    <h1 class="p-name">Fun Detagger Script in PHP</h1>
 
     <h2>Question:</h2>
 

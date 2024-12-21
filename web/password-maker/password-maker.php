@@ -6,7 +6,7 @@ $lab->printHeader('20 Random Alphanumeric Passwords');
 ?>
 
     <p class="date-attribution">January 3, 2009</p>
-    <h1>20 Random Alphanumeric Passwords</h1>
+    <h1 class="p-name">20 Random Alphanumeric Passwords</h1>
 
     <h2>The passwords:</h2>
 

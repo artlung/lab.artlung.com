@@ -10,7 +10,7 @@ $lab->printHeader('Date Formatting')
         Created: June 1998; modified: August 1999; Updated October 2002
     </p>
 
-    <h1>JavaScript Date Formatting Demo</h1>
+    <h1 class="p-name">JavaScript Date Formatting Demo</h1>
 
 <?php ob_start(); ?>
     <script type="text/javascript">

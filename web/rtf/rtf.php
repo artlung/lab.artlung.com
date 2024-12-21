@@ -9,7 +9,7 @@ $lab->printHeader(
     <p class="date-attribution">
         Created: April 2001. Updated December 2001, February 2004, December 2024.
     </p>
-    <h1>Make an RTF Document with PHP</h1>
+    <h1 class="p-name">Make an RTF Document with PHP</h1>
 
     <?php ob_start(); ?>
 

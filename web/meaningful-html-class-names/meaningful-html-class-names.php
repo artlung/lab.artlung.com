@@ -8,7 +8,7 @@ $lab->printHeader('What CSS class names are semantically meaningful?');
 
     <p class="date-attribution">Created October 27, 2008. Minor updates 2024.</p>
 
-    <h1>What CSS class names are semantically meaningful?</h1>
+    <h1 class="p-name">What CSS class names are semantically meaningful?</h1>
 
 
     <h2>

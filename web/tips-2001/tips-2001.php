@@ -8,7 +8,7 @@ Random HTML Tips, 2001
 );
 
 ?>
-    <h1>Some HTML Tips, No-No's, In Random Order</h1>
+    <h1 class="p-name">Some HTML Tips, No-No's, In Random Order</h1>
 
     <P>Note: These are some comments and tips I provided to some of the team at
         my employer, <a href="http://www.AVENCOM.com/">AVENCOM</a>.

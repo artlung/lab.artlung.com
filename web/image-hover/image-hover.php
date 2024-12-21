@@ -11,7 +11,7 @@ Subtle Image Hover
 
     <p class="date-attribution">Posted June 2004</p>
 
-    <h1>Subtle Image Hover</h1>
+    <h1 class="p-name">Subtle Image Hover</h1>
 
     <h2>Demonstration</h2>
     <a href="https://artlung.com/blog/"><img src="https://artlung.com/images/brushed_girl.jpg" width="144" height="144"

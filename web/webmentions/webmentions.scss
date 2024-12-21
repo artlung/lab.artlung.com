@@ -1,0 +1,159 @@
+
+article#content {
+
+  p {
+    line-height: 1.4;
+    max-width: 80ch;
+    code {
+      font-weight: bold;
+    }
+    &.long, &.date-attribution {
+      max-width: unset;
+    }
+  }
+  code {
+    font-size: 1rem;
+  }
+
+  pre {
+    box-shadow: none;
+    scrollbar-color: unset;
+  }
+    --target-color: #d7e1ff;
+    --source-color: #e2ffd1;
+    --endpoint-color: #f2d1ff;
+
+  pre {
+    background: transparent;
+    font-weight: bold;
+  }
+
+  code, span, em {
+    background-color: var(--local-color, white);
+    color: #333;
+    &.target {
+      font-weight: bold;
+      --local-color: var(--target-color);
+    }
+    &.source {
+        font-weight: bold;
+        --local-color: var(--source-color);
+    }
+    &.endpoint {
+        font-weight: bold;
+        --local-color: var(--endpoint-color);
+    }
+
+  }
+  div.diagram {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    figure.arrow {
+      margin: 0;
+      padding: 0;
+      --arrow-shadow-color: #ccc;
+      font-weight: bold;
+      font-size: 3rem;
+      text-shadow: 0.2rem 0.2rem var(--arrow-shadow-color);
+      &.endpoint {
+        --arrow-shadow-color: var(--endpoint-color)
+      }
+      &.source {
+        --arrow-shadow-color: var(--source-color);
+        align-self: baseline;
+      }
+        &.target {
+            --arrow-shadow-color: var(--target-color)
+        }
+    }
+    &:has(figure figcaption) {
+      figure {
+        margin-top: 40px;
+      }
+    }
+
+
+    figure.webmention {
+      margin: 0;
+      padding: 0;
+      max-width: 33vw;
+      border: 1.5rem solid var(--local-color, #ccc);
+      background: var(--local-color, #ccc);
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      position: relative;
+
+
+
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+        // multiply image rendering over the background color
+        mix-blend-mode: multiply;
+      }
+      &.target {
+        --local-color: var(--target-color);
+
+        figcaption {
+          top: -40px;
+          left: -40px;
+          position: absolute;
+          transform: rotate(-5deg);
+          font-family: monospace;
+          font-size: 1.2rem;
+          color: #000;
+          background: var(--endpoint-color);
+          border-radius: 0.4rem;
+          max-width: 40vw;
+        }
+
+      }
+      &.source {
+        --local-color: var(--source-color);
+        figcaption {
+          text-wrap: balance;
+          top: 20px;
+          left: -40px;
+          position: absolute;
+          font-size: 1.2rem;
+          color: #000;
+          background: #fff;
+          border-radius: 0.4rem;
+          max-width: 40vw;
+          padding: 1rem;
+          border: 0.3rem solid #666;
+        }
+      }
+      &.endpoint {
+        --local-color: var(--endpoint-color);
+      }
+    }
+  }
+
+  hr {
+    margin: 2rem 0;
+    // pinline faint
+    border: 0;
+    border-top: 1px solid #ccc;
+
+  }
+
+  padding-bottom: 8rem
+}
+
+
+
+
+
+
+
+
+  
+
