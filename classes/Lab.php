@@ -305,8 +305,9 @@ HTML;
 <aside>{$comments_code}</aside>
 <footer>
 	<span>&copy; 1996-{$copyrightYear}</span>
-	<a href="https://github.com/artlung/lab.artlung.com" target="_blank">Source Code</a>
-    <a href="https://artlung.com/s" class="joe" target="_blank">Joe Crawford</a>
+	<a href="https://github.com/artlung/lab.artlung.com" target="_blank">GitHub</a>
+	<a href="https://lab.artlung.com/feed.xml" style="color: orange">Atom</a>
+    <a href="https://artlung.com/" class="joe" target="_blank">Joe Crawford</a>
 </footer>
 </body>
 </html>
