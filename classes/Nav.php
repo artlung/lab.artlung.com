@@ -27,7 +27,7 @@ class Nav
 
         // yaml is the source of truth, generate this with slugs_and_titles.php do not hand edit this:
 
-        /* START: handled by php generate-nav-value LAST UPDATE 2024-12-18 23:07:41 */
+        /* START: handled by php generate-nav-value LAST UPDATE 2024-12-21 05:10:36 */
         return $slugs_and_titles = array (
         '50states' => 
         array (
@@ -1396,6 +1396,19 @@ class Nav
         array (
         0 => 'html',
         ),
+        ),
+        'root-color-properties-editor' => 
+        array (
+        'slug' => 'root-color-properties-editor',
+        'canonical_url' => 'https://lab.artlung.com/root-color-properties-editor/',
+        'year' => 2024,
+        'title' => ':root Color Properties Editor (Bookmarklet)',
+        'tags' => 
+        array (
+        0 => 'css',
+        1 => 'javascript',
+        ),
+        'og-image-date' => '2024-12-21 05:09:27',
         ),
         'rosetta' => 
         array (

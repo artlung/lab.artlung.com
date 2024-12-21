@@ -16,7 +16,8 @@
         }
     ],
     "require": {
-        "mustangostang/spyc": "^0.6.3"
+        "mustangostang/spyc": "^0.6.3",
+        "tedivm/jshrink": "^1.7"
     },
     "config": {
         "platform": {
