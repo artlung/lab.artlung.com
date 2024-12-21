@@ -4,7 +4,7 @@ $lab = new ArtlungLab\Lab();
 $lab->printHeader('MathML Test Page');
 ?>
     <p class="date-attribution">July 2024</p>
-    <h1>MathML Test Page</h1>
+    <h1 class="p-name">MathML Test Page</h1>
 
 
     <p>

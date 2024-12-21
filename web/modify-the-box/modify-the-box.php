@@ -11,7 +11,7 @@ Modify the Box - a DHTML Experiment
 
     <p class="date-attribution">Created January 18, 2001</p>
 
-    <h1>Modify The Box (dhtml experiment, 2001)</h1>
+    <h1 class="p-name">Modify The Box (dhtml experiment, 2001)</h1>
 
 <?php
 

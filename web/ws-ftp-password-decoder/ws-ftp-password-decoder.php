@@ -11,7 +11,7 @@ WS_FTP JavaScript Password Decoder
 
 
     <p class="date-attribution">Created May 2001</p>
-    <h1>WS_FTP JavaScript Password Decoder</h1>
+    <h1 class="p-name">WS_FTP JavaScript Password Decoder</h1>
 
     <pre>
 Go into the .ini file, and look for the lines which begin with PWD.

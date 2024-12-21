@@ -10,7 +10,7 @@ Forward and Back in JavaScript on an Imagemap
 ?>
 
 <p class="date-attribution">1999</p>
-    <h1>Forward and Back in JavaScript on an ImageMap</h1>
+    <h1 class="p-name">Forward and Back in JavaScript on an ImageMap</h1>
 
 
     <table border="0" cellspacing="0" cellpadding="10" bgcolor="#000000">

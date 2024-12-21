@@ -5,7 +5,7 @@ $lab->printHeader('What\'s in the Navigator object?');
 
 ?>
 
-<h1>What's in the Navigator object?</h1>
+<h1 class="p-name">What's in the Navigator object?</h1>
 
 <dl id="key-pairs">
 </dl>

@@ -11,7 +11,7 @@ Copy to Clipboard JavaScript
 
     <p class="date-attribution">Created 12/02/2005</p>
 
-    <h1>
+    <h1 class="p-name">
         Copy to Clipboard JavaScript
     </h1>
 

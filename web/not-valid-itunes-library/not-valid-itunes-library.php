@@ -8,7 +8,7 @@ $lab->printHeader('iTunes Error: "The iTunes Music Library file cannot be read b
 
     <div style="max-width: 80ch">
 
-        <h1>iTunes Error</h1>
+        <h1 class="p-name">iTunes Error</h1>
         <h2>The iTunes Music Library file cannot be read because it does not appear to be a valid library file</h2>
 
         <img src="itunes-troubleshoot.gif"

@@ -11,7 +11,7 @@ onunload + window.open = evil
 
     <p class="date-attribution">Created 12/2001</p>
 
-    <h1>onunload + window.open = evil</h1>
+    <h1 class="p-name">onunload + window.open = evil</h1>
 
     <p>I was asked recently how the sites that that open windows when you close them do it?
         And the answer is that the authors of those sites have no hearts or brains. Well, actually, they do it

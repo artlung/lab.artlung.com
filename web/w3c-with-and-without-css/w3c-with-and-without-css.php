@@ -11,7 +11,7 @@ How Powerful is CSS? w3c site before and after CSS.
 
     <p class="date-attribution">Image Captured August 2000; Page Created March 2001; Updated April 2002</p>
 
-    <h1>How Powerful is CSS?</h1>
+    <h1 class="p-name">How Powerful is CSS?</h1>
 
     <p>
         Below is a <a href="http://www.libpng.org/pub/png/">PNG</a> file

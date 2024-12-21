@@ -12,7 +12,7 @@ $lab->printHeader('Quote to DL (Definition List)');
 
 
     <p class="date-attribution">Created in February 2024</p>
-    <h1>Turn Quotes into Definition Lists</h1>
+    <h1 class="p-name">Turn Quotes into Definition Lists</h1>
 
     <section class="quote-to-dl">
         <div>

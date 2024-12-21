@@ -17,7 +17,7 @@ Form action mailto: stinks
 ?>
     <p class="date-attribution">Started August 2001; Last Update January 2003</p>
 
-    <h1>Form action mailto: stinks</h1>
+    <h1 class="p-name">Form action mailto: stinks</h1>
 
     <p>
         Budding web developers love to get feedback on their sites.

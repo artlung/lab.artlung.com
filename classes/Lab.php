@@ -206,6 +206,8 @@ class Lab
         $shareOpenlyTitle = 'Share Openly';
         $pathOnly = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
         $url = 'https://lab.artlung.com' . $pathOnly;
+
+        $canonical = 'https://lab.artlung.com' . $pathOnly;
         $text = '“' . $title . '” #ArtLungLab';
 
         // https://shareopenly.org/share/?url={URL}&text={TEXT}
@@ -235,6 +237,7 @@ class Lab
 <style>:root {--currentYear: {$currentYear} }</style>
 <link rel="stylesheet" href="/{$cssFileName}?b={$cacheBustCss}" type="text/css">
 <link rel="webmention" href="https://webmention.io/artlung.com/webmention">
+<link rel="canonical" href="{$canonical}">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="/{$jsFileName}?{$cacheBustJs}"></script>
 {$disqusScript}
@@ -257,7 +260,8 @@ class Lab
 </div>
 {$nav}
 </nav>
-<article id="content">
+<article id="content" class="h-entry">
+    <a style="display:none" href="{$canonical}" class="u-url"></a>
 HTML;
 
     }
@@ -285,7 +289,6 @@ HTML;
 HTML;
         }
         $protocol = !empty($_SERVER['HTTPS']) ? 'https' : 'http';
-        $canonical = $protocol . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 
         if ($options['comments'] ?? true) {
             $comments_code = '';

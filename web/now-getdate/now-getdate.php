@@ -10,7 +10,7 @@ NOW() ~= GETDATE()
 ?>
 
 
-    <h1>NOW() ~= GETDATE()</h1>
+    <h1 class="p-name">NOW() ~= GETDATE()</h1>
 
     <pre>
 --SQL SERVER <a href="https://msdn.microsoft.com/en-us/library/ms188383.aspx">https://msdn.microsoft.com/en-us/library/ms188383.aspx</a>

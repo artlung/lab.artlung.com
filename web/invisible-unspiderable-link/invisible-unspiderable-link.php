@@ -6,7 +6,7 @@ $lab->printHeader('Invisible, Unspiderable Link');
 ?>
 
     <p class="date-attribution">Originally from 2002. Updated with explanation 2024.</p>
-    <h1>Invisible, Unspiderable Link</h1>
+    <h1 class="p-name">Invisible, Unspiderable Link</h1>
 
 
     <p style="font-family: monospace;max-width: 60ch;">

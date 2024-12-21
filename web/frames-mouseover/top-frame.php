@@ -11,7 +11,7 @@ Demonstration Of An Image Swap In Another Frame Triggered By A Mouseover
 
 
     <div align="center">
-        <h1>Cross-Frame Mouseover</h1>
+        <h1 class="p-name">Cross-Frame Mouseover</h1>
         <p style="font-family: verdana,geneva;">
             <a href="/" onmouseover="top.img_act('toc6')" onmouseout="top.img_inact('toc6')">MouseOver This (1)</a>
             <br>

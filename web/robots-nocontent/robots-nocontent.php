@@ -6,7 +6,7 @@ $lab->printHeader('Robots-Nocontent');
 ?>
 
     <p class="date-attribution">Circa 2008</p>
-    <h1>Robots-Nocontent (2008)</h1>
+    <h1 class="p-name">Robots-Nocontent (2008)</h1>
 
     <p>According to <a
                 href="https://web.archive.org/web/20081102201233/http://help.yahoo.com/l/us/yahoo/search/webcrawler/slurp-14.html">this

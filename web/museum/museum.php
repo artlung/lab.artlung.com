@@ -9,7 +9,7 @@ $lab->printHeader(
 ?>
 
     <p class="date-attribution">Collated November 2010</p>
-    <h1>Technology in Museums: <em>Notes</em></h1>
+    <h1 class="p-name">Technology in Museums: <em>Notes</em></h1>
 
     <blockquote>
         <p>I got curious about technology in museums: Wi-Fi, NFC, Bluetooth, etc. in late 2010. I was curious about the

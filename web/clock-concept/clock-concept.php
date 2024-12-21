@@ -5,7 +5,7 @@ $lab->printHeader('Clock Concept (1998-2024)');
 ?>
 
     <p class="date-attribution">2024</p>
-    <h1>Clock Concept (1998-2024)</h1>
+    <h1 class="p-name">Clock Concept (1998-2024)</h1>
 
     <p>In 1998, I created the image of a clock in Adobe Illustrator and Photoshop.
         And in 2024 I implemented that design using the tools of the web: HTML, CSS, and JavaScript.</p>

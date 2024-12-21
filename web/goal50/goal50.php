@@ -5,7 +5,7 @@ $lab->printHeader('Goal 50!');
 ?>
 
     <p class="date-attribution">Created September 13, 2010. Modernized November 30, 2024.</p>
-    <h1>Goal of 50!</h1>
+    <h1 class="p-name">Goal of 50!</h1>
 
     <p>Uses localStorage to keep track of a goal. Inspired by this question in <a href="https://ask.metafilter.com/">Ask
             Metafilter</a>:

@@ -7,7 +7,7 @@ $lab->printHeader('Interesting Date Layout');
 
     <p class="date-attribution">Created about October 1999</p>
 
-    <h1>Interesting Calendar Layout</h1>
+    <h1 class="p-name">Interesting Calendar Layout</h1>
     <div style="background: black;width:min-content;padding: 10px;overflow: hidden;max-width: 100%;">
         <?php require "source.php"; ?>
     </div>

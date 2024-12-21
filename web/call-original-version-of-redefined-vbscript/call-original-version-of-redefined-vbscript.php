@@ -11,7 +11,7 @@ Call the native version of a VBScript object
 
     <p class="date-attribution">Created November 2006. Posted August 2016.</p>
 
-    <h1>
+    <h1 class="p-name">
         Call the native version of a VBScript object
     </h1>
 

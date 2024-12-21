@@ -7,7 +7,7 @@ $lab->printHeader('Using HTML Tidy under Windows');
 
 
     <p class="date-attribution">Created 11/1999</p>
-    <h1>Using Tidy under Windows</h1>
+    <h1 class="p-name">Using Tidy under Windows</h1>
     <p><span style="color:#FF3300">[THIS DOCUMENT IS NOT COMPLETE]</span></p>
     <hr noshade>
     <h2>Quick and Dirty Instructions</h2>
