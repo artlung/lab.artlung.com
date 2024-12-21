@@ -27,7 +27,7 @@ class Nav
 
         // yaml is the source of truth, generate this with slugs_and_titles.php do not hand edit this:
 
-        /* START: handled by php generate-nav-value LAST UPDATE 2024-12-21 05:10:36 */
+        /* START: handled by php generate-nav-value LAST UPDATE 2024-12-21 19:11:52 */
         return $slugs_and_titles = array (
         '50states' => 
         array (
@@ -1409,6 +1409,7 @@ class Nav
         1 => 'javascript',
         ),
         'og-image-date' => '2024-12-21 05:09:27',
+        'atom_feed_publish_date' => '2024-12-20 21:09:27',
         ),
         'rosetta' => 
         array (
@@ -1790,6 +1791,7 @@ class Nav
         1 => 'indieweb',
         ),
         'og-image-date' => '2024-12-18 17:51:46',
+        'atom_feed_publish_date' => '2024-12-18 17:51:46',
         ),
         'windows-export-file-list' => 
         array (

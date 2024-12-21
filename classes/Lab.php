@@ -237,6 +237,7 @@ class Lab
 <style>:root {--currentYear: {$currentYear} }</style>
 <link rel="stylesheet" href="/{$cssFileName}?b={$cacheBustCss}" type="text/css">
 <link rel="webmention" href="https://webmention.io/artlung.com/webmention">
+<link rel="alternate" type="application/rss+xml" title="Feed" href="/feed.xml">
 <link rel="canonical" href="{$canonical}">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="/{$jsFileName}?{$cacheBustJs}"></script>
