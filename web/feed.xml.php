@@ -15,7 +15,7 @@ $default_author = [
 
 
 $feed->setTitle('ArtLung Lab');
-$feed->setDescription('Making is web pages is fun!');
+$feed->setDescription('Making web pages is fun!');
 $feed->setAtomLink('https://lab.artlung.com/feed.xml');
 $feed->setChannelElement('updated', date(DATE_ATOM));
 $feed->setChannelElement('author', $default_author);
