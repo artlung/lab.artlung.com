@@ -2,37 +2,19 @@
 
 require 'loader.php';
 
-// scan every top level directory in /web/
-$directories = scandir('web');
 
-$directories_only = array_filter(
-    $directories, function ($element) {
-        return is_dir("web/$element");
-    }
-);
+$pages = \ArtlungLab\Nav::getMetadata();
 
 $domain = 'https://lab.artlung.com';
-
 $commands = [];
-
-$commands[] = "shot-scraper $domain/  --width 1200 --height 630 --quality 80 -o web/og-home.jpg";
-
-
-
-foreach ($directories_only as $slug) {
+foreach ($pages as $slug => $metadata) {
 
     // slug can't begin with a .
     if (substr($slug, 0, 1) == '.') {
         continue;
     }
-
-
-
     //     --wait 4000 can wait 4 seconds, as with zac-stl
-
     $yaml_file_path = "web/$slug/$slug.yaml";
-
-
     $wait_time = false;
     if (is_file($yaml_file_path)) {
         $yaml = file_get_contents($yaml_file_path);
@@ -40,8 +22,6 @@ foreach ($directories_only as $slug) {
         if (isset($yaml_data['shot-scraper-wait'])) {
             $wait_time = $yaml_data['shot-scraper-wait'];
         }
-
-
         if (isset($yaml_data['og-image-date']) && $yaml_data['og-image-date']) {
             $og_image_date = $yaml_data['og-image-date'];
             $og_image_date_time = strtotime($og_image_date);
@@ -50,7 +30,7 @@ foreach ($directories_only as $slug) {
             $diff = $now - $og_image_date_time;
             $days = $diff / 60 / 60 / 24;
 
-            if ($days < 7) {
+            if ($days < 14) {
                 continue;
             }
         }

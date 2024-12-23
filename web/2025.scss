@@ -47,11 +47,13 @@ body {
 * {
   box-sizing: border-box;
 }
+
 form {
   input, button, textarea, select, option {
     font-size: 1rem;
   }
 }
+
 header {
   color: #fff;
   background-image: radial-gradient(circle at 100% 0, transparent 1.5rem, var(--theme-color-modifier) 0);
@@ -62,7 +64,8 @@ header {
   transition: background-size 0.2s ease;
 
   &:has(input[type="checkbox"]:checked) {
-      background-size: 1.5rem 1.5rem;
+    background-size: 1.5rem 1.5rem;
+
     a:hover {
       border-bottom: none;
     }
@@ -82,9 +85,11 @@ header {
     transition: 0.2s ease;
     background-position: bottom 0 left 0;
     border-radius: 0 1rem 0 0;
+
     input {
       display: none;
     }
+
     &:has(input[type="checkbox"]:checked) {
       background-size: 100% 100%;
     }
@@ -105,12 +110,15 @@ header {
     line-height: 1;
     transition: all 0.1s ease;
     color: #fff;
+
     * {
       color: #fff;
     }
+
     &:last-child {
       margin-left: auto;
     }
+
     &:link, &:active, &:visited {
       color: #fff;
     }
@@ -120,7 +128,6 @@ header {
       border-bottom: 0.5em solid color-mix(in srgb, var(--theme-color), white 20%);
     }
   }
-
 
 
   span {
@@ -146,7 +153,7 @@ body > nav {
   display: grid;
   grid-template-rows: 0fr 0fr;
   transition: all 50ms;
-  background: color-mix(in srgb,var(--theme-color-modifier), white 95%);
+  background: color-mix(in srgb, var(--theme-color-modifier), white 95%);
   border-radius: 0 0 1rem 1rem;
   z-index: 1;
 
@@ -156,11 +163,12 @@ body > nav {
     padding: 1rem;
     width: 100%;
     font-size: 1rem;
-    background: color-mix(in srgb,var(--theme-color-modifier), white 80%);
+    background: color-mix(in srgb, var(--theme-color-modifier), white 80%);
     border: 1rem solid var(--theme-color-modifier);
     color: #555;
+
     &:focus-within {
-      background: color-mix(in srgb,var(--theme-color-modifier), white 50%);
+      background: color-mix(in srgb, var(--theme-color-modifier), white 50%);
       color: #000;
     }
 
@@ -179,27 +187,32 @@ body > nav {
     padding: 0.3rem;
 
     li {
+      &[data-tags="home"] {
+        display: none !important;
+      }
+
       --yearDiff: calc(var(--currentYear) - var(--year));
       --opacity: calc(1 - calc(var(--yearDiff)) * 0.04);
       --opacity-percent: calc(var(--opacity) * 100%);
-      --opacity-percent-flopped : calc(100% - var(--opacity-percent));
+      --opacity-percent-flopped: calc(100% - var(--opacity-percent));
       --bgStripeColor: color-mix(in srgb, var(--theme-color), transparent var(--opacity-percent-flopped));
       box-sizing: border-box;
-      width: clamp(120px,60%,360px);
+      width: clamp(120px, 60%, 360px);
+
       &:has(form) {
         width: clamp(240px, 100%, 720px);
         align-self: center;
       }
+
       display: flex;
       justify-content: center;
       align-items: center;
       flex-grow: 1;
-      background:
-              linear-gradient(
-                              to left,
-                              var(--bgStripeColor) 0.5rem,
-                              transparent 0.5rem
-              ) 0 50% / 100% 90% no-repeat;
+      background: linear-gradient(
+                      to left,
+                      var(--bgStripeColor) 0.5rem,
+                      transparent 0.5rem
+      ) 0 50% / 100% 90% no-repeat;
 
       a {
         flex-grow: 1;
@@ -236,9 +249,11 @@ article#content {
   h1 {
     font-size: 1.4rem;
   }
+
   h2 {
     font-size: 1.15rem;
   }
+
   pre.src {
     padding: 10px;
     color: $color_1;
@@ -266,8 +281,9 @@ article#content {
     overflow: auto;
     line-height: 1.1;
     max-width: calc(100vw - 5rem);
+
     &:has(code) {
-      scrollbar-color:  #167516 #9f9 ;
+      scrollbar-color: #167516 #9f9;
     }
 
     b {
@@ -378,6 +394,7 @@ body {
   height: 101%; // induce scrollbar
   font-family: var(--sans-serif);
   background-color: $background-color_4;
+
   pre, textarea {
     scrollbar-color: unset;
   }
@@ -399,7 +416,6 @@ body#e251273eb74a8ee3f661a7af00915af1 {
     }
   }
 }
-
 
 
 .html {
@@ -478,6 +494,7 @@ form.example {
   h2 {
     margin: 0;
   }
+
   > label {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -485,17 +502,20 @@ form.example {
     margin: 1em 0;
     align-items: center;
     justify-content: start;
+
     *:not(input) {
       display: flex;
-        justify-content: start;
-        align-items: center;
+      justify-content: start;
+      align-items: center;
     }
   }
+
   input, button {
     font-size: 1rem;
     padding: 0.5rem;
   }
 }
+
 @media (max-width: 500px) {
   form.example > label {
     grid-template-columns: 1fr;
@@ -508,16 +528,18 @@ form#theme-color-form {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  background: linear-gradient(5deg,var(--theme-color),transparent,transparent, var(--theme-color-modifier));
+  background: linear-gradient(5deg, var(--theme-color), transparent, transparent, var(--theme-color-modifier));
   border-radius: 0.5rem;
   padding: 0.7rem 1rem;
   width: fit-content;
   margin-inline-start: auto;
   color: #000;
+
   label {
     padding: 0.5rem;
     text-align: end;
   }
+
   button {
     font-size: 0.8rem;
   }
@@ -526,6 +548,7 @@ form#theme-color-form {
 [data-disqus-url] {
   display: none;
 }
+
 .webmention-count {
   display: none;
 }
@@ -537,6 +560,7 @@ body.comment-count-visible [data-disqus-url] {
   opacity: 0.6;
   font-size: smaller;
 }
+
 body.comment-count-visible .webmention-count {
   display: block;
   width: 100%;
@@ -548,30 +572,35 @@ body.comment-count-visible .webmention-count {
 .webmention-area {
   background: color-mix(in srgb, var(--theme-color-modifier), white 50%);
   color: var(--theme-color);
+
   h2 {
     padding: 1rem;
     margin: 0;
     background: var(--theme-color);
     color: var(--theme-color-modifier);
+
     a {
       background: var(--theme-color);
       color: var(--theme-color-modifier);
       tet-decoration: underline;
       // wavy
-        text-decoration-style: wavy;
+      text-decoration-style: wavy;
     }
   }
+
   form {
     margin: 0;
     padding: 1rem;
     display: grid;
     gap: 0.5rem;
+
     input[type="url"], input[type="text"] {
       background: color-mix(in srgb, var(--theme-color-modifier), white 50%);
       color: var(--theme-color);
       border: 1px solid var(--theme-color);
       padding: 1rem;
     }
+
     input[type="submit"] {
       padding: 1rem;
       border-radius: 0.3rem;
@@ -579,39 +608,41 @@ body.comment-count-visible .webmention-count {
   }
 }
 
-.webmention-display {
+ol.webmention-display {
   background: color-mix(in srgb, var(--theme-color-modifier), white 80%);
-  padding: 1rem 0 1rem;
-  ol.webmentions {
-    display: grid;
+  padding: 1rem 0 1rem 1rem;
+  display: grid;
+  margin: 0;
+  gap: 0;
+  li {
     margin: 0;
-    padding: 0 0 0 1rem;
-    li {
-      margin: 0;
-      padding: 0;
-      display: grid;
-      grid-template-columns: min-content 1fr;
-      gap: 1ch;
-      justify-content: start;
-      align-items: center;
-      img {
-        max-height: 1.5rem;
-        aspect-ratio: 1;
-        border-radius: 50%;
-      }
-      a {
-        // break at any point
-        word-wrap: break-word;
-      }
-      .fake-photo {
-        height: 1.5rem;
-        aspect-ratio: 1;
-        border-radius: 50%;
-        display: inline-block;
-        background: var(--theme-color);
-      }
+    padding: 0;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    gap: 1ch;
+    justify-content: start;
+    align-items: center;
+
+    img {
+      max-height: 1.5rem;
+      aspect-ratio: 1;
+      border-radius: 50%;
+    }
+
+    a {
+      // break at any point
+      word-wrap: break-word;
+    }
+
+    .fake-photo {
+      height: 1.5rem;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      display: inline-block;
+      background: var(--theme-color);
     }
   }
+
 }
 
 

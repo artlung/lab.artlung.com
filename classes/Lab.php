@@ -235,12 +235,12 @@ class Lab
 
 
 
-        $ogImageName = '/' . $this->directoryName . '/og-' . $this->directoryName . '.jpg';
-        // only home has $open_nav true
-        if ($open_nav) {
-            $ogImageName = '/og-home.jpg';
+        $ogImageName = 'https://lab.artlung.com/' . $this->directoryName . '/og-' . $this->directoryName . '.jpg';
+
+        if (isset($options['og_image'])) {
+            $ogImageName = $options['og_image'];
         }
-        $ogImageLink = sprintf('<meta property="og:image" content="https://lab.artlung.com%s">', $ogImageName);
+        $ogImageLink = sprintf('<meta property="og:image" content="%s">', $ogImageName);
 
 
         return <<<HTML
@@ -305,10 +305,16 @@ HTML;
         }
         $protocol = !empty($_SERVER['HTTPS']) ? 'https' : 'http';
 
+        if (isset($options['slug'])) {
+            $slug = $options['slug'];
+        } else {
+            $slug = $this->directoryName;
+        }
+
         if ($options['comments'] ?? true) {
             $comments_code = '';
             $comments_code .= $this->getWebmentionForm();
-            $comments_code .= $this->getWebmentionDisplayCode();
+            $comments_code .= $this->getWebmentionDisplayCode($slug);
             $comments_code .= $this->_getCommentsCode();
 
         } else {
@@ -321,7 +327,7 @@ HTML;
 <footer>
 	<span>&copy; 1996-{$copyrightYear}</span>
 	<a href="https://github.com/artlung/lab.artlung.com" target="_blank">GitHub</a>
-	<a href="https://lab.artlung.com/feed.xml" style="color: orange">Atom</a>
+	<a href="https://lab.artlung.com/feed.xml" style="color: orange">Feed</a>
     <a href="https://artlung.com/" class="joe" target="_blank">Joe Crawford</a>
 </footer>
 </body>
@@ -457,13 +463,18 @@ HTML;
     /**
      * Get the webmention display code
      *
+     * @param string $slug
+     *
      * @return string
      */
-    public function getWebmentionDisplayCode(): string
+    public function getWebmentionDisplayCode(string $slug): string
     {
-        $webmentions = $this->_getWebmentions();
+        $webmentions = $this->_getWebmentions($slug);
+        if (empty($webmentions)) {
+            return '';
+        }
         $webmention_html = '';
-        $webmention_html .= '<ol class="webmentions">';
+        $webmention_html .= '<ol class="webmention-display">';
         foreach ($webmentions as $mention) {
             $webmention_html .= '<li>';
             if ($mention->getAuthorPhoto()) {
@@ -478,31 +489,30 @@ HTML;
             }
             $url_minus_protocol = preg_replace('/^https?:\/\//', '', $mention->getUrl());
 
-            $date_to_use = strtotime($mention->getPublished() ?? $mention->getWmReceived());
-
+            if (0 !== strlen($mention->getPublished())) {
+                $date_to_use = strtotime($mention->getPublished());
+            } else {
+                $date_to_use = strtotime($mention->getWmReceived());
+            }
             $webmention_html .= '<a href="' . $mention->getUrl() . '">' . $url_minus_protocol . '</a>';
             $webmention_html .= ' on (' . date('F j, Y', $date_to_use) . ')';
             $webmention_html .= '</span>';
             $webmention_html .= '</li>';
         }
         $webmention_html .= '</ol>';
-
-        return <<<HTML
-<div class="webmention-display">
-{$webmention_html}
-</div>    
-HTML;
-
+        return $webmention_html;
     }
 
     /**
      * Get the webmentions
      *
+     * @param string $slug
+     *
      * @return array Mention[]
      */
-    private function _getWebmentions(): array
+    private function _getWebmentions(string $slug): array
     {
-        return (new Webmentions($this->directoryName))->getMentions();
+        return (new Webmentions($slug))->getMentions();
     }
 
 

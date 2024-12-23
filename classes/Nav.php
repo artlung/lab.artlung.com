@@ -27,7 +27,7 @@ class Nav
 
         // yaml is the source of truth, generate this with slugs_and_titles.php do not hand edit this:
 
-        /* START: handled by php generate-nav-value LAST UPDATE 2024-12-23 03:31:52 */
+        /* START: handled by php generate-nav-value LAST UPDATE 2024-12-23 17:32:16 */
         return $slugs_and_titles = array (
         '50states' => 
         array (
@@ -911,6 +911,20 @@ class Nav
         ),
         'webmention_last_checked' => 1734922972,
         'webmention_count' => 1,
+        ),
+        'home' => 
+        array (
+        'tags' => 
+        array (
+        0 => 'home',
+        ),
+        'slug' => 'home',
+        'canonical_url' => 'https://lab.artlung.com/',
+        'year' => 2024,
+        'title' => 'The Lab',
+        'og-image-date' => '2024-12-23 17:12:23',
+        'webmention_last_checked' => 1734973952,
+        'webmention_count' => 20,
         ),
         'html-2.0' => 
         array (
