@@ -7,7 +7,7 @@ $pages = \ArtlungLab\Nav::getMetadata();
 
 foreach ($pages as $slug => $metadata) {
 
-    echo "Checking $slug\n";
+    //    echo "Checking $slug\n";
 
     $webmentions_file = "webmention_data/$slug.json";
     $yaml_file = "web/$slug/$slug.yaml";
@@ -21,13 +21,16 @@ foreach ($pages as $slug => $metadata) {
 
     if (isset($yaml[\ArtlungLab\WebmentionIoGetter::WEBMENTION_LAST_CHECKED_KEY])) {
         $last_checked = $yaml[\ArtlungLab\WebmentionIoGetter::WEBMENTION_LAST_CHECKED_KEY];
-        print "Last checked date for $slug is $last_checked\n";
+        //        print "Last checked date for $slug is $last_checked\n";
 
         if (is_file($webmentions_file)) {
-            print  "There is a webmentions file for $slug\n";
+            //            print  "There is a webmentions file for $slug\n";
             $webmentions = json_decode(file_get_contents($webmentions_file), true);
             $yaml[\ArtlungLab\WebmentionIoGetter::WEBMENTION_COUNT_KEY] = count($webmentions);
-            print "Count for $slug is " . count($webmentions) . "\n";
+            $count = count($webmentions);
+            if ($count > 0) {
+                print "Count for $slug is " . count($webmentions) . "\n";
+            }
             $yaml = Spyc::YAMLDump($yaml);
             file_put_contents($yaml_file, $yaml);
         }
@@ -43,7 +46,7 @@ foreach ($pages as $slug => $metadata) {
 
     // only get them once a week
     if (time() - $last_checked < 604800) {
-        print "Skipping $slug, last checked $last_checked\n";
+        //        print "Skipping $slug, last checked $last_checked\n";
         continue;
     }
 
