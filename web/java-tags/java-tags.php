@@ -1,7 +1,12 @@
 <?php
 require_once __DIR__ . '/../../loader.php';
 $lab = new ArtlungLab\Lab();
-$lab->printHeader('HTML Tags for Java Applets, circa 1999');
+$actual_url = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+$lab->printHeader(
+    'HTML Tags for Java Applets, circa 1999', [
+        'canonical' => $actual_url,
+    ]
+);
 
 ?>
 

@@ -101,11 +101,11 @@ class Lab
      * Get the header with a title and options
      *
      * @param string $title
-     * @param $options
+     * @param array  $options
      *
      * @return string
      */
-    public function getHeader(string $title, $options = [])
+    public function getHeader(string $title, array $options = [])
     {
 
         $open_nav = $options['open-nav'] ?? false;
@@ -217,6 +217,11 @@ class Lab
         $url = 'https://lab.artlung.com' . $pathOnly;
 
         $canonical = 'https://lab.artlung.com' . $pathOnly;
+
+        if (isset($options['canonical'])) {
+            $canonical = $options['canonical'];
+        }
+
         $text = '“' . $title . '” #ArtLungLab';
 
         // https://shareopenly.org/share/?url={URL}&text={TEXT}
