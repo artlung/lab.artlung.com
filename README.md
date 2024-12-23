@@ -18,6 +18,8 @@ I originally created the site [lab.artlung.com](https://lab.artlung.com) in 2001
   * `yaml-management.php` script makes it easy to add metadata to existing content
   * Unit tests now check for at least one tag on each page
   * `og-images.php` script uses `shot-scraper` to generate images for `og:image` tags
+  * `generate-nav-value.php` populates the `Nav` class with values from the `yaml` files
+  * Webmention capture and display added on individual pages and on the main nav alongside Disqus comment counts (when active)
 
 
 ![example workflow](https://github.com/artlung/lab.artlung.com/actions/workflows/ci.yml/badge.svg)
