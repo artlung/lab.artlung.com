@@ -9,7 +9,7 @@ PHP AutoMagic Gallery Thing
 
 ?>
     <p class="date-attribution">Created April 14 2001</p>
-    <h1>PHP AutoMagic Gallery Listing</h1>
+    <h1 class="p-name">PHP AutoMagic Gallery Listing</h1>
 
     <h2>Why?</h2>
 

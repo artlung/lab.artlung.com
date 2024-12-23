@@ -4,7 +4,7 @@ $lab = new ArtlungLab\Lab();
 $lab->printHeader('CSS how to use :first-child and :last-child');
 ?>
     <p class="date-attribution">Created November 2011</p>
-    <h1>CSS how to use :first-child and :last-child</h1>
+    <h1 class="p-name">CSS how to use :first-child and :last-child</h1>
 <?php
 $code = 'code.html';
 require $code;

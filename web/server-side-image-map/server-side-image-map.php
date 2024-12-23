@@ -14,7 +14,7 @@ $lab->printHeader('Image Maps like we made them in 1997');
             </td>
             <td>
 
-                <h1>Image Maps like we made them in 1997</h1>
+                <h1 class="p-name">Image Maps like we made them in 1997</h1>
 
                 <?php
                 $valid = ["Search",

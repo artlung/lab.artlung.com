@@ -16,7 +16,7 @@ $cachebustJavaScript = '?v=' . filemtime('canvas-html-render-download.js');
 <body>
 
 <section id="testArea">
-    <h1>Canvas HTML Render Download <em>not working</em></h1>
+    <h1 class="p-name">Canvas HTML Render Download <em>not working</em></h1>
 
     <canvas id="theCanvas" style="border:2px solid black;" width="300" height="300"></canvas>
 

@@ -2,6 +2,13 @@
 
 require_once 'loader.php';
 
+
+// if not cli, warn and exit
+if (php_sapi_name() !== 'cli') {
+    echo "This script must be run from the command line\n";
+    exit(1);
+}
+
 $directories = glob('web/*', GLOB_ONLYDIR);
 
 $out_var = [];
@@ -11,7 +18,17 @@ foreach ($directories as $directory) {
     $yaml_file = "$directory/$just_slug.yaml";
 
     if (!file_exists($yaml_file)) {
-        // TODO
+        echo "No YAML file for $just_slug\n";
+
+        // prompt user to (c)continue or (q)quit
+        echo "Continue? (c)ontinue or (q)uit: ";
+        $handle = fopen("php://stdin", "r");
+        $line = fgets($handle);
+        if (trim($line) != 'c') {
+            echo "Aborted\n";
+            exit;
+        }
+        continue;
     }
 
     $yaml = file_get_contents($yaml_file);

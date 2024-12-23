@@ -48,8 +48,7 @@ class NavTest extends TestCase
             $this->assertArrayHasKey('tags', $metadataArray, "Tags missing for $dir");
             $this->assertIsArray($metadataArray['tags'], "Tags is not an array for $dir");
 
-            // must have at least one tag
-            $this->assertGreaterThan(0, count($metadataArray['tags']), "Tags is empty for $dir");
+            $this->assertGreaterThan(0, count($metadataArray['tags']), "Tags is empty for $dir, all pages should have at least one page");
 
             $this->assertArrayHasKey('slug', $metadataArray, "Slug missing for $dir");
             $this->assertEquals($dir, $metadataArray['slug'], "Slug does not match directory name for $dir");
@@ -57,6 +56,11 @@ class NavTest extends TestCase
             $this->assertArrayHasKey('canonical_url', $metadataArray, "Canonical URL missing for $dir");
             $this->assertStringContainsString('https://lab.artlung.com/', $metadataArray['canonical_url'], "Canonical URL does not contain https://lab.artlung.com/ for $dir");
 
+            $this->assertArrayHasKey('webmention_last_checked', $metadataArray, "webmention_last_checked missing for $dir");
+            $this->assertIsInt($metadataArray['webmention_last_checked'], "webmention_last_checked is not a string for $dir");
+
+            $this->assertArrayHasKey('webmention_count', $metadataArray, "webmention_count missing for $dir");
+            $this->assertIsInt($metadataArray['webmention_count'], "webmention_count is not an integer for $dir");
 
 
 

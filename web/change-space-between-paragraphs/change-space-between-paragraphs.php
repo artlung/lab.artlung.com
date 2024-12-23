@@ -10,7 +10,7 @@ $lab->printHeader('Changing the spacing between paragraphs');
         February 2006
     </p>
 
-    <h1>Changing the spacing between paragraphs</h1>
+    <h1 class="p-name">Changing the spacing between paragraphs</h1>
 
     <div id="narrowerDiv">
 

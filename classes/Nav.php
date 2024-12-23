@@ -27,7 +27,7 @@ class Nav
 
         // yaml is the source of truth, generate this with slugs_and_titles.php do not hand edit this:
 
-        /* START: handled by php generate-nav-value LAST UPDATE 2024-12-18 00:34:27 */
+        /* START: handled by php generate-nav-value LAST UPDATE 2024-12-23 03:31:52 */
         return $slugs_and_titles = array (
         '50states' => 
         array (
@@ -40,6 +40,8 @@ class Nav
         array (
         0 => 'html',
         ),
+        'webmention_last_checked' => 1734922957,
+        'webmention_count' => 1,
         ),
         'ArtLung-Notes' => 
         array (
@@ -52,6 +54,8 @@ class Nav
         array (
         0 => 'experimental',
         ),
+        'webmention_last_checked' => 1734922957,
+        'webmention_count' => 0,
         ),
         'a-outline-none' => 
         array (
@@ -64,6 +68,8 @@ class Nav
         array (
         0 => 'css',
         ),
+        'webmention_last_checked' => 1734922957,
+        'webmention_count' => 1,
         ),
         'additive-font-size' => 
         array (
@@ -76,6 +82,8 @@ class Nav
         array (
         0 => 'css',
         ),
+        'webmention_last_checked' => 1734922958,
+        'webmention_count' => 1,
         ),
         'ancient-tidy-tutorial' => 
         array (
@@ -88,6 +96,8 @@ class Nav
         array (
         0 => 'html',
         ),
+        'webmention_last_checked' => 1734922958,
+        'webmention_count' => 1,
         ),
         'anti-cache' => 
         array (
@@ -103,6 +113,8 @@ class Nav
         2 => 'jsp',
         3 => 'php',
         ),
+        'webmention_last_checked' => 1734922958,
+        'webmention_count' => 1,
         ),
         'asp' => 
         array (
@@ -115,6 +127,8 @@ class Nav
         array (
         0 => 'asp',
         ),
+        'webmention_last_checked' => 1734922959,
+        'webmention_count' => 1,
         ),
         'asp-cdonts' => 
         array (
@@ -127,6 +141,8 @@ class Nav
         array (
         0 => 'asp',
         ),
+        'webmention_last_checked' => 1734922959,
+        'webmention_count' => 0,
         ),
         'asp-selectbox-function' => 
         array (
@@ -139,6 +155,8 @@ class Nav
         array (
         0 => 'asp',
         ),
+        'webmention_last_checked' => 1734922959,
+        'webmention_count' => 0,
         ),
         'autocalc' => 
         array (
@@ -151,6 +169,8 @@ class Nav
         array (
         0 => 'experimental',
         ),
+        'webmention_last_checked' => 1734922959,
+        'webmention_count' => 2,
         ),
         'barcampla6' => 
         array (
@@ -163,6 +183,8 @@ class Nav
         array (
         0 => 'javascript',
         ),
+        'webmention_last_checked' => 1734922960,
+        'webmention_count' => 0,
         ),
         'bloggingbot' => 
         array (
@@ -176,6 +198,8 @@ class Nav
         0 => 'experimental',
         1 => 'markovchains',
         ),
+        'webmention_last_checked' => 1734922960,
+        'webmention_count' => 0,
         ),
         'bluedragon-net-installer' => 
         array (
@@ -189,6 +213,8 @@ class Nav
         0 => 'coldfusion',
         1 => 'dotnet',
         ),
+        'webmention_last_checked' => 1734922960,
+        'webmention_count' => 0,
         ),
         'blur' => 
         array (
@@ -201,6 +227,8 @@ class Nav
         array (
         0 => 'css',
         ),
+        'webmention_last_checked' => 1734922960,
+        'webmention_count' => 0,
         ),
         'bookmarklets' => 
         array (
@@ -215,6 +243,8 @@ class Nav
         1 => 'html',
         2 => 'rss',
         ),
+        'webmention_last_checked' => 1734922961,
+        'webmention_count' => 1,
         ),
         'border-style' => 
         array (
@@ -227,6 +257,8 @@ class Nav
         array (
         0 => 'css',
         ),
+        'webmention_last_checked' => 1734922961,
+        'webmention_count' => 1,
         ),
         'bug-mac-netscape-forms-update' => 
         array (
@@ -239,6 +271,8 @@ class Nav
         array (
         0 => 'html',
         ),
+        'webmention_last_checked' => 1734922961,
+        'webmention_count' => 0,
         ),
         'buttonybutton' => 
         array (
@@ -251,6 +285,8 @@ class Nav
         array (
         0 => 'css',
         ),
+        'webmention_last_checked' => 1734922961,
+        'webmention_count' => 0,
         ),
         'buttonybuttonsonbuttons' => 
         array (
@@ -263,6 +299,8 @@ class Nav
         array (
         0 => 'css',
         ),
+        'webmention_last_checked' => 1734922961,
+        'webmention_count' => 0,
         ),
         'call-original-version-of-redefined-vbscript' => 
         array (
@@ -275,6 +313,8 @@ class Nav
         array (
         0 => 'vbscript',
         ),
+        'webmention_last_checked' => 1734922962,
+        'webmention_count' => 0,
         ),
         'camel-selector' => 
         array (
@@ -287,6 +327,8 @@ class Nav
         array (
         0 => 'javascript',
         ),
+        'webmention_last_checked' => 1734922962,
+        'webmention_count' => 1,
         ),
         'canvas-html-render-download' => 
         array (
@@ -299,6 +341,8 @@ class Nav
         array (
         0 => 'html',
         ),
+        'webmention_last_checked' => 1734922962,
+        'webmention_count' => 0,
         ),
         'change-all-links' => 
         array (
@@ -311,6 +355,8 @@ class Nav
         array (
         0 => 'javascript',
         ),
+        'webmention_last_checked' => 1734922962,
+        'webmention_count' => 0,
         ),
         'change-content-in-iframe-with-prototype' => 
         array (
@@ -323,6 +369,8 @@ class Nav
         array (
         0 => 'javascript',
         ),
+        'webmention_last_checked' => 1734922963,
+        'webmention_count' => 0,
         ),
         'change-document-background-color' => 
         array (
@@ -336,6 +384,8 @@ class Nav
         0 => 'css',
         1 => 'javascript',
         ),
+        'webmention_last_checked' => 1734922963,
+        'webmention_count' => 0,
         ),
         'change-space-between-paragraphs' => 
         array (
@@ -349,6 +399,8 @@ class Nav
         0 => 'css',
         1 => 'typography',
         ),
+        'webmention_last_checked' => 1734922963,
+        'webmention_count' => 0,
         ),
         'checkbox-validate' => 
         array (
@@ -361,6 +413,8 @@ class Nav
         array (
         0 => 'javascript',
         ),
+        'webmention_last_checked' => 1734922963,
+        'webmention_count' => 1,
         ),
         'circles-crawl' => 
         array (
@@ -373,6 +427,8 @@ class Nav
         array (
         0 => 'javascript',
         ),
+        'webmention_last_checked' => 1734922964,
+        'webmention_count' => 0,
         ),
         'clock-concept' => 
         array (
@@ -387,6 +443,8 @@ class Nav
         1 => 'experimental',
         2 => 'javascript',
         ),
+        'webmention_last_checked' => 1734922964,
+        'webmention_count' => 0,
         ),
         'coldfusion-break-db' => 
         array (
@@ -399,6 +457,8 @@ class Nav
         array (
         0 => 'coldfusion',
         ),
+        'webmention_last_checked' => 1734922964,
+        'webmention_count' => 1,
         ),
         'coldfusion-force-download' => 
         array (
@@ -411,6 +471,8 @@ class Nav
         array (
         0 => 'coldfusion',
         ),
+        'webmention_last_checked' => 1734922964,
+        'webmention_count' => 0,
         ),
         'coldfusion-titlecase' => 
         array (
@@ -423,6 +485,8 @@ class Nav
         array (
         0 => 'coldfusion',
         ),
+        'webmention_last_checked' => 1734922964,
+        'webmention_count' => 1,
         ),
         'compare-fields' => 
         array (
@@ -435,6 +499,8 @@ class Nav
         array (
         0 => 'javascript',
         ),
+        'webmention_last_checked' => 1734922965,
+        'webmention_count' => 0,
         ),
         'connect-to-remote-server' => 
         array (
@@ -447,6 +513,8 @@ class Nav
         array (
         0 => 'php',
         ),
+        'webmention_last_checked' => 1734922965,
+        'webmention_count' => 0,
         ),
         'copy-to-clipboard-javascript' => 
         array (
@@ -459,6 +527,8 @@ class Nav
         array (
         0 => 'javascript',
         ),
+        'webmention_last_checked' => 1734922965,
+        'webmention_count' => 0,
         ),
         'countdown' => 
         array (
@@ -471,6 +541,8 @@ class Nav
         array (
         0 => 'php',
         ),
+        'webmention_last_checked' => 1734922965,
+        'webmention_count' => 1,
         ),
         'countdown-daily-to-a-time' => 
         array (
@@ -483,6 +555,8 @@ class Nav
         array (
         0 => 'php',
         ),
+        'webmention_last_checked' => 1734922965,
+        'webmention_count' => 0,
         ),
         'countdown-to-the-first' => 
         array (
@@ -495,6 +569,8 @@ class Nav
         array (
         0 => 'php',
         ),
+        'webmention_last_checked' => 1734922966,
+        'webmention_count' => 0,
         ),
         'crossdomain' => 
         array (
@@ -507,6 +583,8 @@ class Nav
         array (
         0 => 'http',
         ),
+        'webmention_last_checked' => 1734922966,
+        'webmention_count' => 0,
         ),
         'css3-smiley' => 
         array (
@@ -519,6 +597,8 @@ class Nav
         array (
         0 => 'css',
         ),
+        'webmention_last_checked' => 1734922966,
+        'webmention_count' => 1,
         ),
         'detagger' => 
         array (
@@ -531,6 +611,8 @@ class Nav
         array (
         0 => 'php',
         ),
+        'webmention_last_checked' => 1734922967,
+        'webmention_count' => 1,
         ),
         'detection-real' => 
         array (
@@ -544,6 +626,8 @@ class Nav
         0 => 'javascript',
         1 => 'realplayer',
         ),
+        'webmention_last_checked' => 1734922967,
+        'webmention_count' => 0,
         ),
         'display-inline-block' => 
         array (
@@ -556,6 +640,8 @@ class Nav
         array (
         0 => 'css',
         ),
+        'webmention_last_checked' => 1734922967,
+        'webmention_count' => 0,
         ),
         'domain-name-sql-excel' => 
         array (
@@ -568,6 +654,8 @@ class Nav
         array (
         0 => 'sql',
         ),
+        'webmention_last_checked' => 1734922967,
+        'webmention_count' => 0,
         ),
         'dropdown' => 
         array (
@@ -581,6 +669,8 @@ class Nav
         0 => 'html',
         1 => 'javascript',
         ),
+        'webmention_last_checked' => 1734922967,
+        'webmention_count' => 2,
         ),
         'dropdown-focus' => 
         array (
@@ -593,6 +683,8 @@ class Nav
         array (
         0 => 'javascript',
         ),
+        'webmention_last_checked' => 1734922968,
+        'webmention_count' => 0,
         ),
         'dropdown-frames' => 
         array (
@@ -605,6 +697,8 @@ class Nav
         array (
         0 => 'javascript',
         ),
+        'webmention_last_checked' => 1734922968,
+        'webmention_count' => 0,
         ),
         'dropdown-only-some-new-window' => 
         array (
@@ -617,6 +711,8 @@ class Nav
         array (
         0 => 'javascript',
         ),
+        'webmention_last_checked' => 1734922968,
+        'webmention_count' => 2,
         ),
         'dropdown-submit-form' => 
         array (
@@ -629,6 +725,8 @@ class Nav
         array (
         0 => 'javascript',
         ),
+        'webmention_last_checked' => 1734922968,
+        'webmention_count' => 0,
         ),
         'echo-http-host' => 
         array (
@@ -641,6 +739,8 @@ class Nav
         array (
         0 => 'php',
         ),
+        'webmention_last_checked' => 1734922969,
+        'webmention_count' => 0,
         ),
         'email-submission-stinks' => 
         array (
@@ -653,6 +753,8 @@ class Nav
         array (
         0 => 'html',
         ),
+        'webmention_last_checked' => 1734922969,
+        'webmention_count' => 1,
         ),
         'first-child-last-child' => 
         array (
@@ -665,6 +767,8 @@ class Nav
         array (
         0 => 'css',
         ),
+        'webmention_last_checked' => 1734922969,
+        'webmention_count' => 0,
         ),
         'font-awesome-sample' => 
         array (
@@ -677,6 +781,8 @@ class Nav
         array (
         0 => 'typography',
         ),
+        'webmention_last_checked' => 1734922969,
+        'webmention_count' => 1,
         ),
         'form-image-background' => 
         array (
@@ -690,6 +796,8 @@ class Nav
         0 => 'css',
         1 => 'html',
         ),
+        'webmention_last_checked' => 1734922970,
+        'webmention_count' => 1,
         ),
         'format-time' => 
         array (
@@ -702,6 +810,8 @@ class Nav
         array (
         0 => 'javascript',
         ),
+        'webmention_last_checked' => 1734922970,
+        'webmention_count' => 0,
         ),
         'frames-mouseover' => 
         array (
@@ -714,6 +824,8 @@ class Nav
         array (
         0 => 'javascript',
         ),
+        'webmention_last_checked' => 1734922970,
+        'webmention_count' => 0,
         ),
         'gallery' => 
         array (
@@ -726,6 +838,8 @@ class Nav
         array (
         0 => 'php',
         ),
+        'webmention_last_checked' => 1734922970,
+        'webmention_count' => 2,
         ),
         'generic-validator' => 
         array (
@@ -738,6 +852,8 @@ class Nav
         array (
         0 => 'javascript',
         ),
+        'webmention_last_checked' => 1734922971,
+        'webmention_count' => 0,
         ),
         'gettysburg' => 
         array (
@@ -750,6 +866,8 @@ class Nav
         array (
         0 => 'html',
         ),
+        'webmention_last_checked' => 1734922971,
+        'webmention_count' => 1,
         ),
         'goal50' => 
         array (
@@ -763,6 +881,8 @@ class Nav
         0 => 'css',
         1 => 'javascript',
         ),
+        'webmention_last_checked' => 1734922971,
+        'webmention_count' => 0,
         ),
         'group-concat-mysql' => 
         array (
@@ -775,6 +895,8 @@ class Nav
         array (
         0 => 'sql',
         ),
+        'webmention_last_checked' => 1734922971,
+        'webmention_count' => 0,
         ),
         'history' => 
         array (
@@ -787,6 +909,8 @@ class Nav
         array (
         0 => 'javascript',
         ),
+        'webmention_last_checked' => 1734922972,
+        'webmention_count' => 1,
         ),
         'html-2.0' => 
         array (
@@ -799,6 +923,8 @@ class Nav
         array (
         0 => 'html',
         ),
+        'webmention_last_checked' => 1734922972,
+        'webmention_count' => 0,
         ),
         'image-border' => 
         array (
@@ -811,6 +937,8 @@ class Nav
         array (
         0 => 'css',
         ),
+        'webmention_last_checked' => 1734922972,
+        'webmention_count' => 0,
         ),
         'image-hover' => 
         array (
@@ -823,6 +951,8 @@ class Nav
         array (
         0 => 'css',
         ),
+        'webmention_last_checked' => 1734922972,
+        'webmention_count' => 0,
         ),
         'input-direction' => 
         array (
@@ -835,6 +965,8 @@ class Nav
         array (
         0 => 'html',
         ),
+        'webmention_last_checked' => 1734922973,
+        'webmention_count' => 2,
         ),
         'interesting-date-layout' => 
         array (
@@ -847,6 +979,8 @@ class Nav
         array (
         0 => 'experimental',
         ),
+        'webmention_last_checked' => 1734922973,
+        'webmention_count' => 0,
         ),
         'invisible-unspiderable-link' => 
         array (
@@ -861,6 +995,8 @@ class Nav
         1 => 'css',
         2 => 'javascript',
         ),
+        'webmention_last_checked' => 1734922973,
+        'webmention_count' => 1,
         ),
         'is-email' => 
         array (
@@ -873,6 +1009,8 @@ class Nav
         array (
         0 => 'php',
         ),
+        'webmention_last_checked' => 1734922973,
+        'webmention_count' => 0,
         ),
         'java-tags' => 
         array (
@@ -885,6 +1023,8 @@ class Nav
         array (
         0 => 'java',
         ),
+        'webmention_last_checked' => 1734922974,
+        'webmention_count' => 2,
         ),
         'keycode' => 
         array (
@@ -897,6 +1037,8 @@ class Nav
         array (
         0 => 'javascript',
         ),
+        'webmention_last_checked' => 1734922974,
+        'webmention_count' => 0,
         ),
         'keystroke-to-go-to-random-page' => 
         array (
@@ -909,6 +1051,9 @@ class Nav
         0 => 'javascript',
         1 => 'php',
         ),
+        'og-image-date' => '2024-12-18 15:40:35',
+        'webmention_last_checked' => 1734922974,
+        'webmention_count' => 0,
         ),
         'larger-checkbox-with-css' => 
         array (
@@ -921,6 +1066,8 @@ class Nav
         array (
         0 => 'css',
         ),
+        'webmention_last_checked' => 1734922974,
+        'webmention_count' => 1,
         ),
         'make-unique-id' => 
         array (
@@ -933,6 +1080,8 @@ class Nav
         array (
         0 => 'php',
         ),
+        'webmention_last_checked' => 1734922975,
+        'webmention_count' => 1,
         ),
         'mathml' => 
         array (
@@ -946,6 +1095,8 @@ class Nav
         0 => 'html',
         1 => 'mathml',
         ),
+        'webmention_last_checked' => 1734922975,
+        'webmention_count' => 1,
         ),
         'meaningful-html-class-names' => 
         array (
@@ -959,6 +1110,8 @@ class Nav
         0 => 'css',
         1 => 'html',
         ),
+        'webmention_last_checked' => 1734922975,
+        'webmention_count' => 0,
         ),
         'media' => 
         array (
@@ -972,6 +1125,8 @@ class Nav
         0 => 'css',
         1 => 'javascript',
         ),
+        'webmention_last_checked' => 1734922975,
+        'webmention_count' => 0,
         ),
         'misc-files' => 
         array (
@@ -989,6 +1144,8 @@ class Nav
         4 => 'html',
         5 => 'http',
         ),
+        'webmention_last_checked' => 1734922976,
+        'webmention_count' => 1,
         ),
         'mm_validateform' => 
         array (
@@ -1002,6 +1159,8 @@ class Nav
         0 => 'javascript',
         1 => 'macromedia',
         ),
+        'webmention_last_checked' => 1734922976,
+        'webmention_count' => 0,
         ),
         'modify-the-box' => 
         array (
@@ -1014,6 +1173,8 @@ class Nav
         array (
         0 => 'html',
         ),
+        'webmention_last_checked' => 1734922976,
+        'webmention_count' => 1,
         ),
         'mouseover-vote' => 
         array (
@@ -1026,6 +1187,8 @@ class Nav
         array (
         0 => 'javascript',
         ),
+        'webmention_last_checked' => 1734922976,
+        'webmention_count' => 0,
         ),
         'mouseover-vote100' => 
         array (
@@ -1038,6 +1201,8 @@ class Nav
         array (
         0 => 'javascript',
         ),
+        'webmention_last_checked' => 1734922977,
+        'webmention_count' => 0,
         ),
         'multiple-select' => 
         array (
@@ -1050,6 +1215,8 @@ class Nav
         array (
         0 => 'javascript',
         ),
+        'webmention_last_checked' => 1734922977,
+        'webmention_count' => 0,
         ),
         'multiple-select-v2' => 
         array (
@@ -1062,6 +1229,8 @@ class Nav
         array (
         0 => 'javascript',
         ),
+        'webmention_last_checked' => 1734922977,
+        'webmention_count' => 0,
         ),
         'museum' => 
         array (
@@ -1074,6 +1243,8 @@ class Nav
         array (
         0 => 'ux',
         ),
+        'webmention_last_checked' => 1734922977,
+        'webmention_count' => 0,
         ),
         'my-first-vbscript-class' => 
         array (
@@ -1086,6 +1257,8 @@ class Nav
         array (
         0 => 'vbscript',
         ),
+        'webmention_last_checked' => 1734922978,
+        'webmention_count' => 0,
         ),
         'navigation-function-vs-asp' => 
         array (
@@ -1099,6 +1272,8 @@ class Nav
         0 => 'asp',
         1 => 'php',
         ),
+        'webmention_last_checked' => 1734922978,
+        'webmention_count' => 0,
         ),
         'navigator-language' => 
         array (
@@ -1111,6 +1286,8 @@ class Nav
         array (
         0 => 'javascript',
         ),
+        'webmention_last_checked' => 1734922978,
+        'webmention_count' => 0,
         ),
         'navigator-object' => 
         array (
@@ -1123,6 +1300,8 @@ class Nav
         array (
         0 => 'javascript',
         ),
+        'webmention_last_checked' => 1734922978,
+        'webmention_count' => 0,
         ),
         'nonsense-dtd' => 
         array (
@@ -1135,6 +1314,8 @@ class Nav
         array (
         0 => 'html',
         ),
+        'webmention_last_checked' => 1734922978,
+        'webmention_count' => 0,
         ),
         'not-valid-itunes-library' => 
         array (
@@ -1147,6 +1328,8 @@ class Nav
         array (
         0 => 'itunes',
         ),
+        'webmention_last_checked' => 1734922979,
+        'webmention_count' => 3,
         ),
         'notifications' => 
         array (
@@ -1159,6 +1342,8 @@ class Nav
         array (
         0 => 'javascript',
         ),
+        'webmention_last_checked' => 1734922979,
+        'webmention_count' => 0,
         ),
         'now-getdate' => 
         array (
@@ -1171,6 +1356,8 @@ class Nav
         array (
         0 => 'sql',
         ),
+        'webmention_last_checked' => 1734922979,
+        'webmention_count' => 0,
         ),
         'oncontextmenu' => 
         array (
@@ -1183,6 +1370,8 @@ class Nav
         array (
         0 => 'javascript',
         ),
+        'webmention_last_checked' => 1734922980,
+        'webmention_count' => 2,
         ),
         'onunload-window-open-evil' => 
         array (
@@ -1196,6 +1385,8 @@ class Nav
         0 => 'javascript',
         1 => 'ux',
         ),
+        'webmention_last_checked' => 1734922980,
+        'webmention_count' => 1,
         ),
         'open-graph-protocol-tools' => 
         array (
@@ -1209,6 +1400,8 @@ class Nav
         0 => 'facebook',
         1 => 'opengraph',
         ),
+        'webmention_last_checked' => 1734922980,
+        'webmention_count' => 0,
         ),
         'outbound-link-confirmation' => 
         array (
@@ -1221,6 +1414,8 @@ class Nav
         array (
         0 => 'javascript',
         ),
+        'webmention_last_checked' => 1734922980,
+        'webmention_count' => 1,
         ),
         'password-maker' => 
         array (
@@ -1233,6 +1428,8 @@ class Nav
         array (
         0 => 'php',
         ),
+        'webmention_last_checked' => 1734922981,
+        'webmention_count' => 0,
         ),
         'php-all-websafe' => 
         array (
@@ -1245,6 +1442,8 @@ class Nav
         array (
         0 => 'php',
         ),
+        'webmention_last_checked' => 1734922981,
+        'webmention_count' => 0,
         ),
         'php-php3-mod-rewrite' => 
         array (
@@ -1257,6 +1456,8 @@ class Nav
         array (
         0 => 'php',
         ),
+        'webmention_last_checked' => 1734922981,
+        'webmention_count' => 1,
         ),
         'pinkvalidation' => 
         array (
@@ -1270,6 +1471,8 @@ class Nav
         0 => 'css',
         1 => 'javascript',
         ),
+        'webmention_last_checked' => 1734922981,
+        'webmention_count' => 3,
         ),
         'plus-plus-a-string-php' => 
         array (
@@ -1282,6 +1485,8 @@ class Nav
         array (
         0 => 'php',
         ),
+        'webmention_last_checked' => 1734922982,
+        'webmention_count' => 0,
         ),
         'quick-jquery-overlay' => 
         array (
@@ -1294,6 +1499,8 @@ class Nav
         array (
         0 => 'javascript',
         ),
+        'webmention_last_checked' => 1734922982,
+        'webmention_count' => 0,
         ),
         'quote-to-dl' => 
         array (
@@ -1308,6 +1515,8 @@ class Nav
         1 => 'javascript',
         2 => 'tools',
         ),
+        'webmention_last_checked' => 1734922982,
+        'webmention_count' => 0,
         ),
         'random-cells' => 
         array (
@@ -1322,6 +1531,8 @@ class Nav
         1 => 'javascript',
         2 => 'toys',
         ),
+        'webmention_last_checked' => 1734922982,
+        'webmention_count' => 0,
         ),
         'random-content' => 
         array (
@@ -1334,6 +1545,8 @@ class Nav
         array (
         0 => 'php',
         ),
+        'webmention_last_checked' => 1734922983,
+        'webmention_count' => 0,
         ),
         'random-string-in-sql' => 
         array (
@@ -1346,6 +1559,8 @@ class Nav
         array (
         0 => 'sql',
         ),
+        'webmention_last_checked' => 1734922983,
+        'webmention_count' => 0,
         ),
         'recursive-iframe' => 
         array (
@@ -1358,6 +1573,8 @@ class Nav
         array (
         0 => 'html',
         ),
+        'webmention_last_checked' => 1734922983,
+        'webmention_count' => 0,
         ),
         'response-end-is-like-exit-in-php' => 
         array (
@@ -1371,6 +1588,8 @@ class Nav
         0 => 'asp',
         1 => 'php',
         ),
+        'webmention_last_checked' => 1734922983,
+        'webmention_count' => 0,
         ),
         'reverse-string-nums' => 
         array (
@@ -1383,6 +1602,8 @@ class Nav
         array (
         0 => 'php',
         ),
+        'webmention_last_checked' => 1734922984,
+        'webmention_count' => 0,
         ),
         'robots-nocontent' => 
         array (
@@ -1395,6 +1616,24 @@ class Nav
         array (
         0 => 'html',
         ),
+        'webmention_last_checked' => 1734922984,
+        'webmention_count' => 0,
+        ),
+        'root-color-properties-editor' => 
+        array (
+        'slug' => 'root-color-properties-editor',
+        'canonical_url' => 'https://lab.artlung.com/root-color-properties-editor/',
+        'year' => 2024,
+        'title' => ':root Color Properties Editor (Bookmarklet)',
+        'tags' => 
+        array (
+        0 => 'css',
+        1 => 'javascript',
+        ),
+        'og-image-date' => '2024-12-21 05:09:27',
+        'atom_feed_publish_date' => '2024-12-20 21:09:27',
+        'webmention_last_checked' => 1734922984,
+        'webmention_count' => 0,
         ),
         'rosetta' => 
         array (
@@ -1407,6 +1646,8 @@ class Nav
         array (
         0 => 'javascript',
         ),
+        'webmention_last_checked' => 1734922984,
+        'webmention_count' => 1,
         ),
         'rounded-mozilla' => 
         array (
@@ -1419,6 +1660,8 @@ class Nav
         array (
         0 => 'css',
         ),
+        'webmention_last_checked' => 1734922985,
+        'webmention_count' => 2,
         ),
         'rtf' => 
         array (
@@ -1431,6 +1674,8 @@ class Nav
         array (
         0 => 'php',
         ),
+        'webmention_last_checked' => 1734922985,
+        'webmention_count' => 1,
         ),
         'screen-resolutions' => 
         array (
@@ -1443,6 +1688,8 @@ class Nav
         array (
         0 => 'mobile',
         ),
+        'webmention_last_checked' => 1734922985,
+        'webmention_count' => 0,
         ),
         'self-refresh' => 
         array (
@@ -1455,6 +1702,8 @@ class Nav
         array (
         0 => 'javascript',
         ),
+        'webmention_last_checked' => 1734922985,
+        'webmention_count' => 0,
         ),
         'server-side-image-map' => 
         array (
@@ -1468,6 +1717,8 @@ class Nav
         0 => 'apache',
         1 => 'html',
         ),
+        'webmention_last_checked' => 1734922985,
+        'webmention_count' => 0,
         ),
         'single-pixel-gif' => 
         array (
@@ -1480,6 +1731,8 @@ class Nav
         array (
         0 => 'html',
         ),
+        'webmention_last_checked' => 1734922986,
+        'webmention_count' => 0,
         ),
         'six-finger-ai-hand' => 
         array (
@@ -1492,6 +1745,8 @@ class Nav
         array (
         0 => 'silly',
         ),
+        'webmention_last_checked' => 1734922986,
+        'webmention_count' => 0,
         ),
         'slideshow' => 
         array (
@@ -1504,6 +1759,8 @@ class Nav
         array (
         0 => 'javascript',
         ),
+        'webmention_last_checked' => 1734922986,
+        'webmention_count' => 0,
         ),
         'slideshow-img' => 
         array (
@@ -1516,6 +1773,8 @@ class Nav
         array (
         0 => 'javascript',
         ),
+        'webmention_last_checked' => 1734922986,
+        'webmention_count' => 0,
         ),
         'slideshow-plus' => 
         array (
@@ -1528,6 +1787,8 @@ class Nav
         array (
         0 => 'javascript',
         ),
+        'webmention_last_checked' => 1734922987,
+        'webmention_count' => 0,
         ),
         'speech-synthesis' => 
         array (
@@ -1540,6 +1801,8 @@ class Nav
         array (
         0 => 'javascript',
         ),
+        'webmention_last_checked' => 1734922987,
+        'webmention_count' => 0,
         ),
         'spoiler' => 
         array (
@@ -1553,6 +1816,8 @@ class Nav
         0 => 'css',
         1 => 'html',
         ),
+        'webmention_last_checked' => 1734922987,
+        'webmention_count' => 0,
         ),
         'sql-server-collations' => 
         array (
@@ -1565,6 +1830,8 @@ class Nav
         array (
         0 => 'sql',
         ),
+        'webmention_last_checked' => 1734922987,
+        'webmention_count' => 0,
         ),
         't-paamayim-nekudotayim' => 
         array (
@@ -1577,6 +1844,8 @@ class Nav
         array (
         0 => 'php',
         ),
+        'webmention_last_checked' => 1734922987,
+        'webmention_count' => 0,
         ),
         'the-problem-with-blur' => 
         array (
@@ -1590,6 +1859,8 @@ class Nav
         0 => 'a11y',
         1 => 'css',
         ),
+        'webmention_last_checked' => 1734922988,
+        'webmention_count' => 1,
         ),
         'three-char-combos' => 
         array (
@@ -1602,6 +1873,8 @@ class Nav
         array (
         0 => 'php',
         ),
+        'webmention_last_checked' => 1734922988,
+        'webmention_count' => 0,
         ),
         'tips-2001' => 
         array (
@@ -1614,6 +1887,8 @@ class Nav
         array (
         0 => 'html',
         ),
+        'webmention_last_checked' => 1734922989,
+        'webmention_count' => 1,
         ),
         'tr-onmouseover-style' => 
         array (
@@ -1626,6 +1901,8 @@ class Nav
         array (
         0 => 'javascript',
         ),
+        'webmention_last_checked' => 1734922989,
+        'webmention_count' => 2,
         ),
         'undocumented-linklint' => 
         array (
@@ -1638,6 +1915,8 @@ class Nav
         array (
         0 => 'javascript',
         ),
+        'webmention_last_checked' => 1734922990,
+        'webmention_count' => 1,
         ),
         'unix-batch-file-rename' => 
         array (
@@ -1650,6 +1929,8 @@ class Nav
         array (
         0 => 'unix',
         ),
+        'webmention_last_checked' => 1734922990,
+        'webmention_count' => 1,
         ),
         'upload' => 
         array (
@@ -1663,6 +1944,8 @@ class Nav
         0 => 'javascript',
         1 => 'php',
         ),
+        'webmention_last_checked' => 1734922990,
+        'webmention_count' => 0,
         ),
         'url-compare' => 
         array (
@@ -1676,6 +1959,8 @@ class Nav
         0 => 'http',
         1 => 'tools',
         ),
+        'webmention_last_checked' => 1734922990,
+        'webmention_count' => 0,
         ),
         'urlencode' => 
         array (
@@ -1688,6 +1973,8 @@ class Nav
         array (
         0 => 'javascript',
         ),
+        'webmention_last_checked' => 1734922991,
+        'webmention_count' => 1,
         ),
         'user-preference-for-new-windows' => 
         array (
@@ -1702,6 +1989,8 @@ class Nav
         1 => 'php',
         2 => 'ux',
         ),
+        'webmention_last_checked' => 1734922991,
+        'webmention_count' => 1,
         ),
         'vaguely-interesting-layout' => 
         array (
@@ -1715,6 +2004,8 @@ class Nav
         0 => 'css',
         1 => 'design',
         ),
+        'webmention_last_checked' => 1734922991,
+        'webmention_count' => 0,
         ),
         'validate-checkbox' => 
         array (
@@ -1727,6 +2018,8 @@ class Nav
         array (
         0 => 'javascript',
         ),
+        'webmention_last_checked' => 1734922991,
+        'webmention_count' => 0,
         ),
         'validate-image' => 
         array (
@@ -1739,6 +2032,8 @@ class Nav
         array (
         0 => 'javascript',
         ),
+        'webmention_last_checked' => 1734922991,
+        'webmention_count' => 0,
         ),
         'vbscript-always-elseif-never-else-if' => 
         array (
@@ -1751,6 +2046,8 @@ class Nav
         array (
         0 => 'vbscript',
         ),
+        'webmention_last_checked' => 1734922992,
+        'webmention_count' => 0,
         ),
         'w3c-with-and-without-css' => 
         array (
@@ -1763,6 +2060,24 @@ class Nav
         array (
         0 => 'css',
         ),
+        'webmention_last_checked' => 1734922992,
+        'webmention_count' => 1,
+        ),
+        'webmentions' => 
+        array (
+        'title' => 'Webmentions',
+        'slug' => 'webmentions',
+        'canonical_url' => 'https://lab.artlung.com/webmentions/',
+        'year' => 2024,
+        'tags' => 
+        array (
+        0 => 'curl',
+        1 => 'indieweb',
+        ),
+        'og-image-date' => '2024-12-18 17:51:46',
+        'atom_feed_publish_date' => '2024-12-18 17:51:46',
+        'webmention_last_checked' => 1734922885,
+        'webmention_count' => 2,
         ),
         'windows-export-file-list' => 
         array (
@@ -1775,6 +2090,8 @@ class Nav
         array (
         0 => 'windows',
         ),
+        'webmention_last_checked' => 1734922992,
+        'webmention_count' => 0,
         ),
         'ws-ftp-password-decoder' => 
         array (
@@ -1787,6 +2104,8 @@ class Nav
         array (
         0 => 'javascript',
         ),
+        'webmention_last_checked' => 1734922992,
+        'webmention_count' => 0,
         ),
         'xml-encode' => 
         array (
@@ -1799,6 +2118,8 @@ class Nav
         array (
         0 => 'php',
         ),
+        'webmention_last_checked' => 1734922993,
+        'webmention_count' => 0,
         ),
         );
         /* END: handled by php generate-nav-value */

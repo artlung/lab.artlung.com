@@ -28,7 +28,7 @@ input {
 
     <p class="date-attribution">Created on 31 Aug 2001; Reformat Oct 2002; Last Edit March 2005</p>
 
-    <h1>Demonstration of oncontextmenu Event Handler</h1>
+    <h1 class="p-name">Demonstration of oncontextmenu Event Handler</h1>
 
     <p>Works in: IE5+ Windows; Netscape 6.1/Win; Netscape 6.2/Linux; Safari 1.2/Mac; (Mozilla) Firefox 0.8 to
         10.1/Mac+Win. <a href="/feedback/">Send me a note if you find it works in something else!</a></p>

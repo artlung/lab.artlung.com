@@ -9,7 +9,7 @@ Speech Synthesis API
 
 ?>
 
-    <h1>window.SpeechSynthesis</h1>
+    <h1 class="p-name">window.SpeechSynthesis</h1>
 
     <p>
         Your browser probably has speech synthesis built in. In 1980 this was an <a

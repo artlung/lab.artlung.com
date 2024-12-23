@@ -6,7 +6,7 @@ $lab->printHeader('What to do with a directory of images that are letters?');
 
 ?>
     <p class="date-attribution">Directory is from 1999, Added code December 2024</p>
-    <h1>What to do with a directory of images that are letters?</h1>
+    <h1 class="p-name">What to do with a directory of images that are letters?</h1>
 
     <p>I'm not sure when I added the directory of letters on this site. But who doesn't love a little thing to type into
         and see something come out of it? I know I do. It reminds me of a Hangman game I made a long time ago, but I'm

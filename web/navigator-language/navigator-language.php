@@ -9,7 +9,7 @@ Navigator Language
 
 ?>
 
-    <h1>JavaScript: navigator.language</h1>
+    <h1 class="p-name">JavaScript: navigator.language</h1>
 
 
     <h2>Code</h2>

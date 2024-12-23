@@ -35,3 +35,5 @@ Redirect permanent /validate_checkbox                  https://lab.artlung.com/v
 Redirect permanent /validate_image                     https://lab.artlung.com/validate-image
 Redirect permanent /windows_export_file_list           https://lab.artlung.com/windows-export-file-list
 Redirect permanent /ws_ftp_password_decoder            https://lab.artlung.com/ws-ftp-password-decoder
+Redirect permanent /php/echo_http_host                 https://lab.artlung.com/echo-http-host
+Redirect permanent /sencha/                            https://www.sencha.com/?s=

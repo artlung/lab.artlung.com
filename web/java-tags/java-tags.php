@@ -1,12 +1,17 @@
 <?php
 require_once __DIR__ . '/../../loader.php';
 $lab = new ArtlungLab\Lab();
-$lab->printHeader('HTML Tags for Java Applets, circa 1999');
+$actual_url = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+$lab->printHeader(
+    'HTML Tags for Java Applets, circa 1999', [
+        'canonical' => $actual_url,
+    ]
+);
 
 ?>
 
     <p class="date-attribution">1999</p>
-    <h1>HTML Tags for Java Applets</h1>
+    <h1 class="p-name">HTML Tags for Java Applets</h1>
 
     <p>In 1999, I took a class in Java at Santa Monica College. I was interested at the time in the small variations
         among how The W3C, Sun, Netscape, and Microsoft specified the <code>&lt;APPLET&gt;</code> tag.</p>

@@ -9,7 +9,7 @@ Permutations of characters
 
 ?>
 <p class="date-attribution">Created February 2006</p>
-    <h1>Permutations of a set of characters</h1>
+    <h1 class="p-name">Permutations of a set of characters</h1>
 
     <p>I forget why I did this, but given a set of characters, how many combinations of all those characters are there?
         This is code to figure it out for 3 character positions.</p>

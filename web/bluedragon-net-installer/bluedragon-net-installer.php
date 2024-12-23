@@ -5,7 +5,7 @@ $lab->printHeader('Screenshots of an installation of BlueDragon 7.1 for the Micr
 
 ?>
     <p class="date-attribution">Created November 17, 2010</p>
-    <h1>
+    <h1 class="p-name">
         Screenshots of an installation of BlueDragon 7.1 for the Microsoft .NET Framework
     </h1>
 

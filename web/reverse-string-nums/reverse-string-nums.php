@@ -10,7 +10,7 @@ Reverse a string, but only the digits
 ?>
     <p class="date-attribution">2001</p>
 
-    <h1>Reverse a string, but only the digits</h1>
+    <h1 class="p-name">Reverse a string, but only the digits</h1>
 
     <h2>Question:</h2>
 

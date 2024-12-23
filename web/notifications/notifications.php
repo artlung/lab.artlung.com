@@ -24,7 +24,7 @@ $lab->printHeader('Webkit Notifications');
         }
     </style>
 
-<h1>window.webkitNotifications</h1>
+<h1 class="p-name">window.webkitNotifications</h1>
 
 <script>
     // check for notifications support
