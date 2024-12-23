@@ -526,7 +526,18 @@ form#theme-color-form {
 [data-disqus-url] {
   display: none;
 }
+.webmention-count {
+  display: none;
+}
+
 body.comment-count-visible [data-disqus-url] {
+  display: block;
+  width: 100%;
+  text-align: end;
+  opacity: 0.6;
+  font-size: smaller;
+}
+body.comment-count-visible .webmention-count {
   display: block;
   width: 100%;
   text-align: end;
@@ -567,6 +578,42 @@ body.comment-count-visible [data-disqus-url] {
     }
   }
 }
+
+.webmention-display {
+  background: color-mix(in srgb, var(--theme-color-modifier), white 80%);
+  padding: 1rem 0 1rem;
+  ol.webmentions {
+    display: grid;
+    margin: 0;
+    padding: 0 0 0 1rem;
+    li {
+      margin: 0;
+      padding: 0;
+      display: grid;
+      grid-template-columns: min-content 1fr;
+      gap: 1ch;
+      justify-content: start;
+      align-items: center;
+      img {
+        max-height: 1.5rem;
+        aspect-ratio: 1;
+        border-radius: 50%;
+      }
+      a {
+        // break at any point
+        word-wrap: break-word;
+      }
+      .fake-photo {
+        height: 1.5rem;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        display: inline-block;
+        background: var(--theme-color);
+      }
+    }
+  }
+}
+
 
 
 

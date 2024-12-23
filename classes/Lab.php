@@ -170,7 +170,16 @@ class Lab
                 $styleString = '';
             }
             $tagString = implode(' ', $navItem['tags']);
+
+            $webmention_count_from_yaml = $navItem['webmention_count'] ?? 0;
+
             $span = sprintf('<span class="disqus-comment-count" data-disqus-url="https://lab.artlung.com%s"></span>', $url);
+
+            if ($webmention_count_from_yaml) {
+                $webmention_string = $webmention_count_from_yaml;
+                $webmention_string .= $webmention_count_from_yaml == 1 ? ' webmention' : ' webmentions';
+                $span .= sprintf('<span class="webmention-count">%s</span>', $webmention_string);
+            }
             // TODO add no inspection here
             $anchor = sprintf('<a href="%s"><span>%s</span> %s</a>', $url, $navItem['title'], $span);
             $li = sprintf('<li style="%s" data-year="%s" data-tags="%s">%s</li>', $styleString, $navItem['year'], $tagString, $anchor);
@@ -294,6 +303,7 @@ HTML;
         if ($options['comments'] ?? true) {
             $comments_code = '';
             $comments_code .= $this->getWebmentionForm();
+            $comments_code .= $this->getWebmentionDisplayCode();
             $comments_code .= $this->_getCommentsCode();
 
         } else {
@@ -438,5 +448,64 @@ HTML;
 </div>
 HTML;
     }
+
+    public function getWebmentionDisplayCode()
+    {
+        $webmentions = $this->_getWebmentions();
+        if (empty($webmentions)) {
+            return '';
+        }
+        usort($webmentions, function($a, $b) {
+            $a_date = $a['wm-received'] ?? $a['published'];
+            $b_date = $b['wm-received'] ?? $b['published'];
+            return strtotime($b_date) <=> strtotime($a_date);
+        });
+
+        $webmention_html = '';
+        $webmention_html .= '<ol class="webmentions">';
+        foreach ($webmentions as $webmention) {
+            $webmention_html .= '<li>';
+            if ($webmention['author']['photo']) {
+                $webmention_html .= '<span><img src="' . $webmention['author']['photo'] . '" alt="' . $webmention['author']['name'] . '"></span>';
+            } else {
+                $webmention_html .= '<span class="fake-photo"></span>';
+            }
+            $webmention_html .= '<span>mention from ';
+            if ($webmention['author']['name']) {
+                $webmention_html .= $webmention['author']['name'];
+                $webmention_html .= ' at ';
+            }
+            $url_minus_protocol = preg_replace('/^https?:\/\//', '', $webmention['url']);
+
+            $date_to_use = strtotime($webmention['published'] ?? $webmention['wm-received']);
+
+            $webmention_html .= '<a href="' . $webmention['url'] . '">' . $url_minus_protocol . '</a>';
+            $webmention_html .= ' on (' . date('F j, Y', $date_to_use) . ')';
+            $webmention_html .= '</span>';
+            $webmention_html .= '</li>';
+        }
+        $webmention_html .= '</ol>';
+
+        return <<<HTML
+<div class="webmention-display">
+{$webmention_html}
+</div>    
+HTML;
+
+    }
+
+    private function _getWebmentions()
+    {
+        $path = $this->currentPageServerDirectoryPath . 'webmention_data/' . $this->directoryName . '.json';
+        if (is_file($path)) {
+            $webmentions = file_get_contents($path);
+            return json_decode($webmentions, true);
+        } else {
+            return [];
+        }
+
+
+    }
+
 
 }
