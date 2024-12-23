@@ -449,17 +449,24 @@ HTML;
 HTML;
     }
 
-    public function getWebmentionDisplayCode()
+    /**
+     * Get the webmention display code
+     *
+     * @return string
+     */
+    public function getWebmentionDisplayCode(): string
     {
         $webmentions = $this->_getWebmentions();
         if (empty($webmentions)) {
             return '';
         }
-        usort($webmentions, function($a, $b) {
-            $a_date = $a['wm-received'] ?? $a['published'];
-            $b_date = $b['wm-received'] ?? $b['published'];
-            return strtotime($b_date) <=> strtotime($a_date);
-        });
+        usort(
+            $webmentions, function ($a, $b) {
+                $a_date = $a['wm-received'] ?? $a['published'];
+                $b_date = $b['wm-received'] ?? $b['published'];
+                return strtotime($b_date) <=> strtotime($a_date);
+            }
+        );
 
         $webmention_html = '';
         $webmention_html .= '<ol class="webmentions">';
@@ -494,7 +501,12 @@ HTML;
 
     }
 
-    private function _getWebmentions()
+    /**
+     * Get the webmentions
+     *
+     * @return array
+     */
+    private function _getWebmentions(): array
     {
         $path = $this->currentPageServerDirectoryPath . 'webmention_data/' . $this->directoryName . '.json';
         if (is_file($path)) {
