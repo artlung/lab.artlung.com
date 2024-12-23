@@ -16,6 +16,9 @@ namespace ArtlungLab;
 class Mention
 {
     /**
+     * Catch-all for the decoded json data, see unit tests to  see what data is always there
+     * As new mentions come in need to make sure these always work
+     *
      * @var array{
      *     type: string,
      *     author: string,
@@ -33,7 +36,7 @@ class Mention
      *     rels: string
      * }
      */
-    private $data;
+    private $_data;
     //    type, author, url, published, wm-received, wm-id, wm-source, wm-target, wm-protocol, content, mention-of, wm-property, wm-private, rels
     /**
      * Mention constructor.
@@ -42,36 +45,66 @@ class Mention
      */
     public function __construct($data)
     {
-        $this->data = $data;
+        $this->_data = $data;
     }
+    /**
+     * Get the data
+     *
+     * @return array
+     */
     public function getData()
     {
-        return $this->data;
+        return $this->_data;
     }
 
+    /**
+     * Get the photo of the author
+     *
+     * @return string
+     */
     public function getAuthorPhoto()
     {
-        return $this->data['author']['photo'] ?? '';
+        return $this->_data['author']['photo'] ?? '';
     }
 
+    /**
+     * Get the name of the author
+     *
+     * @return string
+     */
     public function getAuthorName()
     {
-        return $this->data['author']['name'] ?? '';
+        return $this->_data['author']['name'] ?? '';
     }
 
+    /**
+     * Get the URL of the mention
+     *
+     * @return string
+     */
     public function getUrl()
     {
-        return $this->data['url'] ?? '';
+        return $this->_data['url'] ?? '';
     }
 
+    /**
+     * Get the int of the wm-received date
+     *
+     * @return string
+     */
     public function getWmReceived()
     {
-        return $this->data['wm-received'] ?? '';
+        return $this->_data['wm-received'] ?? '';
     }
 
+    /**
+     * Get the int of the published date
+     *
+     * @return string
+     */
     public function getPublished()
     {
-        return $this->data['published'] ?? '';
+        return $this->_data['published'] ?? '';
     }
 
 
