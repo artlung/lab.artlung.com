@@ -457,36 +457,25 @@ HTML;
     public function getWebmentionDisplayCode(): string
     {
         $webmentions = $this->_getWebmentions();
-        if (empty($webmentions)) {
-            return '';
-        }
-        usort(
-            $webmentions, function ($a, $b) {
-                $a_date = $a['wm-received'] ?? $a['published'];
-                $b_date = $b['wm-received'] ?? $b['published'];
-                return strtotime($b_date) <=> strtotime($a_date);
-            }
-        );
-
         $webmention_html = '';
         $webmention_html .= '<ol class="webmentions">';
-        foreach ($webmentions as $webmention) {
+        foreach ($webmentions as $mention) {
             $webmention_html .= '<li>';
-            if ($webmention['author']['photo']) {
-                $webmention_html .= '<span><img src="' . $webmention['author']['photo'] . '" alt="' . $webmention['author']['name'] . '"></span>';
+            if ($mention->getAuthorPhoto()) {
+                $webmention_html .= '<span><img src="' . $mention->getAuthorPhoto() . '" alt="' . $mention->getAuthorName() . '"></span>';
             } else {
                 $webmention_html .= '<span class="fake-photo"></span>';
             }
             $webmention_html .= '<span>mention from ';
-            if ($webmention['author']['name']) {
-                $webmention_html .= $webmention['author']['name'];
+            if ($mention->getAuthorName()) {
+                $webmention_html .= $mention->getAuthorName();
                 $webmention_html .= ' at ';
             }
-            $url_minus_protocol = preg_replace('/^https?:\/\//', '', $webmention['url']);
+            $url_minus_protocol = preg_replace('/^https?:\/\//', '', $mention->getUrl());
 
-            $date_to_use = strtotime($webmention['published'] ?? $webmention['wm-received']);
+            $date_to_use = strtotime($mention->getPublished() ?? $mention->getWmReceived());
 
-            $webmention_html .= '<a href="' . $webmention['url'] . '">' . $url_minus_protocol . '</a>';
+            $webmention_html .= '<a href="' . $mention->getUrl() . '">' . $url_minus_protocol . '</a>';
             $webmention_html .= ' on (' . date('F j, Y', $date_to_use) . ')';
             $webmention_html .= '</span>';
             $webmention_html .= '</li>';
@@ -504,19 +493,11 @@ HTML;
     /**
      * Get the webmentions
      *
-     * @return array
+     * @return array Mention[]
      */
     private function _getWebmentions(): array
     {
-        $path = $this->currentPageServerDirectoryPath . 'webmention_data/' . $this->directoryName . '.json';
-        if (is_file($path)) {
-            $webmentions = file_get_contents($path);
-            return json_decode($webmentions, true);
-        } else {
-            return [];
-        }
-
-
+        return (new Webmentions($this->directoryName))->getMentions();
     }
 
 
