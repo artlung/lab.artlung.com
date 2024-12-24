@@ -27,7 +27,7 @@ class Nav
 
         // yaml is the source of truth, generate this with slugs_and_titles.php do not hand edit this:
 
-        /* START: handled by php generate-nav-value LAST UPDATE 2024-12-23 03:31:52 */
+        /* START: handled by php generate-nav-value LAST UPDATE 2024-12-24 06:40:18 */
         return $slugs_and_titles = array (
         '50states' => 
         array (
@@ -113,8 +113,8 @@ class Nav
         2 => 'jsp',
         3 => 'php',
         ),
-        'webmention_last_checked' => 1734922958,
-        'webmention_count' => 1,
+        'webmention_last_checked' => 1734989345,
+        'webmention_count' => 2,
         ),
         'asp' => 
         array (
@@ -242,6 +242,7 @@ class Nav
         0 => 'css',
         1 => 'html',
         2 => 'rss',
+        3 => 'bookmarklet',
         ),
         'webmention_last_checked' => 1734922961,
         'webmention_count' => 1,
@@ -912,6 +913,20 @@ class Nav
         'webmention_last_checked' => 1734922972,
         'webmention_count' => 1,
         ),
+        'home' => 
+        array (
+        'tags' => 
+        array (
+        0 => 'home',
+        ),
+        'slug' => 'home',
+        'canonical_url' => 'https://lab.artlung.com/',
+        'year' => 2024,
+        'title' => 'The Lab',
+        'webmention_last_checked' => 1734989686,
+        'webmention_count' => 20,
+        'og-image-date' => '2024-12-24 06:38:54',
+        ),
         'html-2.0' => 
         array (
         'slug' => 'html-2.0',
@@ -1054,6 +1069,7 @@ class Nav
         'og-image-date' => '2024-12-18 15:40:35',
         'webmention_last_checked' => 1734922974,
         'webmention_count' => 0,
+        'atom_feed_publish_date' => '2024-12-23 20:00:00',
         ),
         'larger-checkbox-with-css' => 
         array (
@@ -1491,16 +1507,17 @@ class Nav
         'quick-jquery-overlay' => 
         array (
         'slug' => 'quick-jquery-overlay',
-        'og-image-date' => '2024-12-17 01:21:10',
-        'year' => 2018,
+        'year' => 2024,
         'canonical_url' => 'https://lab.artlung.com/quick-jquery-overlay/',
-        'title' => 'Quick jQuery Overlay',
+        'title' => 'Quick Overlay',
         'tags' => 
         array (
         0 => 'javascript',
+        1 => 'bookmarklet',
         ),
         'webmention_last_checked' => 1734922982,
         'webmention_count' => 0,
+        'og-image-date' => '2024-12-24 06:38:54',
         ),
         'quote-to-dl' => 
         array (
@@ -1629,6 +1646,7 @@ class Nav
         array (
         0 => 'css',
         1 => 'javascript',
+        2 => 'bookmarklet',
         ),
         'og-image-date' => '2024-12-21 05:09:27',
         'atom_feed_publish_date' => '2024-12-20 21:09:27',
