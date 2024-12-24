@@ -18,8 +18,12 @@ $lab->printHeader(
 
     // as bookmarklet
 
+try {
     $bookmarklet = 'javascript:' . \ArtlungLab\Bookmarklet::javascriptToBookmarklet($js);
-    printf('<p>The <a href="%s">Quick Overlay</a> bookmarklet</p>', $bookmarklet);
+} catch (Exception $e) {
+    $bookmarklet = 'Error: ' . $e->getMessage();
+}
+printf('<p>The <a href="%s" class="bookmarklet">Quick Overlay</a> bookmarklet</p>', $bookmarklet);
 ?>
     <h2>Why?</h2>
 

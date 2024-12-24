@@ -16,6 +16,7 @@ foreach ($pages as $slug => $metadata) {
     //     --wait 4000 can wait 4 seconds, as with zac-stl
     $yaml_file_path = "web/$slug/$slug.yaml";
     $wait_time = false;
+    $shot_scraper_extra_params = '';
     if (is_file($yaml_file_path)) {
         $yaml = file_get_contents($yaml_file_path);
         $yaml_data = Spyc::YAMLLoad($yaml);
@@ -34,15 +35,18 @@ foreach ($pages as $slug => $metadata) {
                 continue;
             }
         }
+        if (isset($yaml_data['shot_scraper_extra_params'])) {
+            $shot_scraper_extra_params = $yaml_data['shot_scraper_extra_params'];
+        }
 
 
 
     }
 
     if (!$wait_time) {
-        $commands[] = "shot-scraper $domain/$slug/  --width 1200 --height 630 --quality 80 -o web/$slug/og-$slug.jpg";
+        $commands[] = "shot-scraper $domain/$slug/  $shot_scraper_extra_params --width 1200 --height 630 --quality 80 -o web/$slug/og-$slug.jpg";
     } else {
-        $commands[] = "shot-scraper $domain/$slug/  --width 1200 --height 630 --quality 80 --wait $wait_time -o web/$slug/og-$slug.jpg";
+        $commands[] = "shot-scraper $domain/$slug/  $shot_scraper_extra_params --width 1200 --height 630 --quality 80 --wait $wait_time -o web/$slug/og-$slug.jpg";
     }
 
     if (is_file($yaml_file_path)) {

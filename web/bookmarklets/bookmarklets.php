@@ -33,6 +33,7 @@ $lab->printHeader('Bookmarklets, Miscellaneous');
     <p>
         <?php ob_start(); ?><a href="javascript:var%20i=0;if(document.styleSheets.length%3E0){cs=!document.styleSheets[0].disabled;for(i=0;i%3Cdocument.styleSheets.length;i++)%20document.styleSheets[i].disabled=cs;}void(cs=true);">TogCSS</a><?php
         $code = ob_get_clean();
+        print $code;
         ?>
     </p>
 
@@ -48,6 +49,7 @@ $lab->printHeader('Bookmarklets, Miscellaneous');
     <p>
         <?php ob_start(); ?><a href="javascript:for(i=0;i<document.getElementsByTagName('TABLE').length;i++)void(document.getElementsByTagName('TABLE')[i].border=(document.getElementsByTagName('TABLE')[i].border=='0')?'1':'0');">TogTable</a><?php
         $code = ob_get_clean();
+        print $code;
         ?>
     </p>
 
@@ -62,6 +64,7 @@ $lab->printHeader('Bookmarklets, Miscellaneous');
     <p>
         <?php ob_start(); ?><a href="javascript:els=document.getElementsByTagName('link');feeds='';for(i=0;i<els.length;i++){ty=(els[i].getAttribute('type')||'').toLowerCase();url=els[i].getAttribute('href');if(url&&(ty=='application/rss+xml'||ty=='text/xml'||ty=='text/x-opml')){if(window.confirm('Go to the RSS Feed: '+url+'?')){feeds+=url+',';}}}if(!feeds){window.alert('No subscriptions made');}else{feeds=feeds.substr(0,feeds.length-1);window.location=feeds;}">goToRSSFeed</a><?php
         $code = ob_get_clean();
+        print $code;
         ?>
     </p>
 
