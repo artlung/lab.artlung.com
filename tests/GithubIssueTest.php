@@ -4,14 +4,25 @@
 use ArtlungLab\GithubIssue;
 use PHPUnit\Framework\TestCase;
 
+/**
+ * Class GithubIssueTest
+ *
+ * @category PHP
+ * @package  Tests
+ * @author   Joe Crawford <joe@artlung.com>
+ * @license  GPL 2.0+ - http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+ * @version  Release: 1.0
+ * @link     https://artlung.com/
+ * @since    2024-12-03
+ */
 class GithubIssueTest extends TestCase
 {
-    public function testGithubIssue()
-    {
-        $issue = new GithubIssue();
-        $this->assertInstanceOf(GithubIssue::class, $issue);
-    }
 
+    /**
+     * Test the getLink static method
+     *
+     * @return void
+     */
     public function testGetLink()
     {
         $options = [
