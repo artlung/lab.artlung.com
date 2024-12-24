@@ -13,7 +13,8 @@ $lab->printHeader(':root Color Properties Editor (Bookmarklet)');
     they must include the word "color" in them or have a color hex or rgb value.
 </p>
 
-    <h2>Notes:</h2>
+    <h2>
+        ⚠️ Warnings</h2>
 <ul>
     <li>
         Just because the custom properties are at the <code>:root</code> doesn't mean
@@ -27,9 +28,9 @@ $lab->printHeader(':root Color Properties Editor (Bookmarklet)');
 
     </p>
 
-<p>
-    <strong>Drag the link below to your browser's toolbar...</strong>
-</p>
+<h3>
+    Drag the link below to your browser's toolbar...
+</h3>
 <div style="padding: 1rem;border: 3px double blue;text-align: center;font-size: 2rem;text-wrap: balance">
 
 <?php
@@ -48,13 +49,15 @@ $bookmarklet_javascript = ArtlungLab\Bookmarklet::javascriptToBookmarklet($javas
     </figure>
 
 <hr>
-
-
 <h2>Source Code</h2>
 <?php
 $lab->printCodeBlock($javascript);
 ?>
+<hr>
 
+<h2>What can be done about Chrome?</h2>
+
+<?php $lab->printCodeBlock(file_get_contents('root-color-properties-editor-chrome-workaround.js')); ?>
 
 <?php
 $lab->printFooter(
