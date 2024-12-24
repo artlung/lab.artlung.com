@@ -320,6 +320,15 @@ HTML;
         } else {
             $comments_code = '';
         }
+        $report_issue_url = GithubIssue::getLink(
+            [
+            'title' => 'Issue: ' . $slug,
+            'body' => "Please describe the issue you encountered",
+            'labels' => ['issue', $slug],
+            'url' => $protocol . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']
+            ]
+        );
+
         return <<<HTML
 {$code_output}
 </article>
@@ -327,6 +336,7 @@ HTML;
 <footer>
 	<span>&copy; 1996-{$copyrightYear}</span>
 	<a href="https://github.com/artlung/lab.artlung.com" target="_blank">GitHub</a>
+	<a href="{$report_issue_url}" target="_blank">Report Issue</a>
 	<a href="https://lab.artlung.com/feed.xml" style="color: orange">Feed</a>
     <a href="https://artlung.com/" class="joe" target="_blank">Joe Crawford</a>
 </footer>

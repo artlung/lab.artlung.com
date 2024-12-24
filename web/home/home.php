@@ -23,14 +23,15 @@ $lab->printHeader(
 
         <?php
 
-        $params = [
+        $github_feature_request_url = \ArtlungLab\GithubIssue::getLink(
+            [
             'title' => 'Feature Request: ',
             'body' => 'I visited ArtLung Lab. My suggestion is...',
-            'labels' => 'enhancement'
-        ];
+            'labels' => 'enhancement',
+            'url' => 'https://lab.artlung.com/'
+            ]
+        );
 
-        $github_feature_request_url = 'https://github.com/artlung/lab.artlung.com/issues/new' . '?' .
-            http_build_query($params);
 
         printf(
             '<a href="%s">File an issue</a>',
