@@ -1,0 +1,8 @@
+article#content {
+  display: grid;
+  gap: 1rem;
+  > div {
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.05);
+  }
+}

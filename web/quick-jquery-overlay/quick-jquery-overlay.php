@@ -6,44 +6,42 @@ $lab->printHeader(
 );
 
 ?>
+<p class="date-attribution">December 2024. Original from January 2018</p>
 
-    <p class="date-attribution">Posted January 2018</p>
+    <h1>Quick Overlay</h1>
+    <p><em>
+            Formerly known as Quick jQuery Overlay.
+        </em></p>
 
-    <h1>Quick jQuery Overlay</h1>
+<?php
+    $js = file_get_contents('quick-jquery-overlay-revisited.js');
 
-    <p>Sometimes I have a need to overlay an image over top of an existing website. And very often jQuery is available.
-        And so, here's a little chunk of code that creates an overlay. Might not be useful to you but I end up using it
-        often enough I want it posted somewhere.</p>
+    // as bookmarklet
 
-    <p>Add these in Developer Tools or whatever way you can get to a console for the browser you're developing in.</p>
+    $bookmarklet = 'javascript:' . \ArtlungLab\Bookmarklet::javascriptToBookmarklet($js);
+    printf('<p>The <a href="%s">Quick Overlay</a> bookmarklet</p>', $bookmarklet);
+?>
+    <h2>Why?</h2>
 
-    <p>So.</p>
+    <p>From 2018:</p>
 
+<blockquote>
+        Sometimes I have a need to overlay an image over top of an existing website. And very often jQuery is available.
+        And so, here's a little chunk of code that creates an overlay.
+</blockquote>
 
-    <h2>The Code</h2>
+    <p>Create your own overlay with a <code>backgroundImage</code> of your own along with a background size and you can paste it into developer tools when you're doing development. Adjust the opacity to your liking.</p>
 
-    <pre>
-jQuery('&lt;div /&gt;', {
-    id: 'my-overlay',
-    css: {
-        'width': '100%',
-        'height': '100%',
-        'background-image': 'url(https://via.placeholder.com/600x450/ff000/ffffff)',
-        'background-repeat': 'no-repeat',
-        'background-position': 'top center',
-        'top': '0',
-        'left': '0',
-        'cursor': 'all-scroll',
-        'position': 'fixed',
-        'opacity': '0.5',
-        'z-index': '99999'
-    }
-}).appendTo('body');</pre>
+<p>jQuery is no longer required.</p>
 
-    <h2>Code to remove the overlay</h2>
-    <pre>
-jQuery('#my-overlay').remove()
-</pre>
+<?php
+    printf('<h2>Source</h2>');
+    $lab->printCodeBlock($js);
+?>
+
+<h2>Source (compressed)</h2>
+
+<pre><code><?php print $bookmarklet; ?></code></pre>
 
 <?php
 $lab->printFooter(
