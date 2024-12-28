@@ -118,3 +118,10 @@ div#about-bloggingbot {
   font-size: 2rem;
 }
 
+// when the screen is portrait, make body > header >  h1 font-size 1.5rem
+@media screen and (orientation: portrait) {
+  body > header > h1 {
+    font-size: 1.5rem;
+  }
+}
+

@@ -52,6 +52,7 @@ function changeColors() {
 document.addEventListener('DOMContentLoaded', function () {
     document.getElementsByTagName('h1')[0].addEventListener('mousemove', changeColors);
     document.getElementsByTagName('h1')[0].addEventListener('click', changeColors);
+    document.getElementsByTagName('h1')[0].addEventListener('touchstart', changeColors);
 
     function pushState(itemId) {
         var url = '/bloggingbot/' + itemId;
