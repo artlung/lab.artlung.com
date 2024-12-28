@@ -18,7 +18,7 @@ function foregroundColorFromWebColor(color) {
 }
 
 function loadSentence(itemId) {
-    var url = 'bloggingbox.ajax.php?id=' + itemId + '&format=json';
+    var url = 'bloggingbot.ajax.php?id=' + itemId + '&format=json';
 
     fetch(url)
         .then(response => response.json())
@@ -29,6 +29,7 @@ function loadSentence(itemId) {
                 var canonical = document.querySelector('link[rel="canonical"]');
                 if (canonical) {
                     canonical.href = 'https://lab.artlung.com/bloggingbot/' + data.itemId;
+                    document.querySelector('#share').href = 'https://shareopenly.org/share/?url=' + encodeURIComponent(canonical.href) + '&text=' + encodeURIComponent(data.sentence);
                 }
             }
         );

@@ -1,8 +1,6 @@
 # account for urls
 # /bloggingbot/0
 # /bloggingbot/1
-# /bloggingbot/2
-# /bloggingbot/30
 # /bloggingbot/9999
 RewriteEngine On
 RewriteRule ^([0-9]+)$ bloggingbot.php?bloggingbot=$1 [L]

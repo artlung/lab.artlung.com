@@ -15,8 +15,8 @@ if (isset($_GET['bloggingbot'])) {
 
 $canonical_url = "https://lab.artlung.com/bloggingbot/$rand";
 $og_image_url = "https://files.artlung.com/lab.artlung.com/bloggingbot/og-bloggingbot-$rand.jpg";
-$og_description = "BloggingBot (2018) is a bot based on 17 years of blog posts on artlung.com."
-
+$og_description = "BloggingBot (2018) is a bot based on 17 years of blog posts from artlung.com.";
+$share_url = 'https://shareopenly.org/share/?url=' . urlencode($canonical_url) . '&text=' . urlencode($line);
 
 
 ?>
@@ -61,7 +61,12 @@ $og_description = "BloggingBot (2018) is a bot based on 17 years of blog posts o
             The blog post:
             <a href="https://artlung.com/blog/2018/02/23/markov-chains-are-hilarious/" target="_blank">Markov Chains are Hilarious!</a>
         </p>
+
+        <p>The             <a href="source.php" target="_blank">source code</a>
+        </p>
+
         <p>
+            <a href="<?php print $share_url ?>" id="share" target="_blank">Share this</a>
         </p>
     </div>
 </section>

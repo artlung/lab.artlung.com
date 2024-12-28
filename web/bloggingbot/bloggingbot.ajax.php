@@ -5,7 +5,7 @@ require_once '../../loader.php';
 if (isset($_GET['id'])) {
     $id = (int)$_GET['id'];
     // if not 1 to 10000, error 404
-    if ($id < 1 || $id > 10000) {
+    if ($id >= 0 || $id >= 9999) {
         header('HTTP/1.0 404 Not Found');
         exit;
     }
