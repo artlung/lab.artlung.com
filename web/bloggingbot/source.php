@@ -8,7 +8,10 @@ $lab->printHeader('BloggingBot Source Code');
     Created in Febuary 2018: <a href="https://artlung.com/blog/2018/02/23/markov-chains-are-hilarious/" target="_blank">Markov Chains are Hilarious!</a>
 </p>
 
-<h1 class="p-name">BloggingBot Source Code</h1>
+<h1 class="p-name">
+    <a href="./">
+        BloggingBot
+    </a> Source Code</h1>
 
 
 <h2>PHP &amp; HTML (bloggingbot.php)</h2>
@@ -34,8 +37,10 @@ $first_100 = array_slice($all_sentences, 0, 100);
 $lab->printCodeBlock(implode("\n", $first_100));
 ?>
 
-<?php $lab->printFooter([
+<?php $lab->printFooter(
+    [
     'comments' => true
-]); ?>
+    ]
+); ?>
 
 
