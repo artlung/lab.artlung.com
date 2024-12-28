@@ -2,12 +2,15 @@
   --bgColor: #242424;
   --color: #fff;
 }
+
 html, body {
   height: 100%;
 }
+
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
+
 body {
   background: var(--bgColor);
   color: var(--color);
@@ -20,10 +23,12 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr min-content min-content;
   font-size: 1rem;
+
   > * {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     a.btn, button {
       color: #fff;
       text-decoration: none;
@@ -33,17 +38,21 @@ body {
       background: transparent;
       font-size: 1rem;
       cursor: pointer;
+
       &:has(span + span + span) {
         display: flex;
         justify-content: center;
         align-items: end;
         line-height: 1;
+
         span {
           line-height: 1;
           font-size: 1.3rem;
+
           &:first-child {
             font-size: 0.7rem;
           }
+
           &:last-child {
             font-size: 1.7rem;
           }
@@ -51,6 +60,7 @@ body {
       }
     }
   }
+
   header {
     h1 {
       margin: 0;
@@ -62,19 +72,21 @@ body {
     }
 
   }
+
   section {
     background: linear-gradient(
                     #000 10%,
                     #222 0
     );
   }
+
   nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: linear-gradient(
-      #000 10%,
-      #222 0
+                    #000 10%,
+                    #222 0
     );
   }
 }
@@ -87,14 +99,18 @@ div#about-bloggingbot {
   border: 1rem solid var(--color);
   padding: 1rem;
   font-size: 1.3rem;
+  transition: 0.8s all;
+
   a {
     display: inline;
     color: var(--color);
     text-decoration: underline;
     text-decoration-style: dotted;
   }
+
   &::backdrop {
-    background: color-mix(in srgb, var(--bgColor) 80%, #0000);
+    transition: 0.8s all;
+    background: color-mix(in srgb, var(--color) 80%, #0000);
   }
 }
 

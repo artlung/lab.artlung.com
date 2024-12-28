@@ -29,6 +29,9 @@ $lab->printHeader('BloggingBot Source Code');
 <h2>PHP (Sitemap XML)</h2>
 <?php $lab->printCodeBlock(file_get_contents('sitemap.xml.php')); ?>
 
+<h2>SCSS</h2>
+<?php $lab->printCodeBlock(file_get_contents('bloggingbot.scss')); ?>
+
 <h2>Bloggingbot Sentences <em>first 100 lines of 10,000 shown</em>, generated using <a href="https://github.com/jsvine/markovify">jsvine/markovify</a></h2>
 
 <?php
