@@ -54,7 +54,7 @@ class WebmentionIoGetter
      *
      * @return int
      */
-    public static function getAndStashWebmentions($slug, $url): bool
+    public static function getAndStashWebmentions(string $slug, string $url): bool
     {
         $webmentions = self::getWebmentionsForPage($url);
         $webmentions_json = json_encode($webmentions);

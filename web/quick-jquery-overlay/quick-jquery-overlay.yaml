@@ -1,11 +1,14 @@
 ---
 slug: quick-jquery-overlay
-og-image-date: 2024-12-17 01:21:10
-year: 2018
+year: 2024
 canonical_url: >
   https://lab.artlung.com/quick-jquery-overlay/
-title: Quick jQuery Overlay
+title: Quick Overlay
 tags:
   - javascript
+  - bookmarklet
 webmention_last_checked: 1734922982
 webmention_count: 0
+shot_scraper_extra_params: |
+  --javascript "document.querySelector('.bookmarklet').click();"
+og-image-date: 2024-12-24 16:10:11

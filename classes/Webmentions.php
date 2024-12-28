@@ -51,8 +51,8 @@ class Webmentions
         $webmentions = $this->_mentions;
         usort(
             $webmentions, function ($a, $b) {
-                $a_date = $a->getWmReceived() ?? $a->getPublished();
-                $b_date = $b->getWmReceived() ?? $b->getPublished();
+                $a_date = strlen($a->getPublished()) ? $a->getPublished() : $a->getWmReceived();
+                $b_date = strlen($b->getPublished()) ? $b->getPublished() : $b->getWmReceived();
                 return strtotime($b_date) <=> strtotime($a_date);
             }
         );

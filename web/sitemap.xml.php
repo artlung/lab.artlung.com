@@ -4,39 +4,15 @@ use ArtlungLab\SiteMap;
 
 require_once '../loader.php';
 
-$directories = glob('*', GLOB_ONLYDIR);
-
-$urls = [];
-$urls[] = '/';
-
-foreach ($directories as $directory) {
-    $just_slug = str_replace('web/', '', $directory);
-
-    $file = "$directory/$just_slug.php";
-    if (file_exists($file)) {
-        $urls[] = "/$just_slug/";
-    }
+$items = \ArtlungLab\Nav::getMetadata();
+foreach ($items as $slug => $metadata) {
+    $urls[] = $metadata['canonical_url'];
 }
-
 $check_for_subdirectories_in = [];
-
-foreach ($check_for_subdirectories_in as $subdir) {
-    $subdirectories = glob("$subdir/*", GLOB_ONLYDIR);
-    foreach ($subdirectories as $subdirectory) {
-        $just_slug = str_replace("$subdir/", '', $subdirectory);
-        $file = "$subdirectory/$just_slug.php";
-        if (file_exists($file)) {
-            $urls[] = "/$subdir/$just_slug/";
-        }
-    }
-}
-
-
-
-
-
+// TODO create mechanism to spelunk sub pages, e.g. ArtLung-Notes, java_tags
 
 $sm = new SiteMap($urls);
 $sm->setDomain('lab.artlung.com');
+// maybe use og-image-date or webmention_last_checked ?
 $sm->setDefaultFilectime(filectime('index.php'));
 $sm->output();

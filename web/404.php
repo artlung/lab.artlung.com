@@ -34,14 +34,16 @@ $lab->printHeader('404');
     <p>
 <?php
 
-// https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/creating-an-issue#creating-an-issue-from-a-url-query
-$issue_url = "https://github.com/artlung/lab.artlung.com/issues/new" . "?" . http_build_query(
+$issue_url = \ArtlungLab\GithubIssue::getLink(
     [
-        'title' => "404: $requestedUrl",
-        'body' => "I got a 404 error on https://lab.artlung.com$requestedUrl",
-        'labels' => 'bug'
+    'title' => '404: ' . $requestedUrl,
+    'body' => "I got a not found error",
+    'labels' => ['bug', '404'],
+    'url' => 'https://lab.artlung.com' . $requestedUrl
     ]
 );
+
+
 printf(
     'If it persists, please <a href="%s">file an issue on GitHub</a>.',
     $issue_url

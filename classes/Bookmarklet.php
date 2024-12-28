@@ -25,9 +25,10 @@ class Bookmarklet
      *
      * @return string
      */
-    public static function javascriptToBookmarklet($js)
+    public static function javascriptToBookmarklet($js): string
     {
-        return $minifiedCode = rawurlencode(Minifier::minify($js));
+        $minifiedCode = rawurlencode(Minifier::minify($js));
+        return $minifiedCode;
     }
 
 }
