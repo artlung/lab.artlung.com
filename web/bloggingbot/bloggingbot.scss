@@ -1,0 +1,104 @@
+:root {
+  --bgColor: #242424;
+  --color: #fff;
+}
+html, body {
+  height: 100%;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+  background: var(--bgColor);
+  color: var(--color);
+  transition: 0.8s all;
+  font-family: "Helvetica Neue", Helvetica, arial, sans-serif;
+  text-align: start;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr min-content min-content;
+  font-size: 1rem;
+  > * {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a.btn, button {
+      color: #fff;
+      text-decoration: none;
+      display: block;
+      padding: 1rem;
+      border: none;
+      background: transparent;
+      font-size: 1rem;
+      cursor: pointer;
+      &:has(span + span + span) {
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        line-height: 1;
+        span {
+          line-height: 1;
+          font-size: 1.3rem;
+          &:first-child {
+            font-size: 0.7rem;
+          }
+          &:last-child {
+            font-size: 1.7rem;
+          }
+        }
+      }
+    }
+  }
+  header {
+    h1 {
+      margin: 0;
+      text-wrap: balance;
+      max-width: 60ch;
+      font-weight: normal;
+      font-size: 3rem;
+      padding: 1rem;
+    }
+
+  }
+  section {
+    background: linear-gradient(
+                    #000 10%,
+                    #222 0
+    );
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(
+      #000 10%,
+      #222 0
+    );
+  }
+}
+
+
+div#about-bloggingbot {
+  max-width: 60ch;
+  background: var(--bgColor);
+  color: var(--color);
+  border: 1rem solid var(--color);
+  padding: 1rem;
+  font-size: 1.3rem;
+  a {
+    display: inline;
+    color: var(--color);
+    text-decoration: underline;
+    text-decoration-style: dotted;
+  }
+  &::backdrop {
+    background: color-mix(in srgb, var(--bgColor) 80%, #0000);
+  }
+}
+
+#loadRandom {
+  font-size: 2rem;
+}
+

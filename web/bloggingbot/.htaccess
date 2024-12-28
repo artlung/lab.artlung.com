@@ -6,3 +6,4 @@
 # /bloggingbot/9999
 RewriteEngine On
 RewriteRule ^([0-9]+)$ bloggingbot.php?bloggingbot=$1 [L]
+RewriteRule ^sitemap.xml$ sitemap.xml.php [L]
