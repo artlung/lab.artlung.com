@@ -59,14 +59,17 @@ $share_url = 'https://shareopenly.org/share/?url=' . urlencode($canonical_url) .
         </p>
         <p>
             The blog post:
-            <a href="https://artlung.com/blog/2018/02/23/markov-chains-are-hilarious/" target="_blank">Markov Chains are Hilarious!</a>
+
+            “<a href="https://artlung.com/blog/2018/02/23/markov-chains-are-hilarious/" target="_blank">Markov Chains are Hilarious!</a>”
         </p>
 
-        <p>The             <a href="source.php" target="_blank">source code</a>
+        <p>The <a href="source.php" target="_blank">source code</a>
         </p>
 
-        <p>
-            <a href="<?php print $share_url ?>" id="share" target="_blank">Share this</a>
+        <p style="text-align: end">
+            <strong>
+                <a href="<?php print $share_url ?>" id="share" target="_blank">SHARE</a>
+            </strong>
         </p>
     </div>
 </section>

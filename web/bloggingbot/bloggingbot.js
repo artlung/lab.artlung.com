@@ -50,9 +50,11 @@ function changeColors() {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-    document.getElementsByTagName('h1')[0].addEventListener('mousemove', changeColors);
-    document.getElementsByTagName('h1')[0].addEventListener('click', changeColors);
-    document.getElementsByTagName('h1')[0].addEventListener('touchstart', changeColors);
+
+    var h1 = document.querySelector('h1');
+    h1.addEventListener('mousemove', changeColors);
+    h1.addEventListener('click', changeColors);
+    h1.addEventListener('touchstart', changeColors);
 
     function pushState(itemId) {
         var url = '/bloggingbot/' + itemId;
