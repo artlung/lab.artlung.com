@@ -5,6 +5,8 @@ label.spoiler {
   color: #ccc !important;
   cursor: pointer;
 }
+/* Note that the checkbox itself is hidden visually,
+  but still holds whether the checkbox is checked */
 label.spoiler input[type="checkbox"] {
   display: none;
 }
