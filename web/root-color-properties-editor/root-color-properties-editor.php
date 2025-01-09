@@ -13,21 +13,31 @@ $lab->printHeader(':root Color Properties Editor (Bookmarklet)');
     they must include the word "color" in them or have a color hex or rgb value.
 </p>
 
-    <p><b>Note:</b>
+    <h2>
+        ⚠️ Warnings</h2>
+<ul>
+    <li>
         Just because the custom properties are at the <code>:root</code> doesn't mean
-    there will be a visible effect.
-</p>
+        there will be a visible effect.
+    </li>
+    <li>
+        Chrome does not correctly expose CSS Custom Properties via getComputedStyle.
+        See <a href="https://issues.chromium.org/issues/41451306?pli=1">41451306: getComputedStyles does not include CSS Custom Properties</a>
+    </li>
+</ul>
 
-<p>
-    <strong>Drag the link below to your browser's toolbar...</strong>
-</p>
+    </p>
+
+<h3>
+    Drag the link below to your browser's toolbar...
+</h3>
 <div style="padding: 1rem;border: 3px double blue;text-align: center;font-size: 2rem;text-wrap: balance">
 
 <?php
 $javascript = file_get_contents('root-color-properties-editor.js');
 $bookmarklet_javascript = ArtlungLab\Bookmarklet::javascriptToBookmarklet($javascript);
 
-  printf('<a href="javascript:%s">:root Color Properties Editor</a>', $bookmarklet_javascript);
+  printf('<a href="javascript:%s" class="bookmarklet">:root Color Properties Editor</a>', $bookmarklet_javascript);
 ?>
 
 </div>
@@ -39,13 +49,15 @@ $bookmarklet_javascript = ArtlungLab\Bookmarklet::javascriptToBookmarklet($javas
     </figure>
 
 <hr>
-
-
 <h2>Source Code</h2>
 <?php
 $lab->printCodeBlock($javascript);
 ?>
+<hr>
 
+<h2>What can be done about Chrome?</h2>
+
+<?php $lab->printCodeBlock(file_get_contents('root-color-properties-editor-chrome-workaround.js')); ?>
 
 <?php
 $lab->printFooter(

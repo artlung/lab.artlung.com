@@ -3,3 +3,4 @@ User-agent: *
 Disallow:
 
 Sitemap: https://lab.artlung.com/sitemap.xml
+Sitemap: https://lab.artlung.com/bloggingbot/sitemap.xml

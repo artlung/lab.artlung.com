@@ -11,7 +11,7 @@ $lab->printHeader('Spoiler Widget');
 <div style="max-width: 80ch">
     <p>
         Sometimes you want to share something on a web page that is a <em>spoiler</em>.
-        To do that you would Some sites will include the text in a way that it is hidden until you click on it.
+        To do that you could style the text in a way that it is hidden until you click on it.
     </p>
 
 
@@ -38,19 +38,19 @@ $lab->printHeader('Spoiler Widget');
 
     <h2>How does this work?</h2>
 
-    <p>This works because of several different parts of HTML and CSS that are in common usage</p>
+    <p>This works because of several different parts of HTML and CSS that are in common usage:</p>
 
     <ul>
-        <li><code>label</code> elements surrounding an <code>input</code> with <code>type</code> of <code>checkbox</code> can check and uncheck them.</li>
-        <li>CSS now has the <code>:has()</code> selector which can read whether a checkbox is on or off, and apply a style based on that.
+        <li><code>label</code> elements surrounding an <code>input</code> with <code>type</code> of <code>checkbox</code> can toggle states.</li>
+        <li>The CSS <code>:has()</code> selector can read whether a checkbox is on or off, and apply a style based on that.
         </li>
         <li>
-            CSS has the <code>filter:</code> property which can blur text.
+            The CSS <code>filter:</code> property can blur text.
         </li>
 
     </ul>
     <p>
-        It's pretty great that this works without JavaScript, and without requiring a <code>name</code> or <code>id</code> attribute.
+        It's pretty great that this works without JavaScript, and without requiring a <code>name</code> or <code>id</code> attribute. It also works on mobile devices with a tap.
     </p>
 
 
@@ -73,9 +73,12 @@ $lab->printHeader('Spoiler Widget');
 <h2>Suggestions? Questions?</h2>
 <p>
         If you have an idea for a variation of this, perhaps to have multiple on a page that you'd want to display all at once, JavaScript might be required. If you have an idea please leave a comment or a webmention.
-
-
     </p>
+
+<h2>Plans &amp; Acknowledgements</h2>
+<p>
+    I plan to add some basic markup for <code>aria-</code> labels. Thanks to <a href="https://tracydurnell.com">Tracy Durnell</a> for help editing this page!
+</p>
 
 
 <?php

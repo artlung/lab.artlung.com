@@ -9,7 +9,10 @@ title: >
 tags:
   - css
   - javascript
-og-image-date: 2024-12-21 05:09:27
+  - bookmarklet
 atom_feed_publish_date: 2024-12-20 21:09:27
 webmention_last_checked: 1734922984
 webmention_count: 0
+shot_scraper_extra_params: |
+  --javascript "document.querySelector('.bookmarklet').click();"
+og-image-date: 2024-12-24 17:57:58

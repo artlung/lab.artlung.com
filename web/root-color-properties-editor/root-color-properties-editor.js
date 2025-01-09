@@ -1,4 +1,4 @@
-let ROOT_COLOR_PROPERTIES_EDITOR = {
+var ROOT_COLOR_PROPERTIES_EDITOR = {
     id: 'color-properties-editor-element',
     new_element_prefix: 'color-properties-editor-',
     // I suppose in theory you could point this at different elements and reinitialize
@@ -40,8 +40,20 @@ let ROOT_COLOR_PROPERTIES_EDITOR = {
             }
         }
         if (count_found === 0) {
+            var message = 'No colors found in root element. ';
+            if (navigator.userAgent.indexOf('Chrome') !== -1) {
+                var href = 'https://issues.chromium.org/issues/41451306?pli=1';
+                var text = 'Chromium Bug 41451306: getComputedStyles does not include CSS Custom Properties';
+                var a = document.createElement('a');
+                a.href = href;
+                a.textContent = text;
+                a.style.color = '#fff';
+                a.target = '_blank';
+                message += 'See: ';
+                message += a.outerHTML;
+            }
             var noColors = document.createElement('p');
-            noColors.textContent = 'No colors found in root element';
+            noColors.innerHTML = message;
             noColors.style.gridColumn = 'span 2';
             noColors.style.whiteSpace = 'nowrap';
             document.getElementById(ROOT_COLOR_PROPERTIES_EDITOR.id).appendChild(noColors);

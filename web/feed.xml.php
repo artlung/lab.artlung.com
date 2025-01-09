@@ -32,9 +32,17 @@ $items_with_atom_feed_publish_date = array_filter(
     }
 );
 
-usort(
-    $items_with_atom_feed_publish_date, function ($a, $b) {
-        return $a['atom_feed_publish_date'] <=> $b['atom_feed_publish_date'];
+//usort(
+//    $items_with_atom_feed_publish_date, function ($a, $b) {
+//        return $a['atom_feed_publish_date'] <=> $b['atom_feed_publish_date'];
+//    }
+//);
+
+// retain the keys
+$items_with_atom_feed_publish_date = array_filter(
+    $items_with_atom_feed_publish_date, function ($item) {
+        return isset($item['atom_feed_publish_date']) && isset($item['og-image-date'])
+        && $item['atom_feed_publish_date'] && $item['og-image-date'];;
     }
 );
 

@@ -27,10 +27,11 @@ class SiteMap
      *
      * @return void
      */
-    public function __construct($url_paths)
+    public function __construct(array $url_paths)
     {
         $this->_protocol = 'https';
         $this->_url_paths = $url_paths;
+        $this->setPriority(0.5);
     }
 
     /**
@@ -58,7 +59,7 @@ class SiteMap
 
         $sitemap = [];
         foreach ($url_paths as $url) {
-            $priority = '0.5';
+            $priority = $this->_priority;
 
 
             $how_many_slashes = substr_count($url, '/');
@@ -122,6 +123,18 @@ class SiteMap
     public function setDefaultFilectime($filectime)
     {
         $this->_default_filectime = $filectime;
+    }
+
+    /**
+     * Set the priority
+     *
+     * @param float $param Priority
+     *
+     * @return void
+     */
+    public function setPriority(float $param)
+    {
+        $this->_priority = $param;
     }
 
 
