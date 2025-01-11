@@ -8,5 +8,5 @@ title: onunload + window.open = evil
 tags:
   - javascript
   - ux
-webmention_last_checked: 1734922980
+webmention_last_checked: 1736616884
 webmention_count: 1
