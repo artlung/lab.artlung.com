@@ -59,7 +59,7 @@ foreach ($directories as $directory) {
         file_put_contents($yaml_file, $yaml_string);
         print "Yaml file changed for $just_slug\n";
         print "Run php tag-adder.php and php og-images.php\n";
-        print "Also run php generate-nav-value.php\n";
+        print "Also run php composer updatenav\n";
     }
 
 

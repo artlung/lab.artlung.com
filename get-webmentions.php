@@ -31,8 +31,8 @@ foreach ($pages as $slug => $metadata) {
             if ($count > 0) {
                 print "Count for $slug is " . count($webmentions) . "\n";
             }
-            $yaml = Spyc::YAMLDump($yaml);
-            file_put_contents($yaml_file, $yaml);
+            $yaml_text = Spyc::YAMLDump($yaml);
+            file_put_contents($yaml_file, $yaml_text);
         }
 
 
@@ -57,7 +57,7 @@ foreach ($pages as $slug => $metadata) {
         continue;
     }
 
-    $yaml[\ArtlungLab\WebmentionIoGetter::WEBMENTION_LAST_CHECKED_KEY] = time();
+    $yaml[\ArtlungLab\WebmentionIoGetter::WEBMENTION_LAST_CHECKED_KEY] = time() ?? 0;
 
     $yaml = Spyc::YAMLDump($yaml);
 
@@ -73,5 +73,5 @@ foreach ($pages as $slug => $metadata) {
 }
 
 echo "Done. If the webmention count changed,\n";
-echo "be sure to run generate-nav-value.php\n";
+echo "be sure to run composer updatenav\n";
 echo "and composer snifferfix\n";
