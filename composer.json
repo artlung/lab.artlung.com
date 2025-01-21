@@ -24,7 +24,8 @@
     "config": {
         "platform": {
             "php": "7.4.33"
-        }
+        },
+        "optimize-autoloader": true
     },
     "scripts": {
         "test": "phpunit --bootstrap loader.php",
