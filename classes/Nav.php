@@ -27,7 +27,7 @@ class Nav
 
         // yaml is the source of truth, generate this with slugs_and_titles.php do not hand edit this:
 
-        /* START: handled by php generate-nav-value LAST UPDATE 2025-01-19 01:56:16 */
+        /* START: handled by php generate-nav-value LAST UPDATE 2025-02-12 16:04:22 */
         return $slugs_and_titles = array (
         '50states' => 
         array (
@@ -1837,6 +1837,22 @@ class Nav
         1 => 'html',
         ),
         'webmention_last_checked' => 1737251763,
+        'multiple_authors' => 
+        array (
+        0 => 
+        array (
+        'name' => 'Joe Crawford',
+        'email' => 'joe@artlung.com',
+        'uri' => 'https://artlung.com',
+        ),
+        1 => 
+        array (
+        'name' => 'Tracy Durnell',
+        'email' => 'tracy.durnell@gmail.com',
+        'uri' => 'https://tracydurnell.com',
+        ),
+        ),
+        'atom_feed_publish_date' => '2025-02-12 01:21:10',
         'webmention_count' => 1,
         ),
         'sql-server-collations' => 
