@@ -1,6 +1,6 @@
 ---
 slug: spoiler
-og-image-date: 2024-12-17 01:21:10
+og-image-date: 2025-02-21 23:22:13
 year: 2024
 canonical_url: https://lab.artlung.com/spoiler/
 title: Spoiler Widget
@@ -9,11 +9,13 @@ tags:
   - html
 webmention_last_checked: 1737251763
 multiple_authors:
-    - name: Joe Crawford
-      email: joe@artlung.com
-      uri: https://artlung.com
-    - name: Tracy Durnell
-      email: tracy.durnell@gmail.com
-      uri: https://tracydurnell.com
+  - 
+    name: Joe Crawford
+    email: joe@artlung.com
+    uri: https://artlung.com
+  - 
+    name: Tracy Durnell
+    email: tracy.durnell@gmail.com
+    uri: https://tracydurnell.com
 atom_feed_publish_date: 2025-02-12 01:21:10
 webmention_count: 1

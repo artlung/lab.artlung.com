@@ -31,7 +31,7 @@ foreach ($pages as $slug => $metadata) {
             $diff = $now - $og_image_date_time;
             $days = $diff / 60 / 60 / 24;
 
-            if ($days < 14) {
+            if ($days < 365) {
                 continue;
             }
         }

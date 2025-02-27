@@ -27,12 +27,12 @@ class Nav
 
         // yaml is the source of truth, generate this with slugs_and_titles.php do not hand edit this:
 
-        /* START: handled by php generate-nav-value LAST UPDATE 2025-02-12 16:04:22 */
+        /* START: handled by php generate-nav-value LAST UPDATE 2025-02-26 23:07:51 */
         return $slugs_and_titles = array (
         '50states' => 
         array (
         'slug' => '50states',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2003,
         'canonical_url' => 'https://lab.artlung.com/50states/',
         'title' => '50 U.S. States Dropdown Box HTML Code Snippets',
@@ -46,7 +46,7 @@ class Nav
         'ArtLung-Notes' => 
         array (
         'slug' => 'ArtLung-Notes',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2010,
         'canonical_url' => 'https://lab.artlung.com/ArtLung-Notes/',
         'title' => 'ArtLung Notes (Experimental, 2010)',
@@ -60,7 +60,7 @@ class Nav
         'a-outline-none' => 
         array (
         'slug' => 'a-outline-none',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2001,
         'canonical_url' => 'https://lab.artlung.com/a-outline-none/',
         'title' => 'outline:none to affect IE5/Mac focus outline',
@@ -74,7 +74,7 @@ class Nav
         'additive-font-size' => 
         array (
         'slug' => 'additive-font-size',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2001,
         'canonical_url' => 'https://lab.artlung.com/additive-font-size/',
         'title' => 'How font-size accumulates',
@@ -88,7 +88,7 @@ class Nav
         'ancient-tidy-tutorial' => 
         array (
         'slug' => 'ancient-tidy-tutorial',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 1999,
         'canonical_url' => 'https://lab.artlung.com/ancient-tidy-tutorial/',
         'title' => 'Ancient HTML Tidy Tutorial',
@@ -102,7 +102,7 @@ class Nav
         'anti-cache' => 
         array (
         'slug' => 'anti-cache',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2001,
         'canonical_url' => 'https://lab.artlung.com/anti-cache/',
         'title' => 'Preventing Browser Cache',
@@ -119,7 +119,7 @@ class Nav
         'asp' => 
         array (
         'slug' => 'asp',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2001,
         'canonical_url' => 'https://lab.artlung.com/asp/',
         'title' => 'ASP Hello World Script',
@@ -133,7 +133,7 @@ class Nav
         'asp-cdonts' => 
         array (
         'slug' => 'asp-cdonts',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2005,
         'canonical_url' => 'https://lab.artlung.com/asp-cdonts/',
         'title' => 'ASP: CDONTS snippet',
@@ -147,7 +147,7 @@ class Nav
         'asp-selectbox-function' => 
         array (
         'slug' => 'asp-selectbox-function',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2016,
         'canonical_url' => 'https://lab.artlung.com/asp-selectbox-function/',
         'title' => 'selectBox function in Traditional ASP',
@@ -161,7 +161,7 @@ class Nav
         'autocalc' => 
         array (
         'slug' => 'autocalc',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2002,
         'canonical_url' => 'https://lab.artlung.com/autocalc/',
         'title' => 'Auto-Calculator',
@@ -175,7 +175,7 @@ class Nav
         'barcampla6' => 
         array (
         'slug' => 'barcampla6',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2008,
         'canonical_url' => 'https://lab.artlung.com/barcampla6/',
         'title' => 'jQuery Basics (barcampla6)',
@@ -189,7 +189,7 @@ class Nav
         'bloggingbot' => 
         array (
         'slug' => 'bloggingbot',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2018,
         'canonical_url' => 'https://lab.artlung.com/bloggingbot/',
         'title' => 'Blogging Bot (Markov Chains are Hilarious)',
@@ -204,7 +204,7 @@ class Nav
         'bluedragon-net-installer' => 
         array (
         'slug' => 'bluedragon-net-installer',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2010,
         'canonical_url' => 'https://lab.artlung.com/bluedragon-net-installer/',
         'title' => 'Screenshots of an installation of BlueDragon 7.1 for the Microsoft .NET Framework',
@@ -219,7 +219,7 @@ class Nav
         'blur' => 
         array (
         'slug' => 'blur',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2004,
         'canonical_url' => 'https://lab.artlung.com/blur/',
         'title' => 'CSS Blur Example',
@@ -233,7 +233,7 @@ class Nav
         'bookmarklets' => 
         array (
         'slug' => 'bookmarklets',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2006,
         'canonical_url' => 'https://lab.artlung.com/bookmarklets/',
         'title' => 'Killer Bookmarklets I have Come Across',
@@ -250,7 +250,7 @@ class Nav
         'border-style' => 
         array (
         'slug' => 'border-style',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2002,
         'canonical_url' => 'https://lab.artlung.com/border-style/',
         'title' => 'border-style Experiment',
@@ -264,7 +264,7 @@ class Nav
         'bug-mac-netscape-forms-update' => 
         array (
         'slug' => 'bug-mac-netscape-forms-update',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 1998,
         'canonical_url' => 'https://lab.artlung.com/bug-mac-netscape-forms-update/',
         'title' => 'Netscape/Macintosh Changing Form Button or Submit Input Value Fails',
@@ -278,7 +278,7 @@ class Nav
         'buttonybutton' => 
         array (
         'slug' => 'buttonybutton',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2015,
         'canonical_url' => 'https://lab.artlung.com/buttonybutton/',
         'title' => 'Buttony Button',
@@ -292,7 +292,7 @@ class Nav
         'buttonybuttonsonbuttons' => 
         array (
         'slug' => 'buttonybuttonsonbuttons',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2015,
         'canonical_url' => 'https://lab.artlung.com/buttonybuttonsonbuttons/',
         'title' => 'Big Buttony Buttons on Buttons',
@@ -306,7 +306,7 @@ class Nav
         'call-original-version-of-redefined-vbscript' => 
         array (
         'slug' => 'call-original-version-of-redefined-vbscript',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2016,
         'canonical_url' => 'https://lab.artlung.com/call-original-version-of-redefined-vbscript/',
         'title' => 'Call the native version of a VBScript object',
@@ -320,7 +320,7 @@ class Nav
         'camel-selector' => 
         array (
         'slug' => 'camel-selector',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2002,
         'canonical_url' => 'https://lab.artlung.com/camel-selector/',
         'title' => 'camelCase <-> selector-case w/o Regex',
@@ -334,7 +334,7 @@ class Nav
         'canvas-html-render-download' => 
         array (
         'slug' => 'canvas-html-render-download',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2024,
         'canonical_url' => 'https://lab.artlung.com/canvas-html-render-download/',
         'title' => 'Canvas HTML Render Download not working',
@@ -348,7 +348,7 @@ class Nav
         'change-all-links' => 
         array (
         'slug' => 'change-all-links',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2000,
         'canonical_url' => 'https://lab.artlung.com/change-all-links/',
         'title' => 'How can I change every link on a page to something new?',
@@ -362,7 +362,7 @@ class Nav
         'change-content-in-iframe-with-prototype' => 
         array (
         'slug' => 'change-content-in-iframe-with-prototype',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2010,
         'canonical_url' => 'https://lab.artlung.com/change-content-in-iframe-with-prototype/',
         'title' => 'What is the way to access IFrame\'s element using Prototype $ method?',
@@ -376,7 +376,7 @@ class Nav
         'change-document-background-color' => 
         array (
         'slug' => 'change-document-background-color',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 1999,
         'canonical_url' => 'https://lab.artlung.com/change-document-background-color/',
         'title' => 'Change document background color',
@@ -391,7 +391,7 @@ class Nav
         'change-space-between-paragraphs' => 
         array (
         'slug' => 'change-space-between-paragraphs',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2006,
         'canonical_url' => 'https://lab.artlung.com/change-space-between-paragraphs/',
         'title' => 'Changing the spacing between paragraphs',
@@ -406,7 +406,7 @@ class Nav
         'checkbox-validate' => 
         array (
         'slug' => 'checkbox-validate',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2001,
         'canonical_url' => 'https://lab.artlung.com/checkbox-validate/',
         'title' => 'Checkbox Validator',
@@ -420,7 +420,7 @@ class Nav
         'circles-crawl' => 
         array (
         'slug' => 'circles-crawl',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2010,
         'canonical_url' => 'https://lab.artlung.com/circles-crawl/',
         'title' => 'Circles Crawl and you click them (jQuery)',
@@ -434,7 +434,7 @@ class Nav
         'clock-concept' => 
         array (
         'slug' => 'clock-concept',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2024,
         'canonical_url' => 'https://lab.artlung.com/clock-concept/',
         'title' => 'Clock Concept (1998-2024)',
@@ -450,7 +450,7 @@ class Nav
         'coldfusion-break-db' => 
         array (
         'slug' => 'coldfusion-break-db',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2003,
         'canonical_url' => 'https://lab.artlung.com/coldfusion-break-db/',
         'title' => 'Ways to break a lock on an Access Database with Cold Fusion',
@@ -464,7 +464,7 @@ class Nav
         'coldfusion-force-download' => 
         array (
         'slug' => 'coldfusion-force-download',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2016,
         'canonical_url' => 'https://lab.artlung.com/coldfusion-force-download/',
         'title' => 'ColdFusion: Force Download of File',
@@ -478,7 +478,7 @@ class Nav
         'coldfusion-titlecase' => 
         array (
         'slug' => 'coldfusion-titlecase',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2003,
         'canonical_url' => 'https://lab.artlung.com/coldfusion-titlecase/',
         'title' => 'ColdFusion TitleCase Function',
@@ -492,7 +492,7 @@ class Nav
         'compare-fields' => 
         array (
         'slug' => 'compare-fields',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2002,
         'canonical_url' => 'https://lab.artlung.com/compare-fields/',
         'title' => 'Compare two fields, Submit only if they are the same:',
@@ -506,7 +506,7 @@ class Nav
         'connect-to-remote-server' => 
         array (
         'slug' => 'connect-to-remote-server',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2004,
         'canonical_url' => 'https://lab.artlung.com/connect-to-remote-server/',
         'title' => 'Simple example connecting to a remote server',
@@ -520,7 +520,7 @@ class Nav
         'copy-to-clipboard-javascript' => 
         array (
         'slug' => 'copy-to-clipboard-javascript',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2005,
         'canonical_url' => 'https://lab.artlung.com/copy-to-clipboard-javascript/',
         'title' => 'Copy to Clipboard JavaScript',
@@ -534,7 +534,7 @@ class Nav
         'countdown' => 
         array (
         'slug' => 'countdown',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2005,
         'canonical_url' => 'https://lab.artlung.com/countdown/',
         'title' => 'Super Simple Countdown in PHP.',
@@ -548,7 +548,7 @@ class Nav
         'countdown-daily-to-a-time' => 
         array (
         'slug' => 'countdown-daily-to-a-time',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2011,
         'canonical_url' => 'https://lab.artlung.com/countdown-daily-to-a-time/',
         'title' => 'Countdown to a time of the day every day (PHP)',
@@ -562,7 +562,7 @@ class Nav
         'countdown-to-the-first' => 
         array (
         'slug' => 'countdown-to-the-first',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2011,
         'canonical_url' => 'https://lab.artlung.com/countdown-to-the-first/',
         'title' => 'Countdown in to the first of the month in PHP',
@@ -576,7 +576,7 @@ class Nav
         'crossdomain' => 
         array (
         'slug' => 'crossdomain',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2009,
         'canonical_url' => 'https://lab.artlung.com/crossdomain/',
         'title' => 'crossdomain.xml',
@@ -590,7 +590,7 @@ class Nav
         'css3-smiley' => 
         array (
         'slug' => 'css3-smiley',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2024,
         'canonical_url' => 'https://lab.artlung.com/css3-smiley/',
         'title' => 'CSS3 Smiley in Color',
@@ -604,7 +604,7 @@ class Nav
         'detagger' => 
         array (
         'slug' => 'detagger',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2005,
         'canonical_url' => 'https://lab.artlung.com/detagger/',
         'title' => 'Fun Detagger Script',
@@ -618,7 +618,7 @@ class Nav
         'detection-real' => 
         array (
         'slug' => 'detection-real',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 1999,
         'canonical_url' => 'https://lab.artlung.com/detection-real/',
         'title' => 'RealMedia Plugin Detection',
@@ -633,7 +633,7 @@ class Nav
         'display-inline-block' => 
         array (
         'slug' => 'display-inline-block',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2009,
         'canonical_url' => 'https://lab.artlung.com/display-inline-block/',
         'title' => 'CSS workaround for external link with small icon (2007)',
@@ -647,7 +647,7 @@ class Nav
         'domain-name-sql-excel' => 
         array (
         'slug' => 'domain-name-sql-excel',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2016,
         'canonical_url' => 'https://lab.artlung.com/domain-name-sql-excel/',
         'title' => 'Extract Domain Names from a list of email addresses',
@@ -661,7 +661,7 @@ class Nav
         'dropdown' => 
         array (
         'slug' => 'dropdown',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2004,
         'canonical_url' => 'https://lab.artlung.com/dropdown/',
         'title' => 'Dropdown Navigation',
@@ -676,7 +676,7 @@ class Nav
         'dropdown-focus' => 
         array (
         'slug' => 'dropdown-focus',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2001,
         'canonical_url' => 'https://lab.artlung.com/dropdown-focus/',
         'title' => 'Setting Dropdown Focus',
@@ -690,7 +690,7 @@ class Nav
         'dropdown-frames' => 
         array (
         'slug' => 'dropdown-frames',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2008,
         'canonical_url' => 'https://lab.artlung.com/dropdown-frames/',
         'title' => 'Dropdown Navigation in Frames',
@@ -704,7 +704,7 @@ class Nav
         'dropdown-only-some-new-window' => 
         array (
         'slug' => 'dropdown-only-some-new-window',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2002,
         'canonical_url' => 'https://lab.artlung.com/dropdown-only-some-new-window/',
         'title' => 'Dropdown Navigation Where Only Some Links Open New Windows',
@@ -718,7 +718,7 @@ class Nav
         'dropdown-submit-form' => 
         array (
         'slug' => 'dropdown-submit-form',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2008,
         'canonical_url' => 'https://lab.artlung.com/dropdown-submit-form/',
         'title' => 'dropdown-submit-form',
@@ -732,7 +732,7 @@ class Nav
         'echo-http-host' => 
         array (
         'slug' => 'echo-http-host',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2008,
         'canonical_url' => 'https://lab.artlung.com/echo-http-host/',
         'title' => 'HTTP_HOST environment variable in PHP',
@@ -746,7 +746,7 @@ class Nav
         'email-submission-stinks' => 
         array (
         'slug' => 'email-submission-stinks',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2003,
         'canonical_url' => 'https://lab.artlung.com/email-submission-stinks/',
         'title' => 'Form action mailto: stinks',
@@ -760,7 +760,7 @@ class Nav
         'first-child-last-child' => 
         array (
         'slug' => 'first-child-last-child',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2011,
         'canonical_url' => 'https://lab.artlung.com/first-child-last-child/',
         'title' => 'First Child Last Child Demonstration',
@@ -774,7 +774,7 @@ class Nav
         'font-awesome-sample' => 
         array (
         'slug' => 'font-awesome-sample',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2017,
         'canonical_url' => 'https://lab.artlung.com/font-awesome-sample/',
         'title' => 'Font Awesome 4.6.3 Class Explorer (version 4.6.3)',
@@ -788,7 +788,7 @@ class Nav
         'form-image-background' => 
         array (
         'slug' => 'form-image-background',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2005,
         'canonical_url' => 'https://lab.artlung.com/form-image-background/',
         'title' => 'background images in form elements',
@@ -803,7 +803,7 @@ class Nav
         'format-time' => 
         array (
         'slug' => 'format-time',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2002,
         'canonical_url' => 'https://lab.artlung.com/format-time/',
         'title' => 'JavaScript Date Formatting Demo',
@@ -817,7 +817,7 @@ class Nav
         'frames-mouseover' => 
         array (
         'slug' => 'frames-mouseover',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2004,
         'canonical_url' => 'https://lab.artlung.com/frames-mouseover/',
         'title' => 'frames-mouseover',
@@ -831,7 +831,7 @@ class Nav
         'gallery' => 
         array (
         'slug' => 'gallery',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2001,
         'canonical_url' => 'https://lab.artlung.com/gallery/',
         'title' => 'AutoMagic Gallery Listing',
@@ -845,7 +845,7 @@ class Nav
         'generic-validator' => 
         array (
         'slug' => 'generic-validator',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2004,
         'canonical_url' => 'https://lab.artlung.com/generic-validator/',
         'title' => 'Generic Validator',
@@ -859,7 +859,7 @@ class Nav
         'gettysburg' => 
         array (
         'slug' => 'gettysburg',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2006,
         'canonical_url' => 'https://lab.artlung.com/gettysburg/',
         'title' => 'Gettysburg Address in HTML Buttons',
@@ -870,10 +870,25 @@ class Nav
         'webmention_last_checked' => 1737251747,
         'webmention_count' => 1,
         ),
+        'gettysburg-2' => 
+        array (
+        'slug' => 'gettysburg-2',
+        'year' => 2025,
+        'canonical_url' => 'https://lab.artlung.com/gettysburg-2/',
+        'title' => 'Gettysburg Address in HTML. Interactive.',
+        'tags' => 
+        array (
+        0 => 'html',
+        1 => 'css',
+        2 => 'javascript',
+        ),
+        'og-image-date' => '2025-02-21 23:22:55',
+        'atom_feed_publish_date' => '2025-02-21 23:22:55',
+        ),
         'goal50' => 
         array (
         'slug' => 'goal50',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2024,
         'canonical_url' => 'https://lab.artlung.com/goal50/',
         'title' => 'Goal of 50!',
@@ -888,7 +903,7 @@ class Nav
         'group-concat-mysql' => 
         array (
         'slug' => 'group-concat-mysql',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2016,
         'canonical_url' => 'https://lab.artlung.com/group-concat-mysql/',
         'title' => 'Using GROUP_CONCAT()',
@@ -902,7 +917,7 @@ class Nav
         'history' => 
         array (
         'slug' => 'history',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 1999,
         'canonical_url' => 'https://lab.artlung.com/history/',
         'title' => 'How to implement a Forward and Back Buttons',
@@ -924,13 +939,13 @@ class Nav
         'year' => 2024,
         'title' => 'The Lab',
         'webmention_count' => 20,
-        'og-image-date' => '2024-12-24 06:38:54',
+        'og-image-date' => '2025-02-21 23:22:13',
         'webmention_last_checked' => 1737251749,
         ),
         'html-2.0' => 
         array (
         'slug' => 'html-2.0',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2001,
         'canonical_url' => 'https://lab.artlung.com/html-2.0/',
         'title' => 'HTML 2.0 - An exploration!',
@@ -944,7 +959,7 @@ class Nav
         'image-border' => 
         array (
         'slug' => 'image-border',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 1999,
         'canonical_url' => 'https://lab.artlung.com/image-border/',
         'title' => 'Several Approaches to Do Image Borders of Different Colors: 1999',
@@ -958,7 +973,7 @@ class Nav
         'image-hover' => 
         array (
         'slug' => 'image-hover',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2004,
         'canonical_url' => 'https://lab.artlung.com/image-hover/',
         'title' => 'Image Hover',
@@ -972,7 +987,7 @@ class Nav
         'input-direction' => 
         array (
         'slug' => 'input-direction',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2006,
         'canonical_url' => 'https://lab.artlung.com/input-direction/',
         'title' => 'Change Form Input Direction',
@@ -986,7 +1001,7 @@ class Nav
         'interesting-date-layout' => 
         array (
         'slug' => 'interesting-date-layout',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 1999,
         'canonical_url' => 'https://lab.artlung.com/interesting-date-layout/',
         'title' => 'interesting-date-layout',
@@ -1000,7 +1015,7 @@ class Nav
         'invisible-unspiderable-link' => 
         array (
         'slug' => 'invisible-unspiderable-link',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2024,
         'canonical_url' => 'https://lab.artlung.com/invisible-unspiderable-link/',
         'title' => 'Invisible Unspiderable Link',
@@ -1016,7 +1031,7 @@ class Nav
         'is-email' => 
         array (
         'slug' => 'is-email',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2009,
         'canonical_url' => 'https://lab.artlung.com/is-email/',
         'title' => 'isEmail() aka is_email() in PHP',
@@ -1030,7 +1045,7 @@ class Nav
         'java-tags' => 
         array (
         'slug' => 'java-tags',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 1999,
         'canonical_url' => 'https://lab.artlung.com/java-tags/',
         'title' => 'Java Tags 1999',
@@ -1044,7 +1059,7 @@ class Nav
         'keycode' => 
         array (
         'slug' => 'keycode',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2011,
         'canonical_url' => 'https://lab.artlung.com/keycode/',
         'title' => 'Listen for Key Presses on a Web Page',
@@ -1066,7 +1081,7 @@ class Nav
         0 => 'javascript',
         1 => 'php',
         ),
-        'og-image-date' => '2024-12-18 15:40:35',
+        'og-image-date' => '2025-02-21 23:22:13',
         'webmention_last_checked' => 1737251751,
         'webmention_count' => 0,
         'atom_feed_publish_date' => '2024-12-23 20:00:00',
@@ -1074,7 +1089,7 @@ class Nav
         'larger-checkbox-with-css' => 
         array (
         'slug' => 'larger-checkbox-with-css',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2009,
         'canonical_url' => 'https://lab.artlung.com/larger-checkbox-with-css/',
         'title' => 'Larger Checkbox with CSS',
@@ -1088,7 +1103,7 @@ class Nav
         'make-unique-id' => 
         array (
         'slug' => 'make-unique-id',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2005,
         'canonical_url' => 'https://lab.artlung.com/make-unique-id/',
         'title' => 'Make a Unique ID in PHP',
@@ -1102,22 +1117,24 @@ class Nav
         'mathml' => 
         array (
         'slug' => 'mathml',
-        'og-image-date' => '2024-12-17 01:21:10',
         'year' => 2024,
         'canonical_url' => 'https://lab.artlung.com/mathml/',
-        'title' => 'MathML Test Page',
+        'title' => 'MathML Test Page now with MathJax / LaTeX',
         'tags' => 
         array (
         0 => 'html',
         1 => 'mathml',
+        2 => 'latex',
+        3 => 'mathjax',
         ),
         'webmention_last_checked' => 1737251752,
         'webmention_count' => 1,
+        'og-image-date' => '2025-02-26 22:06:14',
         ),
         'meaningful-html-class-names' => 
         array (
         'slug' => 'meaningful-html-class-names',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2024,
         'canonical_url' => 'https://lab.artlung.com/meaningful-html-class-names/',
         'title' => 'What CSS class names are semantically meaningful?',
@@ -1132,7 +1149,7 @@ class Nav
         'media' => 
         array (
         'slug' => 'media',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2024,
         'canonical_url' => 'https://lab.artlung.com/media/',
         'title' => 'What to do with a directory of images that are letters?',
@@ -1147,7 +1164,7 @@ class Nav
         'misc-files' => 
         array (
         'slug' => 'misc-files',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2016,
         'canonical_url' => 'https://lab.artlung.com/misc-files/',
         'title' => 'Miscellaneous Web Files',
@@ -1166,7 +1183,7 @@ class Nav
         'mm_validateform' => 
         array (
         'slug' => 'mm_validateform',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2009,
         'canonical_url' => 'https://lab.artlung.com/mm_validateform/',
         'title' => 'MM_validateForm() and MM_findObj() functions',
@@ -1181,7 +1198,7 @@ class Nav
         'modify-the-box' => 
         array (
         'slug' => 'modify-the-box',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2001,
         'canonical_url' => 'https://lab.artlung.com/modify-the-box/',
         'title' => 'Modify The Box (dhtml experiment, 2001)',
@@ -1195,7 +1212,7 @@ class Nav
         'mouseover-vote' => 
         array (
         'slug' => 'mouseover-vote',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 1999,
         'canonical_url' => 'https://lab.artlung.com/mouseover-vote/',
         'title' => 'Mouseover Vote Thing JavaScript',
@@ -1209,7 +1226,7 @@ class Nav
         'mouseover-vote100' => 
         array (
         'slug' => 'mouseover-vote100',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 1999,
         'canonical_url' => 'https://lab.artlung.com/mouseover-vote100/',
         'title' => 'Mouseover Vote Thing x 100',
@@ -1223,7 +1240,7 @@ class Nav
         'multiple-select' => 
         array (
         'slug' => 'multiple-select',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 1999,
         'canonical_url' => 'https://lab.artlung.com/multiple-select/',
         'title' => 'Multiple, Hierarchical SelectBoxes',
@@ -1237,7 +1254,7 @@ class Nav
         'multiple-select-v2' => 
         array (
         'slug' => 'multiple-select-v2',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2008,
         'canonical_url' => 'https://lab.artlung.com/multiple-select-v2/',
         'title' => 'Multiple, Hierarchical SelectBoxes, version 2',
@@ -1251,7 +1268,7 @@ class Nav
         'museum' => 
         array (
         'slug' => 'museum',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2010,
         'canonical_url' => 'https://lab.artlung.com/museum/',
         'title' => 'Museum Notes (2010)',
@@ -1265,7 +1282,7 @@ class Nav
         'my-first-vbscript-class' => 
         array (
         'slug' => 'my-first-vbscript-class',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2016,
         'canonical_url' => 'https://lab.artlung.com/my-first-vbscript-class/',
         'title' => 'My first VBScript Test Class',
@@ -1279,7 +1296,7 @@ class Nav
         'navigation-function-vs-asp' => 
         array (
         'slug' => 'navigation-function-vs-asp',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2006,
         'canonical_url' => 'https://lab.artlung.com/navigation-function-vs-asp/',
         'title' => 'Navigation Function (in PHP and ASP)',
@@ -1294,7 +1311,7 @@ class Nav
         'navigator-language' => 
         array (
         'slug' => 'navigator-language',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2012,
         'canonical_url' => 'https://lab.artlung.com/navigator-language/',
         'title' => 'JavaScript: navigator.language',
@@ -1308,7 +1325,7 @@ class Nav
         'navigator-object' => 
         array (
         'slug' => 'navigator-object',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2010,
         'canonical_url' => 'https://lab.artlung.com/navigator-object/',
         'title' => 'What\'s in the Navigator object?',
@@ -1322,7 +1339,7 @@ class Nav
         'nonsense-dtd' => 
         array (
         'slug' => 'nonsense-dtd',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2011,
         'canonical_url' => 'https://lab.artlung.com/nonsense-dtd/',
         'title' => 'nonsense-dtd',
@@ -1336,7 +1353,7 @@ class Nav
         'not-valid-itunes-library' => 
         array (
         'slug' => 'not-valid-itunes-library',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2004,
         'canonical_url' => 'https://lab.artlung.com/not-valid-itunes-library/',
         'title' => 'iTunes Error: The iTunes Music Library file cannot be read because it does not appear to be a valid library file',
@@ -1350,7 +1367,7 @@ class Nav
         'notifications' => 
         array (
         'slug' => 'notifications',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2010,
         'canonical_url' => 'https://lab.artlung.com/notifications/',
         'title' => 'window.webkitNotifications support',
@@ -1364,7 +1381,7 @@ class Nav
         'now-getdate' => 
         array (
         'slug' => 'now-getdate',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2017,
         'canonical_url' => 'https://lab.artlung.com/now-getdate/',
         'title' => 'NOW() ~= GETDATE()',
@@ -1378,7 +1395,7 @@ class Nav
         'oncontextmenu' => 
         array (
         'slug' => 'oncontextmenu',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2005,
         'canonical_url' => 'https://lab.artlung.com/oncontextmenu/',
         'title' => 'Demonstration of oncontextmenu',
@@ -1392,7 +1409,7 @@ class Nav
         'onunload-window-open-evil' => 
         array (
         'slug' => 'onunload-window-open-evil',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2001,
         'canonical_url' => 'https://lab.artlung.com/onunload-window-open-evil/',
         'title' => 'onunload + window.open = evil',
@@ -1407,7 +1424,7 @@ class Nav
         'open-graph-protocol-tools' => 
         array (
         'slug' => 'open-graph-protocol-tools',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2010,
         'canonical_url' => 'https://lab.artlung.com/open-graph-protocol-tools/',
         'title' => 'Open Graph Protocol Tools WordPress plugin',
@@ -1422,7 +1439,7 @@ class Nav
         'outbound-link-confirmation' => 
         array (
         'slug' => 'outbound-link-confirmation',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2013,
         'canonical_url' => 'https://lab.artlung.com/outbound-link-confirmation/',
         'title' => 'Outbound Link Confirmation',
@@ -1436,7 +1453,7 @@ class Nav
         'password-maker' => 
         array (
         'slug' => 'password-maker',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2009,
         'canonical_url' => 'https://lab.artlung.com/password-maker/',
         'title' => '20 Random Alphanumeric Passwords',
@@ -1450,7 +1467,7 @@ class Nav
         'php-all-websafe' => 
         array (
         'slug' => 'php-all-websafe',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2010,
         'canonical_url' => 'https://lab.artlung.com/php-all-websafe/',
         'title' => 'Generate All Websafe Colors with PHP',
@@ -1464,7 +1481,7 @@ class Nav
         'php-php3-mod-rewrite' => 
         array (
         'slug' => 'php-php3-mod-rewrite',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2001,
         'canonical_url' => 'https://lab.artlung.com/php-php3-mod-rewrite/',
         'title' => 'How to make .php files masquerade as .php3',
@@ -1478,7 +1495,7 @@ class Nav
         'pinkvalidation' => 
         array (
         'slug' => 'pinkvalidation',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2002,
         'canonical_url' => 'https://lab.artlung.com/pinkvalidation/',
         'title' => 'Changing the color of a form element when it\'s blank',
@@ -1493,7 +1510,7 @@ class Nav
         'plus-plus-a-string-php' => 
         array (
         'slug' => 'plus-plus-a-string-php',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2024,
         'canonical_url' => 'https://lab.artlung.com/plus-plus-a-string-php/',
         'title' => 'plusplus (++) a string in php',
@@ -1518,12 +1535,12 @@ class Nav
         'webmention_last_checked' => 1737251758,
         'webmention_count' => 0,
         'shot_scraper_extra_params' => '--javascript "document.querySelector(\'.bookmarklet\').click();"',
-        'og-image-date' => '2024-12-24 16:10:11',
+        'og-image-date' => '2025-02-21 23:22:13',
         ),
         'quote-to-dl' => 
         array (
         'slug' => 'quote-to-dl',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2024,
         'canonical_url' => 'https://lab.artlung.com/quote-to-dl/',
         'title' => 'Quote to DL (Definition List)',
@@ -1539,7 +1556,7 @@ class Nav
         'random-cells' => 
         array (
         'slug' => 'random-cells',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2010,
         'canonical_url' => 'https://lab.artlung.com/random-cells/',
         'title' => 'Generate a Random String!',
@@ -1555,7 +1572,7 @@ class Nav
         'random-content' => 
         array (
         'slug' => 'random-content',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2001,
         'canonical_url' => 'https://lab.artlung.com/random-content/',
         'title' => 'Random Content',
@@ -1569,7 +1586,7 @@ class Nav
         'random-string-in-sql' => 
         array (
         'slug' => 'random-string-in-sql',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2000,
         'canonical_url' => 'https://lab.artlung.com/random-string-in-sql/',
         'title' => 'Random String in SQL',
@@ -1583,7 +1600,7 @@ class Nav
         'recursive-iframe' => 
         array (
         'slug' => 'recursive-iframe',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2009,
         'canonical_url' => 'https://lab.artlung.com/recursive-iframe/',
         'title' => 'This page calls an iframe which calls itself. The question, is what happens?',
@@ -1597,7 +1614,7 @@ class Nav
         'response-end-is-like-exit-in-php' => 
         array (
         'slug' => 'response-end-is-like-exit-in-php',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2016,
         'canonical_url' => 'https://lab.artlung.com/response-end-is-like-exit-in-php/',
         'title' => 'In ASP, Response.End is like exit() in PHP',
@@ -1612,7 +1629,7 @@ class Nav
         'reverse-string-nums' => 
         array (
         'slug' => 'reverse-string-nums',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2001,
         'canonical_url' => 'https://lab.artlung.com/reverse-string-nums/',
         'title' => 'Reverse a string, but only the digits',
@@ -1626,7 +1643,7 @@ class Nav
         'robots-nocontent' => 
         array (
         'slug' => 'robots-nocontent',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2008,
         'canonical_url' => 'https://lab.artlung.com/robots-nocontent/',
         'title' => 'Robots-Nocontent (2008)',
@@ -1653,12 +1670,12 @@ class Nav
         'webmention_last_checked' => 1737251760,
         'webmention_count' => 0,
         'shot_scraper_extra_params' => '--javascript "document.querySelector(\'.bookmarklet\').click();"',
-        'og-image-date' => '2024-12-24 17:57:58',
+        'og-image-date' => '2025-02-21 23:22:13',
         ),
         'rosetta' => 
         array (
         'slug' => 'rosetta',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2010,
         'canonical_url' => 'https://lab.artlung.com/rosetta/',
         'title' => 'Artlung Rosetta: Comparing dojo, Ext, Glow, jQuery, MooTools & Prototype',
@@ -1672,7 +1689,7 @@ class Nav
         'rounded-mozilla' => 
         array (
         'slug' => 'rounded-mozilla',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2024,
         'canonical_url' => 'https://lab.artlung.com/rounded-mozilla/',
         'title' => 'Mozilla CSS Extensions',
@@ -1686,7 +1703,7 @@ class Nav
         'rtf' => 
         array (
         'slug' => 'rtf',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2024,
         'canonical_url' => 'https://lab.artlung.com/rtf/',
         'title' => 'Make an RTF Document with PHP',
@@ -1700,7 +1717,7 @@ class Nav
         'screen-resolutions' => 
         array (
         'slug' => 'screen-resolutions',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2012,
         'canonical_url' => 'https://lab.artlung.com/screen-resolutions/',
         'title' => 'Compared Mobile Screen Resolutions (old)',
@@ -1714,7 +1731,7 @@ class Nav
         'self-refresh' => 
         array (
         'slug' => 'self-refresh',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2008,
         'canonical_url' => 'https://lab.artlung.com/self-refresh/',
         'title' => 'Code to make a page that refresh to itself',
@@ -1728,7 +1745,7 @@ class Nav
         'server-side-image-map' => 
         array (
         'slug' => 'server-side-image-map',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2024,
         'canonical_url' => 'https://lab.artlung.com/server-side-image-map/',
         'title' => 'Server Side Image Map',
@@ -1743,7 +1760,7 @@ class Nav
         'single-pixel-gif' => 
         array (
         'slug' => 'single-pixel-gif',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2011,
         'canonical_url' => 'https://lab.artlung.com/single-pixel-gif/',
         'title' => 'Single Pixel Gif as a base 64 encoded string',
@@ -1757,7 +1774,7 @@ class Nav
         'six-finger-ai-hand' => 
         array (
         'slug' => 'six-finger-ai-hand',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2024,
         'canonical_url' => 'https://lab.artlung.com/six-finger-ai-hand/',
         'title' => 'Six Finger AI Hand (as Slack Emoji)',
@@ -1771,7 +1788,7 @@ class Nav
         'slideshow' => 
         array (
         'slug' => 'slideshow',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2003,
         'canonical_url' => 'https://lab.artlung.com/slideshow/',
         'title' => 'SlideShow Implementation',
@@ -1785,7 +1802,7 @@ class Nav
         'slideshow-img' => 
         array (
         'slug' => 'slideshow-img',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 1999,
         'canonical_url' => 'https://lab.artlung.com/slideshow-img/',
         'title' => 'Slideshows Roughly How We did them in 1999',
@@ -1799,7 +1816,7 @@ class Nav
         'slideshow-plus' => 
         array (
         'slug' => 'slideshow-plus',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2003,
         'canonical_url' => 'https://lab.artlung.com/slideshow-plus/',
         'title' => 'slideshow plus! cleaner slideshow which can also move forward automatically',
@@ -1813,7 +1830,7 @@ class Nav
         'speech-synthesis' => 
         array (
         'slug' => 'speech-synthesis',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2024,
         'canonical_url' => 'https://lab.artlung.com/speech-synthesis/',
         'title' => 'Speech Synthesis',
@@ -1827,7 +1844,7 @@ class Nav
         'spoiler' => 
         array (
         'slug' => 'spoiler',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2024,
         'canonical_url' => 'https://lab.artlung.com/spoiler/',
         'title' => 'Spoiler Widget',
@@ -1858,7 +1875,7 @@ class Nav
         'sql-server-collations' => 
         array (
         'slug' => 'sql-server-collations',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2011,
         'canonical_url' => 'https://lab.artlung.com/sql-server-collations/',
         'title' => 'Show all SQL Server Collations',
@@ -1872,7 +1889,7 @@ class Nav
         't-paamayim-nekudotayim' => 
         array (
         'slug' => 't-paamayim-nekudotayim',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2016,
         'canonical_url' => 'https://lab.artlung.com/t-paamayim-nekudotayim/',
         'title' => 'syntax error, unexpected T_PAAMAYIM_NEKUDOTAYIM',
@@ -1886,7 +1903,7 @@ class Nav
         'the-problem-with-blur' => 
         array (
         'slug' => 'the-problem-with-blur',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2001,
         'canonical_url' => 'https://lab.artlung.com/the-problem-with-blur/',
         'title' => 'Why not to use blur() to make dotted lines go away in MSIE for Windows',
@@ -1901,7 +1918,7 @@ class Nav
         'three-char-combos' => 
         array (
         'slug' => 'three-char-combos',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2006,
         'canonical_url' => 'https://lab.artlung.com/three-char-combos/',
         'title' => 'Permutations of a set of characters',
@@ -1915,7 +1932,7 @@ class Nav
         'tips-2001' => 
         array (
         'slug' => 'tips-2001',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2001,
         'canonical_url' => 'https://lab.artlung.com/tips-2001/',
         'title' => 'Random HTML Tips',
@@ -1929,7 +1946,7 @@ class Nav
         'tr-onmouseover-style' => 
         array (
         'slug' => 'tr-onmouseover-style',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 1999,
         'canonical_url' => 'https://lab.artlung.com/tr-onmouseover-style/',
         'title' => 'onMouseover in a TR tag',
@@ -1943,7 +1960,7 @@ class Nav
         'undocumented-linklint' => 
         array (
         'slug' => 'undocumented-linklint',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2002,
         'canonical_url' => 'https://lab.artlung.com/undocumented-linklint/',
         'title' => 'Undocumented Linklint JavaScript Feature',
@@ -1957,7 +1974,7 @@ class Nav
         'unix-batch-file-rename' => 
         array (
         'slug' => 'unix-batch-file-rename',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2004,
         'canonical_url' => 'https://lab.artlung.com/unix-batch-file-rename/',
         'title' => 'Batch File Rename By File Extension in Unix',
@@ -1971,7 +1988,7 @@ class Nav
         'upload' => 
         array (
         'slug' => 'upload',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2015,
         'canonical_url' => 'https://lab.artlung.com/upload/',
         'title' => 'Sample Uploader Code',
@@ -1986,7 +2003,7 @@ class Nav
         'url-compare' => 
         array (
         'slug' => 'url-compare',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2024,
         'canonical_url' => 'https://lab.artlung.com/url-compare/',
         'title' => 'Compare Two URLs',
@@ -2001,7 +2018,7 @@ class Nav
         'urlencode' => 
         array (
         'slug' => 'urlencode',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2001,
         'canonical_url' => 'https://lab.artlung.com/urlencode/',
         'title' => 'How to Encode URLs / An ASCII to URLEncoded JavaScript',
@@ -2015,7 +2032,7 @@ class Nav
         'user-preference-for-new-windows' => 
         array (
         'slug' => 'user-preference-for-new-windows',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2004,
         'canonical_url' => 'https://lab.artlung.com/user-preference-for-new-windows/',
         'title' => 'Giving Users A Preference Widget for Opening New Windows',
@@ -2031,7 +2048,7 @@ class Nav
         'vaguely-interesting-layout' => 
         array (
         'slug' => 'vaguely-interesting-layout',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2010,
         'canonical_url' => 'https://lab.artlung.com/vaguely-interesting-layout/',
         'title' => 'Vaguely Interesting Layout',
@@ -2046,7 +2063,7 @@ class Nav
         'validate-checkbox' => 
         array (
         'slug' => 'validate-checkbox',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2001,
         'canonical_url' => 'https://lab.artlung.com/validate-checkbox/',
         'title' => 'Only submit if at least one checkbox is checked',
@@ -2060,7 +2077,7 @@ class Nav
         'validate-image' => 
         array (
         'slug' => 'validate-image',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2002,
         'canonical_url' => 'https://lab.artlung.com/validate-image/',
         'title' => 'How do I validate a form when the form has an image as submit?',
@@ -2074,7 +2091,7 @@ class Nav
         'vbscript-always-elseif-never-else-if' => 
         array (
         'slug' => 'vbscript-always-elseif-never-else-if',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2016,
         'canonical_url' => 'https://lab.artlung.com/vbscript-always-elseif-never-else-if/',
         'title' => 'In VBScript, It\'s always "Elseif" and never "Else If"',
@@ -2088,7 +2105,7 @@ class Nav
         'w3c-with-and-without-css' => 
         array (
         'slug' => 'w3c-with-and-without-css',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2002,
         'canonical_url' => 'https://lab.artlung.com/w3c-with-and-without-css/',
         'title' => 'How Powerful is CSS?',
@@ -2110,7 +2127,7 @@ class Nav
         0 => 'curl',
         1 => 'indieweb',
         ),
-        'og-image-date' => '2024-12-18 17:51:46',
+        'og-image-date' => '2025-02-21 23:22:13',
         'atom_feed_publish_date' => '2024-12-18 17:51:46',
         'webmention_last_checked' => 1737251768,
         'webmention_count' => 2,
@@ -2118,7 +2135,7 @@ class Nav
         'windows-export-file-list' => 
         array (
         'slug' => 'windows-export-file-list',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2000,
         'canonical_url' => 'https://lab.artlung.com/windows-export-file-list/',
         'title' => 'How to Make a file with every file on a C:\\ drive (Windows)',
@@ -2132,7 +2149,7 @@ class Nav
         'ws-ftp-password-decoder' => 
         array (
         'slug' => 'ws-ftp-password-decoder',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2001,
         'canonical_url' => 'https://lab.artlung.com/ws-ftp-password-decoder/',
         'title' => 'WS_FTP JavaScript Password Decoder',
@@ -2146,7 +2163,7 @@ class Nav
         'xml-encode' => 
         array (
         'slug' => 'xml-encode',
-        'og-image-date' => '2024-12-17 01:21:10',
+        'og-image-date' => '2025-02-21 23:22:13',
         'year' => 2009,
         'canonical_url' => 'https://lab.artlung.com/xml-encode/',
         'title' => 'xml_encode()',

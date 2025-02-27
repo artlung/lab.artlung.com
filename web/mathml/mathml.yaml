@@ -1,11 +1,15 @@
 ---
 slug: mathml
-og-image-date: 2024-12-17 01:21:10
 year: 2024
 canonical_url: https://lab.artlung.com/mathml/
-title: MathML Test Page
+title: >
+  MathML Test Page now with MathJax /
+  LaTeX
 tags:
   - html
   - mathml
+  - latex
+  - mathjax
 webmention_last_checked: 1737251752
 webmention_count: 1
+og-image-date: 2025-02-26 22:06:14
