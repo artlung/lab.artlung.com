@@ -1,30 +1,44 @@
 <?php
 
+namespace ArtlungLab;
+/**
+ * Class GitHubLink
+ *
+ * @category PHP
+ * @package  ArtLung
+ * @author   Joe Crawford <joe@artlung.com>
+ * @license  GPL 2.0+ - http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+ * @version  Release: 1.0
+ * @link     https://artlung.com/
+ * @since    2024-12-03
+ */
 class GitHubLink
 {
 
 
     const ISSUE_URL = "https://github.com/artlung/lab.artlung.com/issues/new";
 
+    /**
+     * Create a GitHub Issue URL from an array
+     *
+     * @param array $array
+     *
+     * @return string
+     */
     public static function createIssueLink(array $array): string
     {
-        return self::ISSUE_URL . "?" . self::http_build_query($array);
+        return self::ISSUE_URL . "?" . self::_httpBuildQuery($array);
     }
 
 
     /**
-     * @param  array $array{
-     * @type   string $title
-     * @type   string $body
-     * @type   string $labels
-     * @type   string $milestone
-     * @type   string|array $assignees
-     * @type   string $projects
-     * @type   string $template
-     * }
+     * Helper function to build a query string
+     *
+     * @param array{title: string, body: string,labels: string|array,milestone: string,assignees: string|array,projects: string,template: string,url: string } $array
+     *
      * @return string
      */
-    private static function http_build_query(array $array): string
+    private static function _httpBuildQuery(array $array): string
     {
 
         //        title    https://github.com/octo-org/octo-repo/issues/new?labels=bug&title=New+bug+report creates an issue with the label "bug" and title "New bug report."
