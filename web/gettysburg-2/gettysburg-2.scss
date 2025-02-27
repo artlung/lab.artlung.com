@@ -1,0 +1,24 @@
+form#GETTYSBURG-ADDRESS {
+  max-width: 80ch;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+
+  button {
+    font-size: 1.2rem;
+    transition: 1.2s background-position;
+    background: linear-gradient(to right, #d5d5d5 50%, rgba(0, 0, 0, 0) 0%) 0 0/200% 100% no-repeat;
+    border: 1px solid #ccc;
+    border-radius: 0.2rem;
+    padding: 0.5rem;
+    flex-grow: 1;
+
+    &.active {
+      background-position: -100% 0;
+    }
+  }
+}
+

@@ -24,13 +24,15 @@
     "config": {
         "platform": {
             "php": "7.4.33"
-        }
+        },
+        "optimize-autoloader": true
     },
     "scripts": {
         "test": "phpunit --bootstrap loader.php",
         "sniff": "phpcs --standard=phpcs.xml *.php */*.php */*/*.php */*/*/*.php",
         "snifferfix" : "phpcbf --standard=phpcs.xml  *.php */*.php */*/*.php */*/*/*.php",
         "updatenav": "php generate-nav-value.php",
-        "webmentions": "php get-webmentions.php"
+        "webmentions": "php get-webmentions.php",
+        "og-images" : "php og-images.php"
     }
 }

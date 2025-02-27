@@ -2,7 +2,7 @@
 
 namespace ArtlungLab;
 /**
- * Class GitHubLink
+ * Class GitHubIssue
  *
  * @category PHP
  * @package  ArtLung

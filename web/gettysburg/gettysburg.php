@@ -276,6 +276,10 @@ $lab->printHeader('Gettysburg Address in HTML Buttons!');
         <input type="button" name="button265" value="earth.">
     </form>
 
+<hr>
+
+<p>See also <em><a href="https://lab.artlung.com/gettysburg-2/">Gettysburg Address in HTML. Interactive.</a></em></p>
+
 <?php
 $lab->printFooter(
     [

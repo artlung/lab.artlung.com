@@ -7,8 +7,8 @@ title: Quick Overlay
 tags:
   - javascript
   - bookmarklet
-webmention_last_checked: 1737251758
+webmention_last_checked: 1740624067
 webmention_count: 0
 shot_scraper_extra_params: |
   --javascript "document.querySelector('.bookmarklet').click();"
-og-image-date: 2024-12-24 16:10:11
+og-image-date: 2025-02-21 23:22:13
