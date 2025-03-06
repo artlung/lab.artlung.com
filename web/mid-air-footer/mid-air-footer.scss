@@ -1,0 +1,42 @@
+/* setting an overall height
+on both the html element and body element assures that
+"percentage" based heights will work on child elements,
+ otherwise, percentage of what? */
+html, body {
+  height: 100%;
+}
+/* this presumes the body has 3 immediate child elements,
+ and forces the first and third to have their natural
+ height, and then the 1fr sized middle element is forced
+  to take up the rest of the space, because the body has
+   a height of 100%. remove height 100% from either html
+    or body and this won't work */
+body {
+  margin: 0;
+  display: grid;
+  grid-template-rows: min-content
+ 1fr min-content;
+}
+/* added so we can add padding and not affect overall sizing */
+* {
+  box-sizing: border-box;
+}
+header {
+  height: 120px;
+  padding: 1vmin 5vmin;
+  background: limegreen;
+  color: green;
+  text-align: end;
+}
+main {
+  padding: 1vmin 5vmin;
+  background: white;
+  box-shadow: inset 0 0 5vmin pink;
+}
+footer {
+  padding: 1vmin 5vmin;
+  height: 180px;
+  background: yellow;
+  color: orange;
+  text-align: end;
+}
