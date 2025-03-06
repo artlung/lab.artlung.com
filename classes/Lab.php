@@ -100,8 +100,8 @@ class Lab
     /**
      * Get the header with a title and options
      *
-     * @param string $title
-     * @param array  $options
+     * @param string                                                                                                       $title
+     * @param array{minimum-head-items: boolean, open-nav: boolean, body-tag: string, canonical: string, css-files: array} $options
      *
      * @return string
      */
@@ -141,6 +141,13 @@ class Lab
             $bodyTag = $options['body-tag'];
         } else {
             $bodyTag = sprintf('<body id="%s">', $scriptNameMd5);
+        }
+
+        $cssFiles = '';
+        if ($options['css-files'] ?? false && is_array($options['css-files'])) {
+            foreach ($options['css-files'] as $cssFile) {
+                $cssFiles .= sprintf('<link rel="stylesheet" href="%s" type="text/css">', $cssFile);
+            }
         }
 
         $navItems = Nav::getMetadata();
@@ -242,6 +249,18 @@ class Lab
         }
         $ogImageLink = sprintf('<meta property="og:image" content="%s">', $ogImageName);
 
+        if ($options['minimum-head-items'] ?? false) {
+            return <<<HTML
+<link rel="webmention" href="https://webmention.io/artlung.com/webmention">
+<link rel="alternate" type="application/rss+xml" title="Feed" href="/feed.xml">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{$title} / ArtLung Lab</title>
+{$ogImageLink}
+{$cssFiles}
+HTML;
+        }
+
+
 
         return <<<HTML
 <!DOCTYPE html>
@@ -258,6 +277,7 @@ class Lab
 {$disqusScript}
 <title>{$title} / ArtLung Lab</title>
 {$ogImageLink}
+{$cssFiles}
 {$code_from_code_txt}
 </head>
 {$bodyTag}

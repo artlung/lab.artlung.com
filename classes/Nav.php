@@ -27,7 +27,7 @@ class Nav
 
         // yaml is the source of truth, generate this with slugs_and_titles.php do not hand edit this:
 
-        /* START: handled by php generate-nav-value LAST UPDATE 2025-02-27 02:45:30 */
+        /* START: handled by php generate-nav-value LAST UPDATE 2025-03-06 19:33:10 */
         return $slugs_and_titles = array (
         '50states' => 
         array (
@@ -1162,6 +1162,19 @@ class Nav
         ),
         'webmention_last_checked' => 1740624061,
         'webmention_count' => 0,
+        ),
+        'mid-air-footer' => 
+        array (
+        'year' => 2025,
+        'title' => 'Mid-air footer',
+        'tags' => 
+        array (
+        0 => 'html',
+        1 => 'css',
+        ),
+        'og-image-date' => '2025-03-06 15:39:24',
+        'atom_feed_publish_date' => '2025-03-06 11:00:00',
+        'canonical_url' => 'https://lab.artlung.com/mid-air-footer/',
         ),
         'misc-files' => 
         array (

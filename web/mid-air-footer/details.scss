@@ -1,0 +1,25 @@
+details {
+  background: #eee;
+  //width: min-content;
+  //min-width: 50ch;
+  summary {
+    background: transparent;
+  }
+  * {
+    box-sizing: border-box;
+     padding: 0.3rem;
+    margin: 0;
+    background: white;
+    box-shadow: inset 0 0 0.3rem #eee;
+  }
+  pre {
+    font-family: monospace;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  blockquote {
+    max-width: 60ch;
+    line-height: 1.3;
+    padding: 0.3rem 0.3rem 0.3rem 3rem;
+  }
+}
