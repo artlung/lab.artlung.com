@@ -9,6 +9,8 @@ foreach ($items as $file) {
         print "<div class=\"instance savedNote\" id=\"{$item['guid']}\" style=\"top:{$item['top']}px;left:{$item['left']}px;height:{$item['height']}px;\">";
         print htmlentities($item['content']);
         print "</div>\n";
+    } else if (trim($item['content'] === '')) {
+        unlink('notes/' . $file);
     }
 }
 

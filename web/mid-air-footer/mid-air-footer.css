@@ -1,0 +1,1 @@
+html,body{height:100%}body{margin:0;display:grid;grid-template-rows:min-content 1fr min-content}*{box-sizing:border-box}header{height:120px;padding:1vmin 5vmin;background:#32cd32;color:green;text-align:end}main{padding:1vmin 5vmin;background:#fff;box-shadow:inset 0 0 5vmin pink}footer{padding:1vmin 5vmin;height:180px;background:#ff0;color:orange;text-align:end}
