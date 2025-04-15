@@ -6,7 +6,7 @@ date_default_timezone_set('UTC');
 use ArtlungLab\Nav;
 use FeedWriter\ATOM;
 
-$feed = new ATOM();
+$feed = @new ATOM();
 
 $default_author = [
     'name' => 'Joe Crawford',
