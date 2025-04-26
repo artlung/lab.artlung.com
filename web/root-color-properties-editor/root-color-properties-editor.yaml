@@ -11,7 +11,7 @@ tags:
   - javascript
   - bookmarklet
 atom_feed_publish_date: 2024-12-20 21:09:27
-webmention_last_checked: 1740624069
+webmention_last_checked: 1745706560
 webmention_count: 1
 shot_scraper_extra_params: |
   --javascript "document.querySelector('.bookmarklet').click();"
