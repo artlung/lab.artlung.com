@@ -27,7 +27,7 @@ class Nav
 
         // yaml is the source of truth, generate this with slugs_and_titles.php do not hand edit this:
 
-        /* START: handled by php generate-nav-value LAST UPDATE 2025-05-15 18:21:30 */
+        /* START: handled by php generate-nav-value LAST UPDATE 2025-05-16 18:11:13 */
         return $slugs_and_titles = array (
         '50states' => 
         array (
@@ -1737,8 +1737,10 @@ class Nav
         'title' => 'Safari Mailto Converter',
         'og-image-date' => '2025-05-15 17:53:37',
         'atom_feed_publish_date' => '2025-05-15T17:54:46+00:00',
+        'webmention_last_checked' => 1747331649,
+        'webmention_count' => 0,
         'year' => 2025,
-        'canonical_url' => 'https:/lab.artlung.com/safari-mailto-webmail/',
+        'canonical_url' => 'https://lab.artlung.com/safari-mailto-webmail/',
         'tags' => 
         array (
         0 => 'javascript',
@@ -1746,6 +1748,7 @@ class Nav
         2 => 'safari',
         3 => 'mailto',
         ),
+        'slug' => 'safari-mailto-webmail',
         ),
         'screen-resolutions' => 
         array (
