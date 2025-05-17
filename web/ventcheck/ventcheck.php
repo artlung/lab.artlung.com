@@ -9,6 +9,9 @@ $lab = new ArtlungLab\Lab();
 $lab->printHeader('Ventcheck');
 
 ?>
+    <link rel="stylesheet" href="ventcheck.css<?php
+    echo '?v=' . filemtime('ventcheck.css');
+    ?>">
 
 <p class="date-attribution">Created March 2016</p>
 
@@ -43,6 +46,10 @@ usort(
     A "vent check" is something a respiratory therapist does as part of their job.
     We check and document the ventilator settings, the humidifier, the oxygen level,
     we check on the patient and their current condition.
+</p>
+
+<p>
+    Ventcheck was also a Twitter account I did a few different things with over the years.
 </p>
 
 <h2>Respiratory Therapy Era <small><em>2009-2011</em></small></h2>

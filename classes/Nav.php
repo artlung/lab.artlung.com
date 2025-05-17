@@ -27,7 +27,7 @@ class Nav
 
         // yaml is the source of truth, generate this with slugs_and_titles.php do not hand edit this:
 
-        /* START: handled by php generate-nav-value LAST UPDATE 2025-05-17 04:24:50 */
+        /* START: handled by php generate-nav-value LAST UPDATE 2025-05-17 04:33:08 */
         return $slugs_and_titles = array (
         '50states' => 
         array (
@@ -2153,6 +2153,8 @@ class Nav
         2 => 'cheapbotsdonequick',
         3 => 'sandiegocodekitchen',
         ),
+        'og-image-date' => '2025-05-17 04:30:44',
+        'atom_feed_publish_date' => '2025-05-16 20:30:44',
         ),
         'w3c-with-and-without-css' => 
         array (
