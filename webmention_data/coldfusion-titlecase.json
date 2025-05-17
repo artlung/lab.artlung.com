@@ -1,1 +1,29 @@
-[{"type":"entry","author":{"type":"card","name":"Joe Crawford","photo":"https:\/\/webmention.io\/avatar\/cdn.artlung.com\/a0b5bad7e1082e08dc5e72e7f4760d40596782e04895da8b740023e7c1904d15.jpg","url":""},"url":"https:\/\/artlung.com\/blog\/2006\/05\/02\/labartlungcom-updated\/","published":"2006-05-02T14:39:42","wm-received":"2024-12-02T06:06:39Z","wm-id":1863899,"wm-source":"https:\/\/artlung.com\/blog\/2006\/05\/02\/labartlungcom-updated\/","wm-target":"https:\/\/lab.artlung.com\/coldfusion-titlecase\/","wm-protocol":"webmention","name":"lab.artlung.com updated.","content":{"html":"<p><a href=\"https:\/\/lab.artlung.com\/coldfusion-titlecase\/\">ColdFusion TitleCase Function<\/a> was updated with the addition of U.S. state abbreviations, via a reader submission.<\/p>","text":"ColdFusion TitleCase Function was updated with the addition of U.S. state abbreviations, via a reader submission."},"mention-of":"https:\/\/lab.artlung.com\/coldfusion-titlecase\/","wm-property":"mention-of","wm-private":false,"rels":{"canonical":"https:\/\/artlung.com\/blog\/2006\/05\/02\/labartlungcom-updated\/"}}]
+[
+  {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Joe Crawford",
+      "photo": "https:\/\/avatars.webmention.io\/cdn.artlung.com\/a0b5bad7e1082e08dc5e72e7f4760d40596782e04895da8b740023e7c1904d15.jpg",
+      "url": ""
+    },
+    "url": "https:\/\/artlung.com\/blog\/2006\/05\/02\/labartlungcom-updated\/",
+    "published": "2006-05-02T14:39:42",
+    "wm-received": "2024-12-02T06:06:39Z",
+    "wm-id": 1863899,
+    "wm-source": "https:\/\/artlung.com\/blog\/2006\/05\/02\/labartlungcom-updated\/",
+    "wm-target": "https:\/\/lab.artlung.com\/coldfusion-titlecase\/",
+    "wm-protocol": "webmention",
+    "name": "lab.artlung.com updated.",
+    "content": {
+      "html": "<p><a href=\"https:\/\/lab.artlung.com\/coldfusion-titlecase\/\">ColdFusion TitleCase Function<\/a> was updated with the addition of U.S. state abbreviations, via a reader submission.<\/p>",
+      "text": "ColdFusion TitleCase Function was updated with the addition of U.S. state abbreviations, via a reader submission."
+    },
+    "mention-of": "https:\/\/lab.artlung.com\/coldfusion-titlecase\/",
+    "wm-property": "mention-of",
+    "wm-private": false,
+    "rels": {
+      "canonical": "https:\/\/artlung.com\/blog\/2006\/05\/02\/labartlungcom-updated\/"
+    }
+  }
+]

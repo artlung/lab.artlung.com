@@ -1,0 +1,29 @@
+[
+  {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Joe Crawford",
+      "photo": "https:\/\/avatars.webmention.io\/cdn.artlung.com\/a0b5bad7e1082e08dc5e72e7f4760d40596782e04895da8b740023e7c1904d15.jpg",
+      "url": ""
+    },
+    "url": "https:\/\/artlung.com\/blog\/2025\/03\/06\/in-mid-air\/",
+    "published": "2025-03-06T14:57:33",
+    "wm-received": "2025-03-06T22:57:52Z",
+    "wm-id": 1890476,
+    "wm-source": "https:\/\/artlung.com\/blog\/2025\/03\/06\/in-mid-air\/",
+    "wm-target": "https:\/\/lab.artlung.com\/mid-air-footer\/",
+    "wm-protocol": "webmention",
+    "name": "In Mid-Air",
+    "content": {
+      "html": "<p>A persistent need in web development is to solve the problem of a footer that\u2019s not at a the foot. A main content area that\u2019s not tall doesn\u2019t push the footer down to the bottom. Here\u2019s one solution, inspired by a request in #IndieWeb chat this morning. It\u2019s <a href=\"https:\/\/lab.artlung.com\/mid-air-footer\/\">on the lab<\/a>.<\/p>\n<p>Man, I love making web pages.<\/p>\n<h2>Meanwhile, in my ears and eyes, music videos<\/h2>\n<p>Junior Senior \u00b7 <em><a href=\"https:\/\/www.youtube.com\/watch?v=SPlQpGeTbIE\">Move Your Feet<\/a><\/em><\/p>\n<p><\/p>\n<p>Gorillaz \u00b7 <em><a href=\"https:\/\/www.youtube.com\/watch?v=uAOR6ib95kQ\">DARE<\/a><\/em><\/p>\n<p><\/p>\n<h2>Also I made a batch of bone broth<\/h2>\n<p>It\u2019s good.<\/p>\n<img src=\"https:\/\/cdn.artlung.com\/blog\/wp-content\/uploads\/2025\/03\/IMG_9686-scaled.jpeg\" alt=\"\" width=\"1200\" height=\"1200\" \/><em>For cooking and such.<\/em>",
+      "text": "A persistent need in web development is to solve the problem of a footer that\u2019s not at a the foot. A main content area that\u2019s not tall doesn\u2019t push the footer down to the bottom. Here\u2019s one solution, inspired by a request in #IndieWeb chat this morning. It\u2019s on the lab.\nMan, I love making web pages.\nMeanwhile, in my ears and eyes, music videos\nJunior Senior \u00b7 Move Your Feet\n\nGorillaz \u00b7 DARE\n\nAlso I made a batch of bone broth\nIt\u2019s good.\nFor cooking and such."
+    },
+    "mention-of": "https:\/\/lab.artlung.com\/mid-air-footer\/",
+    "wm-property": "mention-of",
+    "wm-private": false,
+    "rels": {
+      "canonical": "https:\/\/artlung.com\/blog\/2025\/03\/06\/in-mid-air\/"
+    }
+  }
+]

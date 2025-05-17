@@ -1,1 +1,522 @@
-[{"type":"entry","author":{"type":"card","name":"joe jenett","photo":"https:\/\/webmention.io\/avatar\/secure.gravatar.com\/be3469587ad065ec1ec48004220592a16ea2a86cfc5b7deeaa680ca2895847ab.png","url":"https:\/\/iwebthings.joejenett.com\/"},"url":"https:\/\/iwebthings.joejenett.com\/world-wide-web\/","published":null,"wm-received":"2024-12-26T15:15:56Z","wm-id":1869808,"wm-source":"https:\/\/iwebthings.joejenett.com\/world-wide-web\/","wm-target":"https:\/\/lab.artlung.com\/","wm-protocol":"webmention","name":"\u201cWorld. Wide. Web.\u201d","content":{"html":"<p><a title=\"ArtLung: lab.artlung.com and a return to a World Wide Web ~ 23 Dec 2024\" href=\"https:\/\/artlung.com\/blog\/2024\/12\/23\/lab-artlung-com-and-a-return-to-a-world-wide-web\/\">lab.artlung.com and a return to a World Wide Web<\/a><br \/>\u21aa<a title=\"ArtLung Lab: Web Tech Experiments by Joe Crawford \/ ArtLung Lab\" href=\"https:\/\/lab.artlung.com\/\">ArtLung Lab<\/a><\/p>\n\n<blockquote><p>Web experiments, explainers, code snippets by <a href=\"https:\/\/artlung.com\/\">Joe Crawford<\/a> since 1996. Some current. Some out of date. You can follow the site <a href=\"https:\/\/lab.artlung.com\/feed.xml\">feed<\/a> and the code in the <a href=\"https:\/\/github.com\/artlung\/lab.artlung.com\">GitHub repository<\/a>.<\/p><\/blockquote>\n<p>???? I like!\n<a href=\"https:\/\/brid.gy\/publish\/mastodon\"><\/a><\/p>","text":"lab.artlung.com and a return to a World Wide Web\n\u21aaArtLung Lab\n\nWeb experiments, explainers, code snippets by Joe Crawford since 1996. Some current. Some out of date. You can follow the site feed and the code in the GitHub repository.\n???? I like!"},"mention-of":"https:\/\/lab.artlung.com\/","wm-property":"mention-of","wm-private":false},{"type":"entry","author":{"type":"card","name":"Joe Crawford","photo":"https:\/\/webmention.io\/avatar\/cdn.artlung.com\/a0b5bad7e1082e08dc5e72e7f4760d40596782e04895da8b740023e7c1904d15.jpg","url":""},"url":"https:\/\/artlung.com\/blog\/2024\/12\/23\/lab-artlung-com-and-a-return-to-a-world-wide-web\/","published":"2024-12-23T11:25:29","wm-received":"2024-12-23T19:25:50Z","wm-id":1869372,"wm-source":"https:\/\/artlung.com\/blog\/2024\/12\/23\/lab-artlung-com-and-a-return-to-a-world-wide-web\/","wm-target":"https:\/\/lab.artlung.com\/","wm-protocol":"webmention","name":"lab.artlung.com and a return to a World Wide Web","syndication":["https:\/\/news.indieweb.org\/en"],"content":{"html":"<p>I have made every kind of web page. I\u2019ve worked on every sort of web application. I learned ColdFusion. I learned Perl. I learned PHP. CSS <em>came out<\/em> at the start of my career.<\/p>\n<p>Active Server Pages (\u201cASP\u201d) is now referred to as <em>\u201cClassic ASP\u201d<\/em> which makes it sound related to some middle-aged-man\u2019s drop-top Corvette Stingray. I learned ASP too.<\/p>\n<p>When I was learning, I used my website to play with the web. I called it THE LAB. I want to talk about how it came to be and how it changed with time today.<\/p>\n<p>In part I created the site to help me remember little bits of arcana that kept coming up for me as a web developer. I remember looking up my page <a href=\"https:\/\/lab.artlung.com\/anti-cache\/\">Preventing Browser Cache<\/a> several times to see the various different ways the different application platforms represented the HTTP headers. Originally pages like this were here on artlung.com. I put them on my website as part of giving back to the web. It felt good. I had learned so much from mailing lists\u2013sometimes called <em>listservs: <\/em>Webmonster, Web405, evolt.org, webdesign-L, WWWAC, WebSanDiego, GOODTIMES and others taught me so much. Mailing lists are gone, as are most of their archives.<\/p>\n<p>I also learned on usenet. The comp.* groups had some great stuff. And for a time Macromedia offered their own newsgroup hierarchy. It used to be you could click on <a href=\"news:\/macromedia.dreamweaver\">news:\/\/forums.macromedia.com\/macromedia.dreamweaver<\/a> and fire up your newsreader and get help about Dreamweaver. All of that is now history. Some of that is archived to the web.<\/p>\n<p>Here in 2024 one can use StackOverflow to ask questions and discuss programming.<\/p>\n<p>We can also type a question into Google or Bing or DuckDuckGo. Often what comes up are ads and summations \u201cwritten\u201d\u2013which is to say\u2013<em>laundered<\/em> through an AI tool. But those written words couldn\u2019t exist without human effort. Human beings are part of the system. We forget those humans in the loop at our peril. It\u2019s why I try to add webmention support to anything new I build for the web. <a href=\"https:\/\/aaronparecki.com\">Aaron Parecki\u2019s<\/a> excellent <a href=\"https:\/\/webmention.io\/\">webmention.io service<\/a> is one of the best parts of the independent web: <em>the indieweb<\/em>.<\/p>\n<p>I\u2019m writing this at a coffee shop a stone\u2019s throw from what was the site of <em>San Diego Technical Books<\/em>. I would go there just to browse and to learn. And yes, buy a book now and again. But technical bookstores are also mostly gone. Things went online.<\/p>\n<p>And for a while, the web was pretty good at replacing mailing lists, newsgroups, and even paper books.<\/p>\n<p>But gradually, the web has gotten worse. Things seemed to have gotten so spammy and troll-filled and the good parts of the web have gone underground to places like Discord and Patreon and Substack and Facebook. Gated by rules or fees or <em>sign-up required<\/em>.<\/p>\n<p>But that means I can\u2019t find a lot of those things on the web. If I can\u2019t search for it, I can\u2019t find it. It\u2019s invisible. And a private site is fine, of course. We all ought to have the right to create private enclaves for us and a few friends. But if my intent is for a site to be useful to the world, I am often thwarted by the search engine gatekeepers. They don\u2019t want you to visit my site as much as they want you to stay on their site as long as possible.<\/p>\n<p>I made an effort to make my own site better and more of a \u201cplace\u201d when I added comments in 2010. I used <a href=\"https:\/\/disqus.com\/\">Disqus<\/a>. It worked, and still works, great. People can make suggestions as to what specific thing <em>they would encounter<\/em> when, say, creating a menu, or trying to get SQL to behave. People would leave a \u201cthank you\u201d comment occasionally. Some folks emailed me to comment or thank. Disqus includes moderation tools to allow me to make choices about what can and can\u2019t go into the site, which kept spam out.<\/p>\n<p>But I also made the site worse in the 2010s. I added Google Ads. They were not intrusive, just a banner on the side. But they got worse, spawning big takeovers and keeping the reader from seeing the page they came for.<\/p>\n<h2>And so, I remade The Lab<\/h2>\n<p><a href=\"https:\/\/lab.artlung.com\/\">lab.artlung.com<\/a> has been fully refitted and I\u2019m rather proud of it all. It\u2019s all hand-rolled PHP code underpinning it. I\u2019m using <code>composer<\/code> to allow me to pull in useful libraries to read and write YAML consistently, to compress JavaScript (I did that to make it easy to create bookmarklets) and something to streamline creating an Atom feed. The site has webmentions and unit tests and I use PHP_CodeSniffer to keep the code from being a tangled mess. I have fun features like a random page load when you do (alt\u2013r or option\u2013r). It includes <code>og:image<\/code> capture using the excellent shot-scraper. I also created a command line tool to force myself to do some sort of organization on the many pages. And it\u2019s gotten me to create some new pages too. I don\u2019t have anything about React on the site but that may change!<\/p>\n<p>I\u2019m glad for this change. It\u2019s a return to practices that are good parts of the web: Sharing source code (all the code is up <a href=\"https:\/\/github.com\/artlung\/lab.artlung.com\">on GitHub<\/a>). Sharing with each other. No ads, <em>or at least I promise non-intrusive ads<\/em>.<\/p>\n<p>We have let the badness of computers and technology force us to forget why the web became the largest publishing and communications platform humanity ever made. We spend times in apps where algorithms seem to prevent us from doing what we want to do. Sharing what I want to share is complicated and tricky and often forces me to download an app I don\u2019t want. And so we\u2019re frustrated and isolated from things that might be useful or fun or interesting or elucidating.<\/p>\n<p>But you and me, <em>we own the web<\/em>. It\u2019s ours.<\/p>\n<p>We talked the other day in an IndieWeb Homebrew Website Club meeting about \u201cWWW\u201d and why sites seldom have that at the beginnings of their web urls. For a time, every site had that <code>\"www\"<\/code> at the beginning when publicizing their websites. But then it seemed kind of antiquated to use that. We have domains that scarcely look like domains. I have a page on tilde.club and it still surprises me that\u2019s a legitimate domain name. But it is.<\/p>\n<p>I want to bring back a recognition that the web is useful and good. \u201cWorld Wide Web\u201d is not quaint. I think of it as a statement of intent. It\u2019s a three-word manifesto. World. Wide. Web: <em>Information for the whole world, no matter who you are, or where you are, interlinked.<\/em> No registration required. No cookies required. No newsletter to subscribe to. No Discord to join. No monthly fee.<\/p>\n<p>And so I offer up <a href=\"https:\/\/lab.artlung.com\/\">the lab<\/a>.<\/p>\n<p>It\u2019s so fun to make web pages and share them.<\/p>\n<p>Go make a web page and share it.<\/p>","text":"I have made every kind of web page. I\u2019ve worked on every sort of web application. I learned ColdFusion. I learned Perl. I learned PHP. CSS came out at the start of my career.\nActive Server Pages (\u201cASP\u201d) is now referred to as \u201cClassic ASP\u201d which makes it sound related to some middle-aged-man\u2019s drop-top Corvette Stingray. I learned ASP too.\nWhen I was learning, I used my website to play with the web. I called it THE LAB. I want to talk about how it came to be and how it changed with time today.\nIn part I created the site to help me remember little bits of arcana that kept coming up for me as a web developer. I remember looking up my page Preventing Browser Cache several times to see the various different ways the different application platforms represented the HTTP headers. Originally pages like this were here on artlung.com. I put them on my website as part of giving back to the web. It felt good. I had learned so much from mailing lists\u2013sometimes called listservs: Webmonster, Web405, evolt.org, webdesign-L, WWWAC, WebSanDiego, GOODTIMES and others taught me so much. Mailing lists are gone, as are most of their archives.\nI also learned on usenet. The comp.* groups had some great stuff. And for a time Macromedia offered their own newsgroup hierarchy. It used to be you could click on news:\/\/forums.macromedia.com\/macromedia.dreamweaver and fire up your newsreader and get help about Dreamweaver. All of that is now history. Some of that is archived to the web.\nHere in 2024 one can use StackOverflow to ask questions and discuss programming.\nWe can also type a question into Google or Bing or DuckDuckGo. Often what comes up are ads and summations \u201cwritten\u201d\u2013which is to say\u2013laundered through an AI tool. But those written words couldn\u2019t exist without human effort. Human beings are part of the system. We forget those humans in the loop at our peril. It\u2019s why I try to add webmention support to anything new I build for the web. Aaron Parecki\u2019s excellent webmention.io service is one of the best parts of the independent web: the indieweb.\nI\u2019m writing this at a coffee shop a stone\u2019s throw from what was the site of San Diego Technical Books. I would go there just to browse and to learn. And yes, buy a book now and again. But technical bookstores are also mostly gone. Things went online.\nAnd for a while, the web was pretty good at replacing mailing lists, newsgroups, and even paper books.\nBut gradually, the web has gotten worse. Things seemed to have gotten so spammy and troll-filled and the good parts of the web have gone underground to places like Discord and Patreon and Substack and Facebook. Gated by rules or fees or sign-up required.\nBut that means I can\u2019t find a lot of those things on the web. If I can\u2019t search for it, I can\u2019t find it. It\u2019s invisible. And a private site is fine, of course. We all ought to have the right to create private enclaves for us and a few friends. But if my intent is for a site to be useful to the world, I am often thwarted by the search engine gatekeepers. They don\u2019t want you to visit my site as much as they want you to stay on their site as long as possible.\nI made an effort to make my own site better and more of a \u201cplace\u201d when I added comments in 2010. I used Disqus. It worked, and still works, great. People can make suggestions as to what specific thing they would encounter when, say, creating a menu, or trying to get SQL to behave. People would leave a \u201cthank you\u201d comment occasionally. Some folks emailed me to comment or thank. Disqus includes moderation tools to allow me to make choices about what can and can\u2019t go into the site, which kept spam out.\nBut I also made the site worse in the 2010s. I added Google Ads. They were not intrusive, just a banner on the side. But they got worse, spawning big takeovers and keeping the reader from seeing the page they came for.\nAnd so, I remade The Lab\nlab.artlung.com has been fully refitted and I\u2019m rather proud of it all. It\u2019s all hand-rolled PHP code underpinning it. I\u2019m using composer to allow me to pull in useful libraries to read and write YAML consistently, to compress JavaScript (I did that to make it easy to create bookmarklets) and something to streamline creating an Atom feed. The site has webmentions and unit tests and I use PHP_CodeSniffer to keep the code from being a tangled mess. I have fun features like a random page load when you do (alt\u2013r or option\u2013r). It includes og:image capture using the excellent shot-scraper. I also created a command line tool to force myself to do some sort of organization on the many pages. And it\u2019s gotten me to create some new pages too. I don\u2019t have anything about React on the site but that may change!\nI\u2019m glad for this change. It\u2019s a return to practices that are good parts of the web: Sharing source code (all the code is up on GitHub). Sharing with each other. No ads, or at least I promise non-intrusive ads.\nWe have let the badness of computers and technology force us to forget why the web became the largest publishing and communications platform humanity ever made. We spend times in apps where algorithms seem to prevent us from doing what we want to do. Sharing what I want to share is complicated and tricky and often forces me to download an app I don\u2019t want. And so we\u2019re frustrated and isolated from things that might be useful or fun or interesting or elucidating.\nBut you and me, we own the web. It\u2019s ours.\nWe talked the other day in an IndieWeb Homebrew Website Club meeting about \u201cWWW\u201d and why sites seldom have that at the beginnings of their web urls. For a time, every site had that \"www\" at the beginning when publicizing their websites. But then it seemed kind of antiquated to use that. We have domains that scarcely look like domains. I have a page on tilde.club and it still surprises me that\u2019s a legitimate domain name. But it is.\nI want to bring back a recognition that the web is useful and good. \u201cWorld Wide Web\u201d is not quaint. I think of it as a statement of intent. It\u2019s a three-word manifesto. World. Wide. Web: Information for the whole world, no matter who you are, or where you are, interlinked. No registration required. No cookies required. No newsletter to subscribe to. No Discord to join. No monthly fee.\nAnd so I offer up the lab.\nIt\u2019s so fun to make web pages and share them.\nGo make a web page and share it."},"mention-of":"https:\/\/lab.artlung.com\/","wm-property":"mention-of","wm-private":false,"rels":{"canonical":"https:\/\/artlung.com\/blog\/2024\/12\/23\/lab-artlung-com-and-a-return-to-a-world-wide-web\/"}},{"type":"entry","author":{"type":"card","name":"Joe Crawford","photo":"https:\/\/webmention.io\/avatar\/cdn.artlung.com\/a0b5bad7e1082e08dc5e72e7f4760d40596782e04895da8b740023e7c1904d15.jpg","url":""},"url":"https:\/\/artlung.com\/blog\/2001\/04\/14\/3206818\/","published":"2001-04-14T20:15:00","wm-received":"2024-12-02T06:10:48Z","wm-id":1864035,"wm-source":"https:\/\/artlung.com\/blog\/2001\/04\/14\/3206818\/","wm-target":"https:\/\/lab.artlung.com\/","wm-protocol":"webmention","content":{"html":"<p>The <a href=\"https:\/\/lab.artlung.com\/php\/gallery\/\">PHP AutoMagic Gallery Listing<\/a> is the latest item to be added to <a href=\"https:\/\/lab.artlung.com\/\">The Lab<\/a>. Never heard of PHP? <a href=\"http:\/\/www.php.net\/\">Shame on you!<\/a><\/p>","text":"The PHP AutoMagic Gallery Listing is the latest item to be added to The Lab. Never heard of PHP? Shame on you!"},"mention-of":"https:\/\/lab.artlung.com\/","wm-property":"mention-of","wm-private":false,"rels":{"canonical":"https:\/\/artlung.com\/blog\/2001\/04\/14\/3206818\/"}},{"type":"entry","author":{"type":"card","name":"Joe Crawford","photo":"https:\/\/webmention.io\/avatar\/cdn.artlung.com\/a0b5bad7e1082e08dc5e72e7f4760d40596782e04895da8b740023e7c1904d15.jpg","url":""},"url":"https:\/\/artlung.com\/blog\/2001\/04\/02\/3042057\/","published":"2001-04-02T23:12:00","wm-received":"2024-12-02T06:10:47Z","wm-id":1864034,"wm-source":"https:\/\/artlung.com\/blog\/2001\/04\/02\/3042057\/","wm-target":"https:\/\/lab.artlung.com\/","wm-protocol":"webmention","content":{"html":"<p>I have lots of JavaScript experience.<\/p>\n<p> Amazingly, this makes me valuable in some ways. I had no idea that people would tip for it. I got my first Tip the other day through the lab. Is <a href=\"https:\/\/lab.artlung.com\/\">my Lab<\/a> now a commercial site? Or am I just a busker \u2013 some modern day mendicant poet of JavaScript?<\/p>\n<p> Hmmm.<\/p>","text":"I have lots of JavaScript experience.\n Amazingly, this makes me valuable in some ways. I had no idea that people would tip for it. I got my first Tip the other day through the lab. Is my Lab now a commercial site? Or am I just a busker \u2013 some modern day mendicant poet of JavaScript?\n Hmmm."},"mention-of":"https:\/\/lab.artlung.com\/","wm-property":"mention-of","wm-private":false,"rels":{"canonical":"https:\/\/artlung.com\/blog\/2001\/04\/02\/3042057\/"}},{"type":"entry","author":{"type":"card","name":"Joe Crawford","photo":"https:\/\/webmention.io\/avatar\/cdn.artlung.com\/a0b5bad7e1082e08dc5e72e7f4760d40596782e04895da8b740023e7c1904d15.jpg","url":""},"url":"https:\/\/artlung.com\/blog\/2001\/05\/16\/3668802\/","published":"2001-05-16T22:58:00","wm-received":"2024-12-02T06:10:44Z","wm-id":1864033,"wm-source":"https:\/\/artlung.com\/blog\/2001\/05\/16\/3668802\/","wm-target":"https:\/\/lab.artlung.com\/","wm-protocol":"webmention","content":{"html":"<p><i>New stuff for the lab! <\/i><br \/><a href=\"https:\/\/lab.artlung.com\/scripting\/multiple_select\/\">Multiple, Hierarchical SelectBoxes<\/a> and <a href=\"https:\/\/lab.artlung.com\/scripting\/reverse_string_nums\/\">Reverse a string, but only the digits<\/a>.<\/p>\n<p> Always satisfying to add to <a href=\"https:\/\/lab.artlung.com\/\">the lab<\/a>. Based on the hit logs, it looks like people are using it. This makes me happy.<\/p>","text":"New stuff for the lab! \nMultiple, Hierarchical SelectBoxes and Reverse a string, but only the digits.\n Always satisfying to add to the lab. Based on the hit logs, it looks like people are using it. This makes me happy."},"mention-of":"https:\/\/lab.artlung.com\/","wm-property":"mention-of","wm-private":false,"rels":{"canonical":"https:\/\/artlung.com\/blog\/2001\/05\/16\/3668802\/"}},{"type":"entry","author":{"type":"card","name":"Joe Crawford","photo":"https:\/\/webmention.io\/avatar\/cdn.artlung.com\/a0b5bad7e1082e08dc5e72e7f4760d40596782e04895da8b740023e7c1904d15.jpg","url":""},"url":"https:\/\/artlung.com\/blog\/2001\/05\/22\/3756864\/","published":"2001-05-22T22:00:00","wm-received":"2024-12-02T06:10:39Z","wm-id":1864028,"wm-source":"https:\/\/artlung.com\/blog\/2001\/05\/22\/3756864\/","wm-target":"https:\/\/lab.artlung.com\/","wm-protocol":"webmention","content":{"html":"<p><b>New <a href=\"https:\/\/lab.artlung.com\/\">lab<\/a> item!<\/b><br \/><a href=\"https:\/\/lab.artlung.com\/scripting\/change_all_links\/\">How can I change every link on a page to something new?<\/a><\/p>","text":"New lab item!\nHow can I change every link on a page to something new?"},"mention-of":"https:\/\/lab.artlung.com\/","wm-property":"mention-of","wm-private":false,"rels":{"canonical":"https:\/\/artlung.com\/blog\/2001\/05\/22\/3756864\/"}},{"type":"entry","author":{"type":"card","name":"Joe Crawford","photo":"https:\/\/webmention.io\/avatar\/cdn.artlung.com\/a0b5bad7e1082e08dc5e72e7f4760d40596782e04895da8b740023e7c1904d15.jpg","url":""},"url":"https:\/\/artlung.com\/blog\/2001\/06\/21\/4177099\/","published":"2001-06-21T11:34:00","wm-received":"2024-12-02T06:10:37Z","wm-id":1864026,"wm-source":"https:\/\/artlung.com\/blog\/2001\/06\/21\/4177099\/","wm-target":"https:\/\/lab.artlung.com\/","wm-protocol":"webmention","content":{"html":"<p>I\u2019m mortified. Broken stuff in the <a href=\"https:\/\/lab.artlung.com\/\">lab<\/a>. <i>The horror! The horror!<\/i><\/p>\n<p> The <a href=\"https:\/\/lab.artlung.com\/scripting\/multiple_select\/\">multiple select<\/a> tool was broken in essentially every browser. Ugh. Luckily nobody donated anything on the strength of that one.<\/p>\n<p> I have now fixed it.<\/p>","text":"I\u2019m mortified. Broken stuff in the lab. The horror! The horror!\n The multiple select tool was broken in essentially every browser. Ugh. Luckily nobody donated anything on the strength of that one.\n I have now fixed it."},"mention-of":"https:\/\/lab.artlung.com\/","wm-property":"mention-of","wm-private":false,"rels":{"canonical":"https:\/\/artlung.com\/blog\/2001\/06\/21\/4177099\/"}},{"type":"entry","author":{"type":"card","name":"Joe Crawford","photo":"https:\/\/webmention.io\/avatar\/cdn.artlung.com\/a0b5bad7e1082e08dc5e72e7f4760d40596782e04895da8b740023e7c1904d15.jpg","url":""},"url":"https:\/\/artlung.com\/blog\/2001\/07\/11\/4494715\/","published":"2001-07-11T19:44:00","wm-received":"2024-12-02T06:10:33Z","wm-id":1864024,"wm-source":"https:\/\/artlung.com\/blog\/2001\/07\/11\/4494715\/","wm-target":"https:\/\/lab.artlung.com\/","wm-protocol":"webmention","content":{"html":"<p>New item for <a href=\"https:\/\/lab.artlung.com\/\" title=\"tech playground\">The Lab<\/a>:<br \/>Some bookmarklets which I can never remember where to go get. <a href=\"https:\/\/lab.artlung.com\/scripting\/bookmarklets\/\" title=\"Killer Bookmarklets I have Come Across (IE Only)\">So here they are<\/a>.<\/p>","text":"New item for The Lab:\nSome bookmarklets which I can never remember where to go get. So here they are."},"mention-of":"https:\/\/lab.artlung.com\/","wm-property":"mention-of","wm-private":false,"rels":{"canonical":"https:\/\/artlung.com\/blog\/2001\/07\/11\/4494715\/"}},{"type":"entry","author":{"type":"card","name":"Joe Crawford","photo":"https:\/\/webmention.io\/avatar\/cdn.artlung.com\/a0b5bad7e1082e08dc5e72e7f4760d40596782e04895da8b740023e7c1904d15.jpg","url":""},"url":"https:\/\/artlung.com\/blog\/2001\/07\/20\/4638580\/","published":"2001-07-20T07:43:00","wm-received":"2024-12-02T06:10:30Z","wm-id":1864022,"wm-source":"https:\/\/artlung.com\/blog\/2001\/07\/20\/4638580\/","wm-target":"https:\/\/lab.artlung.com\/","wm-protocol":"webmention","content":{"html":"<p><a href=\"https:\/\/lab.artlung.com\/\">Lab<\/a> time again! This time I\u2019m addressing the question of the dotted lines in Windows MSIE. It\u2019s titled: <a href=\"https:\/\/lab.artlung.com\/scripting\/the-problem-with-blur\/\">Why not to use blur() to make dotted lines go away in MSIE for Windows<\/a>. The cousin of this entry is <a href=\"https:\/\/lab.artlung.com\/css\/a-outline-none\/\">outline: none CSS property<\/a>.<\/p>","text":"Lab time again! This time I\u2019m addressing the question of the dotted lines in Windows MSIE. It\u2019s titled: Why not to use blur() to make dotted lines go away in MSIE for Windows. The cousin of this entry is outline: none CSS property."},"mention-of":"https:\/\/lab.artlung.com\/","wm-property":"mention-of","wm-private":false,"rels":{"canonical":"https:\/\/artlung.com\/blog\/2001\/07\/20\/4638580\/"}},{"type":"entry","author":{"type":"card","name":"Joe Crawford","photo":"https:\/\/webmention.io\/avatar\/cdn.artlung.com\/a0b5bad7e1082e08dc5e72e7f4760d40596782e04895da8b740023e7c1904d15.jpg","url":""},"url":"https:\/\/artlung.com\/blog\/2001\/07\/25\/4722767\/","published":"2001-07-25T08:01:00","wm-received":"2024-12-02T06:10:25Z","wm-id":1864020,"wm-source":"https:\/\/artlung.com\/blog\/2001\/07\/25\/4722767\/","wm-target":"https:\/\/lab.artlung.com\/","wm-protocol":"webmention","content":{"html":"<p>Yep, <a href=\"https:\/\/lab.artlung.com\/\">Lab<\/a> time. This one\u2019s a simple little idea. <a href=\"https:\/\/lab.artlung.com\/scripting\/dropdown_submit_form\/\">Submit a form by selecting a dropdown item<\/a> with client-side scripting (read: JavaScript).<\/p>","text":"Yep, Lab time. This one\u2019s a simple little idea. Submit a form by selecting a dropdown item with client-side scripting (read: JavaScript)."},"mention-of":"https:\/\/lab.artlung.com\/","wm-property":"mention-of","wm-private":false,"rels":{"canonical":"https:\/\/artlung.com\/blog\/2001\/07\/25\/4722767\/"}},{"type":"entry","author":{"type":"card","name":"Joe Crawford","photo":"https:\/\/webmention.io\/avatar\/cdn.artlung.com\/a0b5bad7e1082e08dc5e72e7f4760d40596782e04895da8b740023e7c1904d15.jpg","url":""},"url":"https:\/\/artlung.com\/blog\/2001\/08\/06\/4941364\/","published":"2001-08-06T12:25:00","wm-received":"2024-12-02T06:10:21Z","wm-id":1864018,"wm-source":"https:\/\/artlung.com\/blog\/2001\/08\/06\/4941364\/","wm-target":"https:\/\/lab.artlung.com\/","wm-protocol":"webmention","content":{"html":"<p><a href=\"https:\/\/lab.artlung.com\/\">Lab<\/a> time! Why the <a href=\"https:\/\/lab.artlung.com\/other\/email-submission-stinks\/\">form action mailto: stinks<\/a>. Includes screengrabs.<\/p>","text":"Lab time! Why the form action mailto: stinks. Includes screengrabs."},"mention-of":"https:\/\/lab.artlung.com\/","wm-property":"mention-of","wm-private":false,"rels":{"canonical":"https:\/\/artlung.com\/blog\/2001\/08\/06\/4941364\/"}},{"type":"entry","author":{"type":"card","name":"Joe Crawford","photo":"https:\/\/webmention.io\/avatar\/cdn.artlung.com\/a0b5bad7e1082e08dc5e72e7f4760d40596782e04895da8b740023e7c1904d15.jpg","url":""},"url":"https:\/\/artlung.com\/blog\/2001\/08\/20\/5200687\/","published":"2001-08-20T17:02:00","wm-received":"2024-12-02T06:09:37Z","wm-id":1864017,"wm-source":"https:\/\/artlung.com\/blog\/2001\/08\/20\/5200687\/","wm-target":"https:\/\/lab.artlung.com\/","wm-protocol":"webmention","content":{"html":"<p>I put this in the <a href=\"https:\/\/lab.artlung.com\/\">lab<\/a> because I don\u2019t know where else to put it \u2014 <a href=\"https:\/\/lab.artlung.com\/html\/html-2.0\/\">HTML 2.0 \u2013 An exploration!<\/a>. The idea here is an exercise in web authoring, 1996-style. Just some pointers to the original specs, and brief ruminations on how it\u2019s a little different.<\/p>","text":"I put this in the lab because I don\u2019t know where else to put it \u2014 HTML 2.0 \u2013 An exploration!. The idea here is an exercise in web authoring, 1996-style. Just some pointers to the original specs, and brief ruminations on how it\u2019s a little different."},"mention-of":"https:\/\/lab.artlung.com\/","wm-property":"mention-of","wm-private":false,"rels":{"canonical":"https:\/\/artlung.com\/blog\/2001\/08\/20\/5200687\/"}},{"type":"entry","author":{"type":"card","name":"Joe Crawford","photo":"https:\/\/webmention.io\/avatar\/cdn.artlung.com\/a0b5bad7e1082e08dc5e72e7f4760d40596782e04895da8b740023e7c1904d15.jpg","url":""},"url":"https:\/\/artlung.com\/blog\/2001\/09\/03\/5469844\/","published":"2001-09-03T22:51:00","wm-received":"2024-12-02T06:09:35Z","wm-id":1864016,"wm-source":"https:\/\/artlung.com\/blog\/2001\/09\/03\/5469844\/","wm-target":"https:\/\/lab.artlung.com\/","wm-protocol":"webmention","content":{"html":"<p>New <a href=\"https:\/\/lab.artlung.com\/\">Lab<\/a> item. <a href=\"https:\/\/lab.artlung.com\/php\/php-php3-mod-rewrite\/\">How to make .php files masquerade as .php3<\/a>. It\u2019s a bit of magic which requires the very cool mod_rewrite for apache. Good mod_rewrite tutorials <a href=\"http:\/\/httpd.apache.org\/docs\/mod\/mod_rewrite.html\" title=\"Module mod_rewrite URL Rewriting Engine @ apache.org\">here<\/a> and <a href=\"http:\/\/www.engelschall.com\/pw\/apache\/rewriteguide\/\" title=\"A Users Guide to URL Rewriting with the Apache Webserver by Ralf S. Engelschall\">here<\/a>.<\/p>","text":"New Lab item. How to make .php files masquerade as .php3. It\u2019s a bit of magic which requires the very cool mod_rewrite for apache. Good mod_rewrite tutorials here and here."},"mention-of":"https:\/\/lab.artlung.com\/","wm-property":"mention-of","wm-private":false,"rels":{"canonical":"https:\/\/artlung.com\/blog\/2001\/09\/03\/5469844\/"}},{"type":"entry","author":{"type":"card","name":"Joe Crawford","photo":"https:\/\/webmention.io\/avatar\/cdn.artlung.com\/a0b5bad7e1082e08dc5e72e7f4760d40596782e04895da8b740023e7c1904d15.jpg","url":""},"url":"https:\/\/artlung.com\/blog\/2001\/11\/07\/6934971\/","published":"2001-11-07T00:22:00","wm-received":"2024-12-02T06:09:34Z","wm-id":1864015,"wm-source":"https:\/\/artlung.com\/blog\/2001\/11\/07\/6934971\/","wm-target":"https:\/\/lab.artlung.com\/","wm-protocol":"webmention","content":{"html":"<p>Still fooling with OSX. Keeping me busy. Hopefully I\u2019ll have some new <a href=\"https:\/\/lab.artlung.com\/\">lab<\/a> entries as a result of all this playing.<\/p>","text":"Still fooling with OSX. Keeping me busy. Hopefully I\u2019ll have some new lab entries as a result of all this playing."},"mention-of":"https:\/\/lab.artlung.com\/","wm-property":"mention-of","wm-private":false,"rels":{"canonical":"https:\/\/artlung.com\/blog\/2001\/11\/07\/6934971\/"}},{"type":"entry","author":{"type":"card","name":"Joe Crawford","photo":"https:\/\/webmention.io\/avatar\/cdn.artlung.com\/a0b5bad7e1082e08dc5e72e7f4760d40596782e04895da8b740023e7c1904d15.jpg","url":""},"url":"https:\/\/artlung.com\/blog\/2001\/12\/16\/7978233\/","published":"2001-12-16T20:00:00","wm-received":"2024-12-02T06:09:26Z","wm-id":1864011,"wm-source":"https:\/\/artlung.com\/blog\/2001\/12\/16\/7978233\/","wm-target":"https:\/\/lab.artlung.com\/","wm-protocol":"webmention","content":{"html":"<p><b>New <a href=\"https:\/\/lab.artlung.com\/\">Lab Items:<\/a><\/b><br \/><a href=\"https:\/\/lab.artlung.com\/scripting\/urlencode\/\">How to Encode URLs; An ASCII to URLEncoded JavaScript<\/a> and <a href=\"https:\/\/lab.artlung.com\/scripting\/checkbox-validate\/\">Checkbox Validator<\/a>.<\/p>","text":"New Lab Items:\nHow to Encode URLs; An ASCII to URLEncoded JavaScript and Checkbox Validator."},"mention-of":"https:\/\/lab.artlung.com\/","wm-property":"mention-of","wm-private":false,"rels":{"canonical":"https:\/\/artlung.com\/blog\/2001\/12\/16\/7978233\/"}},{"type":"entry","author":{"type":"card","name":"Joe Crawford","photo":"https:\/\/webmention.io\/avatar\/cdn.artlung.com\/a0b5bad7e1082e08dc5e72e7f4760d40596782e04895da8b740023e7c1904d15.jpg","url":""},"url":"https:\/\/artlung.com\/blog\/2001\/12\/17\/8011644\/","published":"2001-12-17T23:26:00","wm-received":"2024-12-02T06:09:22Z","wm-id":1864008,"wm-source":"https:\/\/artlung.com\/blog\/2001\/12\/17\/8011644\/","wm-target":"https:\/\/lab.artlung.com\/","wm-protocol":"webmention","content":{"html":"<p>more new <a href=\"https:\/\/lab.artlung.com\/\">lab<\/a> items: <a href=\"https:\/\/lab.artlung.com\/scripting\/onunload-window-open-evil\/\">onunload + window.open = evil<\/a> and <a href=\"https:\/\/lab.artlung.com\/other\/anti-cache\/\">Preventing Browser Cache<\/a><\/p>","text":"more new lab items: onunload + window.open = evil and Preventing Browser Cache"},"mention-of":"https:\/\/lab.artlung.com\/","wm-property":"mention-of","wm-private":false,"rels":{"canonical":"https:\/\/artlung.com\/blog\/2001\/12\/17\/8011644\/"}},{"type":"entry","author":{"type":"card","name":"Joe Crawford","photo":"https:\/\/webmention.io\/avatar\/cdn.artlung.com\/a0b5bad7e1082e08dc5e72e7f4760d40596782e04895da8b740023e7c1904d15.jpg","url":""},"url":"https:\/\/artlung.com\/blog\/2001\/12\/27\/8223931\/","published":"2001-12-27T20:45:00","wm-received":"2024-12-02T06:09:20Z","wm-id":1864006,"wm-source":"https:\/\/artlung.com\/blog\/2001\/12\/27\/8223931\/","wm-target":"https:\/\/lab.artlung.com\/","wm-protocol":"webmention","content":{"html":"<p>New <a href=\"https:\/\/lab.artlung.com\/\">lab<\/a> item: <a href=\"https:\/\/lab.artlung.com\/other\/unix-batch-file-rename\/\">Batch File Rename By File Extension in Unix<\/a>. (Not really new, but moved from the <a href=\"https:\/\/artlung.com\/smorgasborg\/\">smorgasborg<\/a>)<\/p>","text":"New lab item: Batch File Rename By File Extension in Unix. (Not really new, but moved from the smorgasborg)"},"mention-of":"https:\/\/lab.artlung.com\/","wm-property":"mention-of","wm-private":false,"rels":{"canonical":"https:\/\/artlung.com\/blog\/2001\/12\/27\/8223931\/"}},{"type":"entry","author":{"type":"card","name":"Joe Crawford","photo":"https:\/\/webmention.io\/avatar\/cdn.artlung.com\/a0b5bad7e1082e08dc5e72e7f4760d40596782e04895da8b740023e7c1904d15.jpg","url":""},"url":"https:\/\/artlung.com\/blog\/2002\/01\/02\/8341034\/","published":"2002-01-02T02:43:00","wm-received":"2024-12-02T06:09:18Z","wm-id":1864005,"wm-source":"https:\/\/artlung.com\/blog\/2002\/01\/02\/8341034\/","wm-target":"https:\/\/lab.artlung.com\/","wm-protocol":"webmention","content":{"html":"<p><b>New <a href=\"https:\/\/lab.artlung.com\/\">Lab<\/a> Item:<\/b> <a href=\"https:\/\/lab.artlung.com\/scripting\/outbound-link-confirmation\/\">Outbound Link Confirmation<\/a><\/p>","text":"New Lab Item: Outbound Link Confirmation"},"mention-of":"https:\/\/lab.artlung.com\/","wm-property":"mention-of","wm-private":false,"rels":{"canonical":"https:\/\/artlung.com\/blog\/2002\/01\/02\/8341034\/"}},{"type":"entry","author":{"type":"card","name":"Joe Crawford","photo":"https:\/\/webmention.io\/avatar\/cdn.artlung.com\/a0b5bad7e1082e08dc5e72e7f4760d40596782e04895da8b740023e7c1904d15.jpg","url":""},"url":"https:\/\/artlung.com\/blog\/2002\/02\/27\/10213406\/","published":"2002-02-27T20:32:00","wm-received":"2024-12-02T06:09:14Z","wm-id":1864003,"wm-source":"https:\/\/artlung.com\/blog\/2002\/02\/27\/10213406\/","wm-target":"https:\/\/lab.artlung.com\/","wm-protocol":"webmention","name":"\u201cA sufficiently advanced Google search is indistinguishable from magic.\u201d","content":{"html":"<p> If you have any interest in weblogs and search algorithms, you must read <a href=\"http:\/\/www.corante.com\/microcontent\/articles\/googleblog.shtml\">Google  Loves Blogs: How Weblogs Influence A Billion Google Searches A Week<\/a>. I\u2019ve been saying that without <a href=\"http:\/\/www.google.com\/\">Google<\/a>, I am not as smart as I am with it. Very often I will not so much know something as know where I have the answer stored. An example, for me to get lorem ipsum text for a project, from wherever I\u2019m sitting at work, all I need to do it do a search for <a href=\"http:\/\/www.google.com\/search?q=artlung+greek\">artlung greek<\/a>. Blammo, there\u2019s <b>my<\/b> lorem ipsum for my project. Any number of items in my <a href=\"https:\/\/lab.artlung.com\/\">lab<\/a> are just like that. In so doing I appear nearly clairvoyant to my co-workers. But like any good programmer, I am merely lazy. I have no need to memorize lorem ipsum. I have no need to keep a file with lorem ipsum on my desktop at work. But with a string of 13 letters and a click I get <i>precisely<\/i> what I need. Google is my command line to the web. And I think I am not alone.<\/p>","text":"If you have any interest in weblogs and search algorithms, you must read Google  Loves Blogs: How Weblogs Influence A Billion Google Searches A Week. I\u2019ve been saying that without Google, I am not as smart as I am with it. Very often I will not so much know something as know where I have the answer stored. An example, for me to get lorem ipsum text for a project, from wherever I\u2019m sitting at work, all I need to do it do a search for artlung greek. Blammo, there\u2019s my lorem ipsum for my project. Any number of items in my lab are just like that. In so doing I appear nearly clairvoyant to my co-workers. But like any good programmer, I am merely lazy. I have no need to memorize lorem ipsum. I have no need to keep a file with lorem ipsum on my desktop at work. But with a string of 13 letters and a click I get precisely what I need. Google is my command line to the web. And I think I am not alone."},"mention-of":"https:\/\/lab.artlung.com\/","wm-property":"mention-of","wm-private":false,"rels":{"canonical":"https:\/\/artlung.com\/blog\/2002\/02\/27\/10213406\/"}},{"type":"entry","author":{"type":"card","name":"Joe Crawford","photo":"https:\/\/webmention.io\/avatar\/cdn.artlung.com\/a0b5bad7e1082e08dc5e72e7f4760d40596782e04895da8b740023e7c1904d15.jpg","url":""},"url":"https:\/\/artlung.com\/blog\/2002\/03\/06\/10475841\/","published":"2002-03-06T18:43:00","wm-received":"2024-12-02T06:09:12Z","wm-id":1864001,"wm-source":"https:\/\/artlung.com\/blog\/2002\/03\/06\/10475841\/","wm-target":"https:\/\/lab.artlung.com\/","wm-protocol":"webmention","name":"New Silly Lab Item.","content":{"html":"<p>In the <a href=\"https:\/\/lab.artlung.com\/\">lab<\/a>:<br \/><a href=\"https:\/\/lab.artlung.com\/scripting\/camel-selector\/\">camelCase &lt;-&gt; selector-case in JavaScript w\/o Regular Expressions<\/a>. Why? Because sometimes you gotta make stuff for no reason.<\/p>","text":"In the lab:\ncamelCase <-> selector-case in JavaScript w\/o Regular Expressions. Why? Because sometimes you gotta make stuff for no reason."},"mention-of":"https:\/\/lab.artlung.com\/","wm-property":"mention-of","wm-private":false,"rels":{"canonical":"https:\/\/artlung.com\/blog\/2002\/03\/06\/10475841\/"}}]
+[
+  {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Joe Crawford",
+      "photo": "https:\/\/avatars.webmention.io\/media.hachyderm.io\/8322c4438f904353856943d5529f2e46df28cdcf22267a3b13ed26098190349f.jpg",
+      "url": "https:\/\/xoxo.zone\/@artlung"
+    },
+    "url": "https:\/\/xoxo.zone\/@artlung\/114303826278932433",
+    "published": "2025-04-08T18:46:14+00:00",
+    "wm-received": "2025-04-08T18:52:19Z",
+    "wm-id": 1902201,
+    "wm-source": "https:\/\/brid.gy\/post\/mastodon\/@reillypascal@hachyderm.io\/114303826321965349",
+    "wm-target": "https:\/\/lab.artlung.com\/",
+    "wm-protocol": "webmention",
+    "content": {
+      "html": "<p><span class=\"h-card\"><a href=\"https:\/\/hachyderm.io\/@reillypascal\" class=\"u-url\">@<span>reillypascal<\/span><\/a><\/span> Would love to try and sort out a \"base\" xml\/xslt example to see if we can get dates formatted. would make for a great page on <a href=\"https:\/\/lab.artlung.com\/\"><span>https:\/\/<\/span><span>lab.artlung.com\/<\/span><span><\/span><\/a><\/p>\n<a href=\"https:\/\/lab.artlung.com\/\">ArtLung Lab: Web Tech Experiments by Joe Crawford \/ ArtLung Lab<\/a>",
+      "text": "@reillypascal Would love to try and sort out a \"base\" xml\/xslt example to see if we can get dates formatted. would make for a great page on https:\/\/lab.artlung.com\/\nArtLung Lab: Web Tech Experiments by Joe Crawford \/ ArtLung Lab"
+    },
+    "mention-of": "https:\/\/lab.artlung.com\/",
+    "wm-property": "mention-of",
+    "wm-private": false
+  },
+  {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "joe jenett",
+      "photo": "https:\/\/avatars.webmention.io\/secure.gravatar.com\/be3469587ad065ec1ec48004220592a16ea2a86cfc5b7deeaa680ca2895847ab.png",
+      "url": "https:\/\/iwebthings.joejenett.com\/"
+    },
+    "url": "https:\/\/iwebthings.joejenett.com\/world-wide-web\/",
+    "published": null,
+    "wm-received": "2024-12-26T15:15:56Z",
+    "wm-id": 1869808,
+    "wm-source": "https:\/\/iwebthings.joejenett.com\/world-wide-web\/",
+    "wm-target": "https:\/\/lab.artlung.com\/",
+    "wm-protocol": "webmention",
+    "name": "\u201cWorld. Wide. Web.\u201d",
+    "content": {
+      "html": "<p><a title=\"ArtLung: lab.artlung.com and a return to a World Wide Web ~ 23 Dec 2024\" href=\"https:\/\/artlung.com\/blog\/2024\/12\/23\/lab-artlung-com-and-a-return-to-a-world-wide-web\/\">lab.artlung.com and a return to a World Wide Web<\/a><br \/>\u21aa<a title=\"ArtLung Lab: Web Tech Experiments by Joe Crawford \/ ArtLung Lab\" href=\"https:\/\/lab.artlung.com\/\">ArtLung Lab<\/a><\/p>\n\n<blockquote><p>Web experiments, explainers, code snippets by <a href=\"https:\/\/artlung.com\/\">Joe Crawford<\/a> since 1996. Some current. Some out of date. You can follow the site <a href=\"https:\/\/lab.artlung.com\/feed.xml\">feed<\/a> and the code in the <a href=\"https:\/\/github.com\/artlung\/lab.artlung.com\">GitHub repository<\/a>.<\/p><\/blockquote>\n<p>???? I like!\n<a href=\"https:\/\/brid.gy\/publish\/mastodon\"><\/a><\/p>",
+      "text": "lab.artlung.com and a return to a World Wide Web\n\u21aaArtLung Lab\n\nWeb experiments, explainers, code snippets by Joe Crawford since 1996. Some current. Some out of date. You can follow the site feed and the code in the GitHub repository.\n???? I like!"
+    },
+    "mention-of": "https:\/\/lab.artlung.com\/",
+    "wm-property": "mention-of",
+    "wm-private": false
+  },
+  {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Joe Crawford",
+      "photo": "https:\/\/avatars.webmention.io\/cdn.artlung.com\/a0b5bad7e1082e08dc5e72e7f4760d40596782e04895da8b740023e7c1904d15.jpg",
+      "url": ""
+    },
+    "url": "https:\/\/artlung.com\/blog\/2024\/12\/23\/lab-artlung-com-and-a-return-to-a-world-wide-web\/",
+    "published": "2024-12-23T11:25:29",
+    "wm-received": "2024-12-23T19:25:50Z",
+    "wm-id": 1869372,
+    "wm-source": "https:\/\/artlung.com\/blog\/2024\/12\/23\/lab-artlung-com-and-a-return-to-a-world-wide-web\/",
+    "wm-target": "https:\/\/lab.artlung.com\/",
+    "wm-protocol": "webmention",
+    "name": "lab.artlung.com and a return to a World Wide Web",
+    "syndication": [
+      "https:\/\/news.indieweb.org\/en"
+    ],
+    "content": {
+      "html": "<p>I have made every kind of web page. I\u2019ve worked on every sort of web application. I learned ColdFusion. I learned Perl. I learned PHP. CSS <em>came out<\/em> at the start of my career.<\/p>\n<p>Active Server Pages (\u201cASP\u201d) is now referred to as <em>\u201cClassic ASP\u201d<\/em> which makes it sound related to some middle-aged-man\u2019s drop-top Corvette Stingray. I learned ASP too.<\/p>\n<p>When I was learning, I used my website to play with the web. I called it THE LAB. I want to talk about how it came to be and how it changed with time today.<\/p>\n<p>In part I created the site to help me remember little bits of arcana that kept coming up for me as a web developer. I remember looking up my page <a href=\"https:\/\/lab.artlung.com\/anti-cache\/\">Preventing Browser Cache<\/a> several times to see the various different ways the different application platforms represented the HTTP headers. Originally pages like this were here on artlung.com. I put them on my website as part of giving back to the web. It felt good. I had learned so much from mailing lists\u2013sometimes called <em>listservs: <\/em>Webmonster, Web405, evolt.org, webdesign-L, WWWAC, WebSanDiego, GOODTIMES and others taught me so much. Mailing lists are gone, as are most of their archives.<\/p>\n<p>I also learned on usenet. The comp.* groups had some great stuff. And for a time Macromedia offered their own newsgroup hierarchy. It used to be you could click on <a href=\"news:\/macromedia.dreamweaver\">news:\/\/forums.macromedia.com\/macromedia.dreamweaver<\/a> and fire up your newsreader and get help about Dreamweaver. All of that is now history. Some of that is archived to the web.<\/p>\n<p>Here in 2024 one can use StackOverflow to ask questions and discuss programming.<\/p>\n<p>We can also type a question into Google or Bing or DuckDuckGo. Often what comes up are ads and summations \u201cwritten\u201d\u2013which is to say\u2013<em>laundered<\/em> through an AI tool. But those written words couldn\u2019t exist without human effort. Human beings are part of the system. We forget those humans in the loop at our peril. It\u2019s why I try to add webmention support to anything new I build for the web. <a href=\"https:\/\/aaronparecki.com\">Aaron Parecki\u2019s<\/a> excellent <a href=\"https:\/\/webmention.io\/\">webmention.io service<\/a> is one of the best parts of the independent web: <em>the indieweb<\/em>.<\/p>\n<p>I\u2019m writing this at a coffee shop a stone\u2019s throw from what was the site of <em>San Diego Technical Books<\/em>. I would go there just to browse and to learn. And yes, buy a book now and again. But technical bookstores are also mostly gone. Things went online.<\/p>\n<p>And for a while, the web was pretty good at replacing mailing lists, newsgroups, and even paper books.<\/p>\n<p>But gradually, the web has gotten worse. Things seemed to have gotten so spammy and troll-filled and the good parts of the web have gone underground to places like Discord and Patreon and Substack and Facebook. Gated by rules or fees or <em>sign-up required<\/em>.<\/p>\n<p>But that means I can\u2019t find a lot of those things on the web. If I can\u2019t search for it, I can\u2019t find it. It\u2019s invisible. And a private site is fine, of course. We all ought to have the right to create private enclaves for us and a few friends. But if my intent is for a site to be useful to the world, I am often thwarted by the search engine gatekeepers. They don\u2019t want you to visit my site as much as they want you to stay on their site as long as possible.<\/p>\n<p>I made an effort to make my own site better and more of a \u201cplace\u201d when I added comments in 2010. I used <a href=\"https:\/\/disqus.com\/\">Disqus<\/a>. It worked, and still works, great. People can make suggestions as to what specific thing <em>they would encounter<\/em> when, say, creating a menu, or trying to get SQL to behave. People would leave a \u201cthank you\u201d comment occasionally. Some folks emailed me to comment or thank. Disqus includes moderation tools to allow me to make choices about what can and can\u2019t go into the site, which kept spam out.<\/p>\n<p>But I also made the site worse in the 2010s. I added Google Ads. They were not intrusive, just a banner on the side. But they got worse, spawning big takeovers and keeping the reader from seeing the page they came for.<\/p>\n<h2>And so, I remade The Lab<\/h2>\n<p><a href=\"https:\/\/lab.artlung.com\/\">lab.artlung.com<\/a> has been fully refitted and I\u2019m rather proud of it all. It\u2019s all hand-rolled PHP code underpinning it. I\u2019m using <code>composer<\/code> to allow me to pull in useful libraries to read and write YAML consistently, to compress JavaScript (I did that to make it easy to create bookmarklets) and something to streamline creating an Atom feed. The site has webmentions and unit tests and I use PHP_CodeSniffer to keep the code from being a tangled mess. I have fun features like a random page load when you do (alt\u2013r or option\u2013r). It includes <code>og:image<\/code> capture using the excellent shot-scraper. I also created a command line tool to force myself to do some sort of organization on the many pages. And it\u2019s gotten me to create some new pages too. I don\u2019t have anything about React on the site but that may change!<\/p>\n<p>I\u2019m glad for this change. It\u2019s a return to practices that are good parts of the web: Sharing source code (all the code is up <a href=\"https:\/\/github.com\/artlung\/lab.artlung.com\">on GitHub<\/a>). Sharing with each other. No ads, <em>or at least I promise non-intrusive ads<\/em>.<\/p>\n<p>We have let the badness of computers and technology force us to forget why the web became the largest publishing and communications platform humanity ever made. We spend times in apps where algorithms seem to prevent us from doing what we want to do. Sharing what I want to share is complicated and tricky and often forces me to download an app I don\u2019t want. And so we\u2019re frustrated and isolated from things that might be useful or fun or interesting or elucidating.<\/p>\n<p>But you and me, <em>we own the web<\/em>. It\u2019s ours.<\/p>\n<p>We talked the other day in an IndieWeb Homebrew Website Club meeting about \u201cWWW\u201d and why sites seldom have that at the beginnings of their web urls. For a time, every site had that <code>\"www\"<\/code> at the beginning when publicizing their websites. But then it seemed kind of antiquated to use that. We have domains that scarcely look like domains. I have a page on tilde.club and it still surprises me that\u2019s a legitimate domain name. But it is.<\/p>\n<p>I want to bring back a recognition that the web is useful and good. \u201cWorld Wide Web\u201d is not quaint. I think of it as a statement of intent. It\u2019s a three-word manifesto. World. Wide. Web: <em>Information for the whole world, no matter who you are, or where you are, interlinked.<\/em> No registration required. No cookies required. No newsletter to subscribe to. No Discord to join. No monthly fee.<\/p>\n<p>And so I offer up <a href=\"https:\/\/lab.artlung.com\/\">the lab<\/a>.<\/p>\n<p>It\u2019s so fun to make web pages and share them.<\/p>\n<p>Go make a web page and share it.<\/p>",
+      "text": "I have made every kind of web page. I\u2019ve worked on every sort of web application. I learned ColdFusion. I learned Perl. I learned PHP. CSS came out at the start of my career.\nActive Server Pages (\u201cASP\u201d) is now referred to as \u201cClassic ASP\u201d which makes it sound related to some middle-aged-man\u2019s drop-top Corvette Stingray. I learned ASP too.\nWhen I was learning, I used my website to play with the web. I called it THE LAB. I want to talk about how it came to be and how it changed with time today.\nIn part I created the site to help me remember little bits of arcana that kept coming up for me as a web developer. I remember looking up my page Preventing Browser Cache several times to see the various different ways the different application platforms represented the HTTP headers. Originally pages like this were here on artlung.com. I put them on my website as part of giving back to the web. It felt good. I had learned so much from mailing lists\u2013sometimes called listservs: Webmonster, Web405, evolt.org, webdesign-L, WWWAC, WebSanDiego, GOODTIMES and others taught me so much. Mailing lists are gone, as are most of their archives.\nI also learned on usenet. The comp.* groups had some great stuff. And for a time Macromedia offered their own newsgroup hierarchy. It used to be you could click on news:\/\/forums.macromedia.com\/macromedia.dreamweaver and fire up your newsreader and get help about Dreamweaver. All of that is now history. Some of that is archived to the web.\nHere in 2024 one can use StackOverflow to ask questions and discuss programming.\nWe can also type a question into Google or Bing or DuckDuckGo. Often what comes up are ads and summations \u201cwritten\u201d\u2013which is to say\u2013laundered through an AI tool. But those written words couldn\u2019t exist without human effort. Human beings are part of the system. We forget those humans in the loop at our peril. It\u2019s why I try to add webmention support to anything new I build for the web. Aaron Parecki\u2019s excellent webmention.io service is one of the best parts of the independent web: the indieweb.\nI\u2019m writing this at a coffee shop a stone\u2019s throw from what was the site of San Diego Technical Books. I would go there just to browse and to learn. And yes, buy a book now and again. But technical bookstores are also mostly gone. Things went online.\nAnd for a while, the web was pretty good at replacing mailing lists, newsgroups, and even paper books.\nBut gradually, the web has gotten worse. Things seemed to have gotten so spammy and troll-filled and the good parts of the web have gone underground to places like Discord and Patreon and Substack and Facebook. Gated by rules or fees or sign-up required.\nBut that means I can\u2019t find a lot of those things on the web. If I can\u2019t search for it, I can\u2019t find it. It\u2019s invisible. And a private site is fine, of course. We all ought to have the right to create private enclaves for us and a few friends. But if my intent is for a site to be useful to the world, I am often thwarted by the search engine gatekeepers. They don\u2019t want you to visit my site as much as they want you to stay on their site as long as possible.\nI made an effort to make my own site better and more of a \u201cplace\u201d when I added comments in 2010. I used Disqus. It worked, and still works, great. People can make suggestions as to what specific thing they would encounter when, say, creating a menu, or trying to get SQL to behave. People would leave a \u201cthank you\u201d comment occasionally. Some folks emailed me to comment or thank. Disqus includes moderation tools to allow me to make choices about what can and can\u2019t go into the site, which kept spam out.\nBut I also made the site worse in the 2010s. I added Google Ads. They were not intrusive, just a banner on the side. But they got worse, spawning big takeovers and keeping the reader from seeing the page they came for.\nAnd so, I remade The Lab\nlab.artlung.com has been fully refitted and I\u2019m rather proud of it all. It\u2019s all hand-rolled PHP code underpinning it. I\u2019m using composer to allow me to pull in useful libraries to read and write YAML consistently, to compress JavaScript (I did that to make it easy to create bookmarklets) and something to streamline creating an Atom feed. The site has webmentions and unit tests and I use PHP_CodeSniffer to keep the code from being a tangled mess. I have fun features like a random page load when you do (alt\u2013r or option\u2013r). It includes og:image capture using the excellent shot-scraper. I also created a command line tool to force myself to do some sort of organization on the many pages. And it\u2019s gotten me to create some new pages too. I don\u2019t have anything about React on the site but that may change!\nI\u2019m glad for this change. It\u2019s a return to practices that are good parts of the web: Sharing source code (all the code is up on GitHub). Sharing with each other. No ads, or at least I promise non-intrusive ads.\nWe have let the badness of computers and technology force us to forget why the web became the largest publishing and communications platform humanity ever made. We spend times in apps where algorithms seem to prevent us from doing what we want to do. Sharing what I want to share is complicated and tricky and often forces me to download an app I don\u2019t want. And so we\u2019re frustrated and isolated from things that might be useful or fun or interesting or elucidating.\nBut you and me, we own the web. It\u2019s ours.\nWe talked the other day in an IndieWeb Homebrew Website Club meeting about \u201cWWW\u201d and why sites seldom have that at the beginnings of their web urls. For a time, every site had that \"www\" at the beginning when publicizing their websites. But then it seemed kind of antiquated to use that. We have domains that scarcely look like domains. I have a page on tilde.club and it still surprises me that\u2019s a legitimate domain name. But it is.\nI want to bring back a recognition that the web is useful and good. \u201cWorld Wide Web\u201d is not quaint. I think of it as a statement of intent. It\u2019s a three-word manifesto. World. Wide. Web: Information for the whole world, no matter who you are, or where you are, interlinked. No registration required. No cookies required. No newsletter to subscribe to. No Discord to join. No monthly fee.\nAnd so I offer up the lab.\nIt\u2019s so fun to make web pages and share them.\nGo make a web page and share it."
+    },
+    "mention-of": "https:\/\/lab.artlung.com\/",
+    "wm-property": "mention-of",
+    "wm-private": false,
+    "rels": {
+      "canonical": "https:\/\/artlung.com\/blog\/2024\/12\/23\/lab-artlung-com-and-a-return-to-a-world-wide-web\/"
+    }
+  },
+  {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Joe Crawford",
+      "photo": "https:\/\/avatars.webmention.io\/cdn.artlung.com\/a0b5bad7e1082e08dc5e72e7f4760d40596782e04895da8b740023e7c1904d15.jpg",
+      "url": ""
+    },
+    "url": "https:\/\/artlung.com\/blog\/2001\/04\/14\/3206818\/",
+    "published": "2001-04-14T20:15:00",
+    "wm-received": "2024-12-02T06:10:48Z",
+    "wm-id": 1864035,
+    "wm-source": "https:\/\/artlung.com\/blog\/2001\/04\/14\/3206818\/",
+    "wm-target": "https:\/\/lab.artlung.com\/",
+    "wm-protocol": "webmention",
+    "content": {
+      "html": "<p>The <a href=\"https:\/\/lab.artlung.com\/php\/gallery\/\">PHP AutoMagic Gallery Listing<\/a> is the latest item to be added to <a href=\"https:\/\/lab.artlung.com\/\">The Lab<\/a>. Never heard of PHP? <a href=\"http:\/\/www.php.net\/\">Shame on you!<\/a><\/p>",
+      "text": "The PHP AutoMagic Gallery Listing is the latest item to be added to The Lab. Never heard of PHP? Shame on you!"
+    },
+    "mention-of": "https:\/\/lab.artlung.com\/",
+    "wm-property": "mention-of",
+    "wm-private": false,
+    "rels": {
+      "canonical": "https:\/\/artlung.com\/blog\/2001\/04\/14\/3206818\/"
+    }
+  },
+  {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Joe Crawford",
+      "photo": "https:\/\/avatars.webmention.io\/cdn.artlung.com\/a0b5bad7e1082e08dc5e72e7f4760d40596782e04895da8b740023e7c1904d15.jpg",
+      "url": ""
+    },
+    "url": "https:\/\/artlung.com\/blog\/2001\/04\/02\/3042057\/",
+    "published": "2001-04-02T23:12:00",
+    "wm-received": "2024-12-02T06:10:47Z",
+    "wm-id": 1864034,
+    "wm-source": "https:\/\/artlung.com\/blog\/2001\/04\/02\/3042057\/",
+    "wm-target": "https:\/\/lab.artlung.com\/",
+    "wm-protocol": "webmention",
+    "content": {
+      "html": "<p>I have lots of JavaScript experience.<\/p>\n<p> Amazingly, this makes me valuable in some ways. I had no idea that people would tip for it. I got my first Tip the other day through the lab. Is <a href=\"https:\/\/lab.artlung.com\/\">my Lab<\/a> now a commercial site? Or am I just a busker \u2013 some modern day mendicant poet of JavaScript?<\/p>\n<p> Hmmm.<\/p>",
+      "text": "I have lots of JavaScript experience.\n Amazingly, this makes me valuable in some ways. I had no idea that people would tip for it. I got my first Tip the other day through the lab. Is my Lab now a commercial site? Or am I just a busker \u2013 some modern day mendicant poet of JavaScript?\n Hmmm."
+    },
+    "mention-of": "https:\/\/lab.artlung.com\/",
+    "wm-property": "mention-of",
+    "wm-private": false,
+    "rels": {
+      "canonical": "https:\/\/artlung.com\/blog\/2001\/04\/02\/3042057\/"
+    }
+  },
+  {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Joe Crawford",
+      "photo": "https:\/\/avatars.webmention.io\/cdn.artlung.com\/a0b5bad7e1082e08dc5e72e7f4760d40596782e04895da8b740023e7c1904d15.jpg",
+      "url": ""
+    },
+    "url": "https:\/\/artlung.com\/blog\/2001\/05\/16\/3668802\/",
+    "published": "2001-05-16T22:58:00",
+    "wm-received": "2024-12-02T06:10:44Z",
+    "wm-id": 1864033,
+    "wm-source": "https:\/\/artlung.com\/blog\/2001\/05\/16\/3668802\/",
+    "wm-target": "https:\/\/lab.artlung.com\/",
+    "wm-protocol": "webmention",
+    "content": {
+      "html": "<p><i>New stuff for the lab! <\/i><br \/><a href=\"https:\/\/lab.artlung.com\/scripting\/multiple_select\/\">Multiple, Hierarchical SelectBoxes<\/a> and <a href=\"https:\/\/lab.artlung.com\/scripting\/reverse_string_nums\/\">Reverse a string, but only the digits<\/a>.<\/p>\n<p> Always satisfying to add to <a href=\"https:\/\/lab.artlung.com\/\">the lab<\/a>. Based on the hit logs, it looks like people are using it. This makes me happy.<\/p>",
+      "text": "New stuff for the lab! \nMultiple, Hierarchical SelectBoxes and Reverse a string, but only the digits.\n Always satisfying to add to the lab. Based on the hit logs, it looks like people are using it. This makes me happy."
+    },
+    "mention-of": "https:\/\/lab.artlung.com\/",
+    "wm-property": "mention-of",
+    "wm-private": false,
+    "rels": {
+      "canonical": "https:\/\/artlung.com\/blog\/2001\/05\/16\/3668802\/"
+    }
+  },
+  {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Joe Crawford",
+      "photo": "https:\/\/avatars.webmention.io\/cdn.artlung.com\/a0b5bad7e1082e08dc5e72e7f4760d40596782e04895da8b740023e7c1904d15.jpg",
+      "url": ""
+    },
+    "url": "https:\/\/artlung.com\/blog\/2001\/05\/22\/3756864\/",
+    "published": "2001-05-22T22:00:00",
+    "wm-received": "2024-12-02T06:10:39Z",
+    "wm-id": 1864028,
+    "wm-source": "https:\/\/artlung.com\/blog\/2001\/05\/22\/3756864\/",
+    "wm-target": "https:\/\/lab.artlung.com\/",
+    "wm-protocol": "webmention",
+    "content": {
+      "html": "<p><b>New <a href=\"https:\/\/lab.artlung.com\/\">lab<\/a> item!<\/b><br \/><a href=\"https:\/\/lab.artlung.com\/scripting\/change_all_links\/\">How can I change every link on a page to something new?<\/a><\/p>",
+      "text": "New lab item!\nHow can I change every link on a page to something new?"
+    },
+    "mention-of": "https:\/\/lab.artlung.com\/",
+    "wm-property": "mention-of",
+    "wm-private": false,
+    "rels": {
+      "canonical": "https:\/\/artlung.com\/blog\/2001\/05\/22\/3756864\/"
+    }
+  },
+  {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Joe Crawford",
+      "photo": "https:\/\/avatars.webmention.io\/cdn.artlung.com\/a0b5bad7e1082e08dc5e72e7f4760d40596782e04895da8b740023e7c1904d15.jpg",
+      "url": ""
+    },
+    "url": "https:\/\/artlung.com\/blog\/2001\/06\/21\/4177099\/",
+    "published": "2001-06-21T11:34:00",
+    "wm-received": "2024-12-02T06:10:37Z",
+    "wm-id": 1864026,
+    "wm-source": "https:\/\/artlung.com\/blog\/2001\/06\/21\/4177099\/",
+    "wm-target": "https:\/\/lab.artlung.com\/",
+    "wm-protocol": "webmention",
+    "content": {
+      "html": "<p>I\u2019m mortified. Broken stuff in the <a href=\"https:\/\/lab.artlung.com\/\">lab<\/a>. <i>The horror! The horror!<\/i><\/p>\n<p> The <a href=\"https:\/\/lab.artlung.com\/scripting\/multiple_select\/\">multiple select<\/a> tool was broken in essentially every browser. Ugh. Luckily nobody donated anything on the strength of that one.<\/p>\n<p> I have now fixed it.<\/p>",
+      "text": "I\u2019m mortified. Broken stuff in the lab. The horror! The horror!\n The multiple select tool was broken in essentially every browser. Ugh. Luckily nobody donated anything on the strength of that one.\n I have now fixed it."
+    },
+    "mention-of": "https:\/\/lab.artlung.com\/",
+    "wm-property": "mention-of",
+    "wm-private": false,
+    "rels": {
+      "canonical": "https:\/\/artlung.com\/blog\/2001\/06\/21\/4177099\/"
+    }
+  },
+  {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Joe Crawford",
+      "photo": "https:\/\/avatars.webmention.io\/cdn.artlung.com\/a0b5bad7e1082e08dc5e72e7f4760d40596782e04895da8b740023e7c1904d15.jpg",
+      "url": ""
+    },
+    "url": "https:\/\/artlung.com\/blog\/2001\/07\/11\/4494715\/",
+    "published": "2001-07-11T19:44:00",
+    "wm-received": "2024-12-02T06:10:33Z",
+    "wm-id": 1864024,
+    "wm-source": "https:\/\/artlung.com\/blog\/2001\/07\/11\/4494715\/",
+    "wm-target": "https:\/\/lab.artlung.com\/",
+    "wm-protocol": "webmention",
+    "content": {
+      "html": "<p>New item for <a href=\"https:\/\/lab.artlung.com\/\" title=\"tech playground\">The Lab<\/a>:<br \/>Some bookmarklets which I can never remember where to go get. <a href=\"https:\/\/lab.artlung.com\/scripting\/bookmarklets\/\" title=\"Killer Bookmarklets I have Come Across (IE Only)\">So here they are<\/a>.<\/p>",
+      "text": "New item for The Lab:\nSome bookmarklets which I can never remember where to go get. So here they are."
+    },
+    "mention-of": "https:\/\/lab.artlung.com\/",
+    "wm-property": "mention-of",
+    "wm-private": false,
+    "rels": {
+      "canonical": "https:\/\/artlung.com\/blog\/2001\/07\/11\/4494715\/"
+    }
+  },
+  {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Joe Crawford",
+      "photo": "https:\/\/avatars.webmention.io\/cdn.artlung.com\/a0b5bad7e1082e08dc5e72e7f4760d40596782e04895da8b740023e7c1904d15.jpg",
+      "url": ""
+    },
+    "url": "https:\/\/artlung.com\/blog\/2001\/07\/20\/4638580\/",
+    "published": "2001-07-20T07:43:00",
+    "wm-received": "2024-12-02T06:10:30Z",
+    "wm-id": 1864022,
+    "wm-source": "https:\/\/artlung.com\/blog\/2001\/07\/20\/4638580\/",
+    "wm-target": "https:\/\/lab.artlung.com\/",
+    "wm-protocol": "webmention",
+    "content": {
+      "html": "<p><a href=\"https:\/\/lab.artlung.com\/\">Lab<\/a> time again! This time I\u2019m addressing the question of the dotted lines in Windows MSIE. It\u2019s titled: <a href=\"https:\/\/lab.artlung.com\/scripting\/the-problem-with-blur\/\">Why not to use blur() to make dotted lines go away in MSIE for Windows<\/a>. The cousin of this entry is <a href=\"https:\/\/lab.artlung.com\/css\/a-outline-none\/\">outline: none CSS property<\/a>.<\/p>",
+      "text": "Lab time again! This time I\u2019m addressing the question of the dotted lines in Windows MSIE. It\u2019s titled: Why not to use blur() to make dotted lines go away in MSIE for Windows. The cousin of this entry is outline: none CSS property."
+    },
+    "mention-of": "https:\/\/lab.artlung.com\/",
+    "wm-property": "mention-of",
+    "wm-private": false,
+    "rels": {
+      "canonical": "https:\/\/artlung.com\/blog\/2001\/07\/20\/4638580\/"
+    }
+  },
+  {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Joe Crawford",
+      "photo": "https:\/\/avatars.webmention.io\/cdn.artlung.com\/a0b5bad7e1082e08dc5e72e7f4760d40596782e04895da8b740023e7c1904d15.jpg",
+      "url": ""
+    },
+    "url": "https:\/\/artlung.com\/blog\/2001\/07\/25\/4722767\/",
+    "published": "2001-07-25T08:01:00",
+    "wm-received": "2024-12-02T06:10:25Z",
+    "wm-id": 1864020,
+    "wm-source": "https:\/\/artlung.com\/blog\/2001\/07\/25\/4722767\/",
+    "wm-target": "https:\/\/lab.artlung.com\/",
+    "wm-protocol": "webmention",
+    "content": {
+      "html": "<p>Yep, <a href=\"https:\/\/lab.artlung.com\/\">Lab<\/a> time. This one\u2019s a simple little idea. <a href=\"https:\/\/lab.artlung.com\/scripting\/dropdown_submit_form\/\">Submit a form by selecting a dropdown item<\/a> with client-side scripting (read: JavaScript).<\/p>",
+      "text": "Yep, Lab time. This one\u2019s a simple little idea. Submit a form by selecting a dropdown item with client-side scripting (read: JavaScript)."
+    },
+    "mention-of": "https:\/\/lab.artlung.com\/",
+    "wm-property": "mention-of",
+    "wm-private": false,
+    "rels": {
+      "canonical": "https:\/\/artlung.com\/blog\/2001\/07\/25\/4722767\/"
+    }
+  },
+  {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Joe Crawford",
+      "photo": "https:\/\/avatars.webmention.io\/cdn.artlung.com\/a0b5bad7e1082e08dc5e72e7f4760d40596782e04895da8b740023e7c1904d15.jpg",
+      "url": ""
+    },
+    "url": "https:\/\/artlung.com\/blog\/2001\/08\/06\/4941364\/",
+    "published": "2001-08-06T12:25:00",
+    "wm-received": "2024-12-02T06:10:21Z",
+    "wm-id": 1864018,
+    "wm-source": "https:\/\/artlung.com\/blog\/2001\/08\/06\/4941364\/",
+    "wm-target": "https:\/\/lab.artlung.com\/",
+    "wm-protocol": "webmention",
+    "content": {
+      "html": "<p><a href=\"https:\/\/lab.artlung.com\/\">Lab<\/a> time! Why the <a href=\"https:\/\/lab.artlung.com\/other\/email-submission-stinks\/\">form action mailto: stinks<\/a>. Includes screengrabs.<\/p>",
+      "text": "Lab time! Why the form action mailto: stinks. Includes screengrabs."
+    },
+    "mention-of": "https:\/\/lab.artlung.com\/",
+    "wm-property": "mention-of",
+    "wm-private": false,
+    "rels": {
+      "canonical": "https:\/\/artlung.com\/blog\/2001\/08\/06\/4941364\/"
+    }
+  },
+  {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Joe Crawford",
+      "photo": "https:\/\/avatars.webmention.io\/cdn.artlung.com\/a0b5bad7e1082e08dc5e72e7f4760d40596782e04895da8b740023e7c1904d15.jpg",
+      "url": ""
+    },
+    "url": "https:\/\/artlung.com\/blog\/2001\/08\/20\/5200687\/",
+    "published": "2001-08-20T17:02:00",
+    "wm-received": "2024-12-02T06:09:37Z",
+    "wm-id": 1864017,
+    "wm-source": "https:\/\/artlung.com\/blog\/2001\/08\/20\/5200687\/",
+    "wm-target": "https:\/\/lab.artlung.com\/",
+    "wm-protocol": "webmention",
+    "content": {
+      "html": "<p>I put this in the <a href=\"https:\/\/lab.artlung.com\/\">lab<\/a> because I don\u2019t know where else to put it \u2014 <a href=\"https:\/\/lab.artlung.com\/html\/html-2.0\/\">HTML 2.0 \u2013 An exploration!<\/a>. The idea here is an exercise in web authoring, 1996-style. Just some pointers to the original specs, and brief ruminations on how it\u2019s a little different.<\/p>",
+      "text": "I put this in the lab because I don\u2019t know where else to put it \u2014 HTML 2.0 \u2013 An exploration!. The idea here is an exercise in web authoring, 1996-style. Just some pointers to the original specs, and brief ruminations on how it\u2019s a little different."
+    },
+    "mention-of": "https:\/\/lab.artlung.com\/",
+    "wm-property": "mention-of",
+    "wm-private": false,
+    "rels": {
+      "canonical": "https:\/\/artlung.com\/blog\/2001\/08\/20\/5200687\/"
+    }
+  },
+  {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Joe Crawford",
+      "photo": "https:\/\/avatars.webmention.io\/cdn.artlung.com\/a0b5bad7e1082e08dc5e72e7f4760d40596782e04895da8b740023e7c1904d15.jpg",
+      "url": ""
+    },
+    "url": "https:\/\/artlung.com\/blog\/2001\/09\/03\/5469844\/",
+    "published": "2001-09-03T22:51:00",
+    "wm-received": "2024-12-02T06:09:35Z",
+    "wm-id": 1864016,
+    "wm-source": "https:\/\/artlung.com\/blog\/2001\/09\/03\/5469844\/",
+    "wm-target": "https:\/\/lab.artlung.com\/",
+    "wm-protocol": "webmention",
+    "content": {
+      "html": "<p>New <a href=\"https:\/\/lab.artlung.com\/\">Lab<\/a> item. <a href=\"https:\/\/lab.artlung.com\/php\/php-php3-mod-rewrite\/\">How to make .php files masquerade as .php3<\/a>. It\u2019s a bit of magic which requires the very cool mod_rewrite for apache. Good mod_rewrite tutorials <a href=\"http:\/\/httpd.apache.org\/docs\/mod\/mod_rewrite.html\" title=\"Module mod_rewrite URL Rewriting Engine @ apache.org\">here<\/a> and <a href=\"http:\/\/www.engelschall.com\/pw\/apache\/rewriteguide\/\" title=\"A Users Guide to URL Rewriting with the Apache Webserver by Ralf S. Engelschall\">here<\/a>.<\/p>",
+      "text": "New Lab item. How to make .php files masquerade as .php3. It\u2019s a bit of magic which requires the very cool mod_rewrite for apache. Good mod_rewrite tutorials here and here."
+    },
+    "mention-of": "https:\/\/lab.artlung.com\/",
+    "wm-property": "mention-of",
+    "wm-private": false,
+    "rels": {
+      "canonical": "https:\/\/artlung.com\/blog\/2001\/09\/03\/5469844\/"
+    }
+  },
+  {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Joe Crawford",
+      "photo": "https:\/\/avatars.webmention.io\/cdn.artlung.com\/a0b5bad7e1082e08dc5e72e7f4760d40596782e04895da8b740023e7c1904d15.jpg",
+      "url": ""
+    },
+    "url": "https:\/\/artlung.com\/blog\/2001\/11\/07\/6934971\/",
+    "published": "2001-11-07T00:22:00",
+    "wm-received": "2024-12-02T06:09:34Z",
+    "wm-id": 1864015,
+    "wm-source": "https:\/\/artlung.com\/blog\/2001\/11\/07\/6934971\/",
+    "wm-target": "https:\/\/lab.artlung.com\/",
+    "wm-protocol": "webmention",
+    "content": {
+      "html": "<p>Still fooling with OSX. Keeping me busy. Hopefully I\u2019ll have some new <a href=\"https:\/\/lab.artlung.com\/\">lab<\/a> entries as a result of all this playing.<\/p>",
+      "text": "Still fooling with OSX. Keeping me busy. Hopefully I\u2019ll have some new lab entries as a result of all this playing."
+    },
+    "mention-of": "https:\/\/lab.artlung.com\/",
+    "wm-property": "mention-of",
+    "wm-private": false,
+    "rels": {
+      "canonical": "https:\/\/artlung.com\/blog\/2001\/11\/07\/6934971\/"
+    }
+  },
+  {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Joe Crawford",
+      "photo": "https:\/\/avatars.webmention.io\/cdn.artlung.com\/a0b5bad7e1082e08dc5e72e7f4760d40596782e04895da8b740023e7c1904d15.jpg",
+      "url": ""
+    },
+    "url": "https:\/\/artlung.com\/blog\/2001\/12\/16\/7978233\/",
+    "published": "2001-12-16T20:00:00",
+    "wm-received": "2024-12-02T06:09:26Z",
+    "wm-id": 1864011,
+    "wm-source": "https:\/\/artlung.com\/blog\/2001\/12\/16\/7978233\/",
+    "wm-target": "https:\/\/lab.artlung.com\/",
+    "wm-protocol": "webmention",
+    "content": {
+      "html": "<p><b>New <a href=\"https:\/\/lab.artlung.com\/\">Lab Items:<\/a><\/b><br \/><a href=\"https:\/\/lab.artlung.com\/scripting\/urlencode\/\">How to Encode URLs; An ASCII to URLEncoded JavaScript<\/a> and <a href=\"https:\/\/lab.artlung.com\/scripting\/checkbox-validate\/\">Checkbox Validator<\/a>.<\/p>",
+      "text": "New Lab Items:\nHow to Encode URLs; An ASCII to URLEncoded JavaScript and Checkbox Validator."
+    },
+    "mention-of": "https:\/\/lab.artlung.com\/",
+    "wm-property": "mention-of",
+    "wm-private": false,
+    "rels": {
+      "canonical": "https:\/\/artlung.com\/blog\/2001\/12\/16\/7978233\/"
+    }
+  },
+  {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Joe Crawford",
+      "photo": "https:\/\/avatars.webmention.io\/cdn.artlung.com\/a0b5bad7e1082e08dc5e72e7f4760d40596782e04895da8b740023e7c1904d15.jpg",
+      "url": ""
+    },
+    "url": "https:\/\/artlung.com\/blog\/2001\/12\/17\/8011644\/",
+    "published": "2001-12-17T23:26:00",
+    "wm-received": "2024-12-02T06:09:22Z",
+    "wm-id": 1864008,
+    "wm-source": "https:\/\/artlung.com\/blog\/2001\/12\/17\/8011644\/",
+    "wm-target": "https:\/\/lab.artlung.com\/",
+    "wm-protocol": "webmention",
+    "content": {
+      "html": "<p>more new <a href=\"https:\/\/lab.artlung.com\/\">lab<\/a> items: <a href=\"https:\/\/lab.artlung.com\/scripting\/onunload-window-open-evil\/\">onunload + window.open = evil<\/a> and <a href=\"https:\/\/lab.artlung.com\/other\/anti-cache\/\">Preventing Browser Cache<\/a><\/p>",
+      "text": "more new lab items: onunload + window.open = evil and Preventing Browser Cache"
+    },
+    "mention-of": "https:\/\/lab.artlung.com\/",
+    "wm-property": "mention-of",
+    "wm-private": false,
+    "rels": {
+      "canonical": "https:\/\/artlung.com\/blog\/2001\/12\/17\/8011644\/"
+    }
+  },
+  {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Joe Crawford",
+      "photo": "https:\/\/avatars.webmention.io\/cdn.artlung.com\/a0b5bad7e1082e08dc5e72e7f4760d40596782e04895da8b740023e7c1904d15.jpg",
+      "url": ""
+    },
+    "url": "https:\/\/artlung.com\/blog\/2001\/12\/27\/8223931\/",
+    "published": "2001-12-27T20:45:00",
+    "wm-received": "2024-12-02T06:09:20Z",
+    "wm-id": 1864006,
+    "wm-source": "https:\/\/artlung.com\/blog\/2001\/12\/27\/8223931\/",
+    "wm-target": "https:\/\/lab.artlung.com\/",
+    "wm-protocol": "webmention",
+    "content": {
+      "html": "<p>New <a href=\"https:\/\/lab.artlung.com\/\">lab<\/a> item: <a href=\"https:\/\/lab.artlung.com\/other\/unix-batch-file-rename\/\">Batch File Rename By File Extension in Unix<\/a>. (Not really new, but moved from the <a href=\"https:\/\/artlung.com\/smorgasborg\/\">smorgasborg<\/a>)<\/p>",
+      "text": "New lab item: Batch File Rename By File Extension in Unix. (Not really new, but moved from the smorgasborg)"
+    },
+    "mention-of": "https:\/\/lab.artlung.com\/",
+    "wm-property": "mention-of",
+    "wm-private": false,
+    "rels": {
+      "canonical": "https:\/\/artlung.com\/blog\/2001\/12\/27\/8223931\/"
+    }
+  },
+  {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Joe Crawford",
+      "photo": "https:\/\/avatars.webmention.io\/cdn.artlung.com\/a0b5bad7e1082e08dc5e72e7f4760d40596782e04895da8b740023e7c1904d15.jpg",
+      "url": ""
+    },
+    "url": "https:\/\/artlung.com\/blog\/2002\/01\/02\/8341034\/",
+    "published": "2002-01-02T02:43:00",
+    "wm-received": "2024-12-02T06:09:18Z",
+    "wm-id": 1864005,
+    "wm-source": "https:\/\/artlung.com\/blog\/2002\/01\/02\/8341034\/",
+    "wm-target": "https:\/\/lab.artlung.com\/",
+    "wm-protocol": "webmention",
+    "content": {
+      "html": "<p><b>New <a href=\"https:\/\/lab.artlung.com\/\">Lab<\/a> Item:<\/b> <a href=\"https:\/\/lab.artlung.com\/scripting\/outbound-link-confirmation\/\">Outbound Link Confirmation<\/a><\/p>",
+      "text": "New Lab Item: Outbound Link Confirmation"
+    },
+    "mention-of": "https:\/\/lab.artlung.com\/",
+    "wm-property": "mention-of",
+    "wm-private": false,
+    "rels": {
+      "canonical": "https:\/\/artlung.com\/blog\/2002\/01\/02\/8341034\/"
+    }
+  },
+  {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Joe Crawford",
+      "photo": "https:\/\/avatars.webmention.io\/cdn.artlung.com\/a0b5bad7e1082e08dc5e72e7f4760d40596782e04895da8b740023e7c1904d15.jpg",
+      "url": ""
+    },
+    "url": "https:\/\/artlung.com\/blog\/2002\/02\/27\/10213406\/",
+    "published": "2002-02-27T20:32:00",
+    "wm-received": "2024-12-02T06:09:14Z",
+    "wm-id": 1864003,
+    "wm-source": "https:\/\/artlung.com\/blog\/2002\/02\/27\/10213406\/",
+    "wm-target": "https:\/\/lab.artlung.com\/",
+    "wm-protocol": "webmention",
+    "name": "\u201cA sufficiently advanced Google search is indistinguishable from magic.\u201d",
+    "content": {
+      "html": "<p> If you have any interest in weblogs and search algorithms, you must read <a href=\"http:\/\/www.corante.com\/microcontent\/articles\/googleblog.shtml\">Google  Loves Blogs: How Weblogs Influence A Billion Google Searches A Week<\/a>. I\u2019ve been saying that without <a href=\"http:\/\/www.google.com\/\">Google<\/a>, I am not as smart as I am with it. Very often I will not so much know something as know where I have the answer stored. An example, for me to get lorem ipsum text for a project, from wherever I\u2019m sitting at work, all I need to do it do a search for <a href=\"http:\/\/www.google.com\/search?q=artlung+greek\">artlung greek<\/a>. Blammo, there\u2019s <b>my<\/b> lorem ipsum for my project. Any number of items in my <a href=\"https:\/\/lab.artlung.com\/\">lab<\/a> are just like that. In so doing I appear nearly clairvoyant to my co-workers. But like any good programmer, I am merely lazy. I have no need to memorize lorem ipsum. I have no need to keep a file with lorem ipsum on my desktop at work. But with a string of 13 letters and a click I get <i>precisely<\/i> what I need. Google is my command line to the web. And I think I am not alone.<\/p>",
+      "text": "If you have any interest in weblogs and search algorithms, you must read Google  Loves Blogs: How Weblogs Influence A Billion Google Searches A Week. I\u2019ve been saying that without Google, I am not as smart as I am with it. Very often I will not so much know something as know where I have the answer stored. An example, for me to get lorem ipsum text for a project, from wherever I\u2019m sitting at work, all I need to do it do a search for artlung greek. Blammo, there\u2019s my lorem ipsum for my project. Any number of items in my lab are just like that. In so doing I appear nearly clairvoyant to my co-workers. But like any good programmer, I am merely lazy. I have no need to memorize lorem ipsum. I have no need to keep a file with lorem ipsum on my desktop at work. But with a string of 13 letters and a click I get precisely what I need. Google is my command line to the web. And I think I am not alone."
+    },
+    "mention-of": "https:\/\/lab.artlung.com\/",
+    "wm-property": "mention-of",
+    "wm-private": false,
+    "rels": {
+      "canonical": "https:\/\/artlung.com\/blog\/2002\/02\/27\/10213406\/"
+    }
+  }
+]

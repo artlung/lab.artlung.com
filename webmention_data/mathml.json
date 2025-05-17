@@ -1,1 +1,29 @@
-[{"type":"entry","author":{"type":"card","name":"Joe Crawford","photo":"https:\/\/webmention.io\/avatar\/cdn.artlung.com\/a0b5bad7e1082e08dc5e72e7f4760d40596782e04895da8b740023e7c1904d15.jpg","url":""},"url":"https:\/\/artlung.com\/blog\/2020\/08\/10\/the-problem\/","published":"2020-08-10T05:00:11","wm-received":"2024-12-03T04:09:50Z","wm-id":1864234,"wm-source":"https:\/\/artlung.com\/blog\/2020\/08\/10\/the-problem\/","wm-target":"https:\/\/lab.artlung.com\/mathml\/","wm-protocol":"webmention","name":"\u201cThe Problem\u201d","content":{"html":"<p><img src=\"https:\/\/cdn.artlung.com\/blog\/wp-content\/uploads\/2020\/08\/The_Problem-500x180-1.png\" alt=\"Given a sequence of integers A0..An find i, j such that sum Ai is maximized.\" width=\"500\" height=\"180\" \/><\/p>\n<p>I used to be a party to walking through software engineering candidates through answering this question.<\/p>\n<p>I answered it myself, as part of my own hiring process, with several other programmers there. Part of the prompt from them was to \u201cthink of us as your team, feel free to ask questions or get clarifications.\u201d<\/p>\n<p>That aspect is why I felt this particular \u201cexercise\u201d was legitimate. It was a good measure of how a person would work with the team.<\/p>\n<p>Interviewing for software is a gigantic topic, and this only glances at the surface of it. But I\u2019ve been fortunate to be part of workplaces that have valued me.<\/p>\n<p><strong>Update 2024:<\/strong> I wanted to implement the <a href=\"https:\/\/lab.artlung.com\/mathml\/\">markup for the problem in MathML<\/a>. <\/p>","text":"I used to be a party to walking through software engineering candidates through answering this question.\nI answered it myself, as part of my own hiring process, with several other programmers there. Part of the prompt from them was to \u201cthink of us as your team, feel free to ask questions or get clarifications.\u201d\nThat aspect is why I felt this particular \u201cexercise\u201d was legitimate. It was a good measure of how a person would work with the team.\nInterviewing for software is a gigantic topic, and this only glances at the surface of it. But I\u2019ve been fortunate to be part of workplaces that have valued me.\nUpdate 2024: I wanted to implement the markup for the problem in MathML."},"mention-of":"https:\/\/lab.artlung.com\/mathml\/","wm-property":"mention-of","wm-private":false,"rels":{"canonical":"https:\/\/artlung.com\/blog\/2020\/08\/10\/the-problem\/"}}]
+[
+  {
+    "type": "entry",
+    "author": {
+      "type": "card",
+      "name": "Joe Crawford",
+      "photo": "https:\/\/avatars.webmention.io\/cdn.artlung.com\/a0b5bad7e1082e08dc5e72e7f4760d40596782e04895da8b740023e7c1904d15.jpg",
+      "url": ""
+    },
+    "url": "https:\/\/artlung.com\/blog\/2020\/08\/10\/the-problem\/",
+    "published": "2020-08-10T05:00:11",
+    "wm-received": "2024-12-03T04:09:50Z",
+    "wm-id": 1864234,
+    "wm-source": "https:\/\/artlung.com\/blog\/2020\/08\/10\/the-problem\/",
+    "wm-target": "https:\/\/lab.artlung.com\/mathml\/",
+    "wm-protocol": "webmention",
+    "name": "\u201cThe Problem\u201d",
+    "content": {
+      "html": "<p><img src=\"https:\/\/cdn.artlung.com\/blog\/wp-content\/uploads\/2020\/08\/The_Problem-500x180-1.png\" alt=\"Given a sequence of integers A0..An find i, j such that sum Ai is maximized.\" width=\"500\" height=\"180\" \/><\/p>\n<p>I used to be a party to walking through software engineering candidates through answering this question.<\/p>\n<p>I answered it myself, as part of my own hiring process, with several other programmers there. Part of the prompt from them was to \u201cthink of us as your team, feel free to ask questions or get clarifications.\u201d<\/p>\n<p>That aspect is why I felt this particular \u201cexercise\u201d was legitimate. It was a good measure of how a person would work with the team.<\/p>\n<p>Interviewing for software is a gigantic topic, and this only glances at the surface of it. But I\u2019ve been fortunate to be part of workplaces that have valued me.<\/p>\n<p><strong>Update 2024:<\/strong> I wanted to implement the <a href=\"https:\/\/lab.artlung.com\/mathml\/\">markup for the problem in MathML<\/a>. <\/p>",
+      "text": "I used to be a party to walking through software engineering candidates through answering this question.\nI answered it myself, as part of my own hiring process, with several other programmers there. Part of the prompt from them was to \u201cthink of us as your team, feel free to ask questions or get clarifications.\u201d\nThat aspect is why I felt this particular \u201cexercise\u201d was legitimate. It was a good measure of how a person would work with the team.\nInterviewing for software is a gigantic topic, and this only glances at the surface of it. But I\u2019ve been fortunate to be part of workplaces that have valued me.\nUpdate 2024: I wanted to implement the markup for the problem in MathML."
+    },
+    "mention-of": "https:\/\/lab.artlung.com\/mathml\/",
+    "wm-property": "mention-of",
+    "wm-private": false,
+    "rels": {
+      "canonical": "https:\/\/artlung.com\/blog\/2020\/08\/10\/the-problem\/"
+    }
+  }
+]
