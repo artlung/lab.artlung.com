@@ -27,7 +27,7 @@ class Nav
 
         // yaml is the source of truth, generate this with slugs_and_titles.php do not hand edit this:
 
-        /* START: handled by php generate-nav-value LAST UPDATE 2025-05-16 18:11:13 */
+        /* START: handled by php generate-nav-value LAST UPDATE 2025-05-17 04:24:50 */
         return $slugs_and_titles = array (
         '50states' => 
         array (
@@ -2137,6 +2137,22 @@ class Nav
         ),
         'webmention_last_checked' => 1745706572,
         'webmention_count' => 0,
+        ),
+        'ventcheck' => 
+        array (
+        'slug' => 'ventcheck',
+        'title' => 'Ventcheck, a Twitter bot',
+        'canonical_url' => 'https://lab.artlung.com/ventcheck/',
+        'year' => 2016,
+        'webmention_last_checked' => 111111,
+        'webmention_count' => 0,
+        'tags' => 
+        array (
+        0 => 'bot',
+        1 => 'twitter',
+        2 => 'cheapbotsdonequick',
+        3 => 'sandiegocodekitchen',
+        ),
         ),
         'w3c-with-and-without-css' => 
         array (
