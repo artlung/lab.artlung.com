@@ -55,7 +55,7 @@ usort(
 <h2>Respiratory Therapy Era <small><em>2009-2011</em></small></h2>
 
 <p>
-    In 2009 I wanted to create a Twitter account to associated with my website
+    In 2009 I wanted to create a Twitter account associated with my website
     for respiratory therapy: <a href="https://rhonchi.com/">Rhonchi</a>. I called the bot "ventcheck."
 </p>
 
@@ -98,7 +98,7 @@ print "</ul>";
     <h2>Main Section <small><em>2016 to 2020</em></small></h2>
 
 <p>
-    I used cheapbotsdonequick (RIP) to run it since then until I shut it down in 2020. This predates the
+    I used <a href="https://cheapbotsdonequick.com/source/ventcheck">cheapbotsdonequick</a> (RIP) to run it since then until I shut it down in 2020. This predates the
     sale of Twitter to Elon Musk by a few years.
 </p>
 <?php
