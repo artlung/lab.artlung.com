@@ -27,7 +27,7 @@ class Nav
 
         // yaml is the source of truth, generate this with slugs_and_titles.php do not hand edit this:
 
-        /* START: handled by php generate-nav-value LAST UPDATE 2025-05-17 04:33:08 */
+        /* START: handled by php generate-nav-value LAST UPDATE 2025-05-23 20:19:31 */
         return $slugs_and_titles = array (
         '50states' => 
         array (
@@ -1731,6 +1731,21 @@ class Nav
         ),
         'webmention_last_checked' => 1747331672,
         'webmention_count' => 1,
+        ),
+        'rudysbg' => 
+        array (
+        'slug' => 'rudysbg',
+        'title' => 'Rudy\'s background colour picker (1997, 2025)',
+        'year' => 2025,
+        'tags' => 
+        array (
+        0 => 'web',
+        1 => 'sass',
+        2 => 'css',
+        ),
+        'canonical_url' => 'https://lab.artlung.com/rudysbg/',
+        'webmention_last_checked' => 0,
+        'webmention_count' => 0,
         ),
         'safari-mailto-webmail' => 
         array (

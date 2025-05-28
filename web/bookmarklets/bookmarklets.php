@@ -77,7 +77,6 @@ $lab->printHeader('Bookmarklets, Miscellaneous');
 
     <h2>goToRSSFeed v.2</h2>
     <p>
-    <p>
     <?php
         $js = file_get_contents('go-to-rss-feed-v2.js');
         $js_bookmarklet = 'javascript:' . \ArtlungLab\Bookmarklet::javascriptToBookmarklet($js);
@@ -89,6 +88,38 @@ $lab->printHeader('Bookmarklets, Miscellaneous');
 <?php $lab->printCodeBlock($js); ?>
 
     </div>
+
+<div>
+    <h2>Show Rel Canonical</h2>
+    <p>
+        <?php
+        $js = file_get_contents('show-rel-canonical.js');
+        $js_bookmarklet = 'javascript:' . \ArtlungLab\Bookmarklet::javascriptToBookmarklet($js);
+        printf('<a href="%s">Show Rel Canonical</a>', $js_bookmarklet);
+        ?>
+
+    </p>
+    <h3>Source</h3>
+
+    <?php $lab->printCodeBlock($js); ?>
+
+
+</div>
+<!-- same as that but for show-rel-webmention -->
+<div>
+    <h2>Show Rel Webmention</h2>
+    <p>
+        <?php
+        $js = file_get_contents('show-rel-webmention.js');
+        $js_bookmarklet = 'javascript:' . \ArtlungLab\Bookmarklet::javascriptToBookmarklet($js);
+        printf('<a href="%s">Show Rel Webmention</a>', $js_bookmarklet);
+        ?>
+    </p>
+    <h3>Source</h3>
+
+    <?php $lab->printCodeBlock($js); ?>
+</div>
+
 
 
 <div>
