@@ -8,13 +8,13 @@ $lab->printHeader(
 ?>
 <link rel="stylesheet" href="kanban.css<?php
     echo '?' . filemtime('kanban.css');
-    ?>" type="text/css"/>
+?>" type="text/css"/>
 
 
 <p class="date-attribution">Created Jun 2025</p>
 <h1 class="p-name">Kanban Task Board in CSS Grid</h1>
 
-<p>Demonstration of <code>display: grid</code> coupled with 	<code>grid-auto-flow: column;</code></p>
+<p>Demonstration of <code>display: grid</code> coupled with     <code>grid-auto-flow: column;</code></p>
 
 <p>How does this work?</p>
 <ul>

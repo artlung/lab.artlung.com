@@ -8,7 +8,7 @@ $lab->printHeader(
 ?>
 <link rel="stylesheet" href="kanban-2.css<?php
     echo '?' . filemtime('kanban-2.css');
-    ?>" type="text/css"/>
+?>" type="text/css"/>
 
 
 <p class="date-attribution">Created Jun 2025</p>

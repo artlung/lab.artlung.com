@@ -1,10 +1,5 @@
 <main class="task-board-2">
     <?php
-    // Backlog (red) on-deck
-    // Doing (yellow) in-progress
-    // Blocked (orange) blocked
-    // Review (green) review
-    // Done (blue) done
     $states = [
         [
             'name' => 'On Deck',
@@ -32,7 +27,8 @@
 
     // Print each task state as a header
     foreach ($states as $state) {
-        printf('<h2 class="%s">%s</h2>',
+        printf(
+            '<h2 class="%s">%s</h2>',
             htmlspecialchars($state['class'], ENT_QUOTES, 'UTF-8'),
             htmlspecialchars($state['name'], ENT_QUOTES, 'UTF-8')
         );
@@ -54,12 +50,14 @@
         $select = '<select name="task-' . $i . '">';
         $select .= $selectOptions;
         $select .= '</select>';
-        printf('<div>
+        printf(
+            '<div>
                 Task %d
                 <form>
                 %s
                 </form>
-            </div>', $i, $select);
+            </div>', $i, $select
+        );
     }
     ?>
 </main>
