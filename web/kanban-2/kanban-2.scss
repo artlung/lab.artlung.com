@@ -1,0 +1,122 @@
+@use "sass:map";
+@use "sass:math";
+$states: (
+        "on-deck": #ffbaba,
+        "in-progress": #ffff00,
+        "blocked": #ffd17b,
+        "review": #ceffce,
+        "done": #d0d0ff
+);
+
+:root {
+  --color-default: map.get($states, "on-deck");
+  @each $name, $color in $states {
+    --color-#{$name}: #{$color};
+  }
+}
+body {
+  font-family: system-ui, sans-serif;
+}
+code {
+  font-size: 1rem;
+}
+main.task-board-2 {
+  display: grid;
+  gap: 1.2rem;
+  padding: 0.5rem;
+  grid-template-columns: 1fr;
+  & > form {
+  }
+  h2 {
+    display: none;
+  }
+
+  div {
+    --color: var(--color-default);
+    border: 1px solid oklch(from var(--color) 0.7 c h);
+    border-radius: 0.5em;
+    background: var(--color);
+    padding: 1rem;
+    @each $name, $color in $states {
+        &:has([value="#{$name}"]:checked) {
+            --color: var(--color-#{$name});
+        }
+    }
+    form {
+      margin: 1rem 0 0 auto;
+      opacity: 0.8;
+      display: flex;
+      gap: 0;
+      border: 1px solid oklch(from var(--color) 0.7 c h);
+      border-radius: 0.2rem;
+      width: min-content;
+      label {
+        cursor: pointer;
+        font-size: small;
+        white-space: nowrap;
+        padding: 0.2rem 0.5rem;
+        --actionColor: #0000;
+        background: color-mix(in srgb, var(--actionColor), var(--color));
+        @each $name, $color in $states {
+            &:has(input[value="#{$name}"]) {
+                --actionColor: var(--color-#{$name});
+            }
+        }
+        &:has(input:checked) {
+          opacity: 0.5;
+        }
+        input {
+          display: none;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 800px) {
+  main.task-board-2 {
+    // sass to dynamically set the number of columns
+    grid-template-columns: repeat(length($states), 1fr);
+    grid-auto-flow: column;
+    $color_states: '';
+    // assemble a dynamic gradient for the background
+    @each $name, $color in $states {
+      $color_mix_with_name_and_percentage: color-mix(in srgb, var(--color-#{$name}), #0000 60%) 0;
+      $percentage:  math.div(100%, length($states)) * index($states, ($name $color));
+      $color_states: #{$color_states}, #{$color_mix_with_name_and_percentage} #{$percentage},
+    }
+    background: linear-gradient(
+                90deg,
+                $color_states
+    );
+
+
+
+
+    h2 {
+      display: block;
+      margin: 0;
+      border: solid;
+      padding: 0 0 0.2ch;
+      border-width: 0 0 0.2ch 0;
+        @each $name, $color in $states {
+            &.#{$name} {
+            grid-column: index(($states), ($name $color));
+            }
+        }
+    }
+    div {
+      grid-column: 1;
+      @each $name, $color in $states {
+        &:has([value="#{$name}"]:checked) {
+          grid-column: index(($states), ($name $color));
+        }
+
+      }
+      form {
+        label {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
