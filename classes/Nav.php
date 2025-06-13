@@ -27,7 +27,7 @@ class Nav
 
         // yaml is the source of truth, generate this with slugs_and_titles.php do not hand edit this:
 
-        /* START: handled by php generate-nav-value LAST UPDATE 2025-06-04 13:41:46 */
+        /* START: handled by php generate-nav-value LAST UPDATE 2025-06-13 00:02:05 */
         return $slugs_and_titles = array (
         '50states' => 
         array (
@@ -1569,6 +1569,21 @@ class Nav
         0 => 'php',
         ),
         'webmention_last_checked' => 1747331669,
+        'webmention_count' => 0,
+        ),
+        'popover-retro' => 
+        array (
+        'title' => 'Popover à la Windows 95',
+        'year' => 2025,
+        'tags' => 
+        array (
+        0 => 'popover',
+        1 => 'retro',
+        2 => 'scss',
+        ),
+        'slug' => 'popover-retro',
+        'canonical_url' => 'https://lab.artlung.com/popover-retro',
+        'webmention_last_checked' => 0,
         'webmention_count' => 0,
         ),
         'quick-jquery-overlay' => 
