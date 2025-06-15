@@ -1,0 +1,119 @@
+:root {
+  --color-on-deck: lightblue;
+  --color-in-progress: lightgreen;
+  --color-done: #ccc;
+}
+body {
+  font-family: system-ui, sans-serif;
+}
+code {
+  font-size: 1rem;
+}
+main.task-board {
+  display: grid;
+  gap: 1.2rem;
+  padding: 0.5rem;
+  grid-template-columns: 1fr;
+  & > form {
+  }
+  h2 {
+    display: none;
+  }
+
+  div {
+    --color: var(--color-done);
+    border: 1px solid oklch(from var(--color) 0.7 c h);
+    border-radius: 0.5em;
+    background: var(--color);
+    padding: 1rem;
+    --color: var(--color-on-deck);
+    &:has(input[value="on-deck"]:checked) {
+    }
+    &:has(input[value="in-progress"]:checked) {
+      --color: var(--color-in-progress);
+    }
+    &:has(input[value="done"]:checked) {
+      --color: var(--color-done);
+    }
+
+
+    form {
+      margin: 1rem 0 0 auto;
+      opacity: 0.8;
+      display: flex;
+      gap: 0;
+      border: 1px solid oklch(from var(--color) 0.7 c h);
+      border-radius: 0.2rem;
+      width: min-content;
+      label {
+        cursor: pointer;
+        font-size: small;
+        white-space: nowrap;
+        padding: 0.2rem 0.5rem;
+        --actionColor: #0000;
+        background: color-mix(in srgb, var(--actionColor), var(--color));
+        &:has(input[value="on-deck"]) {
+          --actionColor: var(--color-on-deck);
+        }
+        &:has(input[value="in-progress"]) {
+          --actionColor: var(--color-in-progress);
+        }
+        &:has(input[value="done"]) {
+          --actionColor: var(--color-done);
+        }
+        &:has(input:checked) {
+          opacity: 0.5;
+        }
+        input {
+          display: none;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 800px) {
+  main.task-board {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-flow: column;
+    background: linear-gradient(
+                    90deg,
+                    color-mix(in srgb, var(--color-on-deck),     #0000 60%) 33.333%,
+                    color-mix(in srgb, var(--color-in-progress), #0000 60%) 0 66.667%,
+                    color-mix(in srgb, var(--color-done),        #0000 60%) 0
+    );
+
+    h2 {
+      display: block;
+      margin: 0;
+      border: solid;
+      padding: 0 0 0.2ch;
+      border-width: 0 0 0.2ch 0;
+      &.on-deck {
+        grid-column: 1;
+      }
+      &.in-progress {
+        grid-column: 2;
+      }
+      &.done {
+        grid-column: 3;
+      }
+    }
+    div {
+      grid-column: 1;
+      &:has(input[value="on-deck"]:checked) {
+        // already has default
+      }
+      &:has(input[value="in-progress"]:checked) {
+        grid-column: 2;
+      }
+      &:has(input[value="done"]:checked) {
+        grid-column: 3;
+      }
+      form {
+        label {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

@@ -255,7 +255,7 @@ article#content {
   }
 
   pre.src {
-    padding: 10px;
+    padding: 1lh;
     color: $color_1;
     background-color: $background-color_1;
     overflow: auto;
@@ -273,14 +273,15 @@ article#content {
   }
 
   pre {
-    padding: 10px;
+    padding: 1lh;
     color: $color_2;
-    background-color: $background-color_3;
+    background: linear-gradient(rgba(255,255,255,0.3) 50%, #fff 0) 0 0 / 100% 2lh $background-color_3;
     box-shadow: 1em 1em 10em #9f9 inset;
     border: 1px solid darkgreen;
     overflow: auto;
-    line-height: 1.1;
     max-width: calc(100vw - 5rem);
+    font-size: 1rem;
+    line-height: 1;
 
     &:has(code) {
       scrollbar-color: #167516 #9f9;
@@ -582,7 +583,7 @@ body.comment-count-visible .webmention-count {
     a {
       background: var(--theme-color);
       color: var(--theme-color-modifier);
-      tet-decoration: underline;
+      text-decoration: underline;
       // wavy
       text-decoration-style: wavy;
     }

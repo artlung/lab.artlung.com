@@ -34,6 +34,7 @@
         "updatenav": "php generate-nav-value.php",
         "webmentions": "php get-webmentions.php",
         "og-images" : "php og-images.php",
-        "deploy": "sh deploy.sh"
+        "deploy": "sh deploy.sh",
+        "create-page": "php create-page.php"
     }
 }

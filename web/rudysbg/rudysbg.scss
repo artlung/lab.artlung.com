@@ -1,0 +1,48 @@
+body {
+  color: #036;
+  h1 {
+    text-wrap: balance;
+    em {
+      font-family: system-ui, sans-serif;
+      font-weight: 100;
+      font-size: 1rem;
+    }
+  }
+  label {
+    display: block;
+    background: var(--bgcolor);
+    padding: 4px;
+    font-family: system-ui, sans-serif;
+    &:has(input:checked) {
+      font-weight: bold;
+    }
+    input {
+      display: none;
+    }
+  }
+}
+
+$colors: "#ffffff", "#f0ffff", "#e0ffff", "#f5fffa", "#f8f8ff", "#f0f8ff", "#fff0f5", "#e6e8fa",
+"#f5f5f5", "#fffaf0", "#fafad2", "#fff8dc", "#faebd7", "#f5f5dc", "#ffe4b5", "#ffefd5", "#ffdab9",
+"#ffe4c4", "#ffebcd", "#f0e68c", "#f0fff0", "#fffff0", "#fffacd", "#ffffe0", "#faf0e6", "#ffe4e1",
+"#fdf5e6", "#fff5ee", "#fffafa";
+
+@each $color in $colors {
+  body:has(input[value="#{$color}"]:checked) {
+    background: #{$color};
+  }
+}
+
+@media screen and (min-width: 50ch){
+  main {
+    columns: 2;
+  }
+
+}
+
+@media screen and (min-width: 80ch){
+  main {
+    columns: 3;
+  }
+
+}
