@@ -3,7 +3,7 @@
 <head>
     <title>Rudy's background colour picker (1997, 2025)</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="rudysbg.css<?php
     echo '?v=' . filemtime('rudysbg.css');
     ?>">
