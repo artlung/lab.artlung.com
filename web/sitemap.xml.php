@@ -2,7 +2,7 @@
 
 use ArtlungLab\SiteMap;
 
-require_once '../loader.php';
+require_once __DIR__ . '/../loader.php';
 
 $items = \ArtlungLab\Nav::getMetadata();
 foreach ($items as $slug => $metadata) {
