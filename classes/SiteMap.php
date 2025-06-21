@@ -19,6 +19,7 @@ class SiteMap
     private $_default_filectime;
 
     private $_protocol;
+    private float $_priority;
 
     /**
      * SiteMap constructor.

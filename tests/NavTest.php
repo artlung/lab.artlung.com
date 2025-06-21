@@ -50,8 +50,15 @@ class NavTest extends TestCase
 
             $this->assertGreaterThan(0, count($metadataArray['tags']), "Tags is empty for $dir, all pages should have at least one page");
 
-            $this->assertArrayHasKey('slug', $metadataArray, "Slug missing for $dir");
-            $this->assertEquals($dir, $metadataArray['slug'], "Slug does not match directory name for $dir");
+            $excluded_dirs = [
+                'wml',
+            ];
+
+            if (!in_array($dir, $excluded_dirs)) {
+                $this->assertArrayHasKey('slug', $metadataArray, "Slug missing for $dir");
+                $this->assertEquals($dir, $metadataArray['slug'], "Slug does not match directory name for $dir");
+            }
+
 
             $this->assertArrayHasKey('canonical_url', $metadataArray, "Canonical URL missing for $dir");
             $this->assertStringContainsString('https://lab.artlung.com/', $metadataArray['canonical_url'], "Canonical URL does not contain https://lab.artlung.com/ for $dir");

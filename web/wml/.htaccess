@@ -1,0 +1,13 @@
+# image/vnd.wap.wbmp for .wbmp files
+AddType image/vnd.wap.wbmp .wbmp
+
+# serve xml files in this directory with text/plain
+AddType text/plain .xml
+
+# if the url is /wml/preview load preview.php
+RewriteEngine On
+RewriteBase /wml/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^faux$ faux.php [L]
+RewriteRule ^faux/$ faux.php [L]

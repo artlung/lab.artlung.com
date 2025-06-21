@@ -27,7 +27,7 @@ class Nav
 
         // yaml is the source of truth, generate this with slugs_and_titles.php do not hand edit this:
 
-        /* START: handled by php generate-nav-value LAST UPDATE 2025-06-13 00:02:05 */
+        /* START: handled by php generate-nav-value LAST UPDATE 2025-06-20 20:17:40 */
         return $slugs_and_titles = array (
         '50states' => 
         array (
@@ -1585,6 +1585,7 @@ class Nav
         'canonical_url' => 'https://lab.artlung.com/popover-retro',
         'webmention_last_checked' => 0,
         'webmention_count' => 0,
+        'og-image-date' => '2025-06-13 00:10:07',
         ),
         'quick-jquery-overlay' => 
         array (
@@ -2262,6 +2263,23 @@ class Nav
         ),
         'webmention_last_checked' => 1745706573,
         'webmention_count' => 0,
+        ),
+        'wml' => 
+        array (
+        'title' => 'WML, WAP, & Microformats Demo',
+        'year' => 2025,
+        'tags' => 
+        array (
+        0 => 'wml',
+        1 => 'wap',
+        2 => 'microformats',
+        ),
+        'slug' => 'wml/faux',
+        'canonical_url' => 'https://lab.artlung.com/wml/faux',
+        'webmention_last_checked' => 0,
+        'webmention_count' => 0,
+        'atom_feed_publish_date' => '2025-06-18T18:28:07+00:00',
+        'og-image-date' => '2025-06-20 18:28:07',
         ),
         'ws-ftp-password-decoder' => 
         array (
