@@ -13,8 +13,6 @@ if (php_sapi_name() !== 'cli') {
 <wml class="h-entry">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <!-- I can't use property and content attributes in meta tags in WML, ah well -->
-        <meta name="og:image" content="https://lab.artlung.com/wml/og-wml-faux.jpg" />
     </head>
     <card id="main" class="e-content">
         <p mode="wrap" class="p-name">WML, WAP, &amp; Microformats Demo! by ArtLung<a class="u-url" href="https://lab.artlung.com/wml/faux"></a></p>
