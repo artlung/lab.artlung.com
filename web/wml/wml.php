@@ -45,7 +45,7 @@ if (php_sapi_name() !== 'cli') {
         </p>
         <p><img src="https://lab.artlung.com/wml/artlung.gif" alt="ARTLUNG" /></p>
         <p mode="wrap">
-            The image above is a <strong>GIF</strong>. I tried to use a WBMO. It didn't work. The Mime Type <strong>image/vnd.wap.wbmp</strong> version won't load in browsers.
+            The image above is a <strong>GIF</strong>. I tried to use a WBMP. It didn't work. The Mime Type <strong>image/vnd.wap.wbmp</strong> version won't load in browsers.
             Adobe may kind of suck, but Photoshop can still read and write one of these files here  in 2025. <a href="https://lab.artlung.com/wml/artlung.wbmp">Try the WBMP</a>.
         </p>
         <p mode="wrap">
