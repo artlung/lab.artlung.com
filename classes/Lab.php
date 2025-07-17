@@ -188,7 +188,7 @@ class Lab
                 $span .= sprintf('<span class="webmention-count">%s</span>', $webmention_string);
             }
             // TODO add no inspection here
-            $anchor = sprintf('<a href="%s"><span>%s</span> %s</a>', $navItem['slug'], $navItem['title'], $span);
+            $anchor = sprintf('<a href="/%s"><span>%s</span> %s</a>', $navItem['slug'], $navItem['title'], $span);
             $li = sprintf('<li style="%s" data-year="%s" data-tags="%s">%s</li>', $styleString, $navItem['year'], $tagString, $anchor);
             $nav .= $li;
         }

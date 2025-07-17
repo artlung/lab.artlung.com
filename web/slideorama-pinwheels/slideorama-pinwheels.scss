@@ -1,0 +1,114 @@
+@use "sass:math";
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  font-family: system-ui, sans-serif;
+  overflow: hidden;
+  cursor: pointer;
+  animation: spin 60s infinite;
+  --from: 0deg;
+  --width: 60vmin;
+}
+
+div {
+  display: grid;
+  padding: 22vmin;
+  box-sizing: border-box;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  pointer-events: auto;
+  transition: 0.5s all;
+  cursor: auto;
+  mix-blend-mode: var(--mix-blend-mode, multiply);
+  background: repeating-conic-gradient(
+                  from var(--from),
+                  var(--color-1) 0 calc(50% / var(--count, 1)),
+                  var(--color-2) 0 calc(100% / var(--count, 1))
+  );
+  width: var(--width);
+  height: var(--width);
+  border-radius: 50%;
+  > * {
+    cursor: pointer;
+    margin: auto;
+  }
+  input {
+    pointer-events: auto;
+  }
+  button {
+    pointer-events: auto;
+    border: none;
+    background: #fff;
+    color: #000;
+    font-weight: bold;
+    font-size: 1.4rem;
+    border-radius: 50%;
+    display: flex;
+    width: 2ch;
+    height: 2ch;
+    justify-content: center;
+    align-items: center;
+  }
+  > * {
+    opacity: 0.3;
+    pointer-events: auto;
+    transition: opacity 0.35s;
+  }
+  &:hover {
+    > * {
+      opacity: 1;
+    }
+  }
+
+  &.new {
+    position: fixed;
+    top: var(--top, -50px);
+    left: var(--left, -50px);
+    margin: calc(var(--width) / -2) 0 0 calc(var(--width) / -2);
+    > * {
+      opacity: 0;
+    }
+    &:hover {
+      > * {
+        opacity: 1;
+      }
+    }
+  }
+}
+nav {
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #000;
+  color: #fff;
+  width: 100vw;
+  padding: 1ch;
+  select {
+    font-size: 1rem;
+  }
+  a {
+    color: #fff;
+  }
+  a:has(img.class-88x31) {
+    position: absolute;
+    right: 3px;
+    top: 5px;
+  }
+}
+
+@keyframes spin {
+  @for $i from 0 through 359 {
+    $percentage: math.div(100%, 360) * $i;
+    $degrees: 1deg * $i;
+    #{$percentage} {
+      --from: #{$degrees};
+    }
+  }
+}
