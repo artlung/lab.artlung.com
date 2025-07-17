@@ -3,6 +3,8 @@ Header("Content-Type: text/html; charset=iso-8859-1");
 ?><!DOCTYPE html PUBLIC "-//IETF//DTD HTML 2.0//EN">
 <html>
 <head>
+    <!-- iso-8859-1-->
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
     <link rel="Index" href="http://www.artlung.com/lab/">
     <title>HTML 2.0 Rocks! :: ArtLung Lab</title>
 </head>
@@ -84,10 +86,13 @@ Header("Content-Type: text/html; charset=iso-8859-1");
 
 <hr>
 
-<p><a href="/">lab.artlung.com</a> | <a href="/feedback/">send feedback</a>
+<p><a href="https://lab.artlung.com/">lab.artlung.com</a> | <a href="https://artlung.com/feedback/">send feedback</a>
     <br>
-    <a href="http://validator.w3.org/check/referer"><img src="valid_html.gif" alt="Checked - HTML 2.0"></a>
+    <a href="https://validator.w3.org/check?uri=https://lab.artlung.com/html-2.0/"><img src="valid_html.gif" alt="Checked - HTML 2.0"></a>
 </p>
+
+<a href="https://validator.w3.org/check?uri=https://lab.artlung.com/html-2.0/"><img
+            src="https://www.w3.org/Icons/valid-html20"></a>
 
 
 </body>

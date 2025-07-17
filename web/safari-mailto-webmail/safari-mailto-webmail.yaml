@@ -2,13 +2,14 @@
 title: Safari Mailto Converter
 og-image-date: 2025-05-15 17:53:37
 atom_feed_publish_date: 2025-05-15T17:54:46+00:00
-webmention_last_checked: 1747331649
+webmention_last_checked: 1752671020
 webmention_count: 0
 year: 2025
-canonical_url: https://lab.artlung.com/safari-mailto-webmail/
+canonical_url: >
+  https://lab.artlung.com/safari-mailto-webmail/
 tags:
-    - javascript
-    - gmail
-    - safari
-    - mailto
+  - javascript
+  - gmail
+  - safari
+  - mailto
 slug: safari-mailto-webmail

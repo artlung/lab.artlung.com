@@ -40,9 +40,16 @@ $lab->printHeader(
     <p class="date-attribution">Created '. date('M Y').'</p>
     <h1 class="p-name">'. $what.'</h1>';
 
+$yaml_data = [
+    'title' => $what,
+    'slug' => $what,
+];
+$yaml_string = Spyc::YAMLDump($yaml_data);
 
 file_put_contents(__DIR__ . "/web/$what/$what.scss", '');
 file_put_contents(__DIR__ . "/web/$what/index.php", "<?php\nrequire \"$what.php\";");
 file_put_contents(__DIR__ . "/web/$what/$what.php", $content);
+file_put_contents(__DIR__ . "/web/$what/$what.yaml", $yaml_string);
+
 
 
