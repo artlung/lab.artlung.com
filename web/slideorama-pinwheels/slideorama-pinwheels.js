@@ -60,8 +60,7 @@ function load() {
                 div.style.setProperty("--count", elemData.style.count);
                 div.style.setProperty("--color-1", elemData.style.color1);
                 div.style.setProperty("--color-2", elemData.style.color2);
-                const newElementHtml = `<input type="range" name="--count" min="1" max="50" value="${elemData.style.count}"><input type="color" name="--color-2" value="${elemData.style.color2}"><input type="color" name="--color-1" value="${elemData.style.color1}"><button onclick="removeDiv(this)">&times;</button>`;
-                div.innerHTML = newElementHtml;
+                div.innerHTML = `<input type="range" name="--count" min="1" max="50" value="${elemData.style.count}"><input type="color" name="--color-2" value="${elemData.style.color2}"><input type="color" name="--color-1" value="${elemData.style.color1}"><button onclick="removeDiv(this)">&times;</button>`;
 
                 div.querySelectorAll("input").forEach((elem) => {
                     elem.addEventListener("input", updateValue);
