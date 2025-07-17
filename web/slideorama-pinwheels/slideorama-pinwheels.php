@@ -17,7 +17,7 @@
 </head>
 <body>
 
-<div>
+<div style="--count: 1;--color-1: #ff0000;--color-2: #0000ff;">
     <input type="range" name="--count" min="1" max="50" value="1">
     <input type="color" name="--color-2" value="#0000ff">
     <input type="color" name="--color-1" value="#ff0000">

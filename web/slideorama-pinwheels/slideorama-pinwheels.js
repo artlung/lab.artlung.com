@@ -77,19 +77,21 @@ function load() {
         console.error("Error loading saved pinwheels from localStorage:", e);
     }
 
+
+    } else {
         loadMessage = "Loaded saved pinwheels from localStorage";
-        document.querySelectorAll("div:not(.new)>input").forEach((elem) => {
+        document.querySelectorAll("input").forEach((elem) => {
             elem.addEventListener("input", updateValue);
             const event = new Event("input");
             elem.dispatchEvent(event);
-            save();
         });
     }
+    console.log(loadMessage);
 }
 
 // pageload
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
 
     load();
 
