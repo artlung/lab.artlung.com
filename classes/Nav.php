@@ -27,7 +27,7 @@ class Nav
 
         // yaml is the source of truth, generate this with slugs_and_titles.php do not hand edit this:
 
-        /* START: handled by php generate-nav-value LAST UPDATE 2025-07-17 00:07:09 */
+        /* START: handled by php generate-nav-value LAST UPDATE 2025-07-18 16:34:20 */
         return $slugs_and_titles = array (
         '50states' => 
         array (
@@ -488,6 +488,22 @@ class Nav
         ),
         'webmention_last_checked' => 1752670998,
         'webmention_count' => 1,
+        ),
+        'comics-a11y' => 
+        array (
+        'title' => 'Comics Accessibility',
+        'slug' => 'comics-a11y',
+        'year' => 2025,
+        'tags' => 
+        array (
+        0 => 'comics',
+        1 => 'accessibility',
+        2 => 'a11y',
+        ),
+        'canonical_url' => 'https://lab.artlung.com/comics-a11y/',
+        'og-image-date' => '2025-07-17 19:53:04',
+        'webmention_last_checked' => 0,
+        'webmention_count' => 0,
         ),
         'compare-fields' => 
         array (
@@ -1899,6 +1915,8 @@ class Nav
         'canonical_url' => 'https://lab.artlung.com/slideorama-pinwheels',
         'webmention_last_checked' => 1752624000,
         'webmention_count' => 0,
+        'og-image-date' => '2025-07-17 00:16:18',
+        'atom_feed_publish_date' => '2025-07-17T00:28:33+00:00',
         ),
         'slideshow' => 
         array (

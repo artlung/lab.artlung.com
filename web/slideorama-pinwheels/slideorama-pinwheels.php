@@ -14,6 +14,7 @@
     echo '?' . filemtime(__DIR__ . '/slideorama-pinwheels.js');
     ?>"></script>
     <link rel="webmention" href="https://webmention.io/artlung.com/webmention">
+    <meta property="og:image" content="https://lab.artlung.com/slideorama-pinwheels/og-slideorama-pinwheels.jpg">
 </head>
 <body>
 
