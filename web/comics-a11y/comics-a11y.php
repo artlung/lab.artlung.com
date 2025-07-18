@@ -7,7 +7,7 @@ $lab->printHeader(
 
 ?>
     <link rel="stylesheet" type="text/css" href="comics-a11y.css<?php
-echo '?v=' . filemtime(__DIR__ . '/comics-a11y.css'); ?>">
+    echo '?v=' . filemtime(__DIR__ . '/comics-a11y.css'); ?>">
 
     <p class="date-attribution">Created Jul 2025</p>
     <h1 class="p-name">Comics Accessibility <mark>[DRAFT IN PROGRESS]</mark></h1>
