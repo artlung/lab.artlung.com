@@ -1,0 +1,51 @@
+label, .content {
+  position: absolute;
+  font-family: Helvetica, sans-serif;
+  top: 0.5rem;
+  right: 0.5rem;
+  background-color: white;
+  color: black;
+  border-radius: 0.25rem;
+  padding: 0.2rem;
+  padding-bottom: 0.1rem;
+  padding-top: 0.1rem;
+  box-shadow: 1px 1px 1px lightgrey;
+  cursor: pointer;
+  left: 0.5rem;
+  max-width: fit-content;
+  opacity: 1;
+}
+* {
+  line-height: 1.5;
+}
+figure {
+  max-width: 20rem;
+  position: relative;
+}
+.content {
+  display: none;
+  max-width: 100%;
+  left: 2.5rem;
+}
+.alt:has(input[type="checkbox"]:checked) > .content {
+  display: block;
+}
+.alt:has(input[type="checkbox"]:focus) label {
+  outline: yellow 1px solid;
+  background-color: black;
+  color: yellow
+}
+input[type="checkbox"]:focus {
+  outline: none;
+}
+label {
+  cursor: pointer;
+}
+input {
+  height: 0.001px;
+  width: 0.001px;
+  margin-left: -0.1rem;
+}
+img {
+  max-width: 100%;
+}

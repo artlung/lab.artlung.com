@@ -1,0 +1,38 @@
+.comic-image {
+  width: 100%;
+  max-width: 650px;
+  height: auto;
+  margin: 0;
+  border-block-start: 1ch solid;
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+}
+
+details {
+  summary {
+    font-size: 2rem;
+    cursor: pointer;
+  }
+}
+
+section {
+  margin: 5rem 0;
+  box-shadow: 0 0 0.4ch;
+  padding: 2ch;
+  > h2:first-child {
+    margin-block-start: 0;
+  }
+  &.example-benji {
+    @import 'example-benji';
+  }
+  &.example-tantek {
+    @import 'example-tantek';
+  }
+  &.example-jamesg {
+    @import 'example-jamesg';
+  }
+}

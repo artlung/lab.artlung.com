@@ -1,0 +1,27 @@
+& {
+  font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
+  font-weight: normal;
+}
+#show-alt:checked + article {
+  grid-template-columns: 1fr;
+  figure { grid-template-columns: 1fr 1fr }
+  figcaption { display: block }
+  gap: .5em;
+}
+article {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 500px;
+  gap: 0;
+  figure {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  figcaption {
+    display: none;
+    border: 1px solid black;
+    padding: .5em;
+  }
+  img { width: 100% }
+}
