@@ -24,11 +24,20 @@
     <input type="color" name="--color-1" value="#ff0000">
     <button onclick="removeDiv(this)">&times;</button>
 </div>
-<nav>Play with controls. Click the page for a new pinwheel. <select onchange="document.body.style.setProperty('--mix-blend-mode', this.options[this.selectedIndex].text)">
+<nav>Play with controls. Click the page for a new pinwheel.
+    <select onchange="document.body.style.setProperty('--mix-blend-mode', this.options[this.selectedIndex].text)">
         <option selected>multiply</option>
         <option>difference</option>
         <option>exclusion</option>
         <option>luminosity</option>
+        <option>normal</option>
+    </select>
+    <select onchange="document.body.style.setProperty('--animation-duration', this.options[this.selectedIndex].value)">
+        <option selected value="60s">1 cycles per minute</option>
+        <option value="30s">2 cycles per minute </option>
+        <option value="15s">4 cycles per minute </option>
+        <option value="6s">10 cycles per minute </option>
+        <option value="1s">60 cycles per minute </option>
     </select>
     <a href="https://github.com/artlung/lab.artlung.com/tree/master/web/slideorama-pinwheels" target="_blank">Source</a>
     <a href="https://artlung.com/" target="_blank"><img src="https://apps.artlung.com/logo-i-zer/88x31.php?c0=000000&c1=FFFFFF" alt="ARTLUNG ❤️ Joe Crawford" class="class-88x31"></a>

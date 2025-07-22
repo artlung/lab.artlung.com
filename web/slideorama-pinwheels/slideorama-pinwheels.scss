@@ -9,7 +9,8 @@ body {
   font-family: system-ui, sans-serif;
   overflow: hidden;
   cursor: pointer;
-  animation: spin 60s infinite;
+  animation: spin var(--animation-duration,60s) infinite;
+  animation-play-state: var(--animation-play-state, running);
   --from: 0deg;
   --width: 60vmin;
 }
@@ -34,6 +35,9 @@ div {
   width: var(--width);
   height: var(--width);
   border-radius: 50%;
+  &:hover {
+    z-index: 1;
+  }
   > * {
     cursor: pointer;
     margin: auto;
@@ -90,6 +94,9 @@ nav {
   color: #fff;
   width: 100vw;
   padding: 1ch;
+  z-index: 2;
+  // multiply
+  mix-blend-mode: multiply;
   select {
     font-size: 1rem;
   }
