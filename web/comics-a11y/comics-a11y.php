@@ -214,6 +214,34 @@ $lab->printHeader(
         <h2>SCSS</h2>
         <?php $lab->printSource(file_get_contents(__DIR__ . '/_example-jamesg.scss')); ?>
     </details>
+
+</section>
+
+<section class="example-mattl">
+    <h2>
+        Example via mattl (from <a href="https://en.wikipedia.org/wiki/David_Lynch
+">David Lynch</a>'s "The Angriest Dog in the World"
+    </h2>
+
+    <?php
+    $html = file_get_contents(__DIR__ . '/_example-mattl.html');
+    print $html;
+    ?>
+    <details>
+        <summary>Sources</summary>
+        <h2>HTML</h2>
+        <?php $lab->printSource($html);  ?>
+    </details>
+
+    <h3>
+        VoiceOver recording of the above example:
+    </h3>
+    <audio controls>
+        <source src="./angriest.mp3"
+                type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
 </section>
 
 
