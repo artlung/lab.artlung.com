@@ -58,7 +58,7 @@ jQuery(document).ready(function () {
     // Load JSON with Ajax
     $('#ajaxloadJson').bind('click', function () {
         $.getJSON('ajax/chunk.json', null, function (json) {
-            var textVal = JSON.stringify(json) + '<br />' + json.txt;
+            var textVal = JSON.stringify(json) + '\n' + json.txt;
             $('#ajaxOutput').text(textVal);
         });
         return false;

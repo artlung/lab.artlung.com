@@ -12,16 +12,16 @@ $lab->printHeader(
     <p class="date-attribution">Created Jul 2025</p>
     <h1 class="p-name">Comics Accessibility <mark>[DRAFT IN PROGRESS]</mark></h1>
 
-<p>I started this page during Front End Study Hall #032.</p>
+    <p>I started this page during <a href="https://indieweb.org/events/2025-07-17-front-end-study-hall">Front End Study Hall #032</a>. Thanks to everyone who participated in that original discussion and contributed via the <a href="http://indieweb.org">indieweb</a> chat.</p>
 
-<p>The goal is to collect examples of different techniques for adding transcripts, scripts, alt text, etc to allow for accessible comics for users with different abilities.</p>
+<p>My goal is to collect examples of different techniques for adding transcripts, scripts, alt text, etc to allow for accessible comics for users with different abilities.</p>
 
 <p>If you'd like to contribute an example please reach out! Comments and webmentions are enabled. And you can also find me on Bluesky and Mastodon via my
 <a href="https://artlung.com/links/">links page</a>. Also there's a GitHub link in the footer which is another way to contribute.
 </p>
 
 <p>
-    Copyrights for the comics shown here are held by their respective authors.
+    Copyrights and any associated trademarks for the comics shown here are held by their respective authors.
 </p>
 
 
@@ -29,7 +29,7 @@ $lab->printHeader(
 
 
 <section class="example-artlung">
-    <h2>Example from Joe</h2>
+    <h2>Example from <a href="http://artlung.com/">Joe</a></h2>
 
     <p>
         This example uses <code>aria-describedby</code> to point at
@@ -103,7 +103,7 @@ $lab->printHeader(
             Panel 4b:
         </dt>
         <dd>
-            Image of the seagul tearing into the broken
+            Image of the seagull tearing into the broken
             clam extracting meat
         </dd>
         <dd>
@@ -169,7 +169,7 @@ $lab->printHeader(
 
 <section class="example-tantek">
     <h2>
-        Example from Tantek Çelik
+        Example from <a href="http://tantek.com/">Tantek Çelik</a>
     </h2>
     <?php
     $html = file_get_contents(__DIR__ . '/_example-tantek.html');
@@ -193,7 +193,7 @@ $lab->printHeader(
 
 <section class="example-jamesg">
     <h2>
-        Example from James
+        Example from <a href="http://jamesg.blog/">James</a>
     </h2>
     <p>
         This is markup and CSS with an included label and checkbox to toggle visibility of a separate <code>div</code> with a description.
@@ -219,9 +219,13 @@ $lab->printHeader(
 
 <section class="example-mattl">
     <h2>
-        Example via mattl (from <a href="https://en.wikipedia.org/wiki/David_Lynch
-">David Lynch</a>'s "The Angriest Dog in the World"
+        Example via <a href="http://mat.tl/home/">mattl</a>
     </h2>
+
+    <p>
+        The plainest example of a comic with alt text. <em>(from <a href="https://en.wikipedia.org/wiki/David_Lynch
+">David Lynch</a>'s "The Angriest Dog in the World"</em>
+    </p>
 
     <?php
     $html = file_get_contents(__DIR__ . '/_example-mattl.html');
@@ -247,7 +251,9 @@ $lab->printHeader(
 
 <section class="links">
 
-    <h2>Links</h2>
+    <h2>Links
+        <mark>Feel free to suggest more!</mark>
+    </h2>
     <ul>
         <li>
             <a href="https://lastcallmedia.com/blog/accessible-comics">Accessible Comics</a>
@@ -278,12 +284,55 @@ $lab->printHeader(
             <a href="https://veroniiiica.com/how-to-write-alt-text-digital-comics/">How to Write Alt Text for Digital Comics</a>
             - Veronica Lewis
         </li>
+        <li>
+            <a href="https://www.youtube.com/watch?v=X8wcbJR9IaU">AI and Accessibility: the Good, the Bad, and the Bollocks</a>
+            - Léonie Watson ~ this talk a bit about the use of discrimitive AI, to generate alt text or descriptions of
+            images that lack them. Something is often better than nothing. But best is if authors provide their own
+            descriptions I think.
+        </li>
+
+        <li>
+            xkcd
+            <a href="https://xkcd.com/">xkcd.com</a> uses an <code>img</code> tag with
+            both an <code>alt</code> attribute and a <code>title</code> attribute. At times the alt text is
+            a kind of punchline or second joke, with the alt text merely being a title. The site
+
+            <a href="https://xkcd.fyi">https://xkcd.fyi</a> takes care to enhance the accessibility of the
+            comic by creating a specific transcript.
+
+            <br><br>
+
+            Related, the RSS feed as rendered via Monocle, <a href="https://monocle.p3k.io/preview?url=https%3A%2F%2Fxkcd.com%2Fatom.xml">
+                https://monocle.p3k.io/preview?url=https%3A%2F%2Fxkcd.com%2Fatom.xml
+            </a> when reusing the content from the feed, displays the alt text underneath the image.
+
+            <em>
+                suggested by <a href="https:/gregorlover.com/">gRegor</a>
+            </em>
+
+
+        </li>
+
+        <li>
+            <a href="https://blindinstituteoftechnology.org">
+                Blind Institute of Technology
+            </a> does consulting on accessibility for digital assets and I was told at San Diego Comic-Con 2025 that they
+            get grants to do a certain amount of that work.
+
+        </li>
+
+
 
     </ul>
 
 
+    <p>If you have a link you feel would be useful for others making accessible comics please comment below or reach out via any mechanism on my <a href="https://artlung.com/links/">links</a> page. Or leave a comment or code on GitHub (link below).</p>
+
+
 
 </section>
+
+
 
 
 <?php

@@ -27,7 +27,7 @@ class Nav
 
         // yaml is the source of truth, generate this with slugs_and_titles.php do not hand edit this:
 
-        /* START: handled by php generate-nav-value LAST UPDATE 2025-07-18 16:34:20 */
+        /* START: handled by php generate-nav-value LAST UPDATE 2025-10-10 23:07:02 */
         return $slugs_and_titles = array (
         '50states' => 
         array (
@@ -40,7 +40,7 @@ class Nav
         array (
         0 => 'html',
         ),
-        'webmention_last_checked' => 1752670990,
+        'webmention_last_checked' => 1760137572,
         'webmention_count' => 1,
         ),
         'ArtLung-Notes' => 
@@ -54,7 +54,7 @@ class Nav
         array (
         0 => 'experimental',
         ),
-        'webmention_last_checked' => 1752670990,
+        'webmention_last_checked' => 1760137572,
         'webmention_count' => 0,
         ),
         'a-outline-none' => 
@@ -68,7 +68,7 @@ class Nav
         array (
         0 => 'css',
         ),
-        'webmention_last_checked' => 1752670991,
+        'webmention_last_checked' => 1760137573,
         'webmention_count' => 1,
         ),
         'additive-font-size' => 
@@ -82,7 +82,7 @@ class Nav
         array (
         0 => 'css',
         ),
-        'webmention_last_checked' => 1752670991,
+        'webmention_last_checked' => 1760137573,
         'webmention_count' => 1,
         ),
         'ancient-tidy-tutorial' => 
@@ -96,7 +96,7 @@ class Nav
         array (
         0 => 'html',
         ),
-        'webmention_last_checked' => 1752670991,
+        'webmention_last_checked' => 1760137573,
         'webmention_count' => 1,
         ),
         'anti-cache' => 
@@ -113,7 +113,7 @@ class Nav
         2 => 'jsp',
         3 => 'php',
         ),
-        'webmention_last_checked' => 1752670992,
+        'webmention_last_checked' => 1760137573,
         'webmention_count' => 2,
         ),
         'asp' => 
@@ -127,7 +127,7 @@ class Nav
         array (
         0 => 'asp',
         ),
-        'webmention_last_checked' => 1752670992,
+        'webmention_last_checked' => 1760137574,
         'webmention_count' => 1,
         ),
         'asp-cdonts' => 
@@ -141,7 +141,7 @@ class Nav
         array (
         0 => 'asp',
         ),
-        'webmention_last_checked' => 1752670992,
+        'webmention_last_checked' => 1760137574,
         'webmention_count' => 0,
         ),
         'asp-selectbox-function' => 
@@ -155,7 +155,7 @@ class Nav
         array (
         0 => 'asp',
         ),
-        'webmention_last_checked' => 1752670992,
+        'webmention_last_checked' => 1760137574,
         'webmention_count' => 0,
         ),
         'autocalc' => 
@@ -169,7 +169,7 @@ class Nav
         array (
         0 => 'experimental',
         ),
-        'webmention_last_checked' => 1752670993,
+        'webmention_last_checked' => 1760137575,
         'webmention_count' => 2,
         ),
         'barcampla6' => 
@@ -183,7 +183,7 @@ class Nav
         array (
         0 => 'javascript',
         ),
-        'webmention_last_checked' => 1752670993,
+        'webmention_last_checked' => 1760137575,
         'webmention_count' => 0,
         ),
         'bloggingbot' => 
@@ -198,7 +198,7 @@ class Nav
         0 => 'experimental',
         1 => 'markovchains',
         ),
-        'webmention_last_checked' => 1752670993,
+        'webmention_last_checked' => 1760137575,
         'webmention_count' => 0,
         ),
         'bluedragon-net-installer' => 
@@ -213,7 +213,7 @@ class Nav
         0 => 'coldfusion',
         1 => 'dotnet',
         ),
-        'webmention_last_checked' => 1752670993,
+        'webmention_last_checked' => 1760137575,
         'webmention_count' => 0,
         ),
         'blur' => 
@@ -227,7 +227,7 @@ class Nav
         array (
         0 => 'css',
         ),
-        'webmention_last_checked' => 1752670994,
+        'webmention_last_checked' => 1760137575,
         'webmention_count' => 0,
         ),
         'bookmarklets' => 
@@ -244,8 +244,8 @@ class Nav
         2 => 'rss',
         3 => 'bookmarklet',
         ),
-        'webmention_last_checked' => 1752670994,
-        'webmention_count' => 1,
+        'webmention_last_checked' => 1760137576,
+        'webmention_count' => 2,
         ),
         'border-style' => 
         array (
@@ -258,7 +258,7 @@ class Nav
         array (
         0 => 'css',
         ),
-        'webmention_last_checked' => 1752670994,
+        'webmention_last_checked' => 1760137576,
         'webmention_count' => 1,
         ),
         'bug-mac-netscape-forms-update' => 
@@ -272,7 +272,7 @@ class Nav
         array (
         0 => 'html',
         ),
-        'webmention_last_checked' => 1752670994,
+        'webmention_last_checked' => 1760137576,
         'webmention_count' => 0,
         ),
         'buttonybutton' => 
@@ -286,7 +286,7 @@ class Nav
         array (
         0 => 'css',
         ),
-        'webmention_last_checked' => 1752670994,
+        'webmention_last_checked' => 1760137577,
         'webmention_count' => 0,
         ),
         'buttonybuttonsonbuttons' => 
@@ -300,7 +300,7 @@ class Nav
         array (
         0 => 'css',
         ),
-        'webmention_last_checked' => 1752670995,
+        'webmention_last_checked' => 1760137577,
         'webmention_count' => 0,
         ),
         'call-original-version-of-redefined-vbscript' => 
@@ -314,7 +314,7 @@ class Nav
         array (
         0 => 'vbscript',
         ),
-        'webmention_last_checked' => 1752670995,
+        'webmention_last_checked' => 1760137577,
         'webmention_count' => 0,
         ),
         'camel-selector' => 
@@ -328,7 +328,7 @@ class Nav
         array (
         0 => 'javascript',
         ),
-        'webmention_last_checked' => 1752670995,
+        'webmention_last_checked' => 1760137577,
         'webmention_count' => 1,
         ),
         'canvas-html-render-download' => 
@@ -342,7 +342,7 @@ class Nav
         array (
         0 => 'html',
         ),
-        'webmention_last_checked' => 1752670995,
+        'webmention_last_checked' => 1760137578,
         'webmention_count' => 0,
         ),
         'change-all-links' => 
@@ -356,7 +356,7 @@ class Nav
         array (
         0 => 'javascript',
         ),
-        'webmention_last_checked' => 1752670996,
+        'webmention_last_checked' => 1760137578,
         'webmention_count' => 0,
         ),
         'change-content-in-iframe-with-prototype' => 
@@ -370,7 +370,7 @@ class Nav
         array (
         0 => 'javascript',
         ),
-        'webmention_last_checked' => 1752670996,
+        'webmention_last_checked' => 1760137578,
         'webmention_count' => 0,
         ),
         'change-document-background-color' => 
@@ -385,7 +385,7 @@ class Nav
         0 => 'css',
         1 => 'javascript',
         ),
-        'webmention_last_checked' => 1752670996,
+        'webmention_last_checked' => 1760137578,
         'webmention_count' => 0,
         ),
         'change-space-between-paragraphs' => 
@@ -400,7 +400,7 @@ class Nav
         0 => 'css',
         1 => 'typography',
         ),
-        'webmention_last_checked' => 1752670996,
+        'webmention_last_checked' => 1760137578,
         'webmention_count' => 0,
         ),
         'checkbox-validate' => 
@@ -414,7 +414,7 @@ class Nav
         array (
         0 => 'javascript',
         ),
-        'webmention_last_checked' => 1752670997,
+        'webmention_last_checked' => 1760137579,
         'webmention_count' => 1,
         ),
         'circles-crawl' => 
@@ -428,7 +428,7 @@ class Nav
         array (
         0 => 'javascript',
         ),
-        'webmention_last_checked' => 1752670997,
+        'webmention_last_checked' => 1760137579,
         'webmention_count' => 0,
         ),
         'clock-concept' => 
@@ -444,7 +444,7 @@ class Nav
         1 => 'experimental',
         2 => 'javascript',
         ),
-        'webmention_last_checked' => 1752670997,
+        'webmention_last_checked' => 1760137579,
         'webmention_count' => 0,
         ),
         'coldfusion-break-db' => 
@@ -458,7 +458,7 @@ class Nav
         array (
         0 => 'coldfusion',
         ),
-        'webmention_last_checked' => 1752670997,
+        'webmention_last_checked' => 1760137579,
         'webmention_count' => 1,
         ),
         'coldfusion-force-download' => 
@@ -472,7 +472,7 @@ class Nav
         array (
         0 => 'coldfusion',
         ),
-        'webmention_last_checked' => 1752670997,
+        'webmention_last_checked' => 1760137580,
         'webmention_count' => 0,
         ),
         'coldfusion-titlecase' => 
@@ -486,7 +486,7 @@ class Nav
         array (
         0 => 'coldfusion',
         ),
-        'webmention_last_checked' => 1752670998,
+        'webmention_last_checked' => 1760137580,
         'webmention_count' => 1,
         ),
         'comics-a11y' => 
@@ -502,7 +502,7 @@ class Nav
         ),
         'canonical_url' => 'https://lab.artlung.com/comics-a11y/',
         'og-image-date' => '2025-07-17 19:53:04',
-        'webmention_last_checked' => 0,
+        'webmention_last_checked' => 1760137580,
         'webmention_count' => 0,
         ),
         'compare-fields' => 
@@ -516,7 +516,7 @@ class Nav
         array (
         0 => 'javascript',
         ),
-        'webmention_last_checked' => 1752670998,
+        'webmention_last_checked' => 1760137580,
         'webmention_count' => 0,
         ),
         'connect-to-remote-server' => 
@@ -530,7 +530,7 @@ class Nav
         array (
         0 => 'php',
         ),
-        'webmention_last_checked' => 1752670998,
+        'webmention_last_checked' => 1760137581,
         'webmention_count' => 0,
         ),
         'copy-to-clipboard-javascript' => 
@@ -544,7 +544,7 @@ class Nav
         array (
         0 => 'javascript',
         ),
-        'webmention_last_checked' => 1752670998,
+        'webmention_last_checked' => 1760137581,
         'webmention_count' => 0,
         ),
         'countdown' => 
@@ -558,7 +558,7 @@ class Nav
         array (
         0 => 'php',
         ),
-        'webmention_last_checked' => 1752670999,
+        'webmention_last_checked' => 1760137581,
         'webmention_count' => 1,
         ),
         'countdown-daily-to-a-time' => 
@@ -572,7 +572,7 @@ class Nav
         array (
         0 => 'php',
         ),
-        'webmention_last_checked' => 1752670999,
+        'webmention_last_checked' => 1760137581,
         'webmention_count' => 0,
         ),
         'countdown-to-the-first' => 
@@ -586,7 +586,7 @@ class Nav
         array (
         0 => 'php',
         ),
-        'webmention_last_checked' => 1752670999,
+        'webmention_last_checked' => 1760137582,
         'webmention_count' => 0,
         ),
         'crossdomain' => 
@@ -600,8 +600,26 @@ class Nav
         array (
         0 => 'http',
         ),
-        'webmention_last_checked' => 1752670999,
+        'webmention_last_checked' => 1760137582,
         'webmention_count' => 0,
+        ),
+        'css-stopwatch' => 
+        array (
+        'title' => 'CSS Stopwatch',
+        'slug' => 'css-stopwatch',
+        'year' => 2025,
+        'tags' => 
+        array (
+        0 => 'css',
+        1 => 'stopwatch',
+        2 => 'timer',
+        3 => 'animation',
+        4 => 'gradients',
+        ),
+        'canonical_url' => 'https://lab.artlung.com/css-stopwatch/',
+        'webmention_last_checked' => 1760137582,
+        'webmention_count' => 0,
+        'og-image-date' => '2025-09-26 21:27:54',
         ),
         'css3-smiley' => 
         array (
@@ -614,7 +632,7 @@ class Nav
         array (
         0 => 'css',
         ),
-        'webmention_last_checked' => 1752671000,
+        'webmention_last_checked' => 1760137582,
         'webmention_count' => 1,
         ),
         'detagger' => 
@@ -628,7 +646,7 @@ class Nav
         array (
         0 => 'php',
         ),
-        'webmention_last_checked' => 1752671000,
+        'webmention_last_checked' => 1760137583,
         'webmention_count' => 1,
         ),
         'detection-real' => 
@@ -643,7 +661,7 @@ class Nav
         0 => 'javascript',
         1 => 'realplayer',
         ),
-        'webmention_last_checked' => 1752671000,
+        'webmention_last_checked' => 1760137583,
         'webmention_count' => 0,
         ),
         'display-inline-block' => 
@@ -657,7 +675,7 @@ class Nav
         array (
         0 => 'css',
         ),
-        'webmention_last_checked' => 1752671000,
+        'webmention_last_checked' => 1760137583,
         'webmention_count' => 0,
         ),
         'domain-name-sql-excel' => 
@@ -671,7 +689,7 @@ class Nav
         array (
         0 => 'sql',
         ),
-        'webmention_last_checked' => 1752671001,
+        'webmention_last_checked' => 1760137583,
         'webmention_count' => 0,
         ),
         'dropdown' => 
@@ -686,7 +704,7 @@ class Nav
         0 => 'html',
         1 => 'javascript',
         ),
-        'webmention_last_checked' => 1752671001,
+        'webmention_last_checked' => 1760137584,
         'webmention_count' => 2,
         ),
         'dropdown-focus' => 
@@ -700,7 +718,7 @@ class Nav
         array (
         0 => 'javascript',
         ),
-        'webmention_last_checked' => 1752671001,
+        'webmention_last_checked' => 1760137584,
         'webmention_count' => 0,
         ),
         'dropdown-frames' => 
@@ -714,7 +732,7 @@ class Nav
         array (
         0 => 'javascript',
         ),
-        'webmention_last_checked' => 1752671001,
+        'webmention_last_checked' => 1760137584,
         'webmention_count' => 0,
         ),
         'dropdown-only-some-new-window' => 
@@ -728,7 +746,7 @@ class Nav
         array (
         0 => 'javascript',
         ),
-        'webmention_last_checked' => 1752671002,
+        'webmention_last_checked' => 1760137584,
         'webmention_count' => 2,
         ),
         'dropdown-submit-form' => 
@@ -742,7 +760,7 @@ class Nav
         array (
         0 => 'javascript',
         ),
-        'webmention_last_checked' => 1752671002,
+        'webmention_last_checked' => 1760137585,
         'webmention_count' => 0,
         ),
         'echo-http-host' => 
@@ -756,7 +774,7 @@ class Nav
         array (
         0 => 'php',
         ),
-        'webmention_last_checked' => 1752671002,
+        'webmention_last_checked' => 1760137585,
         'webmention_count' => 0,
         ),
         'email-submission-stinks' => 
@@ -770,7 +788,7 @@ class Nav
         array (
         0 => 'html',
         ),
-        'webmention_last_checked' => 1752671002,
+        'webmention_last_checked' => 1760137585,
         'webmention_count' => 1,
         ),
         'first-child-last-child' => 
@@ -784,7 +802,7 @@ class Nav
         array (
         0 => 'css',
         ),
-        'webmention_last_checked' => 1752671003,
+        'webmention_last_checked' => 1760137585,
         'webmention_count' => 0,
         ),
         'font-awesome-sample' => 
@@ -798,7 +816,7 @@ class Nav
         array (
         0 => 'typography',
         ),
-        'webmention_last_checked' => 1752671003,
+        'webmention_last_checked' => 1760137586,
         'webmention_count' => 1,
         ),
         'form-image-background' => 
@@ -813,7 +831,7 @@ class Nav
         0 => 'css',
         1 => 'html',
         ),
-        'webmention_last_checked' => 1752671003,
+        'webmention_last_checked' => 1760137586,
         'webmention_count' => 1,
         ),
         'format-time' => 
@@ -827,7 +845,7 @@ class Nav
         array (
         0 => 'javascript',
         ),
-        'webmention_last_checked' => 1752671003,
+        'webmention_last_checked' => 1760137586,
         'webmention_count' => 0,
         ),
         'frames-mouseover' => 
@@ -841,7 +859,7 @@ class Nav
         array (
         0 => 'javascript',
         ),
-        'webmention_last_checked' => 1752671004,
+        'webmention_last_checked' => 1760137586,
         'webmention_count' => 0,
         ),
         'gallery' => 
@@ -855,7 +873,7 @@ class Nav
         array (
         0 => 'php',
         ),
-        'webmention_last_checked' => 1752671004,
+        'webmention_last_checked' => 1760137587,
         'webmention_count' => 2,
         ),
         'generic-validator' => 
@@ -869,7 +887,7 @@ class Nav
         array (
         0 => 'javascript',
         ),
-        'webmention_last_checked' => 1752671004,
+        'webmention_last_checked' => 1760137587,
         'webmention_count' => 0,
         ),
         'gettysburg' => 
@@ -883,7 +901,7 @@ class Nav
         array (
         0 => 'html',
         ),
-        'webmention_last_checked' => 1752671004,
+        'webmention_last_checked' => 1760137587,
         'webmention_count' => 1,
         ),
         'gettysburg-2' => 
@@ -900,7 +918,7 @@ class Nav
         ),
         'og-image-date' => '2025-02-21 23:22:55',
         'atom_feed_publish_date' => '2025-02-21 23:22:55',
-        'webmention_last_checked' => 1752671005,
+        'webmention_last_checked' => 1760137587,
         'webmention_count' => 0,
         ),
         'goal50' => 
@@ -915,7 +933,7 @@ class Nav
         0 => 'css',
         1 => 'javascript',
         ),
-        'webmention_last_checked' => 1752671005,
+        'webmention_last_checked' => 1760137588,
         'webmention_count' => 0,
         ),
         'group-concat-mysql' => 
@@ -929,7 +947,7 @@ class Nav
         array (
         0 => 'sql',
         ),
-        'webmention_last_checked' => 1752671005,
+        'webmention_last_checked' => 1760137588,
         'webmention_count' => 0,
         ),
         'history' => 
@@ -943,7 +961,7 @@ class Nav
         array (
         0 => 'javascript',
         ),
-        'webmention_last_checked' => 1752671005,
+        'webmention_last_checked' => 1760137588,
         'webmention_count' => 1,
         ),
         'home' => 
@@ -958,7 +976,7 @@ class Nav
         'title' => 'The Lab',
         'webmention_count' => 20,
         'og-image-date' => '2025-02-21 23:22:13',
-        'webmention_last_checked' => 1752671006,
+        'webmention_last_checked' => 1760137588,
         ),
         'html-2.0' => 
         array (
@@ -971,7 +989,7 @@ class Nav
         array (
         0 => 'html',
         ),
-        'webmention_last_checked' => 1752671006,
+        'webmention_last_checked' => 1760137589,
         'webmention_count' => 0,
         ),
         'image-border' => 
@@ -985,7 +1003,7 @@ class Nav
         array (
         0 => 'css',
         ),
-        'webmention_last_checked' => 1752671006,
+        'webmention_last_checked' => 1760137589,
         'webmention_count' => 0,
         ),
         'image-hover' => 
@@ -999,7 +1017,24 @@ class Nav
         array (
         0 => 'css',
         ),
-        'webmention_last_checked' => 1752671006,
+        'webmention_last_checked' => 1760137589,
+        'webmention_count' => 0,
+        ),
+        'indieweb-org-webmention-bookmarklet' => 
+        array (
+        'title' => 'IndieWeb.org Webmention Bookmarklet',
+        'slug' => 'indieweb-org-webmention-bookmarklet',
+        'year' => 2025,
+        'tags' => 
+        array (
+        0 => 'bookmarklet',
+        1 => 'webmention',
+        2 => 'indieweb',
+        ),
+        'og-image-date' => '2025-09-26 21:34:40',
+        'atom_feed_publish_date' => '2025-09-26T22:20:52+00:00',
+        'canonical_url' => 'https://lab.artlung.com/indieweb-org-webmention-bookmarklet',
+        'webmention_last_checked' => 1760137589,
         'webmention_count' => 0,
         ),
         'input-direction' => 
@@ -1013,7 +1048,7 @@ class Nav
         array (
         0 => 'html',
         ),
-        'webmention_last_checked' => 1752671006,
+        'webmention_last_checked' => 1760137590,
         'webmention_count' => 2,
         ),
         'interesting-date-layout' => 
@@ -1027,7 +1062,7 @@ class Nav
         array (
         0 => 'experimental',
         ),
-        'webmention_last_checked' => 1752671007,
+        'webmention_last_checked' => 1760137590,
         'webmention_count' => 0,
         ),
         'invisible-unspiderable-link' => 
@@ -1043,7 +1078,7 @@ class Nav
         1 => 'css',
         2 => 'javascript',
         ),
-        'webmention_last_checked' => 1752671007,
+        'webmention_last_checked' => 1760137590,
         'webmention_count' => 1,
         ),
         'is-email' => 
@@ -1057,7 +1092,7 @@ class Nav
         array (
         0 => 'php',
         ),
-        'webmention_last_checked' => 1752671007,
+        'webmention_last_checked' => 1760137591,
         'webmention_count' => 0,
         ),
         'java-tags' => 
@@ -1071,7 +1106,7 @@ class Nav
         array (
         0 => 'java',
         ),
-        'webmention_last_checked' => 1752671008,
+        'webmention_last_checked' => 1760137591,
         'webmention_count' => 2,
         ),
         'kanban' => 
@@ -1085,8 +1120,8 @@ class Nav
         ),
         'slug' => 'kanban',
         'canonical_url' => 'https://lab.artlung.com/kanban/',
-        'webmention_last_checked' => 1752671008,
-        'webmention_count' => 0,
+        'webmention_last_checked' => 1760137591,
+        'webmention_count' => 1,
         'og-image-date' => '2025-06-04 04:18:30',
         'atom_feed_publish_date' => '2025-06-04T04:21:02+00:00',
         ),
@@ -1102,7 +1137,7 @@ class Nav
         ),
         'slug' => 'kanban-2',
         'canonical_url' => 'https://lab.artlung.com/kanban-2/',
-        'webmention_last_checked' => 1752671008,
+        'webmention_last_checked' => 1760137591,
         'webmention_count' => 0,
         'og-image-date' => '2025-06-04 13:30:34',
         ),
@@ -1117,7 +1152,7 @@ class Nav
         array (
         0 => 'javascript',
         ),
-        'webmention_last_checked' => 1752671008,
+        'webmention_last_checked' => 1760137592,
         'webmention_count' => 0,
         ),
         'keystroke-to-go-to-random-page' => 
@@ -1132,7 +1167,7 @@ class Nav
         1 => 'php',
         ),
         'og-image-date' => '2025-02-21 23:22:13',
-        'webmention_last_checked' => 1752671008,
+        'webmention_last_checked' => 1760137592,
         'webmention_count' => 0,
         'atom_feed_publish_date' => '2024-12-23 20:00:00',
         ),
@@ -1147,7 +1182,7 @@ class Nav
         array (
         0 => 'css',
         ),
-        'webmention_last_checked' => 1752671009,
+        'webmention_last_checked' => 1760137592,
         'webmention_count' => 1,
         ),
         'make-unique-id' => 
@@ -1161,7 +1196,7 @@ class Nav
         array (
         0 => 'php',
         ),
-        'webmention_last_checked' => 1752671009,
+        'webmention_last_checked' => 1760137592,
         'webmention_count' => 1,
         ),
         'mathml' => 
@@ -1177,7 +1212,7 @@ class Nav
         2 => 'latex',
         3 => 'mathjax',
         ),
-        'webmention_last_checked' => 1752671009,
+        'webmention_last_checked' => 1760137593,
         'webmention_count' => 1,
         'og-image-date' => '2025-02-26 22:06:14',
         ),
@@ -1193,7 +1228,7 @@ class Nav
         0 => 'css',
         1 => 'html',
         ),
-        'webmention_last_checked' => 1752671009,
+        'webmention_last_checked' => 1760137593,
         'webmention_count' => 0,
         ),
         'media' => 
@@ -1208,7 +1243,7 @@ class Nav
         0 => 'css',
         1 => 'javascript',
         ),
-        'webmention_last_checked' => 1752671010,
+        'webmention_last_checked' => 1760137593,
         'webmention_count' => 0,
         ),
         'mid-air-footer' => 
@@ -1224,7 +1259,7 @@ class Nav
         'atom_feed_publish_date' => '2025-03-06 11:00:00',
         'canonical_url' => 'https://lab.artlung.com/mid-air-footer/',
         'slug' => 'mid-air-footer',
-        'webmention_last_checked' => 1752671010,
+        'webmention_last_checked' => 1760137593,
         'webmention_count' => 1,
         ),
         'misc-files' => 
@@ -1243,7 +1278,7 @@ class Nav
         4 => 'html',
         5 => 'http',
         ),
-        'webmention_last_checked' => 1752671010,
+        'webmention_last_checked' => 1760137594,
         'webmention_count' => 1,
         ),
         'mm_validateform' => 
@@ -1258,7 +1293,7 @@ class Nav
         0 => 'javascript',
         1 => 'macromedia',
         ),
-        'webmention_last_checked' => 1752671010,
+        'webmention_last_checked' => 1760137594,
         'webmention_count' => 0,
         ),
         'modify-the-box' => 
@@ -1272,7 +1307,7 @@ class Nav
         array (
         0 => 'html',
         ),
-        'webmention_last_checked' => 1752671011,
+        'webmention_last_checked' => 1760137594,
         'webmention_count' => 1,
         ),
         'mouseover-vote' => 
@@ -1286,7 +1321,7 @@ class Nav
         array (
         0 => 'javascript',
         ),
-        'webmention_last_checked' => 1752671011,
+        'webmention_last_checked' => 1760137594,
         'webmention_count' => 0,
         ),
         'mouseover-vote100' => 
@@ -1300,7 +1335,7 @@ class Nav
         array (
         0 => 'javascript',
         ),
-        'webmention_last_checked' => 1752671011,
+        'webmention_last_checked' => 1760137595,
         'webmention_count' => 0,
         ),
         'multiple-select' => 
@@ -1314,7 +1349,7 @@ class Nav
         array (
         0 => 'javascript',
         ),
-        'webmention_last_checked' => 1752671011,
+        'webmention_last_checked' => 1760137595,
         'webmention_count' => 0,
         ),
         'multiple-select-v2' => 
@@ -1328,7 +1363,7 @@ class Nav
         array (
         0 => 'javascript',
         ),
-        'webmention_last_checked' => 1752671012,
+        'webmention_last_checked' => 1760137595,
         'webmention_count' => 0,
         ),
         'museum' => 
@@ -1342,7 +1377,7 @@ class Nav
         array (
         0 => 'ux',
         ),
-        'webmention_last_checked' => 1752671012,
+        'webmention_last_checked' => 1760137595,
         'webmention_count' => 0,
         ),
         'my-first-vbscript-class' => 
@@ -1356,7 +1391,7 @@ class Nav
         array (
         0 => 'vbscript',
         ),
-        'webmention_last_checked' => 1752671012,
+        'webmention_last_checked' => 1760137595,
         'webmention_count' => 0,
         ),
         'navigation-function-vs-asp' => 
@@ -1371,7 +1406,7 @@ class Nav
         0 => 'asp',
         1 => 'php',
         ),
-        'webmention_last_checked' => 1752671012,
+        'webmention_last_checked' => 1760137596,
         'webmention_count' => 0,
         ),
         'navigator-language' => 
@@ -1385,7 +1420,7 @@ class Nav
         array (
         0 => 'javascript',
         ),
-        'webmention_last_checked' => 1752671012,
+        'webmention_last_checked' => 1760137596,
         'webmention_count' => 0,
         ),
         'navigator-object' => 
@@ -1399,7 +1434,7 @@ class Nav
         array (
         0 => 'javascript',
         ),
-        'webmention_last_checked' => 1752671013,
+        'webmention_last_checked' => 1760137596,
         'webmention_count' => 0,
         ),
         'nonsense-dtd' => 
@@ -1413,7 +1448,7 @@ class Nav
         array (
         0 => 'html',
         ),
-        'webmention_last_checked' => 1752671013,
+        'webmention_last_checked' => 1760137596,
         'webmention_count' => 0,
         ),
         'not-valid-itunes-library' => 
@@ -1427,7 +1462,7 @@ class Nav
         array (
         0 => 'itunes',
         ),
-        'webmention_last_checked' => 1752671013,
+        'webmention_last_checked' => 1760137597,
         'webmention_count' => 3,
         ),
         'notifications' => 
@@ -1441,7 +1476,7 @@ class Nav
         array (
         0 => 'javascript',
         ),
-        'webmention_last_checked' => 1752671013,
+        'webmention_last_checked' => 1760137597,
         'webmention_count' => 0,
         ),
         'now-getdate' => 
@@ -1455,7 +1490,7 @@ class Nav
         array (
         0 => 'sql',
         ),
-        'webmention_last_checked' => 1752671014,
+        'webmention_last_checked' => 1760137597,
         'webmention_count' => 0,
         ),
         'oncontextmenu' => 
@@ -1469,7 +1504,7 @@ class Nav
         array (
         0 => 'javascript',
         ),
-        'webmention_last_checked' => 1752671014,
+        'webmention_last_checked' => 1760137598,
         'webmention_count' => 2,
         ),
         'onunload-window-open-evil' => 
@@ -1484,7 +1519,7 @@ class Nav
         0 => 'javascript',
         1 => 'ux',
         ),
-        'webmention_last_checked' => 1752671014,
+        'webmention_last_checked' => 1760137598,
         'webmention_count' => 1,
         ),
         'open-graph-protocol-tools' => 
@@ -1499,7 +1534,7 @@ class Nav
         0 => 'facebook',
         1 => 'opengraph',
         ),
-        'webmention_last_checked' => 1752671015,
+        'webmention_last_checked' => 1760137598,
         'webmention_count' => 0,
         ),
         'outbound-link-confirmation' => 
@@ -1513,7 +1548,7 @@ class Nav
         array (
         0 => 'javascript',
         ),
-        'webmention_last_checked' => 1752671015,
+        'webmention_last_checked' => 1760137598,
         'webmention_count' => 1,
         ),
         'password-maker' => 
@@ -1527,7 +1562,7 @@ class Nav
         array (
         0 => 'php',
         ),
-        'webmention_last_checked' => 1752671015,
+        'webmention_last_checked' => 1760137599,
         'webmention_count' => 0,
         ),
         'php-all-websafe' => 
@@ -1541,7 +1576,7 @@ class Nav
         array (
         0 => 'php',
         ),
-        'webmention_last_checked' => 1752671015,
+        'webmention_last_checked' => 1760137599,
         'webmention_count' => 0,
         ),
         'php-php3-mod-rewrite' => 
@@ -1555,7 +1590,7 @@ class Nav
         array (
         0 => 'php',
         ),
-        'webmention_last_checked' => 1752671015,
+        'webmention_last_checked' => 1760137599,
         'webmention_count' => 1,
         ),
         'pinkvalidation' => 
@@ -1570,7 +1605,7 @@ class Nav
         0 => 'css',
         1 => 'javascript',
         ),
-        'webmention_last_checked' => 1752671016,
+        'webmention_last_checked' => 1760137599,
         'webmention_count' => 3,
         ),
         'plus-plus-a-string-php' => 
@@ -1584,7 +1619,7 @@ class Nav
         array (
         0 => 'php',
         ),
-        'webmention_last_checked' => 1752671016,
+        'webmention_last_checked' => 1760137600,
         'webmention_count' => 0,
         ),
         'popover-retro' => 
@@ -1599,7 +1634,7 @@ class Nav
         ),
         'slug' => 'popover-retro',
         'canonical_url' => 'https://lab.artlung.com/popover-retro',
-        'webmention_last_checked' => 1752671016,
+        'webmention_last_checked' => 1760137600,
         'webmention_count' => 0,
         'og-image-date' => '2025-06-13 00:10:07',
         ),
@@ -1614,7 +1649,7 @@ class Nav
         0 => 'javascript',
         1 => 'bookmarklet',
         ),
-        'webmention_last_checked' => 1752671016,
+        'webmention_last_checked' => 1760137600,
         'webmention_count' => 0,
         'shot_scraper_extra_params' => '--javascript "document.querySelector(\'.bookmarklet\').click();"',
         'og-image-date' => '2025-02-21 23:22:13',
@@ -1632,7 +1667,7 @@ class Nav
         1 => 'javascript',
         2 => 'tools',
         ),
-        'webmention_last_checked' => 1752671017,
+        'webmention_last_checked' => 1760137600,
         'webmention_count' => 0,
         ),
         'random-cells' => 
@@ -1648,7 +1683,7 @@ class Nav
         1 => 'javascript',
         2 => 'toys',
         ),
-        'webmention_last_checked' => 1752671017,
+        'webmention_last_checked' => 1760137600,
         'webmention_count' => 0,
         ),
         'random-content' => 
@@ -1662,7 +1697,7 @@ class Nav
         array (
         0 => 'php',
         ),
-        'webmention_last_checked' => 1752671017,
+        'webmention_last_checked' => 1760137601,
         'webmention_count' => 0,
         ),
         'random-string-in-sql' => 
@@ -1676,7 +1711,7 @@ class Nav
         array (
         0 => 'sql',
         ),
-        'webmention_last_checked' => 1752671017,
+        'webmention_last_checked' => 1760137601,
         'webmention_count' => 0,
         ),
         'recursive-iframe' => 
@@ -1690,7 +1725,7 @@ class Nav
         array (
         0 => 'html',
         ),
-        'webmention_last_checked' => 1752671017,
+        'webmention_last_checked' => 1760137601,
         'webmention_count' => 0,
         ),
         'response-end-is-like-exit-in-php' => 
@@ -1705,7 +1740,7 @@ class Nav
         0 => 'asp',
         1 => 'php',
         ),
-        'webmention_last_checked' => 1752671018,
+        'webmention_last_checked' => 1760137601,
         'webmention_count' => 0,
         ),
         'reverse-string-nums' => 
@@ -1719,7 +1754,7 @@ class Nav
         array (
         0 => 'php',
         ),
-        'webmention_last_checked' => 1752671018,
+        'webmention_last_checked' => 1760137602,
         'webmention_count' => 0,
         ),
         'robots-nocontent' => 
@@ -1733,7 +1768,7 @@ class Nav
         array (
         0 => 'html',
         ),
-        'webmention_last_checked' => 1752671018,
+        'webmention_last_checked' => 1760137602,
         'webmention_count' => 0,
         ),
         'root-color-properties-editor' => 
@@ -1749,7 +1784,7 @@ class Nav
         2 => 'bookmarklet',
         ),
         'atom_feed_publish_date' => '2024-12-20 21:09:27',
-        'webmention_last_checked' => 1752671018,
+        'webmention_last_checked' => 1760137602,
         'webmention_count' => 1,
         'shot_scraper_extra_params' => '--javascript "document.querySelector(\'.bookmarklet\').click();"',
         'og-image-date' => '2025-02-21 23:22:13',
@@ -1765,7 +1800,7 @@ class Nav
         array (
         0 => 'javascript',
         ),
-        'webmention_last_checked' => 1752671019,
+        'webmention_last_checked' => 1760137602,
         'webmention_count' => 1,
         ),
         'rounded-mozilla' => 
@@ -1779,7 +1814,7 @@ class Nav
         array (
         0 => 'css',
         ),
-        'webmention_last_checked' => 1752671019,
+        'webmention_last_checked' => 1760137602,
         'webmention_count' => 2,
         ),
         'rtf' => 
@@ -1793,7 +1828,7 @@ class Nav
         array (
         0 => 'php',
         ),
-        'webmention_last_checked' => 1752671019,
+        'webmention_last_checked' => 1760137603,
         'webmention_count' => 1,
         ),
         'rudysbg' => 
@@ -1808,8 +1843,8 @@ class Nav
         2 => 'css',
         ),
         'canonical_url' => 'https://lab.artlung.com/rudysbg/',
-        'webmention_last_checked' => 1752671019,
-        'webmention_count' => 0,
+        'webmention_last_checked' => 1760137603,
+        'webmention_count' => 1,
         'og-image-date' => '2025-05-23 20:19:52',
         ),
         'safari-mailto-webmail' => 
@@ -1817,7 +1852,7 @@ class Nav
         'title' => 'Safari Mailto Converter',
         'og-image-date' => '2025-05-15 17:53:37',
         'atom_feed_publish_date' => '2025-05-15T17:54:46+00:00',
-        'webmention_last_checked' => 1752671020,
+        'webmention_last_checked' => 1760137603,
         'webmention_count' => 0,
         'year' => 2025,
         'canonical_url' => 'https://lab.artlung.com/safari-mailto-webmail/',
@@ -1841,7 +1876,7 @@ class Nav
         array (
         0 => 'mobile',
         ),
-        'webmention_last_checked' => 1752671020,
+        'webmention_last_checked' => 1760137603,
         'webmention_count' => 0,
         ),
         'self-refresh' => 
@@ -1855,7 +1890,7 @@ class Nav
         array (
         0 => 'javascript',
         ),
-        'webmention_last_checked' => 1752671020,
+        'webmention_last_checked' => 1760137604,
         'webmention_count' => 0,
         ),
         'server-side-image-map' => 
@@ -1870,7 +1905,7 @@ class Nav
         0 => 'apache',
         1 => 'html',
         ),
-        'webmention_last_checked' => 1752671020,
+        'webmention_last_checked' => 1760137604,
         'webmention_count' => 0,
         ),
         'single-pixel-gif' => 
@@ -1884,7 +1919,7 @@ class Nav
         array (
         0 => 'html',
         ),
-        'webmention_last_checked' => 1752671021,
+        'webmention_last_checked' => 1760137604,
         'webmention_count' => 0,
         ),
         'six-finger-ai-hand' => 
@@ -1898,8 +1933,8 @@ class Nav
         array (
         0 => 'silly',
         ),
-        'webmention_last_checked' => 1752671021,
-        'webmention_count' => 0,
+        'webmention_last_checked' => 1760137604,
+        'webmention_count' => 1,
         ),
         'slideorama-pinwheels' => 
         array (
@@ -1913,7 +1948,7 @@ class Nav
         2 => 'animation',
         ),
         'canonical_url' => 'https://lab.artlung.com/slideorama-pinwheels',
-        'webmention_last_checked' => 1752624000,
+        'webmention_last_checked' => 1760137605,
         'webmention_count' => 0,
         'og-image-date' => '2025-07-17 00:16:18',
         'atom_feed_publish_date' => '2025-07-17T00:28:33+00:00',
@@ -1929,7 +1964,7 @@ class Nav
         array (
         0 => 'javascript',
         ),
-        'webmention_last_checked' => 1752671021,
+        'webmention_last_checked' => 1760137605,
         'webmention_count' => 0,
         ),
         'slideshow-img' => 
@@ -1943,7 +1978,7 @@ class Nav
         array (
         0 => 'javascript',
         ),
-        'webmention_last_checked' => 1752671021,
+        'webmention_last_checked' => 1760137605,
         'webmention_count' => 0,
         ),
         'slideshow-plus' => 
@@ -1957,7 +1992,7 @@ class Nav
         array (
         0 => 'javascript',
         ),
-        'webmention_last_checked' => 1752671021,
+        'webmention_last_checked' => 1760137605,
         'webmention_count' => 0,
         ),
         'speech-synthesis' => 
@@ -1971,7 +2006,7 @@ class Nav
         array (
         0 => 'javascript',
         ),
-        'webmention_last_checked' => 1752671022,
+        'webmention_last_checked' => 1760137605,
         'webmention_count' => 0,
         ),
         'spoiler' => 
@@ -1986,7 +2021,7 @@ class Nav
         0 => 'css',
         1 => 'html',
         ),
-        'webmention_last_checked' => 1752671022,
+        'webmention_last_checked' => 1760137606,
         'multiple_authors' => 
         array (
         0 => 
@@ -2016,8 +2051,25 @@ class Nav
         array (
         0 => 'sql',
         ),
-        'webmention_last_checked' => 1752671022,
+        'webmention_last_checked' => 1760137606,
         'webmention_count' => 0,
+        ),
+        'squish-stretch-web' => 
+        array (
+        'title' => 'Squish Stretch Bookmarklet',
+        'slug' => 'squish-stretch-web',
+        'year' => 2025,
+        'tags' => 
+        array (
+        0 => 'bookmarklet',
+        1 => 'css',
+        2 => 'weird-web-october',
+        ),
+        'atom_feed_publish_date' => '2025-10-05T15:21:16+00:00',
+        'canonical_url' => 'https://lab.artlung.com/squish-stretch-web/',
+        'webmention_last_checked' => 1760137606,
+        'webmention_count' => 0,
+        'og-image-date' => '2025-10-05 15:46:24',
         ),
         't-paamayim-nekudotayim' => 
         array (
@@ -2030,7 +2082,7 @@ class Nav
         array (
         0 => 'php',
         ),
-        'webmention_last_checked' => 1752671022,
+        'webmention_last_checked' => 1760137606,
         'webmention_count' => 0,
         ),
         'the-problem-with-blur' => 
@@ -2045,7 +2097,7 @@ class Nav
         0 => 'a11y',
         1 => 'css',
         ),
-        'webmention_last_checked' => 1752671023,
+        'webmention_last_checked' => 1760137607,
         'webmention_count' => 1,
         ),
         'three-char-combos' => 
@@ -2059,7 +2111,7 @@ class Nav
         array (
         0 => 'php',
         ),
-        'webmention_last_checked' => 1752671023,
+        'webmention_last_checked' => 1760137607,
         'webmention_count' => 0,
         ),
         'tips-2001' => 
@@ -2073,7 +2125,7 @@ class Nav
         array (
         0 => 'html',
         ),
-        'webmention_last_checked' => 1752671023,
+        'webmention_last_checked' => 1760137607,
         'webmention_count' => 1,
         ),
         'tr-onmouseover-style' => 
@@ -2087,7 +2139,7 @@ class Nav
         array (
         0 => 'javascript',
         ),
-        'webmention_last_checked' => 1752671024,
+        'webmention_last_checked' => 1760137607,
         'webmention_count' => 2,
         ),
         'undocumented-linklint' => 
@@ -2101,7 +2153,7 @@ class Nav
         array (
         0 => 'javascript',
         ),
-        'webmention_last_checked' => 1752671024,
+        'webmention_last_checked' => 1760137608,
         'webmention_count' => 1,
         ),
         'unix-batch-file-rename' => 
@@ -2115,7 +2167,7 @@ class Nav
         array (
         0 => 'unix',
         ),
-        'webmention_last_checked' => 1752671024,
+        'webmention_last_checked' => 1760137608,
         'webmention_count' => 1,
         ),
         'upload' => 
@@ -2130,7 +2182,7 @@ class Nav
         0 => 'javascript',
         1 => 'php',
         ),
-        'webmention_last_checked' => 1752671024,
+        'webmention_last_checked' => 1760137608,
         'webmention_count' => 0,
         ),
         'url-compare' => 
@@ -2145,7 +2197,7 @@ class Nav
         0 => 'http',
         1 => 'tools',
         ),
-        'webmention_last_checked' => 1752671024,
+        'webmention_last_checked' => 1760137608,
         'webmention_count' => 0,
         ),
         'urlencode' => 
@@ -2159,7 +2211,7 @@ class Nav
         array (
         0 => 'javascript',
         ),
-        'webmention_last_checked' => 1752671025,
+        'webmention_last_checked' => 1760137609,
         'webmention_count' => 1,
         ),
         'user-preference-for-new-windows' => 
@@ -2175,7 +2227,7 @@ class Nav
         1 => 'php',
         2 => 'ux',
         ),
-        'webmention_last_checked' => 1752671025,
+        'webmention_last_checked' => 1760137609,
         'webmention_count' => 1,
         ),
         'vaguely-interesting-layout' => 
@@ -2190,7 +2242,7 @@ class Nav
         0 => 'css',
         1 => 'design',
         ),
-        'webmention_last_checked' => 1752671025,
+        'webmention_last_checked' => 1760137609,
         'webmention_count' => 0,
         ),
         'validate-checkbox' => 
@@ -2204,7 +2256,7 @@ class Nav
         array (
         0 => 'javascript',
         ),
-        'webmention_last_checked' => 1752671026,
+        'webmention_last_checked' => 1760137609,
         'webmention_count' => 0,
         ),
         'validate-image' => 
@@ -2218,7 +2270,7 @@ class Nav
         array (
         0 => 'javascript',
         ),
-        'webmention_last_checked' => 1752671026,
+        'webmention_last_checked' => 1760137610,
         'webmention_count' => 0,
         ),
         'vbscript-always-elseif-never-else-if' => 
@@ -2232,7 +2284,7 @@ class Nav
         array (
         0 => 'vbscript',
         ),
-        'webmention_last_checked' => 1752671026,
+        'webmention_last_checked' => 1760137610,
         'webmention_count' => 0,
         ),
         'ventcheck' => 
@@ -2241,8 +2293,8 @@ class Nav
         'title' => 'Ventcheck, a Twitter bot',
         'canonical_url' => 'https://lab.artlung.com/ventcheck/',
         'year' => 2016,
-        'webmention_last_checked' => 1752671026,
-        'webmention_count' => 0,
+        'webmention_last_checked' => 1760137610,
+        'webmention_count' => 1,
         'tags' => 
         array (
         0 => 'bot',
@@ -2264,7 +2316,7 @@ class Nav
         array (
         0 => 'css',
         ),
-        'webmention_last_checked' => 1752671026,
+        'webmention_last_checked' => 1760137610,
         'webmention_count' => 2,
         ),
         'webmentions' => 
@@ -2280,8 +2332,8 @@ class Nav
         ),
         'og-image-date' => '2025-02-21 23:22:13',
         'atom_feed_publish_date' => '2024-12-18 17:51:46',
-        'webmention_last_checked' => 1752671027,
-        'webmention_count' => 2,
+        'webmention_last_checked' => 1760137611,
+        'webmention_count' => 3,
         ),
         'windows-export-file-list' => 
         array (
@@ -2294,7 +2346,7 @@ class Nav
         array (
         0 => 'windows',
         ),
-        'webmention_last_checked' => 1752671027,
+        'webmention_last_checked' => 1760137611,
         'webmention_count' => 0,
         ),
         'wml' => 
@@ -2309,8 +2361,8 @@ class Nav
         ),
         'slug' => 'wml/faux',
         'canonical_url' => 'https://lab.artlung.com/wml/faux',
-        'webmention_last_checked' => 1752671027,
-        'webmention_count' => 0,
+        'webmention_last_checked' => 1760137611,
+        'webmention_count' => 1,
         'atom_feed_publish_date' => '2025-06-18T18:28:07+00:00',
         'og-image-date' => '2025-06-20 18:28:07',
         ),
@@ -2325,7 +2377,7 @@ class Nav
         array (
         0 => 'javascript',
         ),
-        'webmention_last_checked' => 1752671027,
+        'webmention_last_checked' => 1760137611,
         'webmention_count' => 0,
         ),
         'xml-encode' => 
@@ -2339,7 +2391,7 @@ class Nav
         array (
         0 => 'php',
         ),
-        'webmention_last_checked' => 1752671028,
+        'webmention_last_checked' => 1760137612,
         'webmention_count' => 0,
         ),
         );

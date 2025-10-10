@@ -4,7 +4,7 @@ $lab = new ArtlungLab\Lab();
 $lab->printHeader('Artlung Rosetta');
 ?>
 
-    <p class="date-attribution">Created in 2010. Integrated in 2024</p>
+    <p class="date-attribution">Created in 2010. Integrated in 2024. Updated 2025</p>
     <div style="max-width: 100ch">
 
 
@@ -13,7 +13,7 @@ $lab->printHeader('Artlung Rosetta');
         <h2>Several Versions</h2>
 
         <p>
-            Open each of the following six pages in browser tabs.
+            Open each of the following seven pages in browser tabs.
             The HTML source code of the page should be identical.
             The way the items look and interact when you click or hover over them should be equivalent.
             Each one loads a different JavaScript library.
@@ -27,6 +27,7 @@ $lab->printHeader('Artlung Rosetta');
             <li><a href="./?jquery">jQuery</a></li>
             <li><a href="./?mootools">MooTools</a></li>
             <li><a href="./?prototype">Prototype</a></li>
+            <li><a href="./?vanilla">Vanilla JavaScript (2025)</a></li>
         </ul>
 
         <h2>Purpose</h2>
@@ -114,12 +115,22 @@ $lab->printHeader('Artlung Rosetta');
                 <a href="http://twitter.com/prototypejs"
                    title="Twitter account">@prototypejs</a>
             </dd>
+
+            <dt>Vanilla JavaScript (2025)</dt>
+            <dd>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                    title="JavaScript on MDN">
+                    JavaScript on MDN
+                </a>.
+
+                In 2025 I added an implementation of all the same bindings in plain vanilla JavaScript without any library.
+            </dd>
         </dl>
 
 
         <p>
             <b>Created by:</b> <a href="https://artlung.com/">Joe Crawford</a> <a
-                    href="mailto:joe@artlung.com">joe@artlung.com</a> in 2010.
+                    href="mailto:joe@artlung.com">joe@artlung.com</a> in 2010. Updated 2025 with a Vanilla JavaScript edition.
         </p>
 
         <p><s>Hosted on GitHub at <a
@@ -168,14 +179,18 @@ $lab->printHeader('Artlung Rosetta');
    $(<span class="hljs-keyword">this</span>).hide();
    <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
 });
-</code></pre><p><strong>Dojo:</strong></p>
+</code></pre>
+
+    <p><strong>Dojo:</strong></p>
     <pre><code>dojo.query(<span class="hljs-string">'#interactionExperiments button'</span>).<span class="hljs-keyword">forEach</span>(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(item)</span></span>{
    dojo.connect(item, <span class="hljs-string">'onclick'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(e)</span></span>{
       item.style.display = <span class="hljs-string">'none'</span>;
       dojo.stopEvent(e);
    });
 });
-</code></pre><p><strong>ExtCore:</strong></p>
+</code></pre>
+
+    <p><strong>ExtCore:</strong></p>
     <pre><code>Ext.select(<span class="hljs-string">'#interactionExperiments button'</span>).on(<span class="hljs-string">'click'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(e, target)</span></span>{
    Ext.get(target).hide();
 }, <span class="hljs-literal">null</span>, {preventDefault:<span class="hljs-literal">true</span>});
@@ -184,20 +199,22 @@ $lab->printHeader('Artlung Rosetta');
    glow.dom.get(<span class="hljs-keyword">this</span>).hide();
    <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
 });
-</code></pre><p><strong>MooTools:</strong></p>
+</code></pre>
+
+    <p><strong>MooTools:</strong></p>
     <pre><code>$$(<span class="hljs-string">'#interactionExperiments button'</span>).addEvent(<span class="hljs-string">'click'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">e</span>)</span>{
    <span class="hljs-keyword">this</span>.setStyle(<span class="hljs-string">'display'</span>,<span class="hljs-string">'none'</span>);
    e.stop();
 });
-</code></pre><p><strong>Prototype:</strong></p>
+</code></pre>
+
+    <p><strong>Prototype:</strong></p>
     <pre><code>$$(<span class="hljs-string">'#interactionExperiments button'</span>).each(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">item</span>)</span>{
    item.observe(<span class="hljs-string">'click'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">evt</span>)</span>{
       item.hide();
       Event.stop(evt);
    });
 });
-
-
 </div>
 
 

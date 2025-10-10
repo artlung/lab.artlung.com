@@ -100,8 +100,8 @@ class Lab
     /**
      * Get the header with a title and options
      *
-     * @param string                                                                                                       $title
-     * @param array{minimum-head-items: boolean, open-nav: boolean, body-tag: string, canonical: string, css-files: array} $options
+     * @param string                                                                                                                          $title
+     * @param array{minimum-head-items: boolean, open-nav: boolean, body-tag: string, canonical: string, css-files: array, link_array: array} $options
      *
      * @return string
      */
@@ -147,6 +147,16 @@ class Lab
         if ($options['css-files'] ?? false && is_array($options['css-files'])) {
             foreach ($options['css-files'] as $cssFile) {
                 $cssFiles .= sprintf('<link rel="stylesheet" href="%s" type="text/css">', $cssFile);
+            }
+        }
+        $bonusLinkTags = '';
+        if ($options['link_array'] ?? false && is_array($options['link_array'])) {
+            foreach ($options['link_array'] as $link) {
+                $bonusLinkTags .= '<link ';
+                foreach ($link as $key => $value) {
+                     $bonusLinkTags .= sprintf('%s="%s" ', $key, htmlspecialchars($value));
+                }
+                $bonusLinkTags .= '>' . PHP_EOL;
             }
         }
 
@@ -253,6 +263,7 @@ class Lab
             return <<<HTML
 <link rel="webmention" href="https://webmention.io/artlung.com/webmention">
 <link rel="alternate" type="application/rss+xml" title="Feed" href="/feed.xml">
+{$bonusLinkTags}
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{$title} / ArtLung Lab</title>
 {$ogImageLink}
@@ -272,6 +283,7 @@ HTML;
 <link rel="webmention" href="https://webmention.io/artlung.com/webmention">
 <link rel="alternate" type="application/rss+xml" title="Feed" href="/feed.xml">
 <link rel="canonical" href="{$canonical}">
+{$bonusLinkTags}
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="/{$jsFileName}?{$cacheBustJs}"></script>
 {$disqusScript}
