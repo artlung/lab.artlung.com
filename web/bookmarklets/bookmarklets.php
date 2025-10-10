@@ -138,6 +138,13 @@ $lab->printHeader('Bookmarklets, Miscellaneous');
 </div>
 
 
+<div id="indieweb-org-webmentions">
+    <h2>
+        <a href="../indieweb-org-webmention-bookmarklet/">Show Webmentions for IndieWeb.org Page</a>
+    </h2>
+</div>
+
+
 <link rel="stylesheet" href="bookmarklets.css<?php
     echo '?'.filemtime('bookmarklets.css');
 ?>">

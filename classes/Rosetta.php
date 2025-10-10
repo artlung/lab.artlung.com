@@ -21,6 +21,7 @@ class Rosetta extends Lab
         'jquery' => 'js/lib/jquery-1.3.2.min.js',
         'mootools' => 'js/lib/mootools-yui-compressed.1.2.3.js',
         'prototype' => 'js/lib/prototype.1.6.1.js',
+        'vanilla' => 'js/lib/vanilla.js',
     ];
     public $slug;
     public $library_path;

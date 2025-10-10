@@ -9,7 +9,7 @@ Miscellaneous Web Files
 
 ?>
 
-    <p class="date-attribution">Created 19 December 2002, Updated August 31, 2016</p>
+    <p class="date-attribution">Created 19 December 2002, Last updated 9 September 2025</p>
 
     <h1 class="p-name">Miscellaneous Web Files</h1>
 
@@ -58,6 +58,15 @@ Miscellaneous Web Files
         <dd>Seeing a file named google (with a bunch of letters and numbers, then ".html" in it indicates that someone
             has verified the site using <a href="https://www.google.com/webmasters/">Google Webmaster Tools</a>. Google
             uses that file to verify your ownership of the site.
+        </dd>
+        <dt>dwsync.xml</dt>
+        <dd>
+            When you put or get a file in Adobe Dreamweaver CS4 and CS5, Dreamweaver locally stores the remote and local date/time stamps in files called <code>dwsync.xml</code>, which are located in hidden <code>_notes</code> folders in the same folder as the files being transferred.
+            <em><a href="https://stackoverflow.com/questions/7815233/can-dreamweaver-notes-folders-and-dwsync-xml-files-be-safely-ignored-by-source">via</a></em>
+        </dd>
+        <dt>.user.ini</dt>
+        <dd>
+            Typically related to PHP ini settings on servers for shared hosting.
         </dd>
 
     </dl>
