@@ -34,7 +34,7 @@ body.squish-and-stretch {
   --squish-and-stretch-duration: ${squish_stretch_duration}s;
   transform-origin: 50% 0;
   scale: 1 1;
-  animation-delay: 0 !important;
+  animation-delay: 0s !important;
   animation-duration: var(--squish-and-stretch-duration) !important;
   animation-iteration-count: infinite !important;
   transition-duration: unset !important;

@@ -17,7 +17,7 @@ if ($now->format('Y-m') === '2025-10') {
     $link_array[] = [
             'rel' => 'preload',
             'as' => 'fetch',
-            'href' => 'https://octothorp.es/?uri=' . urlencode('https://lab.artlung.com/web/squish-stretch-web/')
+            'href' => 'https://octothorp.es/?uri=' . urlencode('https://lab.artlung.com/squish-stretch-web/')
     ];
 }
 $lab->printHeader(

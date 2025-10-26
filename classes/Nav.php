@@ -27,7 +27,7 @@ class Nav
 
         // yaml is the source of truth, generate this with slugs_and_titles.php do not hand edit this:
 
-        /* START: handled by php generate-nav-value LAST UPDATE 2025-10-10 23:07:02 */
+        /* START: handled by php generate-nav-value LAST UPDATE 2025-10-26 14:38:17 */
         return $slugs_and_titles = array (
         '50states' => 
         array (
@@ -228,6 +228,22 @@ class Nav
         0 => 'css',
         ),
         'webmention_last_checked' => 1760137575,
+        'webmention_count' => 0,
+        ),
+        'bookmarklet-pattern' => 
+        array (
+        'title' => 'Bookmarklet Pattern',
+        'slug' => 'bookmarklet-pattern',
+        'year' => 2025,
+        'tags' => 
+        array (
+        0 => 'bookmarklet',
+        1 => 'css',
+        2 => 'weird-web-october',
+        ),
+        'atom_feed_publish_date' => '2025-10-26T15:21:16+00:00',
+        'canonical_url' => 'https://lab.artlung.com/bookmarklet-pattern/',
+        'webmention_last_checked' => 0,
         'webmention_count' => 0,
         ),
         'bookmarklets' => 
@@ -2184,6 +2200,26 @@ class Nav
         ),
         'webmention_last_checked' => 1760137608,
         'webmention_count' => 0,
+        ),
+        'upside-down' => 
+        array (
+        'title' => 'Upside Down Web Page Bookmarklet',
+        'slug' => 'upside-down',
+        'year' => 2025,
+        'tags' => 
+        array (
+        0 => 'bookmarklet',
+        1 => 'css',
+        2 => 'weird-web-october',
+        ),
+        'atom_feed_publish_date' => 
+        array (
+        0 => '2025-10-13T13:57:41+00:00',
+        ),
+        'canonical_url' => 'https://lab.artlung.com/upside-down/',
+        'webmention_last_checked' => 0,
+        'webmention_count' => 0,
+        'og-image-date' => '2025-10-13 14:01:40',
         ),
         'url-compare' => 
         array (
