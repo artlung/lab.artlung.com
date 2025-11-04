@@ -27,7 +27,7 @@ class Nav
 
         // yaml is the source of truth, generate this with slugs_and_titles.php do not hand edit this:
 
-        /* START: handled by php generate-nav-value LAST UPDATE 2025-10-26 14:38:17 */
+        /* START: handled by php generate-nav-value LAST UPDATE 2025-11-03 22:46:20 */
         return $slugs_and_titles = array (
         '50states' => 
         array (
@@ -245,6 +245,7 @@ class Nav
         'canonical_url' => 'https://lab.artlung.com/bookmarklet-pattern/',
         'webmention_last_checked' => 0,
         'webmention_count' => 0,
+        'og-image-date' => '2025-10-26 15:04:52',
         ),
         'bookmarklets' => 
         array (
@@ -2212,10 +2213,7 @@ class Nav
         1 => 'css',
         2 => 'weird-web-october',
         ),
-        'atom_feed_publish_date' => 
-        array (
-        0 => '2025-10-13T13:57:41+00:00',
-        ),
+        'atom_feed_publish_date' => '2025-10-13T13:57:41+00:00',
         'canonical_url' => 'https://lab.artlung.com/upside-down/',
         'webmention_last_checked' => 0,
         'webmention_count' => 0,
