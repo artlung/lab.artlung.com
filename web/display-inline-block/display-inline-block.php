@@ -179,24 +179,24 @@
     }</pre>
 
     <p id="wrong">Lorem ipsum dolor sit amet, consectetur adipisicing <a
-                href="/web/20070318000027/http://home.tiscali.nl/developerscorner/index.html">this
+                href="https://web.archive.org/web/20070318000027/http://home.tiscali.nl/developerscorner/index.html">this
             is a normal internal link</a> elit, sed do eiusmod tempor incididunt ut labore et
-        <a class="extern" href="/web/20070318000027/http://home.tiscali.nl/developerscorner/test-link01.htm">this is an
+        <a class="extern" href="https://web.archive.org/web/20070318000027/http://home.tiscali.nl/developerscorner/test-link01.htm">this is an
             external link</a> dolore magna aliqua. Ut enim ad minim
-        <a class="extern" href="/web/20070318000027/http://home.tiscali.nl/developerscorner/test-link02.htm">this is a
+        <a class="extern" href="https://web.archive.org/web/20070318000027/http://home.tiscali.nl/developerscorner/test-link02.htm">this is a
             good long external link</a> veniam, quis nostrud exercitation
         ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
         velit
         esse cillum dolore eu fugiat nulla <a class="extern"
-                                              href="/web/20070318000027/http://home.tiscali.nl/developerscorner/test-link03.htm">this
+                                              href="https://web.archive.org/web/20070318000027/http://home.tiscali.nl/developerscorner/test-link03.htm">this
             is again an external link</a> pariatur.
         Excepteur sint occaecat cupidatat non <a class="extern"
-                                                 href="/web/20070318000027/http://home.tiscali.nl/developerscorner/test-link04.htm">this
+                                                 href="https://web.archive.org/web/20070318000027/http://home.tiscali.nl/developerscorner/test-link04.htm">this
             is certainly a very long external link but
             that can happen sometimes isn't</a> proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </p>
     <p>[ for instance the Wikipedia is showing this fenomenon:
-        <a href="/web/20070318000027/http://home.tiscali.nl/developerscorner/css-discuss/images/broken-wiki-ie-link-icons.gif">
+        <a href="https://web.archive.org/web/20070318000027/http://home.tiscali.nl/developerscorner/css-discuss/images/broken-wiki-ie-link-icons.gif">
             screenshot</a> ]</p>
 
     <h2>But now!</h2>
@@ -205,19 +205,19 @@
         - But: once the css is done, it's very easy to apply in the text writing.</p>
 
     <p id="illustr">Lorem ipsum dolor sit amet, consectetur adipisicing <a
-                href="/web/20070318000027/http://home.tiscali.nl/developerscorner/index.html">this
+                href="https://web.archive.org/web/20070318000027/http://home.tiscali.nl/developerscorner/index.html">this
             is a normal internal link</a> elit, sed do eiusmod tempor incididunt ut labore et
-        <a href="/web/20070318000027/http://home.tiscali.nl/developerscorner/test-link01.htm">this is an external <u>link</u></a>
+        <a href="https://web.archive.org/web/20070318000027/http://home.tiscali.nl/developerscorner/test-link01.htm">this is an external <u>link</u></a>
         dolore magna aliqua. Ut enim ad minim
-        <a href="/web/20070318000027/http://home.tiscali.nl/developerscorner/test-link02.htm">this is a good long
+        <a href="https://web.archive.org/web/20070318000027/http://home.tiscali.nl/developerscorner/test-link02.htm">this is a good long
             external <u>link</u></a> veniam, quis nostrud exercitation
         ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
         velit
         esse cillum dolore eu fugiat nulla <a
-                href="/web/20070318000027/http://home.tiscali.nl/developerscorner/test-link03.htm">this is again an
+                href="https://web.archive.org/web/20070318000027/http://home.tiscali.nl/developerscorner/test-link03.htm">this is again an
             external <u>link</u></a> pariatur.
         Excepteur sint occaecat cupidatat non <a
-                href="/web/20070318000027/http://home.tiscali.nl/developerscorner/test-link04.htm">this is certainly a
+                href="https://web.archive.org/web/20070318000027/http://home.tiscali.nl/developerscorner/test-link04.htm">this is certainly a
             very long external link but
             that can happen sometimes <u>isn't</u></a> proident, sunt in culpa qui officia deserunt mollit anim id est
         laborum.</p>
@@ -309,7 +309,7 @@ a:hover u {
                     External <u>Link</u></a>.</p></li>
     </ul>
 
-    <p><i><a href="/web/20070318000027/http://home.tiscali.nl/developerscorner/index.html">francky</a></i>,<br/>
+    <p><i><a href="https://web.archive.org/web/20070318000027/http://home.tiscali.nl/developerscorner/index.html">francky</a></i>,<br/>
         27 Febr. 2007</p>
 
 </div>
