@@ -27,7 +27,7 @@ class Nav
 
         // yaml is the source of truth, generate this with slugs_and_titles.php do not hand edit this:
 
-        /* START: handled by php generate-nav-value LAST UPDATE 2025-11-03 22:46:20 */
+        /* START: handled by php generate-nav-value LAST UPDATE 2025-12-20 04:40:46 */
         return $slugs_and_titles = array (
         '50states' => 
         array (
@@ -707,6 +707,20 @@ class Nav
         0 => 'sql',
         ),
         'webmention_last_checked' => 1760137583,
+        'webmention_count' => 0,
+        ),
+        'dpad' => 
+        array (
+        'title' => 'DPAD 2011 with MooTools',
+        'slug' => 'dpad',
+        'year' => 2011,
+        'canonical_url' => 'https://lab.artlung.com/dpad/',
+        'tags' => 
+        array (
+        0 => 'mootools',
+        1 => 'javascript',
+        ),
+        'webmention_last_checked' => 0,
         'webmention_count' => 0,
         ),
         'dropdown' => 
