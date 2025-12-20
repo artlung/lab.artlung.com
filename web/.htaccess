@@ -35,7 +35,7 @@ Redirect permanent /ws_ftp_password_decoder            https://lab.artlung.com/w
 Redirect permanent /css/border-style                  https://lab.artlung.com/border-style
 
 
-Redirect /js/ https://artlung.com/
+Redirect /js/ https://lab.artlung.com/
 
 # Set a 404 page
 ErrorDocument 404 /404.php
