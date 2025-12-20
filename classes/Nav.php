@@ -27,7 +27,7 @@ class Nav
 
         // yaml is the source of truth, generate this with slugs_and_titles.php do not hand edit this:
 
-        /* START: handled by php generate-nav-value LAST UPDATE 2025-10-10 23:07:02 */
+        /* START: handled by php generate-nav-value LAST UPDATE 2025-12-20 04:40:46 */
         return $slugs_and_titles = array (
         '50states' => 
         array (
@@ -229,6 +229,23 @@ class Nav
         ),
         'webmention_last_checked' => 1760137575,
         'webmention_count' => 0,
+        ),
+        'bookmarklet-pattern' => 
+        array (
+        'title' => 'Bookmarklet Pattern',
+        'slug' => 'bookmarklet-pattern',
+        'year' => 2025,
+        'tags' => 
+        array (
+        0 => 'bookmarklet',
+        1 => 'css',
+        2 => 'weird-web-october',
+        ),
+        'atom_feed_publish_date' => '2025-10-26T15:21:16+00:00',
+        'canonical_url' => 'https://lab.artlung.com/bookmarklet-pattern/',
+        'webmention_last_checked' => 0,
+        'webmention_count' => 0,
+        'og-image-date' => '2025-10-26 15:04:52',
         ),
         'bookmarklets' => 
         array (
@@ -690,6 +707,20 @@ class Nav
         0 => 'sql',
         ),
         'webmention_last_checked' => 1760137583,
+        'webmention_count' => 0,
+        ),
+        'dpad' => 
+        array (
+        'title' => 'DPAD 2011 with MooTools',
+        'slug' => 'dpad',
+        'year' => 2011,
+        'canonical_url' => 'https://lab.artlung.com/dpad/',
+        'tags' => 
+        array (
+        0 => 'mootools',
+        1 => 'javascript',
+        ),
+        'webmention_last_checked' => 0,
         'webmention_count' => 0,
         ),
         'dropdown' => 
@@ -2184,6 +2215,23 @@ class Nav
         ),
         'webmention_last_checked' => 1760137608,
         'webmention_count' => 0,
+        ),
+        'upside-down' => 
+        array (
+        'title' => 'Upside Down Web Page Bookmarklet',
+        'slug' => 'upside-down',
+        'year' => 2025,
+        'tags' => 
+        array (
+        0 => 'bookmarklet',
+        1 => 'css',
+        2 => 'weird-web-october',
+        ),
+        'atom_feed_publish_date' => '2025-10-13T13:57:41+00:00',
+        'canonical_url' => 'https://lab.artlung.com/upside-down/',
+        'webmention_last_checked' => 0,
+        'webmention_count' => 0,
+        'og-image-date' => '2025-10-13 14:01:40',
         ),
         'url-compare' => 
         array (

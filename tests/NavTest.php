@@ -69,6 +69,12 @@ class NavTest extends TestCase
             $this->assertArrayHasKey('webmention_count', $metadataArray, "webmention_count missing for $dir");
             $this->assertIsInt($metadataArray['webmention_count'], "webmention_count is not an integer for $dir");
 
+            // if an element has the key atom_feed_publish_date it must be a date
+            if (array_key_exists('atom_feed_publish_date', $metadataArray)) {
+                $this->assertNotEmpty($metadataArray['atom_feed_publish_date'], "atom_feed_publish_date is empty for $dir");
+                $this->assertIsString($metadataArray['atom_feed_publish_date'], "atom_feed_publish_date is not a string for $dir");
+            }
+
 
 
         }

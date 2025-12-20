@@ -1,0 +1,29 @@
+article#content {
+  display: grid;
+  gap: 1rem;
+  width: 90vw;
+
+  > div {
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.05);
+  }
+
+
+  p:has(a[href^="javascript"]) {
+    outline: 0.2rem dashed hotpink;
+    padding: 2rem;
+    width: fit-content;
+    font-weight: 400;
+    font-size: 1.3rem;
+  }
+
+  kbd {
+    background: #0001;
+    border: 0.1rem solid;
+    border-radius: 0.2rem;
+    padding: 0.2rem 0.4rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    box-shadow: 0 0 0.2rem #0003;
+  }
+}
