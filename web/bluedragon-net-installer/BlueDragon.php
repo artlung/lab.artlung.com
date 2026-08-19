@@ -23,7 +23,7 @@ class BlueDragon
      */
     public static function handleh2($filename)
     {
-        return "<h2>" . htmlentities(file_get_contents( __DIR__ . '/' . $filename)) . "</h2>";
+        return "<h2>" . htmlentities(file_get_contents(__DIR__ . '/' . $filename)) . "</h2>";
     }
 
     /**

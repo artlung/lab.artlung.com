@@ -4,13 +4,15 @@ namespace ArtlungLab;
 /**
  * Class GitHubLink
  *
+ * This class provides a method to create a GitHub Issue URL from an array of parameters.
+ *
  * @category PHP
  * @package  ArtLung
  * @author   Joe Crawford <joe@artlung.com>
  * @license  GPL 2.0+ - http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  * @version  Release: 1.0
  * @link     https://artlung.com/
- * @since    2024-12-03
+ * @since    2026-08-01
  */
 class GitHubLink
 {
@@ -34,7 +36,7 @@ class GitHubLink
     /**
      * Helper function to build a query string
      *
-     * @param array{title: string, body: string,labels: string|array,milestone: string,assignees: string|array,projects: string,template: string,url: string } $array
+     * @param $array array{title: string, body: string,labels: string|array,milestone: string,assignees: string|array,projects: string,template: string,url: string }
      *
      * @return string
      */
