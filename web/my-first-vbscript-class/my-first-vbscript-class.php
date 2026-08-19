@@ -14,12 +14,12 @@ My First ASP Class
     <h1>My first VBScript Test Class</h1>
 
 
-<?php $lab->printCodeBlock(file_get_contents('TestClass.asp')); ?>
+<?php $lab->printCodeBlock(file_get_contents(__DIR__ . '/TestClass.asp')); ?>
 
     <h2>And testing it out</h2>
 
 
-<?php $lab->printCodeBlock(file_get_contents('testing.asp')); ?>
+<?php $lab->printCodeBlock(file_get_contents(__DIR__ . '/testing.asp')); ?>
 
     <h2>Results</h2>
 

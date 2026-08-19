@@ -11,4 +11,4 @@ webmention_last_checked: 1760137600
 webmention_count: 0
 shot_scraper_extra_params: |
   --javascript "document.querySelector('.bookmarklet').click();"
-og-image-date: 2025-02-21 23:22:13
+og-image-date: 2026-03-30 18:51:39

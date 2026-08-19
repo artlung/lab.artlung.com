@@ -10,7 +10,9 @@ $lab->printHeader('CSS3 Smiley - in colors!');
 
     <h1 class="p-name">CSS3 Smiley</h1>
 
-<?php ob_start(); ?>
+<?php
+
+$html = <<<'HTML'
     <div id="smiley-wrapper" class="figure">
         <div class="smiley ground">
             <div class="left-eye eye figure">&nbsp;</div>
@@ -76,8 +78,8 @@ $lab->printHeader('CSS3 Smiley - in colors!');
             </div>
         </div>
     </div>
-<?php $html = ob_get_clean(); ?>
-<?php print $html; ?>
+HTML;
+?>
 
 
     <h2>HTML</h2>
@@ -85,17 +87,17 @@ $lab->printHeader('CSS3 Smiley - in colors!');
 <?php $lab->printSource($html) ?>
 
     <link rel="stylesheet" href="css3-smiley.css<?php
-    print "?" . filectime('css3-smiley.css');
+    print "?" . filectime(__DIR__ . '/css3-smiley.css');
     ?>" type="text/css"/>
     <script src="css3-smiley.js<?php
-    print '?' . filectime('css3-smiley.js');
+    print '?' . filectime(__DIR__ . '/css3-smiley.js');
     ?>" type="text/javascript"></script>
 
     <h2>SCSS</h2>
-<?php $lab->printSourceFile('css3-smiley.scss'); ?>
+<?php $lab->printSourceFile(__DIR__ . '/css3-smiley.scss'); ?>
 
     <h2>JavaScript</h2>
-<?php $lab->printSourceFile('css3-smiley.js'); ?>
+<?php $lab->printSourceFile(__DIR__ . '/css3-smiley.js'); ?>
 
 
 <?php

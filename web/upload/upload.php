@@ -21,10 +21,10 @@ $html = ob_get_clean();
 print $html;
 ?>
     <script src="upload.js<?php
-    echo '?' . filectime('upload.js');
+    echo '?' . filectime(__DIR__ .'/upload.js');
     ?>"></script>
     <link rel="stylesheet" type="text/css" href="upload.css<?php
-    echo '?' . filectime('upload.css');
+    echo '?' . filectime(__DIR__ . '/upload.css');
     ?>">
     <hr/>
     <h2>HTML</h2>
@@ -33,15 +33,15 @@ print $html;
     ?></code></pre>
     <h2>JavaScript</h2>
     <pre><code><?php
-            echo htmlentities(file_get_contents('upload.js'));
+            echo htmlentities(file_get_contents(__DIR__ . '/upload.js'));
     ?></code></pre>
     <h2>SCSS</h2>
     <pre><code><?php
-            echo htmlentities(file_get_contents('upload.scss'));
+            echo htmlentities(file_get_contents(__DIR__ . '/upload.scss'));
     ?></code></pre>
     <h2>PHP: accept-input.php</h2>
     <pre><code><?php
-            echo highlight_file('accept-input.php', true);
+            echo highlight_file(__DIR__ . '/accept-input.php', true);
     ?></code></pre>
 
 

@@ -17,9 +17,9 @@ Modify the Box - a DHTML Experiment
 
 require 'modify-the-box.html';
 
-printf('<script>%s</script>', file_get_contents('modify-the-box.js'));
+printf('<script>%s</script>', file_get_contents(__DIR__ . '/modify-the-box.js'));
 
-printf('<style>%s</style>', file_get_contents('modify-the-box.css'));
+printf('<style>%s</style>', file_get_contents(__DIR__ . '/modify-the-box.css'));
 
 foreach ([
              'HTML' => 'modify-the-box.html',
@@ -27,7 +27,7 @@ foreach ([
              'SCSS' => 'modify-the-box.scss'] as $h2 => $code) {
 
     printf('<h2>%s</h2>', $h2);
-    printf('<pre><code>%s</code></pre>', htmlentities(file_get_contents($code)));
+    printf('<pre><code>%s</code></pre>', htmlentities(file_get_contents(__DIR__ . '/' . $code)));
 
 }
 

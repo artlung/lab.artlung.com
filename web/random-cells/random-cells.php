@@ -5,13 +5,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
     <link rel="stylesheet" type="text/css" href="random-cells.css<?php
-    echo '?' . filemtime('random-cells.css');
+    echo '?' . filemtime(__DIR__ . '/random-cells.css');
     ?>">
     <script src="random-cells.js<?php
-    echo '?' . filemtime('random-cells.js');
+    echo '?' . filemtime(__DIR__ . '/random-cells.js');
     ?>"></script>
     <script src="../2025.js<?php
-    echo '?' . filemtime('../2025.js');
+    echo '?' . filemtime(__DIR__ . '/../2025.js');
     ?>"></script>
     <link rel="webmention" href="https://webmention.io/artlung.com/webmention">
 </head>

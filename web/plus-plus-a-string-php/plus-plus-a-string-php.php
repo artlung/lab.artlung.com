@@ -30,7 +30,6 @@ echo $str;
     <p>
         So if we want the English alphabet output, we could set $str to "a" and print and increment 26 times and there's
         the alphabet.</p>
-    </p>
     <pre>
 $str = "a";
 for ($i=0; $i&lt;26; $i++) {

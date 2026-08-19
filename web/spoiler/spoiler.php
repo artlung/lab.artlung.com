@@ -60,7 +60,7 @@ $lab->printHeader('Spoiler Widget');
 
 <h2>CSS</h2>
 
-        <pre><code><?php echo htmlentities(file_get_contents('spoiler.scss')) ?></code></pre>
+        <pre><code><?php echo htmlentities(file_get_contents(__DIR__ . '/spoiler.scss')) ?></code></pre>
 
     </blockquote>
 </div>

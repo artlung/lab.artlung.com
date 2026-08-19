@@ -8,19 +8,19 @@ $lab->printHeader('BarCamp LA 6: Source Code for jQuery Introduction');
     <h1 class="p-name"><a href="./">BarCamp LA 6: for jQuery Introduction</a>: Source Code</h1>
 
     <h2>HTML</h2>
-<?php $lab->printCodeBlock(file_get_contents('barcamp6.php')); ?>
+<?php $lab->printCodeBlock(file_get_contents(__DIR__ . '/barcamp6.php')); ?>
 
     <h2>JavaScript</h2>
 
-<?php $lab->printCodeBlock(file_get_contents('barcampla6.js')); ?>
+<?php $lab->printCodeBlock(file_get_contents(__DIR__ . '/barcampla6.js')); ?>
 
     <h2>SCSS</h2>
 
-<?php $lab->printCodeBlock(file_get_contents('barcampla6.scss')); ?>
+<?php $lab->printCodeBlock(file_get_contents(__DIR__ . '/barcampla6.scss')); ?>
 
     <h2>Selectors</h2>
 
-<?php $lab->printCodeBlock(file_get_contents('selectors.txt')); ?>
+<?php $lab->printCodeBlock(file_get_contents(__DIR__ . '/selectors.txt')); ?>
 
 <?php
 $lab->printFooter(

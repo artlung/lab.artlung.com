@@ -4904,7 +4904,7 @@ $lab->printHeader('Screen Resolutions of Old Phones');
     </div>
 
     <link rel="stylesheet" type="text/css" href="screen-resolutions.css<?php
-    echo '?' . filemtime('screen-resolutions.css');
+    echo '?' . filemtime(__DIR__ . '/screen-resolutions.css');
     ?>"/>
 
 <?php

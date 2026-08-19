@@ -78,11 +78,11 @@ $lab->printHeader(
 
     <h2>rtf.rtf</h2>
 
-    <pre><code><?php echo htmlentities(file_get_contents('rtf.rtf')); ?></code></pre>
+    <pre><code><?php echo htmlentities(file_get_contents(__DIR__ . '/rtf.rtf')); ?></code></pre>
 
     <h2>.htaccess</h2>
 
-<pre><code><?php echo htmlentities(file_get_contents('.htaccess')); ?></code></pre>
+<pre><code><?php echo htmlentities(file_get_contents(__DIR__ . '/.htaccess')); ?></code></pre>
 
 <?php
 $lab->printFooter(

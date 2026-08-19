@@ -5,10 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="rudysbg.css<?php
-    echo '?v=' . filemtime('rudysbg.css');
+    echo '?v=' . filemtime(__DIR__ . '/rudysbg.css');
     ?>">
     <script src="../2025.js<?php
-    echo '?' . filemtime('../2025.js');
+    echo '?' . filemtime(__DIR__ . '/../2025.js');
     ?>"></script>
     <link rel="webmention" href="https://webmention.io/artlung.com/webmention">
 </head>

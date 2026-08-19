@@ -19,16 +19,16 @@ $lab->printHeader('Get KeyCode via Javascript');
     </div>
 
     <script src="keycode.js<?php
-    echo '?' . filectime('keycode.js');
+    echo '?' . filectime(__DIR__ . '/keycode.js');
     ?>"></script>
     <link rel="stylesheet" href="keycode.css<?php
-    echo '?' . filectime('keycode.css');
+    echo '?' . filectime(__DIR__ . '/keycode.css');
     ?>">
 
     <h2>Source</h2>
 
     <pre><code>
-<?php echo file_get_contents('keycode.js');
+<?php echo file_get_contents(__DIR__ . '/keycode.js');
 ?>
     </code>
 </pre>

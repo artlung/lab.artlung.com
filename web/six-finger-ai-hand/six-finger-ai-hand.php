@@ -28,7 +28,7 @@ Six Finger AI hand (PNG)
     </section>
 
     <link rel="stylesheet" href="six-finger-ai-hand.css<?php
-    echo '?v=' . filemtime('six-finger-ai-hand.css');
+    echo '?v=' . filemtime(__DIR__ . '/six-finger-ai-hand.css');
     ?>" type="text/css"/>
 
 <?php

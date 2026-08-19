@@ -37,16 +37,16 @@
         }
     </SCRIPT>
     <script src="../2025.js<?php
-    echo '?' . filemtime('../2025.js');
+    echo '?' . filemtime(__DIR__ . '/../2025.js');
     ?>"></script>
 </HEAD>
 <FRAMESET ROWS="26,*" BORDER=0 FRAMESPACING=0 FRAMEBORDER=NO>
     <FRAME SCROLLING=NO NAME="NAVIGATIONAL_FRAME" MARGINWIDTH=0 MARGINHEIGHT=0
            SRC="this_nav.html<?php
-            echo '?' . filemtime('this_nav.html');
+            echo '?' . filemtime(__DIR__ . '/this_nav.html');
             ?>">
     <FRAME SCROLLING=AUTO NAME="CONTENT_FRAME" MARGINWIDTH=1 MARGINHEIGHT=1 SRC="loading.php<?php
-    echo '?' . filemtime('loading.php');
+    echo '?' . filemtime(__DIR__ . '/loading.php');
     ?>">
 </FRAMESET>
 </HTML>

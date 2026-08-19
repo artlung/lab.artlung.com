@@ -1,7 +1,7 @@
 <?php
-require_once '../../loader.php';
+require_once __DIR__ . '/../../loader.php';
 $rand = rand(0, 9999); // there are 10,000 sentences in the file
-$sentences = file("sample_sentences.txt");
+$sentences = file(__DIR__ . "/sample_sentences.txt");
 $line = $sentences[$rand];
 
 if (isset($_GET['bloggingbot'])) {
@@ -36,13 +36,13 @@ $share_url = 'https://shareopenly.org/share/?url=' . urlencode($canonical_url) .
         print "\n";
     ?>
     <link rel="stylesheet" href="bloggingbot.css<?php
-        echo '?' . filemtime('bloggingbot.css');
+        echo '?' . filemtime(__DIR__ . '/bloggingbot.css');
     ?>">
     <script src="bloggingbot.js<?php
-        echo '?' . filemtime('bloggingbot.js');
+        echo '?' . filemtime(__DIR__ . '/bloggingbot.js');
     ?>"></script>
     <script src="/2025.js<?php
-    echo '?' . filemtime('../2025.js');
+    echo '?' . filemtime(__DIR__ . '/../2025.js');
     ?>"></script>
 </head>
 <body>

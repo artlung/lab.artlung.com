@@ -18,7 +18,7 @@ Permutations of characters
 $legal_chars = "ABCDEFGHIJ";
 
 for ($i = 0; $i < strlen($legal_chars); $i++) {
-    $char_arr[] = $legal_chars{$i};
+    $char_arr[] = $legal_chars[$i];
 }
 
 foreach ($char_arr as $x) {

@@ -6,7 +6,7 @@
     <script type="text/javascript" src="sencha/ext-touch-debug.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script src="/2025.js<?php
-    echo '?' . filemtime('../../2025.js');
+    echo '?' . filemtime(__DIR__ . '/../../2025.js');
     ?>"></script>
 </head>
 <body>
@@ -15,7 +15,7 @@
         //document.write(STATE.getSavedNotes());
     </script>
     <?php
-    require 'load.php';
+    require __DIR__ .'/load.php';
     ?>
 </div>
 </body>

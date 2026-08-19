@@ -50,7 +50,7 @@ Form action mailto: stinks
 
         foreach ($images as $image) {
             // get height and width of image
-            $size = getimagesize($image);
+            $size = getimagesize(__DIR__ . '/' .$image);
             $width = $size[0];
             $max_width = $width;
 
@@ -114,7 +114,7 @@ $lab->displayCode($code);
 ?>
 
     <link rel="stylesheet" href="email-submission-stinks.css<?php
-    echo '?' . filectime('email-submission-stinks.css');
+    echo '?' . filectime(__DIR__ . '/email-submission-stinks.css');
     ?>" type="text/css"/>
 
 

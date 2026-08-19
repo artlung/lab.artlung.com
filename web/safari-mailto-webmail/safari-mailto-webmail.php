@@ -42,7 +42,7 @@ can open links in Gmail on the web. It's based on <a href="https://stackoverflow
 
 
 <?php
-$javascript = file_get_contents('safari-mailto-webmail.js');
+$javascript = file_get_contents(__DIR__ . '/safari-mailto-webmail.js');
 $bookmarklet_javascript = ArtlungLab\Bookmarklet::javascriptToBookmarklet($javascript);
 
 printf('<a href="javascript:%s" class="bookmarklet">Convert mailto:</a>', $bookmarklet_javascript);

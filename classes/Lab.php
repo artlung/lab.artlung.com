@@ -39,6 +39,9 @@ class Lab
      */
     private $_url;
 
+    const DATA_ROBOTS_NOINDEX_START = 'data-robots-noindex-start';
+    const DATA_ROBOTS_NOINDEX_END = 'data-robots-noindex-end';
+
     /**
      * Set up the Lab object, which will put together relevant filesystem paths
      *
@@ -51,7 +54,7 @@ class Lab
         $this->currentPageServerDirectoryPath = dirname(__FILE__) . '/../';
 
         // let's parse the current requested url
-        $this->_url = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+        $this->_url = parse_url($_SERVER['REQUEST_URI'] ?? '', PHP_URL_PATH);
         // /asp/index.php would be asp
         // /asp/ would be asp
 
@@ -230,7 +233,7 @@ class Lab
         $hamburger_emoji = '🍔';
 
         $shareOpenlyTitle = 'Share Openly';
-        $pathOnly = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+        $pathOnly = parse_url($_SERVER['REQUEST_URI'] ?? '', PHP_URL_PATH);
         $url = 'https://lab.artlung.com' . $pathOnly;
 
         $canonical = 'https://lab.artlung.com' . $pathOnly;
@@ -271,7 +274,8 @@ class Lab
 HTML;
         }
 
-
+$DATA_ROBOTS_NOINDEX_START = self::DATA_ROBOTS_NOINDEX_START;
+$DATA_ROBOTS_NOINDEX_END = self::DATA_ROBOTS_NOINDEX_END;
 
         return <<<HTML
 <!DOCTYPE html>
@@ -293,6 +297,7 @@ HTML;
 {$code_from_code_txt}
 </head>
 {$bodyTag}
+<!--{$DATA_ROBOTS_NOINDEX_START}-->
 <header>
     <label>
     <input type="checkbox" id="nav-toggle" hidden {$open_nav_checked}>
@@ -301,12 +306,13 @@ HTML;
     <a href="/" target="_top">ARTLUNG LAB</a>
     <a href="{$shareOpenlyLink}" target="_blank" title="{$shareOpenlyTitle}" class="share">Share</a>
 </header>
+
 <nav>
 <div>
 <input type="text" placeholder="Filter" id="search-filter">
 </div>
 {$nav}
-</nav>
+</nav><!--{$DATA_ROBOTS_NOINDEX_END}-->
 <article id="content" class="h-entry">
     <a style="display:none" href="{$canonical}" class="u-url"></a>
 HTML;
@@ -357,7 +363,7 @@ HTML;
             'title' => 'Issue: ' . $slug,
             'body' => "Please describe the issue you encountered",
             'labels' => ['issue', $slug],
-            'url' => $protocol . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']
+            'url' => $protocol . '://' . ($_SERVER['HTTP_HOST'] ?? '') . ($_SERVER['REQUEST_URI'] ?? '')
             ]
         );
 
@@ -387,7 +393,7 @@ HTML;
     {
 
         $protocol = !empty($_SERVER['HTTPS']) ? 'https' : 'http';
-        $canonical = json_encode($protocol . '://' . $_SERVER['HTTP_HOST'] . '/'. $this->directoryName . '/');
+        $canonical = json_encode($protocol . '://' . ($_SERVER['HTTP_HOST'] ?? '') . '/'. $this->directoryName . '/');
         /**
          *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
          *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
@@ -486,7 +492,7 @@ HTML;
      */
     public function getWebmentionForm(): string
     {
-        $canonical = 'https://lab.artlung.com' . parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+        $canonical = 'https://lab.artlung.com' . parse_url($_SERVER['REQUEST_URI'] ?? '', PHP_URL_PATH);
         return <<<HTML
 <div class="webmention-area">
 <h2>Comment on this with a <a href="https://indieweb.org/Webmention">webmention</a></h2>

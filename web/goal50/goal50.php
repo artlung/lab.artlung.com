@@ -34,20 +34,20 @@ $html = ob_get_clean();
 echo $html;
 ?>
     <link rel="stylesheet" href="goal50.css<?php
-    echo '?v=' . filemtime('goal50.css');
+    echo '?v=' . filemtime(__DIR__ . '/goal50.css');
     ?>" type="text/css"/>
     <script src="goal50.js<?php
-    echo '?v=' . filemtime('goal50.js');
+    echo '?v=' . filemtime(__DIR__ . '/goal50.js');
     ?>"></script>
 
     <h2>HTML</h2>
     <pre><code><?php echo htmlspecialchars($html); ?></code></pre>
 
     <h2>SCSS</h2>
-    <pre><code><?php echo htmlspecialchars(file_get_contents('goal50.scss')); ?></code></pre>
+    <pre><code><?php echo htmlspecialchars(file_get_contents(__DIR__ . '/goal50.scss')); ?></code></pre>
 
     <h2>JavaScript</h2>
-    <pre><code><?php echo htmlspecialchars(file_get_contents('goal50.js')); ?></code></pre>
+    <pre><code><?php echo htmlspecialchars(file_get_contents(__DIR__ . '/goal50.js')); ?></code></pre>
 
 
 <?php

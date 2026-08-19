@@ -146,7 +146,7 @@
 </script>
 <!--    // 2025.js-->
     <script src="/2025.js<?php
-    echo '?' . filemtime('../../2025.js');
+    echo '?' . filemtime(__DIR__ . '/../2025.js');
     ?>"></script>
 </head>
 

@@ -17,10 +17,10 @@
 </head>
 <frameset rows="80%,20%">
     <frame src="the-content.php<?php
-    echo '?' . filemtime('the-content.php');
+    echo '?' . filemtime(__DIR__ . '/the-content.php');
     ?>" name="targetWINDOW">
     <frame src="the-navigation.php<?php
-    echo '?' . filemtime('the-navigation.php');
+    echo '?' . filemtime(__DIR__ . '/the-navigation.php');
     ?>" name="navWINDOW">
     ?>">
 </frameset>

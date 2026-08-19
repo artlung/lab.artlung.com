@@ -45,10 +45,10 @@ echo $html;
     <pre><code class="language-html"><?php echo htmlentities($html); ?></code></pre>
 
     <h2>JavaScript</h2>
-    <pre><code><?php echo file_get_contents('clock-concept.js'); ?></code></pre>
+    <pre><code><?php echo file_get_contents(__DIR__ . '/clock-concept.js'); ?></code></pre>
 
     <h2>SCSS</h2>
-    <pre><code><?php echo file_get_contents('clock-concept.scss'); ?></code></pre>
+    <pre><code><?php echo file_get_contents(__DIR__ . '/clock-concept.scss'); ?></code></pre>
 
 
     <h2>Original Image</h2>
@@ -63,10 +63,10 @@ echo $html;
     </p>
 
     <script src="clock-concept.js<?php
-    echo '?v=' . filemtime('clock-concept.js');
+    echo '?v=' . filemtime(__DIR__ . '/clock-concept.js');
     ?>"></script>
     <link type="text/css" href="clock-concept.css<?php
-    echo '?v=' . filemtime('clock-concept.css');
+    echo '?v=' . filemtime(__DIR__ . '/clock-concept.css');
     ?>" rel="stylesheet"/>
 
 <?php

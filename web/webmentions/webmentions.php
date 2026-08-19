@@ -133,7 +133,7 @@ $lab->printHeader($metadata['title']);
 
 <p>This form, when submitted, does the same thing, minus the request for detailed headers:</p>
 
-    <pre><code>&lt;form action="<code class="endpoint" contenteditable="true">https://artlung.com/wp-json/webmention/1.0/endpoint</code>" method="get"&gt;
+    <pre><code>&lt;form action="<code class="endpoint" contenteditable="true">https://artlung.com/wp-json/webmention/1.0/endpoint</code>" method="post"&gt;
     &lt;input type="url" name="source" value="<code class="source" contenteditable="true">https://smorgasborg.artlung.com/douglasadams/</code>"&gt;
     &lt;input type="url" name="target" value="<code class="target" contenteditable="true">https://artlung.com/blog/2016/10/06/audio-packrattitude/</code>"&gt;
     &lt;input type="submit" value="Send Webmention"&gt;
@@ -239,11 +239,11 @@ the webmention. It's important to know that the page doesn't have to display the
 
 
     <link rel="stylesheet" href="webmentions.css<?php
-    echo '?v=' . filemtime('webmentions.css');
+    echo '?v=' . filemtime(__DIR__ . '/webmentions.css');
     ?>" type="text/css"/>
 
     <script src="webmentions.js<?php
-    echo '?v=' . filemtime('webmentions.js');
+    echo '?v=' . filemtime(__DIR__ . '/webmentions.js');
     ?>"></script>
 
 <?php

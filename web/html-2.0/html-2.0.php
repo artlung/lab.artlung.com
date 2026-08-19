@@ -1,5 +1,7 @@
 <?php
-Header("Content-Type: text/html; charset=iso-8859-1");
+if (php_sapi_name() !== 'cli') {
+    Header("Content-Type: text/html; charset=iso-8859-1");
+}
 ?><!DOCTYPE html PUBLIC "-//IETF//DTD HTML 2.0//EN">
 <html>
 <head>

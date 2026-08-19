@@ -14,7 +14,7 @@ $lab->printHeader(
         </em></p>
 
 <?php
-    $js = file_get_contents('quick-jquery-overlay-revisited.js');
+    $js = file_get_contents(__DIR__ . '/quick-jquery-overlay-revisited.js');
 
     // as bookmarklet
 

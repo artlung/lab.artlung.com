@@ -7,7 +7,7 @@ $lab->printHeader(
 
 ?>
 <link rel="stylesheet" href="kanban.css<?php
-    echo '?' . filemtime('kanban.css');
+    echo '?' . filemtime(__DIR__ . '/kanban.css');
 ?>" type="text/css"/>
 
 
@@ -128,7 +128,7 @@ $lab->printHeader(
 <h2>SCSS</h2>
 
 <?php $lab->printCodeBlock(
-    file_get_contents('kanban.scss')
+    file_get_contents(__DIR__ . '/kanban.scss')
 ); ?>
 
 <hr>

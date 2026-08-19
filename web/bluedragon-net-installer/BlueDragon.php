@@ -23,7 +23,7 @@ class BlueDragon
      */
     public static function handleh2($filename)
     {
-        return "<h2>" . htmlentities(file_get_contents($filename)) . "</h2>";
+        return "<h2>" . htmlentities(file_get_contents( __DIR__ . '/' . $filename)) . "</h2>";
     }
 
     /**
@@ -47,6 +47,6 @@ class BlueDragon
      */
     public static function handleTxt($filename)
     {
-        return "<div class=\"text\">" . nl2br(htmlentities(file_get_contents($filename))) . "</div>";
+        return "<div class=\"text\">" . nl2br(htmlentities(file_get_contents(__DIR__ . '/' .$filename))) . "</div>";
     }
 }

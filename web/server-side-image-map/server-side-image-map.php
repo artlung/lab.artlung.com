@@ -39,7 +39,7 @@ $lab->printHeader('Image Maps like we made them in 1997');
 
                 <h3>On the server is a file called "master.map" which contains:</h3>
                 <pre><?php
-                    print file_get_contents('master.map'); ?></pre>
+                    print file_get_contents(__DIR__ . '/master.map'); ?></pre>
 
 
                 <p><em>Syntax of that map file come from <a

@@ -15,7 +15,7 @@ HTTP_HOST environment variable in PHP
 
     <p>
         <?php
-        echo $_SERVER["HTTP_HOST"]; //more explicit style (preferred)_
+        echo $_SERVER["HTTP_HOST"] ?? ''; //more explicit style (preferred)_
         echo "<br>";
         ?>
     </p>

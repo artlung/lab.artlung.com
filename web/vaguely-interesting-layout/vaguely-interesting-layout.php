@@ -85,12 +85,12 @@ $lab->printHeader('Vaguely Interesting Layout');
     </section>
 
     <link rel="stylesheet" href="vaguely-interesting-layout.css<?php
-    echo '?v=' . filemtime('vaguely-interesting-layout.css');
+    echo '?v=' . filemtime(__DIR__ . '/vaguely-interesting-layout.css');
     ?>">
 
     <h2>SCSS</h2>
 
-<?php $lab->printCodeBlock(file_get_contents('vaguely-interesting-layout.scss')); ?>
+<?php $lab->printCodeBlock(file_get_contents(__DIR__ . '/vaguely-interesting-layout.scss')); ?>
 
 
 <?php

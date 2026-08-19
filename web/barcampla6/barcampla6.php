@@ -2,18 +2,18 @@
 <head>
     <title>jQuery Introduction @ BarCampLA6</title>
     <link rel="stylesheet" href="barcampla6.css<?php
-    echo "?" . filectime('barcampla6.css');
+    echo "?" . filectime(__DIR__ . '/barcampla6.css');
     ?>" type="text/css"/>
     <!--
     download the latest jQuery from http://docs.jquery.com/Downloading_jQuery#Download_jQuery
     -->
     <script type="text/javascript" src="jquery-1.2.6.min.js"></script>
     <script type="text/javascript" src="barcampla6.js<?php
-    echo "?" . filectime('barcampla6.js');
+    echo "?" . filectime(__DIR__ . '/barcampla6.js');
     ?>"></script>
     <link rel="webmention" href="https://webmention.io/artlung.com/webmention"/>
     <script src="/2025.js<?php
-    echo '?' . filemtime('../2025.js');
+    echo '?' . filemtime(__DIR__ . '/../2025.js');
     ?>"></script>
 </head>
 <body>

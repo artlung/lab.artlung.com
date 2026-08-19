@@ -49,7 +49,7 @@ Weird Web October
     <div>
         <p>
             <?php
-            $js = file_get_contents('squish-stretch-web.js');
+            $js = file_get_contents(__DIR__ . '/squish-stretch-web.js');
             $js_bookmarklet = 'javascript:' . \ArtlungLab\Bookmarklet::javascriptToBookmarklet($js);
             printf('<a href="%s">Squish &amp; Stretch</a>', $js_bookmarklet);
             ?>

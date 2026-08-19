@@ -34,7 +34,7 @@ $lab->printHeader(':root Color Properties Editor (Bookmarklet)');
 <div style="padding: 1rem;border: 3px double blue;text-align: center;font-size: 2rem;text-wrap: balance">
 
 <?php
-$javascript = file_get_contents('root-color-properties-editor.js');
+$javascript = file_get_contents(__DIR__ . '/root-color-properties-editor.js');
 $bookmarklet_javascript = ArtlungLab\Bookmarklet::javascriptToBookmarklet($javascript);
 
   printf('<a href="javascript:%s" class="bookmarklet">:root Color Properties Editor</a>', $bookmarklet_javascript);
@@ -57,7 +57,7 @@ $lab->printCodeBlock($javascript);
 
 <h2>What can be done about Chrome?</h2>
 
-<?php $lab->printCodeBlock(file_get_contents('root-color-properties-editor-chrome-workaround.js')); ?>
+<?php $lab->printCodeBlock(file_get_contents(__DIR__ . '/root-color-properties-editor-chrome-workaround.js')); ?>
 
 <?php
 $lab->printFooter(

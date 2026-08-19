@@ -15,22 +15,22 @@ $lab->printHeader('BloggingBot Source Code');
 
 
 <h2>PHP &amp; HTML (bloggingbot.php)</h2>
-<?php $lab->printCodeBlock(file_get_contents('bloggingbot.php')); ?>
+<?php $lab->printCodeBlock(file_get_contents(__DIR__ . '/bloggingbot.php')); ?>
 
 <h2>JavaScript (bloggingbot.js)</h2>
-<?php $lab->printCodeBlock(file_get_contents('bloggingbot.js')); ?>
+<?php $lab->printCodeBlock(file_get_contents(__DIR__ . '/bloggingbot.js')); ?>
 
 <h2>PHP (bloggingbot.ajax.php)</h2>
-<?php $lab->printCodeBlock(file_get_contents('bloggingbot.ajax.php')); ?>
+<?php $lab->printCodeBlock(file_get_contents(__DIR__ . '/bloggingbot.ajax.php')); ?>
 
 <h2>Apache (.htaccess)</h2>
-<?php $lab->printCodeBlock(file_get_contents('.htaccess')); ?>
+<?php $lab->printCodeBlock(file_get_contents(__DIR__ . '/.htaccess')); ?>
 
 <h2>PHP (Sitemap XML)</h2>
-<?php $lab->printCodeBlock(file_get_contents('sitemap.xml.php')); ?>
+<?php $lab->printCodeBlock(file_get_contents(__DIR__ . '/sitemap.xml.php')); ?>
 
 <h2>SCSS</h2>
-<?php $lab->printCodeBlock(file_get_contents('bloggingbot.scss')); ?>
+<?php $lab->printCodeBlock(file_get_contents(__DIR__ . '/bloggingbot.scss')); ?>
 
 <h2>Bloggingbot Sentences <em>first 100 lines of 10,000 shown</em>, generated using <a href="https://github.com/jsvine/markovify">jsvine/markovify</a></h2>
 

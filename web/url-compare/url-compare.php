@@ -71,11 +71,11 @@ $lab->printHeader('Compare Two URLs');
 <?php $html = ob_get_clean(); ?>
 <?php print $html; ?>
     <link rel='stylesheet prefetch' href='url-compare.css<?php
-    echo '?v=' . filemtime('url-compare.css');
+    echo '?v=' . filemtime(__DIR__ . '/url-compare.css');
     ?>'>
 
     <script src="url-compare.js<?php
-    echo '?v=' . filemtime('url-compare.js');
+    echo '?v=' . filemtime(__DIR__ . '/url-compare.js');
     ?>"></script>
     <p class="about">
         A client-side <a href="https://knockoutjs.com">KnockoutJS</a> application which can compare two urls, including
@@ -107,11 +107,11 @@ $lab->printHeader('Compare Two URLs');
 
     <h2>JavaScript Source</h2>
 
-<?php $lab->printCodeBlock(file_get_contents('url-compare.js')); ?>
+<?php $lab->printCodeBlock(file_get_contents(__DIR__ . '/url-compare.js')); ?>
 
     <h2>SCSS Source</h2>
 
-<?php $lab->printCodeBlock(file_get_contents('url-compare.scss')); ?>
+<?php $lab->printCodeBlock(file_get_contents(__DIR__ . '/url-compare.scss')); ?>
 
 
 <?php

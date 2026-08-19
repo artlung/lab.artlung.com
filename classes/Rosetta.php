@@ -73,7 +73,7 @@ class Rosetta extends Lab
 
         ?>
         <link rel="stylesheet" href="rosetta.css<?php
-        echo '?' . $this->_filemtime('rosetta.css');
+        echo '?' . $this->_filemtime(__DIR__ . '/rosetta.css');
         ?>" type="text/css"/>
         <?php
             $js_files = [

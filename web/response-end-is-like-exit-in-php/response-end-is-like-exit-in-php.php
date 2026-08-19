@@ -16,7 +16,7 @@ In ASP, Response.End is like exit() in PHP
     </h1>
 
 <?php
-$contents = file_get_contents("source.html");
+$contents = file_get_contents(__DIR__ . "/source.html");
 
 print $contents;
 

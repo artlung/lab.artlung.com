@@ -3,8 +3,26 @@
         alert('This bookmarklet only works on indieweb.org');
         return;
     }
+
+
     const pageUrl = window.location.href;
     const webmentionCheckerUrl = 'https://webmention.io/api/mentions.jf2?target=' + pageUrl;
+    const formToInject = `<form action="https://webmention.io/indiewebcamp/webmention" method="post" target="_blank" style="display: grid;gap: 0.5rem;padding: 0.5rem;border: 1rem solid #ccc;max-width: 60ch;margin: 0 auto;min-width: 50vw;">
+         <input type="url" name="source" value="" placeholder="source url">
+         <input type="url" name="target" value="${pageUrl}" readonly>
+         <input type="submit" value="Send Webmention">
+    </form>`;
+    const targetElement = document.querySelector('.mw-footer-container');
+    const idToApply = 'webmention-addendum-form';
+    if (targetElement && !document.querySelector('#' + idToApply)) {
+        const formWrapper = document.createElement('div');
+        formWrapper.setAttribute('id', idToApply);
+        formWrapper.style.marginBottom = '1rem';
+        formWrapper.innerHTML = formToInject;
+        targetElement.insertAdjacentElement('afterbegin', formWrapper);
+    }
+
+
     fetch(webmentionCheckerUrl)
         .then(response => response.json())
         .then(data => {

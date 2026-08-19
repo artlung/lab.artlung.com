@@ -1,7 +1,9 @@
 <?php
 require_once __DIR__ . '/../../loader.php';
 $lab = new ArtlungLab\Lab();
-$actual_url = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+$actual_url = sprintf("https://%s%s", $_SERVER['HTTP_HOST'] ?? '', $_SERVER['REQUEST_URI'] ?? '');
+
+
 $lab->printHeader(
     'HTML Tags for Java Applets, circa 1999', [
         'canonical' => $actual_url,
@@ -78,7 +80,7 @@ if (!in_array($filename, array_keys($valid_pages_and_titles))) {
 <?php endif; ?>
 
     <link rel="stylesheet" href="java-tags.css<?php
-    echo '?' . filemtime('java-tags.css');
+    echo '?' . filemtime(__DIR__ . '/java-tags.css');
     ?>" type="text/css"/>
 
 <?php

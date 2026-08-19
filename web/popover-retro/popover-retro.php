@@ -7,7 +7,7 @@ $lab->printHeader(
 
 ?>
     <link rel="stylesheet" href="popover-retro.css<?php
-    echo '?v=' . filemtime('popover-retro.css');
+    echo '?v=' . filemtime(__DIR__ . '/popover-retro.css');
     ?>">
     <p class="date-attribution">Created Jun 2025</p>
     <h1 class="p-name">Popover à la Windows 95</h1>

@@ -13,7 +13,7 @@ $lab->printHeader('selectBox function in Traditional ASP');
     </h1>
 
     <pre><?php
-        $contents = file_get_contents("selectbox.asp");
+        $contents = file_get_contents(__DIR__ . "/selectbox.asp");
 
         print htmlentities($contents);
 

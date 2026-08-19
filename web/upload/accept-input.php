@@ -37,7 +37,7 @@ if ($fn) :
 
         file_put_contents(
             'uploads/' . $fn,
-            file_get_contents('php://input')
+            file_get_contents(__DIR__ . '/php://input')
         );
         //        echo "$fn uploaded";
         respondAndExit('fileselect', "$fn uploaded");

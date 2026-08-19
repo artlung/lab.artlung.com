@@ -50,7 +50,7 @@ EOF;
 
 <h2>PHP Code inside <code>random.php</code></h2>
 
-<pre><code><?php highlight_file('../random.php'); ?></code></pre>
+<pre><code><?php highlight_file(__DIR__ . '/../random.php'); ?></code></pre>
 
 
 <?php

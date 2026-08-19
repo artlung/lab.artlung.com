@@ -12,7 +12,7 @@ $lab->printHeader(
 <p>This page calls an iframe which calls itself. The question, is what happens?</p>
 
 <!--iframe code here -->
-<?php require 'iframe.html'; ?>
+<?php require __DIR__ . '/iframe.html'; ?>
 <!--/end iframe code-->
 
 

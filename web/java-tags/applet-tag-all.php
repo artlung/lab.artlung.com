@@ -25,7 +25,7 @@ foreach ($valid_pages_and_titles as $url => $title) {
     echo "<h2>" . htmlentities($title) . "</h2>";
 
     print "<pre><code>";
-    print file_get_contents($url);
+    print file_get_contents(__DIR__ . '/' . $url);
     print "</code></pre>";
 
     print "<hr>";

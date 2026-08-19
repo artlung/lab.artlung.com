@@ -10,7 +10,7 @@ $lab->printHeader('Ventcheck');
 
 ?>
     <link rel="stylesheet" href="ventcheck.css<?php
-    echo '?v=' . filemtime('ventcheck.css');
+    echo '?v=' . filemtime(__DIR__ . '/ventcheck.css');
     ?>">
 
 <p class="date-attribution">Created March 2016</p>

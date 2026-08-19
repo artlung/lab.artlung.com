@@ -288,11 +288,11 @@ print $html;
 <p>And the source code:</p>
 
     <h2>JavaScript</h2>
-    <pre><code><?php echo htmlspecialchars(file_get_contents('gettysburg-2.js')); ?></code></pre>
+    <pre><code><?php echo htmlspecialchars(file_get_contents(__DIR__ . '/gettysburg-2.js')); ?></code></pre>
 
 
     <h2>SCSS</h2>
-    <pre><code><?php echo htmlspecialchars(file_get_contents('gettysburg-2.scss')); ?></code></pre>
+    <pre><code><?php echo htmlspecialchars(file_get_contents(__DIR__ . '/gettysburg-2.scss')); ?></code></pre>
 
     <h2>HTML</h2>
     <pre><code><?php echo htmlspecialchars($html); ?></code></pre>
@@ -300,10 +300,10 @@ print $html;
 
 
 <link rel="stylesheet" href="gettysburg-2.css<?php
-print "?" . filectime('gettysburg-2.css');
+print "?" . filectime(__DIR__ . '/gettysburg-2.css');
 ?>" type="text/css"/>
 <script src="gettysburg-2.js<?php
-print '?' . filectime('gettysburg-2.js');
+print '?' . filectime(__DIR__ . '/gettysburg-2.js');
 ?>" type="text/javascript"></script>
 
 

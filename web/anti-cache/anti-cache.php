@@ -1,6 +1,9 @@
 <?php
-header('Cache-Control: no-cache');
-header('Pragma: no-cache');
+
+if (php_sapi_name() !== 'cli') {
+    header('Cache-Control: no-cache');
+    header('Pragma: no-cache');
+}
 require_once __DIR__ . '/../../loader.php';
 $lab = new ArtlungLab\Lab();
 $lab->printHeader('Preventing Browser Cache');

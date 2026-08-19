@@ -4,10 +4,10 @@ $lab = new ArtlungLab\Lab();
 $lab->printHeader('Quote to DL (Definition List)');
 ?>
     <link rel="stylesheet" href="quote-to-dl.css?b=<?php
-    echo filemtime('quote-to-dl.css');
+    echo filemtime(__DIR__ . '/quote-to-dl.css');
     ?>" />
     <script src="quote-to-dl.js?b=<?php
-    echo filemtime('quote-to-dl.js');
+    echo filemtime(__DIR__ . '/quote-to-dl.js');
     ?>"></script>
 
 

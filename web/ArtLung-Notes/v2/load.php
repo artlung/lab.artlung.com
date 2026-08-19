@@ -1,10 +1,10 @@
 <?php
 
 
-$items = scandir('notes/');
+$items = scandir(__DIR__ . '/notes/');
 
 foreach ($items as $file) {
-    $item = json_decode(file_get_contents('notes/' . $file), true);
+    $item = json_decode(file_get_contents(__DIR__ . '/notes/' . $file), true);
     if ($item && trim($item['content'])) {
         print "<div class=\"instance savedNote\" id=\"{$item['guid']}\" style=\"top:{$item['top']}px;left:{$item['left']}px;height:{$item['height']}px;\">";
         print htmlentities($item['content']);

@@ -80,7 +80,7 @@ print $html;
 <?php $lab->printSourceFile('media.scss'); ?>
 
     <link rel="stylesheet" href="media.css<?php
-    echo '?' . filemtime('media.css');
+    echo '?' . filemtime(__DIR__ . '/media.css');
     ?>">
 
 <?php

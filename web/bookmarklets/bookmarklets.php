@@ -78,7 +78,7 @@ $lab->printHeader('Bookmarklets, Miscellaneous');
     <h2>goToRSSFeed v.2</h2>
     <p>
     <?php
-        $js = file_get_contents('go-to-rss-feed-v2.js');
+        $js = file_get_contents(__DIR__ . '/go-to-rss-feed-v2.js');
         $js_bookmarklet = 'javascript:' . \ArtlungLab\Bookmarklet::javascriptToBookmarklet($js);
         printf('<a href="%s">goToRSSFeed</a>', $js_bookmarklet);
     ?>
@@ -93,7 +93,7 @@ $lab->printHeader('Bookmarklets, Miscellaneous');
     <h2>Show Rel Canonical</h2>
     <p>
         <?php
-        $js = file_get_contents('show-rel-canonical.js');
+        $js = file_get_contents(__DIR__ . '/show-rel-canonical.js');
         $js_bookmarklet = 'javascript:' . \ArtlungLab\Bookmarklet::javascriptToBookmarklet($js);
         printf('<a href="%s">Show Rel Canonical</a>', $js_bookmarklet);
         ?>
@@ -110,7 +110,7 @@ $lab->printHeader('Bookmarklets, Miscellaneous');
     <h2>Show Rel Webmention</h2>
     <p>
         <?php
-        $js = file_get_contents('show-rel-webmention.js');
+        $js = file_get_contents(__DIR__ . '/show-rel-webmention.js');
         $js_bookmarklet = 'javascript:' . \ArtlungLab\Bookmarklet::javascriptToBookmarklet($js);
         printf('<a href="%s">Show Rel Webmention</a>', $js_bookmarklet);
         ?>
@@ -129,7 +129,7 @@ $lab->printHeader('Bookmarklets, Miscellaneous');
     </p>
     <p>
         <?php
-        $js = file_get_contents('reenable-right-click.js');
+        $js = file_get_contents(__DIR__ . '/reenable-right-click.js');
         $js_bookmarklet = 'javascript:' . \ArtlungLab\Bookmarklet::javascriptToBookmarklet($js);
         printf('<a href="%s">Re-enable Right Click</a>', $js_bookmarklet);
         ?>
@@ -146,7 +146,7 @@ $lab->printHeader('Bookmarklets, Miscellaneous');
 
 
 <link rel="stylesheet" href="bookmarklets.css<?php
-    echo '?'.filemtime('bookmarklets.css');
+    echo '?'.filemtime(__DIR__ . '/bookmarklets.css');
 ?>">
 <?php
 $lab->printFooter(

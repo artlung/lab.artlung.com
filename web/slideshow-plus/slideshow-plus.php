@@ -152,7 +152,7 @@
         //-->
     </script>
     <script src="/2025.js<?php
-    echo '?' . filemtime('../2025.js');
+    echo '?' . filemtime(__DIR__ . '/../2025.js');
     ?>"></script>
 </head>
 <frameset rows="26,*" border="0" framespacing="0" frameborder="NO">

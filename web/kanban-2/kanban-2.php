@@ -7,7 +7,7 @@ $lab->printHeader(
 
 ?>
 <link rel="stylesheet" href="kanban-2.css<?php
-    echo '?' . filemtime('kanban-2.css');
+    echo '?' . filemtime(__DIR__ . '/kanban-2.css');
 ?>" type="text/css"/>
 
 
