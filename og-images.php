@@ -44,9 +44,9 @@ foreach ($pages as $slug => $metadata) {
     }
 
     if (!$wait_time) {
-        $commands[] = "shot-scraper $domain/$slug/  $shot_scraper_extra_params --width 1200 --height 630 --quality 80 -o web/$slug/og-$slug.jpg";
+        $commands[] = "uv run shot-scraper $domain/$slug/  $shot_scraper_extra_params --width 1200 --height 630 --quality 80 -o web/$slug/og-$slug.jpg";
     } else {
-        $commands[] = "shot-scraper $domain/$slug/  $shot_scraper_extra_params --width 1200 --height 630 --quality 80 --wait $wait_time -o web/$slug/og-$slug.jpg";
+        $commands[] = "uv run shot-scraper $domain/$slug/  $shot_scraper_extra_params --width 1200 --height 630 --quality 80 --wait $wait_time -o web/$slug/og-$slug.jpg";
     }
     //
     // shot-scraper https://lab.artlung.com/wml/faux --width 1200 --height 630 --quality 80 -o web/wml/og-wml-faux.jpg
